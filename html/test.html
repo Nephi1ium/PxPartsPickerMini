@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML hide element</title>
+<style>
+body {
+text-align:center;
+}
+h1 {
+color:blue;
+}
+</style>
+</head>
+<body>
+<h1>EDUCBA</h1>
+<h2>HTML Hide element</h2>
+<button id="btn">DISPLAY HIDDEN TEXT</button>
+<output id="op">(Hidden text will appear here)</output>
+<textarea id="ta" hidden rows="5" cols="40">This textarea 
+    was hidden using the hide element</textarea>
+<!-- hidden paragraph -->
+<p hidden>A learning portal</p>
+<script>
+document.getElementById("btn").addEventListener('click', function () {op.innerHTML = ta.innerHTML;}, false);
+</script>
+</body>
+</html>

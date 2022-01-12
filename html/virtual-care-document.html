@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Care Document</title>
+</head>
+<body>
+    <section>
+        <label for="ptName"> Patient Name:</label>
+        <input type="text" id="ptName" name="ptName" required> 
+        <label for="dob"> Date of Birth </label>
+        <input type="date" name="dob" id="dob" required>
+    </section>
+    <section id="icd10"> 
+        <button type="button" name="z89.5">Z89.511 Acquired absence of right leg below knee</button>
+        <button type="button" name="z89.05">Z89.512 Acquired absence of left leg below knee</button>
+        <button type="button" name="z89.04">Z89.611 Acquired absence of right leg above knee</button>
+        <button type="button" name="z89.04">Z89.612 Acquired absence of right leg above knee</button>
+    </section>
+    <section id="demographic"> 
+        <label for="skinCondition"> Skin Condition</label>
+            <select id="skinCondition">
+            <option value=””></option>
+            <option value="intact">Intact</option>
+            <option value="average">Average</option>
+            <option value="soft">Soft</option>
+            <option value=”firm”>Firm</option>
+            <option value="redundant">Redundant</option>
+            <option value=”redundantSigns”>Redundant with Signs</option>
+            </select>
+            
+        <label for="strengthLevel"> Strength Level </label>
+            <select id="strengthLevel" name="strengthLevel">
+                <option value=””></option>
+                <option value=”5”>5/5</option>
+                <option value=”4”>4/5</option>
+                <option value=”3”>3/5</option>
+                <option value=”2”>2/5</option>
+                <option value=”1”>1/5</option>
+
+        </select>
+        <label for="kLevel"> K-Level </label>
+            <select id="kLevel" name="klevel">  
+                <option value=””></option>
+                <option value=”3”>3</option>
+                <option value=”2”>2</option>
+                <option value=”1”>1</option>
+                <option value=”4”>4</option>
+            </select>
+        <label> Range of Motion </label>
+            <select id="rom">
+                <option value=””></option>
+                <option value=”full”>full</option>
+                <option value=”limited”>limited</option>
+                <option value=”3”>3</option>
+                <option value=”2”>2</option>
+                <option value=”1”>1</option>
+        </select>  
+    </section>  
+    <section id="confirm">
+        <label for="willUse">The patient does not have any comorbidities that we are aware of that will impact mobility</label>
+        <input type="radio" id="willUse">
+        <label for="strDes">Patient verbally communicates a strong desire to proceed with prosthetic care in our opinion</label>
+        <input type="radio" id="strDes">
+    </section>  
+    <section id="additional">
+        <label for="addNotes">Additional Notes:</label>
+        <input type="textbox" id="addNotes" style="height: 400px; width: 600px;">
+    </section>
+    <section id="clinName">
+
+    </section>
+    <section id="submit">
+        <button type="button" name="savePDF">Save as PDF</button>
+        <button type="button" name="email">Email to SOPS</button>
+    </section>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/px-picker-main-page.css">
+    <title>Carolinas Coding Guide Webpage</title>
+</head>
+<body>
+
+    <nav> 
+            <a href="px-picker-main-page.html">Home</a>
+            <a href="px-picker-tfpin.html">TransFemoral Pin</a>
+            <a href="px-picker-tfsuction.html">TransFemoral Suction</a>
+            <a href="px-picker-ttpin.html">TransTibial Pin</a>
+            <a href="px-picker-ttsuction.html">TransTibial Suction</a>
+
+    </nav>
+    <h1> Carolinas Coding Guide </h1>
+    <h2>Step 1: Enter your information</h2> 
+        <fieldset>
+            <div>
+                <label for="clinName">Name:</label>
+                <input type="text"  id="clinName" class="identify" required>
+            </div>
+
+            <div>
+                <label for="clinLoc">PCC#</label>
+                <input type="text"  id="clinLoc" class="identify" required>
+                <label for="sameP">Ship to PCC same as location?</label>
+                <label for="samePY">Yes</label>
+                <input type="radio" id="samePY" name="YorN" value="Yes">
+                <label for="samePN">No</label>
+                <input type="radio" id="samePN" name="YorN" value="No">
+            </div>
+        </fieldset>    
+        <fieldset>
+            <legend> Pick One</legend>
+                <div id="pandS" class="hoverIcon">
+                    <section id="ttPandS" >
+                        <div id="tts" class="ttb">
+                            <label for="tt"></label>
+                            <input type="button" id="tt"  value="Trans Tibial" onclick="changeStyle(); changeChoices()"></button>
+                        </div>            
+                                    <label for="chotts"></label>
+                                    <input type="button" class="ttChoice"  id="chotts" value="Transtibial Suction" class="showItem" onclick="document.location='px-picker-ttsuction.html'">
+                                    <label for="chttp"></label>
+                                    <input type="button" class="ttChoice" id="chttp" value="TransTibial Pin" class="showItem" onclick="document.location='px-picker-ttpin.html'">
+                    </section>
+
+                    <section id="tfPandS" >
+                        <div id="tfs" class="tfb">
+                            <label for="tf"></label>
+                            <input type="button" id="tf" onclick="changeOStyle(); change1Choices()" value="Trans Femoral"></button>
+                        </div>
+                                    <label for="chotfs"></label>
+                                    <input type="button" class="tfChoice"  id="chotfs" value="TransFemoral Suction" class="showItem" onclick="document.location='px-picker-tfsuction.html'">
+                                    <label for="chotfp"></label>
+                                    <input type="button" class="tfChoice" id="chotfp" value="TransFemoral Pin" class="showItem" onclick="document.location='px-picker-tfpin.html'">
+                    </section>
+                </div> 
+        </fieldset>     
+    <script src="../js/px-picker-main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="..\js\jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
