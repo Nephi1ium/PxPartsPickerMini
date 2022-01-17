@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
+     
     <title>Carolinas Coding Guide Webpage</title>
 </head>
 <body>
@@ -17,15 +20,21 @@
             <a href="px-picker-ttsuction.html">TransTibial Suction</a>
 
     </nav>
+    <header clas="jumbotron">
     <h1> Carolinas Coding Guide </h1>
+    </header>
+    <footer>
     <h2>Step 1: Enter your information</h2> 
-        <fieldset>
-            <div>
-                <label for="clinName">Name:</label>
-                <input type="text"  id="clinName" class="identify" required>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <label for="clinName">Name:</label>
+                    <input type="text"  id="clinName" class="identify" required>
+                </div>
             </div>
-
-            <div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
                 <label for="clinLoc">PCC#</label>
                 <input type="text"  id="clinLoc" class="identify" required>
                 <label for="sameP">Ship to PCC same as location?</label>
@@ -33,22 +42,25 @@
                 <input type="radio" id="samePY" name="YorN" value="Yes">
                 <label for="samePN">No</label>
                 <input type="radio" id="samePN" name="YorN" value="No">
+                </div>
             </div>
-        </fieldset>    
-        <fieldset>
-            <legend> Pick One</legend>
-                <div id="pandS" class="hoverIcon">
-                    <section id="ttPandS" >
-                        <div id="tts" class="ttb">
-                            <label for="tt"></label>
-                            <input type="button" id="tt"  value="Trans Tibial" onclick="changeStyle(); changeChoices()"></button>
-                        </div>            
-                                    <label for="chotts"></label>
-                                    <input type="button" class="ttChoice"  id="chotts" value="Transtibial Suction" class="showItem" onclick="document.location='px-picker-ttsuction.html'">
-                                    <label for="chttp"></label>
-                                    <input type="button" class="ttChoice" id="chttp" value="TransTibial Pin" class="showItem" onclick="document.location='px-picker-ttpin.html'">
-                    </section>
-
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <legend> Pick One</legend>
+                    <label for="tt"></label>
+                    <input type="button" id="tt"  value="Trans Tibial" onclick="changeStyle(); changeChoices()"></button>
+                    </div>
+                    <div class="col">            
+                    <label for="chotts"></label>
+                    <input type="button" class="ttChoice"  id="chotts" value="Transtibial Suction" class="showItem" onclick="document.location='px-picker-ttsuction.html'">
+                    <label for="chttp"></label>
+                    <input type="button" class="ttChoice" id="chttp" value="TransTibial Pin" class="showItem" onclick="document.location='px-picker-ttpin.html'">
+                    </div>
+                </div>                
+            </div>
                     <section id="tfPandS" >
                         <div id="tfs" class="tfb">
                             <label for="tf"></label>
@@ -64,6 +76,9 @@
     <script src="../js/px-picker-main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="..\js\jquery-3.6.0.min.js"></script>
-
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    </footer>
 </body>
 </html>
