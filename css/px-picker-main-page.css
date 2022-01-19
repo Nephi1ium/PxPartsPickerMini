@@ -1,3 +1,52 @@
+.navbar {
+    background-color: #fe8f3f ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 fieldset {
     border-style: none;
@@ -9,12 +58,7 @@ h1 {
     opacity: .4;
 }
 
-nav {
-    text-align: center;
-    background-color: #00bfff;
-    padding: 10px 10px 10px;
-    margin: 10px 10px 10px;
-}
+
 section {
     
     display: inline-block; 
