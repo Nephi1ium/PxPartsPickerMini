@@ -1,7 +1,13 @@
-.navbar {
+nav {
     background-color: #fe8f3f ;
 }
-
+footer nav {
+    background-image: linear-gradient (white);
+    
+}
+footer {
+    padding: 60px 0;
+}
 
 
 
