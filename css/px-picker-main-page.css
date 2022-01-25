@@ -1,15 +1,19 @@
 nav {
     background-color: #fe8f3f ;
 }
-footer nav {
-    background-image: linear-gradient (white);
-    
-}
 footer {
+    background-image: linear-gradient(rgb(184, 182, 182), white);
     padding: 60px 0;
 }
 
+div {
+    position: relative;
+}
 
+/*
+body {
+    background-image: linear-gradient(to right, #fe8f3f, #00bfff);
+}
 
 
 
