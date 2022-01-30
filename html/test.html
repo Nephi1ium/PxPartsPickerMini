@@ -1,27 +1,137 @@
-<!DOCTYPE html>
-<html>
+</html><!DOCTYPE html>
+<html lang="en">
 <head>
-<title>HTML hide element</title>
-<style>
-body {
-text-align:center;
-}
-h1 {
-color:blue;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="../css/px-picker-main-page.css">
+    <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css" />
+    <title>Carolinas Coding Guide Webpage</title>
+    <style>
+        body {
+        text-align:center;
+        }
+        h1 {
+        color:blue;
+        }
+        </style>
 </head>
 <body>
-<h1>EDUCBA</h1>
-<h2>HTML Hide element</h2>
-<button id="btn">DISPLAY HIDDEN TEXT</button>
-<output id="op">(Hidden text will appear here)</output>
-<textarea id="ta" hidden rows="5" cols="40">This textarea 
-    was hidden using the hide element</textarea>
-<!-- hidden paragraph -->
-<p hidden>A learning portal</p>
-<script>
-document.getElementById("btn").addEventListener('click', function () {op.innerHTML = ta.innerHTML;}, false);
-</script>
+    <!--
+    <h1>EDUCBA</h1>
+    <h2>HTML Hide element</h2>
+    <button id="btn">DISPLAY HIDDEN TEXT</button>
+    <output id="op">(Hidden text will appear here)</output>
+    <textarea id="ta" hidden rows="5" cols="40">This textarea 
+        was hidden using the hide element</textarea>
+    <!-- hidden paragraph -->
+    <p hidden>A learning portal</p>
+    -->
+
+<div class="wrapper">
+    <ui class="mainMenu">
+        <li class="item" id="account">
+            <a href="#account" class="btn"><i class="fas fa-user-circle"></i>My Account</a>
+            <div class="subMenu">
+                <a href="">item-1</a>
+                <a href="">item-2</a>
+                <a href="">item-3</a>
+            </div>
+        </li>
+        <li class="item" id="about">
+            <a href="#about" class="btn"><i class="fas fa-address-card"></i>About</a>
+            <div class="subMenu">
+                <a href="">item-1</a>
+                <a href="">item-2</a>
+            </div>
+        </li>
+        <li class="item" id="support">
+            <a href="#support" class="btn"><i class="fas fa-info"></i>Support</a>
+            <div class="subMenu">
+                <a href="">item-1</a>
+            </div>
+        </li>
+        <li class="item">
+            <a href="#" class="btn"><i class="fas fa-sign-out-alt"></i>Log Out</a>
+        </li>
+    </ui>
+</div>
+
+
+
+<footer>
+
+</div>
+   
+        
+        <footer class="site-footer">
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>   
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            document.getElementById("btn").addEventListener('click', function () {op.innerHTML = ta.innerHTML;}, false);
+            </script>  
 </body>
 </html>
+
+
+
+
+<div class="container">
+    <div class="row">
+      <div class ="col">
+        
+      </div>
+    </div>
+  </div>
+           
+<!-- /* This code below acts as an accordion 
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2">
+        
+        <div id="MainMenu">
+          <div class="list-group panel">
+            <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
+            <div class="collapse" id="demo3">
+              <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+              <div class="collapse list-group-submenu" id="SubMenu1">
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+                <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+                <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                  <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+                  <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+                </div>
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+              </div>
+              <a href="javascript:;" class="list-group-item">Subitem 2</a>
+              <a href="javascript:;" class="list-group-item">Subitem 3</a>
+            </div>
+            <a href="#demo4" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
+            <div class="collapse" id="demo4">
+              <a href="" class="list-group-item">Subitem 1</a>
+              <a href="" class="list-group-item">Subitem 2</a>
+              <a href="" class="list-group-item">Subitem 3</a>
+            </div>
+             <a href="#demo5" class="list-group-item list-group-item" data-toggle="collapse" data-parent="#MainMenu">Item 5</a>
+              <div class="collapse" id="demo5">
+              <a href="#" class="list-group-item">Subitem 1</a>
+              <a href="" class="list-group-item">Subitem 2</a>
+              <a href="" class="list-group-item">Subitem 3</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>  
+    </div>  
+  </div>
+  
+  -->

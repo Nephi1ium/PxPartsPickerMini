@@ -22,6 +22,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.6.0",
     "liteserver": "^0.3.0",
+    "popper": "^1.0.1",
     "popper.js": "^1.16.1"
   },
   "bugs": {
