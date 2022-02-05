@@ -1,16 +1,5 @@
-/*
-function showSec (){
-    const ttPandS = document.getElementById('ttPandS')
-    ttPandS addEventListener('click', function hideSec(){})
-} */
-/*
-$('#ttPandS').click(function(){
-    function changeStyle (){
+const pdfArray = []
 
-    }
-    $('#tts').addClass('hideLook');
-});
-*/
 const x = document.getElementsByClassName("ttb");
 const y = document.getElementsByClassName("tfb");
 const coll = document.getElementsByClassName("collapsible");
