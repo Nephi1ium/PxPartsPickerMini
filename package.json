@@ -2,7 +2,7 @@
   "name": "px_parts_picker_project_minimized",
   "version": "1.0.0",
   "description": "A Prosthetic Parts Picker with Photos and a Cart",
-  "main": "px-picker-main-page.html",
+  "main": "index.html",
   "scripts": {
     "lite": "lite-server",
     "start": "npm run watch:all",

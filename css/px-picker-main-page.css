@@ -1,5 +1,5 @@
 nav {
-    background-color: #34b4eb   ;
+    background-color: #08719e   ;
 }
 footer {
     background-image: linear-gradient(rgb(184, 182, 182), white);
@@ -13,7 +13,10 @@ a{
     text-decoration: none;
 }
 header {
-    background-color: #34b4eb ;
+    background-color: #34b4eb !important ;
+}
+body {
+    background-image:linear-gradient (#b0a330, white);
 }
 
 /*  THE BELOW CODE MODIFIES THE ACCORDION STYLE MENU ITEM IN TEST
