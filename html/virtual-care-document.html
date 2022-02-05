@@ -20,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="Pickerbar">
             <ul class="navbar-nav ">
-                <li class="nav-item"><a class="nav-link"  href="px-picker-main-page.html"><span class="fa fa-home fa-lg mr-3"></span>Home</a></li>
+                <li class="nav-item"><a class="nav-link"  href="../index.html"><span class="fa fa-home fa-lg mr-3"></span>Home</a></li>
                 <li class="nav-item "><a class="nav-link" href="px-picker-tfpin.html"><span class="fa fa-circle fa-lg mr-3"></span>TransFemoral Pin</a></li>
                 <li class="nav-item"><a class="nav-link" href="px-picker-tfsuction.html"><span class="fa fa-circle fa-lg mr-3"></span>TransFemoral Suction</a></li>
                 <li class="nav-item"><a class="nav-link" href="px-picker-ttpin.html"><span class="fa fa-circle fa-lg mr-3"></span>TransTibial Pin</a></li>
@@ -68,10 +68,10 @@
                         <input type="date" name="dob" id="dob" required>
                 </div>
                     <div class="form-group" id="icd10"> 
-                        <button type="button" name="z89.5">Z89.511 Acquired absence of right leg below knee</button>
-                        <button type="button" name="z89.05">Z89.512 Acquired absence of left leg below knee</button>
-                        <button type="button" name="z89.04">Z89.611 Acquired absence of right leg above knee</button>
-                        <button type="button" name="z89.04">Z89.612 Acquired absence of right leg above knee</button>
+                        <button type="button" class="btn btn-large"name="z89.5">Z89.511 Acquired absence of right leg below knee</button>
+                        <button type="button" class="btn btn-large"name="z89.05">Z89.512 Acquired absence of left leg below knee</button>
+                        <button type="button" class="btn btn-large"name="z89.04">Z89.611 Acquired absence of right leg above knee</button>
+                        <button type="button" class="btn btn-large"name="z89.04">Z89.612 Acquired absence of right leg above knee</button>
                     </div>
                     <div class="form-group" id="demographic"> 
                         <label for="skinCondition"> Skin Condition</label>
@@ -84,11 +84,33 @@
                             <option value="redundant">Redundant</option>
                             <option value=”redundantSigns”>Redundant with Signs</option>
                     </div>
+
+                    <div class="form-group">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
                     <div class="form-group">                            
                         <label for="strengthLevel"> Strength Level </label>
                             <select id="strengthLevel" name="strengthLevel">
                                 <option value=””></option>
-                                <option value=”5”>5/5</option>
+                                <option value=”5”></option>
                                 <option value=”4”>4/5</option>
                                 <option value=”3”>3/5</option>
                                 <option value=”2”>2/5</option>
@@ -96,13 +118,24 @@
                             </select>
                     </div>
                     <div class="form-group">
+                        <label for="strengthLevel"> Strength Level </label>
+                            <select id="strengthLevel" name="strengthLevel">  
+                                <option value=””></option>
+                                <option value=”5”>5</option>
+                                <option value=”4”>4/5</option>
+                                <option value=”3”>3/5</option>
+                                <option value=”2”>2/5</option>
+                                <option value="1">1/5</option>
+                            </select>
+                    </div>
+                    <div class="form-group">
                         <label for="kLevel"> K-Level </label>
                             <select id="kLevel" name="klevel">  
-                                <option value=””></option>
-                                <option value=”3”>3</option>
-                                <option value=”2”>2</option>
-                                <option value=”1”>1</option>
-                                <option value=”4”>4</option>
+                                <option></option>
+                                <option>3</option>
+                                <option>2</option>
+                                <option1>1</option>
+                                <option 4</option>
                             </select>
                     </div>
                     <div class="form-group">
@@ -128,7 +161,7 @@
                     </div>
                     <div class="form-group" id="submit">
                         <button type="button" name="savePDF">Save as PDF</button>
-                        <button type="button" name="email">Email to SOPS</button>
+                        <button type="button" name="email">Email to SPS</button>
                     </div>
                 </form>    
             </div>
