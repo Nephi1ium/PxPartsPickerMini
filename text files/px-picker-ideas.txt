@@ -1,3 +1,25 @@
+
+Color Selections
+
+
+- heading color
+#347aeb - main color
+#34b4eb- footer maybe
+
+Utilizing SASS (SCSS can do the same)
+@mixin - custom functions
+lighten(color, amount)
+@for @each - looping elements
+$color-dark: #000; - variables
+@_partials - separating code for manageability
+
+Going over the build Script-
+
+
+
+
+
+
 Add a function to each click of a button, adding the choice to an array. 
 Within the "cart", cancelling the selection of that item will access another function which deletes the array item.
 Last, the array will be associated with certain values, which will fill out certain fields of a PDF document.

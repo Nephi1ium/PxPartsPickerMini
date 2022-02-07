@@ -4,6 +4,7 @@ const x = document.getElementsByClassName("ttb");
 const y = document.getElementsByClassName("tfb");
 const coll = document.getElementsByClassName("collapsible");
 
+
 function changeStyle() {
     for (let i = 0; i < x.length; i++) {
         x[i].style.display = "none";
@@ -60,8 +61,27 @@ for (i = 0; i < coll.length; i++) {
       console.log(coll);
     }
   });
+
+
 }
 }
+
+
+$(function(){
+    
+$(document).ready(function(){
+    $("#empVer").modal('show');
+});
+
+
+$('#closeMod').on('click', function() {
+    $('#closeMod').modal('hide');
+});
+
+});
+
+
+
 /* This is the function for resetting the clicking of the two buttons to reset both sections that dissappear.
 var flag = true;
 function myFunction(){
