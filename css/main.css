@@ -1,3 +1,16 @@
 #modalPic {
   width: 100%;
   max-width: 200px; }
+
+.col-sm-12 .card {
+  width: 300;
+  padding: 5px;
+  margin: 5px; }
+
+.card .card-header {
+  background-color: #34b4eb; }
+  .card .card-header p {
+    color: #08719e; }
+
+body {
+  color: #2403fc; }
