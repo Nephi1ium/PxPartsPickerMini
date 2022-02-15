@@ -67,15 +67,18 @@
                         <label for="dob"> Date of Birth </label>
                         <input type="date" name="dob" id="dob" required>
                 </div>
+                <div class ="col">
                     <div class="form-group" id="icd10"> 
                         <button type="button" class="btn btn-large"name="z89.5">Z89.511 Acquired absence of right leg below knee</button>
                         <button type="button" class="btn btn-large"name="z89.05">Z89.512 Acquired absence of left leg below knee</button>
                         <button type="button" class="btn btn-large"name="z89.04">Z89.611 Acquired absence of right leg above knee</button>
                         <button type="button" class="btn btn-large"name="z89.04">Z89.612 Acquired absence of right leg above knee</button>
                     </div>
+                </div>
+                <div class ="col-sm-12 col-md-6 col-lg-3">
                     <div class="form-group" id="demographic"> 
                         <label for="skinCondition"> Skin Condition</label>
-                            <select id="skinCondition">
+                            <select class="form-control" id="skinCondition">
                             <option value=””></option>
                             <option value="intact">Intact</option>
                             <option value="average">Average</option>
@@ -83,82 +86,66 @@
                             <option value=”firm”>Firm</option>
                             <option value="redundant">Redundant</option>
                             <option value=”redundantSigns”>Redundant with Signs</option>
-                    </div>
-
-                    <div class="form-group">
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown button
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </div>
+                            </select>
                     </div>
 
 
-
-
-
-
-
-
-
-                    <div class="form-group">                            
+                    <div class="form-group" id="strength"> 
                         <label for="strengthLevel"> Strength Level </label>
-                            <select id="strengthLevel" name="strengthLevel">
-                                <option value=””></option>
-                                <option value=”5”></option>
-                                <option value=”4”>4/5</option>
-                                <option value=”3”>3/5</option>
-                                <option value=”2”>2/5</option>
-                                <option value=”1”>1/5</option>
+                            <select class="form-control" id="strengthLevel">
+                            <option></option>
+                            <option>5</option>
+                            <option>4/5</option>
+                            <option>3/5</option>
+                            <option>2/5</option>
+                            <option>1/5</option>
+                            <option>0</option>
                             </select>
                     </div>
-                    <div class="form-group">
-                        <label for="strengthLevel"> Strength Level </label>
-                            <select id="strengthLevel" name="strengthLevel">  
-                                <option value=””></option>
-                                <option value=”5”>5</option>
-                                <option value=”4”>4/5</option>
-                                <option value=”3”>3/5</option>
-                                <option value=”2”>2/5</option>
-                                <option value="1">1/5</option>
+               
+
+                    <div class="form-group" id="k-level"> 
+                        <label for="klevel"> K-Level </label>
+                            <select class="form-control" id="klevel">
+                            <option></option>
+                            <option>5</option>
+                            <option>4/5</option>
+                            <option>3/5</option>
+                            <option>2/5</option>
+                            <option>1/5</option>
+                            <option>0</option>
                             </select>
                     </div>
-                    <div class="form-group">
-                        <label for="kLevel"> K-Level </label>
-                            <select id="kLevel" name="klevel">  
-                                <option></option>
-                                <option>3</option>
-                                <option>2</option>
-                                <option1>1</option>
-                                <option 4</option>
-                            </select>
-                    </div>
-                    <div class="form-group">
+              
+
+                    <div class="form-group" id="ROM"> 
                         <label for="rom"> Range of Motion </label>
-                            <select id="rom">
-                                <option value=””></option>
-                                <option value=”full”>full</option>
-                                <option value=”limited”>limited</option>
-                                <option value=”3”>3</option>
-                                <option value=”2”>2</option>
-                                <option value=”1”>1</option>
+                            <select class="form-control" id="rom">
+                            <option></option>
+                            <option>5</option>
+                            <option>4/5</option>
+                            <option>3/5</option>
+                            <option>2/5</option>
+                            <option>1/5</option>
+                            <option>0</option>
                             </select>
                     </div>
+                </div>
+                <div class="col">
                     <div class="form-group" id="confirm">  
                         <label for="willUse">The patient does not have any comorbidities that we are aware of that will impact mobility</label>
                         <input type="radio" id="willUse">
                         <label for="strDes">Patient verbally communicates a strong desire to proceed with prosthetic care in our opinion</label>
                         <input type="radio" id="strDes">
                     </div> 
+                </div>
+
+                <div class ="col">     
                     <div class="form-group" id="additional">
                         <label for="addNotes">Additional Notes:</label>
                         <input type="textbox" id="addNotes" style="height: 400px; width: 600px;">
                     </div>
+                </div>
                     <div class="form-group" id="submit">
                         <button type="button" name="savePDF">Save as PDF</button>
                         <button type="button" name="email">Email to SPS</button>

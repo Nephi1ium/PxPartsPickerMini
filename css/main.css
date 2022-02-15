@@ -8,9 +8,21 @@
   margin: 5px; }
 
 .card .card-header {
-  background-color: #34b4eb; }
+  background-color: #fbf8be; }
   .card .card-header p {
     color: #08719e; }
 
 body {
-  color: #2403fc; }
+  color: #fbf8be;
+  color: #08719e;
+  background-color: #eee87d; }
+
+.card-outside {
+  height: 600px;
+  display: inline-block;
+  position: relative; }
+
+.img-responsive {
+  display: block;
+  max-width: 50%;
+  height: auto; }
