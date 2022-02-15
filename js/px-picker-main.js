@@ -4,6 +4,16 @@ const x = document.getElementsByClassName("ttb");
 const y = document.getElementsByClassName("tfb");
 const coll = document.getElementsByClassName("collapsible");
 
+const rbk = document.getElementById("z89.511");
+const lbk = document.getElementById("z89.512");
+const rak = document.getElementById("z89.612");
+const lak = document.getElementById("z89.611");
+
+function btnSelect (){
+    
+}
+
+
 
 function changeStyle() {
     for (let i = 0; i < x.length; i++) {

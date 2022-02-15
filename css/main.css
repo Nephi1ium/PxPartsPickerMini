@@ -7,15 +7,12 @@
   padding: 5px;
   margin: 5px; }
 
-.card .card-header {
-  background-color: #fbf8be; }
-  .card .card-header p {
-    color: #08719e; }
+.card .card-header p {
+  color: #08719e; }
 
 body {
   color: #fbf8be;
-  color: #08719e;
-  background-color: #eee87d; }
+  color: #08719e; }
 
 .card-outside {
   height: 600px;
