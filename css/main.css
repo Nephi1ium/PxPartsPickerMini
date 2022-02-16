@@ -23,3 +23,6 @@ body {
   display: block;
   max-width: 50%;
   height: auto; }
+
+.card .card {
+  border: none; }
