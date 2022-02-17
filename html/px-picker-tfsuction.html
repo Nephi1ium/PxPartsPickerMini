@@ -15,7 +15,7 @@
     <title>TF Suction</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top"> 
+    <nav class="navbar navbar-expand-sm navbar-dark"> 
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#Pickerbar">
                 <span class="navbar-toggler-icon"></span>
@@ -33,6 +33,8 @@
         </div>
     </nav>
 
+
+
     <header class="jumbotron jumbotron-fluid ">
       <div class="container">
           <div class="row">
@@ -45,6 +47,35 @@
           </div>
       </div>
   </header> 
+
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" id="stepTwo" class="closebtn" onclick="closeNav()">×</a>
+    <h3 id="choiceHead">  2. Choose One</h3>
+
+
+        <div class="accordion" id="headAcc">
+            <div class="accordion-item">
+            <h2 class="accordion-header" id="headSide">
+                <a href="#" class="accordion-button btn" type="button" data-bs-toggle="collapse" data-bs-target="#headColOne" aria-expanded="true" aria-controls="headSide"></a>
+                </h2>
+                <div id="headColOne" class="accordion-collapse collapse show" aria-labelledby="headSide" data-bs-parent="#headAcc">
+                    <div class="accordion-body">
+                        <p>1.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" id="stepOne" onclick="openNav(), disOpenNav()">☰ 1. Click Here </button> 
+  </div> 
+
+
+
 
   <div class="container pt-2">
     <div class="row">
@@ -604,10 +635,13 @@
                     </div>
                         </div>
                 </div>
-            </div>
+         <!-- End of Miscellaneous Knees -->   
         </div>
+    </div>
+<!-- End of Knees -->
 
-<!-- End of Miscellaneous Feet -->
+
+
 <!-- Accordion 2 Feet -->
         <div class="col-sm-12 col-md-6 col-lg-3 mx-2 px-2">
             <div class="card card-outside">
@@ -617,34 +651,147 @@
                     <h3>Feet</h3>
                     </div>
 <!-- feet section 1.7 -->
-                        <div class="card">
-                            <div class="card-header p-0" id="headingSeven">
-                                <h2 class="mb-0">
-                                <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                <p class="mb-0"><span class="fa fa-circle fa-lg mr-3"></span>K1/K2 4Bar</p>
-                                <i class="fa" aria-hidden="true"></i>
-                                </button>
-                                </h2>
-                            </div>
-                                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion" style="">
-                                    <div class="card-body py-5 px-4">
-                                        <div class="menus d-md-flex">
-                                            <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                                                <div class="text">
-                                                    <div class="d-flex">
-                                                        <div class="one-half">
-                                                        <h3>1st Title Information</h3>
-                                                        </div>
-                                                            <div class="one-forth">
-                                                                <span class="price">Part Number</span>
-                                                            </div>
-                                                    </div>
-                                                <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                                                </div>
-                                            </div>           
-                                        </div>  
+<!-- Start K2 -->
+<div class="card">
+    <div class="card-header p-0" id="headingOne">
+        <h2 class="mb-0">
+        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <p class="mb-0"><span class="fa fa-circle fa-lg mr-3"></span>K1/K2 4Bar</p>
+        <i class="fa" aria-hidden="true"></i>
+        </button>
+        </h2>
+    </div>
+
+
+
+
+    <div class="card">
+        <div id="collapseOne" class="collapse" aria-labelledby="" data-parent="#headingOne">
+
+
+
+            <div class="card-header p-0" id="h1.1">
+                <h2 class="mb-0">
+                <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
+                <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Friction, Extension Assist</p>
+                <i class="fa" aria-hidden="true"></i>
+                </button>
+                </h2>
+            </div>
+                <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
+                    <div class="card-body py-5 px-4">
+                        <div class="menus d-md-flex">
+                            <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
+                                <div class="text">
+                                    <div class="d-flex">
+                                        <div class="one-half">
+                                        <h3>1st Title Information</h3>
+                                        </div>
+                                            <div class="one-forth">
+                                                <span class="price">Part Number</span>
+                                            </div>
                                     </div>
-                        </div>     
+                                <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
+                                </div>
+                        </div>           
+                    </div>  
+                </div>
+                 
+
+
+
+
+        
+                <div class="card-header p-0" id="h1.1">
+                    <h2 class="mb-0">
+                    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.2" aria-expanded="false" aria-controls="collapseOneBody1.2">
+                    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Friction, Extension Assist, Manual Lock</p>
+                    <i class="fa" aria-hidden="true"></i>
+                    </button>
+                    </h2>
+                </div>
+                    <div id="collapseOneBody1.2" class="collapse" aria-labelledby="h1.1" data-parent="#accordion">
+                        <div class="card-body py-5 px-4">
+                            <div class="menus d-md-flex">
+                                <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
+                                    <div class="text">
+                                        <div class="d-flex">
+                                            <div class="one-half">
+                                            <h3>1st Title Information</h3>
+                                            </div>
+                                                <div class="one-forth">
+                                                    <span class="price">Part Number</span>
+                                                </div>
+                                        </div>
+                                    <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
+                                    </div>
+                            </div>          
+                    </div>
+                </div>
+
+
+                <div class="card-header p-0" id="h1.1">
+                    <h2 class="mb-0">
+                    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.3" aria-expanded="false" aria-controls="collapseOneBody1.3">
+                    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Friction, Extension Assist, Stance Flexion</p>
+                    <i class="fa" aria-hidden="true"></i>
+                    </button>
+                    </h2>
+                </div>
+                    <div id="collapseOneBody1.3" class="collapse" aria-labelledby="h1.1" data-parent="#accordion">
+                        <div class="card-body py-5 px-4">
+                            <div class="menus d-md-flex">
+                                <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
+                                    <div class="text">
+                                        <div class="d-flex">
+                                            <div class="one-half">
+                                            <h3>1st Title Information</h3>
+                                            </div>
+                                                <div class="one-forth">
+                                                    <span class="price">Part Number</span>
+                                                </div>
+                                        </div>
+                                    <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
+                                    </div>
+                            </div>          
+                    </div>
+                </div>
+
+
+
+                <div class="card-header p-0" id="h1.1">
+                    <h2 class="mb-0">
+                    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.3" aria-expanded="false" aria-controls="collapseOneBody1.3">
+                    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Friction, Extension Assist, Stance Flexion, Manual Lock</p>
+                    <i class="fa" aria-hidden="true"></i>
+                    </button>
+                    </h2>
+                </div>
+                    <div id="collapseOneBody1.3" class="collapse" aria-labelledby="h1.1" data-parent="#accordion">
+                        <div class="card-body py-5 px-4">
+                            <div class="menus d-md-flex">
+                                <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
+                                    <div class="text">
+                                        <div class="d-flex">
+                                            <div class="one-half">
+                                            <h3>1st Title Information</h3>
+                                            </div>
+                                                <div class="one-forth">
+                                                    <span class="price">Part Number</span>
+                                                </div>
+                                        </div>
+                                    <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
+                                    </div>
+                            </div>          
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>  
 <!-- feet section 2.8 -->
                         <div class="card">
                             <div class="card-header p-0" id="headingEight">
@@ -1056,7 +1203,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/px-picker-main.js"></script>
+<script src="../js/px-picker-main.js"></script>
 
 </body>
 </html>

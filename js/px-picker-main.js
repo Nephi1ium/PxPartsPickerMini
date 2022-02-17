@@ -9,11 +9,39 @@ const lbk = document.getElementById("z89.512");
 const rak = document.getElementById("z89.612");
 const lak = document.getElementById("z89.611");
 
-function btnSelect (){
-    
-}
+const appOpenBut = document.querySelector("#stepOne");
+const appCloseBut = document.querySelector("#stepTwo");
 
 
+appOpenBut.addEventListener("click", () => disOpenNav());
+appCloseBut.addEventListener("click", () => appOpenNav());
+
+
+
+
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+
+
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
+// My own code! Below
+function disOpenNav (){
+    document.getElementById("stepOne").style.display = "none";
+  }
+
+  function appOpenNav (){
+    document.getElementById("stepOne").style.display = "initial";
+  }
+// My own code, above
 
 function changeStyle() {
     for (let i = 0; i < x.length; i++) {
