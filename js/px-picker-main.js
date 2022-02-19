@@ -118,6 +118,22 @@ $('#closeMod').on('click', function() {
 
 });
 
+// This JS came from W3 for the dropdown menu within a collapsable side menu
+
+const dropdown = document.getElementsByClassName("dropdown-btn");
+let i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
 
 
 /* This is the function for resetting the clicking of the two buttons to reset both sections that dissappear.
