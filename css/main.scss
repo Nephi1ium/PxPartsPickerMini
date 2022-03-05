@@ -15,6 +15,11 @@ $header-font: "Lobster", cursive;
     }
 }
         
+.form-group{
+  button {
+    font-size: 20vw;
+  }
+}
 .card {
     .card-header{
         p{
@@ -23,13 +28,12 @@ $header-font: "Lobster", cursive;
     }
 }
 
-body {
+
+
+header {
+
     color: #fbf8be;
     color:#08719e;
-    
-}
-
-.card {
     
 }
 
@@ -180,16 +184,32 @@ body {
     padding-right: 8px;
   }
   .sub-choice {
+      p{
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 5px;
+    font-size: 10px;
     color: #818181;
-    display: block;
+    display: inline-block;
     border: none;
     background: none;
     width:100%;
     text-align: left;
     cursor: pointer;
     outline: none;
+    overflow-wrap: break-word;
   }
-  
+}
+
+.img-fluid {
+    height: 75px;
+}
+
+.card-image{
+    height: 350px;
+    width: 350px;
+}
+
+.card-part{
+  display:none;
+}
+

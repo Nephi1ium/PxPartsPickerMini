@@ -12,11 +12,28 @@ const lak = document.getElementById("z89.611");
 const appOpenBut = document.querySelector("#stepOne");
 const appCloseBut = document.querySelector("#stepTwo");
 
+let cardShow = document.querySelector(".card-part");
+let cardShown = document.querySelector("#collapseOneOne")
+
 
 appOpenBut.addEventListener("click", () => disOpenNav());
 appCloseBut.addEventListener("click", () => appOpenNav());
+cardShown.addEventListener("click", () => cards1());
+//below is the code to add functionality and CSS change to the other options. I need to figure out how to show only one item per click, by likely another
+//class name or running the code by id. Though I am sure there is some other way of causing the click of a certain button to cause an action, without creating
+// a unique ID for each. 
 
+//cardShown.addEventListener("click", () => cards2());
 
+// This function to display the card when the correct button is pressed
+function cards1 () {
+document.getElementById("STG_Knee").style.cssText = "display: flex; margin-right: 25%; margin-left: 25%; padding 25px; margin 25px;" 
+}
+function cards2 () {
+    document.getElementById("Mighty_Mite").style.cssText = "display: flex; margin-right: 25%; margin-left: 25%; padding 25px; margin 25px;" 
+}
+
+// https://codepen.io/valaxin/pen/reQMXp
 
 
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
