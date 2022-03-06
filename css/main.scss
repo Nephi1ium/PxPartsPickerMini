@@ -15,11 +15,11 @@ $header-font: "Lobster", cursive;
     }
 }
         
-.form-group{
-  button {
-    font-size: 20vw;
-  }
-}
+// .form-group{
+//   button {
+//     font-size: 20vw;
+//   }
+// }
 .card {
     .card-header{
         p{
@@ -28,7 +28,16 @@ $header-font: "Lobster", cursive;
     }
 }
 
+textarea {
+  width: 90%; 
+  height: 200px;
+}
 
+// button {
+//   label {
+//     font-size: 90vw;
+//   }
+// }
 
 header {
 

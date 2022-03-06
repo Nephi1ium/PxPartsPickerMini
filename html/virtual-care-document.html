@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
     <title>Virtual Care Document</title>
@@ -43,7 +43,7 @@
             </div>
         </div>
     </header> 
-
+<form>
     <div class="container">
         <div class="row">
           <div class ="col mx-auto">
@@ -59,24 +59,44 @@
 
     <div class="container">
         <div class="row">
-          <div class ="col">
-            <form>
+          <div class ="col-sm-12">
               <div class="form-group">                
                         <label for="ptName"> Patient Name:</label>
                         <input type="text" id="ptName" name="ptName" required> 
                         <label for="dob"> Date of Birth </label>
                         <input type="date" name="dob" id="dob" required>
                 </div>
-                <div class ="col-sm-12 col-md-6">
-                    <div class="form-group" id="icd10"> 
-                        <button type="button" class="btn btn-lg btn-block"name="z89.511">Z89.511 Acquired absence of right leg below knee</button>
-                        <button type="button" class="btn btn-lg btn-block"name="z89.512">Z89.512 Acquired absence of left leg below knee</button>
-                        <button type="button" class="btn btn-lg btn-block"name="z89.612">Z89.611 Acquired absence of left leg above knee</button>
-                        <button type="button" class="btn btn-lg btn-block"name="z89.611">Z89.612 Acquired absence of right leg above knee</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class ="col">                        
+                        <button type="button" class="btn btn-lg btn-block"name="z89.511">
+                            <label for="z89.511"> Z89.511 Acquired absence of right leg below knee</label>
+                        </button>
+
+                        <button type="button" class="btn btn-lg btn-block"name="z89.512">
+                            <label for="z89.512"> Z89.512 Acquired absence of left leg below knee</label>
+                        </button>
+                    </div>
+                    <div class="col">
+                    
+                        <button type="button" class="btn btn-lg btn-block"name="z89.612">
+                            <label for="z89.612"> Z89.611 Acquired absence of left leg above knee</label>
+                        </button>
+
+                        <button type="button" class="btn btn-lg btn-block"name="z89.611">
+                        <label for="z89.611"> Z89.612 Acquired absence of right leg above knee</label>
+                        </button>
+
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <div class ="col-sm-4">
+        <div class="container">
+            <div class="row">
+                <div class ="col">
                     <div class="form-group" id="demographic"> 
                         <label for="skinCondition"> Skin Condition</label>
                             <select class="form-control" id="skinCondition">
@@ -103,8 +123,8 @@
                             <option>0</option>
                             </select>
                     </div>
-               
-
+               </div>
+               <div class ="col">
                     <div class="form-group" id="k-level"> 
                         <label for="klevel"> K-Level </label>
                             <select class="form-control" id="klevel">
@@ -132,6 +152,10 @@
                             </select>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class="col-12">
                     <div class="form-group" id="confirm">  
                         <label for="willUse">The patient does not have any comorbidities that we are aware of that will impact mobility</label>
@@ -140,23 +164,31 @@
                         <input type="radio" id="strDes">
                     </div> 
                 </div>
-
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class ="col-12">     
                     <div class="form-group" id="additional">
                         <label for="addNotes">Additional Notes:</label>
-                        <input type="textbox" id="addNotes" style="width: 90%; height: 200px;">
+                        <textarea type="textarea" id="addNotes" ></textarea>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
                 <div class ="col-12">
                     <div class="form-group" id="submit">
                         <button type="button" name="savePDF">Save as PDF</button>
                         <button type="button" name="email">Email to SPS</button>
                     </div>
                 </div>
-                </form>    
             </div>
         </div>
-    </div>
+</form>    
+
+
 
 
 
