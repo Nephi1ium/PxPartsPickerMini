@@ -1,4 +1,30 @@
-// const pdfArray = [];
+// const closeAbout = document.querySelector("#trialCollapse");
+/*const appOpenBut = document.querySelector("#stepOne");
+const appCloseBut = document.querySelector("#stepTwo");
+
+// closeAbout.addEventListener("click", () => aboutClose());
+appOpenBut.addEventListener("click", () => openNav());
+appCloseBut.addEventListener("click", () => closeNav());
+
+
+// function aboutClose () {
+//     // document.getElementsByClassName("collapse").classList.add('c1'); 
+//     document.getElementsByClassName('collapse').classList.toggle('collapse');
+//     }
+
+function openNav() {
+    document.getElementById("mySideNav").style.width = "100%";
+
+
+  }
+  
+function closeNav() {
+    document.getElementById("mySideNav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }   
+
+*/
+  // const pdfArray = [];
 
 // const x = document.getElementsByClassName("ttb");
 // const y = document.getElementsByClassName("tfb");
@@ -12,7 +38,6 @@
 
 const appOpenBut = document.querySelector("#stepOne");
 const appCloseBut = document.querySelector("#stepTwo");
-const showExtFric = document.querySelector("#fric");
 const ptName = document.querySelector("#ptName");
 const dateOfBirth = document.querySelector("#dob");
 // const rBKA = document.querySelector("#z89.511");
@@ -29,7 +54,6 @@ let cardShown = document.querySelector("#collapseOneOne")
 // Step 2 Function execution
 appOpenBut.addEventListener("click", () => openNav());
 appCloseBut.addEventListener("click", () => closeNav());
-showExtFric.addEventListener("click", () => showExtFriction());
 // cardShown.addEventListener("click", () => cards1());
 
 
@@ -55,8 +79,7 @@ function cards2 () {
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
 
 function openNav() {
-  document.getElementById("mySideNav").style.width = "25%";
-  document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySideNav").style.width = "100%";
 
 
   }
@@ -65,9 +88,7 @@ function openNav() {
     document.getElementById("mySideNav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
-  function showExtFriction() {
-    document.getElementById("fricExt").style.cssText = "display: flex; margin-right: 25%; margin-left: 25%; padding 25px; margin 25px;"
-  }
+
 
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
 // My own code! Below

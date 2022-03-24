@@ -181,17 +181,9 @@ header {
   outline: none;
   transition: 0.4s; }
 
-.sidenav .container {
-    border: 2px solid  #08719e;
-}
-
-.sidenav a {
-    color: #08719e;
-}
 .sidenav .container .card {
   background-color: #111;
-
- }
+  border: 2px solid #08719e; }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .accordion:hover {

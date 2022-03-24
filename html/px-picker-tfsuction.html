@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/horizontal_card.css">
 
 
     <title>TF Suction</title>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-sm navbar-dark"> 
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#Pickerbar">
@@ -48,564 +50,385 @@
       </div>
   </header> 
   <!-- below is the div which contains the knee section -->
-  <div id="main">
-    <button class="openbtn" id="stepOne" onclick="openNav(), disOpenNav()">☰ 1. Click Here </button> 
-  </div> 
-<div>
-  <!-- This is the sidebar that contains the accordion or collapsable that contains all of the choices -->
-  <div id="mySidebar" class="sidebar">
-      
-    <a href="javascript:void(0)" id="stepTwo" class="closebtn" onclick="closeNav()">×</a>
+
+    <button class="openbtn" id="stepOne">☰ 1. Click Here </button> 
+
+
+<div id="main">
+<div id="mySideNav" class="sidenav">
+
+    <a class="closebtn" id="stepTwo">x</a>
     <h3 id="choiceHead">  2. Choose One</h3>
+  <!-- This is the sidebar that contains the accordion or collapsable that contains all of the choices -->
 
 
 
-<!-- Below contains the code for the first dropdown, which is Headed as Knee -->
-    <button class="dropdown-btn">Knees
-        <i class="fa fa-caret-down"></i>
-      </button>
-      <!-- The below div dropdown-container contains all of the items, knees, feet, liners etc.  -->
-<div class="dropdown-container">
-
-<!-- Knees section 1.1 -->
-<!-- K1/K2 4Bar Knees -->
-
-<div class=" head-choice p-0" id="headingOne">
-    <h2 class="mb-0">
-    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-    <p class="mb-0"><span class="fa fa-circle fa-lg mr-3"></span>K1/K2 4Bar</p>
-    <i class="fa" aria-hidden="true"></i>
-    </button>
-    </h2>
-</div>
 
 
 
-    <!-- The below div holds the complete Knee Section -->
-    <div> 
-        <div id="collapseOne" class="collapse" aria-labelledby="" data-parent="#headingOne">
-
-
-            <div class="sub-choice p-0" id="h1.1">
-                <h2 class="mb-0">
-                <button class="sub-button d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" aria-expanded="false" aria-controls="collapseOneBody1.1">
-                <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Friction, Extension Assist</p>
-                <i class="fa" aria-hidden="true"></i>
-                </button>
-                </h2>
+<div class="container mt-3">
+  <div class="row">
+    <div class="col">
+<!--   <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
+<!--   If this accordion was #accordion then the data-bs-parent would cause all the items to open or close if any accordion was clicked -->
+  <div id="accordionOne"> 
+<!--    I changed it to #accordionOne so that it could still be utilized by the third layer of the accordion as the data-bs-parent  -->
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" id="theAccordion" data-bs-toggle="collapse" data-bs-parent="theAccordion" href="#collapseOne">
+          Knees
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse" data-bs-parent="#accordionOne">
+        <div class="card-body">
+        <!--     Start of the inner accordion       -->
+         
+             <div class="mt-3">
+<!--             This container holds the first set of the inner accordion k1/K2-MPK       -->
+                  
+                
+<!--          Below accordion is the data-bs-parent of the first line of inner accordion, all correct but for -*The first four* Delete if completed restructuring of code to drop the first four down a level       -->
+<!--              Enter code into the Card Body, in replacement of the fake latin text.    -->
+      <div id="accordion">
+            <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#KnNine">
+                  K1/K2
+                </a>
+              </div>
+              <div id="KnNine" class="collapse" data-bs-parent="#accordionTwo">
+                <div class="card-body">
+<!--          Start of the 4 inner categories of K1/K2 Knees          -->
+                    <div id="accordionTwo">
+                      <div class="card">
+                      <div class="card-header">
+                        <a id="fric" class="btn" data-bs-toggle="collapse" href="#KnOne">
+                          Friction, Extension Assist
+                        </a>
+                      </div>
+                      <div id="KnOne" class="collapse show" data-bs-parent="#accordionTwo">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                       </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#KnTwo">
+                        Friction, Extension Assist, Manual Lock
+                      </a>
+                      </div>
+                      <div id="KnTwo" class="collapse" data-bs-parent="#accordionTwo">
+                        <div class="card-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#KnThree">
+                          Friction, Extension Assist, Stance Flexion
+                        </a>
+                      </div>
+                      <div id="KnThree" class="collapse" data-bs-parent="#accordionTwo">
+                        <div class="card-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>        
+                      </div>
+                     </div>
+                      <div class="card">
+                      <div class="card-header">
+                        <a class="collapsed btn" data-bs-toggle="collapse" href="#KnFour">
+                          Friction, Extension Assist, Stance Flexion, Manual Lock
+                        </a>
+                      </div>
+                      <div id="KnFour" class="collapse" data-bs-parent="#accordionTwo">
+                        <div class="card-body">
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>                
+               </div>
+<!--                   End of the K1/K2 Category -->
+              </div>
+            </div>   
+<!--               Beginning of the Single Axis Category -->
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#SingleAxis">
+                Single Axis
+              </a>
+              </div>
+              <div id="SingleAxis" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+<!--                   Container for all the Single Axis Knee categories -->
+  <div id="accordionThree">
+    <div class="card">
+      <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#SnOne">
+          Manual Lock
+        </a>
+      </div>
+      <div id="SnOne" class="collapse " data-bs-parent="#accordionThree">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#SnTwo">
+          Pneumatic Swing, Friction Stance
+        </a>
+      </div>
+      <div id="SnTwo" class="collapse" data-bs-parent="#accordionThree">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#SnThree">
+          Hydraulic Stance and Swing
+        </a>
+      </div>
+      <div id="SnThree" class="collapse" data-bs-parent="#accordionThree">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+      </div>
+    </div>
+  </div>     
+<!--                   End of Single Axis Knee Category information -->
+                </div>
+              </div>
             </div>
-
-            <!-- <div id="FE1" class= "collapse" data-parent="#collapseOne">
-                <ul>
-                    <li id="FE1.1"> STG Knee 1312 (S,T)</li>
-                    <li id="FE1.2"> Mini Mite </li>
-                </ul>
-            </div> -->
-
-             <div id="subcollapseOne" class="collapse" aria-labelledby="" data-parent="#h1.1">
-
-                <div class="knee-choice p-0" id="kc1.1">
-                    <h2 class="mb-0">
-                    <button class="knee-button d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.2" aria-expanded="false" aria-controls="collapseOneBody1.2">
-                    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>STG Knee</p>
-                    <i class="fa" aria-hidden="true"></i>
-                    </button>
-                    </h2>
-                </div>   
-
-
-
-
-                   <div id="collapseOneOne" class="collapse" aria-labelledby="" data-parent="#collapseOne">
-                <div class="knee-choice p-0" id="kc1.2">
-                    <h2 class="mb-0">
-                    <button class="sub-button d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.2" aria-expanded="false" aria-controls="collapseOneBody1.2">
-                    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Friction, Extension Assist, Manual Lock</p>
-                    <i class="fa" aria-hidden="true"></i>
-                    </button>
-                    </h2>
+<!--               End of the Single Axis Category -->
+<!--               Beginning of the Safety Knees Category -->
+                <div class="card">
+              <div class="card-header">
+                <a class="btn" data-bs-toggle="collapse" href="#KnSix">
+                  Safety Knees
+                </a>
+              </div>
+              <div id="KnSix" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
-
-
-
-                <div class="sub-choice p-0" id="kc1.3">
-                    <h2 class="mb-0">
-                    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.3" aria-expanded="false" aria-controls="collapseOneBody1.3">
-                    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Friction, Extension Assist, Stance Flexion</p>
-                    <i class="fa" aria-hidden="true"></i>
-                    </button>
-                    </h2>
-                </div>
-
-                <div class="sub-choice p-0" id="h1.1">
-                    <h2 class="mb-0">
-                    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.3" aria-expanded="false" aria-controls="collapseOneBody1.3">
-                    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Friction, Extension Assist, Stance Flexion, Manual Lock</p>
-                    <i class="fa" aria-hidden="true"></i>
-                    </button>
-                    </h2>
-                </div>
+              </div>
             </div>
-        </div>
-    </div>
-        
-    <!-- End of K1/K2 4Bar Section -->
-
-
-
-    <!-- Knees section 2.2 -->
-    <!-- Single Axis Knees -->
-
-    <div class="head-choice p-0" id="headingTwo">
-    <h2 class="mb-0">
-        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        <p class="mb-0"><span class="fa fa-circle fa-lg mr-3"> </span>Single Axis</p>
-        <i class="fa" aria-hidden="true"></i>
-        </button>
-    </h2>
-    </div>
-
-        
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-
-
-    <div class="sub-choice p-0" id="h1.1">
-    <h2 class="mb-0">
-    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Manual Locking</p>
-    <i class="fa" aria-hidden="true"></i>
-    </button>
-    </h2>
-    </div>
-    <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-        <div class="card-body py-5 px-4">
-            <div class="menus d-md-flex">
-                <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                    <div class="text">
-                        <div class="d-flex">
-                            <div class="one-half">
-                            <h3>1st Title Information</h3>
-                            </div>
-                                <div class="one-forth">
-                                    <span class="price">Part Number</span>
-                                </div>
-                        </div>
-                    <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                    </div>
-            </div>           
-        </div>  
-    </div> -->
-
-
-
-    <div class="sub-choice p-0" id="h1.1">
-        <h2 class="mb-0">
-        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-        <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Pneumatic Swing, Friction Stance</p>
-        <i class="fa" aria-hidden="true"></i>
-        </button>
-        </h2>
-    </div>
-        <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-            <div class="card-body py-5 px-4">
-                <div class="menus d-md-flex">
-                    <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                <h3>1st Title Information</h3>
-                                </div>
-                                    <div class="one-forth">
-                                        <span class="price">Part Number</span>
-                                    </div>
-                            </div>
-                        <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                        </div>
-                </div>           
-            </div>  
-        </div> -->
-
-
-
-        <div class="sub-choice p-0" id="h1.1">
-            <h2 class="mb-0">
-            <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-            <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Hydraulic Stance and Swing</p>
-            <i class="fa" aria-hidden="true"></i>
-            </button>
-            </h2>
-        </div>
-            <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-                <div class="card-body py-5 px-4">
-                    <div class="menus d-md-flex">
-                        <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                    <h3>1st Title Information</h3>
-                                    </div>
-                                        <div class="one-forth">
-                                            <span class="price">Part Number</span>
-                                        </div>
-                                </div>
-                            <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                            </div>
-                    </div>           
-                </div>  
-            </div> -->
-
-
-
-    </div>
-    <!-- End of Single Axis Knees -->
-
-
-    <!-- Knees section 3.3 -->
-    <!-- Safety Knees -->
-
-    <div class="head-choice p-0" id="headingThree">
-    <h2 class="mb-0">
-        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        <p class="mb-0"><span class="fa fa-circle fa-lg mr-3"> </span>Safety</p>
-        <i class="fa" aria-hidden="true"></i>
-        </button>
-    </h2>
-    </div>
-
-
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-
-
-
-    <div class="sub-choice p-0" id="h1.1">
-    <h2 class="mb-0">
-    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Extension Assist</p>
-    <i class="fa" aria-hidden="true"></i>
-    </button>
-    </h2>
-    </div>
-    <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-        <div class="card-body py-5 px-4">
-            <div class="menus d-md-flex">
-                <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                    <div class="text">
-                        <div class="d-flex">
-                            <div class="one-half">
-                            <h3>1st Title Information</h3>
-                            </div>
-                                <div class="one-forth">
-                                    <span class="price">Part Number</span>
-                                </div>
-                        </div>
-                    <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                    </div>
-            </div>           
-        </div>  
-    </div> -->
-
-
-
-    <div class="sub-choice p-0" id="h1.1">
-    <h2 class="mb-0">
-    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Stance Flexion, Extension Assist</p>
-    <i class="fa" aria-hidden="true"></i>
-    </button>
-    </h2>
-    </div>
-    <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-        <div class="card-body py-5 px-4">
-            <div class="menus d-md-flex">
-                <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                    <div class="text">
-                        <div class="d-flex">
-                            <div class="one-half">
-                            <h3>1st Title Information</h3>
-                            </div>
-                                <div class="one-forth">
-                                    <span class="price">Part Number</span>
-                                </div>
-                        </div>
-                    <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                    </div>
-            </div>           
-        </div>  
-    </div> -->
-
-
-    </div>
-
-    <!-- End of Safety Knees -->
-
-
-    <!-- Knees section 4.4 -->
-    <!-- Polycentric Knees -->
-
-    <div class="head-choice p-0" id="headingFOur">
-    <h2 class="mb-0">
-        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-        <p class="mb-0"><span class="fa fa-circle fa-lg mr-3"> </span>Polycentric</p>
-        <i class="fa" aria-hidden="true"></i>
-        </button>
-    </h2>
-    </div>
-
-
-    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-
-    <div class="sub-choice p-0" id="h1.1">
-    <h2 class="mb-0">
-    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Hydraulic Swing</p>
-    <i class="fa" aria-hidden="true"></i>
-    </button>
-    </h2>
-    </div>
-    <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-        <div class="card-body py-5 px-4">
-            <div class="menus d-md-flex">
-                <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                    <div class="text">
-                        <div class="d-flex">
-                            <div class="one-half">
-                            <h3>1st Title Information</h3>
-                            </div>
-                                <div class="one-forth">
-                                    <span class="price">Part Number</span>
-                                </div>
-                        </div>
-                    <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                    </div>
-            </div>           
-        </div>  
-    </div> -->
-
-
-    <div class="sub-choice p-0" id="h1.1">
-        <h2 class="mb-0">
-        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-        <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Hydraulic Swing, Stance Flexion</p>
-        <i class="fa" aria-hidden="true"></i>
-        </button>
-        </h2>
-    </div>
-        <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-            <div class="card-body py-5 px-4">
-                <div class="menus d-md-flex">
-                    <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                <h3>1st Title Information</h3>
-                                </div>
-                                    <div class="one-forth">
-                                        <span class="price">Part Number</span>
-                                    </div>
-                            </div>
-                        <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                        </div>
-                </div>           
-            </div>  
-        </div> -->
-
-
-        <div class="sub-choice p-0" id="h1.1">
-            <h2 class="mb-0">
-            <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-            <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Hydraulic Swing, Stance Flexion, Extension Assist, High Activity Frame</p>
-            <i class="fa" aria-hidden="true"></i>
-            </button>
-            </h2>
-        </div>
-            <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-                <div class="card-body py-5 px-4">
-                    <div class="menus d-md-flex">
-                        <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                            <div class="text">
-                                <div class="d-flex">
-                                    <div class="one-half">
-                                    <h3>1st Title Information</h3>
-                                    </div>
-                                        <div class="one-forth">
-                                            <span class="price">Part Number</span>
-                                        </div>
-                                </div>
-                            <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                            </div>
-                    </div>           
-                </div>  
-            </div> -->
-
-
-
-    </div>
-
-    <!-- End of Polycentric Knees -->
-
-
-    <!-- Knees section 5.5 -->
-    <!-- MPK's -->
-
-    <div class="head-choice p-0" id="headingFive">
-    <h2 class="mb-0">
-        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
-        <p class="mb-0"><span class="fa fa-circle fa-lg mr-3"> </span>Microprocessor</p>
-        <i class="fa" aria-hidden="true"></i>
-        </button>
-    </h2>
-    </div>
-
-    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-
-    <div class="sub-choice p-0" id="h1.1">
-    <h2 class="mb-0">
-    <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-    <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Stance and Swing</p>
-    <i class="fa" aria-hidden="true"></i>
-    </button>
-    </h2>
-    </div>
-    <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-        <div class="card-body py-5 px-4">
-            <div class="menus d-md-flex">
-                <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                    <div class="text">
-                        <div class="d-flex">
-                            <div class="one-half">
-                            <h3>1st Title Information</h3>
-                            </div>
-                                <div class="one-forth">
-                                    <span class="price">Part Number</span>
-                                </div>
-                        </div>
-                    <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                    </div>
-            </div>           
-        </div>  
-    </div> -->
-
-    <div class="sub-choice p-0" id="h1.1">
-        <h2 class="mb-0">
-        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOneBody1.1" aria-expanded="false" aria-controls="collapseOneBody1.1">
-        <p class="mb-0"><span class="fa fa-circle fa mr-3"></span>Swing Only</p>
-        <i class="fa" aria-hidden="true"></i>
-        </button>
-        </h2>
-    </div>
-        <!-- <div id="collapseOneBody1.1" class="collapse" aria-labelledby="h1.1" data-parent="#headingOne">
-            <div class="card-body py-5 px-4">
-                <div class="menus d-md-flex">
-                    <div class="menu-img img" style="background-image:url(../images/prosthetic_logo.jpg)"></div>
-                        <div class="text">
-                            <div class="d-flex">
-                                <div class="one-half">
-                                <h3>1st Title Information</h3>
-                                </div>
-                                    <div class="one-forth">
-                                        <span class="price">Part Number</span>
-                                    </div>
-                            </div>
-                        <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-                        </div>
-                </div>           
-            </div>  
-        </div> -->
-    </div>
-
-    <!-- End of MPK's -->
-
-
-
-    <!-- Knees section 6.6 -->
-    <!-- Miscellaneous Knees -->
-
-    <div class="head-choice p-0" id="headingSix">
-    <h2 class="mb-0">
-        <button class="d-flex py-4 px-4 align-items-center justify-content-between btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-        <p class="mb-0"><span class="fa fa-circle fa-lg mr-3"> </span>Misc</p>
-        <i class="fa" aria-hidden="true"></i>
-        </button>
-    </h2>
-    </div>
-    <!-- <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion" style="">
-    <div class="card-body py-5 px-4">
-    <div class="menus d-md-flex">
-    <div class="menu-img img" style="background-image:url(images/xbreakfast-1.jpg.pagespeed.ic.gqikzjjE5l.webp)"></div>
-        <div class="text">
-            <div class="d-flex">
-                <div class="one-half">
-                    <h3>1st Title Information</h3>
+<!--               End of the safety knees category -->
+<!--               Start of the polycentric knees category -->
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#KnSeven">
+                Polycentric Knees
+              </a>
+              </div>
+              <div id="KnSeven" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
-                <div class="one-forth">
-                    <span class="price">Part Number</span>
-                </div>
+              </div>
             </div>
-            <p><span>Info</span>, <span>Info2</span>, <span>Info 3</span>, <span>Info 4</span></p>
-        </div>
-    </div>        
-    </div>
-    </div> -->
-    </div>
-    <!-- End of Miscellaneous Knees -->   
-    <!-- End of the Knees Container -->
+<!--        End of the Polycentric knees category        -->
+<!--               Start of the MPK Category -->
+            <div class="card">
+              <div class="card-header">
+                <a class="collapsed btn" data-bs-toggle="collapse" href="#KnEight">
+                  Microprocessor Knees
+                </a>
+              </div>
+              <div id="KnEight" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+              </div>
+            </div>
+<!--               End of the MPK category -->
+            <!--      End of the inner Accordion 1      -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+           </div>
+           </div>
+         </div>
+      </div>
 
 
-
-
-
-
-
-</div>
-<!-- End of the DropDown Container -->
-</div>
-<!-- End of the Sidebar Container -->
-
-<!-- Outside the Sidebar container, the cards for the knees -->
-</div>
-<section>
-<div class="container pt-2">
+<!-- K1/K2 4-Bar Knee Section -->
+<div class="container">
     <div class="row">
-        <div class="col d-flex align-left">
+        <div class="col">
+<div id="fricExt" class="horizontal">
+    <div class="gallery-wrap">  
+    <div class="item item-1 card card-part" style="width: 25rem;" id="TwoS">
+        <img class="card-img-top card-image" src="../images/stg_knee.jpg" alt="Card                 image cap">
+        <div class="card-body">
+        <img class="img-fluid rounded float-right" src="../images/BestValue.png">
+        <!-- https://www.pngfind.com/mpng/xiJoxT_check-green-check-mark-circle-hd-png-download/ -->
+        <h5 class="card-title">1312S, 1312T</h5>
+        <p class="card-text">Manufacturer: STG Knee</p>
+        <p class="card-text">L-Codes: 5611, L5850</p>
+        <p class="card-text">HD Code: 1312S NOT CHECKED </p>
+        <p class="card-text">Price: $253.53 NOT CHECKED</p>
+        <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
+        <p class="card-text">Reimbursment Percent: 15%</p>
+        <p class="card-text">PDAC Approval: Yes</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
-
-        
-
-        
-
-        <div class="card card-part" style="width: 25rem;" id="STG_Knee">
-            <img class="card-img-top card-image" src="../images/stg_knee.jpg" alt="Card image cap">
-            <div class="card-body">
-            <img class="img-fluid rounded float-right" src="../images/BestValue.png">
-            <!-- https://www.pngfind.com/mpng/xiJoxT_check-green-check-mark-circle-hd-png-download/ -->
-            <h5 class="card-title">STG Knee</h5>
-            <p class="card-text">Models: 1312S, 1312T</p>
-            <p class="card-text">L-Codes: 5611, L5850</p>
-            <p class="card-text">HD Code: 1312S NOT CHECKED </p>
-            <p class="card-text">Price: $253.53 NOT CHECKED</p>
-            <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
-            <p class="card-text">PDAC Approval: Yes</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
-
-        <div class="card card-part" style="width: 25rem;" id="Mighty_Mite">
-            <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg" alt="Card image cap">
-            <div class="card-body">
-    
-              <h5 class="card-title">Fillhauer Knee</h5>
-              <p class="card-text">Model: Mighty Mite</p>
-              <p class="card-text">L-Codes: 5611, L5850</p>
-              <p class="card-text">HD Code: FC100510 NOT CHECKED </p>
-              <p class="card-text">Price: $434.83 NOT CHECKED</p>
-              <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
-              <p class="card-text">PDAC Approval: No</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
     </div>
-  </div>
-</section>
+    
+    
+        <div class="item item-2 card card-part" style="width: 25rem;" id="Mighty_Mite">
+        <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg"                   alt="Card image cap">
+        <div class="card-body">
+    
+          <h5 class="card-title">Mighty Mite </h5>
+          <p class="card-text">Manufacturer: Fillauer Knee</p>
+          <p class="card-text">L-Codes: 5611, L5850</p>
+          <p class="card-text">HD Code: FC100510 NOT CHECKED </p>
+          <p class="card-text">Price: $434.83 NOT CHECKED</p>
+          <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
+          <p class="card-text">Reimbursment Percent: 25%</p>
+          <p class="card-text">PDAC Approval: No</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+    
+    <div class="item item-3 card card-part" style="width: 25rem;" id="Balance_Knee">
+        <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg"                   alt="Card image cap">
+        <div class="card-body">
+    
+          <h5 class="card-title">Balance Knee OM8 </h5>
+          <p class="card-text">Manufacturer: Fillauer Knee</p>
+          <p class="card-text">L-Codes: 5611, L5850</p>
+          <p class="card-text">HD Code: OM8HD NOT CHECKED </p>
+          <p class="card-text">Price: $465.08 NOT CHECKED</p>
+          <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
+          <p class="card-text">Reimbursment Percent: 27%</p>
+          <p class="card-text">PDAC Approval: No</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+    
+    <div class="item item-4 card card-part" style="width: 25rem;" id="PK_Four">
+        <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg"                   alt="Card image cap">
+        <div class="card-body">
+    
+          <h5 class="card-title">PK-400 </h5>
+          <p class="card-text">Manufacturer: Ti Medi Knee</p>
+          <p class="card-text">L-Codes: 5611, L5850</p>
+          <p class="card-text">HD Code: PK-400 KNEE NOT CHECKED </p>
+          <p class="card-text">Price: $484.16 NOT CHECKED</p>
+          <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
+          <p class="card-text">Reimbursment Percent: 28%</p>
+          <p class="card-text">PDAC Approval: No</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+    
+    <div class="item item-5 card card-part" style="width: 25rem;" id="P_Three">
+        <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg"                   alt="Card image cap">
+        <div class="card-body">
+    
+          <h5 class="card-title">P317 </h5>
+          <p class="card-text">Manufacturer: STG Knee</p>
+          <p class="card-text">L-Codes: 5611, L5850</p>
+          <p class="card-text">HD Code: P317A-KNEE NOT CHECKED </p>
+          <p class="card-text">Price: $509.13 NOT CHECKED</p>
+          <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
+          <p class="card-text">Reimbursment Percent: 29%</p>
+          <p class="card-text">PDAC Approval: No</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+    
+    <div class="item item-6 card card-part" style="width: 25rem;" id="Zero_One_Nine">
+        <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg"                   alt="Card image cap">
+        <div class="card-body">
+    
+          <h5 class="card-title"> 019245(4-Bar Knee) </h5>
+          <p class="card-text">Manufacturer: Blatchford Knee</p>
+          <p class="card-text">L-Codes: 5611, L5850, L5920</p>
+          <p class="card-text">HD Code: 019245 NOT CHECKED </p>
+          <p class="card-text">Price: $1005.71 NOT CHECKED</p>
+          <p class="card-text">Reimbursal: $2265.11 NOT CHECKED</p>
+          <p class="card-text">Reimbursment Percent: 44%</p>
+          <p class="card-text">PDAC Approval: No</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+    
+    <div class="item item-7 card card-part" style="width: 25rem;" id="Three_R_Three_Six">
+        <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg"                   alt="Card image cap">
+        <div class="card-body">
+    
+          <h5 class="card-title">3R36 Modular Polycentric </h5>
+          <p class="card-text">Manufacturer: Otto Bock</p>
+          <p class="card-text">L-Codes: 5611, L5850</p>
+          <p class="card-text">HD Code: 3R36 NOT CHECKED </p>
+          <p class="card-text">Price: $875.78 NOT CHECKED</p>
+          <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
+          <p class="card-text">Reimbursment Percent: 50%</p>
+          <p class="card-text">PDAC Approval: No</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+    
+    <div class="item item-8 card card-part" style="width: 25rem;" id="Three_R_Three">
+        <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg"                   alt="Card image cap">
+        <div class="card-body">
+    
+          <h5 class="card-title">3R30 </h5>
+          <p class="card-text">Manufacturer: Otto Bock</p>
+          <p class="card-text">L-Codes: 5611, L5850</p>
+          <p class="card-text">HD Code: P317A-KNEE NOT CHECKED </p>
+          <p class="card-text">Price: $1009.19 NOT CHECKED</p>
+          <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
+          <p class="card-text">Reimbursment Percent: 58%</p>
+          <p class="card-text">PDAC Approval: No</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+    
+    <div class="item item-9 card card-part" style="width: 25rem;" id="Three_R_Three">
+        <img class="card-img-top card-image" src="../images/fc100510_image_1.jpg"                   alt="Card image cap">
+        <div class="card-body">
+    
+          <h5 class="card-title">3R30 </h5>
+          <p class="card-text">Manufacturer: Otto Bock</p>
+          <p class="card-text">L-Codes: 5611, L5850</p>
+          <p class="card-text">HD Code: P317A-KNEE NOT CHECKED </p>
+          <p class="card-text">Price: $1009.19 NOT CHECKED</p>
+          <p class="card-text">Reimbursal: $1735.59 NOT CHECKED</p>
+          <p class="card-text">Reimbursment Percent: 58%</p>
+          <p class="card-text">PDAC Approval: No</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    
+        </div> 
+    </div>
+</div>
+</div>
+</div>
+
+
+
+
 
 
 
@@ -637,6 +460,7 @@
 
 
 </footer>
+</div>
 
 
 
@@ -689,8 +513,8 @@
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="../js/px-picker-main.js"></script>
 
 </body>

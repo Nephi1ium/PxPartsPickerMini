@@ -39,7 +39,7 @@ header {
   max-width: 50%;
   height: auto; }
 
-.sidebar {
+.sidenav {
   height: 100%;
   width: 0;
   position: fixed;
@@ -51,23 +51,33 @@ header {
   transition: 0.5s;
   padding-top: 60px; }
 
-.sidebar a {
-  padding: 8px 8px 8px 32px;
+.sidenav button {
+  padding: 8px;
   text-decoration: none;
   font-size: 25px;
   color: #818181;
   display: block;
-  transition: 0.3s; }
+  transition: 0.3s;
+  text-align: center; }
 
-.sidebar a:hover {
+.sidenav a:hover {
   color: #f1f1f1; }
 
-.sidebar .closebtn {
+.sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
-  margin-left: 50px; }
+  margin-left: 25px;
+  color: #d1caca;
+  padding: 10px;
+  font-size: 100%;
+  display: block;
+  border: 5px;
+  text-align: center;
+  cursor: pointer; }
+
+.closebtn:hover {
+  background-color: #08719e; }
 
 .openbtn {
   font-size: 20px;
@@ -78,7 +88,7 @@ header {
   border: none; }
 
 .openbtn:hover {
-  background-color: #444; }
+  background-color: #08719e; }
 
 #main {
   transition: margin-left .5s;
@@ -86,9 +96,9 @@ header {
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidebar {
+  .sidenav {
     padding-top: 15px; }
-  .sidebar a {
+  .sidenav a {
     font-size: 18px; } }
 
 #choiceHead {
@@ -98,7 +108,7 @@ header {
 
 .sidenav {
   height: 100%;
-  width: 200px;
+  width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -108,19 +118,6 @@ header {
   padding-top: 20px; }
 
 /* Style the sidenav links and the dropdown button */
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 30px;
-  color: #818181;
-  display: block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none; }
-
 /* On mouse-over */
 .sidenav a:hover, .dropdown-btn:hover {
   color: #08719e; }
@@ -145,8 +142,9 @@ header {
   float: right;
   padding-right: 8px; }
 
-.sub-choice p {
+.sub-choice {
   padding: 6px 8px 6px 16px;
+  margin: 2px;
   text-decoration: none;
   font-size: 10px;
   color: #818181;
@@ -157,7 +155,9 @@ header {
   text-align: left;
   cursor: pointer;
   outline: none;
-  overflow-wrap: break-word; }
+  overflow-wrap: break-word;
+  display: none;
+  text-align: center; }
 
 .img-fluid {
   height: 75px; }
@@ -168,3 +168,35 @@ header {
 
 .card-part {
   display: none; }
+
+.accordion {
+  background-color: #eee;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s; }
+
+.sidenav .container {
+  border: 2px solid  #08719e; }
+
+.sidenav a {
+  color: #08719e; }
+
+.sidenav .container .card {
+  background-color: #111; }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc; }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden; }
