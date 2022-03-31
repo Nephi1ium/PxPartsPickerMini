@@ -1,14 +1,53 @@
   #fricExt{
-  display: none;
+display: none;
   }
   
-  .container{
-    padding: 75px 0;
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+  .cardcontainer{
+    padding: 10% 0;
     margin: 0 auto;
-    width: 1140px;
+    width: 100%;
   }
   
+  .card-text {
+    display: none;
+  }
+  .card-title {
+    font-size: medium;
+    align-items: center;
+
+  }
+
+  .item {
+    a {
+      display: none;
+    }
+  }
+
+  .item:hover .card-text {
+    display: flex;
+    background-position: center;
+  }
+
+  .item:hover .card-img-top {
+    width: 25%;
+    height: fit-content;
+  }
+
+  // .item:hover .card-title {
+  //   display: flex;
+  // }
+
+  .item:hover a {
+    display: flex;
+    text-align: center;
+  }
   
+
   .gallery-wrap {
     display: flex;
     flex-direction: row;
@@ -16,19 +55,32 @@
     height: 70vh;
   }
   
+  @media (max-width: 632px) {
+    .gallery-wrap {
+      flex-direction: column;
+    }
+  }
   .item {
     flex: 1;
     height: 100%;
+    width: 10%;
     background-position: center;
     background-size: cover;
     background-repeat: none;
     transition: flex 0.8s ease;
+    overflow:hidden;
+    background-color: #08719e;
     
     &:hover{
-      flex: 7;
+      flex: 30;
       background-image: none;
+      text-align: center;
+      background-color: rgb(249, 252, 214);
     }
+
   }
+
+
   
   .social{
     position: absolute;
@@ -43,41 +95,41 @@
   
   
   
-  .item-1 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-1 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
   
-  .item-2 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-2 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
   
-  .item-3 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-3 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
   
-  .item-4 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-4 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
   
-  .item-5 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-5 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
 
-  .item-6 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-6 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
 
-  .item-7 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-7 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
 
-  .item-8 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-8 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
 
-  .item-9 { 
-    background-image: url("../images/fc100510_image_1.jpg");
-  }
+  // .item-9 { 
+  //   background-image: url("../images/fc100510_image_1.jpg");
+  // }
   
   .social{
     position: absolute;
@@ -88,4 +140,8 @@
       display: block;
       width: 32px;
     }
+  }
+
+  .item:hover img {
+    size: 15%;
   }

@@ -30,6 +30,7 @@ let cardShown = document.querySelector("#collapseOneOne")
 appOpenBut.addEventListener("click", () => openNav());
 appCloseBut.addEventListener("click", () => closeNav());
 showExtFric.addEventListener("click", () => showExtFriction());
+// showExtFric.addEventListener("mouseover", () => hoverShowFricExt())
 // cardShown.addEventListener("click", () => cards1());
 
 
@@ -55,9 +56,7 @@ function cards2 () {
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
 
 function openNav() {
-  document.getElementById("mySideNav").style.width = "25%";
-  document.getElementById("main").style.marginLeft = "250px";
-
+  document.getElementById("mySideNav").style.width = "100%";
 
   }
   
@@ -66,8 +65,12 @@ function openNav() {
     document.getElementById("main").style.marginLeft= "0";
   }
   function showExtFriction() {
-    document.getElementById("fricExt").style.cssText = "display: flex; margin-right: 25%; margin-left: 25%; padding 25px; margin 25px;"
+    console.log("Show Card");
+    document.getElementById("fricExt").style.cssText = "display: flex; padding: 25px; margin: 25px;"
   }
+//   function hoverShowFricExt(){
+//     document.getElementById("fricExt").style.cssText = "display: flex;"
+//   }
 
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
 // My own code! Below

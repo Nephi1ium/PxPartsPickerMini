@@ -18,8 +18,16 @@ header {
   color: #fbf8be;
   color: #08719e; }
 
+  h1 {
+    margin: 20px;
+  }
+
+  .img-thumbnail{
+    margin: 20px;
+  }
+
 .card-outside {
-  height: 600px;
+  height: auto;
   display: inline-block;
   position: relative; }
 
@@ -85,7 +93,9 @@ header {
   background-color: #111;
   color: white;
   padding: 10px 15px;
-  border: none; }
+  border: none;
+  margin: 30px;
+}
 
 .openbtn:hover {
   background-color: #08719e; }
@@ -166,8 +176,6 @@ header {
   height: 350px;
   width: 350px; }
 
-.card-part {
-  display: none; }
 
 .accordion {
   background-color: #eee;
@@ -175,14 +183,17 @@ header {
   background-color: black;
   cursor: pointer;
   padding: 18px;
+  margin: 20px;
   width: 100%;
-  text-align: left;
+
   border: none;
   outline: none;
   transition: 0.4s; }
 
 .sidenav .container {
     border: 2px solid  #08719e;
+    width: 100%;
+    display: flex;
 }
 
 .sidenav a {
@@ -194,12 +205,12 @@ header {
  }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc; }
+.active {
+  background-color: #08719e;; }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
+  padding: 18px;
   background-color: white;
   display: none;
   overflow: hidden; }
