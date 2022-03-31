@@ -2,11 +2,6 @@
   width: 100%;
   max-width: 200px; }
 
-.col-sm-12 .card {
-  width: 300;
-  padding: 5px;
-  margin: 5px; }
-
 .card .card-header p {
   color: #08719e; }
 
@@ -23,11 +18,6 @@ h1 {
 
 .img-thumbnail {
   margin: 20px; }
-
-.card-outside {
-  height: auto;
-  display: inline-block;
-  position: relative; }
 
 .img-responsive {
   display: block;

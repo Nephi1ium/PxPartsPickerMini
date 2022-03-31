@@ -18,6 +18,9 @@
   font-size: medium;
   align-items: center; }
 
+.card-body {
+  padding: 0; }
+
 .item a {
   display: none; }
 
