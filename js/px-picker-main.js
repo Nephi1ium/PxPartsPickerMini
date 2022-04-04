@@ -13,6 +13,7 @@
 const appOpenBut = document.querySelector("#stepOne");
 const appCloseBut = document.querySelector("#stepTwo");
 const showExtFric = document.querySelector("#fric");
+const showExtFricMan = document.querySelector("#fricMan");
 const ptName = document.querySelector("#ptName");
 const dateOfBirth = document.querySelector("#dob");
 // const rBKA = document.querySelector("#z89.511");
@@ -30,6 +31,7 @@ let cardShown = document.querySelector("#collapseOneOne")
 appOpenBut.addEventListener("click", () => openNav());
 appCloseBut.addEventListener("click", () => closeNav());
 showExtFric.addEventListener("click", () => showExtFriction());
+showExtFricMan.addEventListener("click", () => showExtFricManChoice());
 // showExtFric.addEventListener("mouseover", () => hoverShowFricExt())
 // cardShown.addEventListener("click", () => cards1());
 
@@ -67,6 +69,10 @@ function openNav() {
   function showExtFriction() {
     console.log("Show Card");
     document.getElementById("fricExt").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+  }
+  function showExtFricManChoice() {
+    console.log("Show Card Frix Ext Man Lock");
+    document.getElementById("fricExtMan").style.cssText = "display: flex; padding: 25px; margin: 25px;"
   }
 //   function hoverShowFricExt(){
 //     document.getElementById("fricExt").style.cssText = "display: flex;"
