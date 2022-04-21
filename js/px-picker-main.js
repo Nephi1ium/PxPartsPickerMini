@@ -16,6 +16,7 @@ const showExtFric = document.querySelector("#fric");
 const showExtFricMan = document.querySelector("#fricMan");
 const ptName = document.querySelector("#ptName");
 const dateOfBirth = document.querySelector("#dob");
+const resetPage = document.querySelector("#resPage");
 // const rBKA = document.querySelector("#z89.511");
 // const lBKA = document.querySelector("#z89.512");
 // const lAKA = document.querySelector("#z89.612");
@@ -32,6 +33,7 @@ appOpenBut.addEventListener("click", () => openNav());
 appCloseBut.addEventListener("click", () => closeNav());
 showExtFric.addEventListener("click", () => showExtFriction());
 showExtFricMan.addEventListener("click", () => showExtFricManChoice());
+resetPage.addEventListener("click", () => resetEntirePage());
 // showExtFric.addEventListener("mouseover", () => hoverShowFricExt())
 // cardShown.addEventListener("click", () => cards1());
 
@@ -69,11 +71,35 @@ function openNav() {
   function showExtFriction() {
     console.log("Show Card");
     document.getElementById("fricExt").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex; font-size: 20px; cursor: pointer; background-color: #111; color: white; padding: 10px; border: none; margin: 5px;"
   }
   function showExtFricManChoice() {
     console.log("Show Card Frix Ext Man Lock");
     document.getElementById("fricExtMan").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+
   }
+  function resetEntirePage(){
+    window.location.reload();
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //   function hoverShowFricExt(){
 //     document.getElementById("fricExt").style.cssText = "display: flex;"
 //   }

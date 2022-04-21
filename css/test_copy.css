@@ -2,6 +2,11 @@
   width: 100%;
   max-width: 200px; }
 
+.col-sm-12 .card {
+  width: 300;
+  padding: 5px;
+  margin: 5px; }
+
 .card .card-header p {
   color: #08719e; }
 
@@ -13,11 +18,10 @@ header {
   color: #fbf8be;
   color: #08719e; }
 
-h1 {
-  margin: 20px; }
-
-.img-thumbnail {
-  margin: 20px; }
+.card-outside {
+  height: 600px;
+  display: inline-block;
+  position: relative; }
 
 .img-responsive {
   display: block;
@@ -80,9 +84,8 @@ h1 {
   cursor: pointer;
   background-color: #111;
   color: white;
-  padding: 10px;
-  border: none;
-  margin: 5px; }
+  padding: 10px 15px;
+  border: none; }
 
 .openbtn:hover {
   background-color: #08719e; }
@@ -160,8 +163,11 @@ h1 {
   height: 75px; }
 
 .card-image {
-  height: 350px;
-  width: 350px; }
+  height: auto;
+  width: aut0; }
+
+.card-part {
+  display: none; }
 
 .accordion {
   background-color: #eee;
@@ -169,39 +175,35 @@ h1 {
   background-color: black;
   cursor: pointer;
   padding: 18px;
-  margin: 20px;
   width: 100%;
+  text-align: left;
   border: none;
   outline: none;
   transition: 0.4s; }
 
-.sidenav .container {
-  border: 2px solid  #08719e;
-  width: 100%;
-  display: flex; }
-
-.sidenav a {
-  color: #08719e; }
-
 .sidenav .container .card {
-  background-color: #111; }
+  background-color: #111;
+  border: 2px solid #08719e; }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active {
-  background-color: #08719e; }
+.active, .accordion:hover {
+  background-color: #ccc; }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 18px;
+  padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden; }
 
-  #resPage {
-    display: none;
-  }
 
-  @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+
+/* Below is the code for the card in the test portion */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
 
 html,
 body {
