@@ -2,6 +2,23 @@
   width: 100%;
   max-width: 200px; }
 
+  .sidenav div {
+    width: 100%;
+}
+
+.sidenav div a {
+  width: 100%;
+  font-size: 3vw;
+}
+
+  #stepTwo {
+    color: #08719e;
+    font-size: 2em;
+  }
+  #stepTwo:hover {
+    background-color: #08719e;
+  color: black; }
+
 #resPage {
     display: none;
   }
@@ -78,7 +95,8 @@ header {
   cursor: pointer; }
 
 .closebtn:hover {
-  background-color: #08719e; }
+  background-color: #08719e;
+color: black; }
 
 .openbtn {
   font-size: 20px;
