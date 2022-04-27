@@ -17,6 +17,9 @@ const showExtFricMan = document.querySelector("#fricMan");
 const showFricExtStan = document.querySelector("#fricExtStan");
 const showFricExtStanLock = document.querySelector("#fricExtStanLock");
 const showSingAxManLock = document.querySelector("#singAxManLock");
+const showSingAxPneuFric = document.querySelector("#singAxPneuFric");
+const showSingAxHydStanSwin = document.querySelector("#singAxHydStanSwin");
+
 
 
 
@@ -35,6 +38,7 @@ let cardShow = document.querySelector(".card-part");
 let cardShown = document.querySelector("#collapseOneOne")
 
 // Step 2 Function execution
+resetPage.addEventListener("click", () => resetEntirePage());
 appOpenBut.addEventListener("click", () => openNav());
 appCloseBut.addEventListener("click", () => closeNav());
 showExtFric.addEventListener("click", () => showExtFriction());
@@ -42,32 +46,14 @@ showExtFricMan.addEventListener("click", () => showExtFricManChoice());
 showFricExtStan.addEventListener("click", () => showFricExtStanChoice());
 showFricExtStanLock.addEventListener("click", () => showFricExtStanLockChoice());
 showSingAxManLock.addEventListener("click", () => showSingAxManLockChoice());
+showSingAxPneuFric.addEventListener("click", () => showSingAxPneuFricChoice());
+showSingAxHydStanSwin.addEventListener("click", () => showSingAxHydStanSwinChoice());
 
-resetPage.addEventListener("click", () => resetEntirePage());
-// showExtFric.addEventListener("mouseover", () => hoverShowFricExt())
-// cardShown.addEventListener("click", () => cards1());
+ 
 
-
-
-
-//below is the code to add functionality and CSS change to the other options. I need to figure out how to show only one item per click, by likely another
-//class name or running the code by id. Though I am sure there is some other way of causing the click of a certain button to cause an action, without creating
-// a unique ID for each. 
-
-//cardShown.addEventListener("click", () => cards2());
-
-// This function to display the card when the correct button is pressed
-function cards1 () {
-document.getElementById("STG_Knee").style.cssText = "display: flex; margin-right: 25%; margin-left: 25%; padding 25px; margin 25px;" 
-}
-function cards2 () {
-    document.getElementById("Mighty_Mite").style.cssText = "display: flex; margin-right: 25%; margin-left: 25%; padding 25px; margin 25px;" 
-}
-
-// https://codepen.io/valaxin/pen/reQMXp
-
-
-//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
+function resetEntirePage(){
+    window.location.reload();
+  }
 
 function openNav() {
   document.getElementById("mySideNav").style.width = "100%";
@@ -81,7 +67,7 @@ function openNav() {
   function showExtFriction() {
     console.log("Show Card");
     document.getElementById("fricExt").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex; font-size: 20px; cursor: pointer; background-color: #111; color: white; padding: 10px; border: none; margin: 5px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
   }
   function showExtFricManChoice() {
     console.log("Show Card Frix Ext Man Lock");
@@ -101,12 +87,18 @@ function openNav() {
     document.getElementById("singAxManLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
     document.getElementById("resPage").style.cssText = "display: flex;"
   }
-  
-  
-  function resetEntirePage(){
-    window.location.reload();
+  function showSingAxPneuFricChoice() {
+    document.getElementById("singAxPneuFricChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
   }
+  function showSingAxHydStanSwinChoice() {
+    document.getElementById("singAxHydStanSwinChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  
+  
 
+  
 
 
 

@@ -1,25 +1,34 @@
-#fricExt{
-display: none;
-}
+#fricExt {
+  display: none; }
 
-#fricExtMan{
-  display: none;
-}
+  #fricExtMan{
+    display: none;
+  }
+  #fricExtStanChoi{
+    display: none;
+  }
 
-#fricExtStanChoi{
-  display: none;
-}
+  #fricExtStanLockChoi{
+    display: none;
+  }
+
+  #singAxManLockChoi{
+    display: none;
+  }
+
+  #singAxPneuFricChoi{
+    display: none;
+  }
   
   .card-img-top {
     width: 100%;
     height: auto;
     align-items: center;
   }
-  .cardcontainer{
-    padding: 10% 0;
+  .cardcontainer {
+    padding: 2% 0;
     margin: 0 auto;
-    width: 100%;
-  }
+    width: 100%; }
   
   .card-title {
     font-size: medium;

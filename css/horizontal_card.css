@@ -16,6 +16,13 @@
     display: none;
   }
 
+  #singAxPneuFricChoi{
+    display: none;
+  }
+  #singAxHydStanSwinChoi{
+    display: none;
+  }
+  
  
 
 .card-img-top {
@@ -24,7 +31,7 @@
   align-items: center; }
 
 .cardcontainer {
-  padding: 10% 0;
+  padding: 2% 0;
   margin: 0 auto;
   width: 100%; }
 
