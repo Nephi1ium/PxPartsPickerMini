@@ -19,6 +19,7 @@ const showFricExtStanLock = document.querySelector("#fricExtStanLock");
 const showSingAxManLock = document.querySelector("#singAxManLock");
 const showSingAxPneuFric = document.querySelector("#singAxPneuFric");
 const showSingAxHydStanSwin = document.querySelector("#singAxHydStanSwin");
+const showSafeExt = document.querySelector("#safeExt");
 
 
 
@@ -26,11 +27,6 @@ const showSingAxHydStanSwin = document.querySelector("#singAxHydStanSwin");
 const ptName = document.querySelector("#ptName");
 const dateOfBirth = document.querySelector("#dob");
 const resetPage = document.querySelector("#resPage");
-// const rBKA = document.querySelector("#z89.511");
-// const lBKA = document.querySelector("#z89.512");
-// const lAKA = document.querySelector("#z89.612");
-// const rAKA = document.querySelector("#z89.611");
-// const pdf = document.querySelector()
 const skinCond = document.querySelector("#skinCondition option:checked");
 
 
@@ -48,8 +44,9 @@ showFricExtStanLock.addEventListener("click", () => showFricExtStanLockChoice())
 showSingAxManLock.addEventListener("click", () => showSingAxManLockChoice());
 showSingAxPneuFric.addEventListener("click", () => showSingAxPneuFricChoice());
 showSingAxHydStanSwin.addEventListener("click", () => showSingAxHydStanSwinChoice());
+showSafeExt.addEventListener("click", () => showSafeExtChoice());
 
- 
+
 
 function resetEntirePage(){
     window.location.reload();
@@ -95,9 +92,13 @@ function openNav() {
     document.getElementById("singAxHydStanSwinChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
     document.getElementById("resPage").style.cssText = "display: flex;"
   }
+  function showSafeExtChoice() {
+    document.getElementById("safeExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
   
   
-
+  
   
 
 
