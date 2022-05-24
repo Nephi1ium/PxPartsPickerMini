@@ -122,7 +122,7 @@
     width: 760px;
     max-height: 700px;
     height: auto;
-    margin-top: 10px;
+    margin-top: 60px;
     padding: 0;
     border: none;
     /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
@@ -136,7 +136,11 @@
     grid-template-rows: auto;
     grid-template-areas: 
     "item2 item1 item1 item3"
-    "item2 item5 item6 item3"
+    "item2 . . item3"
     "item4 item5 item6 item7"
 ;
+}
+
+.btn {
+    margin: 15px;
 }
