@@ -1,152 +1,86 @@
 let infoArr = [];
-
+let modalPCC = [];
 
 // Step 1 Query Selectors
 
-const appOpenBut = document.querySelector("#stepOne");
-const appCloseBut = document.querySelector("#stepTwo");
-const showExtFric = document.querySelector("#fric");
-const showExtFricMan = document.querySelector("#fricMan");
-const showFricExtStan = document.querySelector("#fricExtStan");
-const showFricExtStanLock = document.querySelector("#fricExtStanLock");
-const showSingAxManLock = document.querySelector("#singAxManLock");
-const showSingAxPneuFric = document.querySelector("#singAxPneuFric");
-const showSingAxHydStanSwin = document.querySelector("#singAxHydStanSwin");
-const showSafeExt = document.querySelector("#safeExt");
-const showSafeFlexExt = document.querySelector("#safeFlexExt");
-const showPolyHydrau = document.querySelector("#polyHydrau");
-const showPolyHydrauStan = document.querySelector("#polyHydrauStan");
-const showPolyPneu = document.querySelector("#polyPneu");
+// This is the function to add all of the first page data to an array for later use on the PDF form. 
+// The data from the above array can also be accessed in order to add the data to later pages
+const submitFirstPage = document.querySelector("#subFirstPage");
+const modButSel = document.querySelector("#modBut");
 
 
-// const storeClinName = document.querySelector("#clinName");
-// const submitFirstPage = document.querySelector("#subFirstPage");
-const saveFirstPage = document.querySelector("#subFirstPage");
 
 
-console.log("This is working");
-
-
-const ptName = document.querySelector("#ptName");
-const dateOfBirth = document.querySelector("#dob");
 const resetPage = document.querySelector("#resPage");
 const skinCond = document.querySelector("#skinCondition option:checked");
-
 
 let cardShow = document.querySelector(".card-part");
 let cardShown = document.querySelector("#collapseOneOne");
 
 // Step 2 Function execution
-resetPage.addEventListener("click", () => resetEntirePage());
-appOpenBut.addEventListener("click", () => openNav());
-appCloseBut.addEventListener("click", () => closeNav());
-showExtFric.addEventListener("click", () => showExtFriction());
-showExtFricMan.addEventListener("click", () => showExtFricManChoice());
-showFricExtStan.addEventListener("click", () => showFricExtStanChoice());
-showFricExtStanLock.addEventListener("click", () => showFricExtStanLockChoice());
-showSingAxManLock.addEventListener("click", () => showSingAxManLockChoice());
-showSingAxPneuFric.addEventListener("click", () => showSingAxPneuFricChoice());
-showSingAxHydStanSwin.addEventListener("click", () => showSingAxHydStanSwinChoice());
-showSafeExt.addEventListener("click", () => showSafeExtChoice());
-showSafeFlexExt.addEventListener("click", () => showSafeFlexExtChoice());
-showPolyHydrau.addEventListener("click", () => showPolyHydrauChoice());
-showPolyHydrauStan.addEventListener("click", () => showPolyHydrauStanChoice());
-showPolyPneu.addEventListener("click", () => showPolyPneuChoice());
-
 
 // Below is the code for user input, from Home page, stored in the browser, and added to Virtual Care document
-// storeClinName.addEventListener("keyup", () => storeClinicianName());
-// submitFirstPage.addEventListener("click", () => storeFirstPageInformation());
-saveFirstPage.addEventListener("click", () => saveFirstPageInfo());
+submitFirstPage.addEventListener("click", () => storeFirstPageInformation());
+modButSel.addEventListener("click", () => storeModalPCC());
 
+function storeModalPCC(){
+    modalPCC = [];
+    let pccDiff = document.getElementById("modClinLoc").value;
 
+    modalPCC[modalPCC.length]=pccDiff;
 
-
-
-
-
-function resetEntirePage(){
-    window.location.reload();
-  }
-
-function openNav() {
-  document.getElementById("mySideNav").style.width = "100%";
-
-  }
-  
-  function closeNav() {
-    document.getElementById("mySideNav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }
-  function showExtFriction() {
-    console.log("Show Card");
-    document.getElementById("fricExt").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showExtFricManChoice() {
-    console.log("Show Card Frix Ext Man Lock");
-    document.getElementById("fricExtMan").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-
-  }
-  function showFricExtStanChoice() {
-    document.getElementById("fricExtStanChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showFricExtStanLockChoice() {
-    document.getElementById("fricExtStanLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSingAxManLockChoice() {
-    document.getElementById("singAxManLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSingAxPneuFricChoice() {
-    document.getElementById("singAxPneuFricChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSingAxHydStanSwinChoice() {
-    document.getElementById("singAxHydStanSwinChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSafeExtChoice() {
-    document.getElementById("safeExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSafeFlexExtChoice() {
-    document.getElementById("safeFlexExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showPolyHydrauChoice() {
-    document.getElementById("polyHydrauChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showPolyHydrauStanChoice() {
-    document.getElementById("polyHydrauStanChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showPolyPneuChoice() {
-    document.getElementById("polyPneuChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  
-// function storeFirstPageInformation(){
-// // let clinicianName = document.getElementById("clinName").value;
-// // let clinicLocation = document.getElementById("clinLoc").value;
-
-
-// // infoArr[infoArr.length]=clinicianName;
-// // infoArr[infoArr.length]=clinicLocation;
-// console.log("The function works, but not the acitons")
-// return console.log(infoArr);
-
-// }
-
-function saveFirstPageInfo(){
-    console.log("This one worked though")
+    return console.log(modalPCC);
 }
+
+function storeFirstPageInformation(){
+infoArr = [];
+
+let clinicianName = document.getElementById("clinName").value;
+let clinicLocation = document.getElementById("clinLoc").value;
+let patientName = document.getElementById("ptName").value;
+let dateOfBirth = document.getElementById("ptDOB").value;
+let encounterNumber = document.getElementById("encN").value;
+let kOne = document.getElementById("kOne").value;
+let kTwo = document.getElementById("kTwo").value;
+let kThree = document.getElementById("kThree").value;
+let kFour = document.getElementById("kFour").value;
+let patientWeight = document.getElementById("ptWeight").value;
+let patientHeight = document.getElementById("ptHeight").value;
+
+
+infoArr[infoArr.length]=clinicianName;
+infoArr[infoArr.length]=clinicLocation;
+infoArr[infoArr.length]=patientName;
+infoArr[infoArr.length]=dateOfBirth;
+infoArr[infoArr.length]=encounterNumber;
+infoArr[infoArr.length]=kOne;
+infoArr[infoArr.length]=kTwo;
+infoArr[infoArr.length]=kThree;
+infoArr[infoArr.length]=kFour;
+infoArr[infoArr.length]=patientWeight;
+infoArr[infoArr.length]=patientHeight;
+
+// Need to add a function to save the array locally
+console.log("The function works!")
+ console.log(infoArr);
+ localStorage.infoArr = JSON.stringify(infoArr);
+ return getLocalStoreData()
+
+ }
+
+// function saveFirstPageInfo(){
+//     console.log("This one worked though")
+// }
   
 
+function getLocalStoreData(){
+    let firstArray = JSON.parse(localStorage.infoArr)
+    console.log(firstArray);
+}
+
+function generatePDF(){
+    
+}
 
 
 
@@ -631,4 +565,4 @@ function userInput (identify){
 /* The below is one way to use a jquery function
 $(function(){
     $('h1').css('color', 'red')
-}); */  
+}); */

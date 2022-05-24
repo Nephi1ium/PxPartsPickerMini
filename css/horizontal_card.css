@@ -26,7 +26,23 @@
     display: none;
   }
   
+  #safeFlexExtChoi {
+    display: none;
+  }
 
+  #polyHydrauChoi {
+    display: none;
+  }
+  
+  #polyHydrauStanChoi {
+    display: none;
+  }
+  #polyPneuChoi {
+    display: none;
+  }
+
+  
+  
 .card-img-top {
   width: 100%;
   height: auto;

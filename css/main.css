@@ -105,6 +105,11 @@ color: #08719e;  }
   margin: 5px; 
   border-radius: 10px;}
 
+  .btn-right {
+    align-items: center;
+    color: #08719e;
+    float: right;
+  }
 .openbtn:hover {
   background-color: #08719e; }
 

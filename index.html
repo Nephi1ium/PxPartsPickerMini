@@ -78,12 +78,12 @@
    
 
     
-    <div class="container p-5">
+    <div class="container p-3">
         <div class="row">
             <div class="col pt-3">
                 <h2>Step 1: Enter Your Information</h2>
             </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mx-auto">
+            <div class="col-sm-12 col-md-6 mx-auto">
                 <form class="">
                     <div class="form-group">
                         <label for="clinName">Your Name:</label>
@@ -100,49 +100,20 @@
                                 <a role="button" class="btn-secondary btn btn info" data-target="#pccModal" data-toggle="modal">Yes</a>
                                 <a role="button" class="btn-secondary btn btn info" data-target="#nopccModal" data-toggle="modal">No</a> <!--This button needs a value added that will cause a field to auto fill in the PDF with the same value entered in the #clinLoc field-->
                             </div>
-                            <div class="col-12">
-                                <div id="pccModal" class="modal fade" role="dialog">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header bg-info text-white">
-                                                <h3 class="modal-title">Ship to PCC Number</h3>
-                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="container-fluid">
-                                                    <form>
-                                                        <div class="row form-group">
-                                                            <label for="numCampers" class="col-sm-6 col-form-label">Ship to PCC Number</label>
-                                                                <div class="col-sm-6 mx-auto">
-                                                                    <label for="clinLoc"></label>
-                                                                    <input type="text"  id="clinLoc" class="form-control">
-                                                                </div>
-                                                                <div class="row form-group">
-                                                                    <div class="col">
-                                                                        <button type="submit"  class="btn btn-primary">Submit</button>
-                                                                        <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
-                                                                    </div>
-                                                            </div>
-                                                        </form>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                     </fieldset>
                 </form>
             </div>
         </div>
     </div>
-    
-    <div class="container p-5">
+
+
+    <div class="container p-3">
         <div class="row">
             <div class="col pt-3">
                 <h2>Step 2: Enter Your Patients Information</h2>
             </div>
-            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mx-auto">
+            <div class="col-sm-12 col-md-6 mx-auto">
                 <form>
                     <div class="form-group">
                         <label for="ptName">Patients Name:</label>
@@ -154,37 +125,48 @@
                     </div>          
                     <div class="form-group">
                         <label for="encN">Encounter Number</label>
-                        <input type="text"  id="encN" class="form-control" required>
+                        <input type="text"  id="encN" class="form-control">
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="kLevel" type="radio" id="k1" value="option1">
+                        <input class="form-check-input" name="kLevel" type="radio" id="kOne" value="K1">
                         <label class="form-check-label" for="k1">K1</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="kLevel" type="radio" id="k2" value="option2">
+                        <input class="form-check-input" name="kLevel" type="radio" id="kTwo" value="K2">
                         <label class="form-check-label" for="k2">K2</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="kLevel" type="radio" id="k3" value="option3" >
+                        <input class="form-check-input" name="kLevel" type="radio" id="kThree" value="K3" >
                         <label class="form-check-label" for="k3">K3<label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="kLevel" type="radio" id="k4" value="option4" >
+                        <input class="form-check-input" name="kLevel" type="radio" id="kFour" value="K4" >
                         <label class="form-check-label" for="k4">K4<label>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col m-2">
+                        <div class="form-group col ">
                             <label for="ptWeight" aria-describedby="ptWeightSub">Weight:</label>
                             <input type="text"  id="ptWeight" class="form-control" required>
                             <small id="ptWeightSub">In Pounds</small>
                         </div>
-                        <div class="form-group col m-2">
+                        <div class="form-group col">
                             <label for="ptHeight" aria-describedby="ptHeightSub">Height:</label>
-                            <input type="text"  id="ptHeight" class="form-control" required>
+                            <input type="text"  id="ptHeight" class="form-control">
                             <small id="ptHeightSub">In Inches</small>
-                        </div>    
+                        </div>   
                     </div>  
-                </form>
+                </form> 
+            </div>
+            <div class="col-sm-12 col-md-6 mx-auto">
+                <label for="subFirstPage">Click to save your patient information: </label>
+                <button type="submit" id="subFirstPage" class="btn btn-secondary "> Save </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-sm-12, col-md-4">
             </div>
         </div>
     </div>
@@ -222,7 +204,9 @@
                         </div>  
                 </div>
             </div>
-        </div>                 
+        </div> 
+        
+
         
         <footer class="site-footer">
             <div class="container">
@@ -249,7 +233,37 @@
                     </div>                
                </div>
             </div>
-
+    <!-- This is the Modal for a different pcc number -->
+    <div class="col-12">
+        <div id="pccModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-info text-white">
+                        <h3 class="modal-title">Ship to PCC Number</h3>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form>
+                                <div class="row form-group">
+                                    <label for="numCampers" class="col-sm-6 col-form-label">Ship to PCC Number</label>
+                                        <div class="col-sm-6 mx-auto">
+                                            <label for="modClinLoc"></label>
+                                            <input type="text"  id="modClinLoc" class="form-control">
+                                        </div>
+                                        <div class="row form-group">
+                                            <div class="col">
+                                                <button type="button" data-dismiss="modal" id="modBut" class="btn btn-primary">Submit</button>
+                                                <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                                            </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
             <div class="modal" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                   <div class="modal-content">
@@ -260,10 +274,11 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      <p>Modal body text goes here.</p>
-                    </div>
+<p>Modal body goes header </p>              
+
+</div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-primary">Save changes</button>
+                      <button id="#" type="button" class="btn btn-primary">Save changes</button>
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                   </div>
@@ -277,6 +292,6 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="js/px-picker-main.js"></script>
+        <script src="js/index.js"></script>
 </body>
 </html>
