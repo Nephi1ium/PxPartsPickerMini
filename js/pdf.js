@@ -21,7 +21,7 @@ subtfPDFDocument.addEventListener("click", () => transFemoralProsthesis());
 
 function transFemoralProsthesis(){
 let storedArray = JSON.parse(localStorage.infoArr);
-
+let dateOfCreate = new Date();
 
         storedArray.every(item => {
             let tfPDF = document.querySelector('#tfPDFDoc')
@@ -34,8 +34,8 @@ let storedArray = JSON.parse(localStorage.infoArr);
                 </div>
 
                 <div class="information">
-                    Encounter #: 123456<br />
-                    Created: <br />
+                    Encounter #: ${storedArray[4]}<br />
+                    Created: ${dateOfCreate.toLocaleDateString()} <br />
                     <!-- Need to set teh time and date automatically -->
                     Due: Set from first page
                 </div>
@@ -44,7 +44,6 @@ let storedArray = JSON.parse(localStorage.infoArr);
                     Clinician Name: ${storedArray[0]}<br />
                     Billed to PCC: <br />
                     PCC Number: ${storedArray[1]} <br />
-                    Address State, ZIP SFFP
                 </div>
                 
                 <div class="information2"> 
