@@ -43,295 +43,148 @@
             </div>
         </div>
     </header> 
-    <h1>PDF</h1> 
+    <h1>PDF</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-large btn-secondary" id="genPDF">Generate PDF</button>
+                <button class="btn btn-large btn-secondary" id="downPDF">Download PDF</button>
 
-        <div class="invoice-box">
-			<table cellpadding="0" cellspacing="0">
-				<tr class="top">
-					<td colspan="2">
-						<table>
-							<tr>
-								<td class="title">
-									<img src="../images/pngfind.com-green-circle-png-1118219.png" style="width: 100%; max-width: 150px" />
-								</td>
+            </div>
+        </div>
+    </div> 
 
-								<td>
-									Encounter #: 123<br />
-									Created: Set Automatically<br />
-                                    <!-- Need to set teh time and date automatically -->
-									Due: Set from first page SFFP
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
+        <div class="box">
+            <div class="top">
+                <div  >
+                    <img class="title" src="../images/prosthetic_logo.jpg" />
+                </div>
 
-				<tr class="information">
-					<td colspan="2">
-						<table>
-							<tr>
-								<td>
-									Clinic Name SFFP<br />
-									Clinic Address SFFP<br />
-									Address State, ZIP SFFP
-								</td>
+                <div class="information">
+                    Encounter #: 123456<br />
+                    Created: <br />
+                    <!-- Need to set teh time and date automatically -->
+                    Due: Set from first page
+                </div>
 
-								<td>
-									Acme Corp.<br />
-									John Doe<br />
-									john@example.com
-								</td>
-							</tr>
-						</table>
-					</td>
-				</tr>
-                </table>
-                <table class="fiddycent">
-				<tr class="heading">
-					<td>Patient Name SFFP</td>
-
-					<td>DOB (Age)SFFP</td> 
-                    <!-- I want the age to show in parenthesis right next to the DOB -->
-				</tr>
-
-                        <tr class="item">
-                            <td>Weight</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item">
-                            <td>Height</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item">
-                            <td>Side</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item">
-                            <td>K Level</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item last">
-                            <td>Amputation Level</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-				<tr class="heading">
-					<td>Foot Selection</td>
-
-					<td><b>SFFP</b></td>
-				</tr>
-
-                        <tr class="item">
-                            <td>HD Part Number</td>
-
-                            <td><b>SFFP</b></td>
-                        </tr>
-
-                        <tr class="item">
-                            <td>Manufacturer</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                        <tr class="item ">
-                            <td>Name</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Width</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Toe Option</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Foot Size (cm)</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Color</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item last">
-                            <td>Any Category Change?</td>
-
-                            <td>SFFP</td>
-                        </tr>
+                <div class="information1">
+                    Clinic Name SFFP<br />
+                    Clinic Address SFFP<br />
+                    Address State, ZIP SFFP
+                </div>
+                
+                <div class="information2"> 
+                    Acme Corp.<br />
+                    John Doe<br />
+                    john@example.com
+                </div>
+            </div>
 
 
-                <tr class="heading">
-                    <td>Knee Selection</td>
-
-                    <td><b>SFFP</b></td>
-                </tr>
-
-                        <tr class="item">
-                            <td>HD Part Number</td>
-
-                            <td><b>SFFP</b></td>
-                        </tr>
-
-                        <tr class="item">
-                            <td>Manufacturer</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                        <tr class="item ">
-                            <td>Name</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Extra Detail</td>
-
-                            <td>SFFP</td>
-                        </tr>
+<div class="body">
+<div class="item1">
+				<div class="heading">
+                    <h5>Patient Name</h5>
+				</div>
+                        <ul>
+                            <li><div>DOB (age)</div></li>
+    <!-- I want the age to show in parenthesis right next to the DOB -->
+                            <li><div>Weight</div></li>
+                            <li><div>Height</div></li>
+                            <li><div>Amputation Side</div></li>
+                            <li><div>Amputation Level</div></li>
+                            <li><div>K Level</div></li>
 
 
-                <tr class="heading">
-                    <td>Liners</td>
+                        </ul>
+</div>
+<div class=" item2">
+				<div class="heading">
+                    <h5>Foot Selection</h5>
+				</div>
 
-                    <td><b>SFFP</b></td>
-                </tr>
+                <ul>
+                    <li><div>HD Part Number</div></li>
+                    <li><div>Manufacturer</div></li>
+                    <li><div>Name</div></li>
+                    <li><div>Size</div></li>
+                    <li><div>Thickness</div></li>
+                    <li><div>Profile</div></li>
+                    <li><div>Color</div></li>
+                    <li><div>Quantity</div></li>
+                </ul>
+</div>
+<div class=" item3">
+
+                <div class="heading">
+                    <h5>Knee Selection</h5>
+                </div>
+
+
+                <ul>
+                    <li><div>HD Part Number</div></li>
+                    <li><div>Manufacturer</div></li>
+                    <li><div>Name</div></li>
+                    <li><div>Size</div></li>
+                    <li><div>Thickness</div></li>
+                    <li><div>Profile</div></li>
+                    <li><div>Color</div></li>
+                    <li><div>Quantity</div></li>
+                </ul>
+
+</div>
+<div class=" item4">
+                <div class="heading">
+                    <h5>Liners</h5>
+                </div>
+
+                <ul>
+                    <li><div>HD Part Number</div></li>
+                    <li><div>Manufacturer</div></li>
+                    <li><div>Name</div></li>
+                    <li><div>Size</div></li>
+                    <li><div>Thickness</div></li>
+                    <li><div>Profile</div></li>
+                    <li><div>Color</div></li>
+                    <li><div>Quantity</div></li>
+                </ul>
         
-                        <tr class="item">
-                            <td>HD Part Number</td>
-
-                            <td><b>SFFP</b></td>
-                        </tr>
-                        <tr class="item">
-                            <td>Manufacturer</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Name</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Size</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Thickness</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item">
-                            <td>Profile</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item ">
-                            <td>Color</td>
-
-                            <td>SFFP</td>
-                        </tr>
-                        <tr class="item last">
-                            <td>Quantity</td>
-
-                            <td>SFFP</td>
-                        </tr>
 
 
-
-
-                <tr class="heading">
-                    <td>Socks</td>
-
-                    <td>Price</td>
-                </tr>
+</div>
+<div class=" item5">
+                <div class="heading">
+                    <h5> Socks </h5>
+                </div>
                 
-                        <tr class="item">
-                            <td>Website design</td>
+                <ul>
+                    <li>Price</li>
+                    <li></li>
+                </ul>
+</div>
 
-                            <td>SFFP</td>
-                        </tr>
+<div class=" item6">    
 
-                        <tr class="item">
-                            <td>Hosting (3 months)</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                        <tr class="item last">
-                            <td>Domain name (1 year)</td>
-
-                            <td>SFFP</td>
-                        </tr>      
-                        
-                <tr class="heading">
-                    <td>Sheaths</td>
-
-                    <td>Price</td>
-                </tr>
-            
-                        <tr class="item">
-                            <td>Website design</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                        <tr class="item">
-                            <td>Hosting (3 months)</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                        <tr class="item last">
-                            <td>Domain name (1 year)</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                <tr class="heading">
-                    <td>Sleeves</td>
-
-                    <td>Price</td>
-                </tr>
+                <div class="heading">
+                    <h5> Sheaths </h5>
+                </div>
+                <ul>
+                    <li>Price</li>
+                    <li></li>
+                </ul>
+</div>
+<div class="item7">
+                <div class="heading">
+                    <h5> Sleeves </h5>
+                </div>
+                    <ul>
+                        <li>Price</li>
+                        <li></li>
+                    </ul>
                 
-                        <tr class="item">
-                            <td>Website design</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                        <tr class="item">
-                            <td>Hosting (3 months)</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                        <tr class="item last">
-                            <td>Domain name (1 year)</td>
-
-                            <td>SFFP</td>
-                        </tr>
-
-                        
-
-				<tr class="total">
-					<td></td>
-
-					<td>Total: $385.00</td>
-				</tr>
-			</table>
-		</div>
- 
+</div> 
+</div>
+</div>
 
 
     <footer class="site-footer">

@@ -1,6 +1,87 @@
-.invoice-box {
+
+.information2{
+    grid-area: information2;
+    text-align: right;
+}
+.information{
+    grid-area: information;
+    text-align: right;
+    
+}
+.information1{
+    grid-area: information1;
+}
+.invoice-box table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+    position: relative;
+}
+.invoice-box table.top {
+    grid-area: top;
+
+}
+
+.item1{
+    grid-area: item1;
+
+    font-size: 12px;
+    text-align: center;
+}
+
+.item2{
+    grid-area: item2;
+
+    font-size: 12px;
+}
+
+.item3{
+    grid-area: item3;
+
+    font-size: 12px;
+    text-align: right;
+}
+
+.item4{
+    grid-area: item4;
+
+    font-size: 12px;
+    height: 250px;
+
+}
+
+.item5{
+    grid-area: item5;
+
+    font-size: 12px;
+}
+
+.item6{
+    grid-area: item6;
+
+    font-size: 12px;
+}
+
+.item7{
+    grid-area: item7;
+
+    font-size: 12px;
+}
+
+.title {
+    max-width: 200px;
+    max-height: 200px;
+    grid-area: title;
+}
+
+.box {
+    
     max-width: 800px;
+    max-height: 1000px;
+    height: 1000px;
+    width: 800px;
     margin: auto;
+    margin-bottom: 25px;
     padding: 30px;
     border: 1px solid #eee;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
@@ -8,93 +89,58 @@
     line-height: 24px;
     font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
     color: #555;
+ 
+    grid-gap: 1rem;
+    padding: .5rem;
+    ;
 }
-.invoice-box table.fiddycent {
-    width: 49%;
+.box .top {
+    display: grid;
+    max-width: 733px;
+    width: 733px;
+    max-height: 400px;
+    margin: 2px;
+    height: auto;
+    padding: 0;
+    border: none;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+    font-size: 16px;
+    /* line-height: 24px; */
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+    grid-gap: 1rem;
+    padding: 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "title . . information"
+    "information1 information1 . information2";
 }
-.invoice-box table {
-    width: 100%;
-    line-height: inherit;
-    text-align: left;
-}
-
-
-.invoice-box table td {
-    padding: 5px;
-    vertical-align: top;
-}
-
-.invoice-box table tr td:nth-child(2) {
-    text-align: right;
-}
-
-.invoice-box table tr.top table td {
-    padding-bottom: 20px;
-}
-
-.invoice-box table tr.top table td.title {
-    font-size: 45px;
-    line-height: 45px;
-    color: #333;
-}
-
-.invoice-box table tr.information table td {
-    padding-bottom: 40px;
-}
-
-.invoice-box table tr.heading td {
-    background: #eee;
-    border-bottom: 1px solid #ddd;
-    font-weight: bold;
-}
-
-.invoice-box table tr.details td {
-    padding-bottom: 20px;
-}
-
-.invoice-box table tr.item td {
-    
-    border-bottom: 1px solid #eee;
-}
-
-.invoice-box table tr.item.last td {
-    border-bottom: none;
-}
-
-.invoice-box table tr.total td:nth-child(2) {
-    border-top: 2px solid #eee;
-    font-weight: bold;
+.box .body {
+    position: absolute;
+    display: grid;
+    max-width: 800px;
+    width: 760px;
+    max-height: 700px;
+    height: auto;
+    margin-top: 60px;
+    padding: 0;
+    border: none;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+    font-size: 16px;
+    /* line-height: 24px; */
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+    grid-gap: .5rem;
+    padding: 2px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "item2 item1 item1 item3"
+    "item2 . . item3"
+    "item4 item5 item6 item7"
+;
 }
 
-@media only screen and (max-width: 600px) {
-    .invoice-box table tr.top table td {
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
-
-    .invoice-box table tr.information table td {
-        width: 100%;
-        display: block;
-        text-align: center;
-    }
+.btn {
+    margin: 15px;
 }
-
-/** RTL **/
-.invoice-box.rtl {
-    direction: rtl;
-    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
-}
-
-.invoice-box.rtl table {
-    text-align: right;
-}
-
-.invoice-box.rtl table tr td:nth-child(2) {
-    text-align: left;
-}
-
-.invoice-box table tbody .item {
-    width:50% !important;
-}
-
