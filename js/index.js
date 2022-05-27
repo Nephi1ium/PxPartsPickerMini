@@ -40,12 +40,15 @@ let clinicLocation = document.getElementById("clinLoc").value;
 let patientName = document.getElementById("ptName").value;
 let dateOfBirth = document.getElementById("ptDOB").value;
 let encounterNumber = document.getElementById("encN").value;
-let kOne = document.getElementById("kOne").value;
-let kTwo = document.getElementById("kTwo").value;
-let kThree = document.getElementById("kThree").value;
-let kFour = document.getElementById("kFour").value;
+// let kOne = document.getElementById("kOne").value;
+// let kTwo = document.getElementById("kTwo").value;
+// let kThree = document.getElementById("kThree").value;
+// let kFour = document.getElementById("kFour").value;
+let klevel = document.querySelector('input[name=kLevel]:checked').value;
 let patientWeight = document.getElementById("ptWeight").value;
 let patientHeight = document.getElementById("ptHeight").value;
+
+localStorage.setItem('klevel',$('input[name="kLevel"]:checked').val());
 
 
 infoArr[infoArr.length]=clinicianName;
@@ -53,10 +56,10 @@ infoArr[infoArr.length]=clinicLocation;
 infoArr[infoArr.length]=patientName;
 infoArr[infoArr.length]=dateOfBirth;
 infoArr[infoArr.length]=encounterNumber;
-infoArr[infoArr.length]=kOne;
-infoArr[infoArr.length]=kTwo;
-infoArr[infoArr.length]=kThree;
-infoArr[infoArr.length]=kFour;
+infoArr[infoArr.length]=klevel;
+// infoArr[infoArr.length]=kTwo;
+// infoArr[infoArr.length]=kThree;
+// infoArr[infoArr.length]=kFour;
 infoArr[infoArr.length]=patientWeight;
 infoArr[infoArr.length]=patientHeight;
 
@@ -79,7 +82,7 @@ function getLocalStoreData(){
 }
 
 function generatePDF(){
-    
+
 }
 
 

@@ -5,12 +5,17 @@
   .sidenav div {
     width: 100%;
 }
-
+#addNotes {
+  width: 100%;
+}
 .sidenav div a {
   width: 100%;
   font-size: 3vw;
 }
 
+.btn-block{
+  font-size: 1vw;
+}
 
   #stepTwo {
     color: #08719e;

@@ -43,10 +43,11 @@
             </div>
         </div>
     </header> 
+
 <form>
     <div class="container p-2">
         <div class="row">
-          <div class ="col pt-3">
+          <div class ="col-sm-12 col-md-6 pt-3">
             <h2> Enter Patients Information for Virtual Visit Scheduling</h2>
             <!-- <div class="col mx-auto"></div> -->
             <p>
@@ -54,49 +55,52 @@
             </p>
             <!-- </div> -->
           </div>
-        </div>
-      </div>
 
-    <div class="container">
-        <div class="row">
-          <div class ="col-sm-12">
-              <div class="form-group">                
+          <div class ="col-sm-12 col-md-6 pt-3">
+                <div class="form-group">                
                         <label for="ptName"> Patient Name:</label>
                         <input type="text" id="ptName" name="ptName" required> 
+                    </div>
+                    <div class ="col-sm-12 col-md-6 pt-3">
                         <label for="dob"> Date of Birth </label>
                         <input type="date" name="dob" id="dob" required>
                 </div>
             </div>
         </div>
+    </div>
+
+
+
         <div class="container">
             <div class="row">
-                <div class ="col">                        
-                        <button type="button" class="btn btn-lg btn-block"name="z89.511" id="z89.511">
-                            <label for="z89.511"> Z89.511 Acquired absence of right leg below knee</label>
+                <div class ="col-sm-12 col-md-6">                        
+                    <button type="button" class="btn btn-lg btn-block"name="z89.511" id="z89.511">
+                            Z89.511 Acquired absence of right leg below knee
                         </button>
 
                         <button type="button" class="btn btn-lg btn-block"name="z89.512" id="z89.512">
-                            <label for="z89.512"> Z89.512 Acquired absence of left leg below knee</label>
+                            Z89.512 Acquired absence of left leg below knee
                         </button>
-                    </div>
-                    <div class="col">
-                    
-                        <button type="button" class="btn btn-lg btn-block"name="z89.612" id="z89.612">
-                            <label for="z89.612"> Z89.611 Acquired absence of left leg above knee</label>
+                </div>
+                <div class ="col-sm-12 col-md-6">                        
+
+
+                        <button type="button" class="btn btn-lg btn-block" name="z89.612" id="z89.612">
+                            Z89.611 Acquired absence of left leg above knee
                         </button>
 
                         <button type="button" class="btn btn-lg btn-block"name="z89.611" id="z89.611">
-                        <label for="z89.611"> Z89.612 Acquired absence of right leg above knee</label>
+                            Z89.612 Acquired absence of right leg above knee
                         </button>
 
                     </div>
                 </div>
             </div>
-        </div>
+
 
         <div class="container">
             <div class="row">
-                <div class ="col">
+                <div class ="col-sm-12 col-md-6">                        
                     <div class="form-group" id="demographic"> 
                         <label for="skinCondition"> Skin Condition</label>
                             <select class="form-control" id="skinCondition">
@@ -180,8 +184,8 @@
             <div class="row">
                 <div class ="col-12">
                     <div class="form-group" id="submit">
-                        <button type="button" name="savePDF">Save as PDF</button>
-                        <button type="button" name="email">Email to SPS</button>
+                        <button type="button" class="btn btn-large btn-primary" id="VVPDFSav" >Save as PDF</button>
+                        <button type="button" class="btn btn-large btn-secondary" id="VVPDFDown">Email to SPS</button>
                     </div>
                 </div>
             </div>

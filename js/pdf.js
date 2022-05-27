@@ -23,7 +23,9 @@ function transFemoralProsthesis(){
 let storedArray = JSON.parse(localStorage.infoArr);
 let dateOfCreate = new Date();
 
-        storedArray.every(item => {
+// let linersOnly = 
+
+        storedArray.every(() => {
             let tfPDF = document.querySelector('#tfPDFDoc')
             
             tfPDF.innerHTML = tfPDF.innerHTML + `
@@ -36,7 +38,6 @@ let dateOfCreate = new Date();
                 <div class="information">
                     Encounter #: ${storedArray[4]}<br />
                     Created: ${dateOfCreate.toLocaleDateString()} <br />
-                    <!-- Need to set teh time and date automatically -->
                     Due: Set from first page
                 </div>
 
@@ -57,16 +58,16 @@ let dateOfCreate = new Date();
 <div class="body">
 <div class="item1">
 				<div class="heading">
-                    <h5>Patient Name</h5>
+                    <h5>Patient Name: ${storedArray[2]}</h5>
 				</div>
                         <ul>
-                            <li><div>DOB (age)</div></li>
+                            <li><div>Date of Birth: ${storedArray[3]}</div></li>
     <!-- I want the age to show in parenthesis right next to the DOB -->
-                            <li><div>Weight</div></li>
-                            <li><div>Height</div></li>
+                            <li><div>Weight: ${storedArray[6]} lbs</div></li>
+                            <li><div>Height: ${storedArray[7]} inches</div></li>
                             <li><div>Amputation Side</div></li>
                             <li><div>Amputation Level</div></li>
-                            <li><div>K Level</div></li>
+                            <li><div>K Level: ${storedArray[5]}</div></li>
 
 
                         </ul>
@@ -126,7 +127,7 @@ let dateOfCreate = new Date();
 
 </div>
 <div class=" item5">
-                <div class="heading">
+                <div class="heading cent">
                     <h5> Socks </h5>
                 </div>
                 
@@ -138,7 +139,7 @@ let dateOfCreate = new Date();
 
 <div class=" item6">    
 
-                <div class="heading">
+                <div class="heading cent">
                     <h5> Sheaths </h5>
                 </div>
                 <ul>
@@ -147,7 +148,7 @@ let dateOfCreate = new Date();
                 </ul>
 </div>
 <div class="item7">
-                <div class="heading">
+                <div class="heading rght">
                     <h5> Sleeves </h5>
                 </div>
                     <ul>

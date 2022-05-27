@@ -74,6 +74,19 @@
     grid-area: title;
 }
 
+.heading{
+    background-color: grey;
+    color:black;
+}
+
+.heading.cent{
+    text-align: center;
+}
+
+.heading.rght{
+text-align: right;
+}
+
 .box {
     
     max-width: 800px;
