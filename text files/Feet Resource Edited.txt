@@ -1,0 +1,217 @@
+Prosthetic Feet Reference Guide												
+Manfac	Foot	Lcode	Lcode	Lcode	Lcode	HD	Hanger Price	Reimb	%	PDAC Approval	Value	
+"K2 Flexible Keel with Hydraulic multiaxial ankle:     L5968,  L5972"								"$4,046 "				
+Blatchford	Avalon	L5968	L5972	 	 	AV-FOOT	1353.19	4046	33%	NO PDAC APPROVAL	75	
+College_Park	Odyssey	L5968	L5972	 	 	OK2-KIT	1113	4046	28%	NO PDAC APPROVAL	35	
+Ossur	K2 Sensation with D/P Ankle	L5968	L5972	 	 	K2D-FOOT	1232.57	4046	30%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	Kintrol	L5968	L5972	 	 	VS4-KIT	1272	4046	31%	NO PDAC APPROVAL	10	
+"K3 Flexwalk with Hydraulic Multiaxial ankle:     L5968,  L5981"								"$6,657 "				
+Blatchford	Echelon	L5968	L5981	 	 	EC-ST-KIT	1883.36	6657	28%	1/1/2011	75	
+College_Park	Odyssey K3	L5968	L5981	 	 	ODK3-KIT	1589.99	6657	24%	NO PDAC APPROVAL	75	
+Proteor_Ability_Freedom	Kinterra	L5968	L5981	 	 	ROM-KIT	1861.36	6657	28%	NO PDAC APPROVAL	75	
+Blatchford	EchelonER	L5968	L5981	 	 	ECER-FOOT	2169.72	6657	33%	1/1/2011	35	
+"K3 Flexwalk with with Hydraulic Multiaxial ankle and adjustable heel height: L5968, L5981, L5990"								"$8,488 "				
+Motion_Control	Motion MX	L5968	L5981	L5990	 	50200-KIT	5271.21	8488	62%	NO PDAC APPROVAL	10	
+"K3 Flexwalk with Hydraulic Multiaxial ankle and Vertical Shock:     L5968,  L5981, L5988"								"$8,673 "				
+Blatchford	Echelon VT	L5968	L5981	L5988	 	ECVT-L-KIT	3216.57	8673	37%	NO PDAC APPROVAL	75	
+SACH:     L5971								$203 				
+Trulife	Seattle Sach	L5971				SCH11x-FOOT	82.04	203	40%	NO PDAC APPROVAL	75	
+WillowWood	Sach Foot (SFP)	L5971				SFP-FOOT	88.99	203	44%	NO PDAC APPROVAL	35	
+K2 Flexible Heel:     L5972								$379 				
+Trulife	Seattle Natural	L5972	 	 	 	SNF16x-FOOT	113.84	379	30%	NO PDAC APPROVAL	75	
+College_Park	Breeze	L5972	 	 	 	BE-KIT	100.17	379	26%	NO PDAC APPROVAL	75	
+Blatchford	Stellar	L5972	 	 	 	STELLAR-KIT	117.62	379	31%	NO PDAC APPROVAL	75	
+College_Park	Tempo	L5972	 	 	 	TO-KIT	137.27	379	36%	NO PDAC APPROVAL	35	
+Proteor_Ability_Freedom	Gery	L5972		 	 	1A200-FOOT-KIT	162.11	379	43%	NO PDAC APPROVAL	10	
+Dycor	K1A	L5972	 	 	 	K1A	167.48	379	44%	NO PDAC APPROVAL	10	
+Dycor	K3U	L5972	 	 	 	K3U	167.48	379	44%	NO PDAC APPROVAL	10	
+Ossur	K2 Sensation	L5972		 	 	K2P-FOOT	206.17	379	54%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	Restore	L5972		 	 	VS5-FOOT	215.57	379	57%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1D10 Dynamic	L5972	 	 	 	1D10	221.38	379	58%	NO PDAC APPROVAL	10	
+WillowWood	Durawalk	L5972	 	 	 	DWF	251.91	379	67%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1WR95 Aqualine	L5972	 	 	 	1WR95	281.29	379	74%	NO PDAC APPROVAL	10	
+Fillauer	K2	L5972			 	134-KIT	307.67	379	81%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	Terion	L5972		 	 	1C11	307.98	379	81%	NO PDAC APPROVAL	10	
+Proteor_Ability_Freedom	1A101 Dynamic	L5972	 	 	 	1A101-FOOT	318.89	379	84%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1M10	L5972		 	 	1M10	340.58	379	90%	NO PDAC APPROVAL	10	
+Ossur	Balance S	L5972		 	 	BSP0-FOOT	356.96	379	94%	NO PDAC APPROVAL	10	
+"K2 Flexible Keel with Multiaxial Rotation:     L5972, L5986"								"$1,011 "				
+Trulife	Kinetic	L5972	L5986	 	 	SKF20x-FOOT	291.92	1011	29%	NO PDAC APPROVAL	75	
+College_Park	Celsus	L5972	L5986	 	 	CSX-KIT	261.13	1011	26%	NO PDAC APPROVAL	75	
+Trulife	Seattle Kinetic Lightfoot	L5972	L5986			SKF10x-FOOT	291.92	1011	29%	NO PDAC APPROVAL	75	
+Blatchford	Navigator	L5972	L5986	 	 	NAV-FOOT	303.17	1011	30%	4/8/2021	75	
+Trulife	Kinetic Edge	L5972	L5986	 	 	SKF30x-FOOT	291.92	1011	29%	NO PDAC APPROVAL	35	
+Blatchford	Multiflex	L5972	L5986			5191-FOOT	240.7	1011	24%	4/21/2021	10	
+Dycor	AGM (multi-axial foot)	L5972	L5986	 	 	AGM-FOOT	381.05	1011	38%	NO PDAC APPROVAL	10	
+Dycor	STM (multi-axial foot)	L5972	L5986	 	 	STM-FOOT	381.05	1011	38%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1A30 Greissenger Plus	L5972	L5986	 	 	1A30	408.99	1011	40%	NO PDAC APPROVAL	10	
+"K2 Flexible Keel with axial Rotation & Vertical Shock:     L5972, L5984, L5988"								"$2,972 "				
+Ossur	Balance S Torsion	L5972	L5984	L5988	 	BST0-FOOT	1550.25	2972	52%	NO PDAC APPROVAL	35	
+Microprocessor Feet:     L5973								"$17,363 "				
+Blatchford	Elan IC	L5973	 	 	 	ELANIC-FOOT	7648.51	17363	44%	9/18/2020	75	
+Blatchford	Elan MPF	L5973	 	 	 	ELAN-FOOT	7298.1	17363	42%	1/1/2015	75	
+Ossur	Proprio MPF	L5973	 	 	 	PSX0-FOOT	7758.83	17363	45%	1/1/2010	35	
+Proteor_Ability_Freedom	Kinnex MPF	L5973	 	 	 	F14-N2-KIT	8013.23	17363	46%	11/19/2020	10	
+Otto_Bock_Freedom	1B1 Meridium MPF	L5973	 	 	 	1B1	9010	17363	52%	11/13/2020	10	
+Single Axis:     L5974								$233 				
+WillowWood	Single Axis Foot	L5974	 	 	 	SAF-FOOT	140.09	233	60%	NO PDAC APPROVAL	75	
+Otto_Bock_Freedom	Single Axis	L5974	 	 	 	1H38	251.36	233	108%	NO PDAC APPROVAL	10	
+Energy Storing:     L5976								$559 				
+Trulife	Seattle Lightfoot 2	L5976	 	 	 	SLF19x-FOOT	279.2	559	50%	NO PDAC APPROVAL	75	
+Dycor	Chopart/Listfranc Partial Foot	L5976	 	 	 	LCE-FOOT	152.64	559	27%	NO PDAC APPROVAL	75	
+WillowWood	Impulse	L5976	 	 	 	IMPM-MLH-FOOT	201.09	559	36%	NO PDAC APPROVAL	75	
+Ossur	Balance J	L5976	 	 	 	JBPE-FOOT	266.48	559	48%	NO PDAC APPROVAL	35	
+Trulife	Seattle Energy	L5976	 	 	 	SEF19x-FOOT	279.2	559	50%	NO PDAC APPROVAL	35	
+Trulife	Seattle Zumo	L5976	L5999	 	 	SZM45x-FOOT	279.2	559	50%	NO PDAC APPROVAL	35	
+Trulife	Child’s Play	L5976	 	 	 	SEF1x	287.49	559	51%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	Senator	L5976	 	 	 	VS1-KIT	369.57	559	66%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1E80 Chopart	L5976	 	 	 	1E80-FOOTPLATE	527.88	559	94%	NO PDAC APPROVAL	10	
+Proteor_Ability_Freedom	RUSH_Chopart_formerly_RUSH_76	L5976	 	 	 	RUSH CHOPART	580.83	559	104%	1/1/2017	10	
+Ossur	Chopart Foot/Insert	L5976	 	 	 	CHP-KIT	598.47	559	107%	NO PDAC APPROVAL	10	
+WillowWood	Magnum Heavy Duty	L5976	 	 	 	MHD-300-KIT	630.7	559	113%	NO PDAC APPROVAL	10	
+Multiaxial Dynamic Response:     L5979								"$2,277 "				
+College_Park	Tribute	L5979	 	 	 	TRIB-KIT	317.99	2277	14%	3/16/2021	75	
+Ossur	Flex Balance	L5979	 	 	 	FBP-FOOT	247.4	2277	11%	4/19/2013	75	
+College_Park	Truper	L5979	 	 	 	TP-KIT	409.96	2277	18%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	1D35 Dynamic Motion Foot	L5979	 	 	 	1D35	553.81	2277	24%	NO PDAC APPROVAL	35	
+Dycor	Dynamic Response	L5979	 	 	 	DR	572.4	2277	25%	NO PDAC APPROVAL	10	
+College_Park	Tru Step	L5979		 	 	TS-KIT	757.21	2277	33%	3/24/2021	10	
+College_Park	Venture	L5979	 	 	 	V-KIT	860.56	2277	38%	NO PDAC APPROVAL	10	
+Flexfoot:     L5980								"$3,700 "				
+Blatchford	Javelin	L5980	 	 	 	JAV-KIT	972.03	3700	26%	9/10/2020	75	
+Fillauer	Aeris Activity	L5980		 	 	131-KIT	1095.33	3700	30%	11/19/2020	75	
+Ossur	Cheetah Xplore Jr	L5980	 	 	 	CHX0-KIT	804.54	3700	22%	10/17/2020	35	
+Otto_Bock_Freedom	Silhouette	L5980	 	 	 	RS4-FOOT	968.47	3700	26%	12/24/2020	35	
+Ossur	Vari-Flex Modular	L5980	 	 	 	VFMOD-KIT	1331.65	3700	36%	10/17/2020	35	
+Fillauer	Formula (adult or pediatric)	L5980	 	 	 	178-KIT	1588.42	3700	43%	11/13/2020	35	
+Blatchford	Elite Blade	L5980	 	 	 	EB-ST-KIT	1650.55	3700	45%	9/9/2020	35	
+Fillauer	All Pro w/ Posterior Mount	L5980				137-PM-KIT	1811.25	3700	49%	11/19/2020	35	
+Ossur	Cheetah Xplore	L5980	 	 	 	FSX009-FOOT	1895.28	3700	51%	10/17/2020	10	
+Otto_Bock_Freedom	Springlite II (Adult or Child)	L5980	 	 	 	1E61 or 1E66 - Freeform	0	3700	0%	NO PDAC APPROVAL	10	
+"Flexfoot with Multiaxial Ankle:     L5980,  L5986"								"$4,333 "				
+Proteor_Ability_Freedom	DynAdapt	L5980	L5986	 	 	F10-KIT	849.75	4333	20%	NO PDAC APPROVAL	75	
+Trulife	Seattle Zenith	L5980	L5986	 	 	SZN20x-FOOT	571.76	4333	13%	NO PDAC APPROVAL	35	
+Fillauer	Ibex System	L5980	L5986	 	 	120-XD-KIT	980.32	4333	23%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	1E58 Axtion DP	L5980	L5986	 	 	1E58	1162.26	4333	27%	11/19/2020	35	
+Flexwalk:     L5981								"$2,989 "				
+Proteor_Ability_Freedom	FS 3000 (Highlander)	L5981	 	 	 	FS3-KIT	662.5	2989	22%	3/3/2012	75	
+Fillauer	Aeris LP	L5981		 	 	123-KIT	557.38	2989	19%	NO PDAC APPROVAL	75	
+Ossur	Vari-Flex Junior	L5981	 	 	 	VJB0-KIT	599.11	2989	20%	10/20/2020	75	
+Otto_Bock_Freedom	Defender Pediatric	L5981	 	 	 	DEF-KIT	661.6	2989	22%	NO PDAC APPROVAL	75	
+Otto_Bock_Freedom	Trias	L5981		 	 	1C30-KIT	689.91	2989	23%	NO PDAC APPROVAL	75	
+STG	Endurance	L5981				1116-FOOT	696.03	2989	23%	11/19/2020	75	
+Proteor_Ability_Freedom	FS 2000 (Pacifica)	L5981	 	 	 	PAC-KIT	702.33	2989	23%	NO PDAC APPROVAL	75	
+Proteor_Ability_Freedom	FS 4000 (Pacifica Low Profile)	L5981	 	 	 	PAC-KIT	702.33	2989	23%	NO PDAC APPROVAL	75	
+Fillauer	WAVE Comfort 3	L5981		 	 	135-KIT	709.49	2989	24%	NO PDAC APPROVAL	75	
+Trulife	Triumph	L5981		 	 	STF19x-FOOT	762.56	2989	26%	4/1/2021	75	
+Proteor_Ability_Freedom	RUSH_HiPro_formerly_RUSH_87	L5981	 	 	 	RUSH HIPRO	795	2989	27%	1/1/2017	75	
+College_Park	Horizon	L5981	 	 	 	HZ-KIT	516.06	2989	17%	3/16/2021	35	
+Ossur	Assure Foot	L5981	 	 	 	FA-FOOT	547.60	2989	18%	NO PDAC APPROVAL	35	
+Trulife	Seattle Zenith LP	L5981		 	 	SZN10X-FOOT	571.76	2989	19%	NO PDAC APPROVAL	35	
+STG	Endurance LP	L5981				1115-FOOT	614.14	2989	21%	11/19/2020	35	
+Otto_Bock_Freedom	Promenade	L5981	 	 	 	VS2-KIT	621.85	2989	21%	NO PDAC APPROVAL	35	
+Blatchford	Elite 2	L5981	 	 	 	EL-ST-KIT	662.5	2989	22%	9/9/2020	35	
+Blatchford	Esprit	L5981	 	 	 	ESP-ST-FOOT-KIT	669.76	2989	22%	NO PDAC APPROVAL	35	
+MakStride_formerly_BioQuest	Trekk LP	L5981	 	 	 	TREKK LP	756.84	2989	25%	NO PDAC APPROVAL	35	
+Trulife	Solas	L5981	 	 	 	SLS49-FOOT	762.56	2989	26%	7/1/2021	35	
+Otto_Bock_Freedom	1E56 Axtion	L5981	 	 	 	1E56-KIT	788.19	2989	26%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	1C63 Triton LP	L5981		 	 	1C63-KIT	798.36	2989	27%	NO PDAC APPROVAL	35	
+Proteor_Ability_Freedom	FS 1000 (Sierra)	L5981		 	 	FS1-KIT	802.05	2989	27%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	LP Symes	L5981	 	 	 	LP2-KIT	850.41	2989	28%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	Maverick Comfort AT model	L5981		 	 	F22-KIT	850.81	2989	28%	NO PDAC APPROVAL	35	
+Fillauer	Aeris Performance 2	L5981	 	 	 	122-KIT	869.02	2989	29%	11/13/2020	35	
+Proteor_Ability_Freedom	RUSH_Rover	L5981	 	 	 	RUSH ROVER	872.96	2989	29%	1/1/2017	35	
+Proteor_Ability_Freedom	RUSH_Kid	L5981	 	 	 	RUSH KID	872.96	2989	29%	1/1/2017	35	
+WillowWood	KOA	L5981		 	 	K001-FOOT	886.69	2989	30%	NO PDAC APPROVAL	35	
+Fillauer	Element System	L5981		 	 	100-10-KIT	891.28	2989	30%	NO PDAC APPROVAL	35	
+College_Park	Soleus	L5981	 	 	 	SO-KIT	932.78	2989	31%	10/17/2020	35	
+Otto_Bock_Freedom	1C60 Triton	L5981	 	 	 	1C60-KIT	956.3	2989	32%	11/13/2020	35	
+Ossur	Vari-Flex	L5981	 	 	 	VF-KIT	999.15	2989	33%	10/20/2020	35	
+Otto_Bock_Freedom	1E57 Lo Rider	L5981	 	 	 	1E57-KIT	1034.76	2989	35%	NO PDAC APPROVAL	35	
+Ossur	Pro-flex XC	L5981	 	 	 	PXC0-FOOT	1351.18	2989	45%	10/20/2020	35	
+Fillauer	All_Pro_Direct_Mount_Pyramid	L5981	 	 	 	137-KIT	1638.37	2989	55%	10/20/2020	35	
+Otto_Bock_Freedom	Freestyle (Freedom LP) and Swim Ankle	L5981	L5999	 	 	SWIM-KIT	1943.67	#N/A	#N/A	NO PDAC APPROVAL	35	
+Proteor_Ability_Freedom	Highlander Max	L5981	L5999	 	 	FS3-KIT	662.5	#N/A	#N/A	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	Thrive	L5981	 	 	 	FS5-KIT	937.52	2989	31%	1/1/2012	10	
+Otto_Bock_Freedom	1C50 Taleo	L5981		 	 	1C50-KIT	966.68	2989	32%	11/13/2020	10	
+Ossur	Pro-flex LP	L5981		 	 	PLP0-FOOT	983.15	2989	33%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1C53 Taleo LP	L5981		 	 	1C53-FOOT	1031.13	2989	34%	11/13/2020	10	
+Otto_Bock_Freedom	1C64 Triton HD	L5981	 	 	 	1C64-KIT	1095.51	2989	37%	11/13/2020	10	
+Proteor_Ability_Freedom	DynaTrek	L5981				1A600-FOOT	1128.38	2989	38%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1C40 C-Walk	L5981		 	 	1C40=K	1136.73	2989	38%	NO PDAC APPROVAL	10	
+Ossur	Flex Symes	L5981	 	 	 	FSYMES-KIT	1167.69	2989	39%	NO PDAC APPROVAL	10	
+Ossur	Flex Junior	L5981	 	 	 	FSX007-FOOT	1518.13	2989	51%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1E95 Challenger	L5981	 	 	 	1E95	1691.2	2989	57%	11/18/2020	10	
+Flexwalk with Multiaxial Ankle:     L5981 L5986								"$3,622 "				
+Blatchford	Epirus	L5981	L5986	 	 	EP-ST-KIT	788.62	3622	22%	4/8/2021	75	
+Proteor_Ability_Freedom	RUSH_Rampage_LP_formerly_RUSH_LoPro	L5981	L5986	 	 	RUSH RAMPAGE LP	795	3622	22%	1/1/2017	75	
+College_Park	Velocity	L5981	L5986	 	 	VL-KIT	757.21	3622	21%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	1C58 Taleo Side Flex	L5981	L5986	 	 	1C58-FOOT-KIT	971.13	3622	27%	8/25/2021	35	
+Ossur	Talux	L5981	L5986	 	 	TALUX-KIT	1002.02	3622	28%	10/20/2020	35	
+Otto_Bock_Freedom	1C68 Triton Side Flex	L5981	L5986	 	 	1C68-KIT	1017.6	3622	28%	8/25/2021	35	
+WillowWood	Meta Arc	L5981	L5986	 	 	M002-FOOT-KIT	1038.8	3622	29%	12/3/2020	35	
+Blatchford	Blade XT	L5981	L5986	 	 	BXT-FOOT	1402.17	3622	39%	NO PDAC APPROVAL	35	
+College_Park	Terrain	L5981	L5986	 	 	PENDING	Pending	3622	#VALUE!	5/21/2021	10	
+"Vertical Shock with Axial Rotation:     L5984,  L5987"								"$7,829 "				
+Blatchford	Elite VT	L5984	L5987	 	 	EVT-ST-KIT	1666.71	7829	21%	9/9/2020	75	
+Proteor_Ability_Freedom	RUSH_Rogue	L5984	L5987	 	 	RUSH ROGUE	1378	7829	18%	1/1/2017	75	
+Proteor_Ability_Freedom	RUSH_Rogue_2	L5984	L5987			ROG2	1378	7829	18%	5/14/2021	75	
+Fillauer	Element DS System	L5984	L5987	 	 	105-10-KIT	1573.92	7829	20%	11/13/2020	35	
+Proteor_Ability_Freedom	Shockwave	L5984	L5987	 	 	F20-S3-KIT	1671.25	7829	21%	9/1/2021	35	
+Ossur	Ceterus (Renamed ReFlex Rotate)	L5984	L5987	 	 	RFR-KIT	1855.21	7829	24%	NO PDAC APPROVAL	35	
+Blatchford	Elite Blade VT	L5984	L5987	 	 	EBVT-ST-KIT	1921.78	7829	25%	9/9/2020	35	
+Ossur	Pro-flex XC Torsion	L5984	L5987	 	 	PXT0-FOOT	2586.4	7829	33%	10/17/2020	35	
+Ossur	Pro-flex LP Torsion	L5984	L5987	 	 	PLT0-FOOT	2153.92	7829	28%	NO PDAC APPROVAL	10	
+"Vertical Shock with Multiaxial Rotation:     L5986,  L5987"								"$7,892 "				
+Proteor_Ability_Freedom	Agilix	L5986	L5987	 	 	F15-KIT	1027.83	7892	13%	NO PDAC APPROVAL	75	
+MakStride_formerly_BioQuest	Comfort Stride	L5986	L5987	 	 	K2CS	550.35	7892	7%	NO PDAC APPROVAL	75	
+MakStride_formerly_BioQuest	Trekk	L5986	L5987	 	 	TREKK LP	756.84	7892	10%	NO PDAC APPROVAL	75	
+MakStride_formerly_BioQuest	Natural Stride	L5986	L5987	 	 	MX1	923.05	7892	12%	NO PDAC APPROVAL	75	
+College_Park	Tactical	L5986	L5987	 	 	SO-KIT	932.78	7892	12%	NO PDAC APPROVAL	75	
+Otto_Bock_Freedom	Renegade AT or LP-AT	L5986	L5987	 	 	RENAT-KIT	937.52	7892	12%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	Maverick Xtreme	L5986	L5987	 	 	F11-KIT	937.52	7892	12%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	Maverick Xtreme AT	L5986	L5987	 	 	F21-KIT	937.52	7892	12%	NO PDAC APPROVAL	35	
+MakStride_formerly_BioQuest	Ultra Stride	L5986	L5987	 	 	MX3	996.4	7892	13%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	1C61 Triton VS	L5986	L5987	 	 	1C61-KIT	1270.06	7892	16%	11/28/2012	35	
+WillowWood	Pathfinder II	L5986	L5987	 	 	PFDRPL-FOOT	1369.52	7892	17%	NO PDAC APPROVAL	35	
+Otto_Bock_Freedom	Silhouette VS	L5986	L5987	 	 	R14-01-KIT	968.47	7892	12%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	Silhouette LP VS	L5986	L5987	 	 	R15-KIT	968.47	7892	12%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	Taleo VS 1C51	L5986	L5987	 	 	1C51-FOOT-KIT	1537	7892	19%	11/21/2020	10	
+Proteor_Ability_Freedom	RUSH_Rampage	L5986	L5987	 	 	RUSH RAMPAGE	1676.34	7892	21%	NO PDAC APPROVAL	10	
+Vertical Shock:     L5987								"$7,260 "				
+Otto_Bock_Freedom	Renegade	L5987	 	 	 	RS1-KIT	937.52	7260.04	13%	NO PDAC APPROVAL	75	
+Otto_Bock_Freedom	Low Profile Renegade	L5987	 	 	 	RS6-KIT	937.52	7260.04	13%	NO PDAC APPROVAL	75	
+WillowWood	Meta Shock	L5987				M005-FOOT-KIT	1353.62	7260.04	19%	3/24/2021	10	
+"Flexwalk with Multiaxial Ankle and Vacuum  :     L5987,  L5986,  L5781"								"$10,882 "				
+Otto_Bock_Freedom	1C62 Triton w/ Harmony System	L5987	L5986	L5781	 	1C62-KIT	" 3,000.69 "	11930	25%	11/1/2020	75	
+Otto_Bock_Freedom	Taleo Harmony 1C52	L5987	L5986	L5781	 	1C52-KIT	" 3,387.08 "	11930	28%	11/21/2020	10	
+Coding Group:     L5999 Base Code												
+Stomper	Stomper Prosthetic Foot	L5999	 	 	 	STOMPER-FOOT	67.58	#N/A	#N/A	NO PDAC APPROVAL	10	
+Ossur	Flex-Run with Nike Sole	L5999	 		 	FSX008-FOOT	1290.83	#N/A	#N/A	NO PDAC APPROVAL		
+Fillauer	Obsidian Running Blade (Adult or Pediatric)	L5999	 	 	 	175-130-FOOT	1450.88	#N/A	#N/A	11/18/2020		
+Ossur	Cheetah	L5999	 	 	 	FSX00-FOOT	1486.33	#N/A	#N/A	NO PDAC APPROVAL		
+Otto_Bock_Freedom	Sprinter	L5999	 	 	 	1E90	1574.69	#N/A	#N/A	NO PDAC APPROVAL	10	
+Biodapt	Versa Foot	L5999	 	 	 	VF85-FOOT	3386.7	#N/A	#N/A	NO PDAC APPROVAL	10	
+Biodapt	Versa2	L5999	 	 	 	VF85-FOOT	3386.7	#N/A	#N/A	NO PDAC APPROVAL	10	
+Ossur	Pro-flex Pivot	L5999	 		 	PFP0-FOOT	6738.42	#N/A	#N/A	9/1/2018	10	
+Biodapt	Versa2 HD	L5999	 	 	 	PENDING	Pending	#N/A	#VALUE!	NO PDAC APPROVAL	10	
+Biodapt	Versa Alpine	L5999	 	 	 	PENDING	Pending	#N/A	#VALUE!	NO PDAC APPROVAL	10	
+Coding Group:     Miscellaneous												
+College_Park	Sidekicks Feet for Stubbies	L5210	L5920	L5972	L5986	SK-FOOT	444.46	3962	11%	NO PDAC APPROVAL	10	
+College_Park	Accent (without dynamic pylon)	L5981	L5985	L5986	L5990	ACC-FOOT	722.76	5738	13%	NO PDAC APPROVAL	10	
+College_Park	Accent (with dynamic pylon)	L5981	L5986	L5990	 	ACC-FOOT	722.76	5453	13%	NO PDAC APPROVAL	10	
+KISS	Feet for Stubbies	L5920	L5972	 	 	CMP27/A	272.69	908	30%	NO PDAC APPROVAL	10	
+Blatchford	Echelon Vacuum	L5781	L5968	 	 	EVAC-FOOT	3290.96	10695	31%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	Runway	L5981	L5990	 	 	RUN-FOOT-KIT	1498.08	4820	31%	NO PDAC APPROVAL	10	
+Ossur	Pro-flex LP Align	L5981	L5986	L5990	 	PLA0-FOOT	1750.06	5453	32%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	Prosymes	L5910	L5981	 	 	1C20	1465.29	3351	44%	NO PDAC APPROVAL	10	
+Dycor	H2U	L5972	L5984	 	 	HS-FOOT	370.15	947	39%	NO PDAC APPROVAL	10	
+Dycor	ATM (Single Axis)	L5975	 	 	 	1A-FOOT	254.83	468	54%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1A29 Greissinger (Coding option 2)	L5975	L5999	 	 	1A29	260.44	468	56%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1A29 Greissinger (Coding option 1)	L5972	L5999	 	 	1A29	260.44	379	69%	NO PDAC APPROVAL	10	
+Otto_Bock_Freedom	1A29 Greissinger (Coding option 3)	L5978	L5999	 	 	1A29	260.44	291	89%	NO PDAC APPROVAL	10	
+Dycor	Symes	L5975	 	 	 	FDS	519.93	468	111%	NO PDAC APPROVAL	10	
+Proteor_Ability_Freedom	Evaq8_line_addition_for_Rampage_HiPro_Rogue	L5781	 	 	 	EVAQ8 - Must select which model	0	4038	0%	NO PDAC APPROVAL	10	
+College_Park	Orbit	L5981	L5984			PENDING	Pending	3558	#VALUE!	5/21/2021	10	
+Otto_Bock_Freedom	emPower MPF	L5973	L5969			1A1-1	27000	N/A**	#VALUE!	NO PDAC APPROVAL	10	** L5956 is not part of Medicare fee schedule.
+#N/A - applies when a L5999 exists or the pricing is not standard 												

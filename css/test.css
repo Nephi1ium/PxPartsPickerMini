@@ -1,11 +1,13 @@
-#modalPic {
-  width: 100%;
-  max-width: 200px; }
 
-.col-sm-12 .card {
-  width: 300;
-  padding: 5px;
-  margin: 5px; }
+#addNotes {
+  width: 100%;
+}
+
+
+.btn-block{
+  font-size: 1vw;
+}
+
 
 .card .card-header p {
   color: #08719e; }
@@ -18,10 +20,12 @@ header {
   color: #fbf8be;
   color: #08719e; }
 
-.card-outside {
-  height: 600px;
-  display: inline-block;
-  position: relative; }
+h1 {
+  margin: 20px;
+color: #08719e;  }
+
+.img-thumbnail {
+  margin: 20px; }
 
 .img-responsive {
   display: block;
@@ -39,159 +43,359 @@ header {
   max-width: 50%;
   height: auto; }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px; }
-
-.sidenav button {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  text-align: center; }
-
-.sidenav a:hover {
-  color: #f1f1f1; }
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  margin-left: 25px;
-  color: #d1caca;
-  padding: 10px;
-  font-size: 100%;
-  display: block;
-  border: 5px;
-  text-align: center;
-  cursor: pointer; }
-
-.closebtn:hover {
-  background-color: #08719e; }
+  .closebtn:hover {
+    background-color: #08719e;
+  color: black; }
 
 .openbtn {
   font-size: 20px;
   cursor: pointer;
-  background-color: #111;
+  background-color: #08719e;
   color: white;
-  padding: 10px 15px;
-  border: none; }
+  padding: 10px;
+  border: none;
+  margin: 5px; 
+  border-radius: 10px;
+  position: fixed;
+  z-index: 100;
+  bottom: 0px;
+  right: 0px;}
 
 .openbtn:hover {
   background-color: #08719e; }
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px; }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
-  .sidenav a {
-    font-size: 18px; } }
-
-#choiceHead {
-  margin: 5px;
-  align-content: center;
-  color: #08719e; }
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px; }
-
-/* Style the sidenav links and the dropdown button */
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #08719e; }
-
-/* Main content */
-.main {
-  margin-left: 200px;
-  /* Same as the width of the sidenav */
-  font-size: 20px;
-  /* Increased text to enable scrolling */
-  padding: 0px 10px; }
-
-/* Add an active class to the active dropdown button */
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px; }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
   padding-right: 8px; }
 
-.sub-choice {
-  padding: 6px 8px 6px 16px;
-  margin: 2px;
-  text-decoration: none;
-  font-size: 10px;
-  color: #818181;
-  display: inline-block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  overflow-wrap: break-word;
-  display: none;
-  text-align: center; }
-
-.img-fluid {
-  height: 75px; }
-
 .card-image {
-  height: 350px;
-  width: 350px; }
-
-.card-part {
-  display: none; }
-
-.accordion {
-  background-color: #eee;
-  color: white;
-  background-color: black;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s; }
-
-.sidenav .container .card {
-  background-color: #111;
-  border: 2px solid #08719e; }
+  max-width: 100%;
+  height: auto;
+  width: auto; }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc; }
+.active {
+  background-color: #08719e; }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
-  padding: 0 18px;
+  padding: 18px;
   background-color: white;
   display: none;
   overflow: hidden; }
+
+  #resPage {
+    display: none;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+} 
+.card {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+}
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 150px;
+  object-fit: contain; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+
+#kOneTwo{
+  display: none;
+}
+
+#MPK {
+  display: none;
+}
+
+#safeKnee{
+  display: none;
+}
+
+#polyKnee {
+  display: none;
+}
+
+#singleAxis {
+  display: none;
+}
+
+#polyPneuSwinStanFlex{
+  display: none;
+}
+
+#polyHydrSwinStanFlexHigh {
+  display: none;
+}
+
+#fric {
+  display: none;
+}
+
+#fricMan {
+  display: none;
+}
+#fricExt {
+  display: none; }
+
+  #fricExtMan{
+    display: none;
+  }
+  #fricExtStanChoi{
+    display: none;
+  }
+
+  #fricExtStanLockChoi{
+    display: none;
+  }
+
+  #singAxManLockChoi{
+    display: none;
+  }
+
+  #singAxPneuFricChoi{
+    display: none;
+  }
+  #singAxHydStanSwinChoi{
+    display: none;
+  }
+  #safeExtChoi{
+    display: none;
+  }
+  
+  #safeFlexExtChoi {
+    display: none;
+  }
+
+  #polyHydrauChoi {
+    display: none;
+  }
+  
+  #polyHydrauStanChoi {
+    display: none;
+  }
+  #polyPneuChoi {
+    display: none;
+  }
+
+  #fricExtStan{
+    display: none;
+  }
+
+  #fricExtStanLock{
+    display: none;
+  }
+
+  #singAxManLock{
+    display: none;
+  }
+
+  #singAxPneuFric{
+    display: none;
+  }
+  #singAxHydStanSwin{
+    display: none;
+  }
+  #safeExt{
+    display: none;
+  }
+  
+  #safeFlexExt {
+    display: none;
+  }
+
+  #polyHydrau {
+    display: none;
+  }
+  
+  #polyHydrauStan {
+    display: none;
+  }
+  #polyPneu {
+    display: none;
+  }
+
+  #KnSeven {
+    display: none;
+  }
+
+  
+  
+  .card-img-top {
+    border-radius: 25%;
+    max-width: 50%;
+     width: auto;
+     height: auto;
+     align-items: center;
+    margin-bottom: 5px;
+  padding: 5px; }
+
+.cardcontainer {
+  padding: 2% 0;
+  margin: 0 auto;
+  width: 100%; }
+
+.card-title {
+  font-size: medium;
+  align-items: center; }
+
+.card-body {
+  padding: 0; }
+
+.item a {
+  display: none; }
+
+.item:hover .card-text {
+  display: flex;
+  background-position: center; }
+
+.item:hover .card-img-top {
+  width: 25%;
+  height: fit-content; }
+
+.item:hover a {
+  display: flex;
+  text-align: center; }
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh; }
+
+@media (max-width: 632px) {
+  .gallery-wrap {
+    flex-direction: column; } }
+
+.item {
+  flex: 1;
+  height: 100%;
+  width: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  overflow: hidden;
+  background-color: #08719e; }
+  .item:hover {
+    flex: 30;
+    background-image: none;
+    text-align: center;
+    background-color: #f9fcd6; }
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
+
+.item:hover img {
+  size: 15%; }
+
+  /* .mainChoice{
+    height: 20vh;
+    width: 20vw;
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 85px;
+    border-radius: 25%;
+    margin: 20px;
+    background-color: #39a;
+    background-image: linear-gradient(to right, #08A 0%, #3AD 20%, #3AD 80%, #5CF 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 31, 0.75);
+    cursor: pointer;
+  } */
+
+  /* .mainChoice{
+  }
+  .indivChoice {
+
+  }
+
+  .subChoice {
+ 
+  } */
+
+
+  /* @media (max-width: 800px) { 
+    //your code goes here
+}
+
+div{ 
+    height: 50vh;//50% of the viewport (window) height
+    width: 40vw;//40% of the viewport (window) width
+} */

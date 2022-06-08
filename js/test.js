@@ -1,86 +1,73 @@
-// const closeAbout = document.querySelector("#trialCollapse");
-/*const appOpenBut = document.querySelector("#stepOne");
-const appCloseBut = document.querySelector("#stepTwo");
-
-// closeAbout.addEventListener("click", () => aboutClose());
-appOpenBut.addEventListener("click", () => openNav());
-appCloseBut.addEventListener("click", () => closeNav());
+let infoArr = [];
 
 
-// function aboutClose () {
-//     // document.getElementsByClassName("collapse").classList.add('c1'); 
-//     document.getElementsByClassName('collapse').classList.toggle('collapse');
-//     }
-
-function openNav() {
-    document.getElementById("mySideNav").style.width = "100%";
-
-
-  }
-  
-function closeNav() {
-    document.getElementById("mySideNav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-  }   
-
-*/
-  // const pdfArray = [];
-
-// const x = document.getElementsByClassName("ttb");
-// const y = document.getElementsByClassName("tfb");
-// const coll = document.getElementsByClassName("collapsible");
-
-// const rbk = document.getElementById("z89.511");
-// const lbk = document.getElementById("z89.512");
-// const rak = document.getElementById("z89.612");
-// const lak = document.getElementById("z89.611");
 // Step 1 Query Selectors
 
 const appOpenBut = document.querySelector("#stepOne");
 const appCloseBut = document.querySelector("#stepTwo");
+const showExtFric = document.querySelector("#fric");
+const showExtFricMan = document.querySelector("#fricMan");
+const showFricExtStan = document.querySelector("#fricExtStan");
+const showFricExtStanLock = document.querySelector("#fricExtStanLock");
+const showSingAxManLock = document.querySelector("#singAxManLock");
+const showSingAxPneuFric = document.querySelector("#singAxPneuFric");
+const showSingAxHydStanSwin = document.querySelector("#singAxHydStanSwin");
+const showSafeExt = document.querySelector("#safeExt");
+const showSafeFlexExt = document.querySelector("#safeFlexExt");
+const showPolyHydrau = document.querySelector("#polyHydrau");
+const showPolyHydrauStan = document.querySelector("#polyHydrauStan");
+const showPolyPneu = document.querySelector("#polyPneu");
+
+
+// const storeClinName = document.querySelector("#clinName");
+// const submitFirstPage = document.querySelector("#subFirstPage");
+const saveFirstPage = document.querySelector("#subFirstPage");
+
+
+
+
+
 const ptName = document.querySelector("#ptName");
 const dateOfBirth = document.querySelector("#dob");
-// const rBKA = document.querySelector("#z89.511");
-// const lBKA = document.querySelector("#z89.512");
-// const lAKA = document.querySelector("#z89.612");
-// const rAKA = document.querySelector("#z89.611");
-// const pdf = document.querySelector()
+const resetPage = document.querySelector("#resPage");
 const skinCond = document.querySelector("#skinCondition option:checked");
 
 
 let cardShow = document.querySelector(".card-part");
-let cardShown = document.querySelector("#collapseOneOne")
+let cardShown = document.querySelector("#collapseOneOne");
 
 // Step 2 Function execution
-appOpenBut.addEventListener("click", () => openNav());
-appCloseBut.addEventListener("click", () => closeNav());
-// cardShown.addEventListener("click", () => cards1());
+resetPage.addEventListener("click", () => resetEntirePage());
+showExtFric.addEventListener("click", () => showExtFriction());
+showExtFricMan.addEventListener("click", () => showExtFricManChoice());
+showFricExtStan.addEventListener("click", () => showFricExtStanChoice());
+showFricExtStanLock.addEventListener("click", () => showFricExtStanLockChoice());
+showSingAxManLock.addEventListener("click", () => showSingAxManLockChoice());
+showSingAxPneuFric.addEventListener("click", () => showSingAxPneuFricChoice());
+showSingAxHydStanSwin.addEventListener("click", () => showSingAxHydStanSwinChoice());
+showSafeExt.addEventListener("click", () => showSafeExtChoice());
+showSafeFlexExt.addEventListener("click", () => showSafeFlexExtChoice());
+showPolyHydrau.addEventListener("click", () => showPolyHydrauChoice());
+showPolyHydrauStan.addEventListener("click", () => showPolyHydrauStanChoice());
+showPolyPneu.addEventListener("click", () => showPolyPneuChoice());
+
+
+// Below is the code for user input, from Home page, stored in the browser, and added to Virtual Care document
+// storeClinName.addEventListener("keyup", () => storeClinicianName());
+// submitFirstPage.addEventListener("click", () => storeFirstPageInformation());
 
 
 
 
-//below is the code to add functionality and CSS change to the other options. I need to figure out how to show only one item per click, by likely another
-//class name or running the code by id. Though I am sure there is some other way of causing the click of a certain button to cause an action, without creating
-// a unique ID for each. 
-
-//cardShown.addEventListener("click", () => cards2());
-
-// This function to display the card when the correct button is pressed
-function cards1 () {
-document.getElementById("STG_Knee").style.cssText = "display: flex; margin-right: 25%; margin-left: 25%; padding 25px; margin 25px;" 
-}
-function cards2 () {
-    document.getElementById("Mighty_Mite").style.cssText = "display: flex; margin-right: 25%; margin-left: 25%; padding 25px; margin 25px;" 
-}
-
-// https://codepen.io/valaxin/pen/reQMXp
 
 
-//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
+
+function resetEntirePage(){
+    window.location.reload();
+  }
 
 function openNav() {
-    document.getElementById("mySideNav").style.width = "100%";
-
+  document.getElementById("mySideNav").style.width = "100%";
 
   }
   
@@ -88,7 +75,93 @@ function openNav() {
     document.getElementById("mySideNav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
+  function showExtFriction() {
+    console.log("Show Card");
+    document.getElementById("fricExt").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showExtFricManChoice() {
+    console.log("Show Card Frix Ext Man Lock");
+    document.getElementById("fricExtMan").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
 
+  }
+  function showFricExtStanChoice() {
+    document.getElementById("fricExtStanChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showFricExtStanLockChoice() {
+    document.getElementById("fricExtStanLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showSingAxManLockChoice() {
+    document.getElementById("singAxManLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showSingAxPneuFricChoice() {
+    document.getElementById("singAxPneuFricChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showSingAxHydStanSwinChoice() {
+    document.getElementById("singAxHydStanSwinChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showSafeExtChoice() {
+    document.getElementById("safeExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showSafeFlexExtChoice() {
+    document.getElementById("safeFlexExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showPolyHydrauChoice() {
+    document.getElementById("polyHydrauChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showPolyHydrauStanChoice() {
+    document.getElementById("polyHydrauStanChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  function showPolyPneuChoice() {
+    document.getElementById("polyPneuChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+  
+// function storeFirstPageInformation(){
+// // let clinicianName = document.getElementById("clinName").value;
+// // let clinicLocation = document.getElementById("clinLoc").value;
+
+
+// // infoArr[infoArr.length]=clinicianName;
+// // infoArr[infoArr.length]=clinicLocation;
+// console.log("The function works, but not the acitons")
+// return console.log(infoArr);
+
+// }
+
+function saveFirstPageInfo(){
+    console.log("This one worked though")
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   function hoverShowFricExt(){
+//     document.getElementById("fricExt").style.cssText = "display: flex;"
+//   }
 
 //https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapse_sidebar/ 
 // My own code! Below
@@ -102,7 +175,7 @@ function openNav() {
 //   }
 // My own code, above
 
-
+console.log("This is working");
 
 
 

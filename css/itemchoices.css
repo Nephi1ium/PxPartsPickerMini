@@ -1,0 +1,126 @@
+/* .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+  }
+  .nav li:before {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+  }
+  .nav a {
+    background-color: #f7f7f7;
+    background-image: linear-gradient(#f7f7f7, #e7e7e7);
+    border-radius: 50%;
+    box-shadow: 0 3px 8px #aaa, inset 0 2px 3px #fff;
+    color: #878787;
+    display: block;
+    font-family: 'Poiret One', cursive;
+    font-size: 32px;
+    line-height: 144px;
+    text-decoration: none;
+    margin: 36px;
+    position: relative;
+    width: 144px;
+    height: 144px;
+  }
+  .nav a:before {
+    background: #fff;
+    border-top: 2px solid #ddd;
+    border-radius: 50%;
+    box-shadow: inset 0 8px 48px #ddd;
+    content: '';
+    display: block;
+    position: absolute;
+    left: -18px;
+    right: -18px;
+    top: -18px;
+    bottom: -18px;
+    z-index: -1;
+  }
+  .nav a:visited {
+    color: #a7a7a7;
+  }
+  .nav a:hover {
+    color: hsl(30, 70%, 50%);
+  }
+  .nav a:active {
+    background: #f5f5f5;
+  } */
+
+  
+  .mainChoice {
+      box-shadow: 0px 9px 4px 1px #276873;
+      background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+      background-color:#599bb3;
+      border-radius:2px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:2vw;
+      font-weight:bold;
+      padding: 10px 5px;
+      min-width: 15vw;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #3d768a;
+      box-sizing: border-box;
+  }
+
+
+  .mainChoice:hover {
+      background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+      background-color:#408c99;
+  }
+  .mainChoice:active {
+      position:relative;
+      top:1px;
+  }
+
+  #main {
+      display: grid;
+      grid-column-gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-area: "kneeSec feetSec lineSec compSec" ;
+      justify-items: center;
+  }
+
+  .kneeSection{
+grid-area: kneeSec ;
+  }
+
+  .feetSection{
+    grid-area: feetSec ;
+  }
+
+  .linersSection{
+    grid-area: lineSec;
+  }
+
+  .componentsSection {
+    grid-area: compSec ;
+  }
+
+@media screen and (max-width: 425px) {
+    #main {
+        grid-row-gap: 20px;
+
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-area: "kneeSec feetSec"
+      "lineSec compSec" ;
+    }
+}

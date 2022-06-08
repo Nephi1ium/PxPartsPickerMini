@@ -101,14 +101,29 @@ color: #08719e;  }
   color: black; }
 
 .openbtn {
-  font-size: 20px;
+  font-size: 1vw;
   cursor: pointer;
   background-color: #08719e;
   color: white;
   padding: 10px;
   border: none;
   margin: 5px; 
-  border-radius: 10px;}
+  border-radius: 10px;
+  position: fixed;
+  z-index: 100;
+  bottom: 50%;
+  right: 0px;}
+
+  .objselect {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #08719e;
+    color: white;
+    padding: 10px;
+    border: none;
+    margin: 5px; 
+    border-radius: 10px;
+  }
 
   .btn-right {
     align-items: center;
@@ -191,8 +206,9 @@ color: #08719e;  }
   height: 75px; }
 
 .card-image {
-  height: 350px;
-  width: 350px; }
+  max-width: 100%;
+  height: auto;
+  width: auto; }
 
 .accordion {
   background-color: #eee;

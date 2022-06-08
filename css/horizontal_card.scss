@@ -19,9 +19,13 @@
   #singAxPneuFricChoi{
     display: none;
   }
+  #singAxHydStanSwinChoi{
+    display: none;
+  }
   #safeExtChoi{
     display: none;
   }
+  
   #safeFlexExtChoi {
     display: none;
   }
@@ -29,7 +33,8 @@
   #polyHydrauChoi {
     display: none;
   }
-    #polyHydrauStanChoi {
+  
+  #polyHydrauStanChoi {
     display: none;
   }
   #polyPneuChoi {
@@ -38,146 +43,80 @@
 
   
   
-  .card-img-top {
-    width: 100%;
-    height: auto;
-    align-items: center;
-  }
-  .cardcontainer {
-    padding: 2% 0;
-    margin: 0 auto;
-    width: 100%; }
-  
-  .card-title {
-    font-size: medium;
-    align-items: center;
+.card-img-top {
+ max-width: 100%;
+  width: auto;
+  height: auto;
+  align-items: center; }
 
-  }
+.cardcontainer {
+  padding: 2% 0;
+  margin: 0 auto;
+  width: 100%; }
 
-  .card-body {
-    padding: 0;
-  }
+.card-title {
+  font-size: medium;
+  align-items: center; }
 
-  .item {
-    a {
-      display: none;
-    }
-  }
+.card-body {
+  padding: 0; }
 
-  .item:hover .card-text {
-    display: flex;
-    background-position: center;
-  }
+.item a {
+  display: none; }
 
-  .item:hover .card-img-top {
-    width: 25%;
-    height: fit-content;
-  }
+.item:hover .card-text {
+  display: flex;
+  background-position: center; }
 
-  // .item:hover .card-title {
-  //   display: flex;
-  // }
+.item:hover .card-img-top {
+  width: 25%;
+  height: fit-content; }
 
-  .item:hover a {
-    display: flex;
-    text-align: center;
-  }
-  
+.item:hover a {
+  display: flex;
+  text-align: center; }
 
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh; }
+
+@media (max-width: 632px) {
   .gallery-wrap {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 70vh;
-  }
-  
-  @media (max-width: 632px) {
-    .gallery-wrap {
-      flex-direction: column;
-    }
-  }
-  .item {
-    flex: 1;
-    height: 100%;
-    width: 10%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    transition: flex 0.8s ease;
-    overflow:hidden;
-    background-color: #08719e;
-    
-    &:hover{
-      flex: 30;
-      background-image: none;
-      text-align: center;
-      background-color: rgb(249, 252, 214);
-    }
+    flex-direction: column; } }
 
-  }
+.item {
+  flex: 1;
+  height: 100%;
+  width: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  overflow: hidden;
+  background-color: #08719e; }
+  .item:hover {
+    flex: 30;
+    background-image: none;
+    text-align: center;
+    background-color: #f9fcd6; }
 
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
 
-  
-  .social{
-    position: absolute;
-    right: 35px;
-    bottom: 0;
-    
-    img{
-      display: block;
-      width: 32px;
-    }
-  }
-  
-  
-  
-  // .item-1 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
-  
-  // .item-2 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
-  
-  // .item-3 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
-  
-  // .item-4 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
-  
-  // .item-5 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
 
-  // .item-6 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
-
-  // .item-7 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
-
-  // .item-8 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
-
-  // .item-9 { 
-  //   background-image: url("../images/fc100510_image_1.jpg");
-  // }
-  
-  .social{
-    position: absolute;
-    right: 35px;
-    bottom: 0;
-    
-    img{
-      display: block;
-      width: 32px;
-    }
-  }
-
-  .item:hover img {
-    size: 15%;
-  }
+.item:hover img {
+  size: 15%; }

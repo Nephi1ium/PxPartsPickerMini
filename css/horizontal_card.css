@@ -43,10 +43,14 @@
 
   
   
-.card-img-top {
-  width: 100%;
-  height: auto;
-  align-items: center; }
+  .card-img-top {
+    border-radius: 25%;
+    max-width: 50%;
+     width: auto;
+     height: auto;
+     align-items: center;
+    margin-bottom: 5px;
+  padding: 5px; }
 
 .cardcontainer {
   padding: 2% 0;
