@@ -163,136 +163,43 @@ body {
   text-transform: uppercase
 }
 
- #kOneTwo{
-  display: none;
-} 
 
- #MPK {
-  display: none;
+.nav {
+  display: block;
 }
-
-#safeKnee{
-  display: none;
-}
-
-#polyKnee {
-  display: none;
-}
-
-#singleAxis {
-  display: none;
-} 
-
-#polyPneuSwinStanFlex{
-  display: none;
-}
-
-#polyHydrSwinStanFlexHigh {
-  display: none;
-}
-
-#fric {
-  display: none;
-}
-
-#fricMan {
-  display: none;
-}
-#fricExt {
-  display: none; }
-
-  #fricExtMan{
-    display: none;
-  }
-  #fricExtStanChoi{
-    display: none;
-  }
-
-  #fricExtStanLockChoi{
-    display: none;
-  }
-
-  #singAxManLockChoi{
-    display: none;
-  }
-
-  #singAxPneuFricChoi{
-    display: none;
-  }
-  #singAxHydStanSwinChoi{
-    display: none;
-  }
-  #safeExtChoi{
-    display: none;
-  }
-  
-  #safeFlexExtChoi {
-    display: none;
-  }
-
-  #polyHydrauChoi {
-    display: none;
-  }
-  
-  #polyHydrauStanChoi {
-    display: none;
-  }
-  #polyPneuChoi {
-    display: none;
-  }
-
-  #fricExtStan{
-    display: none;
-  }
-
-  #fricExtStanLock{
-    display: none;
-  }
-
-  #singAxManLock{
-    display: none;
-  }
-
-  #singAxPneuFric{
-    display: none;
-  }
-  #singAxHydStanSwin{
-    display: none;
-  }
-  #safeExt{
-    display: none;
-  }
-  
-  #safeFlexExt {
-    display: none;
-  }
-
-  #polyHydrau {
-    display: none;
-  }
-  
-  #polyHydrauStan {
-    display: none;
-  }
-  #polyPneu {
-    display: none;
-  }
-
-  #KnSeven {
-    display: none;
-  }
-
   .secButtons {
 
     box-shadow: 0px 9px 4px 1px #276873;
-    background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background:linear-gradient(to bottom, #59aeb1 5%, #408c99 100%);
     background-color:#59aeb1;
     border-radius:2px;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
     font-family:Arial;
-    font-size:2vw;
+    font-size:4vw;
+    font-weight:bold;
+    padding: 10px 5px;
+    min-width: 15vw;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    box-sizing: border-box;
+    justify-content: center;
+
+    
+  }
+
+  .indivChoice {
+
+    box-shadow: 0px 9px 4px 1px #276873;
+    background:linear-gradient(to bottom, #3f7e80 5%, #408c99 100%);
+    background-color:#3f7e80;
+    border-radius:2px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:3vw;
     font-weight:bold;
     padding: 10px 5px;
     min-width: 15vw;
@@ -385,6 +292,148 @@ body {
 .item:hover img {
   size: 15%; }
 
+
+
+
+
+
+  .kOne{
+    display: none;
+  }
+  
+  .singleAxis {
+    display: none;
+  }
+  
+  .safety {
+    display: none;
+  }
+  
+  .polycentric{
+    display: none;
+  }
+  
+  .mpk{
+    display: none;
+  }
+   #kOneTwo{
+    display: none;
+  } 
+  
+   #MPK {
+    display: none;
+  }
+  
+  #safeKnee{
+    display: none;
+  }
+  
+  #polyKnee {
+    display: none;
+  }
+  
+  #singleAxis {
+    display: none;
+  } 
+  
+  #polyPneuSwinStanFlex{
+    display: none;
+  }
+  
+  #polyHydrSwinStanFlexHigh {
+    display: none;
+  }
+  
+  #fric {
+    display: none;
+  }
+  
+  #fricMan {
+    display: none;
+  }
+  #fricExt {
+    display: none; }
+  
+    #fricExtMan{
+      display: none;
+    }
+    #fricExtStanChoi{
+      display: none;
+    }
+  
+    #fricExtStanLockChoi{
+      display: none;
+    }
+  
+    #singAxManLockChoi{
+      display: none;
+    }
+  
+    #singAxPneuFricChoi{
+      display: none;
+    }
+    #singAxHydStanSwinChoi{
+      display: none;
+    }
+    #safeExtChoi{
+      display: none;
+    }
+    
+    #safeFlexExtChoi {
+      display: none;
+    }
+  
+    #polyHydrauChoi {
+      display: none;
+    }
+    
+    #polyHydrauStanChoi {
+      display: none;
+    }
+    #polyPneuChoi {
+      display: none;
+    }
+  
+    #fricExtStan{
+      display: none;
+    }
+  
+    #fricExtStanLock{
+      display: none;
+    }
+  
+    #singAxManLock{
+      display: none;
+    }
+  
+    #singAxPneuFric{
+      display: none;
+    }
+    #singAxHydStanSwin{
+      display: none;
+    }
+    #safeExt{
+      display: none;
+    }
+    
+    #safeFlexExt {
+      display: none;
+    }
+  
+    #polyHydrau {
+      display: none;
+    }
+    
+    #polyHydrauStan {
+      display: none;
+    }
+    #polyPneu {
+      display: none;
+    }
+  
+    #KnSeven {
+      display: none;
+    }
   /* .mainChoice{
     height: 20vh;
     width: 20vw;

@@ -75,29 +75,29 @@
                 
 <!--          Below accordion is the data-bs-parent of the first line of inner accordion, all correct but for -*The first four* Delete if completed restructuring of code to drop the first four down a level       -->
 <!--              Enter code into the Card Body, in replacement of the fake latin text.    -->
-                <a class=" "  id="kOneTwo">
+                <a class="secButtons "  id="kOneTwo">
                   K1/K2
                 </a>
 <!--          Start of the 4 inner categories of K1/K2 Knees          -->
             <nav>
                 <ul class="nav">
                     <li>
-                        <a id="fric" class="btn indivChoice"  >
+                        <a id="fric" class="btn indivChoice kOne"  >
                         Friction, Extension Assist
                         </a>
                     </li>
                     <li>
-                        <a id="fricMan"class="indivChoice btn"  >
+                        <a id="fricMan"class="indivChoice btn kOne"  >
                         Friction, Extension Assist, Manual Lock
                         </a>
                     </li>
                     <li>
-                        <a id="fricExtStan" class="indivChoice btn"  >
+                        <a id="fricExtStan" class="indivChoice btn kOne"  >
                         Friction, Extension Assist, Stance Flexion
                         </a>
                     </li>
                     <li>
-                        <a class="indivChoice btn" id="fricExtStanLock"  >
+                        <a class="indivChoice btn kOne" id="fricExtStanLock"  >
                         Friction, Extension Assist, Stance Flexion, Manual Lock
                         </a>
                     </li>
@@ -109,22 +109,31 @@
 <!--               Beginning of the Single Axis Category -->
             
               
-                <a class="  "  id="singleAxis">
+                <a class="secButtons  "  id="singleAxis">
                 Single Axis
               </a>
 
                 
 <!--                   Container for all the Single Axis Knee categories -->
-                <a class="indivChoice btn" id="singAxManLock"  >
-                  Manual Lock
-                </a>
-                <a class="indivChoice btn" id="singAxPneuFric"  >
-                  Pneumatic Swing, Friction Stance
-                </a>
-                <a class="indivChoice btn"  id="singAxHydStanSwin">
-                  Hydraulic Stance and Swing
-                </a>
- 
+              <nav>
+                <ul class="nav">
+                  <li>
+                    <a class="indivChoice btn singleAxis" id="singAxManLock"  >
+                      Manual Lock
+                    </a>
+                  </li>
+                  <li>
+                    <a class="indivChoice btn singleAxis" id="singAxPneuFric"  >
+                      Pneumatic Swing, Friction Stance
+                    </a>
+                  </li>
+                  <li>
+                    <a class="indivChoice btn singleAxis"  id="singAxHydStanSwin">
+                      Hydraulic Stance and Swing
+                    </a>
+                  </li>
+                </ul>
+              </nav>
     
 <!--                   End of Single Axis Knee Category information -->
                 
@@ -134,36 +143,58 @@
 <!--               Beginning of the Safety Knees Category -->
                 
               
-                <a class=" "  id="safeKnee">
+                <a class="secButtons "  id="safeKnee">
                   Safety Knees
                 </a>
 
-                
-                    <a class="indivChoice btn"  id="safeExt" href="#"> Extension Assist </a>
-                    <a class="indivChoice btn"  id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
-
+                <nav >
+                  <ul class="nav">
+                    <li>
+                    <a class="indivChoice btn safety"  id="safeExt" href="#"> Extension Assist </a>
+                  </li>
+                    <li>
+                    <a class="indivChoice btn safety"  id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
+                  </li>
+                    </ul>
+                </nav>
 <!--               End of the safety knees category -->
 <!--               Start of the polycentric knees category -->
             
               
-                <a class="  "  id="polyKnee">
+                <a class="secButtons  "  id="polyKnee">
                 Polycentric Knees
                 </a>
 
-                
-                  <a class="indivChoice btn"  id="polyHydrau" href="#"> Hydraulic Swing </a>
-                  <a class="indivChoice btn"  id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
-                  <a class="indivChoice btn"  id="polyPneu" href="#"> Pneumatic Swing</a>
-                  <a class="indivChoice btn"  id="polyPneuSwinStanFlex" href="#"> Pneumatic Swing and Stance Flexion</a>
-                  <a class="indivChoice btn"  id="polyHydrSwinStanFlexHigh" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
+            <nav>
+              <ul class="nav">
+                <li>
+                  <a class="indivChoice btn polycentric"  id="polyHydrau" href="#"> Hydraulic Swing </a>
+                </li>
+                <li>
+                  <a class="indivChoice btn polycentric"  id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
+                </li>
+                <li>
+                  <a class="indivChoice btn polycentric"  id="polyPneu" href="#"> Pneumatic Swing</a>
+                </li>
+                <li>
+                  <a class="indivChoice btn polycentric"  id="polyPneuSwinStanFlex" href="#"> Pneumatic Swing and Stance Flexion</a>
+                </li>
+                <li>  
+                  <a class="indivChoice btn polycentric"  id="polyHydrSwinStanFlexHigh" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
+                </li>
+              </ul>
+            </nav>
+
 
 <!--        End of the Polycentric knees category        -->
 <!--               Start of the MPK Category -->
             
               
-                <a class="  "  id="MPK">
+                <a class="secButtons  "  id="MPK">
                   Microprocessor Knees
                 </a>
+
+                <a class="indivChoice btn mpk"  id="MPKChoice" href="#"> Blatchford</a>
 
               <div id="KnEight" class="collapse" data-bs-parent="#accordion">
                 <!-- Enter the accordion buttons here -->
