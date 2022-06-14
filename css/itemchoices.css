@@ -61,7 +61,7 @@
   } */
 
   
-  .mainChoice {
+  /* .mainChoice {
       box-shadow: 0px 9px 4px 1px #276873;
       background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
       background-color:#599bb3;
@@ -77,6 +77,14 @@
       text-decoration:none;
       text-shadow:0px 1px 0px #3d768a;
       box-sizing: border-box;
+  } */
+
+  .mainChoice {
+    display: none;
+  }
+
+  .secButtons{
+    display: none;
   }
 
   @media screen and (max-width: 425px){
@@ -100,23 +108,23 @@
     }
   }
 
-  .mainChoice:hover {
+  /* .mainChoice:hover {
       background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
       background-color:#408c99;
-  }
-  .mainChoice:active {
+  } */
+  /* .mainChoice:active {
       position:relative;
       top:1px;
-  }
+  } */
 
-  #main {
+  /* #main {
       display: grid;
       grid-column-gap: 20px;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: auto;
       grid-area: "kneeSec feetSec lineSec compSec" ;
       justify-items: center;
-  }
+   } */
 
   .kneeSection{
 grid-area: kneeSec ;
@@ -132,7 +140,7 @@ grid-area: kneeSec ;
 
   .componentsSection {
     grid-area: compSec ;
-  }
+  } 
 
 /* @media screen and (max-width: 425px) {
     #main {

@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/itemchoices.css">
-
+    <link rel="stylesheet" href="../css/navigator.css">
 
     <title>TF Suction</title>
 </head>
@@ -51,33 +51,24 @@
           </div>
       </div>
   </header> 
+
+
+
+
   <!-- below is the div which contains the knee section -->
-      <button class="openbtn" id="resPage">X</button>
+<button class="openbtn" id="resPage">X</button>
       <!-- RIght now this resets the page, I should simply set the state of each element to "initial" -->
-
-
-
 <main id="main">
+<nav id="itemNavigator" class="myItemNavigator">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-<!--   <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
-<!--   If this accordion was #accordion then the data-bs-parent would cause all the items to open or close if any accordion was clicked -->
-<!--    I changed it to #accordionOne so that it could still be utilized by the third layer of the accordion as the data-bs-parent  -->
-    <section id="kneesSection"> 
-        
+    <section id="kneesSection">         
         <a id="kneeButton" class="btn mainChoice">
           Knees
         </a>
-        <!--     Start of the inner accordion       -->
-         
-
-<!--             This container holds the first set of the inner accordion k1/K2-MPK       -->
-                  
-                
-<!--          Below accordion is the data-bs-parent of the first line of inner accordion, all correct but for -*The first four* Delete if completed restructuring of code to drop the first four down a level       -->
-<!--              Enter code into the Card Body, in replacement of the fake latin text.    -->
-                <a class="secButtons "  id="kOneTwo">
-                  K1/K2
-                </a>
+            <a class="secButtons "  id="kOneTwo">
+              K1/K2
+            </a>
 <!--          Start of the 4 inner categories of K1/K2 Knees          -->
             <nav>
                 <ul class="nav">
@@ -103,17 +94,11 @@
                     </li>
                 </ul>        
             </nav>
-<!--                   End of the K1/K2 Category -->
-             
-  
-<!--               Beginning of the Single Axis Category -->
-            
-              
+<!--                   End of the K1/K2 Category -->        
+<!--               Beginning of the Single Axis Category -->           
                 <a class="secButtons  "  id="singleAxis">
                 Single Axis
-              </a>
-
-                
+              </a>               
 <!--                   Container for all the Single Axis Knee categories -->
               <nav>
                 <ul class="nav">
@@ -194,7 +179,7 @@
                   Microprocessor Knees
                 </a>
 
-                <a class="indivChoice btn mpk"  id="MPKChoice" href="#"> Blatchford</a>
+                <!-- <a class="indivChoice btn mpk"  id="MPKChoice" href="#"> Blatchford</a> -->
 
               <div id="KnEight" class="collapse" data-bs-parent="#accordion">
                 <!-- Enter the accordion buttons here -->
@@ -219,7 +204,9 @@
           Components
         </a>
     </section>
+</nav>
 </main>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 <!-- K1/K2 4-Bar Knee Section -->
 <aside  class="cardcontainer">
@@ -1625,53 +1612,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -1680,6 +1620,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 <script src="../js/test.js"></script>
 <script src="../js/tfCardTest.js"></script>
+<script src="../js/navigator.js"></script>
+
 
 
 </body>

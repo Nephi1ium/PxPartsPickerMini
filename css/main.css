@@ -14,8 +14,33 @@
 }
 
 .btn-block{
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
+@media (max-width: 2560px) {
+  .btn-block{
+    font-size: .5vw;
+  } 
+}
+@media (max-width: 1440px) {
+  .btn-block{
+    font-size: 1.5vw;
+  } 
+}
+@media (max-width: 475px) {
+  .btn-block{
+    font-size: 3vw;
+  } 
+}
+
+#genVirPDF {
+  display: none;
+}
+
+#VVPDFDown {
+  display: none;
+}
+
+
 
   #stepTwo {
     color: #08719e;

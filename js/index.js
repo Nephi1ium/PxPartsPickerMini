@@ -33,53 +33,62 @@ function storeModalPCC(){
 }
 
 function storeFirstPageInformation(){
-infoArr = [];
+// infoArr = [];
 
-let clinicianName = document.getElementById("clinName").value;
-let clinicLocation = document.getElementById("clinLoc").value;
-let patientName = document.getElementById("ptName").value;
-let dateOfBirth = document.getElementById("ptDOB").value;
-let encounterNumber = document.getElementById("encN").value;
+let clinicianName = document.getElementById("clinName");
+
+let clinicLocation = document.getElementById("clinLoc");
+let patientName = document.getElementById("ptName");
+let dateOfBirth = document.getElementById("ptDOB");
+let encounterNumber = document.getElementById("encN");
 // let kOne = document.getElementById("kOne").value;
 // let kTwo = document.getElementById("kTwo").value;
 // let kThree = document.getElementById("kThree").value;
 // let kFour = document.getElementById("kFour").value;
-let klevel = document.querySelector('input[name=kLevel]:checked').value;
-let patientWeight = document.getElementById("ptWeight").value;
-let patientHeight = document.getElementById("ptHeight").value;
+let klevel = document.querySelector('input[name=kLevel]:checked');
+let patientWeight = document.getElementById("ptWeight");
+let patientHeight = document.getElementById("ptHeight");
 
 localStorage.setItem('klevel',$('input[name="kLevel"]:checked').val());
 
+localStorage.setItem('clinicianName', clinicianName.value);
+localStorage.setItem('clinicLocation', clinicLocation.value);
+localStorage.setItem('patientName', patientName.value);
+localStorage.setItem('dateOfBirth', dateOfBirth.value);
+localStorage.setItem('encounterNumber', encounterNumber.value);
+localStorage.setItem('klevel', klevel.value);
+localStorage.setItem('patientWeight', patientWeight.value);
+localStorage.setItem('patientHeight', patientHeight.value);
 
-infoArr[infoArr.length]=clinicianName;
-infoArr[infoArr.length]=clinicLocation;
-infoArr[infoArr.length]=patientName;
-infoArr[infoArr.length]=dateOfBirth;
-infoArr[infoArr.length]=encounterNumber;
-infoArr[infoArr.length]=klevel;
+
+
+// infoArr[infoArr.length]=clinicianName;
+// infoArr[infoArr.length]=clinicLocation;
+// infoArr[infoArr.length]=patientName;
+// infoArr[infoArr.length]=dateOfBirth;
+// infoArr[infoArr.length]=encounterNumber;
+// infoArr[infoArr.length]=klevel;
 // infoArr[infoArr.length]=kTwo;
 // infoArr[infoArr.length]=kThree;
 // infoArr[infoArr.length]=kFour;
-infoArr[infoArr.length]=patientWeight;
-infoArr[infoArr.length]=patientHeight;
+// infoArr[infoArr.length]=patientWeight;
+// infoArr[infoArr.length]=patientHeight;
 
 // Need to add a function to save the array locally
 console.log("The function works!")
- console.log(infoArr);
- localStorage.infoArr = JSON.stringify(infoArr);
- return getLocalStoreData()
+//  console.log(infoArr);
+//  localStorage.infoArr = JSON.stringify(infoArr);
 
- }
 
 // function saveFirstPageInfo(){
 //     console.log("This one worked though")
 // }
   
 
-function getLocalStoreData(){
-    let firstArray = JSON.parse(localStorage.infoArr)
-    console.log(firstArray);
-}
+// function getLocalStoreData(){
+//     let firstArray = JSON.parse(localStorage.infoArr)
+//     console.log(firstArray);
+ }
 
 function generatePDF(){
 

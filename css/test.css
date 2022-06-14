@@ -164,7 +164,9 @@ body {
 }
 
 
-.nav {
+
+
+/* .nav {
   display: block;
 }
   .secButtons {
@@ -209,7 +211,7 @@ body {
     justify-content: center;
 
     
-  }
+  } */
   
   .card-img-top {
     border-radius: 25%;

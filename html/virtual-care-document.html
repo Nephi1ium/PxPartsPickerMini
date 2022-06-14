@@ -22,7 +22,7 @@
             <ul class="navbar-nav ">
                 <li class="nav-item"><a class="nav-link"  href="../index.html"><span class="fa fa-home fa-lg mr-3"></span>Home</a></li>
                 <li class="nav-item "><a class="nav-link" href="px-picker-tfpin.html"><span class="fa fa-circle fa-lg mr-3"></span>TransFemoral Pin</a></li>
-                <li class="nav-item"><a class="nav-link" href="px-picker-tfsuction.html"><span class="fa fa-circle fa-lg mr-3"></span>TransFemoral Suction</a></li>
+                <li class="nav-item"><a class="nav-link" href="tftestpage.html"><span class="fa fa-circle fa-lg mr-3"></span>TransFemoral Suction</a></li>
                 <li class="nav-item"><a class="nav-link" href="px-picker-ttpin.html"><span class="fa fa-circle fa-lg mr-3"></span>TransTibial Pin</a></li>
                 <li class="nav-item"><a class="nav-link" href="px-picker-ttsuction.html"><span class="fa fa-circle fa-lg mr-3"></span>TransTibial Suction</a></li>
                 <li class="nav-item"><a class="nav-link" href="pdf.html"><span class="fa fa-circle fa-lg mr-3"></span>PDF</a></li>
@@ -44,47 +44,31 @@
         </div>
     </header> 
 
-<form>
-    <div class="container p-2">
-        <div class="row">
-          <div class ="col-sm-12 col-md-6 pt-3">
             <h2> Enter Patients Information for Virtual Visit Scheduling</h2>
             <!-- <div class="col mx-auto"></div> -->
             <p>
                 Please be as specific as possible, providing insight into the patients past, present and future needs-
             </p>
             <!-- </div> -->
-          </div>
-
-          <div class ="col-sm-12 col-md-6 pt-3">
-                <div class="form-group">                
+                <section class="">                
                         <label for="ptName"> Patient Name:</label>
                         <input type="text" id="ptName" name="ptName" required> 
-                    </div>
-                    <div class ="col-sm-12 col-md-6 pt-3">
+                    
+
                         <label for="dob"> Date of Birth </label>
                         <input type="date" name="dob" id="dob" required>
-                </div>
-            </div>
-        </div>
-    </div>
+                </section>
 
-
-
-        <div class="container">
-            <div class="row">
-                <div class ="col-sm-12 col-md-6">                        
-                    <button type="button" class="btn btn-lg btn-block"name="z89.511" id="z89.511">
+                <section>                    
+                        <button type="button" class="btn btn-lg btn-block"name="z89.511" id="z89.511">
                             Z89.511 Acquired absence of right leg below knee
                         </button>
 
                         <button type="button" class="btn btn-lg btn-block"name="z89.512" id="z89.512">
                             Z89.512 Acquired absence of left leg below knee
                         </button>
-                </div>
-                <div class ="col-sm-12 col-md-6">                        
-
-
+                </section>  
+                <section>
                         <button type="button" class="btn btn-lg btn-block" name="z89.612" id="z89.612">
                             Z89.611 Acquired absence of left leg above knee
                         </button>
@@ -92,16 +76,9 @@
                         <button type="button" class="btn btn-lg btn-block"name="z89.611" id="z89.611">
                             Z89.612 Acquired absence of right leg above knee
                         </button>
+                </section>  
 
-                    </div>
-                </div>
-            </div>
-
-
-        <div class="container">
-            <div class="row">
-                <div class ="col-sm-12 col-md-6">                        
-                    <div class="form-group" id="demographic"> 
+                    <section id="demographic"> 
                         <label for="skinCondition"> Skin Condition</label>
                             <select class="form-control" id="skinCondition">
                             <option value=””></option>
@@ -112,10 +89,10 @@
                             <option value="Redundant">Redundant</option>
                             <option value="Redundant with Signs">Redundant with Signs</option>
                             </select>
-                    </div>
+                    </section>
 
 
-                    <div class="form-group" id="strength"> 
+                    <section id="strength"> 
                         <label for="strengthLevel"> Strength Level </label>
                             <select class="form-control" id="strengthLevel">
                             <option></option>
@@ -126,11 +103,10 @@
                             <option value="1/5">1/5</option>
                             <option value="0">0</option>
                             </select>
-                    </div>
-               </div>
+                    </section>
+               
 
-               <div class ="col">
-                    <div class="form-group" id="k-level"> 
+               <section id="k-level">
                         <label for="klevel"> K-Level </label>
                             <select class="form-control" id="klevel">
                             <option></option>
@@ -140,10 +116,10 @@
                             <option value="1">1</option>
                             <option value="0">0</option>
                             </select>
-                    </div>
+                </section>
               
 
-                    <div class="form-group" id="ROM"> 
+                    <section  id="ROM"> 
                         <label for="rom"> Range of Motion </label>
                             <select class="form-control" id="rom">
                             <option></option>
@@ -154,43 +130,30 @@
                             <option value="1/5">1/5</option>
                             <option value="0">0</option>
                             </select>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="form-group" id="confirm">  
+                    </section>
+
+
+                    <section class="form-group" id="confirm">  
                         <label for="willUse">The patient does not have any comorbidities that we are aware of that will impact mobility</label>
                         <input type="radio" id="willUse">
                         <label for="strDes">Patient verbally communicates a strong desire to proceed with prosthetic care in our opinion</label>
                         <input type="radio" id="strDes">
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class ="col-12">     
-                    <div class="form-group" id="additional">
+                    </section> 
+
+   
+                    <section id="additional">
                         <label for="addNotes">Additional Notes:</label>
                         <textarea type="textarea" id="addNotes" ></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class ="col-12">
-                    <div class="form-group" id="submit">
-                        <button type="button" class="btn btn-large btn-primary" id="VVPDFSav" >Save as PDF</button>
+                    </section>
+
+                    <section id="submit">
+                        <button type="button" class="btn btn-large btn-primary" id="genVirPDF" >Generate PDF</button>
                         <button type="button" class="btn btn-large btn-secondary" id="VVPDFDown">Email to SPS</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-</form>    
+                    </section>
+
+
+                    <label for="saveInfo"> Save Patient Information</label>
+                    <button class='btn btn-large btn-primary' id="saveInfo">Save</button>   
 
 
 
@@ -225,5 +188,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="../js/virtualCare.js"></script>
+
 </body>
 </html>
