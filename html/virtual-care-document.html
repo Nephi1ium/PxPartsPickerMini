@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/vvDocument.css">
 
     <title>Virtual Care Document</title>
 </head>
@@ -42,7 +43,9 @@
                 </div>                
             </div>
         </div>
-    </header> 
+    </header>
+    
+    <form class="vvForm" id="theVVForm">
 
             <h2> Enter Patients Information for Virtual Visit Scheduling</h2>
             <!-- <div class="col mx-auto"></div> -->
@@ -50,33 +53,80 @@
                 Please be as specific as possible, providing insight into the patients past, present and future needs-
             </p>
             <!-- </div> -->
-                <section class="">                
+                <section class="">           
+                    <label for="drName"> Doctors Name:</label>
+                    <input type="text" id="drName" name="drName" required>
+                    
                         <label for="ptName"> Patient Name:</label>
                         <input type="text" id="ptName" name="ptName" required> 
                     
+                        <label for="dateOfAmp"> Date of Amputation: </label>
+                        <input type="date" name="dateOfAmp" id="dateOfAmp" required>
 
-                        <label for="dob"> Date of Birth </label>
-                        <input type="date" name="dob" id="dob" required>
+                        <label for="ampLoc"> Patient Name:</label>
+                        <input type="text" id="ampLoc" name="ampLoc" required>
+                        <!-- <label for="dob"> If DOB on PDF is incorrect, re-enter here: </label>
+                        <input type="date" name="dob" id="dob" required> -->
                 </section>
 
-                <section>                    
-                        <button type="button" class="btn btn-lg btn-block"name="z89.511" id="z89.511">
+                    <section id="recc"> 
+                        <label for="reccPx"> Prosthetic Recommendation:</label>
+                            <select class="form-control" id="reccPx">
+                            <option value=””></option>
+                            <option value="New Prosthesis ">New Prosthesis</option>
+                            <option value="Socket Replacement with Supplies">Socket Replacement with Supplies</option>
+                            <option value="Prosthetic Componenetry Replacement">Prosthetic Componentry Replacement</option>
+                            </select>
+                    </section>
+
+                    <section id="change"> 
+                        <label for="changeReas"> Reason for Change:</label>
+                            <select class="form-control" id="changeReas">
+                            <option value=””></option>
+                            <option value="Significant change in Patient's weight">Significant change in Patient's weight</option>
+                            <option value="Socket does not fit patient due to change in residual limb and further">Socket does not fit patient due to change in residual limb and further</option>
+                            <option value="Functional level change">Functional level change</option>
+                            <option value="Patient is a new prosthetic wearer">Patient is a new prosthetic wearer</option>
+                            <option value="Components are worn beyond economical repair and no longer ">Components are worn beyond economical repair and no longer </option>
+                            </select>
+                    </section>
+
+                    <section id="ampCause"> 
+                        <label for="ampCauses"> Cause of Amputation</label>
+                            <select class="form-control" id="ampCauses">
+                            <option value=””></option>
+                            <option value="Cancer">Cancer</option>
+                            <option value="Congenital">Congenital</option>
+                            <option value="Diabetes">Diabetes</option>
+                            <option value="Infection/Wound">Infection/Wound</option>
+                            <option value="MVA">MVA</option>
+                            <option value="Trauma">Trauma</option>
+                            </select>
+                    </section>
+
+
+
+                <section id="icdTen">       
+                    <label for="z511"></label>             
+                        <input type="radio" value="Z89.511 Acquired absence of right leg below knee" class="btn btn-lg btn-block"name="icd" id="z511">
                             Z89.511 Acquired absence of right leg below knee
-                        </button>
+                        </input>
+                        <label for="z512"></label>             
 
-                        <button type="button" class="btn btn-lg btn-block"name="z89.512" id="z89.512">
+                        <input type="radio" value="Z89.512 Acquired absence of left leg below knee" class="btn btn-lg btn-block"name="icd" id="z512">
                             Z89.512 Acquired absence of left leg below knee
-                        </button>
-                </section>  
-                <section>
-                        <button type="button" class="btn btn-lg btn-block" name="z89.612" id="z89.612">
-                            Z89.611 Acquired absence of left leg above knee
-                        </button>
+                        </input>
+                        <label for="z611"></label>             
 
-                        <button type="button" class="btn btn-lg btn-block"name="z89.611" id="z89.611">
+                        <input type="radio" value="Z89.611 Acquired absence of left leg above knee" class="btn btn-lg btn-block" name="icd" id="z611">
+                            Z89.611 Acquired absence of left leg above knee
+                        </input>
+                        <label for="z612"></label>             
+
+                        <input type="radio" value="Z89.612 Acquired absence of right leg above knee" class="btn btn-lg btn-block"name="icd" id="z612">
                             Z89.612 Acquired absence of right leg above knee
-                        </button>
-                </section>  
+                        </input>
+                    </section>  
 
                     <section id="demographic"> 
                         <label for="skinCondition"> Skin Condition</label>
@@ -122,20 +172,20 @@
                     <section  id="ROM"> 
                         <label for="rom"> Range of Motion </label>
                             <select class="form-control" id="rom">
-                            <option></option>
-                            <option value="5">5</option>
-                            <option value="4/5">4/5</option>
-                            <option value="3/5">3/5</option>
-                            <option value="2/5">2/5</option>
-                            <option value="1/5">1/5</option>
-                            <option value="0">0</option>
+                                <option></option>
+                                <option value="5">Full</option>
+                                <option value="4/5">4/5</option>
+                                <option value="3/5">3/5</option>
+                                <option value="2/5">2/5</option>
+                                <option value="1/5">1/5</option>
+                                <option value="0">0</option>
                             </select>
                     </section>
 
 
                     <section class="form-group" id="confirm">  
                         <label for="willUse">The patient does not have any comorbidities that we are aware of that will impact mobility</label>
-                        <input type="radio" id="willUse">
+                        <input type="radio" id="willUse"> </br>
                         <label for="strDes">Patient verbally communicates a strong desire to proceed with prosthetic care in our opinion</label>
                         <input type="radio" id="strDes">
                     </section> 
@@ -146,18 +196,20 @@
                         <textarea type="textarea" id="addNotes" ></textarea>
                     </section>
 
+
+
+
+                    <label for="saveInfo"> Save Patient Information</label>
+                    <button class='btn btn-large btn-primary' type="button" id="saveInfo">Save</button>   
+
                     <section id="submit">
                         <button type="button" class="btn btn-large btn-primary" id="genVirPDF" >Generate PDF</button>
                         <button type="button" class="btn btn-large btn-secondary" id="VVPDFDown">Email to SPS</button>
                     </section>
+                </form>
 
 
-                    <label for="saveInfo"> Save Patient Information</label>
-                    <button class='btn btn-large btn-primary' id="saveInfo">Save</button>   
-
-
-
-
+                <div id="vvPDFDoc"></div>
 
     <footer class="site-footer">
         <div class="container">

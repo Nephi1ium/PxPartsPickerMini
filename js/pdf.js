@@ -16,6 +16,8 @@
 
 let subtfPDFDocument = document.querySelector("#genPDF");
 
+
+
 subtfPDFDocument.addEventListener("click", () => transFemoralProsthesis());
 
 
