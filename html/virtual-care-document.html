@@ -72,7 +72,7 @@
                     <section id="recc"> 
                         <label for="reccPx"> Prosthetic Recommendation:</label>
                             <select class="form-control" id="reccPx">
-                            <option value=””></option>
+                            <option value=''></option>
                             <option value="New Prosthesis ">New Prosthesis</option>
                             <option value="Socket Replacement with Supplies">Socket Replacement with Supplies</option>
                             <option value="Prosthetic Componenetry Replacement">Prosthetic Componentry Replacement</option>
@@ -82,7 +82,7 @@
                     <section id="change"> 
                         <label for="changeReas"> Reason for Change:</label>
                             <select class="form-control" id="changeReas">
-                            <option value=””></option>
+                            <option value=''></option>
                             <option value="Significant change in Patient's weight">Significant change in Patient's weight</option>
                             <option value="Socket does not fit patient due to change in residual limb and further">Socket does not fit patient due to change in residual limb and further</option>
                             <option value="Functional level change">Functional level change</option>
@@ -94,7 +94,7 @@
                     <section id="ampCause"> 
                         <label for="ampCauses"> Cause of Amputation</label>
                             <select class="form-control" id="ampCauses">
-                            <option value=””></option>
+                            <option value=''></option>
                             <option value="Cancer">Cancer</option>
                             <option value="Congenital">Congenital</option>
                             <option value="Diabetes">Diabetes</option>
@@ -131,7 +131,7 @@
                     <section id="demographic"> 
                         <label for="skinCondition"> Skin Condition</label>
                             <select class="form-control" id="skinCondition">
-                            <option value=””></option>
+                            <option value=''></option>
                             <option value="Intact">Intact</option>
                             <option value="Average">Average</option>
                             <option value="Soft">Soft</option>
@@ -182,7 +182,33 @@
                             </select>
                     </section>
 
+                    <section  id="timeUse"> 
+                        <label for="timeUsed"> Patient has historically used their prosthesis an average of: </label>
+                            <select class="form-control" id="timeUsed">
+                                <option></option>
+                                <option value="1-4 hr/day">1-4 hr/day</option>
+                                <option value="4-8 hr/day">4-8 hr/day</option>
+                                <option value="8-12 hr/day">8-12 hr/day</option>
+                                <option value="12-14 hr/day">12-14 hr/day</option>
+                                <option value="Greater than 14 hours a day">Greater than 14 hours a day</option>
+                            </select>
+                    </section>
 
+                    <section  id="socksUse"> 
+                        <label for="socksUsed"> While managing their fit with: </label>
+                            <select class="form-control" id="socksUsed">
+                                <option></option>
+                                <option value="1Suction Fit">Suction Fit</option>
+                                <option value="1-3 ply sock">1-3 ply sock </option>
+                                <option value="5-8 ply sock">5-8 ply sock</option>
+                                <option value="8-10 ply sock">8-10 ply sock</option>
+                                <option value="10-12 ply sock">10-12 ply sock</option>
+                                <option value="12-15 ply sock">12-15 ply sock</option>
+                                <option value="Greater than 15 ply">Greater than 15 ply</option>
+                            </select>
+                    </section>
+
+                    
                     <section class="form-group" id="confirm">  
                         <label for="willUse">The patient does not have any comorbidities that we are aware of that will impact mobility</label>
                         <input type="radio" id="willUse"> </br>

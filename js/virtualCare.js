@@ -73,6 +73,14 @@ function savePatientInfo(){
     let changeReas = document.querySelector('select#changeReas');
     localStorage.setItem("changeReas", changeReas.value);
     
+    let timeUsed = document.querySelector('select#timeUsed');
+    localStorage.setItem("timeUsed", timeUsed.value);
+
+    let socksUsed = document.querySelector('select#socksUsed');
+    localStorage.setItem("socksUsed", socksUsed.value);
+
+    
+    
     
 }
 
@@ -96,7 +104,12 @@ function virtualDocumentPDF(){
     let patientWeight = localStorage.getItem("patientWeight");
     let patientHeight = localStorage.getItem("patientHeight");
     let ampLoc = localStorage.getItem("ampLoc");
-    let reccPx = localStorage.getItem("reccPx")
+    let reccPx = localStorage.getItem("reccPx");
+    let skinCondition = localStorage.getItem("skinCondition");
+    let strengthLevel = localStorage.getItem("strengthLevel");
+    let ROM = localStorage.getItem("ROM");
+    let timeUsed = localStorage.getItem("timeUsed");
+    let socksUsed = localStorage.getItem("socksUsed");
     // let dob = localStorage.getItem("dob");
     // console.log(dob);
 
@@ -186,11 +199,14 @@ let dateOfCreate = new Date();
                     <li><div>Location of Amputation: ${ampLoc} </div></li>
                     <li><div>Prosthetic Reccomendation: ${reccPx}</div></li>
                     <li><div>Reason for Change: ${changeReas}</div></li>
-                    <li><div>Thickness</div></li>
-                    <li><div>Profile</div></li>
-                    <li><div>Color</div></li>
-                    <li><div>Quantity</div></li>
-                </ul>
+                    <li><div>Skin Condition: ${skinCondition}</div></li>
+                    <li><div>Strength Level: ${strengthLevel}</div></li>
+                    <li><div>Range of Motion: ${ROM}</div></li>
+                    <li><div>Patient has historically used their prosthesis an average of: ${timeUsed},
+                    while managing the socket fit with ${socksUsed}.
+                    </div></li>
+
+                    </ul>
 </div>                
 </div> 
 </div>

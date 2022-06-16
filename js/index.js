@@ -56,7 +56,7 @@ localStorage.setItem('clinicLocation', clinicLocation.value);
 localStorage.setItem('patientName', patientName.value);
 localStorage.setItem('dateOfBirth', dateOfBirth.value);
 localStorage.setItem('encounterNumber', encounterNumber.value);
-localStorage.setItem('klevel', klevel.value);
+// localStorage.setItem('klevel', klevel.value);
 localStorage.setItem('patientWeight', patientWeight.value);
 localStorage.setItem('patientHeight', patientHeight.value);
 
