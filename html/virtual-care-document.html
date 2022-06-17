@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/vvDocument.css">
+    <link rel="stylesheet" href="../css/vvpdf.css">
 
     <title>Virtual Care Document</title>
 </head>
@@ -53,7 +53,7 @@
                 Please be as specific as possible, providing insight into the patients past, present and future needs-
             </p>
             <!-- </div> -->
-                <section class="">           
+                <section class="infoOne" id="infoOne">           
                     <label for="drName"> Doctors Name:</label>
                     <input type="text" id="drName" name="drName" required>
                     
@@ -63,13 +63,13 @@
                         <label for="dateOfAmp"> Date of Amputation: </label>
                         <input type="date" name="dateOfAmp" id="dateOfAmp" required>
 
-                        <label for="ampLoc"> Patient Name:</label>
+                        <label for="ampLoc"> Location of Amputation (Hospital):</label>
                         <input type="text" id="ampLoc" name="ampLoc" required>
                         <!-- <label for="dob"> If DOB on PDF is incorrect, re-enter here: </label>
                         <input type="date" name="dob" id="dob" required> -->
                 </section>
 
-                    <section id="recc"> 
+                    <section class="recc" id="recc"> 
                         <label for="reccPx"> Prosthetic Recommendation:</label>
                             <select class="form-control" id="reccPx">
                             <option value=''></option>
@@ -79,7 +79,7 @@
                             </select>
                     </section>
 
-                    <section id="change"> 
+                    <section class="change" id="change"> 
                         <label for="changeReas"> Reason for Change:</label>
                             <select class="form-control" id="changeReas">
                             <option value=''></option>
@@ -91,7 +91,7 @@
                             </select>
                     </section>
 
-                    <section id="ampCause"> 
+                    <section class="ampCause" id="ampCause"> 
                         <label for="ampCauses"> Cause of Amputation</label>
                             <select class="form-control" id="ampCauses">
                             <option value=''></option>
@@ -106,7 +106,7 @@
 
 
 
-                <section id="icdTen">       
+                <section class="icdTen" id="icdTen">       
                     <label for="z511"></label>             
                         <input type="radio" value="Z89.511 Acquired absence of right leg below knee" class="btn btn-lg btn-block"name="icd" id="z511">
                             Z89.511 Acquired absence of right leg below knee
@@ -128,7 +128,7 @@
                         </input>
                     </section>  
 
-                    <section id="demographic"> 
+                    <section class="demographic" id="demographic"> 
                         <label for="skinCondition"> Skin Condition</label>
                             <select class="form-control" id="skinCondition">
                             <option value=''></option>
@@ -142,7 +142,7 @@
                     </section>
 
 
-                    <section id="strength"> 
+                    <section class="strength" id="strength"> 
                         <label for="strengthLevel"> Strength Level </label>
                             <select class="form-control" id="strengthLevel">
                             <option></option>
@@ -156,7 +156,7 @@
                     </section>
                
 
-               <section id="k-level">
+               <section class="k-level" id="k-level">
                         <label for="klevel"> K-Level </label>
                             <select class="form-control" id="klevel">
                             <option></option>
@@ -169,7 +169,7 @@
                 </section>
               
 
-                    <section  id="ROM"> 
+                    <section class="ROM"  id="ROM"> 
                         <label for="rom"> Range of Motion </label>
                             <select class="form-control" id="rom">
                                 <option></option>
@@ -182,7 +182,7 @@
                             </select>
                     </section>
 
-                    <section  id="timeUse"> 
+                    <section class="timeUse"  id="timeUse"> 
                         <label for="timeUsed"> Patient has historically used their prosthesis an average of: </label>
                             <select class="form-control" id="timeUsed">
                                 <option></option>
@@ -194,7 +194,7 @@
                             </select>
                     </section>
 
-                    <section  id="socksUse"> 
+                    <section class="socksUse"  id="socksUse"> 
                         <label for="socksUsed"> While managing their fit with: </label>
                             <select class="form-control" id="socksUsed">
                                 <option></option>
@@ -209,30 +209,40 @@
                     </section>
 
                     
-                    <section class="form-group" id="confirm">  
+                    <section class="commitment form-group" id="confirm">  
                         <label for="willUse">The patient does not have any comorbidities that we are aware of that will impact mobility</label>
-                        <input type="radio" id="willUse"> </br>
+                        <input type="radio" id="willUse" name="willUse" value="The patient does not have any comorbidities that we are aware of that will impact mobility"> </br>
                         <label for="strDes">Patient verbally communicates a strong desire to proceed with prosthetic care in our opinion</label>
-                        <input type="radio" id="strDes">
+                        <input type="radio" id="strDes" name="strDes" value="Patient verbally communicates a strong desire to proceed with prosthetic care in our opinion">
                     </section> 
 
+                    <section id="components" class="components">           
+                        <label for="knee"> Knee:</label>
+                        <input type="text" id="knee" name="knee" required>
+                        
+                        <label for="foot"> Foot:</label>
+                        <input type="text" id="foot" name="foot" required> 
+                    </section>
    
-                    <section id="additional">
+                    <section class="additional" id="additional">
                         <label for="addNotes">Additional Notes:</label>
                         <textarea type="textarea" id="addNotes" ></textarea>
                     </section>
 
 
 
-
-                    <label for="saveInfo"> Save Patient Information</label>
-                    <button class='btn btn-large btn-primary' type="button" id="saveInfo">Save</button>   
-
-                    <section id="submit">
-                        <button type="button" class="btn btn-large btn-primary" id="genVirPDF" >Generate PDF</button>
-                        <button type="button" class="btn btn-large btn-secondary" id="VVPDFDown">Email to SPS</button>
+                    <section id="saveButton">
+                        <label for="saveInfo"> Save Patient Information</label>
+                        <button class='btn btn-large btn-primary' type="button" id="saveInfo">Save</button>   
+                        <p id="infoSaved"></p>
                     </section>
+
+
                 </form>
+                <section id="submit">
+                    <button type="button" class="btn btn-large btn-primary" id="genVirPDF" >Generate PDF</button>
+                    <button type="button" class="btn btn-large btn-secondary" id="VVPDFDown">Email to SPS</button>
+                </section>
 
 
                 <div id="vvPDFDoc"></div>

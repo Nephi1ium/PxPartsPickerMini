@@ -79,8 +79,24 @@ function savePatientInfo(){
     let socksUsed = document.querySelector('select#socksUsed');
     localStorage.setItem("socksUsed", socksUsed.value);
 
+    let knee = document.getElementById("knee");
+    localStorage.setItem("knee", knee.value);
+
+    let foot = document.getElementById("foot");
+    localStorage.setItem("foot", foot.value);
+
+    let addNotes = document.getElementById("addNotes");
+    localStorage.setItem("addNotes", addNotes.value);
     
-    
+    let willUse = document.querySelector('input[name=willUse]:checked');
+    localStorage.setItem('willUse', willUse.value);
+
+    let strDes = document.querySelector('input[name=strDes]:checked');
+    localStorage.setItem('strDes', strDes.value);
+
+    const confirmSaved = `<p>Information Saved</p>`
+    document.getElementById("infoSaved").innerHTML = confirmSaved;
+
     
 }
 
@@ -110,9 +126,14 @@ function virtualDocumentPDF(){
     let ROM = localStorage.getItem("ROM");
     let timeUsed = localStorage.getItem("timeUsed");
     let socksUsed = localStorage.getItem("socksUsed");
+    let foot = localStorage.getItem("foot");
+    let knee = localStorage.getItem("knee");
+    let addNotes = localStorage.getItem("addNotes");
     // let dob = localStorage.getItem("dob");
     // console.log(dob);
+    const kneeItem = `<p> Patient will benefit from ${knee}.</p>`;
 
+    const footItem = `<p> Patient will benefit from ${foot}.</p>`
     let dateOfBirth = localStorage.getItem("dateOfBirth");
     // function dateOfBirthChoice() {
     //     if (dob == dateOfBirth) {
@@ -204,6 +225,12 @@ let dateOfCreate = new Date();
                     <li><div>Range of Motion: ${ROM}</div></li>
                     <li><div>Patient has historically used their prosthesis an average of: ${timeUsed},
                     while managing the socket fit with ${socksUsed}.
+                    <p>
+                    ${kneeItem}
+                    ${footItem}
+
+                     </p>
+                     <p> ${addNotes} </p>
                     </div></li>
 
                     </ul>
