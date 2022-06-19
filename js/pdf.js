@@ -69,7 +69,7 @@ let dateOfCreate = new Date();
 <div class="body">
 <div class="item1">
 				<div class="heading">
-                    <h5>Patient Name: ${patientName}</h5>
+                    <p>Patient Name: ${patientName}</p>
 				</div>
                         <ul>
                             <li><div>Date of Birth: ${dateOfBirth}</div></li>
@@ -85,7 +85,7 @@ let dateOfCreate = new Date();
 </div>
 <div class=" item2">
 				<div class="heading">
-                    <h5>Foot Selection</h5>
+                    <p>Foot Selection</p>
 				</div>
 
                 <ul>
@@ -102,7 +102,7 @@ let dateOfCreate = new Date();
 <div class=" item3">
 
                 <div class="heading">
-                    <h5>Knee Selection</h5>
+                    <p>Knee Selection</p>
                 </div>
 
 
@@ -120,7 +120,7 @@ let dateOfCreate = new Date();
 </div>
 <div class=" item4">
                 <div class="heading">
-                    <h5>Liners</h5>
+                    <p>Liners</p>
                 </div>
 
                 <ul>
@@ -139,7 +139,7 @@ let dateOfCreate = new Date();
 </div>
 <div class=" item5">
                 <div class="heading cent">
-                    <h5> Socks </h5>
+                    <p> Socks </p>
                 </div>
                 
                 <ul>
@@ -151,7 +151,7 @@ let dateOfCreate = new Date();
 <div class=" item6">    
 
                 <div class="heading cent">
-                    <h5> Sheaths </h5>
+                    <p> Sheaths </p>
                 </div>
                 <ul>
                     <li>Price</li>
@@ -160,7 +160,7 @@ let dateOfCreate = new Date();
 </div>
 <div class="item7">
                 <div class="heading rght">
-                    <h5> Sleeves </h5>
+                    <p> Sleeves </p>
                 </div>
                     <ul>
                         <li>Price</li>

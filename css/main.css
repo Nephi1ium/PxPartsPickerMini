@@ -40,7 +40,10 @@
   display: none;
 }
 
-.cardDropdown
+.cardDropdown {
+  background-color: white;
+  border: none;
+}
 
   #stepTwo {
     color: #08719e;
