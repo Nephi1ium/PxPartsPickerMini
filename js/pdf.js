@@ -168,7 +168,7 @@ function transFemoralProsthesis(){
                 </ul>
 </div>
 <div class="item7">
-                <div class="heading rght">
+                <div class="heading ">
                     <p> Sleeves </p>
                 </div>
                     <ul>
@@ -188,69 +188,27 @@ document.getElementById("tfPDFDoc").innerHTML = transFemPDF;
 
 
 function downloadPDF (){
-    var element = document.getElementById('PDFDocument');
-    element.style.display = 'block'  
-    html2pdf(element);
+    // var element = document.getElementById('PDFDocument');
+    // element.style.display = 'block'  
+    // html2pdf(element);
+
+    const element = document.getElementById('PDFDocument');
+let opt = {
+  margin:       [.2,0,0,.2],
+  filename:     `${patientName}_Order.pdf`,
+  image:        { type: 'jpeg', quality: 0.98 },
+  html2canvas:  { scale: 2, scrollX: 0, scrollY: 0 },
+  jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+  
+};
+
+// New Promise-based usage:
+html2pdf().set(opt).from(element).save();
+
+// Old monolithic-style usage:
+// html2pdf(element, opt);
 
 }
-
-
-// html2canvas(document.body).then(function(canvas) {
-//     // Export the canvas to its data URI representation
-//     var base64image = canvas.toDataURL("image/png");
-
-//     // Open the image in a new window
-//     window.open(base64image , "_blank");
-// });
-
-
-
-// html2canvas(document.querySelector("#tfPDFDoc")).then(canvas => {
-//     let base64image = canvas.toDataURL("image/png");
-
-//     window.open(base64image , "_blank");
-
-    // html2canvas(document.body).then(function(canvas) {
-    //     // Export the canvas to its data URI representation
-    //     var base64image = canvas.toDataURL("image/png");
-    
-    //     // Open the image in a new window
-    //     window.open(base64image , "_blank");
-    // });
-//     // document.body.appendChild(canvas);
-
-    // html2canvas(document.body).then(function(canvas) {
-    //     // Export the canvas to its data URI representation
-    //     var base64image = canvas.toDataURL("image/png");
-    
-    //     // Open the image in a new window
-    //     window.open(base64image , "_blank");
-    // html2canvas(document.body).then(function(canvas) {
-    //     document.body.appendChild(canvas);
-    //    });
-    //    html2canvas(document.getElementById('tfPDFDoc')).then(function(canvas) {
-    //     document.body.appendChild(canvas);
-        
-        // html2canvas(document.getElementById('tfPDFDoc')).then(function(canvas) {
-        //     document.getElementById("image").src= canvas.toDataURL();        
-// const doc = new jsPDF();
-// doc.save(`${patientName}.pdf`);
-// let HTMLPDF = 
-    // let node = document.getElementById('PDFDocument');
-
-    // domtoimage.toPng(node).then(function (dataUrl) {
-    //     let img = new Image();
-    //     img.src = dataUrl;
-    //     document.body.appendChild(img);
-    // }).catch(function (error) {
-    //     console.error('oops, something went wrong!', error);
-    // });
-
-
-
-
-
-
 
 
 

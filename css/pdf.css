@@ -31,6 +31,7 @@
 
 .item2{
     grid-area: item2;
+    text-align: center;
 
     font-size: 12px;
 }
@@ -39,38 +40,41 @@
     grid-area: item3;
 
     font-size: 12px;
-    text-align: right;
+    text-align: center;
 }
 
 .item4{
     grid-area: item4;
+    text-align: center;
 
     font-size: 12px;
-    height: 250px;
 
 }
 
 .item5{
     grid-area: item5;
+    text-align: center;
 
     font-size: 12px;
 }
 
 .item6{
     grid-area: item6;
+    text-align: center;
 
     font-size: 12px;
 }
 
 .item7{
     grid-area: item7;
+    text-align: center;
 
     font-size: 12px;
 }
 
 .title {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
     grid-area: title;
 }
 
@@ -83,16 +87,14 @@
     text-align: center;
 }
 
-.heading.rght{
-text-align: right;
-}
+
 
 .box {
     
-    max-width: 800px;
-    max-height: 1000px;
-    height: 1000px;
-    width: 800px;
+    max-width: 750px;
+    max-height: 900px;
+    height: 900px;
+    width: 750px;
     margin: auto;
     margin-bottom: 25px;
     padding: 5px;
@@ -108,11 +110,11 @@ text-align: right;
 }
 .box .top {
     display: grid;
-    max-width: 800px;
+    max-width: 750px;
     /* width: 733px; */
     width: auto;
 
-    max-height: 400px;
+    max-height: 300px;
     /* margin: 2px; */
     height: 100%;
     /* padding: 0; */
@@ -125,15 +127,16 @@ text-align: right;
     grid-gap: 1rem;
     /* padding: 0; */
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 2;
     grid-template-areas: "title . . information"
-    "information1 information1 . information2";
+    "information1 information1 . information2"
+ ;
 }
 .box .body {
     display: grid;
-    max-width: 800px;
+    max-width: 750px;
     width: 100%;
-    max-height: 600px;
+    max-height: 500px;
     height: 100%;
     /* margin-top: 60px; */
     /* padding: 0; */
@@ -252,47 +255,52 @@ text-align: right;
 .item1{
     grid-area: item1;
 
-    font-size: 3px;
+    font-size: 4px;
     text-align: center;
 }
 
 .item2{
     grid-area: item2;
+    text-align: center;
 
-    font-size: 3px;
+    font-size: 4px;
 }
 
 .item3{
     grid-area: item3;
+    text-align: center;
 
-    font-size: 3px;
-    text-align: right;
+    font-size: 4px;
 }
 
 .item4{
     grid-area: item4;
+    text-align: center;
 
-    font-size: 3px;
+    font-size: 4px;
     height: 62px;
 
 }
 
 .item5{
     grid-area: item5;
+    text-align: center;
 
-    font-size: 3px;
+    font-size: 4px;
 }
 
 .item6{
     grid-area: item6;
+    text-align: center;
 
-    font-size: 3px;
+    font-size: 4px;
 }
 
 .item7{
     grid-area: item7;
+    text-align: center;
 
-    font-size: 3px;
+    font-size: 4px;
 }
 
 .title {
@@ -310,9 +318,6 @@ text-align: right;
     text-align: center;
 }
 
-.heading.rght{
-text-align: right;
-}
 p {
     margin: 0;
     max-width: 20%;
