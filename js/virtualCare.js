@@ -29,11 +29,16 @@
 // localStorage.setItem('patientHeight', patientHeight.value);
 let savePatientInfoVV = document.querySelector("#saveInfo");
 let createVirtualPDF = document.querySelector("#genVirPDF");
+let PDFDownloaded = document.querySelector("#VVPDFDown");
 
 savePatientInfoVV.addEventListener("click", () => savePatientInfo());
 savePatientInfoVV.addEventListener("click", () => showButtons());
 
 createVirtualPDF.addEventListener("click", () => virtualDocumentPDF());
+
+PDFDownloaded.addEventListener("click", () => downloadPDF());
+
+
 // console.log(patientName);
 
 function savePatientInfo(){
@@ -240,5 +245,12 @@ let dateOfCreate = new Date();
 </div>`;
 
 document.getElementById("vvPDFDoc").innerHTML = vvPDF;
+
+}
+
+function downloadPDF (){
+    var element = document.getElementById('PDFDocument');
+    element.style.display = 'block'  
+    html2pdf(element);
 
 }
