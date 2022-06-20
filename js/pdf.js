@@ -1,5 +1,10 @@
+
+
+
 // For this one, set a series of parameters that have to be met in order for the specific function to execute, and the particular PDF document be generated.
 // ie. 
+
+// const { default: jsPDF } = require("jspdf");
 
 // function linerReplacement(){
 //     let x = document.getElementById(#SOMEID);
@@ -15,13 +20,13 @@
 // }
 
 let subtfPDFDocument = document.querySelector("#genPDF");
+let downPDFDocument = document.querySelector("#downPDF");
 
 
 
 subtfPDFDocument.addEventListener("click", () => transFemoralProsthesis());
+downPDFDocument.addEventListener("click", () => downloadPDF());
 
-
-function transFemoralProsthesis(){
 
 let klevel = localStorage.getItem("klevel");
 let clinicianName = localStorage.getItem("clinicianName");
@@ -33,6 +38,10 @@ let patientWeight = localStorage.getItem("patientWeight");
 let patientHeight = localStorage.getItem("patientHeight");
 
 let dateOfCreate = new Date();
+
+function transFemoralProsthesis(){
+
+
 
 // let storedArray = JSON.parse(localStorage.infoArr);
 
@@ -174,7 +183,84 @@ let dateOfCreate = new Date();
         
 document.getElementById("tfPDFDoc").innerHTML = transFemPDF;
     
-    }
+}
+
+
+
+function downloadPDF (){
+    var element = document.getElementById('PDFDocument');
+    element.style.display = 'block'  
+    html2pdf(element);
+
+}
+
+
+// html2canvas(document.body).then(function(canvas) {
+//     // Export the canvas to its data URI representation
+//     var base64image = canvas.toDataURL("image/png");
+
+//     // Open the image in a new window
+//     window.open(base64image , "_blank");
+// });
+
+
+
+// html2canvas(document.querySelector("#tfPDFDoc")).then(canvas => {
+//     let base64image = canvas.toDataURL("image/png");
+
+//     window.open(base64image , "_blank");
+
+    // html2canvas(document.body).then(function(canvas) {
+    //     // Export the canvas to its data URI representation
+    //     var base64image = canvas.toDataURL("image/png");
+    
+    //     // Open the image in a new window
+    //     window.open(base64image , "_blank");
+    // });
+//     // document.body.appendChild(canvas);
+
+    // html2canvas(document.body).then(function(canvas) {
+    //     // Export the canvas to its data URI representation
+    //     var base64image = canvas.toDataURL("image/png");
+    
+    //     // Open the image in a new window
+    //     window.open(base64image , "_blank");
+    // html2canvas(document.body).then(function(canvas) {
+    //     document.body.appendChild(canvas);
+    //    });
+    //    html2canvas(document.getElementById('tfPDFDoc')).then(function(canvas) {
+    //     document.body.appendChild(canvas);
+        
+        // html2canvas(document.getElementById('tfPDFDoc')).then(function(canvas) {
+        //     document.getElementById("image").src= canvas.toDataURL();        
+// const doc = new jsPDF();
+// doc.save(`${patientName}.pdf`);
+// let HTMLPDF = 
+    // let node = document.getElementById('PDFDocument');
+
+    // domtoimage.toPng(node).then(function (dataUrl) {
+    //     let img = new Image();
+    //     img.src = dataUrl;
+    //     document.body.appendChild(img);
+    // }).catch(function (error) {
+    //     console.error('oops, something went wrong!', error);
+    // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //     storedArray.every(() => {
 //         let tfPDF = document.querySelector('#tfPDFDoc');
