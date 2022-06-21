@@ -123,7 +123,7 @@ text-align: right;
     color: #555;
     grid-gap: 1rem;
     padding: 0;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: c;
     grid-template-rows: auto;
     grid-template-areas: "title . . information"
     "information1 information1 . information2";
@@ -145,7 +145,7 @@ text-align: right;
     color: #555;
     grid-gap: .5rem;
     padding: 2px;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
     "item2 item1 item1 item3"
@@ -250,6 +250,11 @@ background-color: red;
     background-color: aqua;
 }
 
+.intro {
+    grid-area: intro;
+
+    background-color: rebeccapurple;
+}
 
 
 
@@ -290,9 +295,10 @@ background-color: red;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "infoOne . . ."
+    "intro intro infoOne infoOne"
+    
     "recc change . ampCause"
-    "icdTen icdTen icdTen icdTen"
+    "icdTen icdTen . ."
     "demographic demographic . ."
     "strength k-level k-level ROM"
     "timeUse . . socksUse"
@@ -300,4 +306,40 @@ background-color: red;
     "components components . ."
     "additional additional additional additional"
     "saveButton . . .";
+}
+
+@media screen and (max-width: 450px){
+    .vvForm {
+        display: grid;
+        width: 100%;
+        height: auto;
+        margin-top: 60px;
+        padding: 0;
+        border: none;
+        /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+        font-size: 16px;
+        /* line-height: 24px; */
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        grid-gap: .5rem;
+        padding: 2px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "intro"
+        "infoOne"        
+        "recc"
+        " change "
+        " ampCause"
+        "icdTen"
+        "demographic "
+        "strength"
+         "k-level"
+         "ROM"
+        "timeUse"
+        "socksUse"
+        "commitment"
+        "components"
+        "additional"
+        "saveButton";
+    }
 }
