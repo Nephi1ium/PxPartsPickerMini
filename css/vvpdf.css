@@ -163,97 +163,97 @@ text-align: right;
 
 .infoOne{
     grid-area: infoOne;
-background-color: red;
+
 }
 
 .recc{
     grid-area: recc;
 
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .change{
     grid-area: change;
 
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 .ampCause{
     grid-area: ampCause;
 
-    background-color: purple;
+    /* background-color: purple; */
 }
 
 .icdTen{
     grid-area: icdTen;
 
-    background-color: green;
+    /* background-color: green; */
 }
 
 .demographic{
     grid-area: demographic;
 
-    background-color: brown;
+    /* background-color: brown; */
 }
 
 .strength{
     grid-area: strength;
 
-    background-color: teal;
+    /* background-color: teal; */
 }
 
 .k-level{
     grid-area: k-level;
 
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .ROM{
     grid-area: ROM;
 
-    background-color: silver;
+    /* background-color: silver; */
 }
 
 .timeUse{
     grid-area: timeUse;
 
-    background-color: black;
+    /* background-color: black; */
 }
 
 .socksUse{
     grid-area: socksUse;
 
-    background-color: orange;
+    /* background-color: orange; */
 }
 
 .commitment{
     grid-area: commitment;
 
-    background-color: orchid;
+    /* background-color: orchid; */
 }
 
 .components{
     grid-area: components;
 
-    background-color: burlywood;
+    /* background-color: burlywood; */
 }
 
 .additional{
     grid-area: additional;
 
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .saveButton{
     grid-area: saveButton;
 
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .intro {
     grid-area: intro;
 
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
 }
 
 
@@ -297,13 +297,14 @@ background-color: red;
     grid-template-areas: 
     "intro intro infoOne infoOne"
     
-    "recc change . ampCause"
-    "icdTen icdTen . ."
-    "demographic demographic . ."
-    "strength k-level k-level ROM"
-    "timeUse . . socksUse"
-    "commitment commitment . ."
-    "components components . ."
+    "recc change ampCause k-level"
+    "icdTen icdTen strength ROM"
+    "icdTen icdTen demographic ROM"
+    "icdTen icdTen demographic ROM"
+
+
+    "timeUse socksUse components components "
+    "commitment commitment commitment commitment"
     "additional additional additional additional"
     "saveButton . . .";
 }
@@ -343,3 +344,7 @@ background-color: red;
         "saveButton";
     }
 }
+
+/* .radio {
+    display: none;
+} */
