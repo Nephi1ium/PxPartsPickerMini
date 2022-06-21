@@ -3,7 +3,7 @@ body {
     transition: background-color .5s;
   }
   
-  .myItemNavigator {
+  .myItemNavigator{
     height: 100%;
     width: 0;
     position: fixed;
@@ -16,27 +16,52 @@ body {
     padding-top: 60px;
   }
   
-  .myItemNavigator a {
+  .myItemNavigator .secButtons {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #818181;
     display: block;
     transition: 0.3s;
+    background-color: black;
+
   }
 
-  .myItemNavigator a a {
+  .myItemNavigator .secButtons:hover{
+color:aliceblue
+
+  }
+
+
+  .myItemNavigator .mainChoice {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: #7f8891;
     display: block;
     transition: 0.3s;
+    background-color: black;
+
   }
+  .myItemNavigator .mainChoice:hover{
+    color:aliceblue
+    
+      }
   
-  .myItemNavigator a:hover {
-    color: #f1f1f1;
+  .myItemNavigator .indivChoice {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #7f8891;
+    display: block;
+    transition: 0.3s;
+    background-color: black;
   }
+  .myItemNavigator .indivChoice:hover{
+    color:aliceblue
+    
+      }
+
   
   .myItemNavigator .closebtn {
     position: absolute;
@@ -44,14 +69,33 @@ body {
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+    color: #08719e;
+    text-decoration: none;
   }
+  
+  .myItemNavigator .closebtn:hover{
+    color:aliceblue;
+    background-color: black;
+    
+      }
   
   #main {
     transition: margin-left .5s;
     padding: 16px;
   }
   
-  @media screen and (max-height: 450px) {
+  @media screen and (max-width: 450px) {
     .itemNavigator {padding-top: 15px;}
     .itemNavigator a {font-size: 18px;}
+
+    .myItemNavigator a {
+      padding: 2px 2px 2px 6px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+
   }
