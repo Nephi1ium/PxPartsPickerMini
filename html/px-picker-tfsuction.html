@@ -7,13 +7,12 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/horizontal_card.css">
-
+    <link rel="stylesheet" href="../css/test.css">
+    <link rel="stylesheet" href="../css/itemchoices.css">
+    <link rel="stylesheet" href="../css/navigator.css">
 
     <title>TF Suction</title>
 </head>
@@ -28,12 +27,13 @@
             <ul class="navbar-nav ">
                 <li class="nav-item"><a class="nav-link"  href="../index.html"><span class="fa fa-home fa-lg mr-3"></span>Home</a></li>
                 <li class="nav-item "><a class="nav-link" href="px-picker-tfpin.html"><span class="fa fa-circle fa-lg mr-3"></span>TransFemoral Pin</a></li>
-                <li class="nav-item active"><a class="nav-link" href="px-picker-tfsuction.html"><span class="fa fa-circle fa-lg mr-3"></span>TransFemoral Suction</a></li>
+                <li class="nav-item active"><a class="nav-link" href="tftestpage.html"><span class="fa fa-circle fa-lg mr-3"></span>TransFemoral Suction</a></li>
                 <li class="nav-item"><a class="nav-link" href="px-picker-ttpin.html"><span class="fa fa-circle fa-lg mr-3"></span>TransTibial Pin</a></li>
                 <li class="nav-item"><a class="nav-link" href="px-picker-ttsuction.html"><span class="fa fa-circle fa-lg mr-3"></span>TransTibial Suction</a></li>
                 <li class="nav-item"><a class="nav-link" href="pdf.html"><span class="fa fa-circle fa-lg mr-3"></span>PDF</a></li>
                 <li class="nav-item"><a class="nav-link" href="virtual-care-document.html"><span class="fa fa-circle fa-lg mr-3"></span>Virtual Care</a></li>
             </ul>
+        </div>
         </div>
     </nav>
 
@@ -51,172 +51,165 @@
           </div>
       </div>
   </header> 
+
+
+
+
   <!-- below is the div which contains the knee section -->
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h2> Knees </h2>
-      <button class="obj" id="stepOne"> Click Here </button> 
-      <button class="openbtn" id="resPage"><span class="fa fa-solid fa-ban fa-lg mr-2"></span>Clear Selection</button>
-    </div>
-  </div>
-</div>
+<button class="openbtn" id="resPage">X</button>
+      <!-- RIght now this resets the page, I should simply set the state of each element to "initial" -->
+<main id="main">
+<nav id="itemNavigator" class="myItemNavigator">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-
-
-<div id="main">
-  <div class="container mt-3">
-    <div class="row">
-      <div class="col-sm-12">
-<div id="mySideNav" class="sidenav">
-
-    <a class="closebtn" id="stepTwo">x</a>
-    <h3 id="choiceHead">  2. Choose One</h3>
-  <!-- This is the sidebar that contains the accordion or collapsable that contains all of the choices -->
-
-
-
-
-
-
-<div class="container mt-3">
-  <div class="row">
-    <div class="col-sm-12">
-<!--   <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p> -->
-<!--   If this accordion was #accordion then the data-bs-parent would cause all the items to open or close if any accordion was clicked -->
-  <div id="accordionOne"> 
-<!--    I changed it to #accordionOne so that it could still be utilized by the third layer of the accordion as the data-bs-parent  -->
-    <div class="card">
-      <div class="card-header">
-        <a class="btn" id="theAccordion" data-bs-toggle="collapse" data-bs-parent="theAccordion" href="#collapseOne">
+    <section id="kneesSection">         
+        <a id="kneeButton" class=" mainChoice">
           Knees
         </a>
-      </div>
-      <div id="collapseOne" class="collapse" data-bs-parent="#accordionOne">
-        <div class="card-body">
-        <!--     Start of the inner accordion       -->
-         
-             <div class="mt-3">
-<!--             This container holds the first set of the inner accordion k1/K2-MPK       -->
-                  
-                
-<!--          Below accordion is the data-bs-parent of the first line of inner accordion, all correct but for -*The first four* Delete if completed restructuring of code to drop the first four down a level       -->
-<!--              Enter code into the Card Body, in replacement of the fake latin text.    -->
-      <div id="accordion">
-            <div class="card">
-              <div class="card-header">
-                <a class="btn" data-bs-toggle="collapse" href="#KnNine">
-                  K1/K2
-                </a>
-              </div>
-              <div id="KnNine" class="collapse" data-bs-parent="#accordionTwo">
-                <div class="card-body">
+            <a class="secButtons "  id="kOneTwo">
+              K1/K2
+            </a>
 <!--          Start of the 4 inner categories of K1/K2 Knees          -->
-                <a id="fric" class="btn" data-bs-toggle="collapse" href="#KnOne">
-                  Friction, Extension Assist
-                </a>
-                <a id="fricMan"class="collapsed btn" data-bs-toggle="collapse" href="#KnTwo">
-                Friction, Extension Assist, Manual Lock
-                </a>
-                <a id="fricExtStan" class="collapsed btn" data-bs-toggle="collapse" href="#KnThree">
-                  Friction, Extension Assist, Stance Flexion
-                </a>
-                <a class="collapsed btn" id="fricExtStanLock" data-bs-toggle="collapse" href="#KnFour">
-                  Friction, Extension Assist, Stance Flexion, Manual Lock
+            <nav>
+                <ul class="nav">
+                    <li>
+                        <a id="fric" class=" indivChoice kOne"  >
+                        Friction, Extension Assist
                         </a>
-<!--                   End of the K1/K2 Category -->
-              </div>
-            </div>   
-<!--               Beginning of the Single Axis Category -->
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed btn" data-bs-toggle="collapse" href="#SingleAxis">
+                    </li>
+                    <li>
+                        <a id="fricMan"class="indivChoice  kOne"  >
+                        Friction, Extension Assist, Manual Lock
+                        </a>
+                    </li>
+                    <li>
+                        <a id="fricExtStan" class="indivChoice  kOne"  >
+                        Friction, Extension Assist, Stance Flexion
+                        </a>
+                    </li>
+                    <li>
+                        <a class="indivChoice  kOne" id="fricExtStanLock"  >
+                        Friction, Extension Assist, Stance Flexion, Manual Lock
+                        </a>
+                    </li>
+                </ul>        
+            </nav>
+<!--                   End of the K1/K2 Category -->        
+<!--               Beginning of the Single Axis Category -->           
+                <a class="secButtons  "  id="singleAxis">
                 Single Axis
-              </a>
-              </div>
-              <div id="SingleAxis" class="collapse" data-bs-parent="#accordion">
-                <div class="card-body">
+              </a>               
 <!--                   Container for all the Single Axis Knee categories -->
-                <a class="btn" id="singAxManLock" data-bs-toggle="collapse" href="#SnOne">
-                  Manual Lock
-                </a>
-                <a class="collapsed btn" id="singAxPneuFric" data-bs-toggle="collapse" href="#SnTwo">
-                  Pneumatic Swing, Friction Stance
-                </a>
-                <a class="collapsed btn" data-bs-toggle="collapse" id="singAxHydStanSwin" href="#SnThree">
-                  Hydraulic Stance and Swing
-                </a>
- 
+              <nav>
+                <ul class="nav">
+                  <li>
+                    <a class="indivChoice  singleAxis" id="singAxManLock"  >
+                      Manual Lock
+                    </a>
+                  </li>
+                  <li>
+                    <a class="indivChoice  singleAxis" id="singAxPneuFric"  >
+                      Pneumatic Swing, Friction Stance
+                    </a>
+                  </li>
+                  <li>
+                    <a class="indivChoice  singleAxis"  id="singAxHydStanSwin">
+                      Hydraulic Stance and Swing
+                    </a>
+                  </li>
+                </ul>
+              </nav>
     
 <!--                   End of Single Axis Knee Category information -->
-                </div>
-              </div>
-            </div>
+                
+
+            
 <!--               End of the Single Axis Category -->
 <!--               Beginning of the Safety Knees Category -->
-                <div class="card">
-              <div class="card-header">
-                <a class="btn" data-bs-toggle="collapse" href="#KnSix">
+                
+              
+                <a class="secButtons "  id="safeKnee">
                   Safety Knees
                 </a>
-              </div>
-              <div id="KnSix" class="collapse" data-bs-parent="#accordion">
-                <div class="card-body">
-                    <a class="collapsed btn" data-bs-toggle="collapse" id="safeExt" href="#"> Extension Assist </a>
-                    <a class="collapsed btn" data-bs-toggle="collapse" id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
-                </div>
-              </div>
-            </div>
+
+                <nav >
+                  <ul class="nav">
+                    <li>
+                    <a class="indivChoice  safety"  id="safeExt" href="#"> Extension Assist </a>
+                  </li>
+                    <li>
+                    <a class="indivChoice  safety"  id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
+                  </li>
+                    </ul>
+                </nav>
 <!--               End of the safety knees category -->
 <!--               Start of the polycentric knees category -->
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed btn" data-bs-toggle="collapse" href="#KnSeven">
+            
+              
+                <a class="secButtons  "  id="polyKnee">
                 Polycentric Knees
-              </a>
-              </div>
-              <div id="KnSeven" class="collapse" data-bs-parent="#accordion">
-                <div class="card-body">
-                  <a class="collapsed btn" data-bs-toggle="collapse" id="polyHydrau" href="#"> Hydraulic Swing </a>
-                  <a class="collapsed btn" data-bs-toggle="collapse" id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
-                  <a class="collapsed btn" data-bs-toggle="collapse" id="polyPneu" href="#"> Pneumatic Swing</a>
-                  <a class="collapsed btn" data-bs-toggle="collapse" id="#" href="#"> Pneumatic Swing and Stance Flexion</a>
-                  <a class="collapsed btn" data-bs-toggle="collapse" id="#" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
-                </div>
-              </div>
-            </div>
+                </a>
+
+            <nav>
+              <ul class="nav">
+                <li>
+                  <a class="indivChoice  polycentric"  id="polyHydrau" href="#"> Hydraulic Swing </a>
+                </li>
+                <li>
+                  <a class="indivChoice  polycentric"  id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
+                </li>
+                <li>
+                  <a class="indivChoice  polycentric"  id="polyPneu" href="#"> Pneumatic Swing</a>
+                </li>
+                <li>
+                  <a class="indivChoice  polycentric"  id="polyPneuSwinStanFlex" href="#"> Pneumatic Swing and Stance Flexion</a>
+                </li>
+                <li>  
+                  <a class="indivChoice  polycentric"  id="polyHydrSwinStanFlexHigh" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
+                </li>
+              </ul>
+            </nav>
+
+
 <!--        End of the Polycentric knees category        -->
 <!--               Start of the MPK Category -->
-            <div class="card">
-              <div class="card-header">
-                <a class="collapsed btn" data-bs-toggle="collapse" href="#KnEight">
+            
+              
+                <a class="secButtons  "  id="MPK">
                   Microprocessor Knees
                 </a>
-              </div>
+
+                <!-- <a class="indivChoice  mpk"  id="MPKChoice" href="#"> Blatchford</a> -->
+
               <div id="KnEight" class="collapse" data-bs-parent="#accordion">
                 <!-- Enter the accordion buttons here -->
               </div>
-            </div>
+
 <!--               End of the MPK category -->
             <!--      End of the inner Accordion 1      -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            </div>
-           </div>
-           </div>
-         </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
+
+    </section> 
+    <section id="feetSection">
+        <a id="feetButton" class=" mainChoice">
+          Feet
+        </a>
+    </section>
+    <section id="linersSection">
+        <a id="linerButton" class=" mainChoice">
+          Liners
+        </a>
+    </section>
+    <section id="componentsSection">
+        <a id="compButton" class=" mainChoice">
+          Components
+        </a>
+    </section>
+</nav>
+</main>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click for Prosthetic Components </span>
 
 <!-- K1/K2 4-Bar Knee Section -->
-<div  class="cardcontainer">
+<aside  class="cardcontainer">
 
 
       <!-- the below container is for the entire knee section -->
@@ -1579,7 +1572,7 @@
 
         </div>
       </div>
-    </div>
+</aside>
 
 
 
@@ -1619,60 +1612,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<script src="../js/px-picker-main.js"></script>
+<script src="../js/test.js"></script>
+<script src="../js/tfCardTest.js"></script>
+<script src="../js/navigator.js"></script>
+
+
 
 </body>
 </html>
