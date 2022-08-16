@@ -4,7 +4,7 @@ function openNav() {
     console.log(id);
     document.getElementById("itemNavigator").style.cssText = "width: 250px";
     document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    // document.body.style.backgroundColor = "#1a1919";
   }
 //   document.getElementById("fricExtMan").style.cssText = "display: flex; padding: 25px; margin: 25px;"
 
@@ -13,4 +13,14 @@ function openNav() {
     document.getElementById("itemNavigator").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.body.style.backgroundColor = "white";
+  }
+
+const choiceCards = []
+
+  function addCard () {
+    let cardItem = document.getElementsByClassName("choice");
+
+
+
+    
   }

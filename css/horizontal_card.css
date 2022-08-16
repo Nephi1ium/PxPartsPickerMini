@@ -41,7 +41,73 @@
     display: none;
   }
 
+
+
+  /* Feet Section Display Start */
   
+  
+  /* #BlatchfordFeet{
+    display: none;
+  } */
+
+  .noShow{
+    display: none;
+  }
+
+  .show{
+    display: block;
+  }
+
+  /* #ProteorFeet{
+    display: none;
+  } */
+   /* #AllBlatch{
+    display: none;
+  }
+  #BlatchKTwoHydrau{
+    display: none;
+  }
+  #BlatchKThreeHydrauMultiax{
+    display: none;
+  }
+  #BlatchKThreeHydrauMultiax{
+    display: none;
+  }
+  #BlatchKTwoFlexHeel{
+    display: none;
+  }
+  #BlatchK2KeelMultiax{
+    display: none;
+  }
+  #BlatchMPK{
+    display: none;
+  }
+  #BlatchFlex{
+    display: none;
+  }
+  #BlatchFlex{
+    display: none;
+  }
+  #BlatchHydraulicMultiax{
+    display: none;
+  }
+  #BlatchVertAx{
+    display: none;
+  }
+  #indivChoice{
+    display: none;
+  }
+  #BlatchfordFeet{
+    display: none;
+  } */
+  .blatchFeet {
+    display: none;
+  }
+  .proteorfeet {
+    display: none;
+  }
+
+  /* End Feet Section Display */
   
   .card-img-top {
     border-radius: 25%;

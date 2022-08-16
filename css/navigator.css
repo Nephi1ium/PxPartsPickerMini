@@ -1,6 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
-    transition: background-color .5s;
+    transition: background-color .1s;
   }
   
   .myItemNavigator{
@@ -10,7 +10,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -56,6 +56,7 @@ color:aliceblue
     display: block;
     transition: 0.3s;
     background-color: black;
+    width: 250px;
   }
   .myItemNavigator .indivChoice:hover{
     color:aliceblue
@@ -82,6 +83,10 @@ color:aliceblue
   #main {
     transition: margin-left .5s;
     padding: 16px;
+  }
+
+  .noShow{
+    display: block;
   }
   
   @media screen and (max-width: 450px) {

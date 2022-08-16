@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+?<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/itemchoices.css">
     <link rel="stylesheet" href="../css/navigator.css">
+    <link rel="stylesheet" href="../css/horizontal_card.css">
+
 
     <title>TF Suction</title>
 </head>
@@ -60,12 +62,13 @@
       <!-- RIght now this resets the page, I should simply set the state of each element to "initial" -->
 <main id="main">
 <nav id="itemNavigator" class="myItemNavigator">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
 
     <section id="kneesSection">         
         <a id="kneeButton" class=" mainChoice">
           Knees
         </a>
+<!--          Start of K1/K2 Category                                 -->
             <a class="secButtons "  id="kOneTwo">
               K1/K2
             </a>
@@ -189,11 +192,387 @@
             <!--      End of the inner Accordion 1      -->
 
     </section> 
+
     <section id="feetSection">
         <a id="feetButton" class=" mainChoice">
           Feet
         </a>
+
+        <!-- Start of Blatchford Feet Section -->
+    <a class="secButtons toggle-heading"  type="button"   id="BlatchFeet">
+      Blatchford 
+    </a>
+    <section id="blatchFeetShow" class="noShow">
+      <nav id="BlatchfordFeet">
+       
+        <a id="AllBlatch" class=" indivChoice feet"  >
+        All Blatchford Feet
+        </a>
+       
+         
+            <a id="BlatchKTwoHydrau" class=" indivChoice feet blatchFeet"  >
+              K2 Flexible Keel with Hydraulic multiaxial ankle:     L5968,  L5972                  </a>
+         
+         
+            <a id="BlatchKThreeHydrauMultiax"class="indivChoice  feet blatchFeet"  >
+              K3 Flexwalk with Hydraulic Multiaxial ankle:     L5968,  L5981
+            </a>
+         
+         
+            <a class="indivChoice  feet blatchFeet" id="BlatchKThreeHydrauMultiVert"  >
+              K3 Flexwalk with Hydraulic Multiaxial ankle and Vertical Shock:     L5968,  L5981, L5988
+            </a>
+         
+           
+              <a id="BlatchKTwoFlexHeel" class=" indivChoice feet blatchFeet"  >
+                K2 Flexible Heel:     L5972
+               
+           
+              <a id="BlatchK2KeelMultiax"class="indivChoice  feet blatchFeet"  >
+                K2 Flexible Keel with Multiaxial Rotation:     L5972, L5986
+              </a>
+           
+
+           
+              <a id="BlatchMPK" class="indivChoice  feet blatchFeet"  >
+                Microprocessor Feet:     L5973
+              </a>
+           
+         
+            <a class="indivChoice  feet blatchFeet" id="BlatchFlex"  >
+              Flexfoot:     L5980
+            </a>
+         
+           
+              <a id="BlatchFlex" class=" indivChoice feet blatchFeet"  >
+                Flexwalk:     L5981
+               
+           
+              <a id="BlatchHydraulicMultiax"class="indivChoice  feet blatchFeet"  >
+                Flexwalk with Multiaxial Ankle:     L5981 L5986
+              </a>
+           
+           
+              <a id="BlatchVertAx" class="indivChoice  feet blatchFeet"  >
+                Vertical Shock with Axial Rotation:     L5984,  L5987
+              </a>
+           
+         
+            <a class="indivChoice  feet blatchFeet" id="BlatchMisc"  >
+              Coding Group:     Miscellaneous
+            </a>
+         
+     
+      </nav>
     </section>
+        <!-- Start of Blatchford Inner Section -->
+        
+               <!-- End of Blatchford Section  -->
+      <!-- End of Blatchford Inner Section -->
+        <!-- End of Blatchford Feet Section -->
+
+        
+        <!-- Start of Proteor/Freedom Feet --> 
+        <a class="secButtons toggle-heading"   id="ProtFeet">
+          Proteor/Freedom
+        </a>
+
+        <nav id="ProteorFeet" class="noShow">
+
+
+        <a id=""class="proteorfeet indivChoice  feet proteorfeet"  >
+          K3 Flexwalk with Hydraulic Multiaxial ankle:     L5968,  L5981
+        </a>
+        
+        <a id="" class=" indivChoice feet proteorfeet"  >
+          K2 Flexible Heel:     L5972
+        </a>
+
+        <a id="" class="indivChoice  feet proteorfeet"  >
+          Microprocessor Feet:     L5973
+        </a>
+
+        <a id=""class="indivChoice  feet proteorfeet"  >
+          Energy Storing:     L5976
+        </a>
+
+        <a id="" class=" indivChoice feet proteorfeet"  >
+          Flexfoot with Multiaxial Ankle:     L5980,  L5986
+        </a>
+
+
+        <a id="" class=" indivChoice feet proteorfeet"  >
+          Flexwalk:     L5981
+        </a>
+
+        <a id=""class="indivChoice  feet proteorfeet"  >
+          Flexwalk with Multiaxial Ankle:     L5981 L5986
+        </a>
+
+        <a id="" class="indivChoice  feet proteorfeet"  >
+          Vertical Shock with Axial Rotation:     L5984,  L5987
+        </a>
+
+        <a class="indivChoice  feet proteorfeet" id=""  >
+          Vertical Shock with Multiaxial Rotation:     L5986,  L5987
+        </a>
+
+        <a class="indivChoice  feet proteorfeet" id=""  >
+          Coding Group:     Miscellaneous
+        </a>
+
+        </nav>
+        <!-- End of Proteor/Freedom Feet -->
+        <!-- Start of STG Feet -->
+        <a class="secButtons toggle-heading"   id="stgFeetButton">
+          STG
+        </a>
+        <nav id="stgFeet" class="noShow">
+
+  
+  
+          <a id="stgFlex" class=" indivChoice feet stgfeet"  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of STG Feet -->
+
+<section>
+               <!-- Start of Templates Section -->
+               <!-- <nav>
+                <ul class="nav">
+                  <li>
+                    <a id="AllBlatch" class=" indivChoice feet"  >
+                    All Blatchford Feet
+                    </a>
+                  </li>
+                    <li>
+                        <a id="" class=" indivChoice feet"  >
+                          K2 Flexible Keel with Hydraulic multiaxial ankle:     L5968,  L5972                  </a>
+                    </li>
+                    <li>
+                        <a id=""class="indivChoice  feet"  >
+                          K3 Flexwalk with Hydraulic Multiaxial ankle:     L5968,  L5981
+                        </a>
+                    </li>
+                    <li>
+                        <a id="" class="indivChoice  feet"  >
+                          K3 Flexwalk with with Hydraulic Multiaxial ankle and adjustable heel height: L5968, L5981, L5990
+                        </a>
+                    </li>
+                    <li>
+                        <a class="indivChoice  feet" id=""  >
+                          K3 Flexwalk with Hydraulic Multiaxial ankle and Vertical Shock:     L5968,  L5981, L5988
+                        </a>
+                    </li>
+                    <li>
+                      <a id="" class=" indivChoice feet"  >
+                        SACH:     L5971
+                      </a>
+                    </li>
+                      <li>
+                          <a id="" class=" indivChoice feet"  >
+                            K2 Flexible Heel:     L5972
+                          </a>
+                          </li>
+                      <li>
+                          <a id=""class="indivChoice  feet"  >
+                            K2 Flexible Keel with Multiaxial Rotation:     L5972, L5986
+                          </a>
+                      </li>
+                      <li>
+                        <a id=""class="indivChoice  feet"  >
+                          K2 Flexible Keel with axial Rotation & Vertical Shock:     L5972, L5984, L5988
+                        </a>
+                      </li>
+                      <li>
+                          <a id="" class="indivChoice  feet"  >
+                            Microprocessor Feet:     L5973
+                          </a>
+                      </li>
+                      <li>
+                          <a class="indivChoice  feet" id=""  >
+                            Single Axis:     L5974
+                          </a>
+                      </li>
+                      <li>
+                        <a id=""class="indivChoice  feet"  >
+                          Energy Storing:     L5976
+                        </a>
+                    </li>
+                    <li>
+                        <a id="" class="indivChoice  feet"  >
+                          Multiaxial Dynamic Response:     L5979
+                        </a>
+                    </li>
+                    <li>
+                        <a class="indivChoice  feet" id=""  >
+                          Flexfoot:     L5980
+                        </a>
+                    </li>
+                    <li>
+                      <a id="" class=" indivChoice feet"  >
+                        Flexfoot with Multiaxial Ankle:     L5980,  L5986
+                      </a>
+                    </li>
+                      <li>
+                          <a id="" class=" indivChoice feet"  >
+                            Flexwalk:     L5981
+                          </a>
+                          </li>
+                      <li>
+                          <a id=""class="indivChoice  feet"  >
+                            Flexwalk with Multiaxial Ankle:     L5981 L5986
+                          </a>
+                      </li>
+                      <li>
+                          <a id="" class="indivChoice  feet"  >
+                            Vertical Shock with Axial Rotation:     L5984,  L5987
+                          </a>
+                      </li>
+                      <li>
+                          <a class="indivChoice  feet" id=""  >
+                            Vertical Shock with Multiaxial Rotation:     L5986,  L5987
+                          </a>
+                      </li>
+                      <li>
+                        <a id="" class=" indivChoice feet"  >
+                          Vertical Shock:     L5987
+                        </li>
+                    <li>
+                        <a id=""class="indivChoice  feet"  >
+                          Flexwalk with Multiaxial Ankle and Vacuum  :     L5987,  L5986,  L5781
+                        </a>
+                    </li>
+                    <li>
+                        <a id="" class="indivChoice  feet"  >
+                          Coding Group:     L5999 Base Code
+                        </a>
+                    </li>
+                    <li>
+                        <a class="indivChoice  feet" id=""  >
+                          Coding Group:     Miscellaneous
+                        </a>
+                    </li>
+                </ul>
+              </nav> -->
+               <!-- End of Templates Section -->
+</section>
+
+        <!-- Start of Fillauer Feet -->
+        <a class="secButtons toggle-heading"   id="FillauerFeet">
+          Fillauer
+        </a>
+        <nav id="fillauerFeet" class="noShow">
+
+  
+  
+          <a id="" class=" indivChoice feet "  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of Fillauer Feet -->
+        <!-- Start of College Park Feet -->
+        <a class="secButtons toggle-heading"    id="CollegeParkFeet">
+          College Park
+        </a>
+        <nav id="cpFeet" class="noShow">
+
+  
+  
+          <a id="" class=" indivChoice feet "  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of College Park Feet -->
+        <!-- Start of Trulife Feet -->
+        <a class="secButtons toggle-heading"    id="TrulifeFeet">
+          Trulife
+        </a>
+        <nav id="trulifeFeet" class="noShow">
+
+  
+  
+          <a id="" class=" indivChoice feet "  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of Trulife Feet -->
+        <!-- Start of Ossur Feet -->
+        <a class="secButtons toggle-heading"    id="OssurFeet">
+          Ossur
+        </a>
+        <nav id="ossurFeet" class="noShow">
+
+  
+  
+          <a id="" class=" indivChoice feet "  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of Ossur Feet -->
+        <!-- Start of Otto Bock Feet -->
+        <a class="secButtons toggle-heading"    id="OttoBockFeet">
+          Otto Bock
+        </a>
+        <nav id="obFeet" class="noShow">
+
+  
+  
+          <a id="" class=" indivChoice feet "  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of Otto Bock Feet -->
+        <!-- Start of MakStride Feet -->
+        <a class="secButtons toggle-heading"    id="MakStrideFeet">
+          MakStride (BioQuest)
+        </a>
+        <nav id="mkbqFeet" class="noShow">
+
+  
+  
+          <a id="" class=" indivChoice feet "  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of Makstride Feet -->
+        <!-- Start of Willowwood Feet -->
+        <a class="secButtons toggle-heading"    id="WillowoodFeet">
+          Willowood
+        </a>
+        <nav id="wwFeet" class="noShow">
+
+  
+  
+          <a id="" class=" indivChoice feet "  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of Willowwood Feet -->
+        <!-- Start of Miscellaneous Feet -->
+        <a class="secButtons toggle-heading"    id="MiscFeet">
+          L5999 Feet
+        </a>
+        <nav id="miscFeet" class="noShow">
+
+  
+  
+          <a id="" class=" indivChoice feet "  >
+            Flexwalk:     L5981
+          </a>
+        </nav>
+        <!-- End of Miscellanous Feet -->
+    </section>
+
+
+
+
+
+
+
+
+
     <section id="linersSection">
         <a id="linerButton" class=" mainChoice">
           Liners
@@ -206,7 +585,7 @@
     </section>
 </nav>
 </main>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click for Prosthetic Components </span>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Click for Prosthetic Components</span>
 
 <!-- K1/K2 4-Bar Knee Section -->
 <aside  class="cardcontainer">
@@ -239,7 +618,7 @@
                                   <p class="card-text">Reimbursment Percent: 15%</p>
                                   <p class="card-text">PDAC Approval: Yes</p>
                                   <a href="#" class="btn btn-primary">SPS</a>
-                                  </div>
+<button class="btn btn-primary choice">Save Item</button>                                  </div>
                                 </div>
                               </div>
           
@@ -257,7 +636,7 @@
                                   <p class="card-text">Reimbursment Percent: 25%</p>
                                   <p class="card-text">PDAC Approval: No</p>
                                   <a href="#" class="btn btn-primary">SPS</a>
-                                </div>
+<button class="btn btn-primary choice">Save Item</button>                                </div>
                                 </div>
                               </div>
           
@@ -275,7 +654,7 @@
                                     <p class="card-text">Reimbursment Percent: 27%</p>
                                     <p class="card-text">PDAC Approval: No</p>
                                     <a href="#" class="btn btn-primary">SPS</a>
-                                  </div>
+<button class="btn btn-primary choice">Save Item</button>                                  </div>
                                 </div>
                               </div>
                               
@@ -293,7 +672,7 @@
                                     <p class="card-text">Reimbursment Percent: 28%</p>
                                     <p class="card-text">PDAC Approval: No</p>
                                     <a href="#" class="btn btn-primary">SPS</a>
-                                  </div>
+<button class="btn btn-primary choice">Save Item</button>                                  </div>
                                 </div>
                               </div>
                               
@@ -311,7 +690,7 @@
                                     <p class="card-text">Reimbursment Percent: 29%</p>
                                     <p class="card-text">PDAC Approval: No</p>
                                     <a href="#" class="btn btn-primary">SPS</a>
-                                  </div>
+<button class="btn btn-primary choice">Save Item</button>                                  </div>
                                 </div>
                               </div>
                               
@@ -329,7 +708,7 @@
                                     <p class="card-text">Reimbursment Percent: 44%</p>
                                     <p class="card-text">PDAC Approval: No</p>
                                     <a href="#" class="btn btn-primary">SPS</a>
-                                  </div>
+<button class="btn btn-primary choice">Save Item</button>                                  </div>
                                 </div>
                               </div>
           
@@ -347,7 +726,7 @@
                                     <p class="card-text">Reimbursment Percent: 50%</p>
                                     <p class="card-text">PDAC Approval: No</p>
                                     <a href="#" class="btn btn-primary">SPS</a>
-                                  </div>
+<button class="btn btn-primary choice">Save Item</button>                                  </div>
                                 </div>
                               </div>
           
@@ -365,7 +744,7 @@
                                     <p class="card-text">Reimbursment Percent: 58%</p>
                                     <p class="card-text">PDAC Approval: No</p>
                                     <a href="#" class="btn btn-primary">SPS</a>
-                                  </div>
+<button class="btn btn-primary choice">Save Item</button>                                  </div>
                                 </div>
                               </div>
 
@@ -1620,6 +1999,84 @@
 <script src="../js/test.js"></script>
 <script src="../js/tfCardTest.js"></script>
 <script src="../js/navigator.js"></script>
+<script  type="module" src="../js/jsRouterComponent.js"></script>
+
+<script>
+
+
+
+
+
+// const toggleBtn = document.querySelectorAll('.toggle-heading');
+
+// toggleBtn.forEach(item => {
+//   item.addEventListener('click', event => {
+//     let toggleTgt = item.nextElementSibling;
+//     toggleTgt.classList.toggle('noShow');
+//   })
+// });
+// console.log("Toggle Successful!");
+
+
+
+
+
+// let classChange = function(elementId) {
+//   let button = document.getElementById(elementId)
+//       console.log(button,"button");
+//   let box = document.getElementById(elementId).nextElementSibling.id
+//       console.log(box,"box");
+// // let toggleTgt = document.querySelector('.toggle-heading').nextSibling;
+
+
+//  button.addEventListener("click", function() {
+//    box.classList.toggle("show");
+//  });
+// }
+
+  // const call = function(elementId)
+  // {
+
+  //   console.log("Inside Function");
+  //   let valueOfInput = document.getElementById(elementId).id
+  //   console.log(valueOfInput, "Value of Input");
+  //   console.log(typeof valueOfInput, "Value of Input");
+
+  //   let displayObject = JSON.stringify(valueOfInput);
+  //   console.log(displayObject, "displayObject");
+  //   console.log(typeof displayObject, "type of display");
+
+  //   let stringDisplayObject = JSON.parse(displayObject);
+  //   console.log(stringDisplayObject, "stringDisplayObject");
+  //   console.log(typeof stringDisplayObject, "type of display");
+
+
+  //   changeDisplayToggle();
+
+
+  // }
+
+  // function changeDisplayToggle(){
+
+  //   console.log(call, "call value");
+
+  //   if (call.style.display === "block") {
+  //     call.style.display = "none";
+  //     } else { 
+  //       call.style.display = "block";
+  //     };
+  //     console.log(call.style.display);
+  // }
+  
+  
+//   var call = function(elementId)
+
+// {
+//  var valueOfInput = document.getElementById(elementId).id
+//     alert(valueOfInput);
+// }
+</script>
+
 
 
 
