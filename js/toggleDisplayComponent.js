@@ -28,6 +28,80 @@ export {toggleProgram};
 
 
 
+// const toggleBtn = document.querySelectorAll('.toggle-heading');
+
+// toggleBtn.forEach(item => {
+//   item.addEventListener('click', event => {
+//     let toggleTgt = item.nextElementSibling;
+//     toggleTgt.classList.toggle('noShow');
+//   })
+// });
+// console.log("Toggle Successful!");
+
+
+
+
+
+// let classChange = function(elementId) {
+//   let button = document.getElementById(elementId)
+//       console.log(button,"button");
+//   let box = document.getElementById(elementId).nextElementSibling.id
+//       console.log(box,"box");
+// // let toggleTgt = document.querySelector('.toggle-heading').nextSibling;
+
+
+//  button.addEventListener("click", function() {
+//    box.classList.toggle("show");
+//  });
+// }
+
+  // const call = function(elementId)
+  // {
+
+  //   console.log("Inside Function");
+  //   let valueOfInput = document.getElementById(elementId).id
+  //   console.log(valueOfInput, "Value of Input");
+  //   console.log(typeof valueOfInput, "Value of Input");
+
+  //   let displayObject = JSON.stringify(valueOfInput);
+  //   console.log(displayObject, "displayObject");
+  //   console.log(typeof displayObject, "type of display");
+
+  //   let stringDisplayObject = JSON.parse(displayObject);
+  //   console.log(stringDisplayObject, "stringDisplayObject");
+  //   console.log(typeof stringDisplayObject, "type of display");
+
+
+  //   changeDisplayToggle();
+
+
+  // }
+
+  // function changeDisplayToggle(){
+
+  //   console.log(call, "call value");
+
+  //   if (call.style.display === "block") {
+  //     call.style.display = "none";
+  //     } else { 
+  //       call.style.display = "block";
+  //     };
+  //     console.log(call.style.display);
+  // }
+  
+  
+//   var call = function(elementId)
+
+// {
+//  var valueOfInput = document.getElementById(elementId).id
+//     alert(valueOfInput);
+// }
+
+
+
+
+
+
 
 
 
