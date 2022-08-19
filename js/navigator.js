@@ -24,3 +24,5 @@ const choiceCards = []
 
     
   }
+
+  // document.body.addEventListener('click', closeNav, true); 

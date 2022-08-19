@@ -2,6 +2,13 @@ body {
     font-family: "Lato", sans-serif;
     transition: background-color .1s;
   }
+
+  .noShow{
+    display: initial;
+  }
+  .noShowOne{
+    display: initial;
+  }
   
   .myItemNavigator{
     height: 100%;
@@ -85,9 +92,7 @@ color:aliceblue
     padding: 16px;
   }
 
-  .noShow{
-    display: block;
-  }
+
   
   @media screen and (max-width: 450px) {
     .itemNavigator {padding-top: 15px;}

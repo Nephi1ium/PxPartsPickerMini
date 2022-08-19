@@ -25,6 +25,6 @@ import { toggleProgram } from "./toggleDisplayComponent.js";
   displaywwFeet.addEventListener("click", toggleProgram());
   displaymiscFeet.addEventListener("click", toggleProgram());
 
+  // const displayKnees = document.querySelector("#kneeButton");
 
-
-
+  // displayKnees.addEventListener("click", toggleProgram());

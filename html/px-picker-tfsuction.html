@@ -1,4 +1,4 @@
-?<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -64,39 +64,33 @@
 <nav id="itemNavigator" class="myItemNavigator">
   <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
 
-    <section id="kneesSection">         
-        <a id="kneeButton" class=" mainChoice">
-          Knees
-        </a>
+  <a id="kneeButton" class="toggle-heading mainChoice">
+    Knees
+  </a>
+    <section id="kneesSection" class="noShow">         
+
 <!--          Start of K1/K2 Category                                 -->
-            <a class="secButtons "  id="kOneTwo">
+            <a class="secButtons toggle-heading"  id="kOneTwo">
               K1/K2
             </a>
 <!--          Start of the 4 inner categories of K1/K2 Knees          -->
-            <nav>
-                <ul class="nav">
-                    <li>
-                        <a id="fric" class=" indivChoice kOne"  >
+
+                        <a id="fric" class="noShow indivChoice kOne"  >
                         Friction, Extension Assist
                         </a>
-                    </li>
-                    <li>
-                        <a id="fricMan"class="indivChoice  kOne"  >
+
+                        <a id="fricMan"class="indivChoice noShow  kOne"  >
                         Friction, Extension Assist, Manual Lock
                         </a>
-                    </li>
-                    <li>
-                        <a id="fricExtStan" class="indivChoice  kOne"  >
+
+                        <a id="fricExtStan" class="indivChoice noShow  kOne"  >
                         Friction, Extension Assist, Stance Flexion
                         </a>
-                    </li>
-                    <li>
-                        <a class="indivChoice  kOne" id="fricExtStanLock"  >
+
+                        <a class="indivChoice noShow  kOne" id="fricExtStanLock"  >
                         Friction, Extension Assist, Stance Flexion, Manual Lock
                         </a>
-                    </li>
-                </ul>        
-            </nav>
+
 <!--                   End of the K1/K2 Category -->        
 <!--               Beginning of the Single Axis Category -->           
                 <a class="secButtons  "  id="singleAxis">
@@ -106,17 +100,17 @@
               <nav>
                 <ul class="nav">
                   <li>
-                    <a class="indivChoice  singleAxis" id="singAxManLock"  >
+                    <a class="indivChoice noShow  singleAxis" id="singAxManLock"  >
                       Manual Lock
                     </a>
                   </li>
                   <li>
-                    <a class="indivChoice  singleAxis" id="singAxPneuFric"  >
+                    <a class="indivChoice noShow  singleAxis" id="singAxPneuFric"  >
                       Pneumatic Swing, Friction Stance
                     </a>
                   </li>
                   <li>
-                    <a class="indivChoice  singleAxis"  id="singAxHydStanSwin">
+                    <a class="indivChoice noShow  singleAxis"  id="singAxHydStanSwin">
                       Hydraulic Stance and Swing
                     </a>
                   </li>
@@ -138,10 +132,10 @@
                 <nav >
                   <ul class="nav">
                     <li>
-                    <a class="indivChoice  safety"  id="safeExt" href="#"> Extension Assist </a>
+                    <a class="indivChoice noShow  safety"  id="safeExt" href="#"> Extension Assist </a>
                   </li>
                     <li>
-                    <a class="indivChoice  safety"  id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
+                    <a class="indivChoice noShow  safety"  id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
                   </li>
                     </ul>
                 </nav>
@@ -156,19 +150,19 @@
             <nav>
               <ul class="nav">
                 <li>
-                  <a class="indivChoice  polycentric"  id="polyHydrau" href="#"> Hydraulic Swing </a>
+                  <a class="indivChoice noShow  polycentric"  id="polyHydrau" href="#"> Hydraulic Swing </a>
                 </li>
                 <li>
-                  <a class="indivChoice  polycentric"  id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
+                  <a class="indivChoice noShow  polycentric"  id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
                 </li>
                 <li>
-                  <a class="indivChoice  polycentric"  id="polyPneu" href="#"> Pneumatic Swing</a>
+                  <a class="indivChoice noShow  polycentric"  id="polyPneu" href="#"> Pneumatic Swing</a>
                 </li>
                 <li>
-                  <a class="indivChoice  polycentric"  id="polyPneuSwinStanFlex" href="#"> Pneumatic Swing and Stance Flexion</a>
+                  <a class="indivChoice noShow  polycentric"  id="polyPneuSwinStanFlex" href="#"> Pneumatic Swing and Stance Flexion</a>
                 </li>
                 <li>  
-                  <a class="indivChoice  polycentric"  id="polyHydrSwinStanFlexHigh" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
+                  <a class="indivChoice noShow  polycentric"  id="polyHydrSwinStanFlexHigh" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
                 </li>
               </ul>
             </nav>
@@ -182,7 +176,7 @@
                   Microprocessor Knees
                 </a>
 
-                <!-- <a class="indivChoice  mpk"  id="MPKChoice" href="#"> Blatchford</a> -->
+                <!-- <a class="indivChoice noShow  mpk"  id="MPKChoice" href="#"> Blatchford</a> -->
 
               <div id="KnEight" class="collapse" data-bs-parent="#accordion">
                 <!-- Enter the accordion buttons here -->

@@ -2,6 +2,7 @@
 const kneeButton = document.querySelector("#kneeButton");
 
 const feetButton = document.querySelector("#feetButton");
+
 const linerButton = document.querySelector("#linerButton");
 const componentButton = document.querySelector("#compButton");
 // Main Buttons above
@@ -13,15 +14,20 @@ const MPKButton = document.querySelector("#MPK");
 
 
 // second choice buttons above
-const secondaryChoices = document.querySelectorAll('.secButtons');
-console.log("querySelectors");
+const secondaryChoices = document.querySelectorAll('.toggle-heading');
+console.log("querySelectors", secondaryChoices);
+
+
 // const clearSelect = document.querySelector("#resPage");
 // abvoe is my attempt at creating a togglable selection
 
 
 // kneeButton.addEventListener("click", () => showKnees());
-kneeButton.addEventListener("click", () => toggleSelectionsFlex("secButtons"));
-kneeButton.addEventListener("click", () => toggleSelectionsBlock("nav"));
+// kneeButton.addEventListener("click", () => toggleSelectionsFlex("secButtons"));
+// kneeButton.addEventListener("click", () => toggleSelectionsBlock("nav"));
+
+
+// noShowOne
 
 // feetButton.addEventListener("click", () => showExtFriction());
 // linerButton.addEventListener("click", () => showExtFricManChoice());
@@ -69,7 +75,7 @@ function toggleSelectionsFlex(name) {
   }
 
   function toggleSelectionsBlock(name) {
-    console.log("Show 1");
+    console.log("Show 2");
     let e = document.getElementsByClassName(name);
        Array.from(e).forEach((x) => {
         if (x.style.display === "block") {

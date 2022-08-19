@@ -299,7 +299,7 @@ body {
 
 
 
-  .kOne{
+  /* .kOne{
     display: none;
   }
   
@@ -336,7 +336,7 @@ body {
   
   #singleAxis {
     display: none;
-  } 
+  /* }  */
   
   #polyPneuSwinStanFlex{
     display: none;
@@ -435,7 +435,7 @@ body {
   
     #KnSeven {
       display: none;
-    }
+    } 
   /* .mainChoice{
     height: 20vh;
     width: 20vw;

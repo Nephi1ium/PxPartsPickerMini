@@ -19,7 +19,20 @@ console.log("Toggle Successful!");
 export {toggleProgram};
 
 
+// function toggleProgramTwo (){
 
+//   const toggleBtn = document.querySelectorAll('.toggle-one');
+  
+//   toggleBtn.forEach(item => {
+//     item.addEventListener('click', event => {
+//       let toggleTgt = item.nextElementSibling;
+//       toggleTgt.classList.toggle('noShowOne');
+//     })
+//   });
+//   console.log("Toggle Successful!");
+//   }
+
+//   export {toggleProgramTwo};
 
 
 
