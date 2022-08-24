@@ -12,6 +12,8 @@ import { toggleProgram } from "./toggleDisplayComponent.js";
   const displaymkFeet = document.querySelector("#MakStrideFeet");
   const displaywwFeet = document.querySelector("#WillowoodFeet");
   const displaymiscFeet = document.querySelector("#MiscFeet");
+  // const displayMPKSwing = document.querySelector("#MPK");
+
 
   displayBlatchFeet.addEventListener("click", toggleProgram());
   displayProteorFeet.addEventListener("click", toggleProgram());
@@ -24,6 +26,7 @@ import { toggleProgram } from "./toggleDisplayComponent.js";
   displaymkFeet.addEventListener("click", toggleProgram());
   displaywwFeet.addEventListener("click", toggleProgram());
   displaymiscFeet.addEventListener("click", toggleProgram());
+  // displayMPKSwing.addEventListener("click", toggleProgram());
 
   // const displayKnees = document.querySelector("#kneeButton");
 

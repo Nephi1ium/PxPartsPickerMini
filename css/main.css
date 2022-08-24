@@ -230,7 +230,7 @@ color: #08719e;  }
   text-align: center; }
 
 .img-fluid {
-  height: 75px; }
+  height: 4vmax; }
 
 .card-image {
   max-width: 100%;

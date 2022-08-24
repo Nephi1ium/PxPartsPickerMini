@@ -10,7 +10,7 @@ const kOnekTwoButton = document.querySelector("#kOneTwo");
 const singleAxisButton = document.querySelector("#singleAxis");
 const safeKneeButton = document.querySelector("#safeKnee");
 const polyKneeButton = document.querySelector("#polyKnee");
-const MPKButton = document.querySelector("#MPK");
+// const MPKButton = document.querySelector("#MPK");
 
 
 // second choice buttons above
@@ -51,7 +51,9 @@ safeKneeButton.addEventListener("click", () => toggleSelectionsBlock("safety"));
 polyKneeButton.addEventListener("click", () => showPolycentricKnee());
 polyKneeButton.addEventListener("click", () => toggleSelectionsBlock("polycentric"));
 
-MPKButton.addEventListener("click", () => showMPK());
+// MPKButton.addEventListener("click", () => showMPK());
+// MPKButton.addEventListener("click", () => toggleSelectionsBlock("mpkKnee"));
+
 console.log("EventHandlers");
 
 // secondary event handlers buttons above
@@ -110,10 +112,11 @@ function toggleSelectionsFlex(name) {
 
   }
 
-  function showMPK() {
-    console.log("Show MPK's");
+  // function showMPK() {
 
-  }
+  //   console.log("Show MPK's");
+
+  // }
 
 
 

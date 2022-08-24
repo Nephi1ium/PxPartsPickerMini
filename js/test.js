@@ -17,6 +17,7 @@ const showSafeFlexExt = document.querySelector("#safeFlexExt");
 const showPolyHydrau = document.querySelector("#polyHydrau");
 const showPolyHydrauStan = document.querySelector("#polyHydrauStan");
 const showPolyPneu = document.querySelector("#polyPneu");
+const showMPKKnees = document.querySelector("#allMPK");
 
 
 // const storeClinName = document.querySelector("#clinName");
@@ -50,6 +51,7 @@ showSafeFlexExt.addEventListener("click", () => showSafeFlexExtChoice());
 showPolyHydrau.addEventListener("click", () => showPolyHydrauChoice());
 showPolyHydrauStan.addEventListener("click", () => showPolyHydrauStanChoice());
 showPolyPneu.addEventListener("click", () => showPolyPneuChoice());
+showMPKKnees.addEventListener("click", () => showMPKChoice());
 
 
 // Below is the code for user input, from Home page, stored in the browser, and added to Virtual Care document
@@ -124,6 +126,11 @@ function openNav() {
   }
   function showPolyPneuChoice() {
     document.getElementById("polyPneuChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+    document.getElementById("resPage").style.cssText = "display: flex;"
+  }
+
+  function showMPKChoice() {
+    document.getElementById("mpkKneeContainer").style.cssText = "display: flex; padding: 25px; margin: 25px;"
     document.getElementById("resPage").style.cssText = "display: flex;"
   }
   
