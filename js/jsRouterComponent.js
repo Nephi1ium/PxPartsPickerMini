@@ -1,7 +1,59 @@
 import { toggleProgram } from "./toggleDisplayComponent.js";
+import {componentSection} from "./componentsComponent.js";
+
+  
 
 
-  const displayBlatchFeet = document.querySelector("#BlatchFeet");
+
+const compSecButt = document.querySelector("#compButton");
+
+compSecButt.addEventListener("click", () => compSecDisplay());
+
+function compSecDisplay() {
+  componentSection();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const displayBlatchFeet = document.querySelector("#BlatchFeet");
   const displayProteorFeet = document.querySelector("#ProtFeet");
   const displaystgFeet = document.querySelector("#stgFeetButton");
   const displayfillFeet = document.querySelector("#FillauerFeet");
