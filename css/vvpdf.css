@@ -6,8 +6,10 @@
 .information{
     grid-area: information;
     text-align: right;
-    
 }
+#addNotes {
+    width: 100%;
+  }
 .information1{
     grid-area: information1;
 }

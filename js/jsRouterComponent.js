@@ -1,5 +1,5 @@
 import { toggleProgram } from "./toggleDisplayComponent.js";
-import {componentSection} from "./componentsComponent.js";
+import {componentSection, componentCard} from "./componentsComponent.js";
 
   
 
@@ -11,6 +11,7 @@ compSecButt.addEventListener("click", () => compSecDisplay());
 
 function compSecDisplay() {
   componentSection();
+  componentCard();
 }
 
 

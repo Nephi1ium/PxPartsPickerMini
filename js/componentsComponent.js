@@ -1,3 +1,6 @@
+import {componentArray} from "../src/componentArray.js";
+
+
 function componentSection() {
 
     const componentItemNav = 
@@ -16,4 +19,39 @@ function componentSection() {
 
 }
 
+function componentCard(){
+
+
+    let compCard = document.querySelector('#mainpageSectionforJS');
+
+
+    componentArray.forEach(component => {    
+        compCard.innerHTML = compCard.innerHTML +
+         `<div class="card">
+            <div class="card-header">
+                <h4> ${component.name} </h4>
+                <div class="card-body">
+                <img class="card-image" src="${component.image}"></img>
+                <h5> Product Description </h5>
+                <div>${component.weight}</div>
+                <div>${component.weightlimit}</div>
+                <div>${component.material}</div>
+
+                <div>$${component.price}</div>
+                <div>${component.hdcode}</div>
+                <a class="btn btn-primary" href="${component.link}" target="_blank">${component.linkname}</a>
+                <input type="button" class="additionSelectButton"></input>
+
+                </div>
+            </div>
+        </div>`;
+        });
+    };
+
+
+
 export {componentSection};
+export {componentCard};
+
+
+

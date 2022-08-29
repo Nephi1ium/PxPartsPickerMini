@@ -38,3 +38,7 @@ Need to organize the feet into manageable pieces 8.24.22
 
 
 Confirm photos are correct 8.24.22
+
+Remove all Bootstrap and replace the classes with self made classes 8.26.22
+
+Create a slider from the cost vs reimbursement of all items displayed. The item will be "itemPercent" and will be a creation of item.cost / item.reimbursement. The slider will have gradients of color from green to yellow to red. (may need to change that color scheme.)

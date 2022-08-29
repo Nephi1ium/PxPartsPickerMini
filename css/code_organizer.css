@@ -1,68 +1,1496 @@
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
-    background-color: #ccc; 
-  }
-  
-  .panel {
-    padding: 0 18px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* COLLAPSABLE */
+
+
+/* p.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin-bottom:10px;
+}
+
+/* Add a background color to the accordion if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/* p.accordion.active, p.accordion:hover {
+  background-color: #ddd;
+} */
+
+/* Unicode character for "plus" sign (+) */
+/* p.accordion:after {
+  content: '\2795'; 
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+} */
+
+/* Unicode character for "minus" sign (-) */
+/* p.accordion.active:after {
+  content: "\2796"; 
+} */ */
+
+/* Style the element that is used for the panel class */
+
+/* div.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+  margin-bottom:10px;
+} */
+
+/* div.panel.show {
+  opacity: 1;
+  max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HORIZONTAL CARD */
+
+
+
+
+
+/* #fricExt {
+  display: none; }
+
+  #fricExtMan{
     display: none;
-    background-color: white;
-    overflow: hidden;
+  }
+  #fricExtStanChoi{
+    display: none;
   }
 
-  body {
-    font-family: "Lato", sans-serif;
+  #fricExtStanLockChoi{
+    display: none;
+  }
+
+  #singAxManLockChoi{
+    display: none;
+  }
+
+  #singAxPneuFricChoi{
+    display: none;
+  }
+  #singAxHydStanSwinChoi{
+    display: none;
+  }
+  #safeExtChoi{
+    display: none;
   }
   
-  .sidebar {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    text-align:center;
+  #safeFlexExtChoi {
+    display: none;
+  }
+
+  #polyHydrauChoi {
+    display: none;
   }
   
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
+  #polyHydrauStanChoi {
+    display: none;
+  }
+  #polyPneuChoi {
+    display: none;
+  } */
+
+
+
+  /* Feet Section Display Start */
+  
+  
+  /* #BlatchfordFeet{
+    display: none;
+  } */
+
+  .noShow{
+    display: none;
+  }
+
+  /* .show{
+    display: block;
+  } */
+
+  /* #ProteorFeet{
+    display: none;
+  } */
+   /* #AllBlatch{
+    display: none;
+  }
+  #BlatchKTwoHydrau{
+    display: none;
+  }
+  #BlatchKThreeHydrauMultiax{
+    display: none;
+  }
+  #BlatchKThreeHydrauMultiax{
+    display: none;
+  }
+  #BlatchKTwoFlexHeel{
+    display: none;
+  }
+  #BlatchK2KeelMultiax{
+    display: none;
+  }
+  #BlatchMPK{
+    display: none;
+  }
+  #BlatchFlex{
+    display: none;
+  }
+  #BlatchFlex{
+    display: none;
+  }
+  #BlatchHydraulicMultiax{
+    display: none;
+  }
+  #BlatchVertAx{
+    display: none;
+  }
+  #indivChoice{
+    display: none;
+  }
+  #BlatchfordFeet{
+    display: none;
+  } */
+  .blatchFeet {
+    display: none;
+  }
+  .proteorfeet {
+    display: none;
+  }
+
+  /* End Feet Section Display */
+  
+  .card-img-top {
+    border-radius: 25%;
+    max-width: 50%;
+     width: auto;
+     height: auto;
+     align-items: center;
+    margin-bottom: 5px;
+  padding: 5px; }
+
+.cardcontainer {
+  padding: 2% 0;
+  margin: 0 auto;
+  width: 100%; }
+
+.card-title {
+  font-size: medium;
+  align-items: center; }
+
+.card-body {
+  padding: 0; }
+
+.item a {
+  display: none; }
+
+.item:hover .card-text {
+  display: flex;
+  background-position: center; }
+
+.item:hover .card-img-top {
+  width: 25%;
+  height: fit-content; }
+
+.item:hover a {
+  display: flex;
+  text-align: center; }
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh; }
+
+@media (max-width: 632px) {
+  .gallery-wrap {
+    flex-direction: column; } }
+
+.item {
+  flex: 1;
+  height: 100%;
+  width: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  overflow: hidden;
+  background-color: #08719e; }
+  .item:hover {
+    flex: 30;
+    background-image: none;
+    text-align: center;
+    background-color: #f9fcd6; }
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
+
+.item:hover img {
+  size: 15%; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* ITEM CHOICES */
+
+  /* .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+    position: relative;
+  }
+  .nav li:before {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #fff;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+  }
+  .nav a {
+    background-color: #f7f7f7;
+    background-image: linear-gradient(#f7f7f7, #e7e7e7);
+    border-radius: 50%;
+    box-shadow: 0 3px 8px #aaa, inset 0 2px 3px #fff;
+    color: #878787;
+    display: block;
+    font-family: 'Poiret One', cursive;
+    font-size: 32px;
+    line-height: 144px;
+    text-decoration: none;
+    margin: 36px;
+    position: relative;
+    width: 144px;
+    height: 144px;
+  }
+  .nav a:before {
+    background: #fff;
+    border-top: 2px solid #ddd;
+    border-radius: 50%;
+    box-shadow: inset 0 8px 48px #ddd;
+    content: '';
+    display: block;
+    position: absolute;
+    left: -18px;
+    right: -18px;
+    top: -18px;
+    bottom: -18px;
+    z-index: -1;
+  }
+  .nav a:visited {
+    color: #a7a7a7;
+  }
+  .nav a:hover {
+    color: hsl(30, 70%, 50%);
+  }
+  .nav a:active {
+    background: #f5f5f5;
+  } */
+
+  
+  /* .mainChoice {
+      box-shadow: 0px 9px 4px 1px #276873;
+      background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+      background-color:#599bb3;
+      border-radius:2px;
+      display:inline-block;
+      cursor:pointer;
+      color:#ffffff;
+      font-family:Arial;
+      font-size:4.5vw;
+      font-weight:bold;
+      padding: 10px 5px;
+      min-width: 15vw;
+      text-decoration:none;
+      text-shadow:0px 1px 0px #3d768a;
+      box-sizing: border-box;
+  } */
+
+  .mainChoice {
+    display: none;
+  }
+
+  .secButtons{
+    display: none;
+    
+  }
+
+  .mainChoice:hover {
+background-color: #08719e ;
+color:whitesmoke; }
+
+  .secButtons:hover{
+background-color: #08719e;  }
+
+  @media screen and (max-width: 425px){
+    .mainChoice {
+        background-color:#1a1a1a;
+        border-radius:2px;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Arial;
+        font-size:4vw;
+        font-weight:bold;
+        padding: 20px 10px;
+        min-width: 95vw;
+        text-decoration:none;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+  }
+
+  /* .mainChoice:hover {
+      background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+      background-color:#408c99;
+  } */
+  /* .mainChoice:active {
+      position:relative;
+      top:1px;
+  } */
+
+  /* #main {
+      display: grid;
+      grid-column-gap: 20px;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      grid-area: "kneeSec feetSec lineSec compSec" ;
+      justify-items: center;
+   } */
+
+  .kneeSection{
+grid-area: kneeSec ;
+  }
+
+  .feetSection{
+    grid-area: feetSec ;
+  }
+
+  .linersSection{
+    grid-area: lineSec;
+  }
+
+  .componentsSection {
+    grid-area: compSec ;
+  } 
+
+/* @media screen and (max-width: 425px) {
+    #main {
+        grid-row-gap: 20px;
+
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-area: "kneeSec feetSec"
+      "lineSec compSec" ;
+    }
+} */
+
+@media screen and (max-width: 425px) {
+    #main {
+        grid-row-gap: 20px;
+
+      grid-template-columns: 100fr;
+      grid-template-rows: auto;
+      grid-area: 
+      "kneeSec" 
+      "feetSec"
+      "lineSec" 
+      "compSec" ;
+    }
+}
+
+.subChoice {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN                 WAS ALL DELETED*/
+
+
+
+
+
+
+
+/* NAVIGATOR */
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .1s;
+}
+
+.noShow{
+  display: initial;
+}
+.noShowOne{
+  display: initial;
+}
+
+.myItemNavigator{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.myItemNavigator .secButtons {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  background-color: black;
+
+}
+
+.myItemNavigator .secButtons:hover{
+color:aliceblue
+
+}
+
+
+.myItemNavigator .mainChoice {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #7f8891;
+  display: block;
+  /* I WANT TO REMOVE THE ABOVE DISPLAY COMPONENT AND HAVE IT BE THE ITEM WHICH ADJUSTS
+  WHEN THE OTHER noShow CLASS IS TOGGLED */
+  transition: 0.3s;
+  background-color: black;
+
+}
+.myItemNavigator .mainChoice:hover{
+  color:aliceblue
+  
+    }
+
+.myItemNavigator .indivChoice {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #7f8891;
+  display: block;
+  transition: 0.3s;
+  background-color: black;
+  width: 250px;
+}
+.myItemNavigator .indivChoice:hover{
+  color:aliceblue
+  
+    }
+
+
+.myItemNavigator .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #08719e;
+  text-decoration: none;
+}
+
+.myItemNavigator .closebtn:hover{
+  color:aliceblue;
+  background-color: black;
+  
+    }
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .itemNavigator {padding-top: 15px;}
+  .itemNavigator a {font-size: 18px;}
+
+  .myItemNavigator a {
+    padding: 2px 2px 2px 6px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
     transition: 0.3s;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PXPICKERMAINPAGE */
+
+
+nav {
+  background-color: #08719e   ;
+}
+footer {
+  background-image: linear-gradient(rgb(184, 182, 182), white);
+  padding: 60px 0;
+}
+
+div {
+  position: relative;
+}
+a{
+  text-decoration: none;
+}
+header {
+  background-color: #34b4eb !important ;
+}
+body {
+  background-image:linear-gradient (#b0a330, white);
+}
+
+/*  THE BELOW CODE MODIFIES THE ACCORDION STYLE MENU ITEM IN TEST
+body {
+  background-image: linear-gradient(to right, #fe8f3f, #00bfff);
+}
+*/
+
+/* The below code connects with the accordion style code in test.  */
+/* .list-group.panel > .list-group-item { 
+border-bottom-right-radius: 4px;
+border-bottom-left-radius: 4px
+}
+.list-group-submenu {
+margin-left:20px;
+}
+
+*/
+/* *{ 
+  margin: 0;
+  padding: 0;
+  font-family: 'lato';
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  background-color: #fcdc29;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mainMenu{
+  width: 250px;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.item{
+  border-top: 1px solid #ef584a;
+  overflow: hidden;
+}
+.btn{
+  display: block;
+  padding: 15px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  position: relative;
+
+}
+.btn:before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right:8px solid transparent;
+  border-top:10px solid #ff6f61;
+  right: 15px;
+  bottom: -10px;
+  z-index: 9;
   
+}
+.btn i {
+  margin-right: 10px;
+}
+.subMenu{
+  background: #273057;
+  overflow: hidden;
+  transition: max-height 0.7s;
+  max-height: 0;
+}
+.subMenu a{
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 14px;
+  border-bottom: 1px solid #394c7f;
+  position: relative;
+  
+}
+.subMenu a:before{
+  content: '';
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+.subMenu a:hover:before{
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 6px;
+  left: 0;
+  top:0;
+  opacity: 1;
+  /* background-color: #d8d824; 
+  border-top: 24px solid transparent;
+  border-left: 11px solid #fcdc29;
+  border-bottom: 24px solid transparent;
+}*/
+/* .subMenu a:after{ 
+  content: '';
+  opacity: 0;
+  transition: opacity 0.3s;
+
+}
+.subMenu a:hover:after{
+  content: '';
+  position: absolute;
+  height: 0;
+  width: 6px;
+  right: 0px;
+  top:0;
+  opacity: 1;
+  /* background-color: #d8d824; */
+  /* border-top: 24px solid transparent; 
+  border-right: 11px solid #fcdc29;
+  border-bottom: 24px solid transparent;
+}*/
+/* .subMenu a:hover{ 
+  background: #273057;
+  background: -moz-linear-gradient(top, #273057 0%, #273057 50%, #394c7f 51%, #394c7f 100%);
+  background: -webkit-linear-gradient(top, #273057 0%,#273057 50%,#394c7f 51%,#394c7f 100%);
+  background: linear-gradient(to bottom, #273057 0%,#273057 50%,#394c7f 51%,#394c7f 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#273057', endColorstr='#394c7f',GradientType=0 );
+  transition: all 0.3s;
+  border-bottom: 1px solid #394c7f;
+}
+.subMenu a:last-child{
+  border:none;
+}
+.item:target .subMenu{
+  max-height: 10em;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+fieldset {
+  border-style: none;
+}
+h1 {
+  margin: 50px 10px 50px; 
+  text-align:center; 
+  background-color: #fe8f3f; 
+  opacity: .4;
+}
+
+
+section {
+  
+  display: inline-block; 
+  border-style: solid; 
+  border-color: #fe8f3f; 
+  background-color: #00bfff; 
+  border-radius: 20px; 
+  width: 250px; 
+  height:250px;
+  margin:20px 50px 20px;
+  padding: 10px 20px 10px;
+  position: relative;
+}
+body {
+  text-align: center;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+@font-face {
+  font-family: PROXIMA-NOVA; src: url ('../fonts/ProximaNova-Regular.otf');
+}
+
+
+iframe{
+  border: none;
+}
+input {
+  background-color: #6e6f72;
+  border: 2px solid #fe8f3f;
+  border-radius: 15px;
+  display: inline-block;
+
+}
+.hideLook {
+  background-color: red;
+}
+.ttChoice {
+  display: none;
+}
+.tfChoice {
+  display: none;
+}
+/* Style the button that is used to open and close the collapsible content */
+/*
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+/*
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* TEST    CURRENT ONE IN USE */
+
+
+
+#addNotes {
+  width: 100%;
+}
+
+
+.btn-block{
+  font-size: 1vw;
+}
+
+
+.card .card-header p {
+  color: #08719e; }
+
+textarea {
+  width: 90%;
+  height: 200px; }
+
+header {
+  color: #fbf8be;
+  color: #08719e; }
+
+h1 {
+  margin: 20px;
+color: #08719e;  }
+
+.img-thumbnail {
+  margin: 20px; }
+
+.img-responsive {
+  display: block;
+  max-width: 50%;
+  height: auto; }
+
+.card .card {
+  border: none; }
+
+.head-choice .p {
+  font-size: 10px; }
+
+.img-responsive {
+  display: block;
+  max-width: 50%;
+  height: auto; }
+
+  .closebtn:hover {
+    background-color: #08719e;
+  color: black; }
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #08719e;
+  color: white;
+  padding: 10px;
+  border: none;
+  margin: 5px; 
+  border-radius: 10px;
+  position: fixed;
+  z-index: 100;
+  bottom: 0px;
+  right: 0px;}
+
+.openbtn:hover {
+  background-color: #08719e; }
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px; }
+
+.card-image {
+  max-width: 100%;
+  height: auto;
+  width: auto; }
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active {
+  background-color: #08719e; }
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden; }
+
+  #resPage {
+    display: none;
+  }
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+html,
+body {
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  height: 100%;
+  width: 100%; 
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+ 
+.wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+
+} 
+.card {
+  display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+    max-width: 25vmax;
+    max-height: 50vmax;
+    padding: 1vmax;
+    overflow: hidden;
+  
+
+}
+
+.img-fluid {
+  height: 4vmax; }
+
+.card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img-card {
+  width: 100%;
+  height:200px;
+  border-top-left-radius:2px;
+  border-top-right-radius:2px;
+  display:block;
+    overflow: hidden;
+}
+.img-card img{
+  width: 100%;
+  height: 150px;
+  object-fit: contain; 
+  transition: all .25s ease;
+} 
+.card-content {
+  padding:15px;
+  text-align:left;
+}
+.card-title {
+  margin-top:0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+.card-title a {
+  color: #000;
+  text-decoration: none !important;
+}
+.card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+.card-read-more a {
+  text-decoration: none !important;
+  padding:10px;
+  font-weight:600;
+  text-transform: uppercase
+}
+
+
+
+
+/* .nav {
+  display: block;
+}
+  .secButtons {
+
+    box-shadow: 0px 9px 4px 1px #276873;
+    background:linear-gradient(to bottom, #59aeb1 5%, #408c99 100%);
+    background-color:#59aeb1;
+    border-radius:2px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:4vw;
+    font-weight:bold;
+    padding: 10px 5px;
+    min-width: 15vw;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    box-sizing: border-box;
+    justify-content: center;
+
+    
+  }
+
+  .indivChoice {
+
+    box-shadow: 0px 9px 4px 1px #276873;
+    background:linear-gradient(to bottom, #3f7e80 5%, #408c99 100%);
+    background-color:#3f7e80;
+    border-radius:2px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:3vw;
+    font-weight:bold;
+    padding: 10px 5px;
+    min-width: 15vw;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #3d768a;
+    box-sizing: border-box;
+    justify-content: center;
+
+    
+  } */
+  
+  .card-img-top {
+    border-radius: 25%;
+    max-width: 50%;
+     width: auto;
+     height: auto;
+     align-items: center;
+    margin-bottom: 5px;
+  padding: 5px; }
+
+.cardcontainer {
+  padding: 2% 0;
+  margin: 0 auto;
+  width: 100%; }
+  /* MAY NEED TO ADJUST THIS ABOVE. IT IS THE PARAMATERS FOR THE ENTIRE KNEE SECTION. BUT I MAY NOT NEED IT.
+  WHEN EVERYTHING IS DONE THROUGH A JS ONLY SET UP, THEN I WONT NEED THIS. */
+
+.card-title {
+  font-size: medium;
+  align-items: center; }
+
+.card-body {
+  padding: 0; }
+
+
+@media (max-width: 632px) {
+  .gallery-wrap {
+    flex-direction: column; } }
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
+
+.item:hover img {
+  size: 15%; }
+
+
+
+
+
+
+  /* .kOne{
+    display: none;
   }
   
-  .sidebar a:hover{
-    color: #f1f1f1;
+  .singleAxis {
+    display: none;
   }
   
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  .safety {
+    display: none;
   }
   
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
+  .polycentric{
+    display: none;
   }
+  
+  .mpk{
+    display: none;
+  }
+   #kOneTwo{
+    display: none;
+  } 
+  
+   #MPK {
+    display: none;
+  }
+  
+  #safeKnee{
+    display: none;
+  }
+  
+  #polyKnee {
+    display: none;
+  }
+  
+  #singleAxis {
+    display: none;
+  /* }  */
+  
+  #polyPneuSwinStanFlex{
+    display: none;
+  }
+  
+  #polyHydrSwinStanFlexHigh {
+    display: none;
+  }
+  
+  #fric {
+    display: none;
+  }
+  
+  #fricMan {
+    display: none;
+  }
+  #fricExt {
+    display: none; }
+  
+    #fricExtMan{
+      display: none;
+    }
+    #fricExtStanChoi{
+      display: none;
+    }
+  
+    #fricExtStanLockChoi{
+      display: none;
+    }
+  
+    #singAxManLockChoi{
+      display: none;
+    }
+  
+    #singAxPneuFricChoi{
+      display: none;
+    }
+    #singAxHydStanSwinChoi{
+      display: none;
+    }
+    #safeExtChoi{
+      display: none;
+    }
+    
+    #safeFlexExtChoi {
+      display: none;
+    }
+  
+    #polyHydrauChoi {
+      display: none;
+    }
+    
+    #polyHydrauStanChoi {
+      display: none;
+    }
+    #polyPneuChoi {
+      display: none;
+    }
+  
+    #fricExtStan{
+      display: none;
+    }
+  
+    #fricExtStanLock{
+      display: none;
+    }
+  
+    #singAxManLock{
+      display: none;
+    }
+  
+    #singAxPneuFric{
+      display: none;
+    }
+    #singAxHydStanSwin{
+      display: none;
+    }
+    #safeExt{
+      display: none;
+    }
+    
+    #safeFlexExt {
+      display: none;
+    }
+  
+    #polyHydrau {
+      display: none;
+    }
+    
+    #polyHydrauStan {
+      display: none;
+    }
+    #polyPneu {
+      display: none;
+    }
+  
+    #KnSeven {
+      display: none;
+    } 
+
+    #mpkKnee {
+      display: none;
+    }
+  /* .mainChoice{
+    height: 20vh;
+    width: 20vw;
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 85px;
+    border-radius: 25%;
+    margin: 20px;
+    background-color: #39a;
+    background-image: linear-gradient(to right, #08A 0%, #3AD 20%, #3AD 80%, #5CF 100%);
+    box-shadow: 0 2px 10px rgba(0, 0, 31, 0.75);
+    cursor: pointer;
+  } */
+
+  /* .mainChoice{
+  }
+  .indivChoice {
+
+  }
+
+  .subChoice {
+ 
+  } */
+
+
+  /* @media (max-width: 800px) { 
+    //your code goes here
+}
+
+div{ 
+    height: 50vh;//50% of the viewport (window) height
+    width: 40vw;//40% of the viewport (window) width
+} */
+
+
+
+
+
+
+
+
