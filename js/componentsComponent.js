@@ -21,6 +21,8 @@ function componentSection() {
 
 function componentCard(){
 
+    const compSecButt = document.querySelector("#compButton");
+
 
     let compCard = document.querySelector('#mainpageSectionforJS');
 
