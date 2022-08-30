@@ -1,7 +1,7 @@
 
 const kneeButton = document.querySelector("#kneeButton");
 
-const feetButton = document.querySelector("#feetButton");
+// const feetButton = document.querySelector("#feetButton");
 
 const linerButton = document.querySelector("#linerButton");
 const componentButton = document.querySelector("#compButton");
@@ -64,29 +64,29 @@ console.log("EventHandlers");
 
 
 
-function toggleSelectionsFlex(name) {
-  console.log("Show 1");
-  let e = document.getElementsByClassName(name);
-     Array.from(e).forEach((x) => {
-      if (x.style.display === "flex") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "flex";
-      }
-    })
-  }
+// function toggleSelectionsFlex(name) {
+//   console.log("Show 1");
+//   let e = document.getElementsByClassName(name);
+//      Array.from(e).forEach((x) => {
+//       if (x.style.display === "flex") {
+//         x.style.display = "none";
+//       } else {
+//         x.style.display = "flex";
+//       }
+//     })
+//   }
 
-  function toggleSelectionsBlock(name) {
-    console.log("Show 2");
-    let e = document.getElementsByClassName(name);
-       Array.from(e).forEach((x) => {
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
-      })
-    }
+//   function toggleSelectionsBlock(name) {
+//     console.log("Show 2");
+//     let e = document.getElementsByClassName(name);
+//        Array.from(e).forEach((x) => {
+//         if (x.style.display === "block") {
+//           x.style.display = "none";
+//         } else {
+//           x.style.display = "block";
+//         }
+//       })
+//     }
 
 
 
