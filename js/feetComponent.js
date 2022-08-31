@@ -1,4 +1,4 @@
-import { feetArray } from "../html/data/feetArray.js";
+import { feetArrayOne } from "../html/data/feetArray.js";
 
 
 // This is the array modifier
@@ -23,31 +23,13 @@ import { feetArray } from "../html/data/feetArray.js";
 // This is the array modifier 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function feetCard(){
 
 
     let footCard = document.querySelector('#mainpageSectionforJS');
 
 
-    feetArray.forEach(component => {    
+    feetArrayOne.forEach(component => {    
         footCard.innerHTML = footCard.innerHTML +
          `<div class="card">
             <div class="card-header">
