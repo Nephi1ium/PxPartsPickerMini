@@ -1,21 +1,21 @@
 
-const kneeButton = document.querySelector("#kneeButton");
+// const kneeButton = document.querySelector("#kneeButton");
 
 // const feetButton = document.querySelector("#feetButton");
 
-const linerButton = document.querySelector("#linerButton");
-const componentButton = document.querySelector("#compButton");
+// const linerButton = document.querySelector("#linerButton");
+// const componentButton = document.querySelector("#compButton");
 // Main Buttons above
-const kOnekTwoButton = document.querySelector("#kOneTwo");
-const singleAxisButton = document.querySelector("#singleAxis");
-const safeKneeButton = document.querySelector("#safeKnee");
-const polyKneeButton = document.querySelector("#polyKnee");
+// const kOnekTwoButton = document.querySelector("#kOneTwo");
+// const singleAxisButton = document.querySelector("#singleAxis");
+// const safeKneeButton = document.querySelector("#safeKnee");
+// const polyKneeButton = document.querySelector("#polyKnee");
 // const MPKButton = document.querySelector("#MPK");
 
 
 // second choice buttons above
-const secondaryChoices = document.querySelectorAll('.toggle-heading');
-console.log("querySelectors", secondaryChoices);
+// const secondaryChoices = document.querySelectorAll('.toggle-heading');
+// console.log("querySelectors", secondaryChoices);
 
 
 // const clearSelect = document.querySelector("#resPage");
@@ -36,25 +36,25 @@ console.log("querySelectors", secondaryChoices);
 
 
 
-kOnekTwoButton.addEventListener("click", () => showkOnekTwo());
-kOnekTwoButton.addEventListener("click", () => toggleSelectionsFlex("kOne"));
+// kOnekTwoButton.addEventListener("click", () => showkOnekTwo());
+// kOnekTwoButton.addEventListener("click", () => toggleSelectionsFlex("kOne"));
 
 
-singleAxisButton.addEventListener("click", () => showSingleAxis());
-singleAxisButton.addEventListener("click", () => toggleSelectionsBlock("singleAxis"));
+// singleAxisButton.addEventListener("click", () => showSingleAxis());
+// singleAxisButton.addEventListener("click", () => toggleSelectionsBlock("singleAxis"));
 
 
-safeKneeButton.addEventListener("click", () => showSafetyKnee());
-safeKneeButton.addEventListener("click", () => toggleSelectionsBlock("safety"));
+// safeKneeButton.addEventListener("click", () => showSafetyKnee());
+// safeKneeButton.addEventListener("click", () => toggleSelectionsBlock("safety"));
 
 
-polyKneeButton.addEventListener("click", () => showPolycentricKnee());
-polyKneeButton.addEventListener("click", () => toggleSelectionsBlock("polycentric"));
+// polyKneeButton.addEventListener("click", () => showPolycentricKnee());
+// polyKneeButton.addEventListener("click", () => toggleSelectionsBlock("polycentric"));
 
 // MPKButton.addEventListener("click", () => showMPK());
 // MPKButton.addEventListener("click", () => toggleSelectionsBlock("mpkKnee"));
 
-console.log("EventHandlers");
+// console.log("EventHandlers");
 
 // secondary event handlers buttons above
 

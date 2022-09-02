@@ -3,9 +3,15 @@ body {
     transition: background-color .1s;
   }
 
-  .noShow{
-    display: initial;
+  .noShowKnees{
+    display: none;
   }
+
+  .noShow{
+    display: none;
+  }
+
+
   .noShowOne{
     display: initial;
   }

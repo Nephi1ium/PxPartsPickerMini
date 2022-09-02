@@ -31,7 +31,7 @@ function feetCard(){
 
     feetArrayOne.forEach(component => {    
         footCard.innerHTML = footCard.innerHTML +
-         `<div class="card">
+         `<div class="card noShow">
             <div class="card-header">
                 <h4> ${component.name} </h4>
                 <div class="card-body">
@@ -62,3 +62,7 @@ function feetCard(){
 
 
     export {feetCard};
+
+
+
+

@@ -1,21 +1,38 @@
 
-function toggleProgram (){
+// function toggleProgram (){
 
-const toggleBtn = document.querySelectorAll('.toggle-heading');
+// const toggleBtn = document.querySelectorAll('.toggle-heading');
 
-toggleBtn.forEach(item => {
-  item.addEventListener('click', event => {
-    let toggleTgt = item.nextElementSibling;
-    toggleTgt.classList.toggle('noShow');
-  })
-});
-console.log("Toggle Successful!");
-}
-
-
+// toggleBtn.forEach(item => {
+//   item.addEventListener('click', event => {
+//     let toggleTgt = item.nextElementSibling;
+//     toggleTgt.classList.toggle('noShow');
+//   })
+// });
+// console.log("Toggle Successful!");
+// }
 
 
-export {toggleProgram};
+const toggleHeading = document.querySelector(".toggle-headingKnees");
+
+toggleHeading.addEventListener("click", () => toggleSelectionsBlock("noShowKnees"));
+
+  function toggleSelectionsBlock(name) {
+    console.log("Show 2");
+    let e = document.getElementsByClassName(name);
+       Array.from(e).forEach((x) => {
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      })
+    };
+
+    export {toggleSelectionsBlock};
+
+
+// export {toggleProgram};
 
 
 // function toggleProgramTwo (){
