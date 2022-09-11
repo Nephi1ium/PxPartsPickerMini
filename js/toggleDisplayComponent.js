@@ -1,7 +1,60 @@
+const toggleKnees = document.querySelector(".mainChoice");
+const toggleFeet = document.querySelector(".toggleOne");
 
-// function toggleProgram (){
 
-// const toggleBtn = document.querySelectorAll('.toggle-heading');
+toggleKnees.addEventListener("click", () => toggleProgram(".toggle"));
+toggleFeet.addEventListener("click", () => toggleProgram(".toggleOne"));
+
+
+
+
+
+function toggleProgram(name){
+
+  let e = document.querySelectorAll(name);
+
+console.log(e,"e")
+
+function actualToggle(){
+  e.forEach(item => {
+
+    console.log(item,"item");
+
+    let toggleTgt = item.nextElementSibling;
+    
+    console.log(toggleTgt, "nextElementSibling");
+
+    toggleTgt.classList.toggle('noShow');
+
+  });
+} 
+    actualToggle(name);
+
+    console.log(actualToggle,"Toggle Successful!");
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // toggleBtn.forEach(item => {
 //   item.addEventListener('click', event => {
@@ -12,24 +65,69 @@
 // console.log("Toggle Successful!");
 // }
 
+    // export {toggleProgram};
 
-const toggleHeading = document.querySelector(".toggle-headingKnees");
 
-toggleHeading.addEventListener("click", () => toggleSelectionsBlock("noShowKnees"));
+// function toggleProgram(name) {
 
-  function toggleSelectionsBlock(name) {
-    console.log("Show 2");
-    let e = document.getElementsByClassName(name);
-       Array.from(e).forEach((x) => {
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      })
-    };
 
-    export {toggleSelectionsBlock};
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const toggleHeading = document.querySelector(".toggle");
+
+// toggleHeading.addEventListener("click", () => toggleSelectionsBlock("noShow"));
+
+//   function toggleSelectionsBlock(name) {
+//     console.log("Show 2");
+//     let e = document.getElementsByClassName(name);
+//        Array.from(e).forEach((x) => {
+  // let toggleTgt = item.nextElementSibling;
+
+  // toggleTgt.classList.toggle('noShow');
+  //           x.style.display = "block";
+//         } else {
+//           x.style.display = "none";
+//         }
+//       })
+//     };
+
+
+
+
+
+// const toggleBtn = document.querySelectorAll('.toggle');
+
+
+
+
+
+// toggleBtn.forEach(item => {
+//   item.addEventListener('click', event => {
+//     let toggleTgt = item.nextElementSibling;
+//     if (toggleTgt.classList === 'noShow'); {
+//       toggleTgt.classList = 'show'; 
+//     } else {
+//       toggleTgt.classList = "noShow";
+//       }
+//     }
+//   })
+// });
+// console.log("Toggle Successful!");
+// }
+
+
+
 
 
 // export {toggleProgram};

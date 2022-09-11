@@ -1,4 +1,4 @@
-import { toggleSelectionsBlock} from "./toggleDisplayComponent.js";
+// import {toggleProgram} from "./toggleDisplayComponent.js";
 import {componentSection, componentCard} from "./componentsComponent.js";
 import { feetCard } from "./feetComponent.js";
   
@@ -9,8 +9,8 @@ compSecButt.addEventListener("click", () => compSecDisplay());
 
 
 
-const toggleHeadingKnees = document.querySelector(".toggle-headingKnees");
-toggleHeadingKnees.addEventListener("click", () => toggleSelectionsBlock("noShowKnees"));
+// const toggleHeadingKnees = document.querySelector(".toggle");
+// toggleHeadingKnees.addEventListener("click", () => toggleProgram());
 
 
 
