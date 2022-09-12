@@ -1,3 +1,19 @@
+
+/* Below is the code for the cards and main JS section */
+.mainpage{
+  display: grid;
+justify-content: center;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+}
+
+.card-margin{
+margin: 1vmax;
+
+}
+
+/* End of JS Section and card  */
+
 .additionSelectButton{
   background-image: url('../images/Icons/plus.png');
   background-color: transparent; 

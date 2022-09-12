@@ -1,16 +1,18 @@
 // import {toggleProgram} from "./toggleDisplayComponent.js";
 import {componentSection, componentCard} from "./componentsComponent.js";
 import { feetCard } from "./feetComponent.js";
-  
+import {kneeCard} from "./kneesComponent.js"
 
 
 const compSecButt = document.querySelector("#compButton");
 compSecButt.addEventListener("click", () => compSecDisplay());
 
+const feetOne = document.querySelector("#feet1");
+feetOne.addEventListener("click", () => feetSecDisplay());
 
+const KneesOne = document.getElementById("fric");
+KneesOne.addEventListener("click", () => kneeSecDisplay());
 
-// const toggleHeadingKnees = document.querySelector(".toggle");
-// toggleHeadingKnees.addEventListener("click", () => toggleProgram());
 
 
 
@@ -22,9 +24,25 @@ function compSecDisplay() {
 }
 
 function feetSecDisplay(){
+  feetCard();
+  // toggleProgram();
+}
+
+function kneeSecDisplay(){
+   kneeCard();
+  // toggleProgram();
+}
+
+function linersSecDisplay(){
   // feetCard();
   // toggleProgram();
 }
+
+
+
+
+
+
 
 
 

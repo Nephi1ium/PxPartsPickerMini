@@ -1,4 +1,4 @@
-import {componentArray} from "../src/componentArray.js";
+import {componentArray} from "../src/componentArrays/componentArray.js";
 
 
 function componentSection() {
@@ -52,8 +52,8 @@ function componentCard(){
 
 
 
-export {componentSection};
-export {componentCard};
+export {componentSection, componentCard};
+// export {componentCard};
 
 
 
