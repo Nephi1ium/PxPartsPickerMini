@@ -47,7 +47,9 @@ function componentCard(){
                 </div>
             </div>
         </div>`;
+        console.log("Created", component.name, "Cards")
         });
+
     };
 
 

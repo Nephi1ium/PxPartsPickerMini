@@ -1,15 +1,23 @@
-import { kneeOne } from "../src/kneeArrays/kneesArray.js";
+import { K14BFEA, kneeTwo } from "../src/kneeArrays/kneesArray.js";
+
+// let itemOne = document.getElementById("fricMan");
+const itemTwo = document.querySelector("#fric");
+
+const itemOne = document.querySelector("#fricMan");
+
+itemTwo.addEventListener("click", () => kneeCard(K14BFEA));
+
+itemOne.addEventListener("click", () => kneeCard(kneeTwo));
 
 
-
-
-function kneeCard(){
+function kneeCard(array){
 
 
     let kneesCard = document.querySelector('#mainpageSectionforJS');
 
+    console.log(array,"array name");
 
-    kneeOne.forEach(component => {    
+    array.forEach(component => {    
         kneesCard.innerHTML = kneesCard.innerHTML +
          `<div class="card card-margin">
             <div class="card-header">
@@ -49,7 +57,7 @@ function kneeCard(){
     };
 
 
-    export {kneeCard};
+    // export {kneeCard};
 
 
 

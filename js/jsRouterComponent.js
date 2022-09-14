@@ -1,7 +1,8 @@
 // import {toggleProgram} from "./toggleDisplayComponent.js";
 import {componentSection, componentCard} from "./componentsComponent.js";
 import { feetCard } from "./feetComponent.js";
-import {kneeCard} from "./kneesComponent.js"
+// import {kneeCard} from "./kneesComponent.js"
+import { kneeTwo } from "../src/kneeArrays/kneesArray.js";
 
 
 const compSecButt = document.querySelector("#compButton");
@@ -29,8 +30,9 @@ function feetSecDisplay(){
 }
 
 function kneeSecDisplay(){
-   kneeCard();
+  //  kneeCard();
   // toggleProgram();
+  console.log("KneeCard Here")
 }
 
 function linersSecDisplay(){

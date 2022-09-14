@@ -5,19 +5,19 @@ let infoArr = [];
 
 const appOpenBut = document.querySelector("#stepOne");
 const appCloseBut = document.querySelector("#stepTwo");
-const showExtFric = document.querySelector("#fric");
-const showExtFricMan = document.querySelector("#fricMan");
-const showFricExtStan = document.querySelector("#fricExtStan");
-const showFricExtStanLock = document.querySelector("#fricExtStanLock");
-const showSingAxManLock = document.querySelector("#singAxManLock");
-const showSingAxPneuFric = document.querySelector("#singAxPneuFric");
-const showSingAxHydStanSwin = document.querySelector("#singAxHydStanSwin");
-const showSafeExt = document.querySelector("#safeExt");
-const showSafeFlexExt = document.querySelector("#safeFlexExt");
-const showPolyHydrau = document.querySelector("#polyHydrau");
-const showPolyHydrauStan = document.querySelector("#polyHydrauStan");
-const showPolyPneu = document.querySelector("#polyPneu");
-const showMPKKnees = document.querySelector("#allMPK");
+// const showExtFric = document.querySelector("#fric");
+// const showExtFricMan = document.querySelector("#fricMan");
+// const showFricExtStan = document.querySelector("#fricExtStan");
+// const showFricExtStanLock = document.querySelector("#fricExtStanLock");
+// const showSingAxManLock = document.querySelector("#singAxManLock");
+// const showSingAxPneuFric = document.querySelector("#singAxPneuFric");
+// const showSingAxHydStanSwin = document.querySelector("#singAxHydStanSwin");
+// const showSafeExt = document.querySelector("#safeExt");
+// const showSafeFlexExt = document.querySelector("#safeFlexExt");
+// const showPolyHydrau = document.querySelector("#polyHydrau");
+// const showPolyHydrauStan = document.querySelector("#polyHydrauStan");
+// const showPolyPneu = document.querySelector("#polyPneu");
+// const showMPKKnees = document.querySelector("#allMPK");
 
 
 // const storeClinName = document.querySelector("#clinName");
@@ -39,19 +39,19 @@ let cardShown = document.querySelector("#collapseOneOne");
 
 // Step 2 Function execution
 resetPage.addEventListener("click", () => resetEntirePage());
-showExtFric.addEventListener("click", () => showExtFriction());
-showExtFricMan.addEventListener("click", () => showExtFricManChoice());
-showFricExtStan.addEventListener("click", () => showFricExtStanChoice());
-showFricExtStanLock.addEventListener("click", () => showFricExtStanLockChoice());
-showSingAxManLock.addEventListener("click", () => showSingAxManLockChoice());
-showSingAxPneuFric.addEventListener("click", () => showSingAxPneuFricChoice());
-showSingAxHydStanSwin.addEventListener("click", () => showSingAxHydStanSwinChoice());
-showSafeExt.addEventListener("click", () => showSafeExtChoice());
-showSafeFlexExt.addEventListener("click", () => showSafeFlexExtChoice());
-showPolyHydrau.addEventListener("click", () => showPolyHydrauChoice());
-showPolyHydrauStan.addEventListener("click", () => showPolyHydrauStanChoice());
-showPolyPneu.addEventListener("click", () => showPolyPneuChoice());
-showMPKKnees.addEventListener("click", () => showMPKChoice());
+// showExtFric.addEventListener("click", () => showExtFriction());
+// showExtFricMan.addEventListener("click", () => showExtFricManChoice());
+// showFricExtStan.addEventListener("click", () => showFricExtStanChoice());
+// showFricExtStanLock.addEventListener("click", () => showFricExtStanLockChoice());
+// showSingAxManLock.addEventListener("click", () => showSingAxManLockChoice());
+// showSingAxPneuFric.addEventListener("click", () => showSingAxPneuFricChoice());
+// showSingAxHydStanSwin.addEventListener("click", () => showSingAxHydStanSwinChoice());
+// showSafeExt.addEventListener("click", () => showSafeExtChoice());
+// showSafeFlexExt.addEventListener("click", () => showSafeFlexExtChoice());
+// showPolyHydrau.addEventListener("click", () => showPolyHydrauChoice());
+// showPolyHydrauStan.addEventListener("click", () => showPolyHydrauStanChoice());
+// showPolyPneu.addEventListener("click", () => showPolyPneuChoice());
+// showMPKKnees.addEventListener("click", () => showMPKChoice());
 
 
 // Below is the code for user input, from Home page, stored in the browser, and added to Virtual Care document
@@ -77,62 +77,62 @@ function openNav() {
     document.getElementById("mySideNav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
-  function showExtFriction() {
-    console.log("Show Card");
-    document.getElementById("fricExt").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showExtFricManChoice() {
-    console.log("Show Card Frix Ext Man Lock");
-    document.getElementById("fricExtMan").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
+//   function showExtFriction() {
+//     console.log("Show Card");
+//     document.getElementById("fricExt").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showExtFricManChoice() {
+//     console.log("Show Card Frix Ext Man Lock");
+//     document.getElementById("fricExtMan").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
 
-  }
-  function showFricExtStanChoice() {
-    document.getElementById("fricExtStanChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showFricExtStanLockChoice() {
-    document.getElementById("fricExtStanLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSingAxManLockChoice() {
-    document.getElementById("singAxManLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSingAxPneuFricChoice() {
-    document.getElementById("singAxPneuFricChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSingAxHydStanSwinChoice() {
-    document.getElementById("singAxHydStanSwinChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSafeExtChoice() {
-    document.getElementById("safeExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showSafeFlexExtChoice() {
-    document.getElementById("safeFlexExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showPolyHydrauChoice() {
-    document.getElementById("polyHydrauChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showPolyHydrauStanChoice() {
-    document.getElementById("polyHydrauStanChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
-  function showPolyPneuChoice() {
-    document.getElementById("polyPneuChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
+//   }
+//   function showFricExtStanChoice() {
+//     document.getElementById("fricExtStanChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showFricExtStanLockChoice() {
+//     document.getElementById("fricExtStanLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showSingAxManLockChoice() {
+//     document.getElementById("singAxManLockChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showSingAxPneuFricChoice() {
+//     document.getElementById("singAxPneuFricChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showSingAxHydStanSwinChoice() {
+//     document.getElementById("singAxHydStanSwinChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showSafeExtChoice() {
+//     document.getElementById("safeExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showSafeFlexExtChoice() {
+//     document.getElementById("safeFlexExtChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showPolyHydrauChoice() {
+//     document.getElementById("polyHydrauChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showPolyHydrauStanChoice() {
+//     document.getElementById("polyHydrauStanChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
+//   function showPolyPneuChoice() {
+//     document.getElementById("polyPneuChoi").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
 
-  function showMPKChoice() {
-    document.getElementById("mpkKneeContainer").style.cssText = "display: flex; padding: 25px; margin: 25px;"
-    document.getElementById("resPage").style.cssText = "display: flex;"
-  }
+//   function showMPKChoice() {
+//     document.getElementById("mpkKneeContainer").style.cssText = "display: flex; padding: 25px; margin: 25px;"
+//     document.getElementById("resPage").style.cssText = "display: flex;"
+//   }
   
 // function storeFirstPageInformation(){
 // // let clinicianName = document.getElementById("clinName").value;

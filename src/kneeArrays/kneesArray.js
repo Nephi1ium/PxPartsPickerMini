@@ -1,6 +1,6 @@
-// function kneeArray(){ 
+// const kneeArray 
 
-    const kneeOne = [
+const K14BFEA = [
 {"category":"K1/K2 4Bar with Friction, Extension assist: L5611, L5850  base",
 "manufacturer":"Fillauer_Knee",
 "name":"Mighty Mite",
@@ -157,25 +157,25 @@
 
     ];
 
-//     const kneeTwo = [
-// {"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"STG_Knee","name":"L1321AP","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"L1321AP","cost":317.28,"reimbursement":2182.69,"percent":"15%","BestValue":"STG L1321AP","pdac":"1/1/2017","valuePer":75,"link":"","linkname":"",
+const kneeTwo = [
+{"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"STG_Knee","name":"L1321AP","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"L1321AP","cost":317.28,"reimbursement":2182.69,"percent":"15%","BestValue":"STG L1321AP","pdac":"1/1/2017","valuePer":75,"link":"","linkname":"",
 
-//                                                                                   "image":"../images/L1321AP.jpg"},
-// {"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Trulife_Knee","name":"SSK 610A","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"SSK610A","cost":444.56,"reimbursement":2182.69,"percent":"20%","BestValue":"STG L1321AP","pdac":"No","valuePer":75,"link":"","linkname":"",
-//                                                                                   "image":"../images/SSK610A_Image.jpg"},
-// {"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Ossur_Medi_Knee","name":"Medi Knee Model OFM1 and OFM1HD","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"OFM1HD","cost":569.8,"reimbursement":2182.69,"percent":"26%","BestValue":"STG L1321AP","pdac":"No","valuePer":35,"link":"","linkname":"",   
-//                                                                                   "image":"../images/OFM1HDSF_image.jpg"},
-// {"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Trulife_Knee","name":"SSK602L Seattle Natural","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"SSK602L","cost":571.76,"reimbursement":2182.69,"percent":"26%","BestValue":"STG L1321AP","pdac":"No","valuePer":35,"link":"","linkname":"",
-//                                                                                   "image":"../images/trulife_image_ssk602l_main.jpg"},
-// {"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Legworks_Knee","name":"All Terrain Knee ATK-PA-01","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"ATK-PA-01","cost":684.76,"reimbursement":2182.69,"percent":"31%","BestValue":"STG L1321AP","pdac":"No","valuePer":35,"link":"","linkname":"",
-//                                                                                   "image":"../images/ATK-PA-01.jpg"},
-// {"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Proteor_Freedom_Knee","name":"1M102","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"TF1-G","cost":839.8,"reimbursement":2182.69,"percent":"38%","BestValue":"STG L1321AP","pdac":"No","valuePer":10,"link":"","linkname":"",
-//                                                                                   "image":"../images/1M102 Series.jpg"},
-// {"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Otto_Bock_Knee","name":"3R32","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3R32","cost":1043.62,"reimbursement":2182.69,"percent":"48%","BestValue":"STG L1321AP","pdac":"No","valuePer":10,"link":"","linkname":"",
-//                                                                                   "image":"../images/3R32_Image.jpg"},
-// {"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Ti_Med_Knee","name":"KN-500 Knee (same as Kingsley AK-500 Polycentric Knee)","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":"L5999","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"KN-500","cost":1745.01,"reimbursement":2182.69,"percent":"80%","BestValue":"STG L1321AP","pdac":"No","valuePer":10,"link":"","linkname":"",
-//                                                                                   "image":"../images/kn_500_knee_image.jpg"},
-//     ];
+                                                                                  "image":"../images/L1321AP.jpg"},
+{"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Trulife_Knee","name":"SSK 610A","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"SSK610A","cost":444.56,"reimbursement":2182.69,"percent":"20%","BestValue":"STG L1321AP","pdac":"No","valuePer":75,"link":"","linkname":"",
+                                                                                  "image":"../images/SSK610A_Image.jpg"},
+{"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Ossur_Medi_Knee","name":"Medi Knee Model OFM1 and OFM1HD","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"OFM1HD","cost":569.8,"reimbursement":2182.69,"percent":"26%","BestValue":"STG L1321AP","pdac":"No","valuePer":35,"link":"","linkname":"",   
+                                                                                  "image":"../images/OFM1HDSF_image.jpg"},
+{"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Trulife_Knee","name":"SSK602L Seattle Natural","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"SSK602L","cost":571.76,"reimbursement":2182.69,"percent":"26%","BestValue":"STG L1321AP","pdac":"No","valuePer":35,"link":"","linkname":"",
+                                                                                  "image":"../images/trulife_image_ssk602l_main.jpg"},
+{"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Legworks_Knee","name":"All Terrain Knee ATK-PA-01","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"ATK-PA-01","cost":684.76,"reimbursement":2182.69,"percent":"31%","BestValue":"STG L1321AP","pdac":"No","valuePer":35,"link":"","linkname":"",
+                                                                                  "image":"../images/ATK-PA-01.jpg"},
+{"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Proteor_Freedom_Knee","name":"1M102","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"TF1-G","cost":839.8,"reimbursement":2182.69,"percent":"38%","BestValue":"STG L1321AP","pdac":"No","valuePer":10,"link":"","linkname":"",
+                                                                                  "image":"../images/1M102 Series.jpg"},
+{"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Otto_Bock_Knee","name":"3R32","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3R32","cost":1043.62,"reimbursement":2182.69,"percent":"48%","BestValue":"STG L1321AP","pdac":"No","valuePer":10,"link":"","linkname":"",
+                                                                                  "image":"../images/3R32_Image.jpg"},
+{"category":"K1/K2 4Bar with Friction, Extension assist &  Lock: L5611, L5850, L5925  base","manufacturer":"Ti_Med_Knee","name":"KN-500 Knee (same as Kingsley AK-500 Polycentric Knee)","lcode1":"L5611","lcode2":"L5850","lcode3":"L5925","lcode4":"L5999","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"KN-500","cost":1745.01,"reimbursement":2182.69,"percent":"80%","BestValue":"STG L1321AP","pdac":"No","valuePer":10,"link":"","linkname":"",
+                                                                                  "image":"../images/kn_500_knee_image.jpg"},
+    ];
 
 //     const kneeThree = [
 // {"category":"K1/K2 4Bar with friction, Extension assist & Stance Flexion: L5611, L5850, L5845 base","manufacturer":"STG_Knee","name":"1324 AP","lcode1":"L5611","lcode2":"L5850","lcode3":"L5845","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"1324 AP","cost":663.62,"reimbursement":3544.51,"percent":"19%","BestValue":"STG 1324 AP","pdac":"8/1/2018","valuePer":75,"link":"","linkname":"",
@@ -428,4 +428,4 @@
 
 
 // export {kneeArray};
-export {kneeOne};
+export {K14BFEA, kneeTwo};
