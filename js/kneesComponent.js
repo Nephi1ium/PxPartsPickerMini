@@ -1,13 +1,47 @@
 import { K14BFEA, kneeTwo } from "../src/kneeArrays/kneesArray.js";
 
 // let itemOne = document.getElementById("fricMan");
-const itemTwo = document.querySelector("#fric");
+const itemOne = document.querySelector("#fric");
+const itemTwo = document.querySelector("#fricMan");
+const itemThree = document.querySelector("#fricExtStan");
+const itemFour = document.querySelector("#fricExtStanLock");
+const itemFive = document.querySelector("#singAxManLock");
+const itemSix = document.querySelector("#singAxPneuFric");
+const itemSeven = document.querySelector("#singAxHydStanSwin");
+const itemEight = document.querySelector("#safeExt");
+const itemNine = document.querySelector("#safeFlexExt");
+const itemTen = document.querySelector("#polyHydrau");
+const itemEleven = document.querySelector("#polyHydrauStan");
+const itemTwelve = document.querySelector("#polyPneu");
+const itemThirteen = document.querySelector("#polyPneuSwinStanFlex");
+const itemFourteen = document.querySelector("#polyHydrSwinStanFlexHigh");
+const itemFifteen = document.querySelector("#allMPK");
+const itemSixteen = document.querySelector("#mpkSwOnly");
+const itemSeventeen = document.querySelector("#miscKnees");
 
-const itemOne = document.querySelector("#fricMan");
 
-itemTwo.addEventListener("click", () => kneeCard(K14BFEA));
 
-itemOne.addEventListener("click", () => kneeCard(kneeTwo));
+itemOne.addEventListener("click", () => kneeCard(K14BFEA));
+itemTwo.addEventListener("click", () => kneeCard(kneeTwo));
+itemThree.addEventListener("click", () => kneeCard(K14BFESF));
+
+itemFour.addEventListener("click", () => kneeCard(K14BFESL));
+itemFive.addEventListener("click", () => kneeCard(SML));
+itemSix.addEventListener("click", () => kneeCard(SAEA));
+itemSeven.addEventListener("click", () => kneeCard(SASFE));
+itemEight.addEventListener("click", () => kneeCard(PHyS));
+itemNine.addEventListener("click", () => kneeCard(PHySS));
+
+itemTen.addEventListener("click", () => kneeCard(PHySSFEA));
+itemEleven.addEventListener("click", () => kneeCard(SPSFS));
+itemTwelve.addEventListener("click", () => kneeCard(SHySS));
+itemThirteen.addEventListener("click", () => kneeCard(MPK));
+itemFourteen.addEventListener("click", () => kneeCard(MPKSw));
+itemFifteen.addEventListener("click", () => kneeCard(PolyPneu));
+itemSixteen.addEventListener("click", () => kneeCard(PPSSF));
+itemSeventeen.addEventListener("click", () => kneeCard(MISC));
+
+
 
 
 function kneeCard(array){
