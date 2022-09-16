@@ -74,10 +74,10 @@ const K14BFEA = [
 "lcode2":"L5850",
 "lcode3":"",
 "lcode4":"",
-"lcode4":null,
-"lcode5":null,
-"lcode6":null,
-"lcode6":null,
+"lcode4":"",
+"lcode5":"",
+"lcode6":"",
+"lcode6":"",
 "hdcode":"P317A-KNEE",
 "cost":509.13,
 "reimbursement":1735.59,
@@ -96,10 +96,10 @@ const K14BFEA = [
 "lcode2":"L5850",
 "lcode3":"L5920",
 "lcode4":"",
-"lcode4":null,
-"lcode5":null,
-"lcode6":null,
-"lcode6":null,
+"lcode4":"",
+"lcode5":"",
+"lcode6":"",
+"lcode6":"",
 "hdcode":"019245",
 "cost":1005.71,
 "reimbursement":2265.11,
@@ -194,14 +194,14 @@ const kneeTwo = [
                                                                                                                                 "image":"../images/OFM1HDSF_image.jpg"},
 {"category":"K1/K2 4Bar with Friction, Extension Assist, Stance Flexion & Lock: L5611, L5850, L5845, L5925 base","manufacturer":"Legworks_Knee","name":"All Terrain Knee w/ Stance Flexion ATK-SF-01","lcode1":"L5611","lcode2":"L5850","lcode3":"L5845","lcode4":"L5925","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"ATK-SF-01","cost":995.34,"reimbursement":3991.61,"percent":"25%","BestValue":"STG L1324 AP","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                                 "image":"../images/legworks_image_atk-SF-01_main.jpg"},
-{"category":"K1/K2 4Bar with Friction, Extension Assist, Stance Flexion & Lock: L5611, L5850, L5845, L5925 base","manufacturer":"Otto_Bock_Knee","name":"3R62 Pheon","lcode1":"L5611","lcode2":"L5850","lcode3":"L5845","lcode4":"L5925","lcode4":null,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3R62","cost":1039.32,"reimbursement":3991.61,"percent":"26%","BestValue":"STG L1324 AP","pdac":"No","valuePer":35,"link":"","linkname":"",
+{"category":"K1/K2 4Bar with Friction, Extension Assist, Stance Flexion & Lock: L5611, L5850, L5845, L5925 base","manufacturer":"Otto_Bock_Knee","name":"3R62 Pheon","lcode1":"L5611","lcode2":"L5850","lcode3":"L5845","lcode4":"L5925","lcode4":"","lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3R62","cost":1039.32,"reimbursement":3991.61,"percent":"26%","BestValue":"STG L1324 AP","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                                 "image":"../images/3r62_image.jpg"},
     ];
 
     const SML = [
 {"category":"Single Axis  with Manual Lock: L5811  base" ,"manufacturer":"Blatchford_Knee","name":"Semi-Automatic Knee Lock (SAKL/Compact SAKL)","lcode1":"L5811","lcode2":" ","lcode3":" ","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"P239143","cost":276.11,"reimbursement":727.84,"percent":"38%","BestValue":"Blatchford Semi-Automatic Knee Lock","pdac":"No","valuePer":75,"link":"","linkname":"",
                                                                                                                                 "image":"../images/P239143_Image.jpg"},
-{"category":"Single Axis  with Manual Lock: L5811  base" ,"manufacturer":"Blatchford_Knee","name":"P019267 (SAKL)","lcode1":"L5811","lcode2":"L5920","lcode3":"","lcode4":"","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"P019267","cost":304.6,"reimbursement":1257.36,"percent":"24%","BestValue":"Blatchford Semi-Automatic Knee Lock","pdac":"No","valuePer":35,"link":"","linkname":"",
+{"category":"Single Axis  with Manual Lock: L5811  base" ,"manufacturer":"Blatchford_Knee","name":"P019267 (SAKL)","lcode1":"L5811","lcode2":"L5920","lcode3":"","lcode4":"","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"P019267","cost":304.6,"reimbursement":1257.36,"percent":"24%","BestValue":"Blatchford Semi-Automatic Knee Lock","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                                 "image":"../images/P019267_Image.jpg"},
 {"category":"Single Axis  with Manual Lock: L5811  base" ,"manufacturer":"Otto_Bock_Knee","name":"3R40","lcode1":"L5811","lcode2":" ","lcode3":" ","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3R40","cost":290.81,"reimbursement":727.84,"percent":"40%","BestValue":"Blatchford Semi-Automatic Knee Lock","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                  "image":"../images/3R40_Image.jpg"},
@@ -253,26 +253,26 @@ const kneeTwo = [
     ];
 
     const PHySS = [
-{"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"Ossur_Medi_Knee","name":"Total Knee Unit Model 2000 (Hydraulic)","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"","lcode4":null,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"2000OSS","cost":1654.4,"reimbursement":5684.69,"percent":"29%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"No","valuePer":75,"link":"","linkname":"",
+{"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"Ossur_Medi_Knee","name":"Total Knee Unit Model 2000 (Hydraulic)","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"","lcode4":"","lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"2000OSS","cost":1654.4,"reimbursement":5684.69,"percent":"29%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"No","valuePer":75,"link":"","linkname":"",
                                                                                                                                 "image":"../images/2000oss_image.jpg"},
 {"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"Ossur_Medi_Knee","name":"Medi Knee Model OH5SF","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"OH5SF","cost":1532.34,"reimbursement":5684.69,"percent":"27%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"No","valuePer":75,"link":"","linkname":"",
                                                                                                                                 "image":"../images/OH5SF_image.jpg"},
-{"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"STG_Knee","name":"M0782","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"M0782","cost":2096.26,"reimbursement":6131.79,"percent":"34%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"No","valuePer":10,"link":"","linkname":"",
+{"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"STG_Knee","name":"M0782","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"M0782","cost":2096.26,"reimbursement":6131.79,"percent":"34%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"No","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/st_g_image_m0782_main.jpg"},
-{"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"STG_Knee","name":"M0787","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"M0787","cost":2337.54,"reimbursement":6131.79,"percent":"38%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"No","valuePer":10,"link":"","linkname":"",
+{"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"STG_Knee","name":"M0787","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"M0787","cost":2337.54,"reimbursement":6131.79,"percent":"38%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"No","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/standg_image_m0787_main.jpg"},
-{"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"Legworks_Knee","name":"ATK HydraPro HYD-SF-02","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4": "" ,"lcode5":null,"lcode6":null,"lcode6": "" ,"hdcode":"HYD-SF-02","cost":2385,"reimbursement":6131.79,"percent":"39%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"9/1/2019","valuePer":10,"link":"","linkname":"",
+{"category":"Polycentric with Hydraulic Swing & Stance Flexion: L5814, L5845 base","manufacturer":"Legworks_Knee","name":"ATK HydraPro HYD-SF-02","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4": "" ,"lcode5":"","lcode6":"","lcode6": "" ,"hdcode":"HYD-SF-02","cost":2385,"reimbursement":6131.79,"percent":"39%","BestValue":"Ossur/Medi Total Knee Model 2000","pdac":"9/1/2019","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/legworks_image_hyd_sf_02_main.jpg"},
     ];
 
     const PHySSFEA = [
-{"category":"Polycentric with Hydraulic Swing, Stance Flexion, Extension Assist and High Activity Frame: L5814, L5845, L5850, L5930 base","manufacturer":"Proteor_Freedom_Knee","name":"Symphony N-6 Knee","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5930","lcode4":"L5848","lcode5":null,"lcode6":null,"lcode6": "" ,"hdcode":"NK6","cost":2358.13,"reimbursement":10166.81,"percent":"23%","BestValue":"Proteor Symphony N-6","pdac":"No","valuePer":75,"link":"","linkname":"",
+{"category":"Polycentric with Hydraulic Swing, Stance Flexion, Extension Assist and High Activity Frame: L5814, L5845, L5850, L5930 base","manufacturer":"Proteor_Freedom_Knee","name":"Symphony N-6 Knee","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5930","lcode4":"L5848","lcode5":"","lcode6":"","lcode6": "" ,"hdcode":"NK6","cost":2358.13,"reimbursement":10166.81,"percent":"23%","BestValue":"Proteor Symphony N-6","pdac":"No","valuePer":75,"link":"","linkname":"",
                                                                                                                                                                          "image":""},
-{"category":"Polycentric with Hydraulic Swing, Stance Flexion, Extension Assist and High Activity Frame: L5814, L5845, L5850, L5930 base","manufacturer":"Proteor_Freedom_Knee","name":"Symphony N-6+L Knee","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5930","lcode4":"5848","lcode5":null,"lcode6":null,"lcode6": "" ,"hdcode":"8111-2700891-01","cost":2514.03,"reimbursement":10166.81,"percent":"25%","BestValue":"Proteor Symphony N-6","pdac":"No","valuePer":75,"link":"","linkname":"",
+{"category":"Polycentric with Hydraulic Swing, Stance Flexion, Extension Assist and High Activity Frame: L5814, L5845, L5850, L5930 base","manufacturer":"Proteor_Freedom_Knee","name":"Symphony N-6+L Knee","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5930","lcode4":"5848","lcode5":"","lcode6":"","lcode6": "" ,"hdcode":"8111-2700891-01","cost":2514.03,"reimbursement":10166.81,"percent":"25%","BestValue":"Proteor Symphony N-6","pdac":"No","valuePer":75,"link":"","linkname":"",
                                                                                                                                                                         "image":""},
-{"category":"Polycentric with Hydraulic Swing, Stance Flexion, Extension Assist and High Activity Frame: L5814, L5845, L5850, L5930 base","manufacturer":"Ossur_Medi_Knee","name":"Medi Knee OH7","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5930","lcode4":null,"lcode5":null,"lcode6": "" ,"lcode6": "" ,"hdcode":"OH7-KNEE","cost":3161.82,"reimbursement":9081.6,"percent":"35%","BestValue":"Proteor Symphony N-6","pdac":"No","valuePer":35,"link":"","linkname":"",
+{"category":"Polycentric with Hydraulic Swing, Stance Flexion, Extension Assist and High Activity Frame: L5814, L5845, L5850, L5930 base","manufacturer":"Ossur_Medi_Knee","name":"Medi Knee OH7","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5930","lcode4":"","lcode5":"","lcode6": "" ,"lcode6": "" ,"hdcode":"OH7-KNEE","cost":3161.82,"reimbursement":9081.6,"percent":"35%","BestValue":"Proteor Symphony N-6","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                                                                         "image":""},
-{"category":"Polycentric with Hydraulic Swing, Stance Flexion, Extension Assist and High Activity Frame: L5814, L5845, L5850, L5930 base","manufacturer":"Ossur_Medi_Knee","name":"Total Knee Unit Model 2100 (High Activity Hydraulic)","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5930","lcode4":null,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"2100OSS","cost":3659.12,"reimbursement":9081.6,"percent":"40%","BestValue":"Proteor Symphony N-6","pdac":"No","valuePer":35,"link":"","linkname":"",
+{"category":"Polycentric with Hydraulic Swing, Stance Flexion, Extension Assist and High Activity Frame: L5814, L5845, L5850, L5930 base","manufacturer":"Ossur_Medi_Knee","name":"Total Knee Unit Model 2100 (High Activity Hydraulic)","lcode1":"L5814","lcode2":"L5845","lcode3":"L5850","lcode4":"L5930","lcode4":"","lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"2100OSS","cost":3659.12,"reimbursement":9081.6,"percent":"40%","BestValue":"Proteor Symphony N-6","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                                                                         "image":""},
     ];
 
@@ -290,7 +290,7 @@ const kneeTwo = [
                                                                                                                                 "image":"../images/3r80_2_image.jpg"},
 {"category":"Single Axis with Hydraulic Stance & Swing: L5828 base","manufacturer":"Blatchford_Knee","name":"MH 30 Knee (Mercury High Activity Knee with 700 REX)","lcode1":"L5828","lcode2":"L5925","lcode3":"L5930","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"MERCURY-KIT","cost":1947.1,"reimbursement":6662.24,"percent":"29%","BestValue":"Otto Bock 3R80","pdac":"No","valuePer":75,"link":"","linkname":"",
                                                                                                                                 "image":"../images/MERCURY_KNEE.jpg"},
-{"category":"Single Axis with Hydraulic Stance & Swing: L5828 base","manufacturer":"College_Park_Knee","name":"Capital","lcode1":"L5828","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"CHKA-KNEE","cost":1928.51,"reimbursement":5201.92,"percent":"37%","BestValue":"Otto Bock 3R80","pdac":"No","valuePer":35,"link":"","linkname":"",
+{"category":"Single Axis with Hydraulic Stance & Swing: L5828 base","manufacturer":"College_Park_Knee","name":"Capital","lcode1":"L5828","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"CHKA-KNEE","cost":1928.51,"reimbursement":5201.92,"percent":"37%","BestValue":"Otto Bock 3R80","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                                 "image":"../images/chka_knee_image_main_pyramid.jpg"},
 {"category":"Single Axis with Hydraulic Stance & Swing: L5828 base","manufacturer":"Ossur_Medi_Knee","name":"Mauch Knee Standard","lcode1":"L5828","lcode2":"L5925","lcode3":"L5930","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"MKN71360","cost":2448.18,"reimbursement":6662.24,"percent":"37%","BestValue":"Otto Bock 3R80","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                                 "image":"../images/mkn71360_image.jpg"},
@@ -313,9 +313,9 @@ const kneeTwo = [
                                                                                                                                 "image":"../images/TK-4P0C.jpg"},
 {"category":"MicroProcessor : L5828 , L5848, L5848 base"  ,"manufacturer":"Ossur_Medi_Knee","name":"Rheo MPK","lcode1":"L5828","lcode2":"L5845","lcode3":"L5848","lcode4":"L5856","lcode4": "" ,"lcode5":  "NOTE: Additional codes - Not recommended unless additional clinical justification is provided.","lcode6":"L5925","lcode6":"L5850","hdcode":"RKN130003","cost":13162.2,"reimbursement":29939.44,"percent":"44%","BestValue":"Blatchford Orion","pdac":"4/1/2018","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/TK-4P0C.jpg"},
-{"category":"MicroProcessor : L5828 , L5848, L5848 base"  ,"manufacturer":"Proteor_Freedom_Knee","name":"Quattro MPK","lcode1":"L5828","lcode2":"L5845","lcode3":"L5848","lcode4":"L5850","lcode4":"L5856","lcode5":"L5925","lcode6":null,"lcode6":null,"hdcode":"QNX001-KNEE","cost":14370,"reimbursement":30514.21,"percent":"47%","BestValue":"Blatchford Orion","pdac":"4/22/2021","valuePer":10,"link":"","linkname":"",
+{"category":"MicroProcessor : L5828 , L5848, L5848 base"  ,"manufacturer":"Proteor_Freedom_Knee","name":"Quattro MPK","lcode1":"L5828","lcode2":"L5845","lcode3":"L5848","lcode4":"L5850","lcode4":"L5856","lcode5":"L5925","lcode6":"","lcode6":"","hdcode":"QNX001-KNEE","cost":14370,"reimbursement":30514.21,"percent":"47%","BestValue":"Blatchford Orion","pdac":"4/22/2021","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/TK-4P0C.jpg"},
-{"category":"MicroProcessor : L5828 , L5848, L5848 base"  ,"manufacturer":"Otto_Bock_Knee","name":"Kenevo MPK","lcode1":"L5828","lcode2":"L5845","lcode3":"L5848","lcode4":"L5856","lcode4":null,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3C60-KIT","cost":14719,"reimbursement":29939.4,"percent":"49%","BestValue":"Blatchford Orion","pdac":"12/24/2020","valuePer":10,"link":"","linkname":"",
+{"category":"MicroProcessor : L5828 , L5848, L5848 base"  ,"manufacturer":"Otto_Bock_Knee","name":"Kenevo MPK","lcode1":"L5828","lcode2":"L5845","lcode3":"L5848","lcode4":"L5856","lcode4":"","lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3C60-KIT","cost":14719,"reimbursement":29939.4,"percent":"49%","BestValue":"Blatchford Orion","pdac":"12/24/2020","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/TK-4P0C.jpg"},
 {"category":"MicroProcessor : L5828 , L5848, L5848 base"  ,"manufacturer":"Ossur_Medi_Knee","name":"Rheo XC MPK","lcode1":"L5828","lcode2":"L5845","lcode3":"L5848","lcode4":"L5856","lcode4": "" ,"lcode5":  "NOTE: Additional codes - Not recommended unless additional clinical justification is provided.","lcode6":"L5925","lcode6":"L5850","hdcode":"RKNXC0003","cost":20556,"reimbursement":29939.44,"percent":"69%","BestValue":"Blatchford Orion","pdac":"4/6/2018","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/TK-4P0C.jpg"},
@@ -334,14 +334,14 @@ const kneeTwo = [
                                                                                                                                 "image":"../images/1322AL_Image.jpg"},
 {"category":"Microprocessor - Swing Only: L5830 base"  ,"manufacturer":"Blatchford_Knee","name":"Smart IP","lcode1":"L5830","lcode2":"L5857","lcode3":" ","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"SMARTIP","cost":3777.41,"reimbursement":10490.35,"percent":"36%","BestValue":"Blatchford Smart Adaptive","pdac":"8/28/2020","valuePer":35,"link":"","linkname":"",
                                                                                                                                 "image":"../images/1322AL_Image.jpg"},
-{"category":"Microprocessor - Swing Only: L5830 base"  ,"manufacturer":"Blatchford_Knee","name":"Stance Flex ESK+ PSCP +MKL","lcode1":"L5830","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"ESK4BPPYR","cost":1838.38,"reimbursement":4277.39,"percent":"43%","BestValue":"Blatchford Smart Adaptive","pdac":"No","valuePer":10,"link":"","linkname":"",
+{"category":"Microprocessor - Swing Only: L5830 base"  ,"manufacturer":"Blatchford_Knee","name":"Stance Flex ESK+ PSCP +MKL","lcode1":"L5830","lcode2":"L5845","lcode3":"L5850","lcode4":"L5925","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"ESK4BPPYR","cost":1838.38,"reimbursement":4277.39,"percent":"43%","BestValue":"Blatchford Smart Adaptive","pdac":"No","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/1322AL_Image.jpg"},
 {"category":"Microprocessor - Swing Only: L5830 base"  ,"manufacturer":"Blatchford_Knee","name":"Stance Flex ESK+ PSCP (Pneumatic Swing)","lcode1":"L5830","lcode2":"L5845","lcode3":"","lcode4":"","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"ESK","cost":2039.72,"reimbursement":3702.62,"percent":"55%","BestValue":"Blatchford Smart Adaptive","pdac":"No","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":"../images/1322AL_Image.jpg"},
     ];
 
     const PolyPneu = [
-{"category": "Polycentric with Pneumatic Swing: L5840 base: L5830 base","manufacturer":"STG_Knee","name":"1322 (AL or AP)","lcode1":"L5840","lcode2":"L5850","lcode3":"","lcode4":"","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"1322A-KNEE","cost":586.55,"reimbursement":3629.13,"percent":"16%","BestValue":"STG 1322 (AL or AP)","pdac":"1/1/2014","valuePer":75,"link":"","linkname":"",
+{"category": "Polycentric with Pneumatic Swing: L5840 base: L5830 base","manufacturer":"STG_Knee","name":"1322 (AL or AP)","lcode1":"L5840","lcode2":"L5850","lcode3":"","lcode4":"","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"1322A-KNEE","cost":586.55,"reimbursement":3629.13,"percent":"16%","BestValue":"STG 1322 (AL or AP)","pdac":"1/1/2014","valuePer":75,"link":"","linkname":"",
                                                                                                                                 "image":"../images/1322AL_Image.jpg"},
 {"category":"Polycentric with Pneumatic Swing: L5840 base: L5830 base","manufacturer":"Otto_Bock_Knee","name":"3R78","lcode1":"L5840","lcode2":"L5850","lcode3":" ","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3R78","cost":816.48,"reimbursement":3629.13,"percent":"22%","BestValue":"STG 1322 (AL or AP)","pdac":"No","valuePer":35,"link":"","linkname":"",
                                                                                                                                 "image":"../images/3R78-01-1200x1200.jpg"},
@@ -379,7 +379,7 @@ const kneeTwo = [
                                                                                                                                 "image":""},
 {"category":"Miscellaneous Knees","manufacturer":"Otto_Bock_Knee","name":"3S80","lcode1":"L5824","lcode2":"L5850","lcode3":"L5925","lcode4":"L5930","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3S80","cost":2405.12,"reimbursement":5502.14,"percent":"44%","BestValue":"No","pdac":"No","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":""},
-{"category":"Miscellaneous Knees","manufacturer":"Proteor_Freedom_Knee","name":"Allux 4-bar MPK K3 Knee","lcode1":"K1014","lcode2":"L5845","lcode3":"L5848","lcode4":"L5856","lcode4": "" ,"lcode5": "" ,"lcode6":"L5930","lcode6":"L7368","hdcode":"NE-Z4","cost":14180.52,"reimbursement":null,"percent":"#N/A","BestValue":"No","pdac":"No","valuePer":10,"link":"","linkname":"",
+{"category":"Miscellaneous Knees","manufacturer":"Proteor_Freedom_Knee","name":"Allux 4-bar MPK K3 Knee","lcode1":"K1014","lcode2":"L5845","lcode3":"L5848","lcode4":"L5856","lcode4": "" ,"lcode5": "" ,"lcode6":"L5930","lcode6":"L7368","hdcode":"NE-Z4","cost":14180.52,"reimbursement":"","percent":"#N/A","BestValue":"No","pdac":"No","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":""},
 {"category":"Miscellaneous Knees","manufacturer":"STG_Knee","name":"L1311A","lcode1":"L5812","lcode2":"L5850","lcode3":"L5925","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"L1311A","cost":564.19,"reimbursement":1138.93,"percent":"50%","BestValue":"No","pdac":"4/29/2014","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":""},
@@ -397,15 +397,15 @@ const kneeTwo = [
                                                                                                                                 "image":""},
 {"category":"Miscellaneous Knees","manufacturer":"Otto_Bock_Knee","name":"3P23","lcode1":"L5712","lcode2":"L5999","lcode3":" ","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3P23","cost":410.52,"reimbursement":437.07,"percent":"94%","BestValue":"No","pdac":"No","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":""},
-{"category":"Miscellaneous Knees","manufacturer":"Otto_Bock_Knee","name":"3B5 ‘X3’ MPK","lcode1":"L5999-052","lcode2":" ","lcode3":" ","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3B5-KNEE","cost":42735.18,"reimbursement":null,"percent":"#N/A","BestValue":"No","pdac":"No","valuePer":10,"link":"","linkname":"",
+{"category":"Miscellaneous Knees","manufacturer":"Otto_Bock_Knee","name":"3B5 ‘X3’ MPK","lcode1":"L5999-052","lcode2":" ","lcode3":" ","lcode4":" ","lcode4": "" ,"lcode5": "" ,"lcode6": "" ,"lcode6": "" ,"hdcode":"3B5-KNEE","cost":42735.18,"reimbursement":"","percent":"#N/A","BestValue":"No","pdac":"No","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":""},
-{"category":"Miscellaneous Knees","manufacturer":"Blatchford_Knee","name":"KX06 Knee Unit (Hydraulic Swing and Stance Phase Control)","lcode1":"K1014","lcode2":"","lcode3":"","lcode4":"","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"KX06-KIT","cost":2206.68,"reimbursement":null,"percent":"#DIV/0!","BestValue":"No","pdac":"1/1/2011","valuePer":10,"link":"","linkname":"",
+{"category":"Miscellaneous Knees","manufacturer":"Blatchford_Knee","name":"KX06 Knee Unit (Hydraulic Swing and Stance Phase Control)","lcode1":"K1014","lcode2":"","lcode3":"","lcode4":"","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"KX06-KIT","cost":2206.68,"reimbursement":"","percent":"#DIV/0!","BestValue":"No","pdac":"1/1/2011","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":""},
-{"category":"Miscellaneous Knees","manufacturer":"Blatchford_Knee","name":"KX06 Knee Unit (Hydraulic Swing Control Only)","lcode1":"K1014","lcode2":"","lcode3":"","lcode4":"","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"KX06-KIT","cost":2206.68,"reimbursement":null,"percent":"#DIV/0!","BestValue":"No","pdac":"1/1/2011","valuePer":10,"link":"","linkname":"",
+{"category":"Miscellaneous Knees","manufacturer":"Blatchford_Knee","name":"KX06 Knee Unit (Hydraulic Swing Control Only)","lcode1":"K1014","lcode2":"","lcode3":"","lcode4":"","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"KX06-KIT","cost":2206.68,"reimbursement":"","percent":"#DIV/0!","BestValue":"No","pdac":"1/1/2011","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":""},
-{"category":"Miscellaneous Knees","manufacturer":"Blatchford_Knee","name":"KX06 Polycentric Knee w/Swing and Stance Hydraulic","lcode1":"K1014","lcode2":"L5850","lcode3":"L5925","lcode4":"L5930","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"KX06-KIT","cost":2206.68,"reimbursement":null,"percent":"#DIV/0!","BestValue":"No","pdac":"1/1/2011","valuePer":10,"link":"","linkname":"",
+{"category":"Miscellaneous Knees","manufacturer":"Blatchford_Knee","name":"KX06 Polycentric Knee w/Swing and Stance Hydraulic","lcode1":"K1014","lcode2":"L5850","lcode3":"L5925","lcode4":"L5930","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"KX06-KIT","cost":2206.68,"reimbursement":"","percent":"#DIV/0!","BestValue":"No","pdac":"1/1/2011","valuePer":10,"link":"","linkname":"",
                                                                                                                                 "image":""},
-{"category":"Miscellaneous Knees","manufacturer":"Otto_Bock_Knee","name":"3R38","lcode1":"L5850","lcode2":"","lcode3":"","lcode4":"","lcode4":null,"lcode5":null,"lcode6":null,"lcode6":null,"hdcode":"3R38","cost":601.43,"reimbursement":127.67,"percent":"471%","BestValue":"No","pdac":"No","valuePer":10,"link":"","linkname":"","image":""}
+{"category":"Miscellaneous Knees","manufacturer":"Otto_Bock_Knee","name":"3R38","lcode1":"L5850","lcode2":"","lcode3":"","lcode4":"","lcode4":"","lcode5":"","lcode6":"","lcode6":"","hdcode":"3R38","cost":601.43,"reimbursement":127.67,"percent":"471%","BestValue":"No","pdac":"No","valuePer":10,"link":"","linkname":"","image":""}
 
     ];
 
@@ -429,4 +429,4 @@ const kneeTwo = [
 
 
 // export {kneeArray};
-export {K14BFEA, kneeTwo};
+export {K14BFEA, kneeTwo, K14BFESF, K14BFESL, SML, SAEA, SASFE, PHyS, PHySS, PHySSFEA, SPSFS, SHySS, MPK, MPKSw, PolyPneu, PPSSF, MISC };

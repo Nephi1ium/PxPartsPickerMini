@@ -2,17 +2,12 @@
 import {componentSection, componentCard} from "./componentsComponent.js";
 import { feetCard } from "./feetComponent.js";
 // import {kneeCard} from "./kneesComponent.js"
-import { kneeTwo } from "../src/kneeArrays/kneesArray.js";
 
 
 const compSecButt = document.querySelector("#compButton");
 compSecButt.addEventListener("click", () => compSecDisplay());
 
-const feetOne = document.querySelector("#feet1");
-feetOne.addEventListener("click", () => feetSecDisplay());
 
-const KneesOne = document.getElementById("fric");
-KneesOne.addEventListener("click", () => kneeSecDisplay());
 
 
 

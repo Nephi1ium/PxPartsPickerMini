@@ -1,4 +1,4 @@
-import { K14BFEA, kneeTwo } from "../src/kneeArrays/kneesArray.js";
+import { K14BFEA, kneeTwo, K14BFESF, K14BFESL, SML, SAEA, SASFE, PHyS, PHySS, PHySSFEA, SPSFS, SHySS, MPK, MPKSw, PolyPneu, PPSSF, MISC } from "../src/kneeArrays/kneesArray.js";
 
 // let itemOne = document.getElementById("fricMan");
 const itemOne = document.querySelector("#fric");
@@ -17,7 +17,7 @@ const itemThirteen = document.querySelector("#polyPneuSwinStanFlex");
 const itemFourteen = document.querySelector("#polyHydrSwinStanFlexHigh");
 const itemFifteen = document.querySelector("#allMPK");
 const itemSixteen = document.querySelector("#mpkSwOnly");
-const itemSeventeen = document.querySelector("#miscKnees");
+const itemSeventeen = document.querySelector("#allMisc");
 
 
 
