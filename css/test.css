@@ -143,16 +143,16 @@ body {
 } 
 .card {
   display: block; 
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
-    transition: box-shadow .25s; 
-    max-width: 25vmax;
-    max-height: 50vmax;
-    padding: 1vmax;
-    overflow: hidden;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+  transition: box-shadow .25s; 
+  max-width: 25vmax;
+  max-height: 50vmax;
+  padding: 1vmax;
+  overflow: hidden;
   
 
 }
@@ -338,6 +338,16 @@ body {
 
 
 
+
+  @media screen and (max-width: 450px) { 
+  .mainpage{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  }
+
+  }
   /* .kOne{
     display: none;
   }
