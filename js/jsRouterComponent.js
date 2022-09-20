@@ -1,6 +1,6 @@
 // import {toggleProgram} from "./toggleDisplayComponent.js";
 import {componentSection, componentCard} from "./componentsComponent.js";
-import { feetCard } from "./feetComponent.js";
+// import { feetCard } from "./feetComponent.js";
 // import {kneeCard} from "./kneesComponent.js"
 
 
@@ -20,7 +20,7 @@ function compSecDisplay() {
 }
 
 function feetSecDisplay(){
-  feetCard();
+  // feetCard();
   // toggleProgram();
 }
 

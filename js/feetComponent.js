@@ -1,37 +1,63 @@
-import { feetArrayOne } from "../html/data/feetArray.js";
+import { feetArrayOne, feetArrayTwo, feetArrayThree, feetArrayFour, feetArrayFive, feetArraySix, feetArraySeven, feetArrayEight, feetArrayNine, feetArrayTen, feetArrayEleven, feetArrayTwelve, feetArrayThirteen, feetArray14, feetArray15, feetArray16, feetArray17, feetArray18, feetArray19, feetArray20, feetArray21} from "../src/feetArrays/feetArray.js";
 
 
-// This is the array modifier
+const itemOne = document.querySelector("#feetOne");
+const itemTwo = document.querySelector("#feet2");
+const itemThree = document.querySelector("#feet3");
+const itemFour = document.querySelector("#feet4");
+const itemFive = document.querySelector("#feet5");
+const itemSix = document.querySelector("#feet6");
+const itemSeven = document.querySelector("#feet7");
+const itemEight = document.querySelector("#feet8");
+const itemNine = document.querySelector("#feet9");
+const itemTen = document.querySelector("#feet10");
+const itemEleven = document.querySelector("#feet11");
+const itemTwelve = document.querySelector("#feet12");
+const itemThirteen = document.querySelector("#feet13");
+const itemFourteen = document.querySelector("#feet14");
+const itemFifteen = document.querySelector("#feet15");
+const itemSixteen = document.querySelector("#feet16");
+const itemSeventeen = document.querySelector("#feet17");
+const itemEighteen = document.querySelector("#feet18");
+const itemNineteen = document.querySelector("#feet19");
+const itemTwenty = document.querySelector("#feet20");
+const itemTwentyOne = document.querySelector("#feet21");
+const itemTwentyTwo = document.querySelector("#feet22");
 
 
+itemOne.addEventListener("click", () => feetCard(feetArrayOne));
+itemTwo.addEventListener("click", () => feetCard(feetArrayTwo));
+itemThree.addEventListener("click", () => feetCard(feetArrayThree));
+itemFour.addEventListener("click", () => feetCard(feetArrayFour));
+itemFive.addEventListener("click", () => feetCard(feetArrayFive));
+itemSix.addEventListener("click", () => feetCard(feetArraySix));
+itemSeven.addEventListener("click", () => feetCard(feetArraySeven));
+itemEight.addEventListener("click", () => feetCard(feetArrayEight));
+itemNine.addEventListener("click", () => feetCard(feetArrayNine));
+itemTen.addEventListener("click", () => feetCard(feetArrayTen));
+itemEleven.addEventListener("click", () => feetCard(feetArrayEleven));
+itemTwelve.addEventListener("click", () => feetCard(feetArrayTwelve));
+itemThirteen.addEventListener("click", () => feetCard(feetArrayThirteen));
+itemFourteen.addEventListener("click", () => feetCard(feetArray14));
+itemFifteen.addEventListener("click", () => feetCard(feetArray15));
+itemSixteen.addEventListener("click", () => feetCard(feetArray16));
+itemSeventeen.addEventListener("click", () => feetCard(feetArray17));
+itemEighteen.addEventListener("click", () => feetCard(feetArray18));
+itemNineteen.addEventListener("click", () => feetCard(feetArray19));
+itemTwenty.addEventListener("click", () => feetCard(feetArray20));
+itemTwentyOne.addEventListener("click", () => feetCard(feetArray21));
 
-// const chunkIntoN = (arr, n) => {
-//     const size = Math.ceil(feetArray.length / n);
-//     return Array.from({ length: n }, (v, i) =>
-//       feetArray.slice(i * size, i * size + size)
-//     );
-//   }
-  
-//   let theGreen = chunkIntoN([1, 2, 3, 4, 5, 6, 7], 4); // [[1, 2], [3, 4], [5, 6], [7]]
-//   let theGrey = chunkIntoN([1, 2, 3, 4, 5, 6, 7], 9); // [[1, 2], [3, 4], [5, 6], [7]]
-  
-  
-//   console.log(theGreen, "the green");
-//   console.log(theGrey, "the grey");
 
-
-// This is the array modifier 
-
-
-function feetCard(){
+function feetCard(array){
 
 
     let footCard = document.querySelector('#mainpageSectionforJS');
+    console.log(array,"array name");
 
 
-    feetArrayOne.forEach(component => {    
+    array.forEach(component => {    
         footCard.innerHTML = footCard.innerHTML +
-         `<div class="card noShow">
+         `<div class="card card-margin">
             <div class="card-header">
                 <h4> ${component.name} </h4>
                 <div class="card-body">
@@ -57,7 +83,10 @@ function feetCard(){
                 </div>
             </div>
         </div>`;
+        console.log("Created", component.card, "Cards");
         });
+        console.log("Card Creation Complete");
+
     };
 
 

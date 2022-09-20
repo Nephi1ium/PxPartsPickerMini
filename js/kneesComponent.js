@@ -24,14 +24,12 @@ const itemSeventeen = document.querySelector("#allMisc");
 itemOne.addEventListener("click", () => kneeCard(K14BFEA));
 itemTwo.addEventListener("click", () => kneeCard(kneeTwo));
 itemThree.addEventListener("click", () => kneeCard(K14BFESF));
-
 itemFour.addEventListener("click", () => kneeCard(K14BFESL));
 itemFive.addEventListener("click", () => kneeCard(SML));
 itemSix.addEventListener("click", () => kneeCard(SAEA));
 itemSeven.addEventListener("click", () => kneeCard(SASFE));
 itemEight.addEventListener("click", () => kneeCard(PHyS));
 itemNine.addEventListener("click", () => kneeCard(PHySS));
-
 itemTen.addEventListener("click", () => kneeCard(PHySSFEA));
 itemEleven.addEventListener("click", () => kneeCard(SPSFS));
 itemTwelve.addEventListener("click", () => kneeCard(SHySS));
