@@ -1,25 +1,12 @@
-import {componentArray} from "../src/componentArrays/componentArray.js";
+import {sleevesSh, socksPx, allPxComponents} from "../src/componentArrays/componentArray.js";
 
+const itemOne = document.querySelector("#socks");
+const itemTwo = document.querySelector("#sleeves");
+const itemThree = document.querySelector("#components");
 
-
-
-function componentSection() {
-
-    const componentItemNav = 
-    `
-    <nav>
-
-              <a class=" secButtons  mpk"  id="#" > Socks  </a>
-    
-              <a class="secButtons   mpk"  id="#"> Sleeves and Sheaths </a>
-    
-              <a class=" secButtons  mpk"  id="#" > Build Components </a>
-    
-  </nav>
-  `;
-  document.getElementById("componentsSection").innerHTML = componentItemNav;
-
-}
+itemOne.addEventListener("click", () => componentCard(socksPx));
+itemTwo.addEventListener("click", () => componentCard(sleevesSh));
+itemThree.addEventListener("click", () => componentCard(allPxComponents));
 
 function componentCard(array){
 
@@ -54,7 +41,7 @@ function componentCard(array){
 
 
 
-export {componentSection, componentCard};
+export {componentCard};
 // export {componentCard};
 
 

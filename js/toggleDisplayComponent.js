@@ -1,9 +1,13 @@
 const toggleKnees = document.querySelector(".mainChoice");
 const toggleFeet = document.querySelector(".toggleOne");
+const toggleLiners = document.querySelector(".toggleTwo");
+const toggleComponents = document.querySelector(".toggleThree");
 
 
 toggleKnees.addEventListener("click", () => toggleProgram(".toggle"));
 toggleFeet.addEventListener("click", () => toggleProgram(".toggleOne"));
+toggleLiners.addEventListener("click", () => toggleProgram(".toggleTwo"));
+toggleComponents.addEventListener("click", () => toggleProgram(".toggleThree"));
 
 
 

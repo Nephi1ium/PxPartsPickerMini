@@ -1,8 +1,16 @@
-import {lockLiners} from "../src/linerArrays/linersArray.js"
+import {lockLiners, cushLiner, sealLiner, custLiner} from "../src/linerArrays/linersArray.js"
 
 
-const itemOne = document.querySelector("#linerButton");
+const itemOne = document.querySelector("#pin");
+const itemTwo = document.querySelector("#cush");
+const itemThree = document.querySelector("#seal");
+const itemFour = document.querySelector("#custom");
+
+
 itemOne.addEventListener("click", () => linerCard(lockLiners));
+itemTwo.addEventListener("click", () => linerCard(cushLiner));
+itemThree.addEventListener("click", () => linerCard(sealLiner));
+itemFour.addEventListener("click", () => linerCard(custLiner));
 
 
 

@@ -1,11 +1,7 @@
 // import {toggleProgram} from "./toggleDisplayComponent.js";
-import {componentSection, componentCard} from "./componentsComponent.js";
+// import {componentSection, componentCard} from "./componentsComponent.js";
 // import { feetCard } from "./feetComponent.js";
 // import {kneeCard} from "./kneesComponent.js"
-
-
-const compSecButt = document.querySelector("#compButton");
-compSecButt.addEventListener("click", () => compSecDisplay());
 
 
 
@@ -14,8 +10,8 @@ compSecButt.addEventListener("click", () => compSecDisplay());
 
 
 function compSecDisplay() {
-  componentSection();
-  componentCard();
+  // componentSection();
+  // componentCard();
   // toggleProgram();
 }
 

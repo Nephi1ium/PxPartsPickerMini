@@ -245,4 +245,4 @@ const custLiner= [{"manufacturer":"ENGINEERED SILICONE PRODUCTS","name":"ESP Cus
 {"manufacturer":"OSSUR AMERICAS, INC","name":"Ossur Custom","lcode":0 ,"hdcode":"See Custom Order Form","price":"N/A","reimbursement":"N/A","percent":" "},
 {"manufacturer":"WILLOWWOOD GLOBAL, LLC","name":"WillowWood Custom","lcode":0 ,"hdcode":"See Custom Order Form","price":"N/A","reimbursement":"N/A","percent":" "}]
 
-export {lockLiners}; 
+export {lockLiners, cushLiner, sealLiner, custLiner}; 
