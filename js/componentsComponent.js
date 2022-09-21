@@ -1,6 +1,8 @@
 import {componentArray} from "../src/componentArrays/componentArray.js";
 
 
+
+
 function componentSection() {
 
     const componentItemNav = 
@@ -19,15 +21,12 @@ function componentSection() {
 
 }
 
-function componentCard(){
-
-    const compSecButt = document.querySelector("#compButton");
-
+function componentCard(array){
 
     let compCard = document.querySelector('#mainpageSectionforJS');
 
 
-    componentArray.forEach(component => {    
+    array.forEach(component => {    
         compCard.innerHTML = compCard.innerHTML +
          `<div class="card">
             <div class="card-header">
@@ -49,6 +48,7 @@ function componentCard(){
         </div>`;
         console.log("Created", component.name, "Cards")
         });
+        console.log("Card Creation Complete");
 
     };
 
