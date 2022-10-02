@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
+
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/itemchoices.css">
-    <link rel="stylesheet" href="../css/navigator.css">
     <link rel="stylesheet" href="../css/horizontal_card.css">
+
+    <link rel="stylesheet" href="../css/navigator.css">
+
+
     <title>Prosthetic Parts Picker- Trans Tibial Pin</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top"> 
+    <nav class="navbar navbar-expand-sm navbar-dark"> 
         <div class="container">
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#Pickerbar">
                 <span class="navbar-toggler-icon"></span>
@@ -45,264 +49,392 @@
             </div>
         </div>
     </header> 
-
-
-
-    <section class="wrapper container-fostrap" id="MPKKNee">
-
-
-
-               
-                <div class="card card-part " id="OrionKnee">
-                    <img class="card-img-top card-image" src="../images/1322AL_Image.jpg" alt="Card image cap">
-                    <div>
-                      <img class="img-fluid rounded" src="../images/BestValue.png">
-                    <div class="card-body">
-
-                    <!-- https://www.pngfind.com/mpng/xiJoxT_check-green-check-mark-circle-hd-png-download/ -->
-                    </div>
-                    <h5 class="card-title"> Orion MPK</h5>
-                    <p class="card-text">Manufacturer: Blatchford </p>
-                    <p class="card-text">L-Codes: 5828, 5845, 5848, 5856 </p>
-                    <p class="card-text">HD Code: ORION3-KIT  </p>
-                    <p class="card-text">Price: $13014.21</p>
-                    <p class="card-text">Reimbursal: $29939.44</p>
-                    <p class="card-text">Reimbursment Percent: 43%</p>
-                    <p class="card-text">PDAC Approval: Yes</p>
-                    <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                    </div>
-                  </div>
-                
-
-
-                 
-                  <div class="card card-part" id="Linx">
-                  <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                  <div class="card-body">
-
-                      <h5 class="card-title"> Linx </h5>
-                      <p class="card-text">Manufacturer: Blatchford </p>
-                      <p class="card-text">L-Codes: 5828, 5845, 5848, 5856, 5973 </p>
-                      <p class="card-text">HD Code: LINX-KIT  </p>
-                      <p class="card-text">Price: $19898.31</p>
-                      <p class="card-text">Reimbursal: $47302.67</p>
-                      <p class="card-text">Reimbursment Percent: 42%</p>
-                      <p class="card-text">PDAC Approval: Yes</p>
-                      <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                      </div>
-                    </div>
+  
+  
+  
+  
+    <!-- below is the div which contains the knee section -->
+  <button class="openbtn" id="resPage">X</button>
+        <!-- RIght now this resets the page, I should simply set the state of each element to "initial" -->
+  <main id="main">
+  <nav id="itemNavigator" class="myItemNavigator">
+    <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+  
+      <a id="kneeButton" class="toggle mainChoice">    Knees  </a>
+  
+      <section id="kneesSection" class="noShow">         
+  
+  <!--          Start of K1/K2 Category                                 -->
+                          <a class=" toggle secButtons "  id="kOneTwo">              K1/K2            </a>
+  <!--          Start of the 4 inner categories of K1/K2 Knees          -->
+                                <section class=" noShow  " id="kOneTwoSection">
+  
+                                <a id="fric" class=" indivChoice kOne"  >                        Friction, Extension Assist                        </a>
+  
+                                <a id="fricMan"class=" indivChoice   kOne"  >                        Friction, Extension Assist, Manual Lock                        </a>
+  
+                                <a id="fricExtStan" class=" indivChoice   kOne"  >                        Friction, Extension Assist, Stance Flexion                        </a>
+  
+                                <a class=" indivChoice   kOne" id="fricExtStanLock"  >                        Friction, Extension Assist, Stance Flexion, Manual Lock                        </a>
+                                
+                                </section>
+  <!--                   End of the K1/K2 Category -->        
+  <!--               Beginning of the Single Axis Category -->           
+                  <a class="secButtons  "  id="singleAxis">                Single Axis              </a>               
+  <!--                   Container for all the Single Axis Knee categories -->
+                <nav>
+                  <ul class="nav">
+                    <li>
+                      <a class="indivChoice noShow  singleAxis" id="singAxManLock"  >
+                        Manual Lock
+                      </a>
+                    </li>
+                    <li>
+                      <a class="indivChoice noShow  singleAxis" id="singAxPneuFric"  >
+                        Pneumatic Swing, Friction Stance
+                      </a>
+                    </li>
+                    <li>
+                      <a class="indivChoice noShow  singleAxis"  id="singAxHydStanSwin">
+                        Hydraulic Stance and Swing
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+      
+  <!--                   End of Single Axis Knee Category information -->
                   
-
-                   
-                    <div class="card card-part" id="cLeg">
-                    <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                    <div class="card-body">
-                      
-                        <h5 class="card-title"> C-Leg </h5>
-                        <p class="card-text">Manufacturer: Otto Bock </p>
-                        <p class="card-text">L-Codes: 5828, 5845, 5848, 5856 </p>
-                        <p class="card-text">HD Code: 3C88/3C98-KIT  </p>
-                        <p class="card-text">Price: $12999.00</p>
-                        <p class="card-text">Reimbursal: $29939.44</p>
-                        <p class="card-text">Reimbursment Percent: 43%</p>
-                        <p class="card-text">PDAC Approval: Yes</p>
-                        <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                        </div>
-                      </div>
-                    
-
-
-                     
-                      <div class="card card-part" id="Plie">
-                      <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                      <div class="card-body">
-                        
-                          <h5 class="card-title"> Plie </h5>
-                          <p class="card-text">Manufacturer: Proteor/Freedom  </p>
-                          <p class="card-text">L-Codes: 5828, 5845, 5848, 5856, 5850 </p>
-                          <p class="card-text">HD Code: KS3/KD3-KNEE  </p>
-                          <p class="card-text">Price: $12800.00</p>
-                          <p class="card-text">Reimbursal: $30067.11</p>
-                          <p class="card-text">Reimbursment Percent: 43%</p>
-                          <p class="card-text">PDAC Approval: Yes</p>
-                          <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                          </div>
-                        </div>
-                      
-
-                       
-                        <div class="card card-part" id="Plie">
-                        <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                        <div class="card-body">
-                          
-                            <h5 class="card-title"> Rheo </h5>
-                            <p class="card-text">Manufacturer: Ossur  </p>
-                            <p class="card-text">L-Codes: 5828, 5845, 5848, 5856, 5850, 5925 </p>
-                            <p class="card-text">HD Code: RKN130003  </p>
-                            <p class="card-text">Price: $13162.20.00</p>
-                            <p class="card-text">Reimbursal: $29939.44</p>
-                            <p class="card-text">Reimbursment Percent: 44%</p>
-                            <p class="card-text">PDAC Approval: Yes</p>
-                            <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                            </div>
-                          </div>
-                        
-
-                         
-                          <div class="card card-part" id="Plie">
-                          <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                          <div class="card-body">
-                            
-                              <h5 class="card-title"> Quattro </h5>
-                              <p class="card-text">Manufacturer: Proteor/Freedom  </p>
-                              <p class="card-text">L-Codes: 5828, 5845, 5848, 5856, 5850, 5925 </p>
-                              <p class="card-text">HD Code: QNX001-KNEE  </p>
-                              <p class="card-text">Price: $14370.00</p>
-                              <p class="card-text">Reimbursal: $30514.21</p>
-                              <p class="card-text">Reimbursment Percent: 47%</p>
-                              <p class="card-text">PDAC Approval: Yes</p>
-                              <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                              </div>
-                            </div>
-                          
-
-
-                           
-                            <div class="card card-part" id="Plie">
-                            <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                            <div class="card-body">
-                              
-                                <h5 class="card-title"> Kenevo </h5>
-                                <p class="card-text">Manufacturer: Otto Bock  </p>
-                                <p class="card-text">L-Codes: 5828, 5845, 5848, 5856 </p>
-                                <p class="card-text">HD Code: 3C60-KIT  </p>
-                                <p class="card-text">Price: $14719.00</p>
-                                <p class="card-text">Reimbursal: $29939.44</p>
-                                <p class="card-text">Reimbursment Percent: 49%</p>
-                                <p class="card-text">PDAC Approval: Yes</p>
-                                <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                                </div>
-                              </div>
-                            
-
-                             
-                              <div class="card card-part" id="Plie">
-                              <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                              <div class="card-body">
-                                
-                                  <h5 class="card-title"> Rheo </h5>
-                                  <p class="card-text">Manufacturer: Ossur  </p>
-                                  <p class="card-text">L-Codes: 5828, 5845, 5848, 5856, 5925, 5850 </p>
-                                  <p class="card-text">HD Code: RKNXC0003  </p>
-                                  <p class="card-text">Price: $20556.00</p>
-                                  <p class="card-text">Reimbursal: $29939.44</p>
-                                  <p class="card-text">Reimbursment Percent: 69%</p>
-                                  <p class="card-text">PDAC Approval: Yes</p>
-                                  <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                                  </div>
-                                </div>
-                              
-
-                               
-                                <div class="card card-part" id="Plie">
-                                <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                                <div class="card-body">
-                                  
-                                    <h5 class="card-title"> Power Knee II </h5>
-                                    <p class="card-text">Manufacturer: Ossur  </p>
-                                    <p class="card-text">L-Codes: 5828, 5845, 5848, 5856, 5859 </p>
-                                    <p class="card-text">HD Code: PKN120007  </p>
-                                    <p class="card-text">Price: $3393.72</p>
-                                    <p class="card-text">Reimbursal: $44582.47.4</p>
-                                    <p class="card-text">Reimbursment Percent: 76%</p>
-                                    <p class="card-text">PDAC Approval: Yes</p>
-                                    <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                                    </div>
-                                  </div>
-                                
-
-                                 
-                                  <div class="card card-part" id="Plie">
-                                  <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                                  <div class="card-body">
-                                    
-                                      <h5 class="card-title"> Power Knee  </h5>
-                                      <p class="card-text">Manufacturer: Ossur  </p>
-                                      <p class="card-text">L-Codes: 5828, 5845, 5848, 5856, 5859 </p>
-                                      <p class="card-text">HD Code: PKN120007  </p>
-                                      <p class="card-text">Price: $3393.72</p>
-                                      <p class="card-text">Reimbursal: $44582.47.4</p>
-                                      <p class="card-text">Reimbursment Percent: 76%</p>
-                                      <p class="card-text">PDAC Approval: Yes</p>
-                                      <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                                      </div>
-                                    </div>
-                                  
-
-                                   
-                                    <div class="card card-part" id="Plie">
-                                    <img class="card-img-top card-image" src="../images/TK-4P0C.jpg"                   alt="Card image cap">
-                                    <div class="card-body">
-                                      
-                                        <h5 class="card-title"> Genium </h5>
-                                        <p class="card-text">Manufacturer: Otto Bock  </p>
-                                        <p class="card-text">L-Codes: 5828, 5845, 5848, 5850, 5930 </p>
-                                        <p class="card-text">HD Code: 3B1  </p>
-                                        <p class="card-text">Price: $31573.67</p>
-                                        <p class="card-text">Reimbursal: $Unknown</p>
-                                        <p class="card-text">Reimbursment Percent: 76%</p>
-                                        <p class="card-text">PDAC Approval: NO</p>
-                                        <a href="https://www.spsco.com/polycentric-pneumatic-4-bar-knee.html" class="btn btn-primary">SPS</a>
-                                        </div>
-                                      </div>
-                                    
-
+  
+              
+  <!--               End of the Single Axis Category -->
+  <!--               Beginning of the Safety Knees Category -->
+                  
                 
-
-
+                  <a class="secButtons "  id="safeKnee">
+                    Safety Knees
+                  </a>
+  
+                  <nav >
+                    <ul class="nav">
+                      <li>
+                      <a class="indivChoice noShow  safety"  id="safeExt" href="#"> Extension Assist </a>
+                    </li>
+                      <li>
+                      <a class="indivChoice noShow  safety"  id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
+                    </li>
+                      </ul>
+                  </nav>
+  <!--               End of the safety knees category -->
+  <!--               Start of the polycentric knees category -->
+              
+                
+                  <a class="secButtons  "  id="polyKnee">
+                  Polycentric Knees
+                  </a>
+  
+              <nav>
+                <ul class="nav">
+                  <li>
+                    <a class="indivChoice noShow  polycentric"  id="polyHydrau" href="#"> Hydraulic Swing </a>
+                  </li>
+                  <li>
+                    <a class="indivChoice noShow  polycentric"  id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
+                  </li>
+                  <li>
+                    <a class="indivChoice noShow  polycentric"  id="polyPneu" href="#"> Pneumatic Swing</a>
+                  </li>
+                  <li>
+                    <a class="indivChoice noShow  polycentric"  id="polyPneuSwinStanFlex" href="#"> Pneumatic Swing and Stance Flexion</a>
+                  </li>
+                  <li>  
+                    <a class="indivChoice noShow  polycentric"  id="polyHydrSwinStanFlexHigh" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
+                  </li>
+                </ul>
+              </nav>
+  
+  
+  
+  
+  <!--        End of the Polycentric knees category        -->
+  <!--               Start of the MPK Category -->
+              
+                
+  <a class="secButtons  "  id="polyKnee">
+    Microprocessor Knees
+    </a>
+  
+  <nav>
+  <ul class="nav">
+    <li>
+      <a class="indivChoice noShow  mpk"  id="allMPK" href="#"> All MPK </a>
+    </li>
+    <li>
+      <a class="indivChoice noShow  mpk"  id="mpkSwOnly" href="#"> MPK Swing Only</a>
+    </li>
+  </ul>
+  </nav>
+  
+  
+  
+  
+  
+                  <!-- <a class="indivChoice noShow  mpk"  id="MPKChoice" href="#"> Blatchford</a> -->
+  
+                  <a class="secButtons  "  id="miscKnees">
+              Miscellaneous Knees
+                    </a>
+                  
+                  <nav>
+                  <ul class="nav">
+                    <li>
+                      <a class="indivChoice noShow  mpk"  id="allMisc" href="#"> All Miscellaneous Knees </a>
+                    </li>
+                  </ul>
+                  </nav>
+  <!--               End of the MPK category -->
+  
+  
+      </section> 
+  
+  
+      <a id="feetButton" class="toggleOne Feet mainChoice">
+        Feet
+      </a>
+      <section id="feetSection" class="noShow">
+  
+                     <a id="feetOne" class=" secButtons feet"  >
+                      K2 Flexible Keel with Hydraulic multiaxial ankle:     L5968,  L5972                  </a>
+                      <a id="feet2"class="secButtons  feet"  >
+                      K3 Flexwalk with Hydraulic Multiaxial ankle:     L5968,  L5981
+                    </a>
+                      <a id="feet3" class="secButtons  feet"  >
+                      K3 Flexwalk with with Hydraulic Multiaxial ankle and adjustable heel height: L5968, L5981, L5990
+                    </a>
+                      <a class="secButtons  feet" id="feet4"  >
+                      K3 Flexwalk with Hydraulic Multiaxial ankle and Vertical Shock:     L5968,  L5981, L5988
+                    </a>
+                    <a id="feet5" class=" secButtons feet"  >
+                    SACH:     L5971
+                  </a>
+                          <a id="feet6" class=" secButtons feet"  >
+                        K2 Flexible Heel:     L5972
+                      </a>
+                                <a id="feet7"class="secButtons  feet"  >
+                        K2 Flexible Keel with Multiaxial Rotation:     L5972, L5986
+                      </a>
+                          <a id="feet8"class="secButtons  feet"  >
+                      K2 Flexible Keel with axial Rotation & Vertical Shock:     L5972, L5984, L5988
+                    </a>
+                            <a id="feet9" class="secButtons  feet"  >
+                        Microprocessor Feet:     L5973
+                      </a>
+                            <a class="secButtons  feet" id="feet10"  >
+                        Single Axis:     L5974
+                      </a>
+                          <a id="feet11"class="secButtons  feet"  >
+                      Energy Storing:     L5976
+                    </a>
+                      <a id="feet12" class="secButtons  feet"  >
+                      Multiaxial Dynamic Response:     L5979
+                    </a>
+                      <a class="secButtons  feet" id="feet13"  >
+                      Flexfoot:     L5980
+                    </a>
+                    <a id="feet14" class=" secButtons feet"  >
+                    Flexfoot with Multiaxial Ankle:     L5980,  L5986
+                  </a>
+                          <a id="feet15" class=" secButtons feet"  >
+                        Flexwalk:     L5981
+                      </a>
+                                <a id="feet16"class="secButtons  feet"  >
+                        Flexwalk with Multiaxial Ankle:     L5981 L5986
+                      </a>
+                            <a id="feet17" class="secButtons  feet"  >
+                        Vertical Shock with Axial Rotation:     L5984,  L5987
+                      </a>
+                            <a class="secButtons  feet" id="feet18"  >
+                        Vertical Shock with Multiaxial Rotation:     L5986,  L5987
+                      </a>
+                          <a id="feet19" class=" secButtons feet"  >
+                      Vertical Shock:     L5987
+                          <a id="feet20"class="secButtons  feet"  >
+                      Flexwalk with Multiaxial Ankle and Vacuum  :     L5987,  L5986,  L5781
+                    </a>
+                      <a id="feet21" class="secButtons  feet"  >
+                      Coding Group:     L5999 Base Code
+                    </a>
+                      <a class="secButtons  feet" id="feet22"  >
+                      Coding Group:     Miscellaneous
+                    </a>
       </section>
-
-
-
-
-
-
-
-
-    <section>
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">             
-                    <div class="col-4 col-sm-2 offset-1">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="aboutus.html">About</a></li>
-                            <li><a href="#">Sites</a></li>
-                            <li><a href="contactus.html">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-6 col-sm-5 text-center">
-                        <h5>Social</h5>
-                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                    </div>
-                    <div class="col-sm-4 text-center">
-                        <a role="button" class="btn btn-link" href="tel:+16187804206"><i class="fa fa-phone"></i> 1-618-780-4206</a><br />
-                        <a role="button" class="btn btn-link" href="mailto:andmaurer13@gmail.com"><i class="fa fa-envelope-o"></i> andmaurer13@gmail.com</a>
-                    </div>                
-               </div>
-            </div>
-        </footer>
-                
-            </footer>
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-            <script src="../js/px-picker-main.js"></script></body>
-        </html>
+              
+  
+  
+      <a class="mainChoice  toggleTwo"  id="linerButton">
+        Liners
+      </a>
+  
+      <section id="linersSection" class="noShow ">
+  
+                  <a class=" secButtons mpk"  id="pin" > Pin </a>
+  
+                  <a class=" secButtons  mpk"  id="cush" > Cushion </a>
+        
+                  <a class="secButtons   mpk"  id="seal"> Seal-In </a>
+        
+                  <a class=" secButtons  mpk"  id="custom" > Custom </a>
+          
+  
+      </section>
+  
+  
+      <a id="compButton" class="toggleThree mainChoice">
+        Components
+      </a>
+  
+      <section id="componentsSection" class="noShow">
+  
+          <a class=" secButtons  mpk"  id="socks" > Socks  </a>
+        
+          <a class="secButtons   mpk"  id="sleeves"> Sleeves and Sheaths </a>
+  
+          <a class=" secButtons  mpk"  id="components" > Build Components </a>
+  
+      </section>
+  </nav>
+  </main>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Start Here</span>
+  <main class="mainpage" id="itemSectionJS"></main>
+  <main class="mainpage" id="mainpageSectionforJS">
+  
+  
+  <!-- HERE IS WHERE THE JS PORTION OF THE CODE WILL DISPLAY IN THE VIEWPORT -->
+  
+  
+  
+  
+  
+  
+  </main>
+  <!-- K1/K2 4-Bar Knee Section -->
+  
+  
+  
+  
+  
+  
+  
+  
+  <footer class="site-footer">
+      <div class="container">
+          <div class="row">             
+              <div class="col-4 col-sm-2 offset-1">
+                  <h5>Links</h5>
+                  <ul class="list-unstyled">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="aboutus.html">About</a></li>
+                      <li><a href="#">Sites</a></li>
+                      <li><a href="contactus.html">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="col-6 col-sm-5 text-center">
+                  <h5>Social</h5>
+                  <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                  <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                  <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                  <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+              </div>
+              <div class="col-sm-4 text-center">
+                  <a role="button" class="btn btn-link" href="tel:+16187804206"><i class="fa fa-phone"></i> 1-618-780-4206</a><br />
+                  <a role="button" class="btn btn-link" href="mailto:andmaurer13@gmail.com"><i class="fa fa-envelope-o"></i> andmaurer13@gmail.com</a>
+              </div>                
+         </div>
+      </div>
+  
+  
+  </footer>
+  </div>
+  
+  
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="../js/test.js"></script>
+  <script src="../js/px-picker-main.js"></script>
+  <script src="../js/toggleDisplayComponent.js"></script>
+  
+  <script src="../js/tfCardTest.js"></script>
+  <script src="../js/navigator.js"></script>
+  
+  <script type="module" src="../js/kneesComponent.js"></script>
+  <script type="module" src="../js/feetComponent.js"></script>
+  <script type="module" src="../js/linersComponent.js"></script>
+  <script type="module" src="../js/componentsComponent.js"></script>
+  <script type="module" src="../js/favoritesComponent.js"></script>
+  <script>
+    function favorites(favorited){
+  console.log("favorited", favorited)
+  
+  let favoritesCard = document.querySelector('#itemSectionJS');
+  
+  let data = JSON.parse(localStorage.getItem("array")); 
+  console.log(data,"data");
+  let favorite = data;
+  console.log(favorite,"favoritedata");
+  
+  
+  favorite.forEach(component => {    
+          favoritesCard.innerHTML = favoritesCard.innerHTML +
+           `<div class="card card-margin">
+              <div class="card-header">
+                  <h4> ${component.name} </h4>
+                  <div class="card-body">
+                  <img class="card-image" src="${component.image}"></img>
+                  <h5> Product Description </h5>
+                  <div id="${component.manufacturer}"> Manufacturer: ${component.manufacturer}</div>
+                  <br>
+                  <h5><u> L-Codes </u></h5>
+                  <div class="lcodes">
+                  <div id="${component.lcode1}">${component.lcode1}</div>
+                  <div id="${component.lcode2}">${component.lcode2}</div>
+                  <div id="${component.lcode3}">${component.lcode3}</div>
+                  <div id="${component.lcode4}">${component.lcode4}</div>
+                  <div id="${component.lcode5}">${component.lcode5}</div>
+                  <div id="${component.lcode6}">${component.lcode6}</div>
+                  </div>
+      
+                  <div id="">HD Code: ${component.hdcode}</div>
+      
+                  <div id="${component.cost}">Price: $${component.cost}</div>
+                  <div id="${component.reimbursement}">Typical Reimbursement: $${component.reimbursement}</div>
+                  <div id="${component.percent}">${component.percent}</div>
+                  <div id="${component.pdac}${component.hdcode}">PPDAC Approval: ${component.pdac}</div>
+      
+      
+                  <a class="btn btn-primary" href="${component.link}" target="_blank">${component.linkname}</a>
+                  <input type="button" class="additionSelectButton"></input>
+      
+                  </div>
+              </div>
+          </div>`;
+          console.log("Created", component.card, "Cards");
+      
+      });
+  }
+  </script>
+  
+  <!-- <script type="module" src="../js/selectItemComponent.js"></script> -->
+  
+  
+  <script  type="module" src="../js/jsRouterComponent.js"></script>
+  <script type="module" src="../js/cardNavigator.js"></script>
+  
+  
+  
+  
+  
+  </body>
+  </html>

@@ -43,8 +43,8 @@ function linerCard(array){
 
                 <div>HD Code: ${component.hdcode}</div>
 
-                <div>Price: $${component.cost}</div>
-                <div>Typical Reimbursement: $${component.reimbursement}</div>
+                <div>Price: ${component.cost}</div>
+                <div>Typical Reimbursement: ${component.reimbursement}</div>
                 <div>${component.percent}</div>
                 <div>PPDAC Approval: ${component.pdac}</div>
 

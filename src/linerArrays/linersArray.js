@@ -48,7 +48,6 @@ const lockLiners =
 {"manufacturer":"ALPS SOUTH LLC","name":"AK Smart Seal Locking","lcode":"L5673" ,"hdcode":"SADT/SBDT-LINER","price":"$160.27","reimbursement":"$709.62 ","percent":"23%"},
 {"manufacturer":"ST&G USA CORP","name":"Hydro Mag Locking Coated Hydro Locking","lcode":"L5673" ,"hdcode":"3030INF-LINER","price":"$164.91","reimbursement":"$709.62 ","percent":"23%"},
 {"manufacturer":"ST&G USA CORP","name":"Hydro Mag Locking Fabric Premier Locking","lcode":"L5673" ,"hdcode":"3040INF-LINER","price":"$164.91","reimbursement":"$709.62 ","percent":"23%"},
-{"manufacturer":"ST&G USA CORP","name":"BK/TT Mag Coated Hydro Locking","lcode":"L5673" ,"hdcode":"3030-25","price":"$164.91","reimbursement":"$709.62 ","percent":"23%"},
 {"manufacturer":"ST&G USA CORP","name":"BK/TT Mag Fabric Premier Locking","lcode":"L5673" ,"hdcode":"3040-25","price":"$164.91","reimbursement":"$709.62 ","percent":"23%"},
 {"manufacturer":"WILLOWWOOD GLOBAL, LLC","name":"SmartTemp Locking","lcode":"L5673" ,"hdcode":"T35","price":"$167.27","reimbursement":"$709.62 ","percent":"24%"},
 {"manufacturer":"WILLOWWOOD GLOBAL, LLC","name":"AK SmartTemp Locking","lcode":"L5673" ,"hdcode":"T440/T442-LINER","price":"$167.27","reimbursement":"$709.62 ","percent":"24%"},
