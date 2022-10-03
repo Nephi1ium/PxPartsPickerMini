@@ -384,14 +384,18 @@
 
 
 console.log("step 1");
-console.log(keyed.id, "keyed object")
+console.log(keyed.id, "keyed object");
+console.log(ident.id, "ident object");
 
-localStorage.setItem(keyed.id, ident.outerHTML);
+let keyedString = String(keyed.id);
+console.log(keyedString, "string keyed object");
 
-let thisOne = localStorage.getItem("Card Item One");
+localStorage.setItem(keyedString, ident.outerHTML);
+
+let thisOne = localStorage.getItem(keyedString);
 console.log(thisOne, "this one")
 
-document.getElementById('secondContainer').innerHTML = thisOne;
+document.getElementById('itemSectionJS').innerHTML = thisOne;
 }
 
 </script>

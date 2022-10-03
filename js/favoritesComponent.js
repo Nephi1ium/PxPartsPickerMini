@@ -4,7 +4,8 @@ function favorites(ident, keyed){
 
 
     console.log("step 1");
-    console.log(keyed.id, "keyed object")
+    console.log(keyed.id, "keyed object");
+    console.log(ident.id, "ident object");
 
     localStorage.setItem(keyed.outerHTML, ident.outerHTML);
 
@@ -12,6 +13,7 @@ function favorites(ident, keyed){
     console.log(thisOne, "this one")
 
     document.getElementById('secondContainer').innerHTML = thisOne;
+
 }
 
 export {favorites};
