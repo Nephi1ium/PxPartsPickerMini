@@ -54,10 +54,10 @@ function kneeCard(array){
 
     data.forEach(component => {    
         kneesCard.innerHTML = kneesCard.innerHTML +
-         `<div class="card card-margin" id="${component.hdcode}">
+         `<div class="card card-margin" id="${component.valAssign}">
             <div class="card-header">
                 <h4 id=""> ${component.name} </h4>
-                <a class="kneeClick btn btn-primary" onclick="favorites(${component.hdcode}, ${component.hdcode})" > Add To Favorites </a>
+                <a class="kneeClick btn btn-primary" onclick="favorites(${component.valAssign}, ${component.valAssign})" > Add To Favorites </a>
                 <div class="card-body">
                 <img class="card-image" src="${component.image}"></img>
                 <h5> Product Description </h5>
