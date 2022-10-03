@@ -20,6 +20,7 @@ function componentCard(array){
          `<div class="card list" id="${component.name}">
             <div class="card-header">
                 <h4> ${component.name} </h4>
+                <a class="kneeClick btn btn-primary" onclick="favorites(${component.hdcode})" > Add To Favorites </a>
                 <a class="btn btn-primary" value="">+</a>
 
                 <div class="card-body">

@@ -26,6 +26,7 @@ function linerCard(array){
          `<div class="card card-margin">
             <div class="card-header">
                 <h4> ${component.name} </h4>
+                <a class="kneeClick btn btn-primary" onclick="favorites(${component.hdcode})" > Add To Favorites </a>
                 <div class="card-body">
                 <img class="card-image" src="${component.image}"></img>
                 <h5> Product Description </h5>
