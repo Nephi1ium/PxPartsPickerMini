@@ -205,53 +205,7 @@ body {
 
 
 
-/* .nav {
-  display: block;
-}
-  .secButtons {
 
-    box-shadow: 0px 9px 4px 1px #276873;
-    background:linear-gradient(to bottom, #59aeb1 5%, #408c99 100%);
-    background-color:#59aeb1;
-    border-radius:2px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:4vw;
-    font-weight:bold;
-    padding: 10px 5px;
-    min-width: 15vw;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #3d768a;
-    box-sizing: border-box;
-    justify-content: center;
-
-    
-  }
-
-  .indivChoice {
-
-    box-shadow: 0px 9px 4px 1px #276873;
-    background:linear-gradient(to bottom, #3f7e80 5%, #408c99 100%);
-    background-color:#3f7e80;
-    border-radius:2px;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:3vw;
-    font-weight:bold;
-    padding: 10px 5px;
-    min-width: 15vw;
-    text-decoration:none;
-    text-shadow:0px 1px 0px #3d768a;
-    box-sizing: border-box;
-    justify-content: center;
-
-    
-  } */
-  
   .card-img-top {
     border-radius: 25%;
     max-width: 50%;
@@ -333,6 +287,121 @@ body {
 .item:hover img {
   size: 15%; }
 
+  .mainNavigation{
+    width:100%;
+
+    text-align: center;
+    position: relative;
+}
+
+  .mainNavigation{
+    width:100%;
+    /* padding: 2%; */
+    /* margin: 4px 6px; */
+    text-align: center;
+    position: relative;
+    height: 4vmax;
+
+}
+#mainNavigation{    margin-bottom: .2vmax;}
+.mobileNav{
+  display: none;
+}
+.hamButton{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -348,6 +417,7 @@ body {
   justify-items: center;
 
   }
+  .mobileNavigationBut{display: none;}
   .card {
     display: block; 
     margin-bottom: 20px;
@@ -362,179 +432,95 @@ body {
     overflow: hidden;
     overflow-y: scroll;
   }
-  }
-  /* .kOne{
-    display: none;
-  }
-  
-  .singleAxis {
-    display: none;
-  }
-  
-  .safety {
-    display: none;
-  }
-  
-  .polycentric{
-    display: none;
-  }
-  
-  .mpk{
-    display: none;
-  }
-   #kOneTwo{
-    display: none;
-  } 
-  
-   #MPK {
-    display: none;
-  }
-  
-  #safeKnee{
-    display: none;
-  }
-  
-  #polyKnee {
-    display: none;
-  }
-  
-  #singleAxis {
-    display: none;
-  /* }  */
-  
-  /* #polyPneuSwinStanFlex{
-    display: none;
-  }
-  
-  #polyHydrSwinStanFlexHigh {
-    display: none;
-  }
-  
-  #fric {
-    display: none;
-  }
-  
-  #fricMan {
-    display: none;
-  }
-  #fricExt {
-    display: none; }
-  
-    #fricExtMan{
-      display: none;
-    }
-    #fricExtStanChoi{
-      display: none;
-    }
-  
-    #fricExtStanLockChoi{
-      display: none;
-    }
-  
-    #singAxManLockChoi{
-      display: none;
-    }
-  
-    #singAxPneuFricChoi{
-      display: none;
-    }
-    #singAxHydStanSwinChoi{
-      display: none;
-    }
-    #safeExtChoi{
-      display: none;
-    }
-    
-    #safeFlexExtChoi {
-      display: none;
-    }
-  
-    #polyHydrauChoi {
-      display: none;
-    }
-    
-    #polyHydrauStanChoi {
-      display: none;
-    }
-    #polyPneuChoi {
-      display: none;
-    }
-  
-    #fricExtStan{
-      display: none;
-    }
-  
-    #fricExtStanLock{
-      display: none;
-    }
-  
-    #singAxManLock{
-      display: none;
-    }
-  
-    #singAxPneuFric{
-      display: none;
-    }
-    #singAxHydStanSwin{
-      display: none;
-    }
-    #safeExt{
-      display: none;
-    }
-    
-    #safeFlexExt {
-      display: none;
-    }
-  
-    #polyHydrau {
-      display: none;
-    }
-    
-    #polyHydrauStan {
-      display: none;
-    }
-    #polyPneu {
-      display: none;
-    }
-  
-    #KnSeven {
-      display: none;
-    } 
-
-    #mpkKnee {
-      display: none;
-    } */
-  /* .mainChoice{
-    height: 20vh;
-    width: 20vw;
+  .mobileNav{
     display: block;
-    position: relative;
-    width: 100px;
-    height: 85px;
-    border-radius: 25%;
-    margin: 20px;
-    background-color: #39a;
-    background-image: linear-gradient(to right, #08A 0%, #3AD 20%, #3AD 80%, #5CF 100%);
-    box-shadow: 0 2px 10px rgba(0, 0, 31, 0.75);
-    cursor: pointer;
-  } */
-
-  /* .mainChoice{
-  }
-  .indivChoice {
-
-  }
-
-  .subChoice {
- 
-  } */
-
-
-  /* @media (max-width: 800px) { 
-    //your code goes here
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "homeButtonMobile"
+    "aboutButtonMobile"
+    "storiesButtonMobile"
+    "galleryButtonMobile";
+    width: 51.5vmax;
+    margin-bottom: 1vmax;
+background-color: #34b4eb;
 }
 
-div{ 
-    height: 50vh;//50% of the viewport (window) height
-    width: 40vw;//40% of the viewport (window) width
-} */
+.allNav{
+    position: relative;
+}
+
+#homeButtonMobile{
+    grid-area: homeButtonMobile;
+}
+
+#aboutButtonMobile{
+    grid-area: aboutButtonMobile;
+}
+#storiesButtonMobile{
+    grid-area: storiesButtonMobile;
+}
+#galleryButtonMobile{
+    grid-area: galleryButtonMobile;
+}
+  .mainNavigation .mainNavigationBut {
+    background-color: black; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+
+}
+.mainNavigation{
+  width:100%;
+  /* padding: 2%; */
+  /* margin: 4px 6px; */
+  text-align: center;
+  position: relative;
+
+}
+.showMobNavItems{
+  display:flex;
+  width: 3vmax;
+  height: auto;
+  width: 4.2vmax;
+  height: 3vmax;
+  /* position: fixed; */
+  right: 1vmax;
+  background-color: transparent; 
+  border: none;
+}
+.mobileNavigationBut{
+  font-size: 1vmax;
+  color:#08719e;
+}
+.showMobNavItems{
+  display:flex;
+  width: 3vmax;
+  height: auto;
+  width: 14vmax;
+  height: 4vmax;
+  /* position: fixed; */
+  right: 1vmax;
+  background-color: transparent; 
+  border: none;
+  text-decoration: none;
+}
+.hamButton{
+  background-image: url(../images/icons/icons8-menu-30.png);
+  background-color: transparent; 
+  background-repeat: no-repeat; 
+  width: 4.2vmax;
+  height: 3vmax;
+  position: relative;
+  margin-left: 2vmax;
+  right: 1vmax;
+  min-width: 32px;
+  border: none;
+  display: block;
+  padding: 0;
+}
+.fullSizeNav{display: none;}
+  }
+  

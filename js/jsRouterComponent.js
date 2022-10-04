@@ -2,12 +2,17 @@
 // import {componentSection, componentCard} from "./componentsComponent.js";
 // import { feetCard } from "./feetComponent.js";
 // import {kneeCard} from "./kneesComponent.js"
+import {deployNavigator} from "./topNavigationComponent.js";
 
 
 
+window.addEventListener('load', navigation());
 
+console.log("The router component is linked");
 
-
+function navigation(){
+  deployNavigator();
+}
 
 function compSecDisplay() {
   // componentSection();
