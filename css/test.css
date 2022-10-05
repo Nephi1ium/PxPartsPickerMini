@@ -311,6 +311,53 @@ body {
   display: none;
 }
 
+.nav-item{
+  text-decoration: none;
+margin: 0 .3vmax;
+}
+
+.fullSizeNav{
+  background-color: #34b4eb;
+  display: block;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "homeButt"
+  "TFPinBut"
+  "TFSucBut"
+  "TTPinBut"
+  "TTSucBut"
+  "PDFBut"
+  "VCareBut";
+  width: 99vmax;
+  height:4vmax;
+background-color: #34b4eb;
+font-size: 2vmax;
+}
+
+#homeButt{
+  grid-area: homeButt;
+}
+#TFPinBut{
+  grid-area: TFPinBut;
+}
+#TFSucBut{
+  grid-area: TFSucBut;
+}
+#TTPinBut{
+  grid-area: TTPinBut;
+}
+#TTSucBut{
+  grid-area: TTSucBut;
+}
+#PDFBut{
+  grid-area: PDFBut;
+}
+#VCareBut{
+  grid-area: VCareBut;
+}
+
+
 
 
 
