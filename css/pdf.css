@@ -160,20 +160,25 @@
 .btn {
     margin: 15px;
 }
-
+#tfPDFDocMobile{
+    display: none;
+}
 @media screen and (max-width: 450px) {
-    .box {
+    #tfPDFDocMobile{
+        display: initial;
+    }
+    .boxMobile {
     
-        max-width: 200px;
-        max-height: 250px;
-        height: 250px;
-        width: 200px;
+        max-width: 300px;
+        max-height: 350px;
+        height: 350px;
+        width: 300px;
         margin: auto;
         margin-bottom: 6px;
         /* padding: 7px; */
         border: 1px solid #eee;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-        font-size: 4px;
+        font-size: 8px;
         line-height: 6px;
         font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
         color: #555;
@@ -182,17 +187,17 @@
         /* padding: .5rem; */
         ;
     }
-    .box .top {
+    .boxMobile .topMobile {
         display: grid;
-        max-width: 183px;
         width: 100%;
         max-height: 100px;
-        margin: 2px;
+        margin-left: 2px;
+        margin-top: 2px;
         height: 100%;
         padding: 0;
         border: none;
         /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
-        font-size: 4px;
+        font-size: 8px;
         /* line-height: 24px; */
         font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
         color: #555;
@@ -203,19 +208,18 @@
         grid-template-areas: "title . . information"
         "information1 information1 . information2";
     }
-    .box .body {
+    .boxMobile .bodyMobile {
         display: grid;
-        max-width: 200px;
         /* width: 190px; */
         width: 100%;
-
-        max-height: 150px;
-        height: 100%;
+        margin-left: 2px;
+    
+        height: 80%;
         /* margin-top: 4px; */
         /* padding: 0; */
         border: none;
         /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
-        font-size: 4px;
+        font-size: 12px;
         /* line-height: 24px; */
         font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
         color: #555;
@@ -229,7 +233,93 @@
         "item4 item5 item6 item7"
     ;
     }
-    .information2{
+
+.fonty{
+    font-size: 6px;
+}
+    #hiddenMobilePDFOuter {
+        overflow: hidden;
+        position: relative;
+      }
+      #hiddenMobilePDFInner {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        right: -50px;
+        top: 50px;
+      }
+
+      .box {
+    
+        max-width: 750px;
+        max-height: 900px;
+        height: 900px;
+        width: 750px;
+        margin: auto;
+        margin-bottom: 25px;
+        padding: 5px;
+        border: 1px solid #eee;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        font-size: 16px;
+        line-height: 24px;
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+     
+        grid-gap: 1rem;
+        ;
+    }
+    .box .top {
+        display: grid;
+        max-width: 750px;
+        /* width: 733px; */
+        width: auto;
+    
+        max-height: 300px;
+        /* margin: 2px; */
+        height: 100%;
+        /* padding: 0; */
+        border: none;
+        /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+        font-size: 16px;
+        /* line-height: 24px; */
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+        grid-gap: 1rem;
+        /* padding: 0; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas: "title . . information"
+        "information1 information1 . information2"
+     ;
+    }
+    .box .body {
+        display: grid;
+        max-width: 750px;
+        width: 100%;
+        max-height: 500px;
+        height: 100%;
+        /* margin-top: 60px; */
+        /* padding: 0; */
+        border: none;
+        /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+        font-size: 16px;
+        /* line-height: 24px; */
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+        grid-gap: .5rem;
+        /* padding: 2px; */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "item2 item1 item1 item3"
+        "item2 . . item3"
+        "item4 item5 item6 item7"
+    ;
+    }
+
+
+    
+.information2{
     grid-area: information2;
     text-align: right;
 }
@@ -255,7 +345,6 @@
 .item1{
     grid-area: item1;
 
-    font-size: 4px;
     text-align: center;
 }
 
@@ -263,21 +352,21 @@
     grid-area: item2;
     text-align: center;
 
-    font-size: 4px;
+ 
 }
 
 .item3{
     grid-area: item3;
     text-align: center;
 
-    font-size: 4px;
+ 
 }
 
 .item4{
     grid-area: item4;
     text-align: center;
 
-    font-size: 4px;
+ 
     height: 62px;
 
 }
@@ -286,21 +375,21 @@
     grid-area: item5;
     text-align: center;
 
-    font-size: 4px;
+ 
 }
 
 .item6{
     grid-area: item6;
     text-align: center;
 
-    font-size: 4px;
+ 
 }
 
 .item7{
     grid-area: item7;
     text-align: center;
 
-    font-size: 4px;
+ 
 }
 
 .title {

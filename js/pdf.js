@@ -1,24 +1,5 @@
 
 
-
-// For this one, set a series of parameters that have to be met in order for the specific function to execute, and the particular PDF document be generated.
-// ie. 
-
-// const { default: jsPDF } = require("jspdf");
-
-// function linerReplacement(){
-//     let x = document.getElementById(#SOMEID);
-
-//     if (x){
-//         return(`<div>This is the start of the PDF created to show all the pertinent information as well as the liners, but only the liners. `)
-//     }
-// }
-
-// function getLocalStoreData(){
-//     let firstArray = JSON.parse(localStorage.infoArr)
-//     console.log(firstArray);
-// }
-
 let subtfPDFDocument = document.querySelector("#genPDF");
 let downPDFDocument = document.querySelector("#downPDF");
 
@@ -183,7 +164,145 @@ function transFemoralProsthesis(){
         
 document.getElementById("tfPDFDoc").innerHTML = transFemPDF;
     
-}
+
+
+const transFemPDFMobile =
+        `
+            <div class="boxMobile">
+            <div class="topMobile">
+                <div  >
+                    <img class="title" src="../images/prosthetic_logo.jpg" />
+                </div>
+
+                <div class="information">
+                    Encounter #: ${encounterNumber}<br />
+                    Created: ${dateOfCreate.toLocaleDateString()} <br />
+                    Due: Set from first page
+                </div>
+
+                <div class="information1">
+                    Clinician Name: ${clinicianName}<br />
+                    Billed to PCC: <br />
+                    PCC Number: ${clinicLocation} <br />
+                </div>
+                
+                <div class="information2"> 
+                    Acme Corp.<br />
+                    John Doe<br />
+                    john@example.com
+                </div>
+            </div>
+
+
+<div class="bodyMobile">
+<div class="fonty item1">
+				<div class="heading">
+                    <p>Patient Name: ${patientName}</p>
+				</div>
+                        <ul>
+                            <li><div>Date of Birth: ${dateOfBirth}</div></li>
+    <!-- I want the age to show in parenthesis right next to the DOB -->
+                            <li><div>Weight: ${patientWeight} lbs</div></li>
+                            <li><div>Height: ${patientHeight} inches</div></li>
+                            <li><div>Amputation Side</div></li>
+                            <li><div>Amputation Level</div></li>
+                            <li><div>K Level: ${klevel}</div></li>
+
+
+                        </ul>
+</div>
+<div class="fonty item2">
+				<div class="heading">
+                    <p>Foot Selection</p>
+				</div>
+
+                <ul>
+                    <li><div>HD Part Number</div></li>
+                    <li><div>Manufacturer</div></li>
+                    <li><div>Name</div></li>
+                    <li><div>Size</div></li>
+                    <li><div>Thickness</div></li>
+                    <li><div>Profile</div></li>
+                    <li><div>Color</div></li>
+                    <li><div>Quantity</div></li>
+                </ul>
+</div>
+<div class="fonty item3">
+
+                <div class="heading">
+                    <p>Knee Selection</p>
+                </div>
+
+
+                <ul>
+                    <li><div>HD Part Number</div></li>
+                    <li><div>Manufacturer</div></li>
+                    <li><div>Name</div></li>
+                    <li><div>Size</div></li>
+                    <li><div>Thickness</div></li>
+                    <li><div>Profile</div></li>
+                    <li><div>Color</div></li>
+                    <li><div>Quantity</div></li>
+                </ul>
+
+</div>
+<div class="fonty item4">
+                <div class="heading">
+                    <p>Liners</p>
+                </div>
+
+                <ul>
+                    <li><div>HD Part Number</div></li>
+                    <li><div>Manufacturer</div></li>
+                    <li><div>Name</div></li>
+                    <li><div>Size</div></li>
+                    <li><div>Thickness</div></li>
+                    <li><div>Profile</div></li>
+                    <li><div>Color</div></li>
+                    <li><div>Quantity</div></li>
+                </ul>
+        
+
+
+</div>
+<div class="fonty item5">
+                <div class="heading cent">
+                    <p> Socks </p>
+                </div>
+                
+                <ul>
+                    <li>Price</li>
+                    <li></li>
+                </ul>
+</div>
+
+<div class="fonty item6">    
+
+                <div class="heading cent">
+                    <p> Sheaths </p>
+                </div>
+                <ul>
+                    <li>Price</li>
+                    <li></li>
+                </ul>
+</div>
+<div class="fonty item7">
+                <div class="heading ">
+                    <p> Sleeves </p>
+                </div>
+                    <ul>
+                        <li>Price</li>
+                        <li></li>
+                    </ul>
+                
+</div> 
+</div>
+</div>`;
+        
+        
+document.getElementById("tfPDFDocMobile").innerHTML = transFemPDFMobile;
+    
+};
 
 
 
@@ -192,7 +311,11 @@ function downloadPDF (){
     // element.style.display = 'block'  
     // html2pdf(element);
 
-    const element = document.getElementById('PDFDocument');
+    
+    
+    // const element = document.getElementById('PDFDocument');
+
+    const element = document.getElementById('tfPDFDoc');
 let opt = {
   margin:       [.2,0,0,.2],
   filename:     `${patientName}_Order.pdf`,
