@@ -15,13 +15,15 @@
     <link rel="stylesheet" href="../css/horizontal_card.css">
 
     <link rel="stylesheet" href="../css/navigator.css">
+    <link rel="stylesheet" href="../css/mainPage.css">
+
 
 
     <title>Prosthetic Parts Picker Webpage</title>
 </head>
 
 
-<body>
+<body id="homepageBody">
     <!-- This modal may be used in later versions in order to differentiate versions of the webpage between hanger and non hanger individuals 
     <div id="empVer" class="modal fade" role="choice">
         <div class="row">
@@ -68,136 +70,88 @@
     
    
 
-    
-    <div class="container p-3">
-        <div class="row">
-            <div class="col pt-3">
-                <h2>Step 1: Enter Your Information</h2>
-            </div>
-            <div class="col-sm-12 col-md-6 mx-auto">
-                <form class="">
-                    <div class="form-group">
+        <main class="box">
+            <aside id="step1" class="innerBox">
+                <h2 id="step1head">Step 1: Enter Your Information</h2>
+                <!-- <div id="step1inner"> -->
+                    <div class="form-group" id="step1one">
                         <label for="clinName">Your Name:</label>
                         <input type="text"  id="clinName" class="form-control" required>
                     </div>         
-                    <div class="form-group">
+                    <div class="form-group" id="step1two">
                         <label for="clinLoc">PCC Number</label>
                         <input type="text"  id="clinLoc" class="form-control" required>
                     </div>
-                    <fieldset class="form-group">
-                        <div class="row">
-                            <legend class="col-form-label col-12 pt-0"> Shipping PCC Different than location-</legend>
+                    <fieldset class="form-group" id="step1three">
+                            <h3> Shipping PCC Different than location-</h3>
                             <div class="col">
-                                <a role="button" class="btn-secondary btn btn info" data-target="#pccModal" data-toggle="modal">Yes</a>
-                                <a role="button" class="btn-secondary btn btn info" data-target="#nopccModal" data-toggle="modal">No</a> <!--This button needs a value added that will cause a field to auto fill in the PDF with the same value entered in the #clinLoc field-->
-                            </div>
+                                <a role="button" class="btn-secondary btn btn info">Yes</a>
+                                <a role="button" class="btn-secondary btn btn info">No</a> <!--This button needs a value added that will cause a field to auto fill in the PDF with the same value entered in the #clinLoc field-->
                             </div>
                     </fieldset>
-                </form>
-            </div>
-        </div>
-    </div>
+                <!-- </div> -->
+            </aside>
 
+            <aside id="step2" class="innerBox">
 
-    <div class="container p-3">
-        <div class="row">
-            <div class="col pt-3">
-                <h2>Step 2: Enter Your Patients Information</h2>
-            </div>
-            <div class="col-sm-12 col-md-6 mx-auto">
-                <form>
-                    <div class="form-group">
+                <h2 id="step2head">Step 2: Enter Your Patients Information</h2>
+
+                <!-- <form id="step2inner"> -->
+                    <div class="form-group" id="ptNamegroup">
                         <label for="ptName">Patients Name:</label>
                         <input type="text"  id="ptName" class="form-control" required>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group" id="dobgroup">
                         <label for="ptDOB"> Date of Birth </label>
                         <input type="date" name="dob" id="ptDOB" required> 
                     </div>          
-                    <div class="form-group">
+                    <div class="form-group" id="encgroup">
                         <label for="encN">Encounter Number</label>
                         <input type="text"  id="encN" class="form-control" required>
                     </div>
-                    <div class="form-check form-check-inline">
+                    <div class="form-check" id="klevelgroup">
                         <input class="form-check-input" name="kLevel" type="radio" id="kOne" value="K1">
                         <label class="form-check-label" for="k1">K1</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+
+
                         <input class="form-check-input" name="kLevel" type="radio" id="kTwo" value="K2">
                         <label class="form-check-label" for="k2">K2</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+
+
                         <input class="form-check-input" name="kLevel" type="radio" id="kThree" value="K3" >
                         <label class="form-check-label" for="k3">K3<label>
-                    </div>
-                    <div class="form-check form-check-inline">
+
                         <input class="form-check-input" name="kLevel" type="radio" id="kFour" value="K4" >
                         <label class="form-check-label" for="k4">K4<label>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col ">
-                            <label for="ptWeight" aria-describedby="ptWeightSub">Weight:</label>
-                            <input type="text"  id="ptWeight" class="form-control" required>
-                            <small id="ptWeightSub">In Pounds</small>
-                        </div>
-                        <div class="form-group col">
-                            <label for="ptHeight" aria-describedby="ptHeightSub">Height:</label>
-                            <input type="text"  id="ptHeight" class="form-control" required>
-                            <small id="ptHeightSub">In Inches</small>
-                        </div>   
-                    </div>  
-                </form> 
-            </div>
-            <div class="col-sm-12 col-md-6 mx-auto">
+
+                    <div class="form-group" id="weightgroup">
+                        <label for="ptWeight" aria-describedby="ptWeightSub">Weight:</label>
+                        <input type="text"  id="ptWeight" class="form-control" required>
+                        <small id="ptWeightSub">In Pounds</small>
+                    </div>
+                    <div class="form-group" id="heightgroup">
+                        <label for="ptHeight" aria-describedby="ptHeightSub">Height:</label>
+                        <input type="text"  id="ptHeight" class="form-control" required>
+                        <small id="ptHeightSub">In Inches</small>
+                    </div>   
+                <!-- </form>  -->
+
+            <div class="submitSection" id="submitSection">
                 <label for="subFirstPage">Click to save your patient information: </label>
                 <button type="submit" id="subFirstPage" class="btn btn-secondary "> Save </button>
             </div>
-        </div>
-    </div>
+    </aside>
 
-    <div class="container p-3">
-        <div class="row">
-            <div class="col-sm-12, col-md-4">
-            </div>
-        </div>
-    </div>
-        <div class="container">
-            <div class="row">
-                <div class="col mx-auto">
-                    <h2>Step 3: Pick One</h2>
-                </div>
-            </div>
-        </div>
 
-        <div class="container p-5">
-            <div class="row">
-                <div class="col-sm mt-4">
-                    <button class="btn btn-primary btn-lg btn-block" type="button"  data-toggle="collapse" data-target="#collapseTT" aria-controls="collapseTT" aria-expanded="false">Trans-Tibial</button>
-                
-                        <div class="collapse" id="collapseTT">    
-                                <div class="card card-body">      
-                                <button type="button"  class=" cardDropdown" onclick="document.location='html/px-picker-ttsuction.html'">Trans-Tibial Suction</button>
-                                </div>
-                                <div class="card card-body"> 
-                                <button type="button"   class=" cardDropdown " onclick="document.location='html/px-picker-ttpin.html'">Trans-Tibial Pin</button>
-                                </div>
-                        </div>  
-                </div>
-                <div class="col-sm mt-4">
-                    <button class="btn btn-primary btn-lg btn-block " type="button"  data-toggle="collapse" data-target="#collapseTF" aria-controls="collapseTF" aria-expanded="false">Trans-Femoral</button>
-                        <div class="collapse" id="collapseTF">   
-                                <div class="card card-body">      
-                                <button type="button"  class="  cardDropdown" onclick="document.location='html/px-picker-tfsuction.html'">Trans-Femoral Suction</button>
-                                </div>
-                                <div class="card card-body"> 
-                                <button type="button"   class=" cardDropdown" onclick="document.location='html/px-picker-tfpin.html'">Trans-Femoral Pin</button>
-                                </div>
-                        </div>  
-                </div>
-            </div>
-        </div> 
-        
-
+    <aside id="step3" class="innerBox">
+        <h2 id="step3head">Step 3: Pick One</h2>
+        <!-- <div id="step3inner"> -->
+            <button id="step3but1" class="btn btn-primary btn-lg btn-block " type="button" >Trans-Femoral</button>
+            <button id="step3but2" class="btn btn-primary btn-lg btn-block " type="button" >Trans-Tibial</button>
+        <!-- </div> -->
+    </aside>
+</main>
         
         <footer class="site-footer">
             <div class="container">
@@ -289,7 +243,8 @@
 
 
         
-        
+        <script  type="module" src="../js/jsRouterComponent.js"></script>
+
         <script src="../js/index.js"></script>
 
 </body>

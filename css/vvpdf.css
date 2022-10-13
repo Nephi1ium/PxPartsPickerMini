@@ -125,7 +125,7 @@ text-align: right;
     color: #555;
     grid-gap: 1rem;
     padding: 0;
-    grid-template-columns: c;
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas: "title . . information"
     "information1 information1 . information2";

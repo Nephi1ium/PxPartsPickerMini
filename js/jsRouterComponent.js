@@ -12,6 +12,7 @@ console.log("The router component is linked");
 
 function navigation(){
   deployNavigator();
+  console.log("navigator deployed");
 }
 
 function compSecDisplay() {
