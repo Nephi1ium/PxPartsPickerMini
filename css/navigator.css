@@ -98,8 +98,122 @@ color:aliceblue
     padding: 16px;
   }
 
+  .mainNavigation{
+    width:100%;
+
+    text-align: center;
+    position: relative;
+}
+
+  .mainNavigation{
+    width:100%;
+    /* padding: 2%; */
+    /* margin: 4px 6px; */
+    text-align: center;
+    position: relative;
+    height: 4vmax;
+
+}
+#mainNavigation{    margin-bottom: .2vmax;}
+.mobileNav{
+  display: none;
+}
+.hamButton{
+  display: none;
+}
+
+.nav-item{
+  text-decoration: none;
+margin: 0 .3vmax;
+}
+
+.fullSizeNav{
+
+  display: block;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "homeButt"
+  "TFPinBut"
+  "TFSucBut"
+  "TTPinBut"
+  "TTSucBut"
+  "PDFBut"
+  "VCareBut";
+  width: 99vmax;
+  height:4vmax;
+font-size: 2vmax;
+}
+
+#homeButt{
+  grid-area: homeButt;
+}
+#TFPinBut{
+  grid-area: TFPinBut;
+}
+#TFSucBut{
+  grid-area: TFSucBut;
+}
+#TTPinBut{
+  grid-area: TTPinBut;
+}
+#TTSucBut{
+  grid-area: TTSucBut;
+}
+#PDFBut{
+  grid-area: PDFBut;
+}
+#VCareBut{
+  grid-area: VCareBut;
+}
+
+
 
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 450px) {
     .itemNavigator {padding-top: 15px;}
     .itemNavigator a {font-size: 18px;}
@@ -113,5 +227,110 @@ color:aliceblue
       transition: 0.3s;
     }
 
+    .mobileNavigationBut{display: none;}
 
+
+
+    .mobileNav{
+      display: block;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "homeButtonMobile"
+      "aboutButtonMobile"
+      "storiesButtonMobile"
+      "galleryButtonMobile";
+      width: 51.5vmax;
+      margin-bottom: 1vmax;
   }
+  
+  .allNav{
+      position: relative;
+  }
+  
+  #homeButtonMobile{
+      grid-area: homeButtonMobile;
+  }
+  
+  #aboutButtonMobile{
+      grid-area: aboutButtonMobile;
+  }
+  #storiesButtonMobile{
+      grid-area: storiesButtonMobile;
+  }
+  #galleryButtonMobile{
+      grid-area: galleryButtonMobile;
+  }
+    .mainNavigation .mainNavigationBut {
+      background-color: black; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: none;
+  
+  }
+  .mainNavigation{
+    width:100%;
+    /* padding: 2%; */
+    /* margin: 4px 6px; */
+    text-align: center;
+    position: relative;
+  
+  }
+  .showMobNavItems{
+    display:flex;
+    width: 3vmax;
+    height: auto;
+    width: 4.2vmax;
+    height: 3vmax;
+    /* position: fixed; */
+    right: 1vmax;
+    background-color: transparent; 
+    border: none;
+  }
+  .mobileNavigationBut{
+    font-size: 1vmax;
+    color:#08719e;
+  }
+  .showMobNavItems{
+    display:flex;
+    width: 3vmax;
+    height: auto;
+    width: 14vmax;
+    height: 4vmax;
+    /* position: fixed; */
+    right: 1vmax;
+    background-color: transparent; 
+    border: none;
+    text-decoration: none;
+  }
+  .hamButton{
+    background-image: url(../images/icons/icons8-menu-30.png);
+    background-color: transparent; 
+    background-repeat: no-repeat; 
+    width: 4.2vmax;
+    height: 3vmax;
+    position: relative;
+    margin-left: 2vmax;
+    right: 1vmax;
+    min-width: 32px;
+    border: none;
+    display: block;
+    padding: 0;
+  }
+  .fullSizeNav{display: none;}
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+  
