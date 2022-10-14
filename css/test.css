@@ -317,7 +317,7 @@ margin: 0 .3vmax;
 }
 
 .fullSizeNav{
-  background-color: #34b4eb;
+
   display: block;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -331,7 +331,6 @@ margin: 0 .3vmax;
   "VCareBut";
   width: 99vmax;
   height:4vmax;
-background-color: #34b4eb;
 font-size: 2vmax;
 }
 
@@ -489,7 +488,6 @@ font-size: 2vmax;
     "galleryButtonMobile";
     width: 51.5vmax;
     margin-bottom: 1vmax;
-background-color: #34b4eb;
 }
 
 .allNav{

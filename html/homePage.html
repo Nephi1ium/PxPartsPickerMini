@@ -55,17 +55,12 @@
 
 
 
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-4 col-sm-3 col-md-2">
-                    <img src="../images/prosthetic_logo.jpg" class="img-fluid img-thumbnail">
-                </div>
-                <div class="col">
-                    <h1> Prosthetic Parts Picker </h1>
-                </div>                
-            </div>
-        </div>
+    <header class="banner_display">
+        
+        <h1 class="header_title"><img src="../images/prosthetic_logo.jpg" class="banner_image"> Prosthetic Parts Picker </h1>
+
+
+
     </header> 
     
    
@@ -74,15 +69,15 @@
             <aside id="step1" class="innerBox">
                 <h2 id="step1head">Step 1: Enter Your Information</h2>
                 <!-- <div id="step1inner"> -->
-                    <div class="form-group" id="step1one">
+                    <div class="form-g" id="step1one">
                         <label for="clinName">Your Name:</label>
                         <input type="text"  id="clinName" class="form-control" required>
                     </div>         
-                    <div class="form-group" id="step1two">
+                    <div class="form-g" id="step1two">
                         <label for="clinLoc">PCC Number</label>
                         <input type="text"  id="clinLoc" class="form-control" required>
                     </div>
-                    <fieldset class="form-group" id="step1three">
+                    <fieldset class="form-g" id="step1three">
                             <h3> Shipping PCC Different than location-</h3>
                             <div class="col">
                                 <a role="button" class="btn-secondary btn btn info">Yes</a>
@@ -97,40 +92,44 @@
                 <h2 id="step2head">Step 2: Enter Your Patients Information</h2>
 
                 <!-- <form id="step2inner"> -->
-                    <div class="form-group" id="ptNamegroup">
+                    <div class="form-g" id="ptNamegroup">
                         <label for="ptName">Patients Name:</label>
                         <input type="text"  id="ptName" class="form-control" required>
                     </div>
-                    <div class="form-group" id="dobgroup">
+                    <div class="form-g" id="dobgroup">
                         <label for="ptDOB"> Date of Birth </label>
                         <input type="date" name="dob" id="ptDOB" required> 
                     </div>          
-                    <div class="form-group" id="encgroup">
+                    <div class="form-g" id="encgroup">
                         <label for="encN">Encounter Number</label>
                         <input type="text"  id="encN" class="form-control" required>
                     </div>
+
                     <div class="form-check" id="klevelgroup">
+                        <div id="k1">
                         <input class="form-check-input" name="kLevel" type="radio" id="kOne" value="K1">
-                        <label class="form-check-label" for="k1">K1</label>
-
-
+                        <label class="form-check-label" for="kOne">K1</label>
+                        </div>
+                        <div id="k2">
                         <input class="form-check-input" name="kLevel" type="radio" id="kTwo" value="K2">
-                        <label class="form-check-label" for="k2">K2</label>
-
-
+                        <label class="form-check-label" for="kTwo">K2</label>
+                        </div>
+                        <div id="k3">
                         <input class="form-check-input" name="kLevel" type="radio" id="kThree" value="K3" >
-                        <label class="form-check-label" for="k3">K3<label>
-
+                        <label class="form-check-label" for="kThree">K3<label>
+                        </div>
+                        <div id="k4">
                         <input class="form-check-input" name="kLevel" type="radio" id="kFour" value="K4" >
-                        <label class="form-check-label" for="k4">K4<label>
+                        <label class="form-check-label" for="kFour">K4<label>
+                        </div>
                     </div>
 
-                    <div class="form-group" id="weightgroup">
+                    <div class="form-g" id="weightgroup">
                         <label for="ptWeight" aria-describedby="ptWeightSub">Weight:</label>
                         <input type="text"  id="ptWeight" class="form-control" required>
                         <small id="ptWeightSub">In Pounds</small>
                     </div>
-                    <div class="form-group" id="heightgroup">
+                    <div class="form-g" id="heightgroup">
                         <label for="ptHeight" aria-describedby="ptHeightSub">Height:</label>
                         <input type="text"  id="ptHeight" class="form-control" required>
                         <small id="ptHeightSub">In Inches</small>
@@ -190,13 +189,13 @@
                     <div class="modal-body">
                         <div class="container-fluid">
                             <form>
-                                <div class="row form-group">
+                                <div class="row form-g">
                                     <label for="numCampers" class="col-sm-6 col-form-label">Ship to PCC Number</label>
                                         <div class="col-sm-6 mx-auto">
                                             <label for="modClinLoc"></label>
                                             <input type="text"  id="modClinLoc" class="form-control">
                                         </div>
-                                        <div class="row form-group">
+                                        <div class="row form-g">
                                             <div class="col">
                                                 <button type="button" data-dismiss="modal" id="modBut" class="btn btn-primary">Submit</button>
                                                 <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>

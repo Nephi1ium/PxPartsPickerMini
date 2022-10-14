@@ -12,9 +12,7 @@ div {
 a{
     text-decoration: none;
 }
-header {
-    background-color: #34b4eb !important ;
-}
+
 body {
     background-image:linear-gradient (#b0a330, white);
 }
