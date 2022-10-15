@@ -1,4 +1,8 @@
 
+#addNotes {
+    width: 100%;
+  }
+
 .information2{
     grid-area: information2;
     text-align: right;

@@ -1,22 +1,35 @@
 
+// function favorites(ident, keyed){
+// const favoritesArray = [];
+// console.log("step 1");
+// console.log(keyed.id, "keyed object");
+// console.log(ident.id, "ident object");
+// console.log(ident.outerHTML, "ident outerhtml object");
 
-function favorites(ident, keyed){
+// let keyedString = String(keyed.id);
+// console.log(keyedString, "string keyed object");
 
+// let arrayKeyId = keyed.id;
+// console.log(arrayKeyId, "array object");
 
-    console.log("step 1");
-    console.log(keyed.id, "keyed object");
-    console.log(ident.id, "ident object");
+// localStorage.setItem(keyedString, ident.outerHTML);
 
-    localStorage.setItem(keyed.outerHTML, ident.outerHTML);
+// let localItem = localStorage.setItem(keyedString, ident.outerHTML);
+// console.log(localItem, "local item");
+// localStorage.setItem("favorites", localItem);
 
-    let thisOne = localStorage.getItem("Card Item One");
-    console.log(thisOne, "this one")
+// favoritesArray.push(keyed.id, ident.outerHTML);
+// const arr1 = new Array(1).fill({"ident": ident.outerHTML});
+// console.log(favoritesArray, "favorites array");
+// console.log(arr1, "arr1");
 
-    document.getElementById('secondContainer').innerHTML = thisOne;
+// let thisOne = localStorage.getItem(keyedString);
+// console.log(thisOne, "this one")
 
-}
+// document.getElementById('itemSectionJS').innerHTML = thisOne;
+// }
 
-export {favorites};
+// export {favorites};
 
 
 
