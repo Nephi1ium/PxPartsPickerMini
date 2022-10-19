@@ -82,16 +82,29 @@ if (localKlevel !== "undefined"){
         if (!!localClinName){ 
             console.log(localClinName, "Local Storage Clinician Name");
 
-            if (localClinLoc !== ""){
+            if (!!localClinLoc){
                 console.log(localClinLoc, "Local Storage Clinician Location");
 
-                if(localptName !== ""){
-                    if(localdob !== ""){
-                        if(localencNumber !== ""){
-                            if(localptweight !== ""){
-                                if(localptheight !== ""){
+                if(!!localptName ){
+                    console.log(localptName, "Local Storage Patient Name");
+
+                    if(!!localdob ){
+                        console.log(localdob, "Local Storage Date of Birth");
+
+                        if(!!localencNumber ){
+                            console.log(localencNumber, "Local Storage Encounter Number");
+
+                            if(!!localptweight ){
+                                console.log(localptweight, "Local Storage Patient Weight");
+
+                                if(!!localptheight ){
+                                    console.log(localptheight, "Local Storage Patient Height");
+
                                     let showSuccessBanner = document.getElementById("successBanner");
                                     showSuccessBanner.classList.add("submittedData");
+
+                                    let showFailureBanner = document.getElementById("failureBanner");
+                                    showFailureBanner.classList.remove("submittedDataFail");
                                 }
                             }
                         }

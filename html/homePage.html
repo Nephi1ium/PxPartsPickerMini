@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -18,7 +17,13 @@
     <link rel="stylesheet" href="../css/navigator.css">
     <link rel="stylesheet" href="../css/mainPage.css">
 
-
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            document.getElementById("myForm").addEventListener("submit", function(e) {
+                e.preventDefault() // Cancel the default action
+            });
+        });
+     </script>
 
     <title>Prosthetic Parts Picker Webpage</title>
 </head>
@@ -63,6 +68,7 @@
    
 
         <main class="box">
+            <form id="myForm">
             <aside id="step1" class="innerBox">
                 <h2 id="step1head">Step 1: Enter Your Information</h2>
                 <!-- <div id="step1inner"> -->
@@ -136,11 +142,13 @@
             <div class="submitSection" id="submitSection">
                 <label for="subFirstPage">Click to save your patient information: </label>
                 <button type="submit" id="subFirstPage" class="btn btn-secondary "> Save </button>
-                <div class="submitData" id="successBanner">Information Saved.</div>
-                <div class="submitDataFail" id="failureBanner">Information Not Saved! Please check your values and reenter.</div>
 
             </div>
+        </form>
+
     </aside>
+    <div class="submitData" id="successBanner">Information Saved.</div>
+    <div class="submitDataFail" id="failureBanner">Information Not Saved! Please check your values and reenter.</div>
 
 
 
