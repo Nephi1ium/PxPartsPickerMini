@@ -1,35 +1,26 @@
 
-// function favorites(ident, keyed){
-// const favoritesArray = [];
-// console.log("step 1");
-// console.log(keyed.id, "keyed object");
-// console.log(ident.id, "ident object");
-// console.log(ident.outerHTML, "ident outerhtml object");
+function favoritesSection(){
 
-// let keyedString = String(keyed.id);
-// console.log(keyedString, "string keyed object");
+  localStoreArray = [];
 
-// let arrayKeyId = keyed.id;
-// console.log(arrayKeyId, "array object");
+  function favorites(ident, keyed){
 
-// localStorage.setItem(keyedString, ident.outerHTML);
+console.log(keyed.id, "keyed object");
+console.log(ident.id, "ident object");
 
-// let localItem = localStorage.setItem(keyedString, ident.outerHTML);
-// console.log(localItem, "local item");
-// localStorage.setItem("favorites", localItem);
+localStoreArray.push(ident.outerHTML);
+console.log(localStoreArray, "local storage array with Favorited Card");
 
-// favoritesArray.push(keyed.id, ident.outerHTML);
-// const arr1 = new Array(1).fill({"ident": ident.outerHTML});
-// console.log(favoritesArray, "favorites array");
-// console.log(arr1, "arr1");
+localStorage.setItem("Local Storage Array", JSON.stringify(localStoreArray));
+let getLocalStorageArray = JSON.parse(localStorage.getItem("Local Storage Array"));
+console.log(getLocalStorageArray, "retrieved local storage array");
 
-// let thisOne = localStorage.getItem(keyedString);
-// console.log(thisOne, "this one")
+ 
+// THE ABOVE WORKS, NEED TO FINISH
 
-// document.getElementById('itemSectionJS').innerHTML = thisOne;
-// }
-
-// export {favorites};
+localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
+let favorite = JSON.parse(localStorage.getItem("Favorites"));
+console.log(favorite, "Favorite Item Display");
 
 
 
@@ -37,17 +28,14 @@
 
 
 
-// array.forEach(component => {
-//     localStorage.setItem(`${component.name}`,JSON.stringify(component));
-//     let data = JSON.parse(localStorage.getItem(`${component.name}`)); 
-//     console.log(data);
-
-// });
 
 
 
+document.getElementById('itemSectionJS').innerHTML = getLocalStorageArray;
 
+}
+favorites(ident, keyed);
 
+}
 
-
-// 
+export {favoritesSection};

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="../css/navigator.css">
 
 
-    <title>Prosthetic Parts Picker- Feet</title>
+    <title>Transtibial Suction</title>
 </head>
 <body>
   
@@ -283,7 +283,10 @@
   </nav>
   </main>
   <span style="font-size:30px;cursor:pointer">1. Start Here</span>
-  <button  onclick="openNav()">Click Me</button>  <main class="mainpage" id="itemSectionJS"></main>
+
+  <button  onclick="openNav()">Click Me</button>  
+  
+  <main class="mainpage favorites" id="itemSectionJS"></main>
   <main class="mainpage" id="mainpageSectionforJS">
   
   
@@ -353,49 +356,31 @@
 <script type="module" src="../js/feetComponent.js"></script>
 <script type="module" src="../js/linersComponent.js"></script>
 <script type="module" src="../js/componentsComponent.js"></script>
-<script type="module" src="../js/favoritesComponent.js"></script>
 <script>
-  function favorites(ident, keyed){
-localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
 
-let favorite = localStorage.getItem("Favorites");
-favorite = (favorite) ? JSON.parse(favorite) : [];
-console.log(favorite, "Favorite");
+  localStoreArray = [];
+
+  function favorites(ident, keyed){
+
+console.log(keyed.id, "keyed object");
+console.log(ident.id, "ident object");
+
+localStoreArray.push(ident.outerHTML);
+console.log(localStoreArray, "local storage array with Favorited Card");
+
+localStorage.setItem("Local Storage Array", JSON.stringify(localStoreArray));
+let getLocalStorageArray = JSON.parse(localStorage.getItem("Local Storage Array"));
+console.log(getLocalStorageArray, "retrieved local storage array");
+
+ 
 // THE ABOVE WORKS, NEED TO FINISH
 
-// console.log("step 1");
-// console.log(keyed.id, "keyed object");
-// console.log(ident.id, "ident object");
-// console.log(ident.outerHTML, "ident outerhtml object");
+localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
+let favorite = JSON.parse(localStorage.getItem("Favorites"));
+console.log(favorite, "Favorite Item Display");
 
-// let keyedString = String(keyed.id);
-// console.log(keyedString, "string keyed object");
+document.getElementById('itemSectionJS').innerHTML = getLocalStorageArray;
 
-// let arrayKeyId = keyed.id;
-// console.log(arrayKeyId, "array object");
-
-localStorage.setItem(keyedString, ident.outerHTML);  
-// Keep the above, it controls the unique local storage items
-
-// favoritesArray.push(keyed.id, ident.outerHTML);
-// const arr1 = new Array(1).fill({"ident": ident.outerHTML});
-// console.log(favoritesArray, "favorites array");
-// console.log(arr1, "arr1");
-
-// let thisOne = localStorage.getItem(keyedString);
-var thisOne = localStorage.getItem(keyedString);
-console.log(thisOne, "this one");
-
-localStorage.setItem("favorites", thisOne);
-
-let favoritesConsole = localStorage.getItem("favorites");
-
-// thisOne.push(ident.outerHTML);
-
-localStorage.setItem("favorites", favoritesConsole);
-console.log(favoritesConsole, "Favorites Console");
-
-document.getElementById('itemSectionJS').innerHTML = thisOne;
 }
 
 </script>

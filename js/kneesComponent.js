@@ -44,6 +44,7 @@ itemSeventeen.addEventListener("click", () => kneeCard(MISC));
 
 function kneeCard(array){
 
+    document.getElementById('mainpageSectionforJS').innerHTML = "";
 
     let kneesCard = document.querySelector('#mainpageSectionforJS');
 

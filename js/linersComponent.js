@@ -16,6 +16,7 @@ itemFour.addEventListener("click", () => linerCard(custLiner));
 
 function linerCard(array){
 
+    document.getElementById('mainpageSectionforJS').innerHTML = "";
 
     let linersCard = document.querySelector('#mainpageSectionforJS');
 

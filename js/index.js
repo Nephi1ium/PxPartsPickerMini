@@ -8,9 +8,6 @@ let modalPCC = [];
 const submitFirstPage = document.querySelector("#subFirstPage");
 const modButSel = document.querySelector("#modBut");
 
-
-
-
 const resetPage = document.querySelector("#resPage");
 const skinCond = document.querySelector("#skinCondition option:checked");
 
@@ -23,17 +20,16 @@ let cardShown = document.querySelector("#collapseOneOne");
 submitFirstPage.addEventListener("click", () => storeFirstPageInformation());
 modButSel.addEventListener("click", () => storeModalPCC());
 
-function storeModalPCC(){
-    modalPCC = [];
-    let pccDiff = document.getElementById("modClinLoc").value;
+// function storeModalPCC(){
+//     modalPCC = [];
+//     let pccDiff = document.getElementById("modClinLoc").value;
 
-    modalPCC[modalPCC.length]=pccDiff;
+//     modalPCC[modalPCC.length]=pccDiff;
 
-    return console.log(modalPCC);
-}
+//     return console.log(modalPCC);
+// }
 
 function storeFirstPageInformation(){
-// infoArr = [];
 
 let clinicianName = document.getElementById("clinName");
 
@@ -41,10 +37,7 @@ let clinicLocation = document.getElementById("clinLoc");
 let patientName = document.getElementById("ptName");
 let dateOfBirth = document.getElementById("ptDOB");
 let encounterNumber = document.getElementById("encN");
-// let kOne = document.getElementById("kOne").value;
-// let kTwo = document.getElementById("kTwo").value;
-// let kThree = document.getElementById("kThree").value;
-// let kFour = document.getElementById("kFour").value;
+
 let klevel = document.querySelector('input[name=kLevel]:checked');
 let patientWeight = document.getElementById("ptWeight");
 let patientHeight = document.getElementById("ptHeight");
@@ -62,37 +55,68 @@ localStorage.setItem('patientHeight', patientHeight.value);
 
 
 
-// infoArr[infoArr.length]=clinicianName;
-// infoArr[infoArr.length]=clinicLocation;
-// infoArr[infoArr.length]=patientName;
-// infoArr[infoArr.length]=dateOfBirth;
-// infoArr[infoArr.length]=encounterNumber;
-// infoArr[infoArr.length]=klevel;
-// infoArr[infoArr.length]=kTwo;
-// infoArr[infoArr.length]=kThree;
-// infoArr[infoArr.length]=kFour;
-// infoArr[infoArr.length]=patientWeight;
-// infoArr[infoArr.length]=patientHeight;
-
-// Need to add a function to save the array locally
 console.log("The function works!")
-//  console.log(infoArr);
-//  localStorage.infoArr = JSON.stringify(infoArr);
+
+// document.getElementById('successBanner').innerHTML = "";
+// document.getElementById('failureBanner').innerHTML = "";
+// THE ABOVE DOESNT WORK FOR CLEARING THE ORIGINAL MESSAGE
+
+let localKlevel = localStorage.getItem('klevel');
+
+let localClinName =  localStorage.getItem('clinicianName');
+let localClinLoc = localStorage.getItem('clinicLocation');
+let localptName =  localStorage.getItem('patientName');
+let localdob = localStorage.getItem('dateOfBirth');
+let localencNumber = localStorage.getItem('encounterNumber');
+let localptweight = localStorage.getItem('patientWeight');
+let localptheight = localStorage.getItem('patientHeight');
+
+console.log(localptName, "Local Storage Patient Name");
+console.log(localdob, "Local Storage DOB");
+console.log(localencNumber, "Local Storage Encounter Number");
+console.log(localptheight, "Local Storage PT Height");
+
+if (localKlevel !== "undefined"){
+    console.log(localKlevel, "Local Storage KLevel");
+
+        if (!!localClinName){ 
+            console.log(localClinName, "Local Storage Clinician Name");
+
+            if (localClinLoc !== ""){
+                console.log(localClinLoc, "Local Storage Clinician Location");
+
+                if(localptName !== ""){
+                    if(localdob !== ""){
+                        if(localencNumber !== ""){
+                            if(localptweight !== ""){
+                                if(localptheight !== ""){
+                                    let showSuccessBanner = document.getElementById("successBanner");
+                                    showSuccessBanner.classList.add("submittedData");
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+else 
+{
+    console.log("failed")
+    let showFailureBanner = document.getElementById("failureBanner");
+    showFailureBanner.classList.add("submittedDataFail");
+}  ;
+
+// RIGHT NOW THE ABOVE FUNCTION ENDS AFTER THE FIRST IF FUNCTION   
 
 
-// function saveFirstPageInfo(){
-//     console.log("This one worked though")
-// }
-  
 
-// function getLocalStoreData(){
-//     let firstArray = JSON.parse(localStorage.infoArr)
-//     console.log(firstArray);
- }
-
-function generatePDF(){
 
 }
+
+
 
 
 

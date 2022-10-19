@@ -10,6 +10,8 @@ itemThree.addEventListener("click", () => componentCard(allPxComponents));
 
 function componentCard(array){
 
+    document.getElementById('mainpageSectionforJS').innerHTML = "";
+
     let compCard = document.querySelector('#mainpageSectionforJS');
 
 

@@ -50,6 +50,7 @@ itemTwentyOne.addEventListener("click", () => feetCard(feetArray21));
 
 function feetCard(array){
 
+    document.getElementById('mainpageSectionforJS').innerHTML = "";
 
     let footCard = document.querySelector('#mainpageSectionforJS');
     console.log(array,"array name");

@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/navigator.css">
 
 
-    <title>Trans-Femoral Pin </title>
+    <title>Transfemoral Pin </title>
 </head>
 <body>
   <nav id="mainNavigation"></nav>
@@ -285,7 +285,8 @@ Microprocessor Knees
 </main>
 <span style="font-size:30px;cursor:pointer">1. Start Here</span>
 <button  onclick="openNav()">Click Me</button>
-<main class="mainpage" id="itemSectionJS"></main>
+
+<main class="mainpage favorites" id="itemSectionJS"></main>
 <main class="mainpage" id="mainpageSectionforJS">
 
 
@@ -355,24 +356,31 @@ Microprocessor Knees
 <script type="module" src="../js/feetComponent.js"></script>
 <script type="module" src="../js/linersComponent.js"></script>
 <script type="module" src="../js/componentsComponent.js"></script>
-<script type="module" src="../js/favoritesComponent.js"></script>
 <script>
+
+  localStoreArray = [];
+
   function favorites(ident, keyed){
 
-
-console.log("step 1");
 console.log(keyed.id, "keyed object");
 console.log(ident.id, "ident object");
 
-let keyedString = String(keyed.id);
-console.log(keyedString, "string keyed object");
+localStoreArray.push(ident.outerHTML);
+console.log(localStoreArray, "local storage array with Favorited Card");
 
-localStorage.setItem(keyedString, ident.outerHTML);
+localStorage.setItem("Local Storage Array", JSON.stringify(localStoreArray));
+let getLocalStorageArray = JSON.parse(localStorage.getItem("Local Storage Array"));
+console.log(getLocalStorageArray, "retrieved local storage array");
 
-let thisOne = localStorage.getItem(keyedString);
-console.log(thisOne, "this one")
+ 
+// THE ABOVE WORKS, NEED TO FINISH
 
-document.getElementById('itemSectionJS').innerHTML = thisOne;
+localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
+let favorite = JSON.parse(localStorage.getItem("Favorites"));
+console.log(favorite, "Favorite Item Display");
+
+document.getElementById('itemSectionJS').innerHTML = getLocalStorageArray;
+
 }
 
 </script>
