@@ -4,11 +4,15 @@
 }
 
 .banner_display{
-    border-top: solid #c49799 .4vmax ;
-    width: 99%;
+    border-top: solid #c49799 .4vmax;
+    border-bottom: solid #bfb6bb .6vmax;
     height: auto;
-    background-color: #afd0d6;
-    
+    /* background-color: #a5d8ff; */
+    background-color:  #40bae2;
+
+
+    ;
+
 }
 
     
@@ -20,7 +24,9 @@
     margin: 1vmax;
 }
 
-/* #bfb6bb
+/* 
+#40bae2;
+#bfb6bb
 #c49799
 #a5d8ff
 #36393b */
