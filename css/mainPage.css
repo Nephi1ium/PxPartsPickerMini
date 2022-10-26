@@ -341,12 +341,13 @@ transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
         color: #555;
         grid-gap: 1rem;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
         "item1"
         "item2"
         "item3";
+        margin: 6%;
     }
     
     #step1{
@@ -439,7 +440,7 @@ transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     
     #klevelgroup{
         grid-area: item2four;
-        
+        margin-left: 6%;
 
     
     }
