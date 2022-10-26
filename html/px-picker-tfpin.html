@@ -358,32 +358,106 @@ Microprocessor Knees
 <script type="module" src="../js/componentsComponent.js"></script>
 <script>
 
-  localStoreArray = [];
+  favoritesArray = [];
+  
 
   function favorites(ident, keyed){
 
 console.log(keyed.id, "keyed object");
 console.log(ident.id, "ident object");
+    
+    let getStoredFavorite = JSON.parse(localStorage.getItem(keyed.id));
+    console.log(getStoredFavorite, "retrieved cart item from local storage");
+    // retrieve the stored favorite item
 
-localStoreArray.push(ident.outerHTML);
-console.log(localStoreArray, "local storage array with Favorited Card");
+    favoritesArray.push(getStoredFavorite);
+     console.log(favoritesArray, "local storage array with favorite item");
+        // add the item to the cart array
+      
+      localStorage.setItem("Favorites", JSON.stringify(favoritesArray))
+        // push the cartArray to local storage
 
-localStorage.setItem("Local Storage Array", JSON.stringify(localStoreArray));
-let getLocalStorageArray = JSON.parse(localStorage.getItem("Local Storage Array"));
-console.log(getLocalStorageArray, "retrieved local storage array");
+      let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
+      console.log(getFavorites, "local storage favorite array");
+        // retrieve the stored array to check the values
+        document.getElementById('itemSectionJS').innerHTML = "";
+        // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
+        let favoritesLocation = document.querySelector('#itemSectionJS');
+        // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+
+        // set the location where the favorite should show in the new configuration
+
+        getFavorites.forEach(component => {    
+          favoritesLocation.innerHTML = favoritesLocation.innerHTML +
+         `<div class="card card-margin" id="${component.valAssign}">
+         <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
+         <img class="card-image" src="${component.image}"></img>
+
+            <div class="card-header">
+                <h4 id=""> ${component.name} </h4>
+                <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign}, ${component.valAssign})" > Remove Favorite (not working) </a>
+                <div id="">HD Code: ${component.hdcode}</div>
+                </div>
+            </div>
+        </div>`;
+        console.log("Created", component.card, "Cards");
+        
+        });
+
+
+
+
+        // favoritesArray.push(ident.outerHTML);
+// console.log(favoritesArray, "local storage array with Favorited Card");
+    
+// localStorage.setItem("Local Storage Array", JSON.stringify(favoritesArray));
+    // set the array item to local storage
+// console.log(getLocalStorageArray, "retrieved local storage array");
+// localStorage.setItem("Local Storage Array", JSON.stringify(localStoreArray));
+// let getLocalStorageArray = JSON.parse(localStorage.getItem("Local Storage Array"));
+// console.log(getLocalStorageArray, "retrieved local storage array");
 
  
 // THE ABOVE WORKS, NEED TO FINISH
 
-localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
-let favorite = JSON.parse(localStorage.getItem("Favorites"));
-console.log(favorite, "Favorite Item Display");
+// localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
+// let favorite = JSON.parse(localStorage.getItem("Favorites"));
+// console.log(favorite, "Favorite Item Display");
 
-document.getElementById('itemSectionJS').innerHTML = getLocalStorageArray;
 
 }
 
 </script>
+<script>
+  cartArray = [];
+
+function cart(ident, keyed){
+
+    console.log(keyed.id, "keyed object");
+    console.log(ident.id, "ident object");
+    
+    let getStoredFavorite = JSON.parse(localStorage.getItem(keyed.id));
+    console.log(getStoredFavorite, "retrieved cart item from local storage");
+    // retrieve the item
+
+     cartArray.push(getStoredFavorite);
+     console.log(cartArray, "local storage array with cart item");
+        // add the item to the cart array
+      
+      localStorage.setItem("cart", JSON.stringify(cartArray))
+        // push the cartArray to local storage
+
+      let getCart = JSON.parse(localStorage.getItem("cart"));
+      console.log(getCart, "local storage cart array");
+        // retrieve the stored array to check the values
+
+     
+   
+    
+
+    
+    }
+    </script>
 
 <!-- <script type="module" src="../js/selectItemComponent.js"></script> -->
 

@@ -97,9 +97,9 @@ function transFemoralProsthesis(){
 
 
                 <ul>
-                    <li><div>HD Part Number</div></li>
-                    <li><div>Manufacturer</div></li>
-                    <li><div>Name</div></li>
+                    <li><div>HD Part Number: ${component.hdcode} </div></li>
+                    <li><div>Manufacturer: ${component.manufacturer} </div></li>
+                    <li><div>Name: ${component.name}</div></li>
                     <li><div>Size</div></li>
                     <li><div>Thickness</div></li>
                     <li><div>Profile</div></li>

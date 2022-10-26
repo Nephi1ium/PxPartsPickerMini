@@ -53,9 +53,16 @@ function kneeCard(array){
     let data = JSON.parse(localStorage.getItem("array")); 
     console.log(data, "item data");
 
+    data.forEach(component => {
+        localStorage.setItem(component.valAssign, JSON.stringify(component))
+    });
+    // this puts all of the array items from the selected objects in local storage to be retrieved later
+
     data.forEach(component => {    
         kneesCard.innerHTML = kneesCard.innerHTML +
          `<div class="card card-margin" id="${component.valAssign}">
+         <a class="kneeClick btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
+
             <div class="card-header">
                 <h4 id=""> ${component.name} </h4>
                 <a class="kneeClick btn btn-primary" onclick="favorites(${component.valAssign}, ${component.valAssign})" > Add To Favorites </a>
