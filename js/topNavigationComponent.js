@@ -16,14 +16,30 @@
                 <button class="hamButton" id="hamNavButton"></button>
 
                 <nav id="mobileNav" class="mobileNav">
-
-                    <a href="../index.html" class="mobileNavigationBut" id="homeButt">Home</a>
-                    <a href="px-picker-tfpin.html" class="mobileNavigationBut" id="TFPinBut">TransFemoral Pin</a>
-                    <a href="px-picker-tfsuction.html" class="mobileNavigationBut" id="TFSucBut">TransFemoral Suction</a>
-                    <a href="px-picker-ttpin.html" class="mobileNavigationBut" id="TTPinBut">TransTibial Pin</a>
-                    <a href="px-picker-ttsuction.html" class="mobileNavigationBut" id="TTSucBut">TransTibial Suction</a>
-                    <a href="pdf.html" class="mobileNavigationBut" id="PDFBut">PDF</a>
-                    <a href="virtual-care-document.html" class="mobileNavigationBut" id="VCareBut">Virtual Care</a>
+                    <ul class="mobileNavList">
+                            <li class="navListItem">
+                                <a href="../index.html" class="mobileNavigationBut" id="homeButt">Home</a>
+                            </li>
+                            <li class="navListItem">
+                                <a href="px-picker-tfpin.html" class="mobileNavigationBut" id="TFPinBut">TF Pin</a>
+                            </li>
+                            <li class="navListItem">
+                                <a href="px-picker-tfsuction.html" class="mobileNavigationBut" id="TFSucBut">TF Suction</a>
+                            </li>
+                            <li class="navListItem">
+                                <a href="px-picker-ttpin.html" class="mobileNavigationBut" id="TTPinBut">TT Pin</a>
+                            </li>
+                            <li class="navListItem">
+                                <a href="px-picker-ttsuction.html" class="mobileNavigationBut" id="TTSucBut">TT Suction</a>
+                            </li>
+                            <li class="navListItem">
+                                <a href="pdf.html" class="mobileNavigationBut" id="PDFBut">PDF</a>
+                            </li>
+                            <li class="navListItem">
+                                <a href="virtual-care-document.html" class="mobileNavigationBut" id="VCareBut">Virtual Care</a>
+                            </li>
+                            <li class="navListItem">
+                    </ul>
                 </nav>
             </nav>`;
             document.getElementById("mainNavigation").innerHTML = hnav;

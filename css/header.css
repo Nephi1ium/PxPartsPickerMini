@@ -1,6 +1,7 @@
 .header_title{
 
     color: #36393b;
+    text-align: center;
 }
 
 .banner_display{
@@ -12,7 +13,12 @@
 
 
     ;
-
+    border-top: solid #a5d8ff 0.4vmax;
+    border-bottom: solid #bfb6bb 0.6vmax;
+    height: auto;
+    background-color: #a5d8ff;
+    /* background-color: #40bae2; */
+    background-color: #c49799;
 }
 
     

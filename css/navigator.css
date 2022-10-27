@@ -127,7 +127,7 @@ color:aliceblue
 border-top: solid #36393b .1vmax;
 border-bottom: solid #36393b .1vmax;
 
-background-color: #bfb6bb;
+background-color: #36454F;
 
 ;
 margin-bottom: .2vmax;}
@@ -141,6 +141,7 @@ margin-bottom: .2vmax;}
 .nav-item{
   text-decoration: none;
 margin: 0 .3vmax;
+color: aliceblue;
 /* border: solid #36393b .1vmax; */
 
 
@@ -187,7 +188,15 @@ text-align: center;
   grid-area: VCareBut;
 }
 
-
+.mobileNavList{
+  list-style: none;
+  padding-left: 0;
+}
+.navListItem{
+  border: solid grey .1vmax;
+  border-bottom: none;
+  
+}
 
   
 
@@ -261,6 +270,7 @@ text-align: center;
       "galleryButtonMobile";
       width: 51.5vmax;
       margin-bottom: 1vmax;
+      margin-top: 1vmax;
   }
   
   .allNav{
@@ -308,9 +318,10 @@ text-align: center;
     right: 1vmax;
     background-color: transparent; 
     border: none;
+    margin-left: 16vmax;
   }
   .mobileNavigationBut{
-    font-size: 1vmax;
+    font-size: 1.5vmax;
     color:#08719e;
   }
   .showMobNavItems{
@@ -324,6 +335,7 @@ text-align: center;
     background-color: transparent; 
     border: none;
     text-decoration: none;
+    padding-top: 1vmax;
   }
   .hamButton{
     background-image: url(../images/icons/icons8-menu-30.png);

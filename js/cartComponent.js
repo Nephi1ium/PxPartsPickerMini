@@ -23,6 +23,6 @@ function cartCreate(ident, keyed){
     let favorite = JSON.parse(localStorage.getItem("Favorites"));
     console.log(favorite, "Favorite Item Display");
     
-    document.getElementById('itemSectionJS').innerHTML = getLocalStorageArray;
+    document.getElementById('cartSection').innerHTML = getLocalStorageArray;
     
     }
