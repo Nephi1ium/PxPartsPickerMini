@@ -191,6 +191,7 @@ text-align: center;
 .mobileNavList{
   list-style: none;
   padding-left: 0;
+  max-width: 100%;
 }
 .navListItem{
   border: solid grey .1vmax;

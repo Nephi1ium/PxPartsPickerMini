@@ -1,0 +1,9 @@
+#cartBody{
+right: 2rem;
+    position: fixed;
+z-index: 999;
+}
+
+.cart-image{
+    max-width: 5vmax;
+}

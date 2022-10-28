@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/itemchoices.css">
     <link rel="stylesheet" href="../css/horizontal_card.css">
+    <link rel="stylesheet" href="../css/cart.css">
 
     <link rel="stylesheet" href="../css/navigator.css">
 
@@ -23,6 +24,14 @@
 </head>
 <body>
   
+  <aside id="cartBody">
+    <img class="cart-image" src="../images/Icons/shoppingcart.png"></img>  
+      <div class="cartContainer">
+        <div id="cartSection">
+        
+      </div>
+    </div>
+  </aside>
 
   <header class="banner_display">
     <h1 class="header_title"><img src="../images/prosthetic_logo.jpg" class="banner_image"> TransTibial Suction </h1>
@@ -430,6 +439,7 @@ console.log(ident.id, "ident object");
 </script>
 <script>
   cartArray = [];
+  cartDisplayArray = [];
 
 function cart(ident, keyed){
 
@@ -451,7 +461,31 @@ function cart(ident, keyed){
       console.log(getCart, "local storage cart array");
         // retrieve the stored array to check the values
 
-    //  display the retreived array items in the "cart" 
+
+        cartDisplayArray.push(getCart);
+        console.log(cartDisplayArray, "local storage array with displayed cart items");
+        //  push the pulled cart items into the cart array
+
+        localStorage.setItem("display cart", JSON.stringify(cartDisplayArray));
+    // push the cart display array to local storage
+
+    let showCart = JSON.parse(localStorage.getItem("cart"));
+      console.log(showCart, "local storage cart array");
+    // retrieve the item from local storage
+
+    let cartLocation = document.querySelector('#cartSection');
+    // display the cart in the cart section section 
+    showCart.forEach(component => {    
+      cartLocation.innerHTML = cartLocation.innerHTML +
+         `<div class="card card-margin" id="${component.valAssign}">
+         <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
+         <img class="card-image" src="${component.image}"></img>
+                <h4 id=""> ${component.name} </h4>
+        </div>`;
+        console.log("Created", component.value, "Cards");
+        
+        });
+    // display the retrieved array items in the "cart" 
 
     // allow deletion of cart items, remove item from array and then push the modified array back to local storage
    

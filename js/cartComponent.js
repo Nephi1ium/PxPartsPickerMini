@@ -1,28 +1,26 @@
-cartArray = [];
+// currently the cart item cannot be modified here, but must be added individually in each HTML page. 
 
-function cartCreate(ident, keyed){
 
-    console.log(keyed.id, "keyed object");
-    console.log(ident.id, "ident object");
-    
-    let getLocalStorageArray = JSON.parse(localStorage.getItem(keyed.id));
-    console.log(getLocalStorageArray, "retrieved local storage array");
+function cartDisplay(favorite){
 
-    cartArray.push(ident.outerHTML);
-    // push the id of the 
-    console.log(cartArray, "local storage array with Favorited Card");
+    console.log(favorite.id,  "cart object");
     
-    localStorage.setItem("Local Storage Array", JSON.stringify(cartArray));
-    // set the array item to local storage
-    console.log(getLocalStorageArray, "retrieved local storage array");
-    
-     
-    // THE ABOVE WORKS, NEED TO FINISH
-    
-    localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
-    let favorite = JSON.parse(localStorage.getItem("Favorites"));
-    console.log(favorite, "Favorite Item Display");
-    
-    document.getElementById('cartSection').innerHTML = getLocalStorageArray;
-    
-    }
+    let getStoredFavorite = JSON.parse(localStorage.getItem(favorite.id));
+    console.log(getStoredFavorite, "retrieved cart item from local storage");
+    // retrieve the item
+
+     cartArray.push(getStoredFavorite);
+     console.log(cartArray, "local storage array with cart item");
+        // add the item to the cart array
+      
+      localStorage.setItem("cart", JSON.stringify(cartArray))
+        // push the cartArray to local storage
+
+      let getCart = JSON.parse(localStorage.getItem("cart"));
+      console.log(getCart, "local storage cart array");
+        // retrieve the stored array to check the values
+
+    //  display the retreived array items in the "cart" 
+
+    // allow deletion of cart items, remove item from array and then push the modified array back to local storage
+}
