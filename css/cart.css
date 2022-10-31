@@ -2,7 +2,9 @@
 right: 2rem;
     position: fixed;
 z-index: 999;
-}
+max-height: 25vmax; 
+overflow-y: scroll;
+background-color: white;}
 
 .cart-image{
     max-width: 5vmax;

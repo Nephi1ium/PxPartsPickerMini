@@ -445,7 +445,8 @@ function cart(ident, keyed){
 
     console.log(keyed.id, "keyed object");
     console.log(ident.id, "ident object");
-    
+    // console.log(ident.valAssign, "value assigned to object"); THIS DOESNT WORK, DONT TRY IT!
+
     let getStoredFavorite = JSON.parse(localStorage.getItem(keyed.id));
     console.log(getStoredFavorite, "retrieved cart item from local storage");
     // retrieve the item
@@ -475,12 +476,15 @@ function cart(ident, keyed){
 
     let cartLocation = document.querySelector('#cartSection');
     // display the cart in the cart section section 
+    document.getElementById('cartSection').innerHTML = "";
+    // clear the cart window on addition of a new item
+
     showCart.forEach(component => {    
       cartLocation.innerHTML = cartLocation.innerHTML +
-         `<div class="card card-margin" id="${component.valAssign}">
-         <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
-         <img class="card-image" src="${component.image}"></img>
-                <h4 id=""> ${component.name} </h4>
+         `<div id="${component.valAssign}">
+         <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign}, ${component.valAssign})"> Delete </a>
+         <img class="cart-image" src="${component.image}"></img>
+          <h4 > ${component.name} </h4>
         </div>`;
         console.log("Created", component.value, "Cards");
         
@@ -493,6 +497,97 @@ function cart(ident, keyed){
 
     
     }
+
+    
+
+
+    </script>
+
+    <script>
+function removeCart(value, sameValue){
+
+// console.log(value[0], "value object");
+// console.log(value.id, "sameValue object");
+console.log((sameValue)[0].id, "Samevalue id object");
+// console.log(sameValue.id, "sameValue id object no array");
+// console.log(ident.valAssign, "value assigned to object");
+
+let getCartArray = JSON.parse(localStorage.getItem((sameValue)[0].id));
+console.log(getCartArray, "retrieved cart item from local storage");
+// retrieve the item
+
+let getCart = JSON.parse(localStorage.getItem("cart"));
+console.log(getCart, "local storage cart array");
+  // retrieve the stored array and check the values
+
+
+let cartItemIndex = getCart.indexOf((sameValue)[0].id, 0);
+console.log(cartItemIndex, "Index of the cart item")
+// find the index of the array item with the "ident.value"
+
+getCart.splice(cartItemIndex, 1);
+console.log(getCart, "getCart Array spliced")
+// splice out the item from the cart array. 
+
+localStorage.setItem("cartOne", JSON.stringify(getCart));
+// push the modified cartArray back to local storage
+
+let showCartOne = JSON.parse(localStorage.getItem("cartOne"));
+console.log(showCartOne, "local storage new cart array");
+// retrieve the cart array back from local storage
+let showCart = JSON.parse(localStorage.getItem("cart"));
+console.log(showCart, "local storage cart array");
+// retrieve the cart array back from local storage
+
+let cartLocation = document.querySelector('#cartSection');
+// link to a display section of the viewport
+document.getElementById('cartSection').innerHTML = "";
+// clear the cart window on addition of a new item
+
+localStorage.setItem("cartOne", JSON.stringify(getCart));
+// push the modified cartArray back to local storage
+
+// display the cart in the cart section section 
+showCartOne.forEach(component => {    
+cartLocation.innerHTML = cartLocation.innerHTML +
+   `<div id="${component.valAssign}">
+   <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign}, ${component.valAssign})"> Delete </a>
+   <img class="cart-image" src="${component.image}"></img>
+          <h4 > ${component.name} </h4>
+  </div>`;
+  console.log("Created", component.valAssign, "Cards");
+  
+  });
+// display the retrieved array items in the "cart" 
+// reload the cart and display it anew
+}
+
+    </script>
+
+    <script>
+      function showCart(){
+        let showCartOne = JSON.parse(localStorage.getItem("cartOne"));
+        console.log(showCartOne, "deleted an item and showing local storage new cart array");
+      // retrieve the cart array back from local storage
+      let cartLocation = document.querySelector('#cartSection');
+      // link to a display section of the viewport
+      document.getElementById('cartSection').innerHTML = "";
+      // clear the cart window on addition of a new item
+
+      // display the cart in the cart section section 
+      showCartOne.forEach(component => {    
+      cartLocation.innerHTML = cartLocation.innerHTML +
+        `<div id="${component.valAssign}">
+        <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign}, ${component.valAssign})"> Delete </a>
+        <img class="cart-image" src="${component.image}"></img>
+                <h4 > ${component.name} </h4>
+        </div>`;
+        console.log("Created", component.valAssign, "Cards");
+  
+  });
+      }
+      window.addEventListener('load', showCart());
+
     </script>
 
 <!-- <script type="module" src="../js/selectItemComponent.js"></script> -->
