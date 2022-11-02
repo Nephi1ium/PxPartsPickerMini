@@ -4,10 +4,7 @@
             `<nav class="allNav">
                 <nav class="fullSizeNav">
                     <a href="homePage.html" class="nav-item" >Home</a>
-                    <a href="px-picker-tfpin.html" class="nav-item" >TransFemoral Pin</a>
-                    <a href="px-picker-tfsuction.html" class="nav-item" id="">TransFemoral Suction</a>
-                    <a href="px-picker-ttpin.html" class="nav-item" id="">TransTibial Pin</a>
-                    <a href="px-picker-ttsuction.html" class="nav-item" id="">TransTibial Suction</a>
+                    <a href="px-picker-kitselection.html" class="nav-item" id="">Kit Selection</a>
                     <a href="pdf.html" class="nav-item" id="">PDF</a>
                     <a href="virtual-care-document.html" class="nav-item" id="">Virtual Care</a>
 
@@ -21,16 +18,7 @@
                                 <a href="../index.html" class="mobileNavigationBut" id="homeButt">Home</a>
                             </li>
                             <li class="navListItem">
-                                <a href="px-picker-tfpin.html" class="mobileNavigationBut" id="TFPinBut">TF Pin</a>
-                            </li>
-                            <li class="navListItem">
-                                <a href="px-picker-tfsuction.html" class="mobileNavigationBut" id="TFSucBut">TF Suction</a>
-                            </li>
-                            <li class="navListItem">
-                                <a href="px-picker-ttpin.html" class="mobileNavigationBut" id="TTPinBut">TT Pin</a>
-                            </li>
-                            <li class="navListItem">
-                                <a href="px-picker-ttsuction.html" class="mobileNavigationBut" id="TTSucBut">TT Suction</a>
+                                <a href="px-picker-kitselection.html" class="mobileNavigationBut" id="TTSucBut">Kit Selection</a>
                             </li>
                             <li class="navListItem">
                                 <a href="pdf.html" class="mobileNavigationBut" id="PDFBut">PDF</a>

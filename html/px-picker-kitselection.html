@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../css/navigator.css">
 
 
-    <title>Transtibial Suction</title>
+    <title>Kit Selection</title>
 </head>
 <body>
   
@@ -34,7 +34,7 @@
   </aside>
 
   <header class="banner_display">
-    <h1 class="header_title"><img src="../images/prosthetic_logo.jpg" class="banner_image"> TransTibial Suction </h1>
+    <h1 class="header_title"><img src="../images/prosthetic_logo.jpg" class="banner_image"> Kit Selection </h1>
 </header> 
 <nav id="mainNavigation"></nav>
 
@@ -413,6 +413,10 @@ console.log(ident.id, "ident object");
         
         });
 
+
+
+
+
         // display the card item and only the chosen items
 
 
@@ -435,6 +439,80 @@ console.log(ident.id, "ident object");
 
 
 }
+
+function showFavorites(){
+
+      let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
+      console.log(getFavorites, "local storage favorite array");
+        // retrieve the stored array to check the values
+        let favoritesLocation = document.querySelector('#itemSectionJS');
+        // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+
+        // set the location where the favorite should show in the new configuration
+
+        getFavorites.forEach(component => {    
+          favoritesLocation.innerHTML = favoritesLocation.innerHTML +
+         `<div class="card card-margin" id="${component.valAssign}">
+         <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
+         <img class="card-image" src="${component.image}"></img>
+
+            <div class="card-header">
+                <h4 id=""> ${component.name} </h4>
+                <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign}, ${component.valAssign})" > Remove Favorite (not working) </a>
+                <div id="">HD Code: ${component.hdcode}</div>
+                </div>
+            </div>
+        </div>`;
+        console.log("Created", component.card, "Cards");
+        
+        });
+
+
+
+
+}
+window.addEventListener('load', showFavorites());
+</script>
+<script>
+
+  function removeFavorites(value, sameValue){
+
+// console.log(value[0], "value object");
+// console.log(value.id, "sameValue object");
+console.log((sameValue)[0], "Samevalue id object");
+// console.log(sameValue.id, "sameValue id object no array");
+// console.log(ident.valAssign, "value assigned to object");
+
+let getfavoriteArray = JSON.parse(localStorage.getItem((sameValue)[0]));
+console.log(getfavoriteArray, "retrieved favorite item from local storage");
+// retrieve the item
+
+let getfavorite = JSON.parse(localStorage.getItem("Favorites"));
+console.log(getfavorite, "local storage favorite array");
+  // retrieve the stored array and check the values
+
+
+let favoriteItemIndex = getfavorite.indexOf((sameValue)[0], 0);
+console.log(favoriteItemIndex, "Index of the favorite item")
+// find the index of the array item with the "ident.value"
+
+getfavorite.splice(favoriteItemIndex, 1);
+console.log(getfavorite, "getfavorite Array spliced")
+// splice out the item from the favorite array. 
+
+localStorage.setItem("Favorites", JSON.stringify(getfavorite));
+// push the modified favoriteArray back to local storage
+
+
+let showfavorite = JSON.parse(localStorage.getItem("Favorites"));
+console.log(showfavorite, "local storage favorite array");
+// retrieve the favorite array back from local storage
+
+  
+// display the retrieved array items in the "favorite" 
+// reload the favorite and display it anew
+}
+
 
 </script>
 <script>
@@ -529,7 +607,7 @@ getCart.splice(cartItemIndex, 1);
 console.log(getCart, "getCart Array spliced")
 // splice out the item from the cart array. 
 
-localStorage.setItem("cartOne", JSON.stringify(getCart));
+localStorage.setItem("cart", JSON.stringify(getCart));
 // push the modified cartArray back to local storage
 
 let showCartOne = JSON.parse(localStorage.getItem("cartOne"));
@@ -544,11 +622,11 @@ let cartLocation = document.querySelector('#cartSection');
 document.getElementById('cartSection').innerHTML = "";
 // clear the cart window on addition of a new item
 
-localStorage.setItem("cartOne", JSON.stringify(getCart));
+localStorage.setItem("cart", JSON.stringify(getCart));
 // push the modified cartArray back to local storage
 
 // display the cart in the cart section section 
-showCartOne.forEach(component => {    
+showCart.forEach(component => {    
 cartLocation.innerHTML = cartLocation.innerHTML +
    `<div id="${component.valAssign}">
    <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign}, ${component.valAssign})"> Delete </a>
@@ -566,7 +644,7 @@ cartLocation.innerHTML = cartLocation.innerHTML +
 
     <script>
       function showCart(){
-        let showCartOne = JSON.parse(localStorage.getItem("cartOne"));
+        let showCartOne = JSON.parse(localStorage.getItem("cart"));
         console.log(showCartOne, "deleted an item and showing local storage new cart array");
       // retrieve the cart array back from local storage
       let cartLocation = document.querySelector('#cartSection');

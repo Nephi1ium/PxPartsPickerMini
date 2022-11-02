@@ -528,7 +528,7 @@ getCart.splice(cartItemIndex, 1);
 console.log(getCart, "getCart Array spliced")
 // splice out the item from the cart array. 
 
-localStorage.setItem("cartOne", JSON.stringify(getCart));
+localStorage.setItem("cart", JSON.stringify(getCart));
 // push the modified cartArray back to local storage
 
 let showCartOne = JSON.parse(localStorage.getItem("cartOne"));
@@ -543,11 +543,11 @@ let cartLocation = document.querySelector('#cartSection');
 document.getElementById('cartSection').innerHTML = "";
 // clear the cart window on addition of a new item
 
-localStorage.setItem("cartOne", JSON.stringify(getCart));
+localStorage.setItem("cart", JSON.stringify(getCart));
 // push the modified cartArray back to local storage
 
 // display the cart in the cart section section 
-showCartOne.forEach(component => {    
+showCart.forEach(component => {    
 cartLocation.innerHTML = cartLocation.innerHTML +
    `<div id="${component.valAssign}">
    <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign}, ${component.valAssign})"> Delete </a>
@@ -565,7 +565,7 @@ cartLocation.innerHTML = cartLocation.innerHTML +
 
     <script>
       function showCart(){
-        let showCartOne = JSON.parse(localStorage.getItem("cartOne"));
+        let showCartOne = JSON.parse(localStorage.getItem("cart"));
         console.log(showCartOne, "deleted an item and showing local storage new cart array");
       // retrieve the cart array back from local storage
       let cartLocation = document.querySelector('#cartSection');
