@@ -13,22 +13,20 @@
                 <button class="hamButton" id="hamNavButton"></button>
 
                 <nav id="mobileNav" class="mobileNav">
-                    <ul class="mobileNavList">
-                            <li class="navListItem">
-                                <a href="../index.html" class="mobileNavigationBut" id="homeButt">Home</a>
-                            </li>
-                            <li class="navListItem">
-                                <a href="px-picker-kitselection.html" class="mobileNavigationBut" id="TTSucBut">Kit Selection</a>
-                            </li>
-                            <li class="navListItem">
-                                <a href="pdf.html" class="mobileNavigationBut" id="PDFBut">PDF</a>
-                            </li>
-                            <li class="navListItem">
-                                <a href="virtual-care-document.html" class="mobileNavigationBut" id="VCareBut">Virtual Care</a>
-                            </li>
-                            <li class="navListItem">
-                    </ul>
-                </nav>
+                <ul class="mobileNavList">
+                        <li class="navListItem">
+                            <a href="../index.html" class="mobileNavigationBut" id="homeButt">Home</a>
+                        </li>
+                        <li class="navListItem">
+                            <a href="px-picker-kitselection.html" class="mobileNavigationBut" id="TTSucBut">Kit Selection</a>
+                        </li>
+                        <li class="navListItem">
+                            <a href="pdf.html" class="mobileNavigationBut" id="PDFBut">PDF</a>
+                        </li>
+                        <li class="navListItem">
+                            <a href="virtual-care-document.html" class="mobileNavigationBut" id="VCareBut">Virtual Care</a>
+                        </li>
+                </ul>
             </nav>`;
             document.getElementById("mainNavigation").innerHTML = hnav;
 
