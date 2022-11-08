@@ -18,7 +18,7 @@
                             <a href="../index.html" class="mobileNavigationBut" id="homeButt">Home</a>
                         </li>
                         <li class="navListItem">
-                            <a href="px-picker-kitselection.html" class="mobileNavigationBut" id="TTSucBut">Kit Selection</a>
+                            <a href="px-picker-kitselection.html" class="mobileNavigationBut" id="kitSeleBut">Kit Selection</a>
                         </li>
                         <li class="navListItem">
                             <a href="pdf.html" class="mobileNavigationBut" id="PDFBut">PDF</a>
@@ -40,18 +40,12 @@
         function dispNavChoices(){
             console.log("Good Try 1");
             const showHome = document.getElementById("homeButt");
-            const showTFPin = document.getElementById("TFPinBut");
-            const showTFSuc = document.getElementById("TFSucBut");
-            const showTTPin = document.getElementById("TTPinBut");
-            const showTTSuc = document.getElementById("TTSucBut");
+            const showKitSelect = document.getElementById("kitSeleBut");
             const showPDF = document.getElementById("PDFBut");
             const showVCare = document.getElementById("VCareBut");
 
             showHome.classList.toggle('showMobNavItems');
-            showTFPin.classList.toggle('showMobNavItems');
-            showTFSuc.classList.toggle('showMobNavItems');
-            showTTPin.classList.toggle('showMobNavItems');
-            showTTSuc.classList.toggle('showMobNavItems');
+            showKitSelect.classList.toggle('showMobNavItems');
             showPDF.classList.toggle('showMobNavItems');
             showVCare.classList.toggle('showMobNavItems');
 
