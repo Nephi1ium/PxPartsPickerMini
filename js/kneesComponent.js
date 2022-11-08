@@ -61,7 +61,6 @@ function kneeCard(array){
     data.forEach(component => {    
         kneesCard.innerHTML = kneesCard.innerHTML +
          `<div class="card card-margin" id="${component.valAssign}">
-         <a class="kneeClick btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
 
             <div class="card-header">
                 <h4 id=""> ${component.name} </h4>
