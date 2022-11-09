@@ -6,6 +6,9 @@ let downPDFDocument = document.querySelector("#downPDF");
 
 
 subtfPDFDocument.addEventListener("click", () => transFemoralProsthesis());
+subtfPDFDocument.addEventListener("click", () => kneeComponentPDF());
+
+
 downPDFDocument.addEventListener("click", () => downloadPDF());
 
 
@@ -19,6 +22,36 @@ let patientWeight = localStorage.getItem("patientWeight");
 let patientHeight = localStorage.getItem("patientHeight");
 
 let dateOfCreate = new Date();
+
+function kneeComponentPDF(){
+    let kneeChoice = JSON.parse(localStorage.getItem("Knee cart item"));
+    console.log(kneeChoice, "locally stored knee item choice");
+    // the array for the knee item
+    console.log(kneeChoice.length, "Knee Array Length");
+
+    let kneeLocation = document.querySelector('#kneeSection');
+
+    kneeChoice.forEach(component => {
+        kneeLocation.innerHTML = kneeLocation.innerHTML +
+   
+         
+        `
+        <ul>
+          <li><div>HD Part Number: ${component.hdcode} </div></li>
+          <li><div>Manufacturer: ${component.manufacturer} </div></li>
+          <li><div>Name: ${component.name}</div></li>
+          <li><div>Size</div></li>
+          <li><div>Thickness</div></li>
+          <li><div>Profile</div></li>
+          <li><div>Color</div></li>
+          <li><div>Quantity</div></li>
+      </ul>
+`
+
+          });
+    // how the array should be printed out from its core components
+}
+console.log(kneeComponentPDF, "Knee Component PDF")
 
 function transFemoralProsthesis(){
 
@@ -89,23 +122,14 @@ function transFemoralProsthesis(){
                     <li><div>Quantity</div></li>
                 </ul>
 </div>
-<div class=" item3">
+<div id="kneeSection" class=" item3">
 
                 <div class="heading">
                     <p>Knee Selection</p>
                 </div>
 
 
-                <ul>
-                    <li><div>HD Part Number: ${component.hdcode} </div></li>
-                    <li><div>Manufacturer: ${component.manufacturer} </div></li>
-                    <li><div>Name: ${component.name}</div></li>
-                    <li><div>Size</div></li>
-                    <li><div>Thickness</div></li>
-                    <li><div>Profile</div></li>
-                    <li><div>Color</div></li>
-                    <li><div>Quantity</div></li>
-                </ul>
+
 
 </div>
 <div class=" item4">

@@ -102,6 +102,9 @@ function savePatientInfo(){
     const confirmSaved = `<p>Information Saved</p>`
     document.getElementById("infoSaved").innerHTML = confirmSaved;
 
+
+      // retrieve the stored array to check the values
+
     
 }
 
@@ -140,34 +143,11 @@ function virtualDocumentPDF(){
 
     const footItem = `<p> Patient will benefit from ${foot}.</p>`
     let dateOfBirth = localStorage.getItem("dateOfBirth");
-    // function dateOfBirthChoice() {
-    //     if (dob == dateOfBirth) {
-    //     console.log(dateOfBirth);
-    //     console.log(dob)
+    let dateOfCreate = new Date();
 
-    //     return dateOfBirth;
-    //     } else if (dob != null) { 
-    //         console.log(dateOfBirth);
-    //         console.log(dob)
 
-    //        return dob;
-    //     }
-    //     else {
-    //         console.log(dob)
-    //      return dateOfBirth;
-    //     }
-    // };
-    // let patientDOB = dateOfBirthChoice();
-// patientDOB is the variable for the template literal I use in the 
-// PDF below.
 
-// let patientDOB = dateOfBirthChoice();
-// console.log(dob);
-let dateOfCreate = new Date();
 
-// let storedArray = JSON.parse(localStorage.infoArr);
-
-// let linersOnly = 
 
         const vvPDF =
         `

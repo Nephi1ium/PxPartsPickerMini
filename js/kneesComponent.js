@@ -64,7 +64,7 @@ function kneeCard(array){
 
             <div class="card-header">
                 <h4 id=""> ${component.name} </h4>
-                <a class="kneeClick btn btn-primary" onclick="favorites(${component.valAssign}, ${component.valAssign})" > Add To Favorites </a>
+                <a class="kneeClick btn btn-primary" onclick="kneeFavorites(${component.valAssign})" > Add To Favorites </a>
                 <div class="card-body">
                 <img class="card-image" src="${component.image}"></img>
                 <h5> Product Description </h5>
