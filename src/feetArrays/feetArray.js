@@ -1025,7 +1025,7 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "26%",
         "pdac": "9/10/2020",
-        "image": ""
+        "image": "../images/JavelinFoot.jpg"
       },
       {
         "manufacturer": "Fillauer",
@@ -1039,7 +1039,7 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "30%",
         "pdac": "11/19/2020",
-        "image": ""
+        "image": "../images/Aeris_Foot.jpg"
       },
       {
         "manufacturer": "Ossur",
@@ -1053,7 +1053,7 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "22%",
         "pdac": "10/17/2020",
-        "image": ""
+        "image": "../images/cheetah_foot_adult.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1081,7 +1081,7 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "36%",
         "pdac": "10/17/2020",
-        "image": ""
+        "image": "../images/vari_flex_modular_image.jpg"
       },
       {
         "manufacturer": "Fillauer",
@@ -1123,7 +1123,7 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "49%",
         "pdac": "11/19/2020",
-        "image": ""
+        "image": "../images/AllProFoot.jpg"
       },
       {
         "manufacturer": "Ossur",
@@ -1137,7 +1137,7 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "51%",
         "pdac": "10/17/2020",
-        "image": ""
+        "image": "../images/cheetah_foot_adult.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1186,7 +1186,7 @@ const  feetArrayThirteen = [
         "reimbursement": "4333",
         "percent": "13%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/Zenith.jpg"
       },
       {
         "manufacturer": "Fillauer",
@@ -1238,7 +1238,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "22%",
         "pdac": "3/3/2012",
-        "image": ""
+        "image": "../images/Highlander.jpg"
       },
       {
         "manufacturer": "Fillauer",
@@ -1252,7 +1252,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "19%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/AerisPerformance.jpg"
       },
       {
         "manufacturer": "Ossur",
@@ -1266,7 +1266,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "20%",
         "pdac": "10/20/2020",
-        "image": ""
+        "image": "../images/vari_flex_junior_image.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1308,7 +1308,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "23%",
         "pdac": "11/19/2020",
-        "image": ""
+        "image": "../images/EnduranceK1K2.jpg"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1378,7 +1378,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "27%",
         "pdac": "1/1/2017",
-        "image": ""
+        "image": "../images/RushHiPro.jpg"
       },
       {
         "manufacturer": "College_Park",
@@ -1434,7 +1434,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "21%",
         "pdac": "11/19/2020",
-        "image": ""
+        "image": "../images/EnduranceLowProfile.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1462,7 +1462,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "22%",
         "pdac": "9/9/2020",
-        "image": ""
+        "image": "../images/Elite2.jpg"
       },
       {
         "manufacturer": "Blatchford",
@@ -1532,7 +1532,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "27%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/TritonLow.jpg"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1588,7 +1588,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "29%",
         "pdac": "11/13/2020",
-        "image": ""
+        "image": "../images/AerisPerformance.jpg"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1602,7 +1602,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "29%",
         "pdac": "1/1/2017",
-        "image": ""
+        "image": "../images/rush_rover_main.jpg"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1686,7 +1686,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "33%",
         "pdac": "10/20/2020",
-        "image": ""
+        "image": "../images/vari_flex_modular_image.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1728,7 +1728,7 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "55%",
         "pdac": "10/20/2020",
-        "image": ""
+        "image": "../images/AllProFoot.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1756,7 +1756,7 @@ const  feetArray14 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/Highlander.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1974,7 +1974,7 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "28%",
         "pdac": "10/20/2020",
-        "image": ""
+        "image": "../images/Talux.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2016,7 +2016,7 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "39%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/BladeXT.jpg"
       },
       {
         "manufacturer": "College_Park",
@@ -2050,7 +2050,7 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "21%",
         "pdac": "9/9/2020",
-        "image": ""
+        "image": "../images/EliteBlade.jpg"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -2134,7 +2134,7 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "25%",
         "pdac": "9/9/2020",
-        "image": ""
+        "image": "../images/EliteBlade.jpg"
       },
       {
         "manufacturer": "Ossur",
@@ -2526,7 +2526,7 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/cheetah_foot_adult.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
