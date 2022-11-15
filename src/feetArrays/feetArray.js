@@ -17,11 +17,11 @@ const  feetArrayOne = [
         "reimbursement": "4046",
         "percent": "33%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/avalon.jpg"
       },
       {
         "manufacturer": "College_Park",
-        "name": "Odyssey",
+        "name": "Odyssey K2 Foot",
         "lcode1": "L5968",
         "lcode2": "L5972",
         "lcode3": " ",
@@ -31,7 +31,7 @@ const  feetArrayOne = [
         "reimbursement": "4046",
         "percent": "28%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/odyssey_k2.jpg"
       },
       {
         "manufacturer": "Ossur",
@@ -45,7 +45,7 @@ const  feetArrayOne = [
         "reimbursement": "4046",
         "percent": "30%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/k2_sensation_ankle.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -59,7 +59,7 @@ const  feetArrayOne = [
         "reimbursement": "4046",
         "percent": "31%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/kintrol.jpg"
       },
 
 ]
@@ -78,7 +78,7 @@ const  feetArrayTwo = [
         "reimbursement": "6657",
         "percent": "28%",
         "pdac": "1/1/2011",
-        "image": ""
+        "image": "../images/echelon_basic.jpg"
       },
       {
         "manufacturer": "College_Park",
@@ -92,7 +92,7 @@ const  feetArrayTwo = [
         "reimbursement": "6657",
         "percent": "24%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/odyssey_k3.jpg"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -106,7 +106,7 @@ const  feetArrayTwo = [
         "reimbursement": "6657",
         "percent": "28%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/kinterra.jpg"
       },
       {
         "manufacturer": "Blatchford",
@@ -120,7 +120,7 @@ const  feetArrayTwo = [
         "reimbursement": "6657",
         "percent": "33%",
         "pdac": "1/1/2011",
-        "image": ""
+        "image": "../images/echelon_er.jpg"
       },
 
 
@@ -128,34 +128,35 @@ const  feetArrayTwo = [
 
 const  feetArrayThree = [
 
-    {
-        "manufacturer": "Motion_Control",
-        "name": "Motion MX",
-        "lcode1": "L5968",
-        "lcode2": "L5981",
-        "lcode3": "L5990",
-        "lcode4": " ",
-        "hdcode": "50200-KIT",
-        "cost": "5271.21",
-        "reimbursement": "8488",
-        "percent": "62%",
-        "pdac": "NO pdac APPROVAL",
-        "image": ""
-      },
-      {
-        "manufacturer": "K3 Flexwalk with Hydraulic Multiaxial ankle and Vertical Shock:     L5968,  L5981, L5988",
-        "name": "",
-        "lcode1": "",
-        "lcode2": "",
-        "lcode3": "",
-        "lcode4": "",
-        "hdcode": "",
-        "cost": "",
-        "reimbursement": "$8,673 ",
-        "percent": "",
-        "pdac": "",
-        "image": ""
-      },
+    // {
+    //     "manufacturer": "Motion_Control",
+    //     "name": "Motion MX",
+    //     "lcode1": "L5968",
+    //     "lcode2": "L5981",
+    //     "lcode3": "L5990",
+    //     "lcode4": " ",
+    //     "hdcode": "50200-KIT",
+    //     "cost": "5271.21",
+    //     "reimbursement": "8488",
+    //     "percent": "62%",
+    //     "pdac": "NO pdac APPROVAL",
+    //     "image": "../images/",
+    //   },
+      // {
+      //   "manufacturer": "K3 Flexwalk with Hydraulic Multiaxial ankle and Vertical Shock:     L5968,  L5981, L5988",
+      //   "name": "",
+      //   "lcode1": "",
+      //   "lcode2": "",
+      //   "lcode3": "",
+      //   "lcode4": "",
+      //   "hdcode": "",
+      //   "cost": "",
+      //   "reimbursement": "$8,673 ",
+      //   "percent": "",
+      //   "pdac": "",
+      //   "image": "../images/",
+
+      // },
       {
         "manufacturer": "Blatchford",
         "name": "Echelon VT",
@@ -168,7 +169,7 @@ const  feetArrayThree = [
         "reimbursement": "8673",
         "percent": "37%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/echelon_vt.jpg"
       },
 
 
@@ -192,7 +193,7 @@ const  feetArrayFour = [
         "reimbursement": "203",
         "percent": "40%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/seattle_sach_light.jpg"
       },
       {
         "manufacturer": "WillowWood",
@@ -206,7 +207,7 @@ const  feetArrayFour = [
         "reimbursement": "203",
         "percent": "44%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/ww_sach.jpg"
       },
 
 
@@ -229,7 +230,7 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "30%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/seattle_sach_light.jpg"
       },
       {
         "manufacturer": "College_Park",
@@ -238,12 +239,12 @@ const  feetArrayFive = [
         "lcode2": " ",
         "lcode3": " ",
         "lcode4": " ",
-        "hdcode": "BE-KIT",
+        "hdcode": "BE-FOOT-KIT",
         "cost": "100.17",
         "reimbursement": "379",
         "percent": "26%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/breeze.jpg"
       },
       {
         "manufacturer": "Blatchford",
@@ -257,7 +258,7 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "31%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/stellar.jpg"
       },
       {
         "manufacturer": "College_Park",
@@ -266,12 +267,12 @@ const  feetArrayFive = [
         "lcode2": " ",
         "lcode3": " ",
         "lcode4": " ",
-        "hdcode": "TO-KIT",
+        "hdcode": "TO-FOOT-KIT",
         "cost": "137.27",
         "reimbursement": "379",
         "percent": "36%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/tempo.jpg"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -285,7 +286,7 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "43%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/gery.jpg"
       },
       {
         "manufacturer": "Dycor",
@@ -299,7 +300,7 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "44%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/k1a.jpg"
       },
       {
         "manufacturer": "Dycor",
@@ -313,7 +314,7 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "44%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/k1a.jpg"
       },
       {
         "manufacturer": "Ossur",
@@ -327,7 +328,7 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "54%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/k2sensation.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -341,7 +342,7 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "57%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/restore.jpg"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -355,7 +356,7 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "58%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/1d10.jpg"
       },
       {
         "manufacturer": "WillowWood",
@@ -369,22 +370,23 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "67%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/durawalk.jpg",
+        "link": "https://www.spsco.com/dynamic-foot-w-toes.html"
       },
-      {
-        "manufacturer": "Otto_Bock_Freedom",
-        "name": "1WR95 Aqualine",
-        "lcode1": "L5972",
-        "lcode2": " ",
-        "lcode3": " ",
-        "lcode4": " ",
-        "hdcode": "1WR95",
-        "cost": "281.29",
-        "reimbursement": "379",
-        "percent": "74%",
-        "pdac": "NO pdac APPROVAL",
-        "image": ""
-      },
+      // {
+      //   "manufacturer": "Otto_Bock_Freedom",
+      //   "name": "1WR95 Aqualine",
+      //   "lcode1": "L5972",
+      //   "lcode2": " ",
+      //   "lcode3": " ",
+      //   "lcode4": " ",
+      //   "hdcode": "1WR95",
+      //   "cost": "281.29",
+      //   "reimbursement": "379",
+      //   "percent": "74%",
+      //   "pdac": "NO pdac APPROVAL",
+      //   "image": "../images/",
+      // },
       {
         "manufacturer": "Fillauer",
         "name": "K2",
@@ -397,7 +399,8 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "81%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/134.jpg",
+        "link": "https://www.spsco.com/k2-foot.html"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -411,7 +414,8 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "81%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/1c11.jpg",
+        "link":"https://www.spsco.com/terion-k2.html"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -425,7 +429,8 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "84%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/1a101.jpg",
+"link":"https://www.spsco.com/dynastep.html"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -439,7 +444,8 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "90%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/1m10.jpg",
+"link":"https://www.spsco.com/adjust-multiaxial-foot-w-footshell.html"
       },
       {
         "manufacturer": "Ossur",
@@ -453,7 +459,8 @@ const  feetArrayFive = [
         "reimbursement": "379",
         "percent": "94%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/bsp0.jpg",
+"link":"https://www.spsco.com/balance-foot-s-coming-soon.html"
       },
 
 
@@ -476,7 +483,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "29%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/kinetic.jpg",
+"link":"https://www.spsco.com/seattle-kinetic-foot-with-pylon.html"
       },
       {
         "manufacturer": "College_Park",
@@ -490,7 +498,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "26%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/celsus.jpg",
+"link":"https://www.spsco.com/celsus-k1-k2-foot.html"
       },
       {
         "manufacturer": "Trulife",
@@ -504,7 +513,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "29%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/seattle_kin_lightfoot.jpg",
+"link":"https://www.spsco.com/seattle-kinetic-light.html"
       },
       {
         "manufacturer": "Blatchford",
@@ -518,7 +528,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "30%",
         "pdac": "4/8/2021",
-        "image": ""
+        "image": "../images/navigator.jpg",
+"link":"https://www.spsco.com/navigator-foot-1.html"
       },
       {
         "manufacturer": "Trulife",
@@ -532,7 +543,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "29%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/kinetic_edge.jpg",
+"link":"https://www.spsco.com/trulife-seattle-kinetic-edge-foot.html"
       },
       {
         "manufacturer": "Blatchford",
@@ -546,7 +558,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "24%",
         "pdac": "4/21/2021",
-        "image": ""
+        "image": "../images/multiflex.jpg",
+"link":"https://www.spsco.com/multiflex-standard.html"
       },
       {
         "manufacturer": "Dycor",
@@ -560,7 +573,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "38%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/agm.jpg",
+"link":"https://www.spsco.com/dycor-aggressive-gait-management-foot.html"
       },
       {
         "manufacturer": "Dycor",
@@ -574,7 +588,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "38%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/stm.jpg",
+"link":"https://www.spsco.com/dycor-soft-tissue-management-foot.html"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -588,7 +603,8 @@ const  feetArraySix = [
         "reimbursement": "1011",
         "percent": "40%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/1a30.jpg",
+"link":"https://www.spsco.com/greissinger-plus-foot.html"
       },
 
 
@@ -610,7 +626,8 @@ const  feetArraySeven = [
         "reimbursement": "2972",
         "percent": "52%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/bst0.jpg",
+"link":"https://www.spsco.com/balance-foot-s-torsion-coming-soon.html"
       },
 
 ]
@@ -629,7 +646,8 @@ const  feetArrayEight = [
         "reimbursement": "17363",
         "percent": "44%",
         "pdac": "9/18/2020",
-        "image": ""
+        "image": "../images/elan_ic.jpg",
+"link":"https://www.spsco.com/elanic-foot.html"
       },
       {
         "manufacturer": "Blatchford",
@@ -643,7 +661,8 @@ const  feetArrayEight = [
         "reimbursement": "17363",
         "percent": "42%",
         "pdac": "1/1/2015",
-        "image": ""
+        "image": "../images/elan.jpg",
+"link":"https://www.spsco.com/elan-microprocessor-controlled-foot.html"
       },
       {
         "manufacturer": "Ossur",
@@ -657,7 +676,8 @@ const  feetArrayEight = [
         "reimbursement": "17363",
         "percent": "45%",
         "pdac": "1/1/2010",
-        "image": ""
+        "image": "../images/proprio.jpg",
+"link":"https://www.spsco.com/proprio-foot.html"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -671,7 +691,8 @@ const  feetArrayEight = [
         "reimbursement": "17363",
         "percent": "46%",
         "pdac": "11/19/2020",
-        "image": ""
+        "image": "../images/kinnex_mpf.jpg",
+        "link":"https://www.spsco.com/kinnex-2-0-1.html"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -685,7 +706,8 @@ const  feetArrayEight = [
         "reimbursement": "17363",
         "percent": "52%",
         "pdac": "11/13/2020",
-        "image": ""
+        "image": "../images/meridium.jpg",
+"link":"https://www.spsco.com/meridium.html"
       },
 
 
@@ -707,7 +729,8 @@ const  feetArrayNine = [
         "reimbursement": "233",
         "percent": "60%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/saf_foot.jpg",
+"link":"https://www.spsco.com/endoskeletal-single-axis-ankle-1.html"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -721,7 +744,8 @@ const  feetArrayNine = [
         "reimbursement": "233",
         "percent": "108%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/1h38.jpg",
+"link":"https://www.spsco.com/single-axis-foot-only-men-10mm-toes.html"
       },
 
 
@@ -743,7 +767,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "50%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Dycor",
@@ -757,7 +782,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "27%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/chopart_lisfranc_foot.jpg",
+"link":"https://www.spsco.com/lisfranc-chopart-energy-returning-foot.html"
       },
       {
         "manufacturer": "WillowWood",
@@ -771,7 +797,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "36%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/impulse.jpg",
+"link":"https://www.spsco.com/impulse-men-s-foot-with-low-heel.html"
       },
       {
         "manufacturer": "Ossur",
@@ -785,7 +812,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "48%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/balance.jpg",
+"link":"https://www.spsco.com/balance-j.html"
       },
       {
         "manufacturer": "Trulife",
@@ -799,7 +827,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "50%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/seattle_energy.jpg",
+"link":"https://www.spsco.com/seattle-energy-foot.html"
       },
       {
         "manufacturer": "Trulife",
@@ -813,7 +842,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "50%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/zumo_foot.jpg",
+"link":"https://www.spsco.com/seattle-zumo-foot.html"
       },
       {
         "manufacturer": "Trulife",
@@ -827,7 +857,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "51%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/childs_play.jpg",
+"link":"https://www.spsco.com/seattle-childs-play-energy-foot.html"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -841,7 +872,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "66%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/senator.jpg",
+"link":"https://www.spsco.com/senator.html"
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -855,7 +887,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "94%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/1E80_footplate.jpg",
+"link":"https://www.spsco.com/chopart-1-01.html"
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -869,7 +902,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "104%",
         "pdac": "1/1/2017",
-        "image": ""
+        "image": "../images/rush_chopart.jpg",
+"link":"https://www.spsco.com/rush-chopart-k3-k4-foot.html"
       },
       {
         "manufacturer": "Ossur",
@@ -883,7 +917,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "107%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/chp00.jpg",
+        "link":"https://www.spsco.com/chopart-foot-kit.html"
       },
       {
         "manufacturer": "WillowWood",
@@ -897,7 +932,8 @@ const  feetArrayTen = [
         "reimbursement": "559",
         "percent": "113%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/magnum_heavy_duty.jpg",
+        "link":"https://www.spsco.com/magnum-heavy-duty-foot-1-01.html"
       },
 
 
@@ -919,7 +955,8 @@ const  feetArrayEleven = [
         "reimbursement": "2277",
         "percent": "14%",
         "pdac": "3/16/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -933,7 +970,8 @@ const  feetArrayEleven = [
         "reimbursement": "2277",
         "percent": "11%",
         "pdac": "4/19/2013",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -947,7 +985,8 @@ const  feetArrayEleven = [
         "reimbursement": "2277",
         "percent": "18%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -961,7 +1000,8 @@ const  feetArrayEleven = [
         "reimbursement": "2277",
         "percent": "24%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Dycor",
@@ -975,7 +1015,8 @@ const  feetArrayEleven = [
         "reimbursement": "2277",
         "percent": "25%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -989,7 +1030,8 @@ const  feetArrayEleven = [
         "reimbursement": "2277",
         "percent": "33%",
         "pdac": "3/24/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -1003,7 +1045,8 @@ const  feetArrayEleven = [
         "reimbursement": "2277",
         "percent": "38%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -1067,7 +1110,8 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "26%",
         "pdac": "12/24/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -1095,7 +1139,8 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "43%",
         "pdac": "11/13/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Blatchford",
@@ -1109,7 +1154,8 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "45%",
         "pdac": "9/9/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Fillauer",
@@ -1151,7 +1197,8 @@ const  feetArrayTwelve = [
         "reimbursement": "3700",
         "percent": "0%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -1172,7 +1219,8 @@ const  feetArrayThirteen = [
         "reimbursement": "4333",
         "percent": "20%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Trulife",
@@ -1200,7 +1248,8 @@ const  feetArrayThirteen = [
         "reimbursement": "4333",
         "percent": "23%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1214,7 +1263,8 @@ const  feetArrayThirteen = [
         "reimbursement": "4333",
         "percent": "27%",
         "pdac": "11/19/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -1280,7 +1330,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "22%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1294,7 +1345,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "23%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "STG",
@@ -1322,7 +1374,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "23%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1336,7 +1389,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "23%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Fillauer",
@@ -1350,7 +1404,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "24%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Trulife",
@@ -1364,7 +1419,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "26%",
         "pdac": "4/1/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1392,7 +1448,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "17%",
         "pdac": "3/16/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -1406,7 +1463,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "18%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Trulife",
@@ -1420,7 +1478,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "19%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "STG",
@@ -1448,7 +1507,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "21%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Blatchford",
@@ -1476,7 +1536,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "22%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "MakStride_formerly_BioQuest",
@@ -1490,7 +1551,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "25%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Trulife",
@@ -1504,7 +1566,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "26%",
         "pdac": "7/1/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1518,7 +1581,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "26%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1546,7 +1610,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "27%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1560,7 +1625,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "28%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1574,7 +1640,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "28%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Fillauer",
@@ -1616,7 +1683,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "29%",
         "pdac": "1/1/2017",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "WillowWood",
@@ -1630,7 +1698,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "30%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Fillauer",
@@ -1644,7 +1713,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "30%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -1658,7 +1728,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "31%",
         "pdac": "10/17/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1672,7 +1743,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "32%",
         "pdac": "11/13/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -1700,7 +1772,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "35%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -1714,7 +1787,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "45%",
         "pdac": "10/20/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Fillauer",
@@ -1742,7 +1816,8 @@ const  feetArray14 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1770,7 +1845,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "31%",
         "pdac": "1/1/2012",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1784,7 +1860,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "32%",
         "pdac": "11/13/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -1798,7 +1875,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "33%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1812,7 +1890,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "34%",
         "pdac": "11/13/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1826,7 +1905,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "37%",
         "pdac": "11/13/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1840,7 +1920,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "38%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1854,7 +1935,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "38%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -1868,7 +1950,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "39%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -1882,7 +1965,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "51%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1896,7 +1980,8 @@ const  feetArray14 = [
         "reimbursement": "2989",
         "percent": "57%",
         "pdac": "11/18/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -1918,7 +2003,8 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "22%",
         "pdac": "4/8/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1932,7 +2018,8 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "22%",
         "pdac": "1/1/2017",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -1946,7 +2033,8 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "21%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -1960,7 +2048,8 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "27%",
         "pdac": "8/25/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -1988,7 +2077,8 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "28%",
         "pdac": "8/25/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "WillowWood",
@@ -2002,7 +2092,8 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "29%",
         "pdac": "12/3/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Blatchford",
@@ -2030,7 +2121,8 @@ const  feetArray15 = [
         "reimbursement": "3622",
         "percent": "#VALUE!",
         "pdac": "5/21/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 ]
@@ -2064,7 +2156,8 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "18%",
         "pdac": "1/1/2017",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -2078,7 +2171,8 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "18%",
         "pdac": "5/14/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Fillauer",
@@ -2092,7 +2186,8 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "20%",
         "pdac": "11/13/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -2106,7 +2201,8 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "21%",
         "pdac": "9/1/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -2120,7 +2216,8 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "24%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Blatchford",
@@ -2148,7 +2245,8 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "33%",
         "pdac": "10/17/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -2162,7 +2260,8 @@ const  feetArray16 = [
         "reimbursement": "7829",
         "percent": "28%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -2184,7 +2283,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "13%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "MakStride_formerly_BioQuest",
@@ -2198,7 +2298,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "7%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "MakStride_formerly_BioQuest",
@@ -2212,7 +2313,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "10%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "MakStride_formerly_BioQuest",
@@ -2226,7 +2328,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "12%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -2240,7 +2343,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "12%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2254,7 +2358,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "12%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2268,7 +2373,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "12%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2282,7 +2388,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "12%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "MakStride_formerly_BioQuest",
@@ -2296,7 +2403,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "13%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2310,7 +2418,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "16%",
         "pdac": "11/28/2012",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "WillowWood",
@@ -2324,7 +2433,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "17%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2338,7 +2448,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "12%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2352,7 +2463,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "12%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2366,7 +2478,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "19%",
         "pdac": "11/21/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -2380,7 +2493,8 @@ const  feetArray17 = [
         "reimbursement": "7892",
         "percent": "21%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -2402,7 +2516,8 @@ const  feetArray18 = [
         "reimbursement": "7260.04",
         "percent": "13%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2416,7 +2531,8 @@ const  feetArray18 = [
         "reimbursement": "7260.04",
         "percent": "13%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "WillowWood",
@@ -2430,7 +2546,8 @@ const  feetArray18 = [
         "reimbursement": "7260.04",
         "percent": "19%",
         "pdac": "3/24/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -2450,7 +2567,8 @@ const  feetArray19 = [
         "reimbursement": "11930",
         "percent": "25%",
         "pdac": "11/1/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2464,7 +2582,8 @@ const  feetArray19 = [
         "reimbursement": "11930",
         "percent": "28%",
         "pdac": "11/21/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 ]
@@ -2484,7 +2603,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -2498,7 +2618,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Fillauer",
@@ -2512,7 +2633,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "11/18/2020",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -2540,7 +2662,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Biodapt",
@@ -2554,7 +2677,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Biodapt",
@@ -2568,7 +2692,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -2582,7 +2707,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#N/A",
         "pdac": "9/1/2018",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Biodapt",
@@ -2596,7 +2722,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#VALUE!",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Biodapt",
@@ -2610,7 +2737,8 @@ const  feetArray20 = [
         "reimbursement": "#N/A",
         "percent": "#VALUE!",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -2631,7 +2759,8 @@ const  feetArray21 = [
         "reimbursement": "3962",
         "percent": "11%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -2645,7 +2774,8 @@ const  feetArray21 = [
         "reimbursement": "5738",
         "percent": "13%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -2659,7 +2789,8 @@ const  feetArray21 = [
         "reimbursement": "5453",
         "percent": "13%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "KISS",
@@ -2673,7 +2804,8 @@ const  feetArray21 = [
         "reimbursement": "908",
         "percent": "30%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Blatchford",
@@ -2687,7 +2819,8 @@ const  feetArray21 = [
         "reimbursement": "10695",
         "percent": "31%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2701,7 +2834,8 @@ const  feetArray21 = [
         "reimbursement": "4820",
         "percent": "31%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Ossur",
@@ -2715,7 +2849,8 @@ const  feetArray21 = [
         "reimbursement": "5453",
         "percent": "32%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2729,7 +2864,8 @@ const  feetArray21 = [
         "reimbursement": "3351",
         "percent": "44%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Dycor",
@@ -2743,7 +2879,8 @@ const  feetArray21 = [
         "reimbursement": "947",
         "percent": "39%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Dycor",
@@ -2757,7 +2894,8 @@ const  feetArray21 = [
         "reimbursement": "468",
         "percent": "54%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2771,7 +2909,8 @@ const  feetArray21 = [
         "reimbursement": "468",
         "percent": "56%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2785,7 +2924,8 @@ const  feetArray21 = [
         "reimbursement": "379",
         "percent": "69%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2799,7 +2939,8 @@ const  feetArray21 = [
         "reimbursement": "291",
         "percent": "89%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Dycor",
@@ -2813,7 +2954,8 @@ const  feetArray21 = [
         "reimbursement": "468",
         "percent": "111%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -2827,7 +2969,8 @@ const  feetArray21 = [
         "reimbursement": "4038",
         "percent": "0%",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "College_Park",
@@ -2841,7 +2984,8 @@ const  feetArray21 = [
         "reimbursement": "3558",
         "percent": "#VALUE!",
         "pdac": "5/21/2021",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
       {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2855,7 +2999,8 @@ const  feetArray21 = [
         "reimbursement": "N/A**",
         "percent": "#VALUE!",
         "pdac": "NO pdac APPROVAL",
-        "image": ""
+        "image": "../images/",
+"link":""
       },
 
 
@@ -2881,7 +3026,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$7,260 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
     
     // {
@@ -2896,7 +3042,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$10,882 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
     
     // {
@@ -2911,7 +3058,8 @@ const  feetArrayArray = [
     //   "reimbursement": "",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -2926,7 +3074,8 @@ const  feetArrayArray = [
     //   "reimbursement": "",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
     
     // {
@@ -2941,7 +3090,8 @@ const  feetArrayArray = [
     //   "reimbursement": "",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // }
    ]
 
@@ -2968,7 +3118,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$4,046 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
     
     // {
@@ -2983,7 +3134,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$6,657 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
     
     // {
@@ -2998,7 +3150,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$8,488 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
     
     // {
@@ -3013,7 +3166,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$203 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
     
     // {
@@ -3028,7 +3182,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$379 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -3043,7 +3198,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$1,011 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -3058,7 +3214,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$2,972 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
 
     // {
@@ -3073,7 +3230,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$17,363 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -3088,7 +3246,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$233 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
 
     // {
@@ -3103,7 +3262,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$559 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -3118,7 +3278,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$2,277 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -3133,7 +3294,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$3,700 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -3148,7 +3310,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$4,333 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -3163,7 +3326,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$2,989 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
 
     // {
@@ -3178,7 +3342,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$3,622 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
 
     // {
@@ -3193,7 +3358,8 @@ const  feetArrayArray = [
     //   "reimbursement": "$7,829 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },
    
     // {
@@ -3208,5 +3374,6 @@ const  feetArrayArray = [
     //   "reimbursement": "$7,892 ",
     //   "percent": "",
     //   "pdac": "",
-    //   "image": ""
+    //   "image": "../images/",
+
     // },

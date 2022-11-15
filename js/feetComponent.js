@@ -32,8 +32,9 @@ itemFour.addEventListener("click", () => feetCard(feetArrayFour));
 itemFive.addEventListener("click", () => feetCard(feetArrayFive));
 itemSix.addEventListener("click", () => feetCard(feetArraySix));
 itemSeven.addEventListener("click", () => feetCard(feetArraySeven));
-itemEight.addEventListener("click", () => feetCard(feetArrayEight));
-itemNine.addEventListener("click", () => feetCard(feetArrayNine));
+itemNine.addEventListener("click", () => feetCard(feetArrayEight));
+// the above is the MPF section.
+itemEight.addEventListener("click", () => feetCard(feetArrayNine));
 itemTen.addEventListener("click", () => feetCard(feetArrayTen));
 itemEleven.addEventListener("click", () => feetCard(feetArrayEleven));
 itemTwelve.addEventListener("click", () => feetCard(feetArrayTwelve));
