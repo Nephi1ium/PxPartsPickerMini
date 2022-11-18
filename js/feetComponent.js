@@ -1,4 +1,4 @@
-import { feetArrayOne, feetArrayTwo, feetArrayThree, feetArrayFour, feetArrayFive, feetArraySix, feetArraySeven, feetArrayEight, feetArrayNine, feetArrayTen, feetArrayEleven, feetArrayTwelve, feetArrayThirteen, feetArray14, feetArray15, feetArray16, feetArray17, feetArray18, feetArray19, feetArray20, feetArray21} from "../src/feetArrays/feetArray.js";
+import { FlexFootMultiAxialAnkle, FlexWalk, FlexWalkMultiAxial, VertShockAxialRot, VertShockMultiAxialRot, VertShock, MiscFeet, L5999, FlexWalkMultiAxialAnkleVac, k2FlexKeelhydraMulti, FlexFoot, MultiAxialDynamResp, EnergyStore, SingAxis, Microprocessor, k3FlexHydrauMulti, K3FlexHydrauMultiVertShock, SACH, K2FlexHeel, K2FlexKeelMultiAxialRot, K2FlexKeelAxialRotVert} from "../src/feetArrays/feetArray.js";
 
 
 const itemOne = document.querySelector("#feetOne");
@@ -25,28 +25,28 @@ const itemTwentyOne = document.querySelector("#feet21");
 const itemTwentyTwo = document.querySelector("#feet22");
 
 
-itemOne.addEventListener("click", () => feetCard(feetArrayOne));
-itemTwo.addEventListener("click", () => feetCard(feetArrayTwo));
-itemThree.addEventListener("click", () => feetCard(feetArrayThree));
-itemFour.addEventListener("click", () => feetCard(feetArrayFour));
-itemFive.addEventListener("click", () => feetCard(feetArrayFive));
-itemSix.addEventListener("click", () => feetCard(feetArraySix));
-itemSeven.addEventListener("click", () => feetCard(feetArraySeven));
-itemNine.addEventListener("click", () => feetCard(feetArrayEight));
+itemOne.addEventListener("click", () => feetCard(k2FlexKeelhydraMulti));
+itemTwo.addEventListener("click", () => feetCard(k3FlexHydrauMulti));
+itemThree.addEventListener("click", () => feetCard(K3FlexHydrauMultiVertShock));
+itemFour.addEventListener("click", () => feetCard(SACH));
+itemFive.addEventListener("click", () => feetCard(K2FlexHeel));
+itemSix.addEventListener("click", () => feetCard(K2FlexKeelMultiAxialRot));
+itemSeven.addEventListener("click", () => feetCard(K2FlexKeelAxialRotVert));
+itemNine.addEventListener("click", () => feetCard(Microprocessor));
 // the above is the MPF section.
-itemEight.addEventListener("click", () => feetCard(feetArrayNine));
-itemTen.addEventListener("click", () => feetCard(feetArrayTen));
-itemEleven.addEventListener("click", () => feetCard(feetArrayEleven));
-itemTwelve.addEventListener("click", () => feetCard(feetArrayTwelve));
-itemThirteen.addEventListener("click", () => feetCard(feetArrayThirteen));
-itemFourteen.addEventListener("click", () => feetCard(feetArray14));
-itemFifteen.addEventListener("click", () => feetCard(feetArray15));
-itemSixteen.addEventListener("click", () => feetCard(feetArray16));
-itemSeventeen.addEventListener("click", () => feetCard(feetArray17));
-itemEighteen.addEventListener("click", () => feetCard(feetArray18));
-itemNineteen.addEventListener("click", () => feetCard(feetArray19));
-itemTwenty.addEventListener("click", () => feetCard(feetArray20));
-itemTwentyOne.addEventListener("click", () => feetCard(feetArray21));
+itemEight.addEventListener("click", () => feetCard(SingAxis));
+itemTen.addEventListener("click", () => feetCard(EnergyStore));
+itemEleven.addEventListener("click", () => feetCard(MultiAxialDynamResp));
+itemTwelve.addEventListener("click", () => feetCard(FlexFoot));
+itemThirteen.addEventListener("click", () => feetCard(FlexFootMultiAxialAnkle));
+itemFourteen.addEventListener("click", () => feetCard(FlexWalk));
+itemFifteen.addEventListener("click", () => feetCard(FlexWalkMultiAxial));
+itemSixteen.addEventListener("click", () => feetCard(VertShockAxialRot));
+itemSeventeen.addEventListener("click", () => feetCard(VertShockMultiAxialRot));
+itemEighteen.addEventListener("click", () => feetCard(VertShock));
+itemNineteen.addEventListener("click", () => feetCard(FlexWalkMultiAxialAnkleVac));
+itemTwenty.addEventListener("click", () => feetCard(L5999));
+itemTwentyOne.addEventListener("click", () => feetCard(MiscFeet));
 
 
 function feetCard(array){

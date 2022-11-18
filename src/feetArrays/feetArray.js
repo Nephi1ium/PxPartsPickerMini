@@ -4,7 +4,7 @@
 // chunk([1, 2, 3, 4, 5, 6, 7, 8], 3);     // [[1, 2, 3], [4, 5, 6], [7, 8]]
 // chunk([1, 2, 3, 4, 5, 6, 7, 8], 4); 
 
-const  feetArrayOne = [
+const  k2FlexKeelhydraMulti = [
     {
         "manufacturer": "Blatchford",
         "name": "Avalon",
@@ -64,7 +64,7 @@ const  feetArrayOne = [
 
 ]
 
-const  feetArrayTwo = [
+const  k3FlexHydrauMulti = [
 
     {
         "manufacturer": "Blatchford",
@@ -126,7 +126,7 @@ const  feetArrayTwo = [
 
 ]
 
-const  feetArrayThree = [
+const K3FlexHydrauMultiVertShock = [
 
     // {
     //     "manufacturer": "Motion_Control",
@@ -176,9 +176,7 @@ const  feetArrayThree = [
 
 ]
 
-
-
-const  feetArrayFour = [
+const  SACH = [
 
 
     {
@@ -215,7 +213,7 @@ const  feetArrayFour = [
 
 ]
 
-const  feetArrayFive = [
+const  K2FlexHeel = [
 
 
     {
@@ -467,9 +465,7 @@ const  feetArrayFive = [
 
 ]
 
-
-
-const  feetArraySix = [
+const  K2FlexKeelMultiAxialRot = [
 
     {
         "manufacturer": "Trulife",
@@ -611,7 +607,7 @@ const  feetArraySix = [
 ]
 
 
-const  feetArraySeven = [
+const  K2FlexKeelAxialRotVert = [
 
 
     {
@@ -632,7 +628,7 @@ const  feetArraySeven = [
 
 ]
 
-const  feetArrayEight = [
+const  Microprocessor = [
 
     {
         "manufacturer": "Blatchford",
@@ -714,7 +710,7 @@ const  feetArrayEight = [
 ]
 
 
-const  feetArrayNine = [
+const  SingAxis = [
 
 
     {
@@ -752,7 +748,7 @@ const  feetArrayNine = [
 ]
 
 
-const  feetArrayTen = [
+const  EnergyStore = [
 
 
     {
@@ -940,8 +936,7 @@ const  feetArrayTen = [
 ]
 
 
-
-const  feetArrayEleven = [
+const  MultiAxialDynamResp = [
 
     {
         "manufacturer": "College_Park",
@@ -1053,7 +1048,7 @@ const  feetArrayEleven = [
 ]
 
 
-const  feetArrayTwelve = [
+const  FlexFoot = [
 
 
     {
@@ -1205,7 +1200,7 @@ const  feetArrayTwelve = [
 ]
 
 
-const  feetArrayThirteen = [
+const  FlexFootMultiAxialAnkle = [
 
     {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -1271,9 +1266,7 @@ const  feetArrayThirteen = [
 ]
 
 
-
-
-const  feetArray14 = [
+const  FlexWalk = [
 
 
     {
@@ -1988,7 +1981,7 @@ const  feetArray14 = [
 ]
 
 
-const  feetArray15 = [
+const  FlexWalkMultiAxial = [
 
 
     {
@@ -2128,7 +2121,7 @@ const  feetArray15 = [
 ]
 
 
-const  feetArray16 = [
+const  VertShockAxialRot = [
 
     {
         "manufacturer": "Blatchford",
@@ -2269,7 +2262,7 @@ const  feetArray16 = [
 ]
 
 
-const  feetArray17 = [
+const  VertShockMultiAxialRot = [
 
     {
         "manufacturer": "Proteor_Ability_Freedom",
@@ -2501,8 +2494,7 @@ const  feetArray17 = [
 ]
 
 
-
-const  feetArray18 = [
+const  VertShock = [
 
     {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2553,7 +2545,7 @@ const  feetArray18 = [
 
 ]
 
-const  feetArray19 = [
+const  FlexWalkMultiAxialAnkleVac = [
 
     {
         "manufacturer": "Otto_Bock_Freedom",
@@ -2589,7 +2581,7 @@ const  feetArray19 = [
 ]
 
 
-const  feetArray20 = [
+const  L5999 = [
 
     {
         "manufacturer": "Stomper",
@@ -2745,7 +2737,7 @@ const  feetArray20 = [
 ]
 
 
-const  feetArray21 = [
+const  MiscFeet = [
 
     {
         "manufacturer": "College_Park",
@@ -3007,95 +2999,92 @@ const  feetArray21 = [
 ]
 
 
-
-
-
-const  feetArrayArray = [
+// const  feetArrayArray = [
 
   
     
-    // {
-    //   "manufacturer": "Vertical Shock:     L5987",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$7,260 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
+//     // {
+//     //   "manufacturer": "Vertical Shock:     L5987",
+//     //   "name": "",
+//     //   "lcode1": "",
+//     //   "lcode2": "",
+//     //   "lcode3": "",
+//     //   "lcode4": "",
+//     //   "hdcode": "",
+//     //   "cost": "",
+//     //   "reimbursement": "$7,260 ",
+//     //   "percent": "",
+//     //   "pdac": "",
+//     //   "image": "../images/",
 
-    // },
+//     // },
     
-    // {
-    //   "manufacturer": "Flexwalk with Multiaxial Ankle and Vacuum  :     L5987,  L5986,  L5781",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$10,882 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
+//     // {
+//     //   "manufacturer": "Flexwalk with Multiaxial Ankle and Vacuum  :     L5987,  L5986,  L5781",
+//     //   "name": "",
+//     //   "lcode1": "",
+//     //   "lcode2": "",
+//     //   "lcode3": "",
+//     //   "lcode4": "",
+//     //   "hdcode": "",
+//     //   "cost": "",
+//     //   "reimbursement": "$10,882 ",
+//     //   "percent": "",
+//     //   "pdac": "",
+//     //   "image": "../images/",
 
-    // },
+//     // },
     
-    // {
-    //   "manufacturer": "Coding Group:     L5999 Base Code",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
+//     // {
+//     //   "manufacturer": "Coding Group:     L5999 Base Code",
+//     //   "name": "",
+//     //   "lcode1": "",
+//     //   "lcode2": "",
+//     //   "lcode3": "",
+//     //   "lcode4": "",
+//     //   "hdcode": "",
+//     //   "cost": "",
+//     //   "reimbursement": "",
+//     //   "percent": "",
+//     //   "pdac": "",
+//     //   "image": "../images/",
 
-    // },
+//     // },
    
-    // {
-    //   "manufacturer": "Coding Group:     Miscellaneous",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
+//     // {
+//     //   "manufacturer": "Coding Group:     Miscellaneous",
+//     //   "name": "",
+//     //   "lcode1": "",
+//     //   "lcode2": "",
+//     //   "lcode3": "",
+//     //   "lcode4": "",
+//     //   "hdcode": "",
+//     //   "cost": "",
+//     //   "reimbursement": "",
+//     //   "percent": "",
+//     //   "pdac": "",
+//     //   "image": "../images/",
 
-    // },
+//     // },
     
-    // {
-    //   "manufacturer": "#N/A - applies when a L5999 exists or the pricing is not standard ",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
+//     // {
+//     //   "manufacturer": "#N/A - applies when a L5999 exists or the pricing is not standard ",
+//     //   "name": "",
+//     //   "lcode1": "",
+//     //   "lcode2": "",
+//     //   "lcode3": "",
+//     //   "lcode4": "",
+//     //   "hdcode": "",
+//     //   "cost": "",
+//     //   "reimbursement": "",
+//     //   "percent": "",
+//     //   "pdac": "",
+//     //   "image": "../images/",
 
-    // }
-   ]
+//     // }
+//    ]
 
-   export { feetArrayOne, feetArrayTwo, feetArrayThree, feetArrayFour, feetArrayFive, feetArraySix, feetArraySeven, feetArrayEight, feetArrayNine, feetArrayTen, feetArrayEleven, feetArrayTwelve, feetArrayThirteen, feetArray14, feetArray15, feetArray16, feetArray17, feetArray18, feetArray19, feetArray20, feetArray21};
+   export { K2FlexKeelMultiAxialRot, FlexFootMultiAxialAnkle, FlexWalk, FlexWalkMultiAxial, VertShockAxialRot, VertShockMultiAxialRot, VertShock, MiscFeet, L5999, FlexWalkMultiAxialAnkleVac, k2FlexKeelhydraMulti, FlexFoot, MultiAxialDynamResp, EnergyStore, SingAxis, Microprocessor, k3FlexHydrauMulti, K3FlexHydrauMultiVertShock, SACH, K2FlexHeel, K2FlexKeelAxialRotVert};
 
 
 
