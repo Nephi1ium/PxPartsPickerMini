@@ -1,6 +1,6 @@
 
-  favoritesArray = [];
-  
+  kneeFavoritesArray = [];
+  footFavoritesArray = [];
 
   function kneeFavorites(keyed){
 
@@ -10,14 +10,14 @@ console.log(keyed.id, "keyed object");
     console.log(getStoredFavorite, "retrieved cart item from local storage");
     // retrieve the stored favorite item
 
-    favoritesArray.push(getStoredFavorite);
-     console.log(favoritesArray, "local storage array with favorite item");
+    kneeFavoritesArray.push(getStoredFavorite);
+     console.log(kneeFavoritesArray, "local storage array with favorite item");
         // add the item to the cart array
       
-      localStorage.setItem("Favorites", JSON.stringify(favoritesArray))
+      localStorage.setItem("Knee Favorites", JSON.stringify(kneeFavoritesArray))
         // push the cartArray to local storage
 
-      let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
+      let getFavorites = JSON.parse(localStorage.getItem("Knee Favorites"));
       console.log(getFavorites, "local storage favorite array");
         // retrieve the stored array to check the values
         document.getElementById('itemSectionJS').innerHTML = "";
@@ -80,6 +80,59 @@ console.log(keyed.id, "keyed object");
 
 }
 
+function footFavorites(foot){
+  console.log(foot, "foot object");
+
+  console.log(foot.id, "foot id object");
+      
+      let getStoredFavorite = JSON.parse(localStorage.getItem(foot.id));
+      console.log(getStoredFavorite, "retrieved cart item from local storage");
+      // retrieve the stored favorite item
+  
+      footFavoritesArray.push(getStoredFavorite);
+       console.log(footFavoritesArray, "local storage array with favorite item");
+          // add the item to the cart array
+        
+        localStorage.setItem("Foot Favorites", JSON.stringify(footFavoritesArray))
+          // push the cartArray to local storage
+  
+        let getFavorites = JSON.parse(localStorage.getItem("Foot Favorites"));
+        console.log(getFavorites, "local storage favorite array");
+          // retrieve the stored array to check the values
+          document.getElementById('itemSectionJS').innerHTML = "";
+          // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
+          let favoritesLocation = document.querySelector('#itemSectionJS');
+          // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+  
+          // set the location where the favorite should show in the new configuration
+  
+          getFavorites.forEach(component => {    
+            favoritesLocation.innerHTML = favoritesLocation.innerHTML +
+           `<div class="card card-margin" id="${component.valAssign}">
+           <a class="footClick btn-small btn btn-primary" onclick="footCart(${component.valAssign})" > + Cart </a>
+           <img class="card-image" src="${component.image}"></img>
+  
+              <div class="card-header">
+                  <h4 id=""> ${component.name} </h4>
+                  <a class="footClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
+                  <div id="">HD Code: ${component.hdcode}</div>
+                  <h5><u> L-Codes </u></h5>
+                  <div class="lcodes">
+                  <div id="${component.lcode1}">${component.lcode1}</div>
+                  <div id="${component.lcode2}">${component.lcode2}</div>
+                  <div id="${component.lcode3}">${component.lcode3}</div>
+                  <div id="${component.lcode4}">${component.lcode4}</div>
+                  <div id="${component.lcode5}">${component.lcode5}</div>
+                  <div id="${component.lcode6}">${component.lcode6}</div>
+                  </div>
+                  </div>
+              </div>
+          </div>`;
+          console.log("Created", component.card, "Cards");
+          
+          });
+}
+
 function showFavorites(){
 
       // let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
@@ -93,12 +146,12 @@ function showFavorites(){
       //   getFavorites.forEach(component => {    
       //     favoritesLocation.innerHTML = favoritesLocation.innerHTML +
       //    `<div class="card card-margin" id="${component.valAssign}">
-      //    <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
+      //    <a class="footClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
       //    <img class="card-image" src="${component.image}"></img>
 
       //       <div class="card-header">
       //           <h4 id=""> ${component.name} </h4>
-      //           <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign}, ${component.valAssign})" > Remove Favorite (not working) </a>
+      //           <a class="footClick btn btn-primary" onclick="removeFavorites(${component.valAssign}, ${component.valAssign})" > Remove Favorite (not working) </a>
       //           <div id="">HD Code: ${component.hdcode}</div>
       //           </div>
       //       </div>

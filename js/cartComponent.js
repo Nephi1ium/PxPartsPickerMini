@@ -1,4 +1,5 @@
-kneeArray = []
+kneeArray = [];
+footCart = [];
 cartArray = [];
 cartDisplayArray = [];
 
@@ -85,7 +86,35 @@ function kneeCart(item){
     };
     kneeCartItem(item);
     
-    }
+    
+
+    function footCartItem(item){
+
+      let footCartItem = item[0].id;
+  // set a default cart item
+
+    console.log(item[0].id, "item object");
+    console.log(footCartItem, "cartItem");
+// test the values
+
+    let getStoredFoot = JSON.parse(localStorage.getItem(footCartItem));
+    console.log(getStoredFoot, "retrieved cart item from local storage");
+    // retrieve the item
+
+     footArray.push(getStoredFoot);
+     console.log(footArray, "local storage array with cart item");
+        // add the item to the cart array
+      
+      localStorage.setItem("Foot cart item", JSON.stringify(footArray))
+        // push the cartArray to local storage
+
+      let getFootCartItem = JSON.parse(localStorage.getItem("Foot cart item"));
+      console.log(getFootCartItem, "local storage Foot cart item array");
+        // retrieve the stored array to check the values
+    };
+    footCartItem(item);
+  }
+    
 
     
 function removeCart(value){
@@ -129,7 +158,7 @@ let cartLocation = document.querySelector('#cartSection');
 showCart.forEach(component => {    
 cartLocation.innerHTML = cartLocation.innerHTML +
    `<div id="${component.valAssign}">
-   <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign})"> Delete </a>
+   <a class="footClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign})"> Delete </a>
    <img class="cart-image" src="${component.image}"></img>
           <h4 > ${component.name} </h4>
   </div>`;

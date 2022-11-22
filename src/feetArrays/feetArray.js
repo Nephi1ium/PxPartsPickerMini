@@ -6,6 +6,7 @@
 
 const  k2FlexKeelhydraMulti = [
     {
+        "valAssign":"AVFOOT",
         "manufacturer": "Blatchford",
         "name": "Avalon",
         "lcode1": "L5968",
@@ -20,6 +21,7 @@ const  k2FlexKeelhydraMulti = [
         "image": "../images/avalon.jpg"
       },
       {
+        "valAssign":"OK2KIT",
         "manufacturer": "College_Park",
         "name": "Odyssey K2 Foot",
         "lcode1": "L5968",
@@ -34,6 +36,7 @@ const  k2FlexKeelhydraMulti = [
         "image": "../images/odyssey_k2.jpg"
       },
       {
+        "valAssign":"K2DFOOT",
         "manufacturer": "Ossur",
         "name": "K2 Sensation with D/P Ankle",
         "lcode1": "L5968",
@@ -48,6 +51,7 @@ const  k2FlexKeelhydraMulti = [
         "image": "../images/k2_sensation_ankle.jpg"
       },
       {
+        "valAssign":"VS4KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Kintrol",
         "lcode1": "L5968",
@@ -67,6 +71,7 @@ const  k2FlexKeelhydraMulti = [
 const  k3FlexHydrauMulti = [
 
     {
+        "valAssign":"ECSTKIT",
         "manufacturer": "Blatchford",
         "name": "Echelon",
         "lcode1": "L5968",
@@ -81,6 +86,7 @@ const  k3FlexHydrauMulti = [
         "image": "../images/echelon_basic.jpg"
       },
       {
+        "valAssign":"ODK3KIT",
         "manufacturer": "College_Park",
         "name": "Odyssey K3",
         "lcode1": "L5968",
@@ -95,6 +101,7 @@ const  k3FlexHydrauMulti = [
         "image": "../images/odyssey_k3.jpg"
       },
       {
+        "valAssign":"ROMKIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "Kinterra",
         "lcode1": "L5968",
@@ -109,6 +116,7 @@ const  k3FlexHydrauMulti = [
         "image": "../images/kinterra.jpg"
       },
       {
+        "valAssign":"ECERFOOT",
         "manufacturer": "Blatchford",
         "name": "EchelonER",
         "lcode1": "L5968",
@@ -128,36 +136,9 @@ const  k3FlexHydrauMulti = [
 
 const K3FlexHydrauMultiVertShock = [
 
-    // {
-    //     "manufacturer": "Motion_Control",
-    //     "name": "Motion MX",
-    //     "lcode1": "L5968",
-    //     "lcode2": "L5981",
-    //     "lcode3": "L5990",
-    //     "lcode4": " ",
-    //     "hdcode": "50200-KIT",
-    //     "cost": "5271.21",
-    //     "reimbursement": "8488",
-    //     "percent": "62%",
-    //     "pdac": "NO pdac APPROVAL",
-    //     "image": "../images/",
-    //   },
-      // {
-      //   "manufacturer": "K3 Flexwalk with Hydraulic Multiaxial ankle and Vertical Shock:     L5968,  L5981, L5988",
-      //   "name": "",
-      //   "lcode1": "",
-      //   "lcode2": "",
-      //   "lcode3": "",
-      //   "lcode4": "",
-      //   "hdcode": "",
-      //   "cost": "",
-      //   "reimbursement": "$8,673 ",
-      //   "percent": "",
-      //   "pdac": "",
-      //   "image": "../images/",
 
-      // },
       {
+        "valAssign":"ECVTLKIT",
         "manufacturer": "Blatchford",
         "name": "Echelon VT",
         "lcode1": "L5968",
@@ -180,6 +161,7 @@ const  SACH = [
 
 
     {
+        "valAssign":"SCH11XFOOT",
         "manufacturer": "Trulife",
         "name": "Seattle Sach",
         "lcode1": "L5971",
@@ -194,6 +176,7 @@ const  SACH = [
         "image": "../images/seattle_sach_light.jpg"
       },
       {
+        "valAssign":"SFPFOOT",
         "manufacturer": "WillowWood",
         "name": "Sach Foot (SFP)",
         "lcode1": "L5971",
@@ -217,6 +200,7 @@ const  K2FlexHeel = [
 
 
     {
+        "valAssign":"SNF16XFOOT",
         "manufacturer": "Trulife",
         "name": "Seattle Natural",
         "lcode1": "L5972",
@@ -231,6 +215,7 @@ const  K2FlexHeel = [
         "image": "../images/seattle_sach_light.jpg"
       },
       {
+        "valAssign":"BEFOOTKIT",
         "manufacturer": "College_Park",
         "name": "Breeze",
         "lcode1": "L5972",
@@ -245,6 +230,7 @@ const  K2FlexHeel = [
         "image": "../images/breeze.jpg"
       },
       {
+        "valAssign":"STELLARKIT",
         "manufacturer": "Blatchford",
         "name": "Stellar",
         "lcode1": "L5972",
@@ -259,6 +245,7 @@ const  K2FlexHeel = [
         "image": "../images/stellar.jpg"
       },
       {
+        "valAssign":"TOFOOTKIT",
         "manufacturer": "College_Park",
         "name": "Tempo",
         "lcode1": "L5972",
@@ -273,6 +260,7 @@ const  K2FlexHeel = [
         "image": "../images/tempo.jpg"
       },
       {
+        "valAssign":"1A200FOOTKIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "Gery",
         "lcode1": "L5972",
@@ -287,6 +275,7 @@ const  K2FlexHeel = [
         "image": "../images/gery.jpg"
       },
       {
+        "valAssign":"K1A",
         "manufacturer": "Dycor",
         "name": "K1A",
         "lcode1": "L5972",
@@ -301,6 +290,7 @@ const  K2FlexHeel = [
         "image": "../images/k1a.jpg"
       },
       {
+        "valAssign":"K3U",
         "manufacturer": "Dycor",
         "name": "K3U",
         "lcode1": "L5972",
@@ -315,6 +305,7 @@ const  K2FlexHeel = [
         "image": "../images/k1a.jpg"
       },
       {
+        "valAssign":"K2PFOOT",
         "manufacturer": "Ossur",
         "name": "K2 Sensation",
         "lcode1": "L5972",
@@ -329,6 +320,7 @@ const  K2FlexHeel = [
         "image": "../images/k2sensation.jpg"
       },
       {
+        "valAssign":"VS5FOOT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Restore",
         "lcode1": "L5972",
@@ -343,6 +335,7 @@ const  K2FlexHeel = [
         "image": "../images/restore.jpg"
       },
       {
+        "valAssign":"1D10",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1D10 Dynamic",
         "lcode1": "L5972",
@@ -357,6 +350,7 @@ const  K2FlexHeel = [
         "image": "../images/1d10.jpg"
       },
       {
+        "valAssign":"DWF",
         "manufacturer": "WillowWood",
         "name": "Durawalk",
         "lcode1": "L5972",
@@ -371,21 +365,9 @@ const  K2FlexHeel = [
         "image": "../images/durawalk.jpg",
         "link": "https://www.spsco.com/dynamic-foot-w-toes.html"
       },
-      // {
-      //   "manufacturer": "Otto_Bock_Freedom",
-      //   "name": "1WR95 Aqualine",
-      //   "lcode1": "L5972",
-      //   "lcode2": " ",
-      //   "lcode3": " ",
-      //   "lcode4": " ",
-      //   "hdcode": "1WR95",
-      //   "cost": "281.29",
-      //   "reimbursement": "379",
-      //   "percent": "74%",
-      //   "pdac": "NO pdac APPROVAL",
-      //   "image": "../images/",
-      // },
+
       {
+        "valAssign":"134KIT",
         "manufacturer": "Fillauer",
         "name": "K2",
         "lcode1": "L5972",
@@ -401,6 +383,7 @@ const  K2FlexHeel = [
         "link": "https://www.spsco.com/k2-foot.html"
       },
       {
+        "valAssign":"1C11",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Terion",
         "lcode1": "L5972",
@@ -416,6 +399,7 @@ const  K2FlexHeel = [
         "link":"https://www.spsco.com/terion-k2.html"
       },
       {
+        "valAssign":"1A101FOOT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "1A101 Dynamic",
         "lcode1": "L5972",
@@ -431,6 +415,7 @@ const  K2FlexHeel = [
 "link":"https://www.spsco.com/dynastep.html"
       },
       {
+        "valAssign":"1M10",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1M10",
         "lcode1": "L5972",
@@ -446,6 +431,7 @@ const  K2FlexHeel = [
 "link":"https://www.spsco.com/adjust-multiaxial-foot-w-footshell.html"
       },
       {
+        "valAssign":"BSP0FOOT",
         "manufacturer": "Ossur",
         "name": "Balance S",
         "lcode1": "L5972",
@@ -468,6 +454,7 @@ const  K2FlexHeel = [
 const  K2FlexKeelMultiAxialRot = [
 
     {
+        "valAssign":"SKF20XFOOT",
         "manufacturer": "Trulife",
         "name": "Kinetic",
         "lcode1": "L5972",
@@ -483,6 +470,7 @@ const  K2FlexKeelMultiAxialRot = [
 "link":"https://www.spsco.com/seattle-kinetic-foot-with-pylon.html"
       },
       {
+        "valAssign":"CSXKIT",
         "manufacturer": "College_Park",
         "name": "Celsus",
         "lcode1": "L5972",
@@ -498,6 +486,7 @@ const  K2FlexKeelMultiAxialRot = [
 "link":"https://www.spsco.com/celsus-k1-k2-foot.html"
       },
       {
+        "valAssign":"SKF10XFOOT",
         "manufacturer": "Trulife",
         "name": "Seattle Kinetic Lightfoot",
         "lcode1": "L5972",
@@ -513,6 +502,7 @@ const  K2FlexKeelMultiAxialRot = [
 "link":"https://www.spsco.com/seattle-kinetic-light.html"
       },
       {
+        "valAssign":"NAVFOOT",
         "manufacturer": "Blatchford",
         "name": "Navigator",
         "lcode1": "L5972",
@@ -528,6 +518,7 @@ const  K2FlexKeelMultiAxialRot = [
 "link":"https://www.spsco.com/navigator-foot-1.html"
       },
       {
+        "valAssign":"SKF30XFOOT",
         "manufacturer": "Trulife",
         "name": "Kinetic Edge",
         "lcode1": "L5972",
@@ -543,6 +534,7 @@ const  K2FlexKeelMultiAxialRot = [
 "link":"https://www.spsco.com/trulife-seattle-kinetic-edge-foot.html"
       },
       {
+        "valAssign":"5191FOOT",
         "manufacturer": "Blatchford",
         "name": "Multiflex",
         "lcode1": "L5972",
@@ -558,6 +550,7 @@ const  K2FlexKeelMultiAxialRot = [
 "link":"https://www.spsco.com/multiflex-standard.html"
       },
       {
+        "valAssign":"AGMFOOT",
         "manufacturer": "Dycor",
         "name": "AGM (multi-axial foot)",
         "lcode1": "L5972",
@@ -573,6 +566,7 @@ const  K2FlexKeelMultiAxialRot = [
 "link":"https://www.spsco.com/dycor-aggressive-gait-management-foot.html"
       },
       {
+        "valAssign":"STMFOOT",
         "manufacturer": "Dycor",
         "name": "STM (multi-axial foot)",
         "lcode1": "L5972",
@@ -588,6 +582,7 @@ const  K2FlexKeelMultiAxialRot = [
 "link":"https://www.spsco.com/dycor-soft-tissue-management-foot.html"
       },
       {
+        "valAssign":"1A30",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1A30 Greissenger Plus",
         "lcode1": "L5972",
@@ -611,6 +606,7 @@ const  K2FlexKeelAxialRotVert = [
 
 
     {
+        "valAssign":"BST0FOOT",
         "manufacturer": "Ossur",
         "name": "Balance S Torsion",
         "lcode1": "L5972",
@@ -631,6 +627,7 @@ const  K2FlexKeelAxialRotVert = [
 const  Microprocessor = [
 
     {
+        "valAssign":"ELANICFOOT",
         "manufacturer": "Blatchford",
         "name": "Elan IC",
         "lcode1": "L5973",
@@ -646,6 +643,7 @@ const  Microprocessor = [
 "link":"https://www.spsco.com/elanic-foot.html"
       },
       {
+        "valAssign":"ELANFOOT",
         "manufacturer": "Blatchford",
         "name": "Elan MPF",
         "lcode1": "L5973",
@@ -661,6 +659,7 @@ const  Microprocessor = [
 "link":"https://www.spsco.com/elan-microprocessor-controlled-foot.html"
       },
       {
+        "valAssign":"PSX0FOOT",
         "manufacturer": "Ossur",
         "name": "Proprio MPF",
         "lcode1": "L5973",
@@ -676,6 +675,7 @@ const  Microprocessor = [
 "link":"https://www.spsco.com/proprio-foot.html"
       },
       {
+        "valAssign":"F14N2KIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "Kinnex MPF",
         "lcode1": "L5973",
@@ -691,6 +691,7 @@ const  Microprocessor = [
         "link":"https://www.spsco.com/kinnex-2-0-1.html"
       },
       {
+        "valAssign":"1B1",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1B1 Meridium MPF",
         "lcode1": "L5973",
@@ -714,6 +715,7 @@ const  SingAxis = [
 
 
     {
+        "valAssign":"SAFFOOT",
         "manufacturer": "WillowWood",
         "name": "Single Axis Foot",
         "lcode1": "L5974",
@@ -729,6 +731,7 @@ const  SingAxis = [
 "link":"https://www.spsco.com/endoskeletal-single-axis-ankle-1.html"
       },
       {
+        "valAssign":"1H38",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Single Axis",
         "lcode1": "L5974",
@@ -752,6 +755,7 @@ const  EnergyStore = [
 
 
     {
+        "valAssign":"SLF19XFOOT",
         "manufacturer": "Trulife",
         "name": "Seattle Lightfoot 2",
         "lcode1": "L5976",
@@ -767,6 +771,7 @@ const  EnergyStore = [
 "link":""
       },
       {
+        "valAssign":"LCEFOOT",
         "manufacturer": "Dycor",
         "name": "Chopart/Listfranc Partial Foot",
         "lcode1": "L5976",
@@ -782,6 +787,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/lisfranc-chopart-energy-returning-foot.html"
       },
       {
+        "valAssign":"IMPMMLHFOOT",
         "manufacturer": "WillowWood",
         "name": "Impulse",
         "lcode1": "L5976",
@@ -797,6 +803,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/impulse-men-s-foot-with-low-heel.html"
       },
       {
+        "valAssign":"JBPEFOOT",
         "manufacturer": "Ossur",
         "name": "Balance J",
         "lcode1": "L5976",
@@ -812,6 +819,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/balance-j.html"
       },
       {
+        "valAssign":"SEF19XFOOT",
         "manufacturer": "Trulife",
         "name": "Seattle Energy",
         "lcode1": "L5976",
@@ -827,6 +835,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/seattle-energy-foot.html"
       },
       {
+        "valAssign":"SZM45XFOOT",
         "manufacturer": "Trulife",
         "name": "Seattle Zumo",
         "lcode1": "L5976",
@@ -842,6 +851,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/seattle-zumo-foot.html"
       },
       {
+        "valAssign":"SEF1X",
         "manufacturer": "Trulife",
         "name": "Child’s Play",
         "lcode1": "L5976",
@@ -857,6 +867,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/seattle-childs-play-energy-foot.html"
       },
       {
+        "valAssign":"VS1KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Senator",
         "lcode1": "L5976",
@@ -872,6 +883,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/senator.html"
       },
       {
+        "valAssign":"1E80FOOTPLATE",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1E80 Chopart",
         "lcode1": "L5976",
@@ -887,6 +899,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/chopart-1-01.html"
       },
       {
+        "valAssign":"RUSHCHOPART",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "RUSH_Chopart_formerly_RUSH_76",
         "lcode1": "L5976",
@@ -902,6 +915,7 @@ const  EnergyStore = [
 "link":"https://www.spsco.com/rush-chopart-k3-k4-foot.html"
       },
       {
+        "valAssign":"CHPKIT",
         "manufacturer": "Ossur",
         "name": "Chopart Foot/Insert",
         "lcode1": "L5976",
@@ -917,6 +931,7 @@ const  EnergyStore = [
         "link":"https://www.spsco.com/chopart-foot-kit.html"
       },
       {
+        "valAssign":"MHD300KIT",
         "manufacturer": "WillowWood",
         "name": "Magnum Heavy Duty",
         "lcode1": "L5976",
@@ -939,6 +954,7 @@ const  EnergyStore = [
 const  MultiAxialDynamResp = [
 
     {
+        "valAssign":"TRIBKIT",
         "manufacturer": "College_Park",
         "name": "Tribute",
         "lcode1": "L5979",
@@ -954,6 +970,7 @@ const  MultiAxialDynamResp = [
 "link":""
       },
       {
+        "valAssign":"FBPFOOT",
         "manufacturer": "Ossur",
         "name": "Flex Balance",
         "lcode1": "L5979",
@@ -969,6 +986,7 @@ const  MultiAxialDynamResp = [
 "link":""
       },
       {
+        "valAssign":"TPIKIT",
         "manufacturer": "College_Park",
         "name": "Truper",
         "lcode1": "L5979",
@@ -984,6 +1002,7 @@ const  MultiAxialDynamResp = [
 "link":""
       },
       {
+        "valAssign":"1D35",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1D35 Dynamic Motion Foot",
         "lcode1": "L5979",
@@ -999,6 +1018,7 @@ const  MultiAxialDynamResp = [
 "link":""
       },
       {
+        "valAssign":"DR",
         "manufacturer": "Dycor",
         "name": "Dynamic Response",
         "lcode1": "L5979",
@@ -1014,6 +1034,7 @@ const  MultiAxialDynamResp = [
 "link":""
       },
       {
+        "valAssign":"TSKIT",
         "manufacturer": "College_Park",
         "name": "Tru Step",
         "lcode1": "L5979",
@@ -1029,6 +1050,7 @@ const  MultiAxialDynamResp = [
 "link":""
       },
       {
+        "valAssign":"VKIT",
         "manufacturer": "College_Park",
         "name": "Venture",
         "lcode1": "L5979",
@@ -1052,6 +1074,7 @@ const  FlexFoot = [
 
 
     {
+        "valAssign":"JAVKIT",
         "manufacturer": "Blatchford",
         "name": "Javelin",
         "lcode1": "L5980",
@@ -1066,6 +1089,7 @@ const  FlexFoot = [
         "image": "../images/JavelinFoot.jpg"
       },
       {
+        "valAssign":"131KIT",
         "manufacturer": "Fillauer",
         "name": "Aeris Activity",
         "lcode1": "L5980",
@@ -1080,6 +1104,7 @@ const  FlexFoot = [
         "image": "../images/Aeris_Foot.jpg"
       },
       {
+        "valAssign":"CHX0KIT",
         "manufacturer": "Ossur",
         "name": "Cheetah Xplore Jr",
         "lcode1": "L5980",
@@ -1094,6 +1119,7 @@ const  FlexFoot = [
         "image": "../images/cheetah_foot_adult.jpg"
       },
       {
+        "valAssign":"RS4FOOT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Silhouette",
         "lcode1": "L5980",
@@ -1109,6 +1135,7 @@ const  FlexFoot = [
 "link":""
       },
       {
+        "valAssign":"VFMODKIT",
         "manufacturer": "Ossur",
         "name": "Vari-Flex Modular",
         "lcode1": "L5980",
@@ -1123,6 +1150,7 @@ const  FlexFoot = [
         "image": "../images/vari_flex_modular_image.jpg"
       },
       {
+        "valAssign":"178KIT",
         "manufacturer": "Fillauer",
         "name": "Formula (adult or pediatric)",
         "lcode1": "L5980",
@@ -1138,6 +1166,7 @@ const  FlexFoot = [
 "link":""
       },
       {
+        "valAssign":"EBSTKIT",
         "manufacturer": "Blatchford",
         "name": "Elite Blade",
         "lcode1": "L5980",
@@ -1153,6 +1182,7 @@ const  FlexFoot = [
 "link":""
       },
       {
+        "valAssign":"137PMKIT",
         "manufacturer": "Fillauer",
         "name": "All Pro w/ Posterior Mount",
         "lcode1": "L5980",
@@ -1167,6 +1197,7 @@ const  FlexFoot = [
         "image": "../images/AllProFoot.jpg"
       },
       {
+        "valAssign":"FSX009FOOT",
         "manufacturer": "Ossur",
         "name": "Cheetah Xplore",
         "lcode1": "L5980",
@@ -1181,6 +1212,7 @@ const  FlexFoot = [
         "image": "../images/cheetah_foot_adult.jpg"
       },
       {
+        "valAssign":"1E61",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Springlite II (Adult or Child)",
         "lcode1": "L5980",
@@ -1203,6 +1235,7 @@ const  FlexFoot = [
 const  FlexFootMultiAxialAnkle = [
 
     {
+        "valAssign":"F10KIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "DynAdapt",
         "lcode1": "L5980",
@@ -1218,6 +1251,7 @@ const  FlexFootMultiAxialAnkle = [
 "link":""
       },
       {
+        "valAssign":"SZN20XFOOT",
         "manufacturer": "Trulife",
         "name": "Seattle Zenith",
         "lcode1": "L5980",
@@ -1232,6 +1266,7 @@ const  FlexFootMultiAxialAnkle = [
         "image": "../images/Zenith.jpg"
       },
       {
+        "valAssign":"120XDKIT",
         "manufacturer": "Fillauer",
         "name": "Ibex System",
         "lcode1": "L5980",
@@ -1247,6 +1282,7 @@ const  FlexFootMultiAxialAnkle = [
 "link":""
       },
       {
+        "valAssign":"1E58",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1E58 Axtion DP",
         "lcode1": "L5980",
@@ -1270,6 +1306,7 @@ const  FlexWalk = [
 
 
     {
+        "valAssign":"FS3KIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "FS 3000 (Highlander)",
         "lcode1": "L5981",
@@ -1284,6 +1321,7 @@ const  FlexWalk = [
         "image": "../images/Highlander.jpg"
       },
       {
+        "valAssign":"123KIT",
         "manufacturer": "Fillauer",
         "name": "Aeris LP",
         "lcode1": "L5981",
@@ -1298,6 +1336,7 @@ const  FlexWalk = [
         "image": "../images/AerisPerformance.jpg"
       },
       {
+        "valAssign":"VJB0KIT",
         "manufacturer": "Ossur",
         "name": "Vari-Flex Junior",
         "lcode1": "L5981",
@@ -1312,6 +1351,7 @@ const  FlexWalk = [
         "image": "../images/vari_flex_junior_image.jpg"
       },
       {
+        "valAssign":"DEFKIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Defender Pediatric",
         "lcode1": "L5981",
@@ -1327,6 +1367,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1C30KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Trias",
         "lcode1": "L5981",
@@ -1342,6 +1383,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1116FOOT",
         "manufacturer": "STG",
         "name": "Endurance",
         "lcode1": "L5981",
@@ -1356,6 +1398,7 @@ const  FlexWalk = [
         "image": "../images/EnduranceK1K2.jpg"
       },
       {
+        "valAssign":"PACKIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "FS 2000 (Pacifica)",
         "lcode1": "L5981",
@@ -1371,6 +1414,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"PACKITTWO",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "FS 4000 (Pacifica Low Profile)",
         "lcode1": "L5981",
@@ -1386,6 +1430,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"135KIT",
         "manufacturer": "Fillauer",
         "name": "WAVE Comfort 3",
         "lcode1": "L5981",
@@ -1401,6 +1446,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"STF19XFOOT",
         "manufacturer": "Trulife",
         "name": "Triumph",
         "lcode1": "L5981",
@@ -1416,6 +1462,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"RUSHHIPRO",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "RUSH_HiPro_formerly_RUSH_87",
         "lcode1": "L5981",
@@ -1430,6 +1477,7 @@ const  FlexWalk = [
         "image": "../images/RushHiPro.jpg"
       },
       {
+        "valAssign":"HZKIT",
         "manufacturer": "College_Park",
         "name": "Horizon",
         "lcode1": "L5981",
@@ -1445,6 +1493,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"FAFOOT",
         "manufacturer": "Ossur",
         "name": "Assure Foot",
         "lcode1": "L5981",
@@ -1460,6 +1509,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"SZN10XFOOT",
         "manufacturer": "Trulife",
         "name": "Seattle Zenith LP",
         "lcode1": "L5981",
@@ -1475,6 +1525,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1115FOOT",
         "manufacturer": "STG",
         "name": "Endurance LP",
         "lcode1": "L5981",
@@ -1489,6 +1540,7 @@ const  FlexWalk = [
         "image": "../images/EnduranceLowProfile.jpg"
       },
       {
+        "valAssign":"VS2KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Promenade",
         "lcode1": "L5981",
@@ -1504,6 +1556,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"ELSTKIT",
         "manufacturer": "Blatchford",
         "name": "Elite 2",
         "lcode1": "L5981",
@@ -1518,6 +1571,7 @@ const  FlexWalk = [
         "image": "../images/Elite2.jpg"
       },
       {
+        "valAssign":"ESPSTFOOTKIT",
         "manufacturer": "Blatchford",
         "name": "Esprit",
         "lcode1": "L5981",
@@ -1533,6 +1587,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"TREKKLP",
         "manufacturer": "MakStride_formerly_BioQuest",
         "name": "Trekk LP",
         "lcode1": "L5981",
@@ -1548,6 +1603,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"SLS49FOOT",
         "manufacturer": "Trulife",
         "name": "Solas",
         "lcode1": "L5981",
@@ -1563,6 +1619,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1E56KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1E56 Axtion",
         "lcode1": "L5981",
@@ -1578,6 +1635,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1C63KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C63 Triton LP",
         "lcode1": "L5981",
@@ -1592,6 +1650,7 @@ const  FlexWalk = [
         "image": "../images/TritonLow.jpg"
       },
       {
+        "valAssign":"FS1KIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "FS 1000 (Sierra)",
         "lcode1": "L5981",
@@ -1607,6 +1666,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"LP2KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "LP Symes",
         "lcode1": "L5981",
@@ -1622,6 +1682,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"F22KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Maverick Comfort AT model",
         "lcode1": "L5981",
@@ -1637,6 +1698,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"122KIT",
         "manufacturer": "Fillauer",
         "name": "Aeris Performance 2",
         "lcode1": "L5981",
@@ -1651,6 +1713,7 @@ const  FlexWalk = [
         "image": "../images/AerisPerformance.jpg"
       },
       {
+        "valAssign":"RUSHROVER",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "RUSH_Rover",
         "lcode1": "L5981",
@@ -1665,6 +1728,7 @@ const  FlexWalk = [
         "image": "../images/rush_rover_main.jpg"
       },
       {
+        "valAssign":"RUSHKID",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "RUSH_Kid",
         "lcode1": "L5981",
@@ -1680,6 +1744,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"K001FOOT",
         "manufacturer": "WillowWood",
         "name": "KOA",
         "lcode1": "L5981",
@@ -1695,6 +1760,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"10010KIT",
         "manufacturer": "Fillauer",
         "name": "Element System",
         "lcode1": "L5981",
@@ -1710,6 +1776,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"SOKIT",
         "manufacturer": "College_Park",
         "name": "Soleus",
         "lcode1": "L5981",
@@ -1725,6 +1792,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1C60KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C60 Triton",
         "lcode1": "L5981",
@@ -1740,6 +1808,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"VFKIT",
         "manufacturer": "Ossur",
         "name": "Vari-Flex",
         "lcode1": "L5981",
@@ -1754,6 +1823,7 @@ const  FlexWalk = [
         "image": "../images/vari_flex_modular_image.jpg"
       },
       {
+        "valAssign":"1E57KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1E57 Lo Rider",
         "lcode1": "L5981",
@@ -1769,6 +1839,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"PXCOFOOT",
         "manufacturer": "Ossur",
         "name": "Pro-flex XC",
         "lcode1": "L5981",
@@ -1784,6 +1855,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"137KIT",
         "manufacturer": "Fillauer",
         "name": "All_Pro_Direct_Mount_Pyramid",
         "lcode1": "L5981",
@@ -1798,6 +1870,7 @@ const  FlexWalk = [
         "image": "../images/AllProFoot.jpg"
       },
       {
+        "valAssign":"SWIMKIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Freestyle (Freedom LP) and Swim Ankle",
         "lcode1": "L5981",
@@ -1813,6 +1886,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"FS3KITTWO",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "Highlander Max",
         "lcode1": "L5981",
@@ -1827,6 +1901,7 @@ const  FlexWalk = [
         "image": "../images/Highlander.jpg"
       },
       {
+        "valAssign":"FS5KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Thrive",
         "lcode1": "L5981",
@@ -1842,6 +1917,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1C50KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C50 Taleo",
         "lcode1": "L5981",
@@ -1857,6 +1933,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"PLP0FOOT",
         "manufacturer": "Ossur",
         "name": "Pro-flex LP",
         "lcode1": "L5981",
@@ -1872,6 +1949,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1C53FOOT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C53 Taleo LP",
         "lcode1": "L5981",
@@ -1887,6 +1965,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1C64KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C64 Triton HD",
         "lcode1": "L5981",
@@ -1902,6 +1981,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1A600FOOT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "DynaTrek",
         "lcode1": "L5981",
@@ -1917,6 +1997,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1C40K",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C40 C-Walk",
         "lcode1": "L5981",
@@ -1932,6 +2013,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"FSYMESKIT",
         "manufacturer": "Ossur",
         "name": "Flex Symes",
         "lcode1": "L5981",
@@ -1947,6 +2029,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"FSX007FOOT",
         "manufacturer": "Ossur",
         "name": "Flex Junior",
         "lcode1": "L5981",
@@ -1962,6 +2045,7 @@ const  FlexWalk = [
 "link":""
       },
       {
+        "valAssign":"1E95",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1E95 Challenger",
         "lcode1": "L5981",
@@ -1985,6 +2069,7 @@ const  FlexWalkMultiAxial = [
 
 
     {
+        "valAssign":"EPSTKIT",
         "manufacturer": "Blatchford",
         "name": "Epirus",
         "lcode1": "L5981",
@@ -2000,6 +2085,7 @@ const  FlexWalkMultiAxial = [
 "link":""
       },
       {
+        "valAssign":"RUSHRAMPAGELP",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "RUSH_Rampage_LP_formerly_RUSH_LoPro",
         "lcode1": "L5981",
@@ -2015,6 +2101,7 @@ const  FlexWalkMultiAxial = [
 "link":""
       },
       {
+        "valAssign":"VLKIT",
         "manufacturer": "College_Park",
         "name": "Velocity",
         "lcode1": "L5981",
@@ -2030,6 +2117,7 @@ const  FlexWalkMultiAxial = [
 "link":""
       },
       {
+        "valAssign":"1C58FOOTKIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C58 Taleo Side Flex",
         "lcode1": "L5981",
@@ -2045,6 +2133,7 @@ const  FlexWalkMultiAxial = [
 "link":""
       },
       {
+        "valAssign":"TALUXKIT",
         "manufacturer": "Ossur",
         "name": "Talux",
         "lcode1": "L5981",
@@ -2059,6 +2148,7 @@ const  FlexWalkMultiAxial = [
         "image": "../images/Talux.jpg"
       },
       {
+        "valAssign":"1C68KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C68 Triton Side Flex",
         "lcode1": "L5981",
@@ -2074,6 +2164,7 @@ const  FlexWalkMultiAxial = [
 "link":""
       },
       {
+        "valAssign":"M002FOOTKIT",
         "manufacturer": "WillowWood",
         "name": "Meta Arc",
         "lcode1": "L5981",
@@ -2089,6 +2180,7 @@ const  FlexWalkMultiAxial = [
 "link":""
       },
       {
+        "valAssign":"BXTFOOT",
         "manufacturer": "Blatchford",
         "name": "Blade XT",
         "lcode1": "L5981",
@@ -2103,6 +2195,7 @@ const  FlexWalkMultiAxial = [
         "image": "../images/BladeXT.jpg"
       },
       {
+        "valAssign":"PENDING",
         "manufacturer": "College_Park",
         "name": "Terrain",
         "lcode1": "L5981",
@@ -2124,6 +2217,7 @@ const  FlexWalkMultiAxial = [
 const  VertShockAxialRot = [
 
     {
+        "valAssign":"EVTSTKIT",
         "manufacturer": "Blatchford",
         "name": "Elite VT",
         "lcode1": "L5984",
@@ -2138,6 +2232,7 @@ const  VertShockAxialRot = [
         "image": "../images/EliteBlade.jpg"
       },
       {
+        "valAssign":"RUSHROGUE",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "RUSH_Rogue",
         "lcode1": "L5984",
@@ -2153,6 +2248,7 @@ const  VertShockAxialRot = [
 "link":""
       },
       {
+        "valAssign":"ROG2",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "RUSH_Rogue_2",
         "lcode1": "L5984",
@@ -2168,6 +2264,7 @@ const  VertShockAxialRot = [
 "link":""
       },
       {
+        "valAssign":"10510KIT",
         "manufacturer": "Fillauer",
         "name": "Element DS System",
         "lcode1": "L5984",
@@ -2183,6 +2280,7 @@ const  VertShockAxialRot = [
 "link":""
       },
       {
+        "valAssign":"F20S3KIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "Shockwave",
         "lcode1": "L5984",
@@ -2198,6 +2296,7 @@ const  VertShockAxialRot = [
 "link":""
       },
       {
+        "valAssign":"RFRKIT",
         "manufacturer": "Ossur",
         "name": "Ceterus (Renamed ReFlex Rotate)",
         "lcode1": "L5984",
@@ -2213,6 +2312,7 @@ const  VertShockAxialRot = [
 "link":""
       },
       {
+        "valAssign":"EBVTSTKIT",
         "manufacturer": "Blatchford",
         "name": "Elite Blade VT",
         "lcode1": "L5984",
@@ -2227,6 +2327,7 @@ const  VertShockAxialRot = [
         "image": "../images/EliteBlade.jpg"
       },
       {
+        "valAssign":"PXT0FOOT",
         "manufacturer": "Ossur",
         "name": "Pro-flex XC Torsion",
         "lcode1": "L5984",
@@ -2242,6 +2343,7 @@ const  VertShockAxialRot = [
 "link":""
       },
       {
+        "valAssign":"PLT0FOOT",
         "manufacturer": "Ossur",
         "name": "Pro-flex LP Torsion",
         "lcode1": "L5984",
@@ -2265,6 +2367,7 @@ const  VertShockAxialRot = [
 const  VertShockMultiAxialRot = [
 
     {
+        "valAssign":"F15KIT",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "Agilix",
         "lcode1": "L5986",
@@ -2280,6 +2383,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"K2CS",
         "manufacturer": "MakStride_formerly_BioQuest",
         "name": "Comfort Stride",
         "lcode1": "L5986",
@@ -2295,6 +2399,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"TREKKLP",
         "manufacturer": "MakStride_formerly_BioQuest",
         "name": "Trekk",
         "lcode1": "L5986",
@@ -2310,6 +2415,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"MX1",
         "manufacturer": "MakStride_formerly_BioQuest",
         "name": "Natural Stride",
         "lcode1": "L5986",
@@ -2325,6 +2431,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"SOKIT",
         "manufacturer": "College_Park",
         "name": "Tactical",
         "lcode1": "L5986",
@@ -2340,6 +2447,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"RENATKIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Renegade AT or LP-AT",
         "lcode1": "L5986",
@@ -2355,6 +2463,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"F11KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Maverick Xtreme",
         "lcode1": "L5986",
@@ -2370,6 +2479,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"F21KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Maverick Xtreme AT",
         "lcode1": "L5986",
@@ -2385,6 +2495,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"MX3",
         "manufacturer": "MakStride_formerly_BioQuest",
         "name": "Ultra Stride",
         "lcode1": "L5986",
@@ -2400,6 +2511,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"1C61KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C61 Triton VS",
         "lcode1": "L5986",
@@ -2415,6 +2527,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"PFDRPLFOOT",
         "manufacturer": "WillowWood",
         "name": "Pathfinder II",
         "lcode1": "L5986",
@@ -2430,6 +2543,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"R1401KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Silhouette VS",
         "lcode1": "L5986",
@@ -2445,6 +2559,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"R15KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Silhouette LP VS",
         "lcode1": "L5986",
@@ -2460,6 +2575,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"1C51FOOTKIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Taleo VS 1C51",
         "lcode1": "L5986",
@@ -2475,6 +2591,7 @@ const  VertShockMultiAxialRot = [
 "link":""
       },
       {
+        "valAssign":"RUSHRAMPAGETWO",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "RUSH_Rampage",
         "lcode1": "L5986",
@@ -2497,6 +2614,7 @@ const  VertShockMultiAxialRot = [
 const  VertShock = [
 
     {
+        "valAssign":"RS1KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Renegade",
         "lcode1": "L5987",
@@ -2512,6 +2630,7 @@ const  VertShock = [
 "link":""
       },
       {
+        "valAssign":"RS6KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Low Profile Renegade",
         "lcode1": "L5987",
@@ -2527,6 +2646,7 @@ const  VertShock = [
 "link":""
       },
       {
+        "valAssign":"M005FOOTKIT",
         "manufacturer": "WillowWood",
         "name": "Meta Shock",
         "lcode1": "L5987",
@@ -2548,6 +2668,7 @@ const  VertShock = [
 const  FlexWalkMultiAxialAnkleVac = [
 
     {
+        "valAssign":"1C62KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1C62 Triton w/ Harmony System",
         "lcode1": "L5987",
@@ -2563,6 +2684,7 @@ const  FlexWalkMultiAxialAnkleVac = [
 "link":""
       },
       {
+        "valAssign":"1C52KIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Taleo Harmony 1C52",
         "lcode1": "L5987",
@@ -2584,6 +2706,7 @@ const  FlexWalkMultiAxialAnkleVac = [
 const  L5999 = [
 
     {
+        "valAssign":"STOMPERFOOT",
         "manufacturer": "Stomper",
         "name": "Stomper Prosthetic Foot",
         "lcode1": "L5999",
@@ -2599,6 +2722,7 @@ const  L5999 = [
 "link":""
       },
       {
+        "valAssign":"FSX008FOOT",
         "manufacturer": "Ossur",
         "name": "Flex-Run with Nike Sole",
         "lcode1": "L5999",
@@ -2614,6 +2738,7 @@ const  L5999 = [
 "link":""
       },
       {
+        "valAssign":"175130FOOT",
         "manufacturer": "Fillauer",
         "name": "Obsidian Running Blade (Adult or Pediatric)",
         "lcode1": "L5999",
@@ -2629,6 +2754,7 @@ const  L5999 = [
 "link":""
       },
       {
+        "valAssign":"FSX00FOOT",
         "manufacturer": "Ossur",
         "name": "Cheetah",
         "lcode1": "L5999",
@@ -2643,6 +2769,7 @@ const  L5999 = [
         "image": "../images/cheetah_foot_adult.jpg"
       },
       {
+        "valAssign":"1E90",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Sprinter",
         "lcode1": "L5999",
@@ -2658,6 +2785,7 @@ const  L5999 = [
 "link":""
       },
       {
+        "valAssign":"VF85FOOT",
         "manufacturer": "Biodapt",
         "name": "Versa Foot",
         "lcode1": "L5999",
@@ -2673,6 +2801,7 @@ const  L5999 = [
 "link":""
       },
       {
+        "valAssign":"VF85FOOTTWO",
         "manufacturer": "Biodapt",
         "name": "Versa2",
         "lcode1": "L5999",
@@ -2688,6 +2817,7 @@ const  L5999 = [
 "link":""
       },
       {
+        "valAssign":"PFP0FOOT",
         "manufacturer": "Ossur",
         "name": "Pro-flex Pivot",
         "lcode1": "L5999",
@@ -2703,6 +2833,7 @@ const  L5999 = [
 "link":""
       },
       {
+        "valAssign":"PENDTWO",
         "manufacturer": "Biodapt",
         "name": "Versa2 HD",
         "lcode1": "L5999",
@@ -2718,6 +2849,7 @@ const  L5999 = [
 "link":""
       },
       {
+        "valAssign":"PENDTHREE",
         "manufacturer": "Biodapt",
         "name": "Versa Alpine",
         "lcode1": "L5999",
@@ -2740,6 +2872,7 @@ const  L5999 = [
 const  MiscFeet = [
 
     {
+        "valAssign":"SKFOOT",
         "manufacturer": "College_Park",
         "name": "Sidekicks  feetArray for Stubbies",
         "lcode1": "L5210",
@@ -2755,6 +2888,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"ACCFOOT",
         "manufacturer": "College_Park",
         "name": "Accent (without dynamic pylon)",
         "lcode1": "L5981",
@@ -2770,6 +2904,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"ACCFOOTTWO",
         "manufacturer": "College_Park",
         "name": "Accent (with dynamic pylon)",
         "lcode1": "L5981",
@@ -2785,6 +2920,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"XMP27A",
         "manufacturer": "KISS",
         "name": " feetArray for Stubbies",
         "lcode1": "L5920",
@@ -2800,6 +2936,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"EVACFOOT",
         "manufacturer": "Blatchford",
         "name": "Echelon Vacuum",
         "lcode1": "L5781",
@@ -2815,6 +2952,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"RUNFOOTKIT",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Runway",
         "lcode1": "L5981",
@@ -2830,6 +2968,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"PLA0FOOT",
         "manufacturer": "Ossur",
         "name": "Pro-flex LP Align",
         "lcode1": "L5981",
@@ -2845,6 +2984,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"1C20",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "Prosymes",
         "lcode1": "L5910",
@@ -2860,6 +3000,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"HSFOOT",
         "manufacturer": "Dycor",
         "name": "H2U",
         "lcode1": "L5972",
@@ -2875,6 +3016,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"1AFOOT",
         "manufacturer": "Dycor",
         "name": "ATM (Single Axis)",
         "lcode1": "L5975",
@@ -2890,6 +3032,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"1A29",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1A29 Greissinger (Coding option 2)",
         "lcode1": "L5975",
@@ -2905,6 +3048,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"1A29TWO",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1A29 Greissinger (Coding option 1)",
         "lcode1": "L5972",
@@ -2920,6 +3064,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"1A29THREE",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "1A29 Greissinger (Coding option 3)",
         "lcode1": "L5978",
@@ -2935,6 +3080,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"FDS",
         "manufacturer": "Dycor",
         "name": "Symes",
         "lcode1": "L5975",
@@ -2950,6 +3096,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"EVAQ8",
         "manufacturer": "Proteor_Ability_Freedom",
         "name": "Evaq8_line_addition_for_Rampage_HiPro_Rogue",
         "lcode1": "L5781",
@@ -2965,6 +3112,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"PENDFOUR",
         "manufacturer": "College_Park",
         "name": "Orbit",
         "lcode1": "L5981",
@@ -2980,6 +3128,7 @@ const  MiscFeet = [
 "link":""
       },
       {
+        "valAssign":"1A11",
         "manufacturer": "Otto_Bock_Freedom",
         "name": "emPower MPF",
         "lcode1": "L5973",
@@ -2999,370 +3148,10 @@ const  MiscFeet = [
 ]
 
 
-// const  feetArrayArray = [
 
-  
-    
-//     // {
-//     //   "manufacturer": "Vertical Shock:     L5987",
-//     //   "name": "",
-//     //   "lcode1": "",
-//     //   "lcode2": "",
-//     //   "lcode3": "",
-//     //   "lcode4": "",
-//     //   "hdcode": "",
-//     //   "cost": "",
-//     //   "reimbursement": "$7,260 ",
-//     //   "percent": "",
-//     //   "pdac": "",
-//     //   "image": "../images/",
-
-//     // },
-    
-//     // {
-//     //   "manufacturer": "Flexwalk with Multiaxial Ankle and Vacuum  :     L5987,  L5986,  L5781",
-//     //   "name": "",
-//     //   "lcode1": "",
-//     //   "lcode2": "",
-//     //   "lcode3": "",
-//     //   "lcode4": "",
-//     //   "hdcode": "",
-//     //   "cost": "",
-//     //   "reimbursement": "$10,882 ",
-//     //   "percent": "",
-//     //   "pdac": "",
-//     //   "image": "../images/",
-
-//     // },
-    
-//     // {
-//     //   "manufacturer": "Coding Group:     L5999 Base Code",
-//     //   "name": "",
-//     //   "lcode1": "",
-//     //   "lcode2": "",
-//     //   "lcode3": "",
-//     //   "lcode4": "",
-//     //   "hdcode": "",
-//     //   "cost": "",
-//     //   "reimbursement": "",
-//     //   "percent": "",
-//     //   "pdac": "",
-//     //   "image": "../images/",
-
-//     // },
-   
-//     // {
-//     //   "manufacturer": "Coding Group:     Miscellaneous",
-//     //   "name": "",
-//     //   "lcode1": "",
-//     //   "lcode2": "",
-//     //   "lcode3": "",
-//     //   "lcode4": "",
-//     //   "hdcode": "",
-//     //   "cost": "",
-//     //   "reimbursement": "",
-//     //   "percent": "",
-//     //   "pdac": "",
-//     //   "image": "../images/",
-
-//     // },
-    
-//     // {
-//     //   "manufacturer": "#N/A - applies when a L5999 exists or the pricing is not standard ",
-//     //   "name": "",
-//     //   "lcode1": "",
-//     //   "lcode2": "",
-//     //   "lcode3": "",
-//     //   "lcode4": "",
-//     //   "hdcode": "",
-//     //   "cost": "",
-//     //   "reimbursement": "",
-//     //   "percent": "",
-//     //   "pdac": "",
-//     //   "image": "../images/",
-
-//     // }
-//    ]
 
    export { K2FlexKeelMultiAxialRot, FlexFootMultiAxialAnkle, FlexWalk, FlexWalkMultiAxial, VertShockAxialRot, VertShockMultiAxialRot, VertShock, MiscFeet, L5999, FlexWalkMultiAxialAnkleVac, k2FlexKeelhydraMulti, FlexFoot, MultiAxialDynamResp, EnergyStore, SingAxis, Microprocessor, k3FlexHydrauMulti, K3FlexHydrauMultiVertShock, SACH, K2FlexHeel, K2FlexKeelAxialRotVert};
 
 
 
 
-//    const allBlatch feetArray = [];
-//    const 
-
-
-
-
-  // {
-    //   "manufacturer": "K2 Flexible Keel with Hydraulic multiaxial ankle:     L5968,  L5972",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$4,046 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-    
-    // {
-    //   "manufacturer": "K3 Flexwalk with Hydraulic Multiaxial ankle:     L5968,  L5981",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$6,657 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-    
-    // {
-    //   "manufacturer": "K3 Flexwalk with with Hydraulic Multiaxial ankle and adjustable heel height: L5968, L5981, L5990",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$8,488 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-    
-    // {
-    //   "manufacturer": "SACH:     L5971",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$203 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-    
-    // {
-    //   "manufacturer": "K2 Flexible Heel:     L5972",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$379 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-   
-    // {
-    //   "manufacturer": "K2 Flexible Keel with Multiaxial Rotation:     L5972, L5986",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$1,011 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-   
-    // {
-    //   "manufacturer": "K2 Flexible Keel with axial Rotation & Vertical Shock:     L5972, L5984, L5988",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$2,972 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-
-    // {
-    //   "manufacturer": "Microprocessor  feet:     L5973",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$17,363 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-   
-    // {
-    //   "manufacturer": "Single Axis:     L5974",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$233 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-
-    // {
-    //   "manufacturer": "Energy Storing:     L5976",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$559 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-   
-    // {
-    //   "manufacturer": "Multiaxial Dynamic Response:     L5979",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$2,277 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-   
-    // {
-    //   "manufacturer": "Flexfoot:     L5980",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$3,700 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-   
-    // {
-    //   "manufacturer": "Flexfoot with Multiaxial Ankle:     L5980,  L5986",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$4,333 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-   
-    // {
-    //   "manufacturer": "Flexwalk:     L5981",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$2,989 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-
-    // {
-    //   "manufacturer": "Flexwalk with Multiaxial Ankle:     L5981 L5986",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$3,622 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-
-    // {
-    //   "manufacturer": "Vertical Shock with Axial Rotation:     L5984,  L5987",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$7,829 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
-   
-    // {
-    //   "manufacturer": "Vertical Shock with Multiaxial Rotation:     L5986,  L5987",
-    //   "name": "",
-    //   "lcode1": "",
-    //   "lcode2": "",
-    //   "lcode3": "",
-    //   "lcode4": "",
-    //   "hdcode": "",
-    //   "cost": "",
-    //   "reimbursement": "$7,892 ",
-    //   "percent": "",
-    //   "pdac": "",
-    //   "image": "../images/",
-
-    // },
