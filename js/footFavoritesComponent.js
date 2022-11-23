@@ -1,84 +1,5 @@
 
-  kneeFavoritesArray = [];
   footFavoritesArray = [];
-
-  function kneeFavorites(keyed){
-
-console.log(keyed.id, "keyed object");
-    
-    let getStoredFavorite = JSON.parse(localStorage.getItem(keyed.id));
-    console.log(getStoredFavorite, "retrieved cart item from local storage");
-    // retrieve the stored favorite item
-
-    kneeFavoritesArray.push(getStoredFavorite);
-     console.log(kneeFavoritesArray, "local storage array with favorite item");
-        // add the item to the cart array
-      
-      localStorage.setItem("Knee Favorites", JSON.stringify(kneeFavoritesArray))
-        // push the cartArray to local storage
-
-      let getFavorites = JSON.parse(localStorage.getItem("Knee Favorites"));
-      console.log(getFavorites, "local storage favorite array");
-        // retrieve the stored array to check the values
-        document.getElementById('itemSectionJS').innerHTML = "";
-        // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
-        let favoritesLocation = document.querySelector('#itemSectionJS');
-        // document.getElementById('itemSectionJS').innerHTML = getFavorites;
-
-        // set the location where the favorite should show in the new configuration
-
-        getFavorites.forEach(component => {    
-          favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-         `<div class="card card-margin" id="${component.valAssign}">
-         <a class="kneeClick btn-small btn btn-primary" onclick="kneeCart(${component.valAssign})" > + Cart </a>
-         <img class="card-image" src="${component.image}"></img>
-
-            <div class="card-header">
-                <h4 id=""> ${component.name} </h4>
-                <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
-                <div id="">HD Code: ${component.hdcode}</div>
-                <h5><u> L-Codes </u></h5>
-                <div class="lcodes">
-                <div id="${component.lcode1}">${component.lcode1}</div>
-                <div id="${component.lcode2}">${component.lcode2}</div>
-                <div id="${component.lcode3}">${component.lcode3}</div>
-                <div id="${component.lcode4}">${component.lcode4}</div>
-                <div id="${component.lcode5}">${component.lcode5}</div>
-                <div id="${component.lcode6}">${component.lcode6}</div>
-                </div>
-                </div>
-            </div>
-        </div>`;
-        console.log("Created", component.card, "Cards");
-        
-        });
-
-
-
-
-
-        // display the card item and only the chosen items
-
-
-        // favoritesArray.push(ident.outerHTML);
-// console.log(favoritesArray, "local storage array with Favorited Card");
-    
-// localStorage.setItem("Local Storage Array", JSON.stringify(favoritesArray));
-    // set the array item to local storage
-// console.log(getLocalStorageArray, "retrieved local storage array");
-// localStorage.setItem("Local Storage Array", JSON.stringify(localStoreArray));
-// let getLocalStorageArray = JSON.parse(localStorage.getItem("Local Storage Array"));
-// console.log(getLocalStorageArray, "retrieved local storage array");
-
- 
-// THE ABOVE WORKS, NEED TO FINISH
-
-// localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
-// let favorite = JSON.parse(localStorage.getItem("Favorites"));
-// console.log(favorite, "Favorite Item Display");
-
-
-}
 
 function footFavorites(foot){
   console.log(foot, "foot object");
@@ -99,17 +20,17 @@ function footFavorites(foot){
         let getFavorites = JSON.parse(localStorage.getItem("Foot Favorites"));
         console.log(getFavorites, "local storage favorite array");
           // retrieve the stored array to check the values
-          document.getElementById('itemSectionJS').innerHTML = "";
+          document.getElementById('footItemSectionJS').innerHTML = "";
           // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
-          let favoritesLocation = document.querySelector('#itemSectionJS');
-          // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+          let favoritesLocation = document.querySelector('#footItemSectionJS');
+          // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
   
           // set the location where the favorite should show in the new configuration
   
           getFavorites.forEach(component => {    
             favoritesLocation.innerHTML = favoritesLocation.innerHTML +
            `<div class="card card-margin" id="${component.valAssign}">
-           <a class="footClick btn-small btn btn-primary" onclick="footCart(${component.valAssign})" > + Cart </a>
+           <a class="footClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
            <img class="card-image" src="${component.image}"></img>
   
               <div class="card-header">
@@ -138,8 +59,8 @@ function showFavorites(){
       // let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
       // console.log(getFavorites, "local storage favorite array");
       //   // retrieve the stored array to check the values
-      //   let favoritesLocation = document.querySelector('#itemSectionJS');
-      //   // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+      //   let favoritesLocation = document.querySelector('#footItemSectionJS');
+      //   // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
 
       //   // set the location where the favorite should show in the new configuration
 
@@ -229,10 +150,10 @@ let showfavorite = JSON.parse(localStorage.getItem("Favorites"));
 console.log(showfavorite, "local storage favorite array");
 // retrieve the favorite array back from local storage
 
-        document.getElementById('itemSectionJS').innerHTML = "";
+        document.getElementById('footItemSectionJS').innerHTML = "";
         // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
-        let favoritesLocation = document.querySelector('#itemSectionJS');
-        // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+        let favoritesLocation = document.querySelector('#footItemSectionJS');
+        // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
 
         // set the location where the favorite should show in the new configuration
 
@@ -300,10 +221,10 @@ console.log(showfavorite, "local storage favorite array");
 //     let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
 //     console.log(getFavorites, "local storage favorite array");
 //       // retrieve the stored array to check the values
-//       document.getElementById('itemSectionJS').innerHTML = "";
+//       document.getElementById('footItemSectionJS').innerHTML = "";
 //       // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
-//       let favoritesLocation = document.querySelector('#itemSectionJS');
-//       // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+//       let favoritesLocation = document.querySelector('#footItemSectionJS');
+//       // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
 
 //       // set the location where the favorite should show in the new configuration
 
@@ -356,8 +277,8 @@ console.log(showfavorite, "local storage favorite array");
 //     // let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
 //     // console.log(getFavorites, "local storage favorite array");
 //     //   // retrieve the stored array to check the values
-//     //   let favoritesLocation = document.querySelector('#itemSectionJS');
-//     //   // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+//     //   let favoritesLocation = document.querySelector('#footItemSectionJS');
+//     //   // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
 
 //     //   // set the location where the favorite should show in the new configuration
 
@@ -448,10 +369,10 @@ console.log(showfavorite, "local storage favorite array");
 // console.log(showfavorite, "local storage favorite array");
 // // retrieve the favorite array back from local storage
 
-//       document.getElementById('itemSectionJS').innerHTML = "";
+//       document.getElementById('footItemSectionJS').innerHTML = "";
 //       // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
-//       let favoritesLocation = document.querySelector('#itemSectionJS');
-//       // document.getElementById('itemSectionJS').innerHTML = getFavorites;
+//       let favoritesLocation = document.querySelector('#footItemSectionJS');
+//       // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
 
 //       // set the location where the favorite should show in the new configuration
 

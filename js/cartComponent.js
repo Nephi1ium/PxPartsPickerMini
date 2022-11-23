@@ -1,9 +1,9 @@
 kneeArray = [];
-footCart = [];
+footArray = [];
 cartArray = [];
 cartDisplayArray = [];
 
-function kneeCart(item){
+function cart(item){
 
   let cartItem = item[0].id;
   // set a default cart item

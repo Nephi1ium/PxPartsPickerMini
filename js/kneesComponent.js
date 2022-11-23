@@ -33,10 +33,10 @@ itemNine.addEventListener("click", () => kneeCard(PHySS));
 itemTen.addEventListener("click", () => kneeCard(PHySSFEA));
 itemEleven.addEventListener("click", () => kneeCard(SPSFS));
 itemTwelve.addEventListener("click", () => kneeCard(SHySS));
-itemThirteen.addEventListener("click", () => kneeCard(MPK));
-itemFourteen.addEventListener("click", () => kneeCard(MPKSw));
-itemFifteen.addEventListener("click", () => kneeCard(PolyPneu));
-itemSixteen.addEventListener("click", () => kneeCard(PPSSF));
+itemThirteen.addEventListener("click", () => kneeCard(PolyPneu));
+itemFourteen.addEventListener("click", () => kneeCard(PPSSF));
+itemFifteen.addEventListener("click", () => kneeCard(MPK));
+itemSixteen.addEventListener("click", () => kneeCard(MPKSw));
 itemSeventeen.addEventListener("click", () => kneeCard(MISC));
 
 
