@@ -46,8 +46,8 @@
         <!-- RIght now this resets the page, I should simply set the state of each element to "initial" -->
   <main id="main">
   <nav id="itemNavigator" class="myItemNavigator">
-    <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
-  
+    <!-- <a href="javascript:void(0)"  class="closebtn" onclick="closeNav()">&times;</a>
+   -->
       <a id="kneeButton" class="toggle mainChoice">    Knees  </a>
   
       <section id="kneesSection" class="noShow">         
@@ -71,23 +71,18 @@
                   <a class="secButtons  "  id="singleAxis">                Single Axis              </a>               
   <!--                   Container for all the Single Axis Knee categories -->
                 <nav>
-                  <ul class="nav">
-                    <li>
+        
                       <a class="indivChoice noShow  singleAxis" id="singAxManLock"  >
                         Manual Lock
                       </a>
-                    </li>
-                    <li>
+
                       <a class="indivChoice noShow  singleAxis" id="singAxPneuFric"  >
                         Pneumatic Swing, Friction Stance
                       </a>
-                    </li>
-                    <li>
+
                       <a class="indivChoice noShow  singleAxis"  id="singAxHydStanSwin">
                         Hydraulic Stance and Swing
                       </a>
-                    </li>
-                  </ul>
                 </nav>
       
   <!--                   End of Single Axis Knee Category information -->
@@ -103,14 +98,11 @@
                   </a>
   
                   <nav >
-                    <ul class="nav">
-                      <li>
+
                       <a class="indivChoice noShow  safety"  id="safeExt" href="#"> Extension Assist </a>
-                    </li>
-                      <li>
+
                       <a class="indivChoice noShow  safety"  id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
-                    </li>
-                      </ul>
+
                   </nav>
   <!--               End of the safety knees category -->
   <!--               Start of the polycentric knees category -->
@@ -121,23 +113,17 @@
                   </a>
   
               <nav>
-                <ul class="nav">
-                  <li>
+
                     <a class="indivChoice noShow  polycentric"  id="polyHydrau" href="#"> Hydraulic Swing </a>
-                  </li>
-                  <li>
+
                     <a class="indivChoice noShow  polycentric"  id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
-                  </li>
-                  <li>
+
                     <a class="indivChoice noShow  polycentric"  id="polyPneu" href="#"> Pneumatic Swing</a>
-                  </li>
-                  <li>
+
                     <a class="indivChoice noShow  polycentric"  id="polyPneuSwinStanFlex" href="#"> Pneumatic Swing and Stance Flexion</a>
-                  </li>
-                  <li>  
+
                     <a class="indivChoice noShow  polycentric"  id="polyHydrSwinStanFlexHigh" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
-                  </li>
-                </ul>
+
               </nav>
   
   
@@ -152,14 +138,11 @@
     </a>
   
   <nav>
-  <ul class="nav">
-    <li>
+
       <a class="indivChoice noShow  mpk"  id="allMPK" href="#"> All MPK </a>
-    </li>
-    <li>
+
       <a class="indivChoice noShow  mpk"  id="mpkSwOnly" href="#"> MPK Swing Only</a>
-    </li>
-  </ul>
+
   </nav>
   
   
@@ -173,11 +156,9 @@
                     </a>
                   
                   <nav>
-                  <ul class="nav">
-                    <li>
+
                       <a class="indivChoice noShow  mpk"  id="allMisc" href="#"> All Miscellaneous Knees </a>
-                    </li>
-                  </ul>
+
                   </nav>
   <!--               End of the MPK category -->
   
@@ -302,9 +283,10 @@
       </section>
   </nav>
   </main>
-  <span style="font-size:30px;cursor:pointer">1. Start Here</span>
 
-  <button  onclick="openNav()">Click Me</button>  
+  <!-- <span style="font-size:30px;cursor:pointer">1. Start Here</span>
+
+  <button  onclick="openNav()">Click Me</button>   -->
   
   <main class="mainpage favorites" id="kneeItemSectionJS"></main>
   <main class="mainpage favorites" id="footItemSectionJS"></main>

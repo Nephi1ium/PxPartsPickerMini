@@ -30,6 +30,15 @@
     margin: 1vmax;
 }
 
+
+@media screen and (max-width: 450px) {
+.header_title{
+
+    color: #36393b;
+    text-align: center;
+    max-width: 25vmax;
+}
+}
 /* 
 #40bae2;
 #bfb6bb

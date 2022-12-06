@@ -27,19 +27,17 @@ body {
   
   .myItemNavigator{
     height: 100%;
-    width: 0;
-    position: fixed;
+    width: 16vmax;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
   }
   
   .myItemNavigator .secButtons {
-    padding: 8px 8px 8px 32px;
+    padding: 2vmax .1vmax;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
@@ -55,14 +53,14 @@ color:aliceblue
   }
 
 
-   .mainChoice {
-    padding: 8px 8px 8px 32px;
+  .mainChoice {
+    padding: 1vmax 1vmax 2vmax .2vmax;
     text-decoration: none;
     font-size: 25px;
-    color: #7f8891;
+    color: black;
     display: block;
     transition: 0.3s;
-    background-color: black;
+    background-color: #7f8891;
 
   }
    .mainChoice:hover{
@@ -104,7 +102,7 @@ color:aliceblue
   
   #main {
     transition: margin-left .5s;
-    padding: 16px;
+    padding: .2vmax;
   }
 
   .mainNavigation{
@@ -193,11 +191,7 @@ text-align: center;
   padding-left: 0;
   max-width: 100%;
 }
-.navListItem{
-  border: solid grey .1vmax;
-  border-bottom: none;
-  
-}
+
 
   
 
@@ -248,13 +242,11 @@ text-align: center;
     .itemNavigator {padding-top: 15px;}
     .itemNavigator a {font-size: 18px;}
 
-    .myItemNavigator a {
-      padding: 2px 2px 2px 6px;
+    .myItemNavigator {
       text-decoration: none;
-      font-size: 25px;
-      color: #818181;
       display: block;
       transition: 0.3s;
+      width: 100%;
     }
 
     .mobileNavigationBut{display: none;}
@@ -300,6 +292,16 @@ text-align: center;
       text-decoration: none;
       display: none;
   
+  }
+  .indivChoice {
+    padding: 1vmax 1vmax 2vmax .2vmax;
+    text-decoration: none;
+    font-size: 15px;
+    color: #7f8891;
+    display: block;
+    transition: 0.3s;
+    background-color: black;
+    width: 100%;
   }
   .mainNavigation{
     width:100%;
@@ -353,8 +355,18 @@ text-align: center;
     padding: 0;
   }
   .fullSizeNav{display: none;}
+  .mainChoice {
+    padding: 1vmax 1vmax 2vmax .2vmax;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    background-color: #7f8891;
+
+  }
     }
-    
+  
 
 
 
