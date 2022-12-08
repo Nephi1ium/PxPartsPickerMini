@@ -37,7 +37,7 @@ body {
   }
   
   .myItemNavigator .secButtons {
-    padding: 2vmax .1vmax;
+    padding: .8vmax .1vmax;
     text-decoration: none;
     font-size: 20px;
     color: #818181;
@@ -76,7 +76,7 @@ color:aliceblue
     display: block;
     transition: 0.3s;
     background-color: black;
-    width: 250px;
+    width: 100%;
   }
    .indivChoice:hover{
     color:aliceblue

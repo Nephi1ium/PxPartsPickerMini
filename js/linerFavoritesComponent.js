@@ -14,10 +14,10 @@ function linerFavorites(liner){
        console.log(linerFavoritesArray, "local storage array with favorite item");
           // add the item to the cart array
         
-        localStorage.setItem("Foot Favorites", JSON.stringify(linerFavoritesArray))
+        localStorage.setItem("Liner Favorites", JSON.stringify(linerFavoritesArray))
           // push the cartArray to local storage
   
-        let getFavorites = JSON.parse(localStorage.getItem("Foot Favorites"));
+        let getFavorites = JSON.parse(localStorage.getItem("Liner Favorites"));
         console.log(getFavorites, "local storage favorite array");
           // retrieve the stored array to check the values
           document.getElementById('linerItemSectionJS').innerHTML = "";

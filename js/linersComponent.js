@@ -20,14 +20,21 @@ function linerCard(array){
 
     let linersCard = document.querySelector('#mainpageSectionforJS');
 
-    console.log(array,"array name");
+    localStorage.setItem("array", JSON.stringify(array));
+    console.log(array, "array name");
+    let data = JSON.parse(localStorage.getItem("array")); 
+    console.log(data, "item data");
 
-    array.forEach(component => {    
+    data.forEach(component => {
+        localStorage.setItem(component.valAssign, JSON.stringify(component))
+    });
+    
+    data.forEach(component => {   
         linersCard.innerHTML = linersCard.innerHTML +
          `<div class="card card-margin" id="${component.valAssign}">
             <div class="card-header">
                 <h4 > ${component.name} </h4>
-                <a class="kneeClick btn btn-primary" onclick="favorites(${component.valAssign}, ${component.valAssign})" > Add To Favorites </a>
+                <a class="kneeClick btn btn-primary" onclick="linerFavorites(${component.valAssign})" > Add To Favorites </a>
                 <div class="card-body">
                 <img class="card-image" src="${component.image}"></img>
                 <h5> Product Description </h5>

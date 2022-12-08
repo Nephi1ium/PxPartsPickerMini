@@ -113,6 +113,31 @@ function cart(item){
         // retrieve the stored array to check the values
     };
     footCartItem(item);
+
+    function linerCartItem(item){
+
+      let linerCartItem = item[0].id;
+  // set a default cart item
+
+    console.log(item[0].id, "item object");
+    console.log(linerCartItem, "cartItem");
+// test the values
+
+    let getStoredFoot = JSON.parse(localStorage.getItem(linerCartItem));
+    console.log(getStoredFoot, "retrieved cart item from local storage");
+    // retrieve the item
+
+     linerArray.push(getStoredFoot);
+     console.log(linerArray, "local storage array with cart item");
+        // add the item to the cart array
+      
+      localStorage.setItem("Liner cart item", JSON.stringify(linerArray))
+        // push the cartArray to local storage
+
+      let getFootCartItem = JSON.parse(localStorage.getItem("Liner cart item"));
+      console.log(getFootCartItem, "local storage Foot cart item array");
+        // retrieve the stored array to check the values
+    };
   }
     
 
@@ -128,6 +153,15 @@ console.log((value)[0].id, "value[0].id object");
 let getCart = JSON.parse(localStorage.getItem("cart"));
 console.log(getCart, "local storage cart array");
   // retrieve the stored array and check the values
+let getDisplayCart = JSON.parse(localStorage.getItem("display cart"));
+console.log(getCart, "local storage cart array");
+  // retrieve the stored array and check the values
+let getKneeCart = JSON.parse(localStorage.getItem("Knee cart item"));
+console.log(getCart, "local storage cart array");
+  // retrieve the stored array and check the values
+  let getFootCart = JSON.parse(localStorage.getItem("Foot cart item"));
+console.log(getCart, "local storage cart array");
+  // retrieve the stored array and check the values
 
 let getCartArray = JSON.parse(localStorage.getItem(value[0].id));
 console.log(getCartArray, "retrieved cart item from local storage");
@@ -141,13 +175,39 @@ console.log(cartIndexItem, "cartIndexItem")
 getCart.splice(cartIndexItem, 1);
 console.log(getCart, "getCart Array spliced")
 // splice out the item from the cart array. 
+getDisplayCart.splice(cartIndexItem, 1);
+console.log(getDisplayCart, "getDisplayCart Array spliced")
+// splice out the item from the cart array. 
+getKneeCart.splice(cartIndexItem, 1);
+console.log(getKneeCart, "getDisplayCart Array spliced")
+// splice out the item from the cart array. 
+getFootCart.splice(cartIndexItem, 1);
+console.log(getFootCart, "getDisplayCart Array spliced")
+// splice out the item from the cart array. 
 
 localStorage.setItem("cart", JSON.stringify(getCart));
+// push the modified cartArray back to local storage
+localStorage.setItem("display cart", JSON.stringify(getCart));
+// push the modified cartArray back to local storage
+localStorage.setItem("Knee cart item", JSON.stringify(getCart));
+// push the modified cartArray back to local storage
+localStorage.setItem("Foot cart item", JSON.stringify(getCart));
 // push the modified cartArray back to local storage
 
 let showCart = JSON.parse(localStorage.getItem("cart"));
 console.log(showCart, "local storage cart array");
 // retrieve the cart array back from local storage
+let showDisplayCart = JSON.parse(localStorage.getItem("display cart"));
+console.log(showDisplayCart, "local storage cart display array");
+// retrieve the cart array back from local storage
+let showKneeCart = JSON.parse(localStorage.getItem("Knee cart item"));
+console.log(showKneeCart, "local storage cart display array");
+// retrieve the cart array back from local storage
+let showFootCart = JSON.parse(localStorage.getItem("Foot cart item"));
+console.log(showFootCart, "local storage cart display array");
+// retrieve the cart array back from local storage
+
+
 document.getElementById('cartSection').innerHTML = "";
 
 let cartLocation = document.querySelector('#cartSection');
