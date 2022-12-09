@@ -8,6 +8,7 @@ let downPDFDocument = document.querySelector("#downPDF");
 subtfPDFDocument.addEventListener("click", () => transFemoralProsthesis());
 subtfPDFDocument.addEventListener("click", () => kneeComponentPDF());
 subtfPDFDocument.addEventListener("click", () => footComponentPDF());
+subtfPDFDocument.addEventListener("click", () => linerComponentPDF());
 
 
 downPDFDocument.addEventListener("click", () => downloadPDF());
@@ -83,6 +84,33 @@ function footComponentPDF(){
 }
 console.log(footComponentPDF, "Foot Component PDF") 
 
+function linerComponentPDF(){
+    let linerChoice = JSON.parse(localStorage.getItem("Liner cart item"));
+    console.log(linerChoice, "locally stored liner item choice");
+    // the array for the liner item
+    console.log(linerChoice.length, "Liner Array Length");
+
+    let linerLocation = document.querySelector('#linerSection');
+
+    linerChoice.forEach(component => {
+        linerLocation.innerHTML = linerLocation.innerHTML +
+   
+         
+        `
+        <ul>
+          <li><div>HD Part Number: ${component.hdcode} </div></li>
+          <li><div>Manufacturer: ${component.manufacturer} </div></li>
+          <li><div>Name: ${component.name}</div></li>
+          <li><div>Size</div></li>
+          <li><div>Color</div></li>
+          <li><div>Quantity</div></li>
+      </ul>
+`
+
+          });
+    // how the array should be printed out from its core components
+}
+console.log(linerComponentPDF, "Foot Component PDF") 
 
 function transFemoralProsthesis(){
 
@@ -153,24 +181,10 @@ function transFemoralProsthesis(){
 
 
 </div>
-<div class=" item4">
+<div id="linerSection" class=" item4">
                 <div class="heading">
-                    <p>Liners</p>
-                </div>
-
-                <ul>
-                    <li><div>HD Part Number</div></li>
-                    <li><div>Manufacturer</div></li>
-                    <li><div>Name</div></li>
-                    <li><div>Size</div></li>
-                    <li><div>Thickness</div></li>
-                    <li><div>Profile</div></li>
-                    <li><div>Color</div></li>
-                    <li><div>Quantity</div></li>
-                </ul>
-        
-
-
+                    <p>Liner Selection</p>
+                </div>      
 </div>
 <div class=" item5">
                 <div class="heading cent">

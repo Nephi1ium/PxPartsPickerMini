@@ -8,7 +8,7 @@ grid-template-rows: auto;
 }
 
 .favorites{
-  display: flex;
+  display: table-cell;
   margin: 2%;
 }
 
