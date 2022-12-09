@@ -1,7 +1,8 @@
 kneeArray = [];
 footArray = [];
 cartArray = [];
-cartDisplayArray = [];
+cartArray.length = 0;
+// cartDisplayArray = [];
 
 function cart(item){
 
@@ -23,17 +24,18 @@ function cart(item){
       localStorage.setItem("cart", JSON.stringify(cartArray))
         // push the cartArray to local storage
 
+
+
       let getCart = JSON.parse(localStorage.getItem("cart"));
       console.log(getCart, "local storage cart array");
         // retrieve the stored array to check the values
 
+        const noDupes = [...new Map(getCart.map((m) => [m.valAssign, m])).values()];
+        console.log(noDupes, "eureka!");
+      // now here turn the items into a set without duplicates
 
-        cartDisplayArray.push(getCart);
-        console.log(cartDisplayArray, "local storage array with displayed cart items");
-        //  push the pulled cart items into the cart array
-
-        localStorage.setItem("display cart", JSON.stringify(cartDisplayArray));
-    // push the cart display array to local storage
+      localStorage.setItem("cart", JSON.stringify(noDupes))
+      // push the cartArray to local storage
 
     let showCart = JSON.parse(localStorage.getItem("cart"));
       console.log(showCart, "local storage cart array");
@@ -153,7 +155,7 @@ console.log((value)[0].id, "value[0].id object");
 let getCart = JSON.parse(localStorage.getItem("cart"));
 console.log(getCart, "local storage cart array");
   // retrieve the stored array and check the values
-let getDisplayCart = JSON.parse(localStorage.getItem("display cart"));
+let getDisplayCart = JSON.parse(localStorage.getItem("cart"));
 console.log(getCart, "local storage cart array");
   // retrieve the stored array and check the values
 let getKneeCart = JSON.parse(localStorage.getItem("Knee cart item"));

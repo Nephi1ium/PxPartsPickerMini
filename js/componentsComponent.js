@@ -37,6 +37,7 @@ function componentCard(array){
                 <div id="${component.weight}">${component.weight}</div>
                 <div id="${component.weightlimit}">${component.weightlimit}</div>
                 <div id="${component.material}">${component.material}</div>
+                <div id="${component.material}">LCode:${component.lcode}</div>
 
                 <div id="${component.price}" >${component.price}</div>
                 <div id= "${component.hdcode}">${component.hdcode}</div>
