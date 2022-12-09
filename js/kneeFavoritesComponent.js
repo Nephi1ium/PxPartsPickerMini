@@ -28,8 +28,8 @@ console.log(keyed.id, "keyed object");
 
         getFavorites.forEach(component => {    
           favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-         `<div class="card card-margin" id="${component.valAssign}">
-         <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign});kneeCartItem(${component.valAssign});" > + Cart </a>
+         `<div class="card favorites card-margin" id="${component.valAssign}">
+         <a class="kneeClick btn-small btn btn-primary" onclick="kneeCartItem(${component.valAssign});" > + Cart </a>
          <img class="card-image" src="${component.image}"></img>
 
             <div class="card-header">
@@ -186,7 +186,7 @@ console.log(showfavorite, "local storage favorite array");
         showfavorite.forEach(component => {    
           favoritesLocation.innerHTML = favoritesLocation.innerHTML +
          `<div class="card card-margin" id="${component.valAssign}">
-         <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
+         <a class="kneeClick btn-small btn btn-primary" onclick="kneeCartItem(${component.valAssign})" > + Cart </a>
          <img class="card-image" src="${component.image}"></img>
 
             <div class="card-header">

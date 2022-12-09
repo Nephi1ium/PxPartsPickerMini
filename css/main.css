@@ -307,7 +307,7 @@ body {
   vertical-align: middle;
 } 
 .card {
-  display: block; 
+  /* display: block;  */
     margin-bottom: 20px;
     line-height: 1.42857143;
     background-color: #fff;

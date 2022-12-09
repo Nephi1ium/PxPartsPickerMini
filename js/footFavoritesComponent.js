@@ -29,8 +29,8 @@ function footFavorites(foot){
   
           getFavorites.forEach(component => {    
             favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-           `<div class="card card-margin" id="${component.valAssign}">
-           <a class="footClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
+           `<div class="card favorites card-margin" id="${component.valAssign}">
+           <a class="footClick btn-small btn btn-primary" onclick="footCartItem(${component.valAssign})" > + Cart </a>
            <img class="card-image" src="${component.image}"></img>
   
               <div class="card-header">

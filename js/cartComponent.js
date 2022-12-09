@@ -1,7 +1,7 @@
 kneeArray = [];
 footArray = [];
 cartArray = [];
-cartArray.length = 0;
+linerArray = [];
 // cartDisplayArray = [];
 
 function cart(item){
@@ -61,7 +61,8 @@ function cart(item){
 
     // allow deletion of cart items, remove item from array and then push the modified array back to local storage
    
-
+  }
+    
     function kneeCartItem(item){
 
       let kneeCartItem = item[0].id;
@@ -85,8 +86,10 @@ function cart(item){
       let getKneeCartItem = JSON.parse(localStorage.getItem("Knee cart item"));
       console.log(getKneeCartItem, "local storage Knee cart item array");
         // retrieve the stored array to check the values
+
+        cart(item);
     };
-    kneeCartItem(item);
+    // kneeCartItem(item);
     
     
 
@@ -113,10 +116,15 @@ function cart(item){
       let getFootCartItem = JSON.parse(localStorage.getItem("Foot cart item"));
       console.log(getFootCartItem, "local storage Foot cart item array");
         // retrieve the stored array to check the values
+        cart(item);
     };
-    footCartItem(item);
+    // footCartItem(item);
 
     function linerCartItem(item){
+
+      linerArray = [];
+
+      console.log(linerArray, "this should be empty");
 
       let linerCartItem = item[0].id;
   // set a default cart item
@@ -139,9 +147,9 @@ function cart(item){
       let getFootCartItem = JSON.parse(localStorage.getItem("Liner cart item"));
       console.log(getFootCartItem, "local storage Foot cart item array");
         // retrieve the stored array to check the values
+        cart(item);
     };
-  }
-    
+
 
     
 function removeCart(value){

@@ -28,7 +28,7 @@ function pxCompFavorites(comp){
   
           getFavorites.forEach(component => {    
             favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-           `<div class="card card-margin" id="${component.valAssign}">
+           `<div class="card favorites card-margin" id="${component.valAssign}">
            <a class="pxCompClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
            <img class="card-image" src="${component.image}"></img>
   
