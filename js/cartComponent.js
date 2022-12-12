@@ -2,6 +2,7 @@ kneeArray = [];
 footArray = [];
 cartArray = [];
 linerArray = [];
+compArray = [];
 // cartDisplayArray = [];
 
 function cart(item){
@@ -151,7 +152,33 @@ function cart(item){
     };
 
 
-    
+    function compCartItem(item){
+
+      let compCartItem = item[0].id;
+  // set a default cart item
+
+    console.log(item[0].id, "item object");
+    console.log(compCartItem, "cartItem");
+// test the values
+
+    let getStoredComp = JSON.parse(localStorage.getItem(compCartItem));
+    console.log(getStoredComp, "retrieved cart item from local storage");
+    // retrieve the item
+
+     compArray.push(getStoredComp);
+     console.log(compArray, "local storage array with cart item");
+        // add the item to the cart array
+      
+      localStorage.setItem("Comp cart item", JSON.stringify(compArray))
+        // push the cartArray to local storage
+
+      let getCompCartItem = JSON.parse(localStorage.getItem("Comp cart item"));
+      console.log(getCompCartItem, "local storage Comp cart item array");
+        // retrieve the stored array to check the values
+
+        cart(item);
+    };
+
 function removeCart(value){
 
 // console.log(value[0], "value object");
@@ -163,14 +190,14 @@ console.log((value)[0].id, "value[0].id object");
 let getCart = JSON.parse(localStorage.getItem("cart"));
 console.log(getCart, "local storage cart array");
   // retrieve the stored array and check the values
-let getDisplayCart = JSON.parse(localStorage.getItem("cart"));
-console.log(getCart, "local storage cart array");
-  // retrieve the stored array and check the values
 let getKneeCart = JSON.parse(localStorage.getItem("Knee cart item"));
-console.log(getCart, "local storage cart array");
+console.log(getCart, "local storage Knee cart array");
   // retrieve the stored array and check the values
   let getFootCart = JSON.parse(localStorage.getItem("Foot cart item"));
-console.log(getCart, "local storage cart array");
+console.log(getCart, "local storage Foot cart array");
+  // retrieve the stored array and check the values
+  let getCompCart = JSON.parse(localStorage.getItem("Comp cart item"));
+console.log(getCompCart, "local storage Component cart array");
   // retrieve the stored array and check the values
 
 let getCartArray = JSON.parse(localStorage.getItem(value[0].id));
@@ -185,36 +212,36 @@ console.log(cartIndexItem, "cartIndexItem")
 getCart.splice(cartIndexItem, 1);
 console.log(getCart, "getCart Array spliced")
 // splice out the item from the cart array. 
-getDisplayCart.splice(cartIndexItem, 1);
-console.log(getDisplayCart, "getDisplayCart Array spliced")
-// splice out the item from the cart array. 
 getKneeCart.splice(cartIndexItem, 1);
 console.log(getKneeCart, "getDisplayCart Array spliced")
 // splice out the item from the cart array. 
 getFootCart.splice(cartIndexItem, 1);
 console.log(getFootCart, "getDisplayCart Array spliced")
 // splice out the item from the cart array. 
+getCompCart.splice(cartIndexItem, 1);
+console.log(getCompCart, "getCompCart Array spliced")
+// splice out the item from the cart array. 
 
 localStorage.setItem("cart", JSON.stringify(getCart));
-// push the modified cartArray back to local storage
-localStorage.setItem("display cart", JSON.stringify(getCart));
 // push the modified cartArray back to local storage
 localStorage.setItem("Knee cart item", JSON.stringify(getCart));
 // push the modified cartArray back to local storage
 localStorage.setItem("Foot cart item", JSON.stringify(getCart));
 // push the modified cartArray back to local storage
+localStorage.setItem("Comp cart item", JSON.stringify(getCart));
+// push the modified cartArray back to local storage
 
 let showCart = JSON.parse(localStorage.getItem("cart"));
 console.log(showCart, "local storage cart array");
-// retrieve the cart array back from local storage
-let showDisplayCart = JSON.parse(localStorage.getItem("display cart"));
-console.log(showDisplayCart, "local storage cart display array");
 // retrieve the cart array back from local storage
 let showKneeCart = JSON.parse(localStorage.getItem("Knee cart item"));
 console.log(showKneeCart, "local storage cart display array");
 // retrieve the cart array back from local storage
 let showFootCart = JSON.parse(localStorage.getItem("Foot cart item"));
 console.log(showFootCart, "local storage cart display array");
+// retrieve the cart array back from local storage
+let showCompCart = JSON.parse(localStorage.getItem("Comp cart item"));
+console.log(showCompCart, "local storage cart display array");
 // retrieve the cart array back from local storage
 
 

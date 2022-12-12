@@ -9,6 +9,7 @@ subtfPDFDocument.addEventListener("click", () => transFemoralProsthesis());
 subtfPDFDocument.addEventListener("click", () => kneeComponentPDF());
 subtfPDFDocument.addEventListener("click", () => footComponentPDF());
 subtfPDFDocument.addEventListener("click", () => linerComponentPDF());
+subtfPDFDocument.addEventListener("click", () => pxCompComponentPDF());
 
 
 downPDFDocument.addEventListener("click", () => downloadPDF());
@@ -42,10 +43,6 @@ function kneeComponentPDF(){
           <li><div>HD Part Number: ${component.hdcode} </div></li>
           <li><div>Manufacturer: ${component.manufacturer} </div></li>
           <li><div>Name: ${component.name}</div></li>
-          <li><div>Size</div></li>
-          <li><div>Thickness</div></li>
-          <li><div>Profile</div></li>
-          <li><div>Color</div></li>
           <li><div>Quantity</div></li>
       </ul>
 `
@@ -110,7 +107,35 @@ function linerComponentPDF(){
           });
     // how the array should be printed out from its core components
 }
-console.log(linerComponentPDF, "Foot Component PDF") 
+console.log(linerComponentPDF, "Liner Component PDF") 
+
+function pxCompComponentPDF(){
+    let pxCompChoice = JSON.parse(localStorage.getItem("Comp cart item"));
+    console.log(pxCompChoice, "locally stored pxComp item choice");
+    // the array for the pxComp item
+    console.log(pxCompChoice.length, "pxComp Array Length");
+
+    let pxCompLocation = document.querySelector('#item5SSInfo');
+
+    pxCompChoice.forEach(component => {
+        pxCompLocation.innerHTML = pxCompLocation.innerHTML +
+   
+         
+        `
+        <ul>
+          <li><div>HD Part Number: ${component.hdcode} </div></li>
+          <li><div>Manufacturer: ${component.manufacturer} </div></li>
+          <li><div>Name: ${component.name}</div></li>
+          <li><div>Size</div></li>
+          <li><div>Color</div></li>
+          <li><div>Quantity</div></li>
+      </ul>
+`
+
+          });
+    // how the array should be printed out from its core components
+}
+console.log(pxCompComponentPDF, "pxComp Component PDF") 
 
 function transFemoralProsthesis(){
 
@@ -186,37 +211,24 @@ function transFemoralProsthesis(){
                     <p>Liner Selection</p>
                 </div>      
 </div>
-<div class=" item5">
-                <div class="heading cent">
-                    <p> Socks </p>
-                </div>
-                
-                <ul>
-                    <li>Price</li>
-                    <li></li>
-                </ul>
+<div id="pxCompSection" class=" item5">
+    <div id="headingComp" class="componentHeading heading">
+    Component Selection
+    </div>
+    <div id="item5SS" class="">
+    <p>Socks and Sheaths</p>
+    <div id="item5SSInfo"></div>
+    </div>
+    <div id="item5KS" class="">
+    <p>Knee Sleeves</p>
+    </div>
+    <div id="item5Comp" class="">
+    <p>Parts & Components </p>
+    </div>
+
+
 </div>
 
-<div class=" item6">    
-
-                <div class="heading cent">
-                    <p> Sheaths </p>
-                </div>
-                <ul>
-                    <li>Price</li>
-                    <li></li>
-                </ul>
-</div>
-<div class="item7">
-                <div class="heading ">
-                    <p> Sleeves </p>
-                </div>
-                    <ul>
-                        <li>Price</li>
-                        <li></li>
-                    </ul>
-                
-</div> 
 </div>
 </div>`;
         

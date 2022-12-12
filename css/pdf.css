@@ -56,7 +56,75 @@
     text-align: center;
 
     font-size: 12px;
+
+
+    display: grid;
+    max-width: 750px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    /* margin-top: 60px; */
+    /* padding: 0; */
+    border: none;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+    font-size: 16px;
+    /* line-height: 24px; */
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+    grid-gap: .5rem;
+    /* padding: 2px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "compHead1 compHead1 compHead1"
+    "comp1 comp2 comp3"
+
+
+ 
 }
+/* #pxCompSection{
+    display: grid;
+    max-width: 750px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+    grid-gap: .5rem;
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "compHead1 compHead1 compHead1"
+    "comp1 comp2 comp3"
+
+} */
+                    .componentHeading{
+                        grid-area: compHead1;
+                        text-align: center;
+
+
+                    }
+                    #item5SS{
+                        grid-area: comp1;
+                        text-align: center;
+
+                    
+                    }
+                    #item5KS{
+                        grid-area: comp2;
+                        text-align: center;
+
+                    
+                    }
+                    #item5Comp{
+                        grid-area: comp3;
+                        text-align: center;
+
+                    
+                    }
 
 .item6{
     grid-area: item6;
@@ -152,8 +220,8 @@
     grid-template-rows: auto;
     grid-template-areas: 
     "item2 item1 item1 item3"
-    "item2 . . item3"
-    "item4 item5 item6 item7"
+    "item2 item1 item1 item3"
+    "item4 item5 item5 item5"
 ;
 }
 
@@ -230,7 +298,7 @@
         grid-template-areas: 
         "item2 item1 item1 item3"
         /* "item2 . . item3" */
-        "item4 item5 item6 item7"
+        "item4 item5 item5 item5"
     ;
     }
 
@@ -312,8 +380,8 @@
         grid-template-rows: auto;
         grid-template-areas: 
         "item2 item1 item1 item3"
-        "item2 . . item3"
-        "item4 item5 item6 item7"
+        "item2 item1 item1 item3"
+        "item4 item5 item5 item5"
     ;
     }
 
@@ -375,8 +443,73 @@
     grid-area: item5;
     text-align: center;
 
+    display: grid;
+    max-width: 750px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    /* margin-top: 60px; */
+    /* padding: 0; */
+    border: none;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+    font-size: 16px;
+    /* line-height: 24px; */
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+    grid-gap: .5rem;
+    /* padding: 2px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "compHead1 compHead1 compHead1"
+    "comp1 comp2 comp3"
+
+
  
 }
+#pxCompSection{
+    display: grid;
+    max-width: 750px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+    border: none;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+    grid-gap: .5rem;
+  
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "compHead1 compHead1 compHead1"
+    "comp1 comp2 comp3"
+
+}
+                    #headingComp{
+                        grid-area: compHead1;
+                        text-align: center;
+
+
+                    }
+                    #item5SS{
+                        grid-area: comp1;
+                        text-align: center;
+
+                    
+                    }
+                    #item5KS{
+                        grid-area: comp2;
+                        text-align: center;
+
+                    
+                    }
+                    #item5Comp{
+                        grid-area: comp3;
+                        text-align: center;
+
+                    
+                    }
 
 .item6{
     grid-area: item6;
