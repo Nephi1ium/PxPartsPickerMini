@@ -1,7 +1,8 @@
 
-  kneeFavoritesArray = [];
+    kneeFavoritesArray = [];
 
   function kneeFavorites(keyed){
+
 
 console.log(keyed.id, "keyed object");
     
@@ -9,9 +10,15 @@ console.log(keyed.id, "keyed object");
     console.log(getStoredFavorite, "retrieved cart item from local storage");
     // retrieve the stored favorite item
 
+
+    // push an array to the local storage
+
+
+    //retrieve that same array from local storage
+
     kneeFavoritesArray.push(getStoredFavorite);
      console.log(kneeFavoritesArray, "local storage array with favorite item");
-        // add the item to the cart array
+        // add the item to the array pulled from local storage
       
       localStorage.setItem("Knee Favorites", JSON.stringify(kneeFavoritesArray))
         // push the cartArray to local storage
@@ -53,31 +60,15 @@ console.log(keyed.id, "keyed object");
         });
 
 
+        kneeFavoritesArray = getFavorites;
 
-
-
-        // display the card item and only the chosen items
-
-
-        // favoritesArray.push(ident.outerHTML);
-// console.log(favoritesArray, "local storage array with Favorited Card");
-    
-// localStorage.setItem("Local Storage Array", JSON.stringify(favoritesArray));
-    // set the array item to local storage
-// console.log(getLocalStorageArray, "retrieved local storage array");
-// localStorage.setItem("Local Storage Array", JSON.stringify(localStoreArray));
-// let getLocalStorageArray = JSON.parse(localStorage.getItem("Local Storage Array"));
-// console.log(getLocalStorageArray, "retrieved local storage array");
-
- 
-// THE ABOVE WORKS, NEED TO FINISH
-
-// localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
-// let favorite = JSON.parse(localStorage.getItem("Favorites"));
-// console.log(favorite, "Favorite Item Display");
-
-
+        console.log(kneeFavoritesArray, "This is the modified global knee favorite array")
+        // change the global value of the array above
 }
+
+  
+
+
 
 
 function showFavorites(){
@@ -119,13 +110,8 @@ function showFavorites(){
 
 function removeKneeFavorites(item){
 
-// console.log(item, "item");
 console.log(item[0].id, "item [0].id");
 
-// console.log(item.id, "item.id");
-// console.log(item.valAssign, "item.valAssign");
-
-    
 let getfavorite = JSON.parse(localStorage.getItem("Knee Favorites"));
 console.log(getfavorite, "local storage favorite array");
 // the favorites array to be modified
@@ -136,17 +122,6 @@ console.log(favoriteSpread, "favoriteSpread");
 let parts = JSON.parse(localStorage.getItem(item[0].id));
 console.log(parts, "parts, the item created from the array item in local storage ");
 
-const lyrics = {...parts};
-console.log(lyrics, "lyrics, the array with parts spliced in");
-// Above was practice and spread operator understanding
-
-//  ["head", "shoulders", "knees", "and", "toes"]
-
-// const arr = [{id: 'a'}, {id: 'b'}, {id: 'c'}];
-
-// const index = arr.map(object => object.id).indexOf('c');
-
-// console.log(index); // 👉️ 2
 
 let indexItem = getfavorite.map(object => object.valAssign).indexOf(item[0].id);
 console.log(indexItem, "Index Item")
@@ -199,6 +174,11 @@ console.log(showfavorite, "local storage favorite array");
         console.log("Created", component.card, "Cards");
         
         });
+
+        kneeFavoritesArray = showfavorite;
+
+        console.log(kneeFavoritesArray, "This is the modified global knee favorite array")
+        // change the global value of the array above
 // display the retrieved array items in the "favorite" 
 // reload the favorite and display it anew
 }

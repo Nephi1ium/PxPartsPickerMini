@@ -10,6 +10,9 @@ subtfPDFDocument.addEventListener("click", () => kneeComponentPDF());
 subtfPDFDocument.addEventListener("click", () => footComponentPDF());
 subtfPDFDocument.addEventListener("click", () => linerComponentPDF());
 subtfPDFDocument.addEventListener("click", () => pxCompComponentPDF());
+subtfPDFDocument.addEventListener("click", () => pxCompKSComponentPDF());
+subtfPDFDocument.addEventListener("click", () => pxComppxCompComponentPDF());
+
 
 
 downPDFDocument.addEventListener("click", () => downloadPDF());
@@ -137,6 +140,65 @@ function pxCompComponentPDF(){
 }
 console.log(pxCompComponentPDF, "pxComp Component PDF") 
 
+function pxCompKSComponentPDF(){
+    let pxCompKSChoice = JSON.parse(localStorage.getItem("CompKS cart item"));
+    console.log(pxCompKSChoice, "locally stored pxCompKS item choice");
+    // the array for the pxCompSS item
+    console.log(pxCompKSChoice.length, "pxCompKS Array Length");
+
+    let pxCompKSLocation = document.querySelector('#item5KSInfo');
+
+    pxCompKSLocation.forEach(component => {
+        pxCompKSLocation.innerHTML = pxCompKSLocation.innerHTML +
+   
+         
+        `
+        <ul>
+          <li><div>HD Part Number: ${component.hdcode} </div></li>
+          <li><div>Manufacturer: ${component.manufacturer} </div></li>
+          <li><div>Name: ${component.name}</div></li>
+          <li><div>Size</div></li>
+          <li><div>Color</div></li>
+          <li><div>Quantity</div></li>
+      </ul>
+`
+
+          });
+    // how the array should be printed out from its core components
+}
+console.log(pxCompKSComponentPDF, "pxCompSS Component PDF") 
+
+function pxComppxCompComponentPDF(){
+    let pxComppxCompChoice = JSON.parse(localStorage.getItem("ComppxComp cart item"));
+    console.log(pxComppxCompChoice, "locally stored pxComppxComp item choice");
+    // the array for the pxCompSS item
+    console.log(pxComppxCompChoice.length, "pxComppxComp Array Length");
+
+    let pxComppxCompLocation = document.querySelector('#item5pxCompInfo');
+
+    pxComppxCompLocation.forEach(component => {
+        pxComppxCompLocation.innerHTML = pxComppxCompLocation.innerHTML +
+   
+         
+        `
+        <ul>
+          <li><div>HD Part Number: ${component.hdcode} </div></li>
+          <li><div>Manufacturer: ${component.manufacturer} </div></li>
+          <li><div>Name: ${component.name}</div></li>
+          <li><div>Size</div></li>
+          <li><div>Color</div></li>
+          <li><div>Quantity</div></li>
+      </ul>
+`
+
+          });
+    // how the array should be printed out from its core components
+}
+console.log(pxComppxCompComponentPDF, "pxCompSS Component PDF") 
+
+
+
+
 function transFemoralProsthesis(){
 
 
@@ -221,9 +283,13 @@ function transFemoralProsthesis(){
     </div>
     <div id="item5KS" class="">
     <p>Knee Sleeves</p>
+    <div id="item5KSInfo"></div>
+
     </div>
     <div id="item5Comp" class="">
-    <p>Parts & Components </p>
+    <p>Parts & Components</p>
+    <div id="item5pxCompInfo"></div>
+
     </div>
 
 

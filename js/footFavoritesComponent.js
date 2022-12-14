@@ -1,7 +1,8 @@
+footFavoritesArray = [];
 
-  footFavoritesArray = [];
 
 function footFavorites(foot){
+
   console.log(foot, "foot object");
 
   console.log(foot.id, "foot id object");
@@ -35,7 +36,7 @@ function footFavorites(foot){
   
               <div class="card-header">
                   <h4 id=""> ${component.name} </h4>
-                  <a class="footClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
+                  <a class="footClick btn btn-primary" onclick="removeFootFavorites(${component.valAssign})" > Remove Favorite </a>
                   <div id="">HD Code: ${component.hdcode}</div>
                   <h5><u> L-Codes </u></h5>
                   <div class="lcodes">
@@ -52,46 +53,14 @@ function footFavorites(foot){
           console.log("Created", component.card, "Cards");
           
           });
+
+          footFavoritesArray = getFavorites;
+
+console.log(footFavoritesArray, "This is the modified global foot favorite array")
+// change the global value of the array above
 }
 
-function showFavorites(){
-
-      // let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
-      // console.log(getFavorites, "local storage favorite array");
-      //   // retrieve the stored array to check the values
-      //   let favoritesLocation = document.querySelector('#footItemSectionJS');
-      //   // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
-
-      //   // set the location where the favorite should show in the new configuration
-
-      //   getFavorites.forEach(component => {    
-      //     favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-      //    `<div class="card card-margin" id="${component.valAssign}">
-      //    <a class="footClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
-      //    <img class="card-image" src="${component.image}"></img>
-
-      //       <div class="card-header">
-      //           <h4 id=""> ${component.name} </h4>
-      //           <a class="footClick btn btn-primary" onclick="removeFavorites(${component.valAssign}, ${component.valAssign})" > Remove Favorite (not working) </a>
-      //           <div id="">HD Code: ${component.hdcode}</div>
-      //           </div>
-      //       </div>
-      //   </div>`;
-      //   console.log("Created", component.card, "Cards");
-        
-      //   });
-
-
-
-      
-
- }
-
-// window.addEventListener('load', showFavorites());
-
-
-
-function removeFavorites(item){
+function removeFootFavorites(item){
 
 // console.log(item, "item");
 console.log(item[0].id, "item [0].id");
@@ -100,7 +69,7 @@ console.log(item[0].id, "item [0].id");
 // console.log(item.valAssign, "item.valAssign");
 
     
-let getfavorite = JSON.parse(localStorage.getItem("Favorites"));
+let getfavorite = JSON.parse(localStorage.getItem("Foot Favorites"));
 console.log(getfavorite, "local storage favorite array");
 // the favorites array to be modified
 let favoriteSpread = {...getfavorite};
@@ -141,7 +110,7 @@ console.log(getfavorite, "getfavorite Array spliced")
 
 // splice out the item from the favorite array. 
 
-localStorage.setItem("Favorites", JSON.stringify(getfavorite));
+localStorage.setItem("Foot Favorites", JSON.stringify(getfavorite));
 
 // push the modified favoriteArray back to local storage
 
@@ -175,6 +144,11 @@ console.log(showfavorite, "local storage favorite array");
         });
 // display the retrieved array items in the "favorite" 
 // reload the favorite and display it anew
+
+footFavoritesArray = showfavorite;
+
+console.log(footFavoritesArray, "This is the modified global foot favorite array")
+// change the global value of the array above
 }
 
 

@@ -179,6 +179,60 @@ function cart(item){
         cart(item);
     };
 
+    function compCartItemKS(item){
+
+      let compCartItem = item[0].id;
+  // set a default cart item
+
+    console.log(item[0].id, "item object");
+    console.log(compCartItem, "cartItem");
+// test the values
+
+    let getStoredComp = JSON.parse(localStorage.getItem(compCartItem));
+    console.log(getStoredComp, "retrieved cart item from local storage");
+    // retrieve the item
+
+     compArray.push(getStoredComp);
+     console.log(compArray, "local storage array with cart item");
+        // add the item to the cart array
+      
+      localStorage.setItem("CompKS cart item", JSON.stringify(compArray))
+        // push the cartArray to local storage
+
+      let getCompCartItem = JSON.parse(localStorage.getItem("CompKS cart item"));
+      console.log(getCompCartItem, "local storage Comp cart item array");
+        // retrieve the stored array to check the values
+
+        cart(item);
+    };
+
+    function compCartItempxComp(item){
+
+      let compCartItem = item[0].id;
+  // set a default cart item
+
+    console.log(item[0].id, "item object");
+    console.log(compCartItem, "cartItem");
+// test the values
+
+    let getStoredComp = JSON.parse(localStorage.getItem(compCartItem));
+    console.log(getStoredComp, "retrieved cart item from local storage");
+    // retrieve the item
+
+     compArray.push(getStoredComp);
+     console.log(compArray, "local storage array with cart item");
+        // add the item to the cart array
+      
+      localStorage.setItem("ComppxComp cart item", JSON.stringify(compArray))
+        // push the cartArray to local storage
+
+      let getCompCartItem = JSON.parse(localStorage.getItem("ComppxComp cart item"));
+      console.log(getCompCartItem, "local storage Comp cart item array");
+        // retrieve the stored array to check the values
+
+        cart(item);
+    };
+
 function removeCart(value){
 
 // console.log(value[0], "value object");

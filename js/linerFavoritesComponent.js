@@ -52,6 +52,11 @@ function linerFavorites(liner){
           console.log("Created", component.card, "Cards");
           
           });
+
+          linerFavoritesArray = getFavorites;
+
+          console.log(linerFavoritesArray, "This is the modified global liner favorite array")
+          // change the global value of the array above
 }
 
 function showFavorites(){
@@ -175,6 +180,11 @@ console.log(showfavorite, "local storage favorite array");
         });
 // display the retrieved array items in the "favorite" 
 // reload the favorite and display it anew
+
+linerFavoritesArray = showfavorite;
+
+console.log(linerFavoritesArray, "This is the modified global liner favorite array")
+// change the global value of the array above
 }
 
 
