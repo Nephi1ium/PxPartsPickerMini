@@ -1,11 +1,6 @@
 
 /* Below is the code for the cards and main JS section */
-.mainpage{
-  display: grid;
-justify-content: center;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-grid-template-rows: auto;
-}
+
 
 .favorites{
   display: table-cell;

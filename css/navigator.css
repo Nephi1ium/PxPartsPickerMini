@@ -25,16 +25,7 @@ body {
     display: initial;
   }
   
-  .myItemNavigator{
-    height: 100%;
-    width: 16vmax;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+
   
   .myItemNavigator .secButtons {
     padding: .8vmax .1vmax;
@@ -193,7 +184,80 @@ text-align: center;
 }
 
 
+
+
+#kneeItemSectionJS{
+grid-area: kneeSection;
+}
+
+#footItemSectionJS{
+  grid-area: footSection;
+
+}
+
+#linerItemSectionJS{
+  grid-area: linerSection;
+
+}
+
+#pxCompItemSectionJS{
+  grid-area: pxCompSection1;
+
+}
+
+#pxCompItemSectionJSKS{
+  grid-area: pxCompSection2;
+
+}
+
+#pxCompItemSectionJSpxComp{
+  grid-area: pxCompSection3;
+
+}
+
+#mainpageSectionforJS{
+  grid-area: mainShowSection;
+
+}
+
+.myItemNavigator{
+  height: 100%;
+  width: 16vmax;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 4vmax;
+  padding-bottom: 4vmax;
+
+  grid-area: mainNavigator;
+}
   
+#main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "mainNavigator showSection showSection"
+  "mainNavigator kneeSection kneeSection"
+  "mainNavigator footSection footSection"
+  "mainNavigator linerSection linerSection"
+  "mainNavigator pxCompSection1 pxCompSection1"
+  "mainNavigator pxCompSection2 pxCompSection2"
+  "mainNavigator pxCompSection3 pxCompSection3"
+  "mainNavigator mainShowSection mainShowSection"
+
+;
+}
+
+.mainpage{
+  display: grid;
+justify-content: center;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+
+}
 
 
 
