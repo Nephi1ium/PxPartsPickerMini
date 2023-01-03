@@ -328,7 +328,6 @@ transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
 
     .box {
-        grid-area: bodyitem1;
         display: grid;
         max-width: 95%;
         width: auto;

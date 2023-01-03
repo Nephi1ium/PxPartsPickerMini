@@ -6,10 +6,50 @@
 #36393b 
 */
 
+.mainOne{  grid-area: mainOne;
+}
 
+.mainTwo{  grid-area: mainTwo;
+}
+
+.mainThree{  grid-area: mainThree;
+}
+
+.mainFour{  grid-area: mainFour;
+}
+
+.mainFive{  grid-area: mainFive;
+}
 body {
     font-family: "Lato", sans-serif;
     transition: background-color .1s;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mainOne"
+    "mainTwo"
+    "mainThree"
+    "mainFour"
+    "mainFive"
+;
+  }
+
+  body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .1s;
+
+    display: grid;
+    grid-template-columns: 5% 90%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mainOne mainOne"
+
+    "mainTwo mainTwo"
+    "mainNavigator mainFour"
+    "mainFive mainFive"
+;
   }
 
   .noShowKnees{
@@ -220,13 +260,11 @@ grid-area: kneeSection;
 }
 
 .myItemNavigator{
-  position: fixed;
   height: 100%;
   width: 16vmax;
   z-index: 1;
   /* top: 0; */
   left: 0;
-  overflow-x: hidden;
   transition: 0.5s;
   padding-top: 4vmax;
   padding-bottom: 4vmax;
@@ -234,7 +272,7 @@ grid-area: kneeSection;
   grid-area: mainNavigator;
 }
   
-#main{
+#kitMain{
   display: grid;
   grid-template-columns: 1fr 1fr ;
   grid-template-rows: auto;
