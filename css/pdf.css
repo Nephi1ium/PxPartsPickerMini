@@ -101,6 +101,36 @@
     "comp1 comp2 comp3"
 
 } */
+.mainOne{  grid-area: mainOne;
+}
+
+.mainTwo{  grid-area: mainTwo;
+}
+
+.mainThree{  grid-area: mainThree;
+}
+
+.mainFour{  grid-area: mainFour;
+}
+
+.mainFive{  grid-area: mainFive;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .1s;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mainOne"
+    "mainTwo"
+    "mainThree"
+    "mainFour"
+    "mainFive"
+;
+  }
                     .componentHeading{
                         grid-area: compHead1;
                         text-align: center;

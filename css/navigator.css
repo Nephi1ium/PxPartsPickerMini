@@ -6,20 +6,7 @@
 #36393b 
 */
 
-.mainOne{  grid-area: mainOne;
-}
 
-.mainTwo{  grid-area: mainTwo;
-}
-
-.mainThree{  grid-area: mainThree;
-}
-
-.mainFour{  grid-area: mainFour;
-}
-
-.mainFive{  grid-area: mainFive;
-}
 /* body {
     font-family: "Lato", sans-serif;
     transition: background-color .1s;
@@ -36,21 +23,7 @@
 ;
   } */
 
-  body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .1s;
 
-    display: grid;
-    grid-template-columns: 5% 95%;
-    grid-template-rows: auto;
-    grid-template-areas: 
-    "mainOne mainOne"
-
-    "mainTwo mainTwo"
-    "mainNavigator mainFour"
-    "mainFive mainFive"
-;
-  }
 
   .noShowKnees{
     display: none;
