@@ -1,6 +1,8 @@
 
 
-window.onload=sideVirtInfo();
+// window.onload=sideVirtInfo();
+window.onload=showStoredValue();
+
 
 function sideVirtInfo(){
 
@@ -211,10 +213,11 @@ function sideVirtInfo(){
 
         
     </ul>
-    <section id="submit">
-    <button type="button" class="btn btn-large btn-primary" id="genVirPDF" >Generate PDF</button>
-    <button type="button" class="btn btn-large btn-secondary" id="VVPDFDown">Download PDF</button>
-    </section>
+    <section id="saveButton" class="saveButton">
+    <label for="saveInfo"> Save Patient Information</label>
+    <button class='btn btn-large btn-primary' type="button" id="saveInfo">Save</button>   
+    <p id="infoSaved"></p>
+</section>
 </form>
     `;
     document.getElementById("sideCorrectionsSection").innerHTML = sideVirtSection;
@@ -282,5 +285,18 @@ function saveNewInfo(){
     const confirmSaved = `<p>Information Saved</p>`
     document.getElementById("infoSaved").innerHTML = confirmSaved;
 
+
+}
+
+
+function showStoredValue(){
+    let clinicianName = localStorage.getItem("clinicianName");
+console.log(clinicianName, "local storage favorite array");
+
+let replacementName = 
+`Current Name: ${clinicianName}
+`
+
+document.getElementById("replaceClinName").innerHTML = replacementName;
 
 }

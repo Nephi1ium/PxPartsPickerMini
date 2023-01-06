@@ -1,4 +1,23 @@
 
+/* .mainVirtual{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "sideCorrectionsSectionStyles vvForm"
+
+;
+} */
+
+.sideCorrectionsSectionStyles {
+    grid-area: sideCorrectionsSectionStyles;
+}
+
+.vvForm {
+    grid-area: vvForm;
+}
+
+
 #addNotes {
     width: 100%;
   }
