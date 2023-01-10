@@ -13,29 +13,38 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on the button, open the modal
 
-let modalToChange = document.querySelector("#myModal")
+// let modalToChange = document.querySelector("#myModal")
+let GMaps = document.getElementById("googleMapsContainer")
+
 // When the user clicks x then the modal should disappear
- function changeModal() {
-    modalToChange.style.display = "none";
-}
+//  function changeModal() {
+//     modalToChange.style.display = "none";
+// }
 
 // This shows the map item
 let clickShowMap = document.querySelector("#openGoogleModal")
-// clickShowMap.addEventListener("click", () => maptopage());
-clickShowMap.addEventListener("click", () => resetModalToShow());
+
+let clickCloseMap = document.querySelector("#closeGoogleModal")
+
+
+clickShowMap.addEventListener("click", () => closeGMaps());
+// clickShowMap.addEventListener("click", () => resetModalToShow());
+clickCloseMap.addEventListener("click", () => closeGMaps());
 
 // This resets the modal back to its initial unseen, but loaded configuraiton.
-function resetModalToShow(){
-if( modalToChange.style.display = "none") {
-    modalToChange.style.display = "initial"
-}
-}
+// function resetModalToShow(){
+// if( modalToChange.style.display = "none") {
+//     modalToChange.style.display = "initial"
+// }
+// }
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+
+
+function closeGMaps() {
+
+    GMaps.classList.toggle("noShow");
   }
-}
+
 
 
 
@@ -100,8 +109,8 @@ window.onclick = function(event) {
 //     `
 //     document.getElementById("googleMap").innerHTML = googleMap;
 
-    const closeModal = document.querySelector("#closeGoogleModal");
-closeModal.addEventListener("click", () => changeModal());
+//     const closeModal = document.querySelector("#closeGoogleModal");
+// closeModal.addEventListener("click", () => changeModal());
 
 
 

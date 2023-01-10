@@ -20,6 +20,7 @@
 
 #addNotes {
     width: 100%;
+    grid-area: xnotes;
   }
 
 .information2{
@@ -265,6 +266,7 @@ text-align: right;
 
 .additional{
     grid-area: additional;
+    width:100%;
 
     /* background-color: aqua; */
 }

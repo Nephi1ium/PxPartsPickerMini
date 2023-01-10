@@ -49,26 +49,26 @@
             <section id="fpClinName" class="firstPageInfo">
                 <label for="clinName"> Clinicians Name:</label>
                 <sub id="replaceClinName"> </sub>
-                <input type="text" id="clinName" name="clinName" required>
+                <input type="text" id="clinName" name="clinName">
 
             </section>
                 <section class="infoOne" id="infoOne">           
                     <label for="drName"> Doctors Name:</label>
-                    <input type="text" id="drName" name="drName" required>
+                    <input type="text" id="drName" name="drName"  >
                     
                         <label for="ptName"> Patient Name:</label>
-                        <input type="text" id="ptName" name="ptName" required> 
+                        <input type="text" id="ptName" name="ptName"  > 
                     
                         <label for="dateOfAmp"> Date of Amputation: </label>
-                        <input type="date" name="dateOfAmp" id="dateOfAmp" required>
+                        <input type="date" name="dateOfAmp" id="dateOfAmp"  >
 
                         <label for="ampLoc"> Location of Amputation (Hospital):</label>
-                        <input type="text" id="ampLoc" name="ampLoc" required>
+                        <input type="text" id="ampLoc" name="ampLoc"  >
 
                         <label for="addressInp"> Address of Clinic:</label>
-                        <input type="text" id="addressInp" name="addressInp" required>
+                        <input type="text" id="addressInp" name="addressInp"  >
 
-                        <button id="openGoogleModal" >Click Here to Search For Address</button>
+                        <button type="button" id="openGoogleModal" >Click Here to Search For Address</button>
 
                             <!-- The Modal -->
                             <!-- <div id="myModal" class="modal"> -->
@@ -76,13 +76,13 @@
                             <!-- Modal content -->
                             <!-- <div class="modal-content"> -->
                                 <!-- <section id="googleMap" class=""></section> -->
-                                <section id="googleMapsContainer" class="noShow">
+                            <section id="googleMapsContainer" class="noShow">
                                 <div class="pac-card" id="pac-card">
                                     <div>
                                       <div id="title">Autocomplete search</div>
                               
                                   
-                                      <button id="closeGoogleModal"> X </button>
+                                      <button type="button" id="closeGoogleModal"> X </button>
                               
                               
                                       <div id="type-selector" class="pac-controls">
@@ -94,7 +94,7 @@
                                         />
                                         <label for="changetype-all">All</label>
                               
-                                        <input type="radio" name="type" id="changetype-establishment" />
+                                        <!-- <input type="radio" name="type" id="changetype-establishment" />
                                         <label for="changetype-establishment">establishment</label>
                               
                                         <input type="radio" name="type" id="changetype-address" />
@@ -107,7 +107,7 @@
                                         <label for="changetype-cities">(cities)</label>
                               
                                         <input type="radio" name="type" id="changetype-regions" />
-                                        <label for="changetype-regions">(regions)</label>
+                                        <label for="changetype-regions">(regions)</label> -->
                                       </div>
                                       <br />
                                       <div id="strict-bounds-selector" class="pac-controls">
@@ -135,8 +135,8 @@
                         
                     
                         <!-- <label for="dob"> If DOB on PDF is incorrect, re-enter here: </label>
-                        <input type="date" name="dob" id="dob" required> -->
-                </section>
+                        <input type="date" name="dob" id="dob"  > -->
+                            </section>
                 </section>
 
                     <section class="recc" id="recc"> 
@@ -292,10 +292,10 @@
 
                     <section id="components" class="components">           
                         <label for="knee"> Knee:</label>
-                        <input type="text" id="knee" name="knee" required>
+                        <input type="text" id="knee" name="knee"  >
                         
                         <label for="foot"> Foot:</label>
-                        <input type="text" id="foot" name="foot" required> 
+                        <input type="text" id="foot" name="foot"  > 
                     </section>
    
                     <section class="additional" id="additional">
