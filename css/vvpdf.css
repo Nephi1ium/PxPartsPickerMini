@@ -281,9 +281,13 @@ text-align: right;
     /* background-color: rebeccapurple; */
 }
 
+#googleMapsContainer{
+    grid-area: mapsContainer;
+}
 
-
-
+#fpClinName{
+    grid-area: fpName;
+}
 
 /* .box .top {
     display: grid;
@@ -312,7 +316,7 @@ text-align: right;
     padding: 0;
     border: none;
     /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
-    font-size: 16px;
+    font-size: 1.2vmax;
     /* line-height: 24px; */
     font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
     grid-gap: .5rem;
@@ -320,13 +324,14 @@ text-align: right;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-    "intro intro infoOne infoOne"
-    
+    "intro intro intro intro"
+    "infoOne infoOne infoOne infoOne"
+    "fpName fpName fpName fpName"
     "recc change ampCause k-level"
     "icdTen icdTen strength ROM"
     "icdTen icdTen demographic ROM"
     "icdTen icdTen demographic ROM"
-
+    "icdTen icdTen mapsContainer mapsContainer"
 
     "timeUse socksUse components components "
     "commitment commitment commitment commitment"
@@ -352,7 +357,8 @@ text-align: right;
         grid-template-rows: auto;
         grid-template-areas: 
         "intro"
-        "infoOne"        
+        "infoOne"  
+        "fpName"      
         "recc"
         " change "
         " ampCause"
