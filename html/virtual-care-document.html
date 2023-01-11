@@ -49,26 +49,31 @@
             <section id="fpClinName" class="firstPageInfo">
                 <label for="clinName"> Clinicians Name:</label>
                 <sub id="replaceClinName"> </sub>
-                <input type="text" id="clinName" name="clinName">
+                <input class="form-control" type="text" id="clinName" name="clinName">
 
             </section>
                 <section class="infoOne" id="infoOne">           
                     <label id="labDrName" for="drName"> Doctors Name:</label>
+                    <sub id="replaceDrName"> </sub>
                     <input type="text" id="drName" name="drName"  >
                     
-                        <label id="labPtName" for="ptName"> Patient Name:</label>
-                        <input type="text" id="ptName" name="ptName"  > 
+                        <label id="labPtName" for="ptName"  > Patient Name:</label>
+                        <sub id="replacePtName"> </sub>
+                        <input class="form-control" type="text" id="ptName" name="ptName"  > 
                     
                         <label id="labDateOfAmp" for="dateOfAmp"> Date of Amputation: </label>
-                        <input type="date" name="dateOfAmp" id="dateOfAmp"  >
+                        <sub id="replaceDateOfAmp"> </sub>
+                        <input type="date" class="form-control" name="dateOfAmp" id="dateOfAmp"  >
 
                         <label id="labAmpLoc" for="ampLoc"> Location of Amputation (Hospital):</label>
-                        <input type="text" id="ampLoc" name="ampLoc"  >
+                        <sub id="replaceAmpLoc"> </sub>
+                        <input type="text" class="form-control" id="ampLoc" name="ampLoc"  >
 
                         <label id="labAddressInp" for="addressInp"> Address of Clinic:</label>
-                        <input type="text" id="addressInp" name="addressInp"  >
+                        <sub id="replaceAddressInp"> </sub>
+                        <input type="text" class="form-control" id="addressInp" name="addressInp"  >
 
-                        <button type="button" id="openGoogleModal" >Click Here to Search For Address</button>
+                        <button type="button" class="btn-secondary" id="openGoogleModal" >Click Here to Search For Address</button>
 
                             <!-- The Modal -->
                             <!-- <div id="myModal" class="modal"> -->
@@ -131,6 +136,7 @@
                             <!-- </div>
 
                             </div> -->
+                            <div id="googleMapsContainerMover">CLICK AND DRAG HERE TO MOVE MAP</div>
 
                         
                     
@@ -257,7 +263,7 @@
                     </section>
 
                     <section class="timeUse"  id="timeUse"> 
-                        <label for="timeUsed"> Patient has historically used their prosthesis an average of: </label>
+                        <label for="timeUsed"> Patients historic use of their prosthesis: </label>
                             <select class="form-control" id="timeUsed">
                                 <option></option>
                                 <option value="1-4 hr/day">1-4 hr/day</option>
@@ -269,7 +275,7 @@
                     </section>
 
                     <section class="socksUse"  id="socksUse"> 
-                        <label for="socksUsed"> While managing their fit with: </label>
+                        <label for="socksUsed"> Fit managed by: </label>
                             <select class="form-control" id="socksUsed">
                                 <option></option>
                                 <option value="1Suction Fit">Suction Fit</option>
@@ -291,16 +297,16 @@
                     </section> 
 
                     <section id="components" class="components">           
-                        <label for="knee"> Knee:</label>
-                        <input type="text" id="knee" name="knee"  >
+                        <label id="labKnee" for="knee"> Knee:</label>
+                        <input class="form-control" type="text" id="knee" name="knee"  >
                         
-                        <label for="foot"> Foot:</label>
-                        <input type="text" id="foot" name="foot"  > 
+                        <label id="labFoot" for="foot"> Foot:</label>
+                        <input class="form-control" type="text" id="foot" name="foot"  > 
                     </section>
    
                     <section class="additional" id="additional">
                         <label for="addNotes">Additional Notes:</label>
-                        <textarea type="textarea" id="addNotes" ></textarea>
+                        <textarea class="form-control" type="textarea" id="addNotes" ></textarea>
                     </section>
 
 

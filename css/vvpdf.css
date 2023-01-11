@@ -1,4 +1,6 @@
-
+.mainVirtual{
+    padding: 2%;
+}
 /* .mainVirtual{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -195,14 +197,14 @@ text-align: right;
     /* line-height: 24px; */
     font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
     grid-gap: .5rem;
-    grid-template-columns: .5fr 1fr .5fr 1fr .5fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: auto;
     grid-template-areas: 
-    "labDrName drName labPtName ptName labDateOfAmp dateOfAmp"
+    "labDrName drName labPtName ptName"
+    "labDateOfAmp dateOfAmp labAmpLoc ampLoc"
+    "labAddressInp addressInp labOpenGoogleModal openGoogleModal"
 
-    "labAmpLoc ampLoc labAddressInp addressInp labOpenGoogleModal openGoogleModal"
-
-    "googleMapsContainer googleMapsContainer googleMapsContainer googleMapsContainer googleMapsContainer googleMapsContainer"
+    "googleMapsContainer googleMapsContainer googleMapsContainer googleMapsContainer"
 
 
 }
@@ -270,7 +272,6 @@ text-align: right;
 
 #googleMapsContainer{
     grid-area: googleMapsContainer;
-cursor: move;
     grid-area: mapsContainer;
     height: 45%;
     width: 45%;
@@ -280,6 +281,10 @@ cursor: move;
     border-radius: 1%;
     right: 5%;
     top: 45%;
+}
+
+#googleMapsContainerMover{
+    cursor: move;
 }
 
 
@@ -486,16 +491,22 @@ cursor: move;
         /* line-height: 24px; */
         font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
         grid-gap: .5rem;
-        grid-template-columns: .5fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-        "labDrName drName"
-        "labPtName ptName"
-        "labDateOfAmp dateOfAmp"
-        "labAmpLoc ampLoc"
-        "labAddressInp addressInp"
-        "labOpenGoogleModal openGoogleModal"
-        "googleMapsContainer googleMapsContainer"
+        "labDrName"
+        "drName"
+        "labPtName"
+        "ptName"
+        "labDateOfAmp"
+        "dateOfAmp"
+        "labAmpLoc"
+        "ampLoc"
+        "labAddressInp"
+        "addressInp"
+        "labOpenGoogleModal"
+        "openGoogleModal"
+        "googleMapsContainer"
     
     
     }
@@ -511,6 +522,25 @@ touch-action: move;
         border-radius: 1%;
         right: 5%;
         top: 45%;
+    }
+
+    #components{
+    
+        display: grid;
+        /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+        /* line-height: 24px; */
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        grid-gap: .5rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "labKnee"
+        "knee"
+        "labFoot"
+        "foot"
+
+    
+    
     }
 }
 
