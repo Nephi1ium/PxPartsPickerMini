@@ -190,7 +190,108 @@ text-align: right;
 .infoOne{
     grid-area: infoOne;
 
+    display: grid;
+    /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+    /* line-height: 24px; */
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    grid-gap: .5rem;
+    grid-template-columns: .5fr 1fr .5fr 1fr .5fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "labDrName drName labPtName ptName labDateOfAmp dateOfAmp"
+
+    "labAmpLoc ampLoc labAddressInp addressInp labOpenGoogleModal openGoogleModal"
+
+    "googleMapsContainer googleMapsContainer googleMapsContainer googleMapsContainer googleMapsContainer googleMapsContainer"
+
+
 }
+
+#drName{
+    grid-area: drName;
+
+}
+
+#ptName{
+    grid-area: ptName;
+
+}
+
+#dateOfAmp{
+    grid-area: dateOfAmp;
+
+}
+
+#ampLoc{
+    grid-area: ampLoc;
+
+}
+
+#addressInp{
+    grid-area: addressInp;
+
+}
+
+#openGoogleModal{
+    grid-area: openGoogleModal;
+
+}
+
+
+#labDrName{
+    grid-area: labDrName;
+
+}
+
+#labPtName{
+    grid-area: labPtName;
+
+}
+
+#labDateOfAmp{
+    grid-area: labDateOfAmp;
+
+}
+
+#labAmpLoc{
+    grid-area: labAmpLoc;
+
+}
+
+#labAddressInp{
+    grid-area: labAddressInp;
+
+}
+
+#labOpenGoogleModal{
+    grid-area: labOpenGoogleModal;
+
+}
+
+#googleMapsContainer{
+    grid-area: googleMapsContainer;
+cursor: move;
+    grid-area: mapsContainer;
+    height: 45%;
+    width: 45%;
+    z-index: 999;
+    position: absolute;
+    border: #a5d8ff solid 4px;
+    border-radius: 1%;
+    right: 5%;
+    top: 45%;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .recc{
     grid-area: recc;
@@ -375,6 +476,41 @@ text-align: right;
         "components"
         "additional"
         "saveButton";
+    }
+
+    .infoOne{
+        grid-area: infoOne;
+    
+        display: grid;
+        /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+        /* line-height: 24px; */
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        grid-gap: .5rem;
+        grid-template-columns: .5fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "labDrName drName"
+        "labPtName ptName"
+        "labDateOfAmp dateOfAmp"
+        "labAmpLoc ampLoc"
+        "labAddressInp addressInp"
+        "labOpenGoogleModal openGoogleModal"
+        "googleMapsContainer googleMapsContainer"
+    
+    
+    }
+
+    #googleMapsContainer{
+        grid-area: googleMapsContainer;
+touch-action: move;        
+        height: 45%;
+        width: 90%;
+        z-index: 999;
+        position: absolute;
+        border: #a5d8ff solid 4px;
+        border-radius: 1%;
+        right: 5%;
+        top: 45%;
     }
 }
 
