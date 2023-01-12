@@ -202,12 +202,22 @@ text-align: right;
     grid-template-areas: 
     "labDrName drName labPtName ptName"
     "labDateOfAmp dateOfAmp labAmpLoc ampLoc"
-    "labAddressInp addressInp labOpenGoogleModal openGoogleModal"
+    "labAddressInp addressInp labPtDOB ptDOB"
+    "labOpenGoogleModal labOpenGoogleModal openGoogleModal openGoogleModal"
 
     "googleMapsContainer googleMapsContainer googleMapsContainer googleMapsContainer"
 
 
 }
+
+#labPtDOB{
+    grid-area: labPtDOB;
+}
+
+#ptDOB{
+    grid-area: ptDOB;
+}
+
 
 #drName{
     grid-area: drName;
@@ -259,6 +269,10 @@ text-align: right;
     grid-area: labAmpLoc;
 
 }
+
+.underline{
+    text-decoration: underline;
+  }
 
 #labAddressInp{
     grid-area: labAddressInp;

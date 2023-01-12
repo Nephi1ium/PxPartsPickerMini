@@ -1,3 +1,8 @@
+.underline{
+  text-decoration: underline;
+}
+
+
 #modalPic {
   width: 100%;
   max-width: 200px; }

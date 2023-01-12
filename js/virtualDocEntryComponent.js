@@ -226,13 +226,16 @@ function sideVirtInfo(){
 
 function saveNewInfo(){
     let ptName = document.getElementById("ptName");
-    localStorage.setItem("ptName", ptName.value);
+    localStorage.setItem("patientName", ptName.value);
 
     let drName = document.getElementById("drName");
-    localStorage.setItem("drName", drName.value);
+    localStorage.setItem("doctorName", drName.value);
 
     let dateOfAmp = document.getElementById("dateOfAmp");
     localStorage.setItem("dateOfAmp", dateOfAmp.value);
+
+    let ptDOB = document.getElementById("dateOfBirth");
+    localStorage.setItem("dateOfBirth", ptDOB.value);
 
     let ampLoc = document.getElementById("ampLoc");
     localStorage.setItem("ampLoc", ampLoc.value);
@@ -290,13 +293,77 @@ function saveNewInfo(){
 
 
 function showStoredValue(){
+// 
     let clinicianName = localStorage.getItem("clinicianName");
+console.log(clinicianName, "Clinician Name");
+
+let replacementClinName = 
+`Current Clinician Name: ${clinicianName}
+`
+document.getElementById("replaceClinName").innerHTML = replacementClinName;
+
+// 
+// let doctorName = localStorage.getItem("clinicianName");
+// console.log(clinicianName, "local storage favorite array");
+
+// let replacementDoctorName = 
+// `Current Doctor: ${doctorName}
+// `
+// document.getElementById("replaceDrName").innerHTML = replacementDoctorName;
+
+// 
+let patientName = localStorage.getItem("patientName");
+console.log(patientName, "Patients Name");
+
+let replacePtName = 
+`Current Patients Name: ${patientName}
+`
+document.getElementById("replacePtName").innerHTML = replacePtName;
+
+// 
+let amputationDate = localStorage.getItem("dateOfAmp");
+console.log(amputationDate, "Amputation Date");
+
+let replaceDateOfAmp = 
+`Current Date of Amputation: ${amputationDate}
+`
+document.getElementById("replaceDateOfAmp").innerHTML = replaceDateOfAmp;
+
+// 
+// let amputationLocation = localStorage.getItem("clinicianName");
+// console.log(clinicianName, "local storage favorite array");
+
+// let replaceAmpLoc = 
+// `Current Doctor: ${amputationLocation}
+// `
+// document.getElementById("replaceAmpLoc").innerHTML = replaceAmpLoc;
+
+// 
+let clinicAddress = localStorage.getItem("clinicLocation");
+console.log(clinicAddress, "clinic Address");
+
+// if(clinicAddress == null) {
+//     let replaceAddressInp = 
+//     `Current Clinic Address: None
+//     `
+// } else {
+// let replaceAddressInp = 
+// `Current Clinic Address: ${clinicAddress}
+// `
+// }
+
+let replaceAddressInp = 
+`Current Clinic Address: ${clinicAddress}
+`
+document.getElementById("replaceAddressInp").innerHTML = replaceAddressInp;
+
+// 
+let ptDOB = localStorage.getItem("dateOfBirth");
 console.log(clinicianName, "local storage favorite array");
 
-let replacementName = 
-`Current Name: ${clinicianName}
+let patientDOB = 
+`Current Patient DOB: ${ptDOB}
 `
-
-document.getElementById("replaceClinName").innerHTML = replacementName;
+document.getElementById("replacePtDOB").innerHTML = patientDOB;
 
 }
