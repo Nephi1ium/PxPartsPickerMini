@@ -2,14 +2,19 @@
 .information2{
     grid-area: information2;
     text-align: right;
+    margin-bottom: 1vmax;
+    margin-right: 1vmax;
 }
 .information{
     grid-area: information;
     text-align: right;
+    margin-right: 1vmax;
+    margin-top: 1vmax;
     
 }
 .information1{
     grid-area: information1;
+    margin-left: 1vmax;
 }
 .invoice-box table {
     width: 100%;
@@ -271,7 +276,7 @@ body {
         max-height: 350px;
         height: 350px;
         width: 300px;
-        margin: auto;
+        margin-left: .8vmax;
         margin-bottom: 6px;
         /* padding: 7px; */
         border: 1px solid #eee;
@@ -323,17 +328,64 @@ body {
         color: #555;
         grid-gap: 4px;
         /* padding: 1px; */
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-        "item2 item1 item1 item3"
-        /* "item2 . . item3" */
-        "item4 item5 item5 item5"
+        "mFeetPDF mDemographicsPDF mKneesPDF "
+        
+        "mLinersPDF mobileItem5 mobileItem5 "
+    ;
+    
+    /* #mSocksPDF{
+        grid-area: ;
+    }
+    
+    #mSheathsPDF{
+        grid-area: mSheathsPDF;
+    }
+    
+    #mSleevesPDF{
+        grid-area: mSleevesPDF;
+    }
+    
+    #mComponentsPDF{
+        grid-area: mComponentsPDF;
+    } */
+    }
+
+    #mobileComponentsSection{
+grid-area: mobileItem5;
+        display: grid;
+        /* width: 190px; */
+        width: 100%;
+        margin-left: 2px;
+    
+        height: 80%;
+        /* margin-top: 4px; */
+        /* padding: 0; */
+        border: none;
+        /* box-shadow: 0 0 10px rgb(0 0 0 / 15%); */
+        font-size: 12px;
+        /* line-height: 24px; */
+        font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+        color: #555;
+        grid-gap: 4px;
+        /* padding: 1px; */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "mobileCompHeader mobileCompHeader mobileCompHeader"
+
+        "mSocksPDF mSleevesPDF mComponentsPDF"
+        
     ;
     }
 
+#mobileCompHeader{
+    grid-area: mobileCompHeader;
+}
 .fonty{
-    font-size: 6px;
+    font-size: .7vmax;
 }
     #hiddenMobilePDFOuter {
         overflow: hidden;
@@ -555,6 +607,15 @@ body {
  
 }
 
+.item8{
+    grid-area: item8;
+    text-align: right;
+
+ 
+}
+
+
+
 .title {
     max-width: 50px;
     max-height: 50px;
@@ -578,5 +639,37 @@ p {
 ul {
     padding-left: 2px;
     margin-bottom: 2px;
+}
+
+#mDemographicsPDF{
+    grid-area: mDemographicsPDF;
+}
+
+#mFeetPDF{
+    grid-area: mFeetPDF;
+}
+
+#mKneesPDF{
+    grid-area: mKneesPDF;
+}
+
+#mLinersPDF{
+    grid-area: mLinersPDF;
+}
+
+#mSocksPDF{
+    grid-area: mSocksPDF;
+}
+
+#mSheathsPDF{
+    grid-area: mSheathsPDF;
+}
+
+#mSleevesPDF{
+    grid-area: mSleevesPDF;
+}
+
+#mComponentsPDF{
+    grid-area: mComponentsPDF;
 }
 }

@@ -351,6 +351,38 @@ grid-template-rows: auto;
       position: initial;
     }
 
+    #mainKitViewport{
+      height: auto;
+    }
+    .myItemNavigator{
+      height: 100%;
+      width: 16vmax;
+      /* z-index: 1; */
+      /* top: 0; */
+      /* left: 0; */
+      /* transition: 0.5s; */
+      /* padding-top: 4vmax; */
+      /* padding-bottom: 4vmax; */
+      /* padding-left: 0; */
+      padding: 4vmax .65vmax;
+    
+      grid-area: mainNavigator;
+    }
+
+    .myItemNavigator .secButtons {
+      padding: .8vmax .4vmax;
+      text-decoration: none;
+      color: #818181;
+      font-size: 1.8vmax;
+      display: block;
+      transition: 0.3s;
+      background-color: black;
+  
+    }
+
+    .sectionSizing{
+      padding-bottom: 1.2vmax;
+    }
     .mobileNavigationBut{display: none;}
 
     .mainpage{

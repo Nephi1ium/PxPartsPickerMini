@@ -40,73 +40,193 @@ PDFDownloaded.addEventListener("click", () => downloadPDF());
 
 
 // console.log(patientName);
+function executeSavePatientInfo(){
+
+}
+
 
 function savePatientInfo(){
+
+
+
     let ptName = document.getElementById("ptName");
     localStorage.setItem("ptName", ptName.value);
+    console.log("ptName", ptName.value);
+
 
     let drName = document.getElementById("drName");
     localStorage.setItem("drName", drName.value);
+    console.log("drName", drName.value);
+
 
     let dateOfAmp = document.getElementById("dateOfAmp");
     localStorage.setItem("dateOfAmp", dateOfAmp.value);
+    console.log("dateOfAmp", dateOfAmp.value);
 
     let ampLoc = document.getElementById("ampLoc");
     localStorage.setItem("ampLoc", ampLoc.value);
-    
+    console.log("ampLoc", ampLoc.value);
+
         // let dob = document.getElementById("dob");
     // localStorage.setItem("dob", dob.value);
     
     let icd = document.querySelector('input[name=icd]:checked');
     localStorage.setItem('icd', icd.value);
+    console.log('icd', icd.value);
 
     let ROM = document.querySelector('select#rom');
     localStorage.setItem("rom", ROM.value);
+    console.log("rom", ROM.value);
 
     let klevel = document.querySelector('select#klevel');
     localStorage.setItem("klevel", klevel.value);
+    console.log("klevel", klevel.value);
 
     let strengthLevel = document.querySelector('select#strengthLevel');
     localStorage.setItem("strengthLevel", strengthLevel.value);
+    console.log("strengthLevel", strengthLevel.value);
 
     let skinCondition = document.querySelector('select#skinCondition');
     localStorage.setItem("skinCondition", skinCondition.value);
+    console.log("skinCondition", skinCondition.value);
 
     let reccPx = document.querySelector('select#reccPx');
     localStorage.setItem("reccPx", reccPx.value);
+    console.log("reccPx", reccPx.value);
 
     let changeReas = document.querySelector('select#changeReas');
     localStorage.setItem("changeReas", changeReas.value);
-    
+    console.log("changeReas", changeReas.value);
+
     let timeUsed = document.querySelector('select#timeUsed');
     localStorage.setItem("timeUsed", timeUsed.value);
+    console.log("timeUsed", timeUsed.value);
 
     let socksUsed = document.querySelector('select#socksUsed');
     localStorage.setItem("socksUsed", socksUsed.value);
+    console.log("socksUsed", socksUsed.value);
 
     let knee = document.getElementById("knee");
     localStorage.setItem("knee", knee.value);
+    console.log("knee", knee.value);
 
     let foot = document.getElementById("foot");
     localStorage.setItem("foot", foot.value);
+    console.log("foot", foot.value);
 
     let addNotes = document.getElementById("addNotes");
     localStorage.setItem("addNotes", addNotes.value);
-    
+    console.log("addNotes", addNotes.value);
+
     let willUse = document.querySelector('input[name=willUse]:checked');
     localStorage.setItem('willUse', willUse.value);
+    console.log('willUse', willUse.value);
 
     let strDes = document.querySelector('input[name=strDes]:checked');
     localStorage.setItem('strDes', strDes.value);
+    console.log('strDes', strDes.value);
 
     const confirmSaved = `<p>Information Saved</p>`
+    document.getElementById("infoSaved").innerHTML = confirmSaved;
     document.getElementById("infoSaved").innerHTML = confirmSaved;
 
 
       // retrieve the stored array to check the values
 
+
+      if (ptName !== "undefined"){
+        console.log(ptName, "ptName");
     
-}
+            if (!!drName){ 
+                console.log(drName, "drName");
+    
+                if (!!dateOfAmp){
+                    console.log(dateOfAmp, "dateOfAmp");
+    
+                    if(!!ampLoc ){
+                        console.log(ampLoc, "ampLoc");
+    
+                        if(!!icd ){
+                            console.log(icd, "icd");
+    
+                            if(!!ROM ){
+                                console.log(ROM, "ROM");
+    
+                                if(!!klevel ){
+                                    console.log(klevel, "klevel");
+    
+                                    if(!!strengthLevel ){
+                                        console.log(strengthLevel, "strengthLevel");
+
+                                        if(!!skinCondition ){
+                                            console.log(skinCondition, "skinCondition");
+
+                                            if(!!reccPx ){
+                                                console.log(reccPx, "reccPx");
+
+                                                if(!!changeReas ){
+                                                    console.log(changeReas, "changeReas");
+
+                                                    if(!!timeUsed ){
+                                                        console.log(timeUsed, "timeUsed");
+
+                                                        if(!!socksUsed ){
+                                                            console.log(socksUsed, "socksUsed");
+
+                                                            if(!!knee ){
+                                                                console.log(knee, "knee");
+
+                                                                if(!!foot ){
+                                                                    console.log(foot, "foot");
+
+                                                                    if(!!addNotes ){
+                                                                        console.log(addNotes, "addNotes");
+
+                                                                        if(!!willUse ){
+                                                                            console.log(willUse, "willUse");
+
+                                                                            if(!!strDes ){
+                                                                                console.log(strDes, "strDes");
+
+                                                                                if(!!confirmSaved ){
+                                                                                    console.log(confirmSaved, "confirmSaved");
+    
+                                                                            //     let showSuccessBanner = document.getElementById("successBanner");
+                                                                            //     showSuccessBanner.classList.add("submittedData");
+                                            
+                                                                            //     let showFailureBanner = document.getElementById("failureBanner");
+                                                                            //     showFailureBanner.classList.remove("submittedDataFail");
+                                                                        console.log("Error Methods Not Met");    
+                                                                        }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                }
+    
+            }
+        }
+    }
+    else 
+    {
+        console.log("failed")
+        let showFailureBanner = document.getElementById("failureBanner");
+        showFailureBanner.classList.add("submittedDataFail");
+    }  ;
+    
+ }
 
 function showButtons(){
     document.getElementById("genVirPDF").style.cssText = "display: flex; width: 4vm";

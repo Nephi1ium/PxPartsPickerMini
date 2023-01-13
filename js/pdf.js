@@ -332,7 +332,7 @@ const transFemPDFMobile =
 
 
 <div class="bodyMobile">
-<div class="fonty item1">
+<div id="mDemographicsPDF" class="fonty item1">
 				<div class="heading">
                     <p>Patient Name: ${patientName}</p>
 				</div>
@@ -348,7 +348,7 @@ const transFemPDFMobile =
 
                         </ul>
 </div>
-<div class="fonty item2">
+<div id="mFeetPDF" class="fonty item2">
 				<div class="heading">
                     <p>Foot Selection</p>
 				</div>
@@ -364,7 +364,7 @@ const transFemPDFMobile =
                     <li><div>Quantity</div></li>
                 </ul>
 </div>
-<div class="fonty item3">
+<div id="mKneesPDF" class="fonty item3">
 
                 <div class="heading">
                     <p>Knee Selection</p>
@@ -383,7 +383,7 @@ const transFemPDFMobile =
                 </ul>
 
 </div>
-<div class="fonty item4">
+<div id="mLinersPDF" class="fonty item4">
                 <div class="heading">
                     <p>Liners</p>
                 </div>
@@ -402,9 +402,11 @@ const transFemPDFMobile =
 
 
 </div>
-<div class="fonty item5">
+<aside id="mobileComponentsSection">
+<header class="heading" id="mobileCompHeader"> Components Section</header>
+<div id="mSocksPDF" class="fonty item5Mobile">
                 <div class="heading cent">
-                    <p> Socks </p>
+                    <p> Socks and Sheaths </p>
                 </div>
                 
                 <ul>
@@ -413,17 +415,7 @@ const transFemPDFMobile =
                 </ul>
 </div>
 
-<div class="fonty item6">    
-
-                <div class="heading cent">
-                    <p> Sheaths </p>
-                </div>
-                <ul>
-                    <li>Price</li>
-                    <li></li>
-                </ul>
-</div>
-<div class="fonty item7">
+<div id="mSleevesPDF" class="fonty item7">
                 <div class="heading ">
                     <p> Sleeves </p>
                 </div>
@@ -433,6 +425,17 @@ const transFemPDFMobile =
                     </ul>
                 
 </div> 
+<div id="mComponentsPDF" class="fonty item8">
+                <div class="heading ">
+                    <p> Components </p>
+                </div>
+                    <ul>
+                        <li>Price</li>
+                        <li></li>
+                    </ul>
+                
+</div> 
+</aside>
 </div>
 </div>`;
         

@@ -4,7 +4,9 @@
 
 
 
-
+.homeFontSize{
+    font-size: 1rem;
+}
 
 .box {
     grid-area: bodyitem1;
