@@ -23,7 +23,34 @@
 ;
   } */
 
+  #mainKitViewport{
+    display: grid;
+    grid-template-columns:  15% 85% ;
+    grid-template-rows: auto;
+    grid-template-areas: 
+"itemNavigator kitMain";
 
+
+    /* "mainNavigator showSection "
+    "mainNavigator kneeSection "
+    "mainNavigator footSection "
+    "mainNavigator linerSection "
+    "mainNavigator pxCompSection1 "
+    "mainNavigator pxCompSection2 "
+    "mainNavigator pxCompSection3 "
+    "mainNavigator mainShowSection "
+  
+; */
+
+  }
+
+  #kitMain{
+    grid-area: kitMain;
+    }
+  #itemNavigator{
+      grid-area: itemNavigator;
+    }
+    
 
   .noShowKnees{
     display: none;
@@ -48,7 +75,6 @@
     display: block;
     transition: 0.3s;
     background-color: black;
-
   }
 
   .myItemNavigator .secButtons:hover{
@@ -246,22 +272,6 @@ grid-area: kneeSection;
   grid-area: mainNavigator;
 }
   
-#kitMain{
-  display: grid;
-  grid-template-columns:  15% 85% ;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "mainNavigator showSection "
-  "mainNavigator kneeSection "
-  "mainNavigator footSection "
-  "mainNavigator linerSection "
-  "mainNavigator pxCompSection1 "
-  "mainNavigator pxCompSection2 "
-  "mainNavigator pxCompSection3 "
-  "mainNavigator mainShowSection "
-
-;
-}
 
 .mainpage{
   display: grid;

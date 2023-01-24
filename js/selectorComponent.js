@@ -20,20 +20,6 @@ let quantityOutput = document.getElementById("itemQuantityOutput");
 let sizeOutput = document.getElementById("itemSizeOutput");
 let profileOutput = document.getElementById("itemProfileOutput");
 
-// let minus = document.getElementById("itemMinus");
-// let plus = document.getElementById("itemPlus");
-
-// minus.addEventListener("click", function(){
-//   let currentValue = parseInt(quantity.value);
-//   if(currentValue>0){
-//     quantity.value = currentValue - 1;
-//   }
-// });
-
-// plus.addEventListener("click", function(){
-//   let currentValue = parseInt(quantity.value);
-//   quantity.value = currentValue + 1;
-// });
 
 size.addEventListener("change", function() {
   console.log("Selected size: " + size.value);
@@ -51,3 +37,30 @@ profile.addEventListener("change", function() {
     profileOutput.innerHTML = "Selected Profile: " + profile.value;
   
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // let minus = document.getElementById("itemMinus");
+// let plus = document.getElementById("itemPlus");
+
+// minus.addEventListener("click", function(){
+//   let currentValue = parseInt(quantity.value);
+//   if(currentValue>0){
+//     quantity.value = currentValue - 1;
+//   }
+// });
+
+// plus.addEventListener("click", function(){
+//   let currentValue = parseInt(quantity.value);
+//   quantity.value = currentValue + 1;
+// });

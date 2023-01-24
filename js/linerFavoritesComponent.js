@@ -69,7 +69,7 @@ function showFavorites(){
 
 function removeFavorites(item){
 
-// console.log(item, "item");
+console.log(item, "item");
 console.log(item[0].id, "item [0].id");
 
 // console.log(item.id, "item.id");
@@ -201,7 +201,7 @@ console.log(choose.id, "choose id")
   <!-- <button type="button" id="itemPlus">+</button> -->
 
 </div>
-<button onclick="addLinerQuantity(${component.valAssign}quantity); addLinerProfile(${component.valAssign}profile); addLinerSize(${component.valAssign}size); addLinerColor(${component.valAssign}color)" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
+<button onclick="addLinerQuantity(); addLinerProfile(); addLinerSize(); addLinerColor(); hideLinerSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
 
 </form>
 <div id="itemQuantityOutput"></div>
@@ -224,24 +224,137 @@ console.log(choose.id, "choose id")
 
 
 
-function addLinerQuantity(liner){
 
+function addLinerQuantity(){
+
+  let quantity = document.getElementById("itemQuantity");
+    
+  localStorage.setItem("Liner Quantity", JSON.stringify(quantity.value))
+    // push the cartArray to local storage
+
+  let getQuantity = JSON.parse(localStorage.getItem("Liner Quantity"));
+  console.log(getQuantity, "Quantity of Liners Stored");
+    // retrieve the stored array to check the values
 }
 
-function addLinerProfile(liner){
+function addLinerProfile(){
 
+  let profile = document.getElementById("itemProfile");
+
+  localStorage.setItem("Liner Profile", JSON.stringify(profile.value))
+    // push the cartArray to local storage
+
+  let getProfile = JSON.parse(localStorage.getItem("Liner Profile"));
+  console.log(getProfile, "Profile of Liners Stored");
+    // retrieve the stored array to check the values
 }
 
-function addLinerSize(liner){
+function addLinerSize(){
 
+  let size = document.getElementById("itemSize");
+
+  localStorage.setItem("Liner Size", JSON.stringify(size.value))
+  // push the cartArray to local storage
+
+let getSize = JSON.parse(localStorage.getItem("Liner Size"));
+console.log(getSize, "Size of Liners Stored");
+  // retrieve the stored array to check the values
 }
 
-function addLinerColor(liner){
+function hideLinerSelector(){
+  let myContainer = document.getElementById("itemSelectorModal");
+  let itemToRemove = document.getElementById("linerModal");
+  myContainer.removeChild(itemToRemove);
+}
+ function addLinerColor(){
+
+  console.log("This is where the Liner Color Function Resides")
+//   let color = document.getElementById("itemColor");
+
+
+//   localStorage.setItem("Liner Quantity", JSON.stringify(quantity.value))
+//   // push the cartArray to local storage
+
+// let getQuantity = JSON.parse(localStorage.getItem("Liner Quantity"));
+// console.log(getQuantity, "Quantity of Liners Stored");
+//   // retrieve the stored array to check the values
+ }
+
+
+
+
+ function removeFavorites(item){
+
+  console.log(item, "item");
+  console.log(item.id, "item id");
+      
+  let getfavorite = JSON.parse(localStorage.getItem("Liner Favorites"));
+  console.log(getfavorite, "local storage favorite array");
+  // the favorites array to be modified
   
-}
+  let favoriteSpread = {...getfavorite};
+  console.log(favoriteSpread, "favoriteSpread");
+  
+  
+  let parts = JSON.parse(localStorage.getItem(item.id));
+  console.log(parts, "parts, the item created from the array item in local storage ");
+  
+  
+  let indexItem = getfavorite.map(object => object.valAssign).indexOf(item.id);
+  console.log(indexItem, "Index Item")
+  
+  document.getElementById('linerItemSectionJS').innerHTML = "";
+  
+  
+  getfavorite.splice(indexItem, 1);
+  console.log(getfavorite, "getfavorite Array spliced")
+  
+  // splice out the item from the favorite array. 
+  
+  localStorage.setItem("Liner Favorites", JSON.stringify(getfavorite));
+  
+  // push the modified favoriteArray back to local storage
+  
+  
+  let showfavorite = JSON.parse(localStorage.getItem("Liner Favorites"));
+  console.log(showfavorite, "local storage favorite array");
+  // retrieve the favorite array back from local storage
+  
+          document.getElementById('pxCompItemSectionJS').innerHTML = "";
+          // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
+          let favoritesLocation = document.querySelector('#pxCompItemSectionJS');
+          // document.getElementById('pxCompItemSectionJS').innerHTML = getFavorites;
+  
+          // set the location where the favorite should show in the new configuration
+  
+          showfavorite.forEach(component => {    
+            favoritesLocation.innerHTML = favoritesLocation.innerHTML +
+           `<div class="card card-margin" id="${component.valAssign}">
+           <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
+           <img class="card-image" src="${component.image}"></img>
+  
+              <div class="card-header">
+                  <h4 id=""> ${component.name} </h4>
+                  <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
+                  <div id="">HD Code: ${component.hdcode}</div>
+                  </div>
+              </div>
+          </div>`;
+          console.log("Created", component.card, "Cards");
+          
+          });
 
 
-
+        linerFavoritesArray = showfavorite;
+  // display the retrieved array items in the "favorite" 
+  // reload the favorite and display it anew
+  
+  
+  pxCompFavoritesArray = showfavorite;
+  
+  console.log(pxCompFavoritesArray, "This is the modified global liner favorite array")
+  // change the global value of the array above
+  }
 
 
 
