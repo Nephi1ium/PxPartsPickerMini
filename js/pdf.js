@@ -332,8 +332,8 @@ const transFemPDFMobile =
 
 
 <div class="bodyMobile">
-<div id="mDemographicsPDF" class="fonty item1">
-				<div class="heading">
+<div id="mDemographicsPDF" class="fonty item1 ">
+				<div class="heading heading.cent">
                     <p>Patient Name: ${patientName}</p>
 				</div>
                         <ul>

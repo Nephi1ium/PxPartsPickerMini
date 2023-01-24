@@ -314,10 +314,9 @@ body {
     .boxMobile .bodyMobile {
         display: grid;
         /* width: 190px; */
-        width: 100%;
-        margin-left: 2px;
-    
-        height: 80%;
+        width: 95%;
+        margin-left: 10px;
+        height: 70%;
         /* margin-top: 4px; */
         /* padding: 0; */
         border: none;
@@ -358,7 +357,6 @@ grid-area: mobileItem5;
         display: grid;
         /* width: 190px; */
         width: 100%;
-        margin-left: 2px;
     
         height: 80%;
         /* margin-top: 4px; */
@@ -372,7 +370,7 @@ grid-area: mobileItem5;
         grid-gap: 4px;
         /* padding: 1px; */
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+        grid-template-rows: max-content;
         grid-template-areas: 
         "mobileCompHeader mobileCompHeader mobileCompHeader"
 

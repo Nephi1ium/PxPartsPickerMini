@@ -1,0 +1,108 @@
+
+
+#linerModal{
+    background-color: rgb(178, 177, 182);
+    border: 2px solid #87CEFA; /* light blue */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      z-index: 10;
+      height: 35vmax;
+      width: 60vmax;
+    padding: 1vmax;
+    margin: 1vmax;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "itemHeader itemForm itemForm "
+    "itemHeader itemForm itemForm"
+    "addQuantCart addQuantCart addQuantCart"
+    "itemQuantityOutput itemSizeOutput itemProfileOutput"
+
+     ;
+}
+
+#itemForm{
+    grid-area: itemForm;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "labItemProfile itemProfile itemProfile"
+    "labItemSize itemSize itemSize"
+    "labItemQuantity labItemQuantity itemCounter"
+}
+
+#labItemProfile{
+    grid-area: labItemProfile;
+
+}
+#itemProfile{
+    grid-area: itemProfile;
+
+}
+#labItemSize{
+    grid-area: labItemSize;
+
+}
+#itemSize{
+    grid-area: itemSize;
+
+}
+#labItemQuantity{
+    grid-area: labItemQuantity;
+
+}
+#itemCounter{
+    grid-area: itemCounter;
+
+}
+#itemQuantityOutput{
+    grid-area: itemQuantityOutput;
+
+}
+#itemSizeOutput{
+    grid-area: itemSizeOutput;
+
+}
+#itemProfileOutput{
+    grid-area: itemProfileOutput;
+}
+#addQuantCart{
+    grid-area: addQuantCart;
+}
+
+
+
+
+#itemHeader {
+grid-area: itemHeader;
+  }
+  
+  #itemPhoto {
+    width: 12vmax;
+    height: 12vmax;
+    margin-right: 1vmax;
+  }
+  
+
+  /* #itemCounter {
+    display: flex;
+  }
+  
+  #itemCounter button {
+    width: 3vmax;
+    height: 3vmax;
+  } */
+  
+  #itemOutput {
+    bottom: 0;
+    left: 0;
+    border-top: .5vmax solid #ff0000; /* bright red */
+    padding-top: 1vmax;
+    width:100%;
+    grid-area: itemOutput;
+  }
+  
