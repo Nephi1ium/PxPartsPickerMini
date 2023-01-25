@@ -190,7 +190,7 @@ console.log(newId, "new id");
 
     function linerCartItem(item){
 
-      linerArray = [];
+      // linerArray = [];
 
       console.log(linerArray, "this should be empty");
       console.log(item, "liner object")
@@ -202,12 +202,21 @@ console.log(newId, "new id");
     console.log(linerCartItem, "cartItem");
 // test the values
 
-    let getStoredFoot = JSON.parse(localStorage.getItem(linerCartItem));
-    console.log(getStoredFoot, "retrieved cart item from local storage");
+let idtochange = item.id;
+//let changedid = idtochange.id.replace("favorite", "");
+//console.log(changedid, "changed id");
+//idtochange = changedid;
+//console.log(idtochange, "idtochange");
+
+var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
+console.log(newId, "new id");
+
+    let getStoredLiner = JSON.parse(localStorage.getItem(newId));
+    console.log(getStoredLiner, "retrieved cart item from local storage");
     // retrieve the item
 
-     linerArray.push(getStoredFoot);
-     console.log(linerArray, "local storage array with cart item");
+     linerArray.push(getStoredLiner);
+     console.log(getStoredLiner, "local storage liner item");
         // add the item to the cart array
       
       localStorage.setItem("Liner cart item", JSON.stringify(linerArray))
