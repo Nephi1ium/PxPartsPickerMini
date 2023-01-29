@@ -23,13 +23,6 @@
             document.getElementById('linerItemSectionJS').innerHTML = "";
             // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
             let favoritesLocation = document.querySelector('#linerItemSectionJS');
-            // document.getElementById('linerItemSectionJS').innerHTML = getFavorites;
-    
-            // set the location where the favorite should show in the new configuration
-    
-  // This will replace the +cart button in the below function
-  //            <a class="linerClick btn-small btn btn-primary" onclick="linerCartItem(${component.valAssign}); linerParChoice()" > + Cart </a>
-  
   
             getFavorites.forEach(component => {    
               favoritesLocation.innerHTML = favoritesLocation.innerHTML +
@@ -70,59 +63,41 @@
   function removeFavorites(item){
   
   console.log(item, "item");
-  console.log(item[0].id, "item [0].id");
-  
-  // console.log(item.id, "item.id");
-  // console.log(item.valAssign, "item.valAssign");
-  
-      
-  let getfavorite = JSON.parse(localStorage.getItem("Favorites"));
-  console.log(getfavorite, "local storage favorite array");
-  // the favorites array to be modified
-  let favoriteSpread = {...getfavorite};
-  console.log(favoriteSpread, "favoriteSpread");
-  
-  
-  let parts = JSON.parse(localStorage.getItem(item[0].id));
-  console.log(parts, "parts, the item created from the array item in local storage ");
-  
-  const lyrics = {...parts};
-  console.log(lyrics, "lyrics, the array with parts spliced in");
-  // Above was practice and spread operator understanding
-  
-  //  ["head", "shoulders", "knees", "and", "toes"]
-  
-  // const arr = [{id: 'a'}, {id: 'b'}, {id: 'c'}];
-  
-  // const index = arr.map(object => object.id).indexOf('c');
-  
-  // console.log(index); // 👉️ 2
-  
-  let indexItem = getfavorite.map(object => object.valAssign).indexOf(item[0].id);
-  console.log(indexItem, "Index Item")
-  // console.log(value[0], "value object");
-  // console.log(value.id, "sameValue object");
-  // console.log((index)[0].id, "Samevalue id object");
-  // console.log(sameValue.id, "sameValue id object no array");
-  // console.log(ident.valAssign, "value assigned to object");
-  
-  // let getfavoriteArray = JSON.parse(localStorage.getItem("Favorites"));
-  // console.log(getfavoriteArray, "retrieved favorite item from local storage");
-  // retrieve the item
-  
+  console.log(item.id, "item.id");
+
+let getfavorite = JSON.parse(localStorage.getItem("Liner Favorites"));
+console.log(getfavorite, "getfavorite, the item created from the array item in local storage ");
+
+// let [parts] = JSON.parse(localStorage.getItem("compareArray"));
+let parts1 = JSON.parse(localStorage.getItem(item.id));
+console.log(parts1, "parts1, the item created from the array item in local storage ");
+
+let parts = JSON.parse(localStorage.getItem(item.id));
+console.log(parts, "parts, the item created from the array item in local storage ");
+
+const index = getfavorite.findIndex(liner => liner.valAssign === parts.valAssign);
+console.log(index, "console log of index");
+
+
+
+
+
+  console.log(index, "Using a spread operator to spread the array")
+
+
     // retrieve the stored array and check the values
   
-  getfavorite.splice(indexItem, 1);
+  getfavorite.splice(index, 1);
   console.log(getfavorite, "getfavorite Array spliced")
   
   // splice out the item from the favorite array. 
   
-  localStorage.setItem("Favorites", JSON.stringify(getfavorite));
+  localStorage.setItem("Liner Favorites", JSON.stringify(getfavorite));
   
   // push the modified favoriteArray back to local storage
   
   
-  let showfavorite = JSON.parse(localStorage.getItem("Favorites"));
+  let showfavorite = JSON.parse(localStorage.getItem("Liner Favorites"));
   console.log(showfavorite, "local storage favorite array");
   // retrieve the favorite array back from local storage
   
@@ -177,7 +152,7 @@
   
       linerParLocation.innerHTML = linerParLocation.innerHTML +
          `
-  <div id="linerModal">
+  <div id="itemModal">
          <div id="itemHeader">
   <img id="itemPhoto" src="${component.image}">
   </div>
@@ -263,7 +238,7 @@
   
   function hideLinerSelector(){
     let myContainer = document.getElementById("itemSelectorModal");
-    let itemToRemove = document.getElementById("linerModal");
+    let itemToRemove = document.getElementById("itemModal");
     myContainer.removeChild(itemToRemove);
   }
    function addLinerColor(){
@@ -283,78 +258,78 @@
   
   
   
-   function removeFavorites(item){
+  //  function removeFavorites(item){
   
-    console.log(item, "item");
-    console.log(item.id, "item id");
+  //   console.log(item, "item");
+  //   console.log(item.id, "item id");
         
-    let getfavorite = JSON.parse(localStorage.getItem("Liner Favorites"));
-    console.log(getfavorite, "local storage favorite array");
-    // the favorites array to be modified
+  //   let getfavorite = JSON.parse(localStorage.getItem("Liner Favorites"));
+  //   console.log(getfavorite, "local storage favorite array");
+  //   // the favorites array to be modified
     
-    let favoriteSpread = {...getfavorite};
-    console.log(favoriteSpread, "favoriteSpread");
-    
-    
-    let parts = JSON.parse(localStorage.getItem(item.id));
-    console.log(parts, "parts, the item created from the array item in local storage ");
+  //   let favoriteSpread = {...getfavorite};
+  //   console.log(favoriteSpread, "favoriteSpread");
     
     
-    let indexItem = getfavorite.map(object => object.valAssign).indexOf(item.id);
-    console.log(indexItem, "Index Item")
-    
-    document.getElementById('linerItemSectionJS').innerHTML = "";
+  //   let parts = JSON.parse(localStorage.getItem(item.id));
+  //   console.log(parts, "parts, the item created from the array item in local storage ");
     
     
-    getfavorite.splice(indexItem, 1);
-    console.log(getfavorite, "getfavorite Array spliced")
+  //   let indexItem = getfavorite.map(object => object.valAssign).indexOf(item.id);
+  //   console.log(indexItem, "Index Item")
     
-    // splice out the item from the favorite array. 
-    
-    localStorage.setItem("Liner Favorites", JSON.stringify(getfavorite));
-    
-    // push the modified favoriteArray back to local storage
+  //   document.getElementById('linerItemSectionJS').innerHTML = "";
     
     
-    let showfavorite = JSON.parse(localStorage.getItem("Liner Favorites"));
-    console.log(showfavorite, "local storage favorite array");
-    // retrieve the favorite array back from local storage
+  //   getfavorite.splice(indexItem, 1);
+  //   console.log(getfavorite, "getfavorite Array spliced")
     
-            document.getElementById('pxCompItemSectionJS').innerHTML = "";
-            // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
-            let favoritesLocation = document.querySelector('#pxCompItemSectionJS');
-            // document.getElementById('pxCompItemSectionJS').innerHTML = getFavorites;
+  //   // splice out the item from the favorite array. 
     
-            // set the location where the favorite should show in the new configuration
+  //   localStorage.setItem("Liner Favorites", JSON.stringify(getfavorite));
     
-            showfavorite.forEach(component => {    
-              favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-             `<div class="card card-margin" id="${component.valAssign}">
-             <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
-             <img class="card-image" src="${component.image}"></img>
+  //   // push the modified favoriteArray back to local storage
     
-                <div class="card-header">
-                    <h4 id=""> ${component.name} </h4>
-                    <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
-                    <div id="">HD Code: ${component.hdcode}</div>
-                    </div>
-                </div>
-            </div>`;
-            console.log("Created", component.card, "Cards");
+    
+  //   let showfavorite = JSON.parse(localStorage.getItem("Liner Favorites"));
+  //   console.log(showfavorite, "local storage favorite array");
+  //   // retrieve the favorite array back from local storage
+    
+  //           document.getElementById('pxCompItemSectionJS').innerHTML = "";
+  //           // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
+  //           let favoritesLocation = document.querySelector('#pxCompItemSectionJS');
+  //           // document.getElementById('pxCompItemSectionJS').innerHTML = getFavorites;
+    
+  //           // set the location where the favorite should show in the new configuration
+    
+  //           showfavorite.forEach(component => {    
+  //             favoritesLocation.innerHTML = favoritesLocation.innerHTML +
+  //            `<div class="card card-margin" id="${component.valAssign}">
+  //            <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
+  //            <img class="card-image" src="${component.image}"></img>
+    
+  //               <div class="card-header">
+  //                   <h4 id=""> ${component.name} </h4>
+  //                   <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
+  //                   <div id="">HD Code: ${component.hdcode}</div>
+  //                   </div>
+  //               </div>
+  //           </div>`;
+  //           console.log("Created", component.card, "Cards");
             
-            });
+  //           });
   
   
-          linerFavoritesArray = showfavorite;
-    // display the retrieved array items in the "favorite" 
-    // reload the favorite and display it anew
+  //         linerFavoritesArray = showfavorite;
+  //   // display the retrieved array items in the "favorite" 
+  //   // reload the favorite and display it anew
     
     
-    pxCompFavoritesArray = showfavorite;
+  //   pxCompFavoritesArray = showfavorite;
     
-    console.log(pxCompFavoritesArray, "This is the modified global liner favorite array")
-    // change the global value of the array above
-    }
+  //   console.log(pxCompFavoritesArray, "This is the modified global liner favorite array")
+  //   // change the global value of the array above
+  //   }
   
   
   

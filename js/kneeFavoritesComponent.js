@@ -35,8 +35,8 @@ console.log(keyed.id, "keyed object");
 
         getFavorites.forEach(component => {    
           favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-         `<div class="card favorites card-margin" id="${component.valAssign}">
-         <a class="kneeClick btn-small btn btn-primary" onclick="kneeCartItem(${component.valAssign});" > + Cart </a>
+         `<div class="card favorites card-margin" id="${component.valAssign}favorite">
+         <a class="kneeClick btn-small btn btn-primary" onclick="kneeCartItem(${component.valAssign}favorite); kneeParChoice(${component.valAssign})" > + Cart </a>
          <img class="card-image" src="${component.image}"></img>
 
             <div class="card-header">
@@ -107,46 +107,55 @@ function showFavorites(){
 // window.addEventListener('load', showFavorites());
 
 
-
 function removeKneeFavorites(item){
+  
+  console.log(item, "item");
+  console.log(item.id, "item.id");
+  // console.log(item.manufacturer, "item.manufacturer");
 
-console.log(item[0].id, "item [0].id");
+  
+  
+  // console.log(getfavorite, "getFavorite");
+  // // the favorites array to be modified
+  // let favoriteSpread = {...getfavorite};
+  // console.log(favoriteSpread, "favoriteSpread");
+  
 
+
+
+// let getfavorite = JSON.parse(localStorage.getItem("getfavorite"));
 let getfavorite = JSON.parse(localStorage.getItem("Knee Favorites"));
-console.log(getfavorite, "local storage favorite array");
-// the favorites array to be modified
-let favoriteSpread = {...getfavorite};
-console.log(favoriteSpread, "favoriteSpread");
+console.log(getfavorite, "getfavorite, the item created from the array item in local storage ");
 
+// let [parts] = JSON.parse(localStorage.getItem("compareArray"));
+let parts1 = JSON.parse(localStorage.getItem(item.id));
+console.log(parts1, "parts1, the item created from the array item in local storage ");
 
-let parts = JSON.parse(localStorage.getItem(item[0].id));
+let parts = JSON.parse(localStorage.getItem(item.id));
 console.log(parts, "parts, the item created from the array item in local storage ");
 
-
-let indexItem = getfavorite.map(object => object.valAssign).indexOf(item[0].id);
-console.log(indexItem, "Index Item")
-// console.log(value[0], "value object");
-// console.log(value.id, "sameValue object");
-// console.log((index)[0].id, "Samevalue id object");
-// console.log(sameValue.id, "sameValue id object no array");
-// console.log(ident.valAssign, "value assigned to object");
-
-// let getfavoriteArray = JSON.parse(localStorage.getItem("Favorites"));
-// console.log(getfavoriteArray, "retrieved favorite item from local storage");
-// retrieve the item
-
-  // retrieve the stored array and check the values
-
-getfavorite.splice(indexItem, 1);
-console.log(getfavorite, "getfavorite Array spliced")
-
-// splice out the item from the favorite array. 
-
-localStorage.setItem("Knee Favorites", JSON.stringify(getfavorite));
-
-// push the modified favoriteArray back to local storage
+const index = getfavorite.findIndex(knee => knee.valAssign === parts.valAssign);
+console.log(index, "console log of index");
 
 
+
+
+
+  console.log(index, "Using a spread operator to spread the array")
+
+
+    // retrieve the stored array and check the values
+  
+  getfavorite.splice(index, 1);
+  console.log(getfavorite, "getfavorite Array spliced")
+  
+  // splice out the item from the favorite array. 
+  
+  localStorage.setItem("Knee Favorites", JSON.stringify(getfavorite));
+  
+  // push the modified favoriteArray back to local storage
+  
+  
 let showfavorite = JSON.parse(localStorage.getItem("Knee Favorites"));
 console.log(showfavorite, "local storage favorite array");
 // retrieve the favorite array back from local storage
@@ -176,19 +185,76 @@ console.log(showfavorite, "local storage favorite array");
         });
 
         kneeFavoritesArray = showfavorite;
-
-        console.log(kneeFavoritesArray, "This is the modified global knee favorite array")
-        // change the global value of the array above
-// display the retrieved array items in the "favorite" 
-// reload the favorite and display it anew
 }
 
+function kneeParChoice(choose){
+  console.log(choose, "choose parameter");
+  console.log(choose.id, "choose id")
+  
+    let getStoredFavorite = JSON.parse(localStorage.getItem(choose.id));
+    console.log(getStoredFavorite, "retrieved knee item from local storage");
+    // retrieve the stored favorite item
+    let kneeChoiceComponent = [getStoredFavorite];
+    console.log(kneeChoiceComponent, "Knee Choice Component Array");
+  
+    let kneeParLocation = document.getElementById("itemSelectorModal");
+  
+    kneeChoiceComponent.forEach(component => {   
+  
+      kneeParLocation.innerHTML = kneeParLocation.innerHTML +
+         `
+  <div id="itemModal">
+         <div id="itemHeader">
+  <img id="itemPhoto" src="${component.image}">
+  </div>
+  <form id="itemForm">
+  <label id="labItemQuantity" for="itemQuantity">Quantity:</label>
+  <div id="itemCounter">
+    <!-- <button type="button" id="itemMinus">-</button> -->
+    <input type="number" id="itemQuantity" min="1" max="100" value="0">
+    <!-- <button type="button" id="itemPlus">+</button> -->
+  
+  </div>
+  <button onclick="addKneeQuantity(); hideKneeSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
+  
+  </form>
+  <div id="itemQuantityOutput"></div>
+  <div id="itemSizeOutput"></div>
+  <div id="itemProfileOutput"></div>
+  </div>
+  
+  `
+         ;
+        console.log("Choosing Knee Parameters Successful");
+        
+        });
+  
+  
+  
+  
+  }
 
 
 
+  function addKneeQuantity(){
+  
+    let quantity = document.getElementById("itemQuantity");
+      
+    localStorage.setItem("Knee Quantity", JSON.stringify(quantity.value))
+      // push the cartArray to local storage
+  
+    let getQuantity = JSON.parse(localStorage.getItem("Knee Quantity"));
+    console.log(getQuantity, "Quantity of Knees Stored");
+      // retrieve the stored array to check the values
+  }
+  
+  
 
-
-
+  function hideKneeSelector(){
+    let myContainer = document.getElementById("itemSelectorModal");
+    let itemToRemove = document.getElementById("itemModal");
+    myContainer.removeChild(itemToRemove);
+  }
 
 
 

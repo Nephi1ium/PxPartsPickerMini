@@ -7,14 +7,18 @@ compArray = [];
 
 function cart(item){
 
-  let cartItem = item[0].id;
-  // set a default cart item
+  console.log(item, "cart item id")
 
-    console.log(item[0].id, "item object");
-    console.log(cartItem, "cartItem");
-// test the values
+let idtochange = item.id;
+//let changedid = idtochange.id.replace("favorite", "");
+//console.log(changedid, "changed id");
+//idtochange = changedid;
+//console.log(idtochange, "idtochange");
 
-    let getStoredFavorite = JSON.parse(localStorage.getItem(cartItem));
+var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
+console.log(newId, "new id");
+
+    let getStoredFavorite = JSON.parse(localStorage.getItem(newId));
     console.log(getStoredFavorite, "retrieved cart item from local storage");
     // retrieve the item
 
@@ -49,7 +53,7 @@ function cart(item){
 
     showCart.forEach(component => {    
       cartLocation.innerHTML = cartLocation.innerHTML +
-         `<div id="${component.valAssign}">
+         `<div id="${component.valAssign}cart">
          <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign})"> Delete </a>
          <img class="cart-image" src="${component.image}"></img>
           <h4 > ${component.name} </h4>
@@ -133,14 +137,24 @@ console.log(newId, "new id");
     
     function kneeCartItem(item){
 
-      let kneeCartItem = item[0].id;
   // set a default cart item
+  console.log(item, "knee cart item id")
 
-    console.log(item[0].id, "item object");
+    console.log(item.id, "item object");
     console.log(kneeCartItem, "cartItem");
 // test the values
 
-    let getStoredKnee = JSON.parse(localStorage.getItem(kneeCartItem));
+let idtochange = item.id;
+//let changedid = idtochange.id.replace("favorite", "");
+//console.log(changedid, "changed id");
+//idtochange = changedid;
+//console.log(idtochange, "idtochange");
+
+var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
+console.log(newId, "new id");
+
+
+    let getStoredKnee = JSON.parse(localStorage.getItem(newId));
     console.log(getStoredKnee, "retrieved cart item from local storage");
     // retrieve the item
 
@@ -163,14 +177,22 @@ console.log(newId, "new id");
 
     function footCartItem(item){
 
-      let footCartItem = item[0].id;
+      let footCartItem = item.id;
   // set a default cart item
 
-    console.log(item[0].id, "item object");
+    console.log(item.id, "item object");
     console.log(footCartItem, "cartItem");
 // test the values
+let idtochange = item.id;
+//let changedid = idtochange.id.replace("favorite", "");
+//console.log(changedid, "changed id");
+//idtochange = changedid;
+//console.log(idtochange, "idtochange");
 
-    let getStoredFoot = JSON.parse(localStorage.getItem(footCartItem));
+var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
+console.log(newId, "new id");
+
+    let getStoredFoot = JSON.parse(localStorage.getItem(newId));
     console.log(getStoredFoot, "retrieved cart item from local storage");
     // retrieve the item
 
@@ -314,7 +336,7 @@ function removeCart(value){
 
 // console.log(value[0], "value object");
 // console.log(value.id, "sameValue object");
-console.log((value)[0].id, "value[0].id object");
+console.log(value.id, "value.id object");
 // console.log(sameValue.id, "sameValue id object no array");
 // console.log(ident.valAssign, "value assigned to object");
 
@@ -331,12 +353,12 @@ console.log(getCart, "local storage Foot cart array");
 console.log(getCompCart, "local storage Component cart array");
   // retrieve the stored array and check the values
 
-let getCartArray = JSON.parse(localStorage.getItem(value[0].id));
+let getCartArray = JSON.parse(localStorage.getItem(value.id));
 console.log(getCartArray, "retrieved cart item from local storage");
 // retrieve the item
 
 
-let cartIndexItem = getCart.map(object => object.valAssign).indexOf(value[0].id);
+let cartIndexItem = getCart.map(object => object.valAssign).indexOf(value.id);
 console.log(cartIndexItem, "cartIndexItem")
 // map over the array and find the index of the array item
 

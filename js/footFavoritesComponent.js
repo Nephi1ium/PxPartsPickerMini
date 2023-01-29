@@ -1,8 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footFavoritesArray = [];
 
-
 function footFavorites(foot){
-
   console.log(foot, "foot object");
 
   console.log(foot.id, "foot id object");
@@ -28,15 +43,20 @@ function footFavorites(foot){
   
           // set the location where the favorite should show in the new configuration
   
+// This will replace the +cart button in the below function
+//            <a class="footClick btn-small btn btn-primary" onclick="footCartItem(${component.valAssign}); footParChoice()" > + Cart </a>
+
+
           getFavorites.forEach(component => {    
             favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-           `<div class="card favorites card-margin" id="${component.valAssign}">
-           <a class="footClick btn-small btn btn-primary" onclick="footCartItem(${component.valAssign})" > + Cart </a>
+           `<div class="card favorites card-margin" id="${component.valAssign}favorite">
+
+           <a class="footClick btn-small btn btn-primary" onclick="footCartItem(${component.valAssign}favorite); footParChoice(${component.valAssign})" > + Cart </a>
            <img class="card-image" src="${component.image}"></img>
   
               <div class="card-header">
                   <h4 id=""> ${component.name} </h4>
-                  <a class="footClick btn btn-primary" onclick="removeFootFavorites(${component.valAssign})" > Remove Favorite </a>
+                  <a class="footClick btn btn-primary" onclick="removeFeetFavorites(${component.valAssign})" > Remove Favorite </a>
                   <div id="">HD Code: ${component.hdcode}</div>
                   <h5><u> L-Codes </u></h5>
                   <div class="lcodes">
@@ -56,66 +76,64 @@ function footFavorites(foot){
 
           footFavoritesArray = getFavorites;
 
-console.log(footFavoritesArray, "This is the modified global foot favorite array")
-// change the global value of the array above
+          console.log(footFavoritesArray, "This is the modified global foot favorite array")
+          // change the global value of the array above
 }
 
-function removeFootFavorites(item){
+function showFavorites(){
+}
 
-// console.log(item, "item");
-console.log(item[0].id, "item [0].id");
 
-// console.log(item.id, "item.id");
-// console.log(item.valAssign, "item.valAssign");
+function removeFeetFavorites(item){
+  
+  console.log(item, "item");
+  console.log(item.id, "item.id");
+  // console.log(item.manufacturer, "item.manufacturer");
 
-    
+  
+  
+  // console.log(getfavorite, "getFavorite");
+  // // the favorites array to be modified
+  // let favoriteSpread = {...getfavorite};
+  // console.log(favoriteSpread, "favoriteSpread");
+  
+
+
+
+// let getfavorite = JSON.parse(localStorage.getItem("getfavorite"));
 let getfavorite = JSON.parse(localStorage.getItem("Foot Favorites"));
-console.log(getfavorite, "local storage favorite array");
-// the favorites array to be modified
-let favoriteSpread = {...getfavorite};
-console.log(favoriteSpread, "favoriteSpread");
+console.log(getfavorite, "getfavorite, the item created from the array item in local storage ");
 
+// let [parts] = JSON.parse(localStorage.getItem("compareArray"));
+let parts1 = JSON.parse(localStorage.getItem(item.id));
+console.log(parts1, "parts1, the item created from the array item in local storage ");
 
-let parts = JSON.parse(localStorage.getItem(item[0].id));
+let parts = JSON.parse(localStorage.getItem(item.id));
 console.log(parts, "parts, the item created from the array item in local storage ");
 
-const lyrics = {...parts};
-console.log(lyrics, "lyrics, the array with parts spliced in");
-// Above was practice and spread operator understanding
-
-//  ["head", "shoulders", "knees", "and", "toes"]
-
-// const arr = [{id: 'a'}, {id: 'b'}, {id: 'c'}];
-
-// const index = arr.map(object => object.id).indexOf('c');
-
-// console.log(index); // 👉️ 2
-
-let indexItem = getfavorite.map(object => object.valAssign).indexOf(item[0].id);
-console.log(indexItem, "Index Item")
-// console.log(value[0], "value object");
-// console.log(value.id, "sameValue object");
-// console.log((index)[0].id, "Samevalue id object");
-// console.log(sameValue.id, "sameValue id object no array");
-// console.log(ident.valAssign, "value assigned to object");
-
-// let getfavoriteArray = JSON.parse(localStorage.getItem("Favorites"));
-// console.log(getfavoriteArray, "retrieved favorite item from local storage");
-// retrieve the item
-
-  // retrieve the stored array and check the values
-
-getfavorite.splice(indexItem, 1);
-console.log(getfavorite, "getfavorite Array spliced")
-
-// splice out the item from the favorite array. 
-
-localStorage.setItem("Foot Favorites", JSON.stringify(getfavorite));
-
-// push the modified favoriteArray back to local storage
+const index = getfavorite.findIndex(foot => foot.valAssign === parts.valAssign);
+console.log(index, "console log of index");
 
 
-let showfavorite = JSON.parse(localStorage.getItem("Favorites"));
+
+
+
+  console.log(index, "Using a spread operator to spread the array")
+
+
+    // retrieve the stored array and check the values
+  
+  getfavorite.splice(index, 1);
+  console.log(getfavorite, "getfavorite Array spliced")
+  
+  // splice out the item from the favorite array. 
+  
+  localStorage.setItem("Foot Favorites", JSON.stringify(getfavorite));
+  
+  // push the modified favoriteArray back to local storage
+  
+  
+let showfavorite = JSON.parse(localStorage.getItem("Foot Favorites"));
 console.log(showfavorite, "local storage favorite array");
 // retrieve the favorite array back from local storage
 
@@ -129,12 +147,12 @@ console.log(showfavorite, "local storage favorite array");
         showfavorite.forEach(component => {    
           favoritesLocation.innerHTML = favoritesLocation.innerHTML +
          `<div class="card card-margin" id="${component.valAssign}">
-         <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
+         <a class="kneeClick btn-small btn btn-primary" onclick="footCartItem(${component.valAssign})" > + Cart </a>
          <img class="card-image" src="${component.image}"></img>
 
             <div class="card-header">
                 <h4 id=""> ${component.name} </h4>
-                <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
+                <a class="kneeClick btn btn-primary" onclick="removeFeetFavorites(${component.valAssign})"> Remove Favorite </a>
                 <div id="">HD Code: ${component.hdcode}</div>
                 </div>
             </div>
@@ -142,13 +160,8 @@ console.log(showfavorite, "local storage favorite array");
         console.log("Created", component.card, "Cards");
         
         });
-// display the retrieved array items in the "favorite" 
-// reload the favorite and display it anew
 
-footFavoritesArray = showfavorite;
-
-console.log(footFavoritesArray, "This is the modified global foot favorite array")
-// change the global value of the array above
+        footFavoritesArray = showfavorite;
 }
 
 
@@ -157,394 +170,149 @@ console.log(footFavoritesArray, "This is the modified global foot favorite array
 
 
 
+function footParChoice(choose){
+console.log(choose, "choose parameter");
+console.log(choose.id, "choose id")
 
+  let getStoredFavorite = JSON.parse(localStorage.getItem(choose.id));
+  console.log(getStoredFavorite, "retrieved foot item from local storage");
+  // retrieve the stored favorite item
+  let footChoiceComponent = [getStoredFavorite];
+  console.log(footChoiceComponent, "Foot Choice Component Array");
 
+  let footParLocation = document.getElementById("itemSelectorModal");
 
+  footChoiceComponent.forEach(component => {   
 
+    footParLocation.innerHTML = footParLocation.innerHTML +
+       `
+<div id="itemModal">
+       <div id="itemHeader">
+<img id="itemPhoto" src="${component.image}">
+</div>
+<form id="itemForm">
+<label id="labItemProfile" for="itemProfile">Width:</label>
+<select id="itemProfile">
+  <option value="wide">Wide</option>
+  <option value="narrow">Narrow</option>
+</select>
+<label id="labItemSize" for="itemSize">Size:</label>
+<select id="itemSize">
+  <option value="23">23</option>
+  <option value="24">24</option>
+  <option value="25">25</option>
+  <option value="26">26</option>
+  <option value="27">26</option>
+  <option value="28">28</option>
+  <option value="29">29</option>
+  <option value="30">30</option>
+  <option value="31">31</option>
+  <option value="32">32</option>
 
+</select>
+<label id="labItemColor" for="itemColor">Color</label>
+<select id="itemColor">
+  <option value="Brown">Brown</option>
+  <option value="Caucasian">Caucasian</option>
+</select>
 
+<label id="labItemQuantity" for="itemQuantity">Quantity:</label>
+<div id="itemCounter">
+  <!-- <button type="button" id="itemMinus">-</button> -->
+  <input type="number" id="itemQuantity" min="1" max="100" value="0">
+  <!-- <button type="button" id="itemPlus">+</button> -->
 
+</div>
+<button onclick="addFootQuantity(); addFootProfile(); addFootSize(); addFootColor(); hideFootSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
 
+</form>
+<div id="itemQuantityOutput"></div>
+<div id="itemSizeOutput"></div>
+<div id="itemProfileOutput"></div>
+</div>
 
-
-
-
-
-
-
-// <script>
-
-// favoritesArray = [];
-
-
-// function favorites(keyed){
-
-// console.log(keyed.id, "keyed object");
-  
-//   let getStoredFavorite = JSON.parse(localStorage.getItem(keyed.id));
-//   console.log(getStoredFavorite, "retrieved cart item from local storage");
-//   // retrieve the stored favorite item
-
-//   favoritesArray.push(getStoredFavorite);
-//    console.log(favoritesArray, "local storage array with favorite item");
-//       // add the item to the cart array
-    
-//     localStorage.setItem("Favorites", JSON.stringify(favoritesArray))
-//       // push the cartArray to local storage
-
-//     let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
-//     console.log(getFavorites, "local storage favorite array");
-//       // retrieve the stored array to check the values
-//       document.getElementById('footItemSectionJS').innerHTML = "";
-//       // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
-//       let favoritesLocation = document.querySelector('#footItemSectionJS');
-//       // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
-
-//       // set the location where the favorite should show in the new configuration
-
-//       getFavorites.forEach(component => {    
-//         favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-//        `<div class="card card-margin" id="${component.valAssign}">
-//        <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
-//        <img class="card-image" src="${component.image}"></img>
-
-//           <div class="card-header">
-//               <h4 id=""> ${component.name} </h4>
-//               <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
-//               <div id="">HD Code: ${component.hdcode}</div>
-//               </div>
-//           </div>
-//       </div>`;
-//       console.log("Created", component.card, "Cards");
+`
+       ;
+      console.log("Choosing Foot Parameters Successful");
       
-//       });
+      });
+
+
+
+
+}
 
 
 
 
 
-//       // display the card item and only the chosen items
 
+function addFootQuantity(){
 
-//       // favoritesArray.push(ident.outerHTML);
-// // console.log(favoritesArray, "local storage array with Favorited Card");
-  
-// // localStorage.setItem("Local Storage Array", JSON.stringify(favoritesArray));
-//   // set the array item to local storage
-// // console.log(getLocalStorageArray, "retrieved local storage array");
-// // localStorage.setItem("Local Storage Array", JSON.stringify(localStoreArray));
-// // let getLocalStorageArray = JSON.parse(localStorage.getItem("Local Storage Array"));
-// // console.log(getLocalStorageArray, "retrieved local storage array");
-
-
-// // THE ABOVE WORKS, NEED TO FINISH
-
-// // localStorage.setItem("Favorites", JSON.stringify(ident.outerHTML));
-// // let favorite = JSON.parse(localStorage.getItem("Favorites"));
-// // console.log(favorite, "Favorite Item Display");
-
-
-// }
-
-// function showFavorites(){
-
-//     // let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
-//     // console.log(getFavorites, "local storage favorite array");
-//     //   // retrieve the stored array to check the values
-//     //   let favoritesLocation = document.querySelector('#footItemSectionJS');
-//     //   // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
-
-//     //   // set the location where the favorite should show in the new configuration
-
-//     //   getFavorites.forEach(component => {    
-//     //     favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-//     //    `<div class="card card-margin" id="${component.valAssign}">
-//     //    <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
-//     //    <img class="card-image" src="${component.image}"></img>
-
-//     //       <div class="card-header">
-//     //           <h4 id=""> ${component.name} </h4>
-//     //           <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign}, ${component.valAssign})" > Remove Favorite (not working) </a>
-//     //           <div id="">HD Code: ${component.hdcode}</div>
-//     //           </div>
-//     //       </div>
-//     //   </div>`;
-//     //   console.log("Created", component.card, "Cards");
-      
-//     //   });
-
-
-
+  let quantity = document.getElementById("itemQuantity");
     
+  localStorage.setItem("Foot Quantity", JSON.stringify(quantity.value))
+    // push the cartArray to local storage
 
-// }
+  let getQuantity = JSON.parse(localStorage.getItem("Foot Quantity"));
+  console.log(getQuantity, "Quantity of Foots Stored");
+    // retrieve the stored array to check the values
+}
 
-// // window.addEventListener('load', showFavorites());
+function addFootProfile(){
 
-// </script>
-// <script>
+  let profile = document.getElementById("itemProfile");
 
-// function removeFavorites(item){
+  localStorage.setItem("Foot Profile", JSON.stringify(profile.value))
+    // push the cartArray to local storage
 
-//   // console.log(item, "item");
-//   console.log(item[0].id, "item [0].id");
+  let getProfile = JSON.parse(localStorage.getItem("Foot Profile"));
+  console.log(getProfile, "Profile of Foots Stored");
+    // retrieve the stored array to check the values
+}
 
-//   // console.log(item.id, "item.id");
-//   // console.log(item.valAssign, "item.valAssign");
+function addFootSize(){
 
-  
-// let getfavorite = JSON.parse(localStorage.getItem("Favorites"));
-// console.log(getfavorite, "local storage favorite array");
-// // the favorites array to be modified
-// let favoriteSpread = {...getfavorite};
-// console.log(favoriteSpread, "favoriteSpread");
+  let size = document.getElementById("itemSize");
 
+  localStorage.setItem("Foot Size", JSON.stringify(size.value))
+  // push the cartArray to local storage
 
-// let parts = JSON.parse(localStorage.getItem(item[0].id));
-// console.log(parts, "parts, the item created from the array item in local storage ");
+let getSize = JSON.parse(localStorage.getItem("Foot Size"));
+console.log(getSize, "Size of Foots Stored");
+  // retrieve the stored array to check the values
+}
 
-// const lyrics = {...parts};
-// console.log(lyrics, "lyrics, the array with parts spliced in");
-// // Above was practice and spread operator understanding
+function hideFootSelector(){
+  let myContainer = document.getElementById("itemSelectorModal");
+  let itemToRemove = document.getElementById("itemModal");
+  myContainer.removeChild(itemToRemove);
+}
+ function addFootColor(){
 
-// //  ["head", "shoulders", "knees", "and", "toes"]
+  let color = document.getElementById("itemColor");
 
-// // const arr = [{id: 'a'}, {id: 'b'}, {id: 'c'}];
+  localStorage.setItem("Foot Color", JSON.stringify(color.value))
+  // push the cartArray to local storage
 
-// // const index = arr.map(object => object.id).indexOf('c');
+let getColor = JSON.parse(localStorage.getItem("Foot Color"));
+console.log(getColor, "Color of Foots Stored");
+  // retrieve the stored array to check the values//   let color = document.getElementById("itemColor");
 
-// // console.log(index); // 👉️ 2
 
-// let indexItem = getfavorite.map(object => object.valAssign).indexOf(item[0].id);
-// console.log(indexItem, "Index Item")
-// // console.log(value[0], "value object");
-// // console.log(value.id, "sameValue object");
-// // console.log((index)[0].id, "Samevalue id object");
-// // console.log(sameValue.id, "sameValue id object no array");
-// // console.log(ident.valAssign, "value assigned to object");
+//   localStorage.setItem("Foot Quantity", JSON.stringify(quantity.value))
+//   // push the cartArray to local storage
 
-// // let getfavoriteArray = JSON.parse(localStorage.getItem("Favorites"));
-// // console.log(getfavoriteArray, "retrieved favorite item from local storage");
-// // retrieve the item
+// let getQuantity = JSON.parse(localStorage.getItem("Foot Quantity"));
+// console.log(getQuantity, "Quantity of Foots Stored");
+//   // retrieve the stored array to check the values
+ }
 
-// // retrieve the stored array and check the values
 
-// getfavorite.splice(indexItem, 1);
-// console.log(getfavorite, "getfavorite Array spliced")
 
-// // splice out the item from the favorite array. 
 
-// localStorage.setItem("Favorites", JSON.stringify(getfavorite));
 
-// // push the modified favoriteArray back to local storage
 
 
-// let showfavorite = JSON.parse(localStorage.getItem("Favorites"));
-// console.log(showfavorite, "local storage favorite array");
-// // retrieve the favorite array back from local storage
 
-//       document.getElementById('footItemSectionJS').innerHTML = "";
-//       // clear the favorites viewport so the older items are removed, and redisplayed as a new one is added
-//       let favoritesLocation = document.querySelector('#footItemSectionJS');
-//       // document.getElementById('footItemSectionJS').innerHTML = getFavorites;
 
-//       // set the location where the favorite should show in the new configuration
-
-//       showfavorite.forEach(component => {    
-//         favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-//        `<div class="card card-margin" id="${component.valAssign}">
-//        <a class="kneeClick btn-small btn btn-primary" onclick="cart(${component.valAssign})" > + Cart </a>
-//        <img class="card-image" src="${component.image}"></img>
-
-//           <div class="card-header">
-//               <h4 id=""> ${component.name} </h4>
-//               <a class="kneeClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
-//               <div id="">HD Code: ${component.hdcode}</div>
-//               </div>
-//           </div>
-//       </div>`;
-//       console.log("Created", component.card, "Cards");
-      
-//       });
-// // display the retrieved array items in the "favorite" 
-// // reload the favorite and display it anew
-// }
-
-
-// </script>
-// <script>
-// kneeArray = []
-// cartArray = [];
-// cartDisplayArray = [];
-
-// function cart(item){
-
-// let cartItem = item[0].id;
-// // set a default cart item
-
-//   console.log(item[0].id, "item object");
-//   console.log(cartItem, "cartItem");
-// // test the values
-
-//   let getStoredFavorite = JSON.parse(localStorage.getItem(cartItem));
-//   console.log(getStoredFavorite, "retrieved cart item from local storage");
-//   // retrieve the item
-
-//    cartArray.push(getStoredFavorite);
-//    console.log(cartArray, "local storage array with cart item");
-//       // add the item to the cart array
-    
-//     localStorage.setItem("cart", JSON.stringify(cartArray))
-//       // push the cartArray to local storage
-
-//     let getCart = JSON.parse(localStorage.getItem("cart"));
-//     console.log(getCart, "local storage cart array");
-//       // retrieve the stored array to check the values
-
-
-//       cartDisplayArray.push(getCart);
-//       console.log(cartDisplayArray, "local storage array with displayed cart items");
-//       //  push the pulled cart items into the cart array
-
-//       localStorage.setItem("display cart", JSON.stringify(cartDisplayArray));
-//   // push the cart display array to local storage
-
-//   let showCart = JSON.parse(localStorage.getItem("cart"));
-//     console.log(showCart, "local storage cart array");
-//   // retrieve the item from local storage
-
-//   let cartLocation = document.querySelector('#cartSection');
-//   // display the cart in the cart section section 
-//   document.getElementById('cartSection').innerHTML = "";
-//   // clear the cart window on addition of a new item
-
-//   showCart.forEach(component => {    
-//     cartLocation.innerHTML = cartLocation.innerHTML +
-//        `<div id="${component.valAssign}">
-//        <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign})"> Delete </a>
-//        <img class="cart-image" src="${component.image}"></img>
-//         <h4 > ${component.name} </h4>
-//       </div>`;
-//       console.log("Created", component.value, "Cards");
-      
-//       });
-//   // display the retrieved array items in the "cart" 
-
-//   // allow deletion of cart items, remove item from array and then push the modified array back to local storage
- 
-
-//   function kneeCartItem(item){
-
-//     let kneeCartItem = item[0].id;
-// // set a default cart item
-
-//   console.log(item[0].id, "item object");
-//   console.log(kneeCartItem, "cartItem");
-// // test the values
-
-//   let getStoredKnee = JSON.parse(localStorage.getItem(kneeCartItem));
-//   console.log(getStoredKnee, "retrieved cart item from local storage");
-//   // retrieve the item
-
-//    kneeArray.push(getStoredKnee);
-//    console.log(kneeArray, "local storage array with cart item");
-//       // add the item to the cart array
-    
-//     localStorage.setItem("Knee cart item", JSON.stringify(kneeArray))
-//       // push the cartArray to local storage
-
-//     let getKneeCartItem = JSON.parse(localStorage.getItem("Knee cart item"));
-//     console.log(getKneeCartItem, "local storage Knee cart item array");
-//       // retrieve the stored array to check the values
-//   };
-//   kneeCartItem(item);
-  
-//   }
-
-  
-
-
-//   </script>
-
-//   <script>
-// function removeCart(value, sameValue){
-
-// // console.log(value[0], "value object");
-// // console.log(value.id, "sameValue object");
-// console.log((value)[0].id, "value[0].id object");
-// // console.log(sameValue.id, "sameValue id object no array");
-// // console.log(ident.valAssign, "value assigned to object");
-
-// let getCart = JSON.parse(localStorage.getItem("cart"));
-// console.log(getCart, "local storage cart array");
-// // retrieve the stored array and check the values
-
-// let getCartArray = JSON.parse(localStorage.getItem(value[0].id));
-// console.log(getCartArray, "retrieved cart item from local storage");
-// // retrieve the item
-
-
-// let cartIndexItem = getCart.map(object => object.valAssign).indexOf(value[0].id);
-// console.log(cartIndexItem, "cartIndexItem")
-// // map over the array and find the index of the array item
-
-// getCart.splice(cartIndexItem, 1);
-// console.log(getCart, "getCart Array spliced")
-// // splice out the item from the cart array. 
-
-// localStorage.setItem("cart", JSON.stringify(getCart));
-// // push the modified cartArray back to local storage
-
-// let showCart = JSON.parse(localStorage.getItem("cart"));
-// console.log(showCart, "local storage cart array");
-// // retrieve the cart array back from local storage
-// document.getElementById('cartSection').innerHTML = "";
-
-// let cartLocation = document.querySelector('#cartSection');
-// // link to a display section of the viewport
-// // clear the cart window on addition of a new item
-
-// // display the cart in the cart section section 
-// showCart.forEach(component => {    
-// cartLocation.innerHTML = cartLocation.innerHTML +
-//  `<div id="${component.valAssign}">
-//  <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign})"> Delete </a>
-//  <img class="cart-image" src="${component.image}"></img>
-//         <h4 > ${component.name} </h4>
-// </div>`;
-// console.log("Created", component.valAssign, "Cards");
-
-// });
-// // display the retrieved array items in the "cart" 
-// // reload the cart and display it anew
-
-
-// }
-
-//   </script>
-
-//   <script>
-// //     function showCart(){
-// //       let showCartOne = JSON.parse(localStorage.getItem("cart"));
-// //       console.log(showCartOne, "deleted an item and showing local storage new cart array");
-// //     // retrieve the cart array back from local storage
-// //     let cartLocation = document.querySelector('#cartSection');
-// //     // link to a display section of the viewport
-// //     document.getElementById('cartSection').innerHTML = "";
-// //     // clear the cart window on addition of a new item
-
-// //     // display the cart in the cart section section 
-// //     showCartOne.forEach(component => {    
-// //     cartLocation.innerHTML = cartLocation.innerHTML +
-// //       `<div id="${component.valAssign}">
-// //       <a class="kneeClick btn-small btn btn-primary" onclick="removeCart(${component.valAssign}, ${component.valAssign})"> Delete </a>
-// //       <img class="cart-image" src="${component.image}"></img>
-// //               <h4 > ${component.name} </h4>
-// //       </div>`;
-// //       console.log("Created", component.valAssign, "Cards");
-
-// // });
-// //     }
-// //     window.addEventListener('load', showCart());
-
-//   </script>
