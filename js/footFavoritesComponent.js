@@ -47,32 +47,33 @@ function footFavorites(foot){
 //            <a class="footClick btn-small btn btn-primary" onclick="footCartItem(${component.valAssign}); footParChoice()" > + Cart </a>
 
 
-          getFavorites.forEach(component => {    
-            favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-           `<div class="card favorites card-margin" id="${component.valAssign}favorite">
+getFavorites.forEach(component => {    
+  favoritesLocation.innerHTML = favoritesLocation.innerHTML +
+  `<div class="card favorites card-margin" id="${component.valAssign}favorite">
 
-           <a class="footClick btn-small btn btn-primary" onclick="footCartItem(${component.valAssign}favorite); footParChoice(${component.valAssign})" > + Cart </a>
-           <img class="card-image" src="${component.image}"></img>
-  
-              <div class="card-header">
-                  <h4 id=""> ${component.name} </h4>
-                  <a class="footClick btn btn-primary" onclick="removeFeetFavorites(${component.valAssign})" > Remove Favorite </a>
-                  <div id="">HD Code: ${component.hdcode}</div>
-                  <h5><u> L-Codes </u></h5>
-                  <div class="lcodes">
-                  <div id="${component.lcode1}">${component.lcode1}</div>
-                  <div id="${component.lcode2}">${component.lcode2}</div>
-                  <div id="${component.lcode3}">${component.lcode3}</div>
-                  <div id="${component.lcode4}">${component.lcode4}</div>
-                  <div id="${component.lcode5}">${component.lcode5}</div>
-                  <div id="${component.lcode6}">${component.lcode6}</div>
-                  </div>
-                  </div>
-              </div>
-          </div>`;
-          console.log("Created", component.card, "Cards");
+  ${ component.lcode1 ? `<a class="footClick btn-small btn btn-primary" onclick="footParChoice(${component.valAssign})" > + Cart </a>` : ''}
+  <img class="card-image" src="${component.image}"></img>
+
+  <div class="card-header">
+      <h4 id=""> ${component.name} </h4>
+      <a class="footClick btn btn-primary" onclick="removeFeetFavorites(${component.valAssign})" > Remove Favorite </a>
+      <div id="">HD Code: ${component.hdcode}</div>
+      <h5><u> L-Codes </u></h5>
+      <div class="lcodes">
+      ${ component.lcode1 ? `<div id="${component.lcode1}">${component.lcode1}</div>` : ''}
+      ${ component.lcode2 ? `<div id="${component.lcode2}">${component.lcode2}</div>` : ''}
+      ${ component.lcode3 ? `<div id="${component.lcode3}">${component.lcode3}</div>` : ''}
+      ${ component.lcode4 ? `<div id="${component.lcode4}">${component.lcode4}</div>` : ''}
+      ${ component.lcode5 ? `<div id="${component.lcode5}">${component.lcode5}</div>` : ''}
+      ${ component.lcode6 ? `<div id="${component.lcode6}">${component.lcode6}</div>` : ''}
+      </div>
+      </div>
+  </div>
+</div>`;
+console.log("Created", component.card, "Cards");
+});
           
-          });
+
 
           footFavoritesArray = getFavorites;
 
@@ -153,7 +154,7 @@ console.log(showfavorite, "local storage favorite array");
             <div class="card-header">
                 <h4 id=""> ${component.name} </h4>
                 <a class="kneeClick btn btn-primary" onclick="removeFeetFavorites(${component.valAssign})"> Remove Favorite </a>
-                <div id="">HD Code: ${component.hdcode}</div>
+                ${component.hdcode ? `<div id= "${component.hdcode}">HD Code: ${component.hdcode}</div>` : ''}
                 </div>
             </div>
         </div>`;
@@ -192,12 +193,14 @@ console.log(choose.id, "choose id")
 </div>
 <form id="itemForm">
 <label id="labItemProfile" for="itemProfile">Width:</label>
-<select id="itemProfile">
+<select class="parButton" id="itemProfile">
+  <option value=""></option>
   <option value="wide">Wide</option>
   <option value="narrow">Narrow</option>
 </select>
 <label id="labItemSize" for="itemSize">Size:</label>
-<select id="itemSize">
+<select class="parButton" id="itemSize">
+  <option value=""></option>
   <option value="23">23</option>
   <option value="24">24</option>
   <option value="25">25</option>
@@ -211,19 +214,22 @@ console.log(choose.id, "choose id")
 
 </select>
 <label id="labItemColor" for="itemColor">Color</label>
-<select id="itemColor">
+<select class="parButton" id="itemColor">
+  <option value=""></option>
   <option value="Brown">Brown</option>
   <option value="Caucasian">Caucasian</option>
 </select>
 
 <label id="labItemQuantity" for="itemQuantity">Quantity:</label>
-<div id="itemCounter">
+<div class="parButton" id="itemCounter">
   <!-- <button type="button" id="itemMinus">-</button> -->
   <input type="number" id="itemQuantity" min="1" max="100" value="0">
   <!-- <button type="button" id="itemPlus">+</button> -->
 
 </div>
-<button onclick="addFootQuantity(); addFootProfile(); addFootSize(); addFootColor(); hideFootSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
+<button onclick="hideFootSelector()" type="button" class="btn-secondary" id="removeParSelector">Cancel</button> 
+
+<button onclick="footCartItem(${component.valAssign}favorite); addFootQuantity(); addFootProfile(); addFootSize(); addFootColor(); hideFootSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
 
 </form>
 <div id="itemQuantityOutput"></div>
@@ -241,7 +247,6 @@ console.log(choose.id, "choose id")
 
 
 }
-
 
 
 

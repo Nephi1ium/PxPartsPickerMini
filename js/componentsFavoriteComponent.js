@@ -38,7 +38,7 @@ function pxCompFavorites(comp){
               <div class="card-header">
                   <h4 id=""> ${component.name} </h4>
                   <a class="pxCompClick btn btn-primary" onclick="removeFavorites(${component.valAssign})" > Remove Favorite </a>
-                  <div id="">HD Code: ${component.hdcode}</div>
+                  ${component.hdcode ? `<div id= "${component.hdcode}">HD Code: ${component.hdcode}</div>` : ''}
                   <h5><u> L-Codes </u></h5>
                   <div class="lcodes">
 
@@ -94,7 +94,7 @@ function pxCompFavoritesKS(comp){
               <div class="card-header">
                   <h4 id=""> ${component.name} </h4>
                   <a class="pxCompClick btn btn-primary" onclick="removeFavoritesKS(${component.valAssign})" > Remove Favorite </a>
-                  <div id="">HD Code: ${component.hdcode}</div>
+                  ${component.hdcode ? `<div id= "${component.hdcode}">HD Code: ${component.hdcode}</div>` : ''}
                   <h5><u> L-Codes </u></h5>
                   <div class="lcodes">
 
@@ -173,39 +173,7 @@ function pxCompFavoritespxComp(comp){
 }
 
 function showFavorites(){
-
-      // let getFavorites = JSON.parse(localStorage.getItem("Favorites"));
-      // console.log(getFavorites, "local storage favorite array");
-      //   // retrieve the stored array to check the values
-      //   let favoritesLocation = document.querySelector('#pxCompItemSectionJS');
-      //   // document.getElementById('pxCompItemSectionJS').innerHTML = getFavorites;
-
-      //   // set the location where the favorite should show in the new configuration
-
-      //   getFavorites.forEach(component => {    
-      //     favoritesLocation.innerHTML = favoritesLocation.innerHTML +
-      //    `<div class="card card-margin" id="${component.valAssign}">
-      //    <a class="pxCompClick btn-small btn btn-primary" onclick="cart(${component.valAssign}, ${component.valAssign})" > + Cart </a>
-      //    <img class="card-image" src="${component.image}"></img>
-
-      //       <div class="card-header">
-      //           <h4 id=""> ${component.name} </h4>
-      //           <a class="pxCompClick btn btn-primary" onclick="removeFavorites(${component.valAssign}, ${component.valAssign})" > Remove Favorite (not working) </a>
-      //           <div id="">HD Code: ${component.hdcode}</div>
-      //           </div>
-      //       </div>
-      //   </div>`;
-      //   console.log("Created", component.card, "Cards");
-        
-      //   });
-
-
-
-      
-
- }
-
-// window.addEventListener('load', showFavorites());
+}
 
 
 
@@ -271,7 +239,7 @@ function removeFavoritesKS(item){
               <div class="card-header">
                   <h4 id=""> ${component.name} </h4>
                   <a class="kneeClick btn btn-primary" onclick="removeFavoritesKS(${component.valAssign})" > Remove Favorite </a>
-                  <div id="">HD Code: ${component.hdcode}</div>
+                  ${component.hdcode ? `<div id= "${component.hdcode}">HD Code: ${component.hdcode}</div>` : ''}
                   </div>
               </div>
           </div>`;
@@ -363,7 +331,7 @@ console.log(pxCompFavoritesKSArray, "This is the modified global liner favorite 
                 <div class="card-header">
                     <h4 id=""> ${component.name} </h4>
                     <a class="kneeClick btn btn-primary" onclick="removeFavoritespxComp(${component.valAssign})" > Remove Favorite </a>
-                    <div id="">HD Code: ${component.hdcode}</div>
+                    ${component.hdcode ? `<div id= "${component.hdcode}">HD Code: ${component.hdcode}</div>` : ''}
                     </div>
                 </div>
             </div>`;

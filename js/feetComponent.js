@@ -70,7 +70,9 @@ function feetCard(array){
         `<div class="card card-margin" id="${component.valAssign}">
         <div class="card-header">
                 <h4> ${component.name} </h4>
-                <a class="kneeClick btn btn-primary" onclick="footFavorites(${component.valAssign})" > Add To Favorites </a>
+                ${component.favorited ? 
+                `<a class="kneeClick btn btn-primary" onclick="removeFootFavorites(${component.valAssign})" > Remove From Favorites </a>` :
+                `<a class="kneeClick btn btn-primary" onclick="footFavorites(${component.valAssign})" > Add To Favorites </a>`}
                 <div class="card-body">
                 <img class="card-image" src="${component.image}"></img>
                 <h5> Product Description </h5>
@@ -79,18 +81,18 @@ function feetCard(array){
                 <div>${component.lcode2}</div>
                 <div>${component.lcode3}</div>
                 <div>${component.lcode4}</div>
-
+    
                 <div>${component.hdcode}</div>
-
+    
                 <div>$${component.cost}</div>
                 <div>${component.reimbursement}</div>
                 <div>${component.percent}</div>
                 <div>${component.pdac}</div>
-
-
+    
+    
                 <a class="btn btn-primary" href="${component.link}" target="_blank">${component.linkname}</a>
                 <input type="button" class="additionSelectButton"></input>
-
+    
                 </div>
             </div>
         </div>`;

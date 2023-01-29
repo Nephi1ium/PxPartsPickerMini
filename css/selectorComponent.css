@@ -18,7 +18,6 @@
     grid-template-areas:
     "itemHeader itemForm itemForm "
     "itemHeader itemForm itemForm"
-    "addQuantCart addQuantCart addQuantCart"
     "itemQuantityOutput itemSizeOutput itemProfileOutput"
 
      ;
@@ -32,7 +31,13 @@
     grid-template-areas:
     "labItemProfile itemProfile itemProfile"
     "labItemSize itemSize itemSize"
+    "labItemColor itemColor itemColor"
     "labItemQuantity labItemQuantity itemCounter"
+    "addQuantCart addQuantCart addQuantCart"
+}
+
+#removeParSelector{
+    grid-area: removeParSelector;
 }
 
 #labItemProfile{
@@ -74,8 +79,21 @@
     grid-area: addQuantCart;
 }
 
+#itemColor{
+    grid-area: itemColor;
+}
+ 
+#labItemColor{
+    grid-area: labItemColor;
+}
 
+#itemProfile{
+    grid-area: itemProfile;
+}
 
+#labItemProfile{
+    grid-area: labItemProfile;
+}
 
 #itemHeader {
 grid-area: itemHeader;
@@ -106,3 +124,51 @@ grid-area: itemHeader;
     grid-area: itemOutput;
   }
   
+
+  @media screen and (max-width: 450px) {
+
+  #itemModal{
+    background-color: rgb(178, 177, 182);
+    border: 1px solid #87CEFA; /* light blue */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      z-index: 10;
+      height: 50%;
+      width: 50%;
+    padding: 1vmax;
+    margin: 1vmax;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "itemHeader" 
+    "itemForm"
+    "itemQuantityOutput"
+    "itemSizeOutput"
+    "itemProfileOutput"
+
+     
+}
+
+#itemForm{
+    grid-area: itemForm;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "labItemSize"
+    "itemSize"
+    "labItemColor"
+    "itemColor"
+    "labItemProfile"
+    "itemProfile"
+    "labItemQuantity"
+    "itemCounter"
+    "addQuantCart"
+    "removeParSelector"
+    
+}
+
+  }
