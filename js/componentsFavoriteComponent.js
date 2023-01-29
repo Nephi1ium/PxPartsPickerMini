@@ -41,12 +41,7 @@ function pxCompFavorites(comp){
                   <div id="">HD Code: ${component.hdcode}</div>
                   <h5><u> L-Codes </u></h5>
                   <div class="lcodes">
-                  <div id="${component.lcode1}">${component.lcode1}</div>
-                  <div id="${component.lcode2}">${component.lcode2}</div>
-                  <div id="${component.lcode3}">${component.lcode3}</div>
-                  <div id="${component.lcode4}">${component.lcode4}</div>
-                  <div id="${component.lcode5}">${component.lcode5}</div>
-                  <div id="${component.lcode6}">${component.lcode6}</div>
+
                   </div>
                   </div>
               </div>
@@ -102,12 +97,7 @@ function pxCompFavoritesKS(comp){
                   <div id="">HD Code: ${component.hdcode}</div>
                   <h5><u> L-Codes </u></h5>
                   <div class="lcodes">
-                  <div id="${component.lcode1}">${component.lcode1}</div>
-                  <div id="${component.lcode2}">${component.lcode2}</div>
-                  <div id="${component.lcode3}">${component.lcode3}</div>
-                  <div id="${component.lcode4}">${component.lcode4}</div>
-                  <div id="${component.lcode5}">${component.lcode5}</div>
-                  <div id="${component.lcode6}">${component.lcode6}</div>
+
                   </div>
                   </div>
               </div>
