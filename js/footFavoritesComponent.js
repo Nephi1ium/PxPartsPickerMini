@@ -198,6 +198,12 @@ console.log(choose.id, "choose id")
   <option value="wide">Wide</option>
   <option value="narrow">Narrow</option>
 </select>
+<label id="labItemSide" for="itemSide">Side:</label>
+<select class="parButton" id="itemSide">
+  <option value=""></option>
+  <option value="Right">Right</option>
+  <option value="Left">Left</option>
+</select>
 <label id="labItemSize" for="itemSize">Size:</label>
 <select class="parButton" id="itemSize">
   <option value=""></option>
@@ -205,7 +211,7 @@ console.log(choose.id, "choose id")
   <option value="24">24</option>
   <option value="25">25</option>
   <option value="26">26</option>
-  <option value="27">26</option>
+  <option value="27">27</option>
   <option value="28">28</option>
   <option value="29">29</option>
   <option value="30">30</option>
@@ -229,7 +235,7 @@ console.log(choose.id, "choose id")
 </div>
 <button onclick="hideFootSelector()" type="button" class="btn-secondary" id="removeParSelector">Cancel</button> 
 
-<button onclick="footCartItem(${component.valAssign}favorite); addFootQuantity(); addFootProfile(); addFootSize(); addFootColor(); hideFootSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
+<button onclick="footCartItem(${component.valAssign}favorite); addFootQuantity(); addFootSide(); addFootProfile(); addFootSize(); addFootColor(); hideFootSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
 
 </form>
 <div id="itemQuantityOutput"></div>
@@ -261,6 +267,18 @@ function addFootQuantity(){
 
   let getQuantity = JSON.parse(localStorage.getItem("Foot Quantity"));
   console.log(getQuantity, "Quantity of Foots Stored");
+    // retrieve the stored array to check the values
+}
+
+function addFootSide(){
+
+  let quantity = document.getElementById("itemSide");
+    
+  localStorage.setItem("Foot Side", JSON.stringify(quantity.value))
+    // push the cartArray to local storage
+
+  let getSide = JSON.parse(localStorage.getItem("Foot Side"));
+  console.log(getSide, "Side of Foots Stored");
     // retrieve the stored array to check the values
 }
 

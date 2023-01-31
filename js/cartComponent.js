@@ -251,43 +251,79 @@ console.log(newId, "new id");
     };
 
 
-    function pxcompCartItem(item){
-        console.log(pxcompArray, "this should be empty");
-        console.log(item, "pxcomp object")
+  //   function pxcompCartItem(item){
+  //       console.log(pxcompArray, "this should be empty");
+  //       console.log(item, "pxcomp object")
   
-        let pxcompCartItem = item.id;
-    // set a default cart item
+  //       let pxcompCartItem = item.id;
+  //   // set a default cart item
   
-      console.log(item.id, "item object");
-      console.log(pxcompCartItem, "cartItem");
-  // test the values
+  //     console.log(item.id, "item object");
+  //     console.log(pxcompCartItem, "cartItem");
+  // // test the values
   
-  let idtochange = item.id;
-  //let changedid = idtochange.id.replace("favorite", "");
-  //console.log(changedid, "changed id");
-  //idtochange = changedid;
-  //console.log(idtochange, "idtochange");
+  // let idtochange = item.id;
+  // //let changedid = idtochange.id.replace("favorite", "");
+  // //console.log(changedid, "changed id");
+  // //idtochange = changedid;
+  // //console.log(idtochange, "idtochange");
   
-  var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
-  console.log(newId, "new id");
+  // var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
+  // console.log(newId, "new id");
   
-      let getStoredPxcomp = JSON.parse(localStorage.getItem(newId));
-      console.log(getStoredPxcomp, "retrieved cart item from local storage");
-      // retrieve the item
+  //     let getStoredPxcomp = JSON.parse(localStorage.getItem(newId));
+  //     console.log(getStoredPxcomp, "retrieved cart item from local storage");
+  //     // retrieve the item
   
-       pxcompArray.push(getStoredPxcomp);
-       console.log(getStoredPxcomp, "local storage pxcomp item");
-          // add the item to the cart array
+  //      pxcompArray.push(getStoredPxcomp);
+  //      console.log(getStoredPxcomp, "local storage pxcomp item");
+  //         // add the item to the cart array
         
-        localStorage.setItem("Pxcomp cart item", JSON.stringify(pxcompArray))
-          // push the cartArray to local storage
+  //       localStorage.setItem("Pxcomp cart item", JSON.stringify(pxcompArray))
+  //         // push the cartArray to local storage
   
-        let getFootCartItem = JSON.parse(localStorage.getItem("Pxcomp cart item"));
-        console.log(getFootCartItem, "local storage Foot cart item array");
-          // retrieve the stored array to check the values
-          tempcart(item);
-      };
+  //       let getFootCartItem = JSON.parse(localStorage.getItem("Pxcomp cart item"));
+  //       console.log(getFootCartItem, "local storage Foot cart item array");
+  //         // retrieve the stored array to check the values
+  //         tempcart(item);
+  //     };
 
+  function pxcompCartItem(item){
+    console.log(pxcompArray, "this should be empty");
+    console.log(item, "pxcomp object")
+
+    let pxcompCartItem = item.id;
+// set a default cart item
+
+  console.log(item.id, "item object");
+  console.log(pxcompCartItem, "cartItem");
+// test the values
+
+let idtochange = item.id;
+//let changedid = idtochange.id.replace("favorite", "");
+//console.log(changedid, "changed id");
+//idtochange = changedid;
+//console.log(idtochange, "idtochange");
+
+var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
+console.log(newId, "new id");
+
+  let getStoredPxcomp = JSON.parse(localStorage.getItem(newId));
+  console.log(getStoredPxcomp, "retrieved cart item from local storage");
+  // retrieve the item
+
+   pxcompArray.push(getStoredPxcomp);
+   console.log(getStoredPxcomp, "local storage pxcomp item");
+      // add the item to the cart array
+    
+    localStorage.setItem(item.name, JSON.stringify(item.value))
+      // push the cartArray to local storage
+
+    let getFootCartItem = JSON.parse(localStorage.getItem(item.id));
+    console.log(getFootCartItem, "local storage Unique item creator item array");
+      // retrieve the stored array to check the values
+      tempcart(item);
+  };
 
     function compCartItemKS(item){
 

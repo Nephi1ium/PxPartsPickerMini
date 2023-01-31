@@ -5,7 +5,7 @@ z-index: 999;
 max-height: 25vmax; 
 overflow-y: scroll;
 background-color: white;
-border: solid #40bae2 .4vmax;
+border: solid #2176AE .4vmax;
 border-radius: .8vmax;
 }
 
@@ -21,7 +21,7 @@ border-radius: .8vmax;
         max-height: 25vmax; 
         overflow-y: scroll;
         background-color: white;
-        border: solid #40bae2 .4vmax;
+        border: solid #2176AE .4vmax;
         border-radius: .8vmax;
         }
 }

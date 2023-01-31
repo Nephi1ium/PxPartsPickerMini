@@ -1,9 +1,18 @@
     /* 
-#40bae2;
+#40bae2
+#2176AE
+;
 #bfb6bb
+#90A9B7
+
 #c49799
+#011936
+
 #a5d8ff
-#36393b 
+#F46036
+
+#F46036 
+#E8EEF2
 */
 
 
@@ -151,8 +160,8 @@ color:aliceblue
 
 }
 #mainNavigation{
-border-top: solid #36393b .1vmax;
-border-bottom: solid #36393b .1vmax;
+border-top: solid #000000 .1vmax;
+border-bottom: solid #000000 .1vmax;
 
 background-color: #36454F;
 
@@ -169,7 +178,7 @@ margin-bottom: .2vmax;}
   text-decoration: none;
 margin: 0 1vmax;
 color: aliceblue;
-/* border: solid #36393b .1vmax; */
+/* border: solid #F46036 .1vmax; */
 
 
 }

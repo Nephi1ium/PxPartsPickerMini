@@ -29,6 +29,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
+    "labItemSide itemSide itemSide"
     "labItemProfile itemProfile itemProfile"
     "labItemSize itemSize itemSize"
     "labItemColor itemColor itemColor"
@@ -95,6 +96,14 @@
     grid-area: labItemProfile;
 }
 
+#labItemSide{
+    grid-area: labItemSide;
+}
+
+#itemSide{
+    grid-area: itemSide;
+}
+
 #itemHeader {
 grid-area: itemHeader;
   }
@@ -158,6 +167,8 @@ grid-area: itemHeader;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
+    "labItemSide"
+    "itemSide"
     "labItemSize"
     "itemSize"
     "labItemColor"

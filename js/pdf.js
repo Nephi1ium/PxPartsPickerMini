@@ -26,6 +26,15 @@ let dateOfBirth = localStorage.getItem("dateOfBirth");
 let encounterNumber = localStorage.getItem("encounterNumber");
 let patientWeight = localStorage.getItem("patientWeight");
 let patientHeight = localStorage.getItem("patientHeight");
+let footColor = localStorage.getItem("Foot Color");
+let footSize = localStorage.getItem("Foot Size");
+let footQuantity = localStorage.getItem("Foot Quamtity");
+let footProfile = localStorage.getItem("Foot Profile");
+let linerSize = localStorage.getItem("Liner Size");
+let linerQuantity = localStorage.getItem("Liner Quantity");
+let linerProfile = localStorage.getItem("Liner Profile");
+let kneeQuantity = localStorage.getItem("Knee Quantity");
+
 
 let dateOfCreate = new Date();
 
@@ -42,11 +51,11 @@ function kneeComponentPDF(){
    
          
         `
-        <ul>
+    <ul>
           <li><div>HD Part Number: ${component.hdcode} </div></li>
           <li><div>Manufacturer: ${component.manufacturer} </div></li>
           <li><div>Name: ${component.name}</div></li>
-          <li><div>Quantity</div></li>
+          <li><div>Quantity: ${kneeQuantity}</div></li>
       </ul>
 `
 
@@ -65,17 +74,26 @@ function footComponentPDF(){
     let footLocation = document.querySelector('#footSection');
 
     footChoice.forEach(component => {
+        
+
+        let pxCompChoice = JSON.parse(localStorage.getItem("Foot Quantity"));
+        console.log(pxCompChoice, "locally stored pxComp item choice");
+        // item retrieved
+
+
+
         footLocation.innerHTML = footLocation.innerHTML +
    
-         
         `
         <ul>
           <li><div>HD Part Number: ${component.hdcode} </div></li>
           <li><div>Manufacturer: ${component.manufacturer} </div></li>
           <li><div>Name: ${component.name}</div></li>
-          <li><div>Size</div></li>
-          <li><div>Color</div></li>
-          <li><div>Quantity</div></li>
+          <li><div>Size: ${footSize}</div></li>
+          <li><div>Color: ${footColor}</div></li>
+          <li><div>Quantity: ${pxCompChoice}</div></li>
+          <li><div>Profile: ${footProfile}</div></li>
+
       </ul>
 `
 
@@ -113,7 +131,8 @@ function linerComponentPDF(){
 console.log(linerComponentPDF, "Liner Component PDF") 
 
 function pxCompComponentPDF(){
-    let pxCompChoice = JSON.parse(localStorage.getItem("Comp cart item"));
+
+    let pxCompChoice = JSON.parse(localStorage.getItem("PxComp Items"));
     console.log(pxCompChoice, "locally stored pxComp item choice");
     // the array for the pxComp item
     console.log(pxCompChoice.length, "pxComp Array Length");
@@ -121,17 +140,24 @@ function pxCompComponentPDF(){
     let pxCompLocation = document.querySelector('#item5SSInfo');
 
     pxCompChoice.forEach(component => {
+
+    let item1 = `${component.valAssign}CompChoice`;
+    // item to be retrieved from local storage
+    let pxCompChoice = JSON.parse(localStorage.getItem(item1));
+    console.log(pxCompChoice, "locally stored pxComp item choice");
+    // item retrieved
+
+    console.log(item1, "item 1 CompChoice");
+
+
         pxCompLocation.innerHTML = pxCompLocation.innerHTML +
    
          
         `
         <ul>
-          <li><div>HD Part Number: ${component.hdcode} </div></li>
-          <li><div>Manufacturer: ${component.manufacturer} </div></li>
-          <li><div>Name: ${component.name}</div></li>
-          <li><div>Size</div></li>
-          <li><div>Color</div></li>
-          <li><div>Quantity</div></li>
+        <li><div>Name: ${component.name}</div></li>
+        <li><div>HD Part Number: ${component.hdCode} </div></li>
+        <li><div>Quantity: ${pxCompChoice}</div></li>
       </ul>
 `
 
@@ -185,9 +211,11 @@ function pxComppxCompComponentPDF(){
           <li><div>HD Part Number: ${component.hdcode} </div></li>
           <li><div>Manufacturer: ${component.manufacturer} </div></li>
           <li><div>Name: ${component.name}</div></li>
-          <li><div>Size</div></li>
-          <li><div>Color</div></li>
-          <li><div>Quantity</div></li>
+          <li><div>Size: ${linerSize}</div></li>
+          <li><div>Color: ${linerColor}</div></li>
+          <li><div>Quantity: ${linerQuantity}</div></li>
+          <li><div>Quantity: ${linerQuantity}</div></li>
+
       </ul>
 `
 
@@ -256,6 +284,7 @@ function transFemoralProsthesis(){
 				<div class="heading">
                     <p>Foot Selection</p>
 				</div>
+
 
 </div>
 <div id="kneeSection" class=" item3">

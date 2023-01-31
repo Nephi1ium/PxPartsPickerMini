@@ -472,6 +472,7 @@
 
 
 pxcompFavoritesArray = [];
+addPxCompArray = [];
 
 function pxCompFavorites(pxcomp){
   console.log(pxcomp, "pxcomp object");
@@ -791,7 +792,7 @@ console.log(choose.id, "choose id")
 </div>
 <button onclick="hidepxcompSelector()" type="button" class="btn-secondary" id="removeParSelector">Cancel</button> 
 
-<button onclick="pxcompCartItem(${component.valAssign}favorite); addpxcompQuantity(); hidepxcompSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
+<button onclick="pxcompCartItem(${component.valAssign}favorite); addpxcompQuantity(${component.valAssign}); addPxComp(${component.valAssign}); hidepxcompSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button> 
 
 </form>
 <div id="itemQuantityOutput"></div>
@@ -876,17 +877,51 @@ function socksParChoice(choose){
 
 
 
-function addpxcompQuantity(){
+function addpxcompQuantity(item){
+
+  console.log(item.id, "item id");
+  console.log(item.id + "CompChoice", "item id");
 
   let quantity = document.getElementById("itemQuantity");
-    
-  localStorage.setItem("pxcomp Quantity", JSON.stringify(quantity.value))
+  console.log(quantity.value, "quantity.value");
+
+  localStorage.setItem(item.id + "CompChoice", JSON.stringify(quantity.value))
     // push the cartArray to local storage
 
-  let getQuantity = JSON.parse(localStorage.getItem("pxcomp Quantity"));
+  let getQuantity = JSON.parse(localStorage.getItem(item.id + "CompChoice"));
   console.log(getQuantity, "Quantity of pxcomps Stored");
     // retrieve the stored array to check the values
 }
+// my problem now is that I have a unique item in the local storage and I still dont have a way to access it to add to the PDF...I could add all of the pxcomp items 
+// to an array, and just have the entire array be printed to the place for the items. I would need to remove the CompChoice from the unique identifier, find the 
+// stored item and print only the needed items.  
+
+
+function addPxComp(item){
+
+  console.log(item, "addPxComp item parameter");
+  console.log(item.id, "addPxComp item id")
+  
+    let getStoredFavorite = JSON.parse(localStorage.getItem(item.id));
+    console.log(getStoredFavorite, "retrieved pxcomp item from local storage");
+    // retrieve the stored favorite item
+    addPxCompArray.push(getStoredFavorite);
+
+    console.log(addPxCompArray, "local storage array with favorite item");
+       // add the item to the cart array
+     
+     localStorage.setItem("PxComp Items", JSON.stringify(addPxCompArray))
+       // push the cartArray to local storage
+       let checkArray = JSON.parse(localStorage.getItem("PxComp Items"));
+       // push the cartArray to local storage
+       console.log(checkArray, "retrieved checkArray item from local storage");
+
+}
+
+
+
+
+
 
 function hidepxcompSelector(){
   let myContainer = document.getElementById("itemSelectorModal");

@@ -1,24 +1,24 @@
 .header_title{
 
-    color: #36393b;
+    color: #E8EEF2;
     text-align: center;
 }
 
 .banner_display{
-    border-top: solid #c49799 .4vmax;
-    border-bottom: solid #bfb6bb .6vmax;
+    border-top: solid #2176AE .4vmax;
+    border-bottom: solid #011936 .6vmax;
     height: auto;
-    /* background-color: #a5d8ff; */
-    background-color:  #40bae2;
+    /* background-color: #F46036; */
+    background-color:  #011936;
 
 
     ;
-    border-top: solid #a5d8ff 0.4vmax;
-    border-bottom: solid #bfb6bb 0.6vmax;
+    border-top: solid #000000 0.4vmax;
+    border-bottom: solid #011936 0.6vmax;
     height: auto;
-    background-color: #a5d8ff;
-    /* background-color: #40bae2; */
-    background-color: #c49799;
+    background-color: #000000;
+    /* background-color: #011936; */
+    background-color: #2176AE;
 }
 
     
@@ -34,14 +34,14 @@
 @media screen and (max-width: 450px) {
 .header_title{
 
-    color: #36393b;
+    color: #E8EEF2;
     text-align: center;
     max-width: 25vmax;
 }
 }
 /* 
-#40bae2;
-#bfb6bb
-#c49799
-#a5d8ff
-#36393b */
+#2176AE;
+#2176AE
+#011936
+#F46036
+#F46036 */
