@@ -200,7 +200,15 @@ color: aliceblue;
   height:4vmax;
 font-size: 1.5vmax;
 text-align: center;
+padding-top: 1vmax;
 }
+
+.fullSizeNav a {
+  padding-left: 2vmax;
+  padding-right: 2vmax;
+  
+}
+
 
 #homeButt{
   grid-area: homeButt;
@@ -275,7 +283,7 @@ grid-area: kneeSection;
   /* left: 0; */
   /* transition: 0.5s; */
   padding-top: 4vmax;
-  /* padding-bottom: 4vmax; */
+  padding-bottom: 4vmax;
   padding-left: 2vmax;
 
   grid-area: mainNavigator;
