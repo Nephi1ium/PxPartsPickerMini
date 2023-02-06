@@ -11,7 +11,7 @@ subtfPDFDocument.addEventListener("click", () => footComponentPDF());
 subtfPDFDocument.addEventListener("click", () => linerComponentPDF());
 subtfPDFDocument.addEventListener("click", () => pxCompComponentPDF());
 subtfPDFDocument.addEventListener("click", () => pxCompKSComponentPDF());
-subtfPDFDocument.addEventListener("click", () => pxComppxCompComponentPDF());
+subtfPDFDocument.addEventListener("click", () => pxCompSockComponentPDF());
 
 
 
@@ -130,9 +130,9 @@ function linerComponentPDF(){
 }
 console.log(linerComponentPDF, "Liner Component PDF") 
 
-function pxCompComponentPDF(){
+function pxCompSockComponentPDF(){
 
-    let pxCompChoice = JSON.parse(localStorage.getItem("PxComp Items"));
+    let pxCompChoice = JSON.parse(localStorage.getItem("Socks Favorites"));
     console.log(pxCompChoice, "locally stored pxComp item choice");
     // the array for the pxComp item
     console.log(pxCompChoice.length, "pxComp Array Length");
@@ -164,7 +164,7 @@ function pxCompComponentPDF(){
           });
     // how the array should be printed out from its core components
 }
-console.log(pxCompComponentPDF, "pxComp Component PDF") 
+console.log(pxCompSockComponentPDF, "pxComp Component PDF") 
 
 function pxCompKSComponentPDF(){
     let pxCompKSChoice = JSON.parse(localStorage.getItem("CompKS cart item"));
@@ -194,35 +194,41 @@ function pxCompKSComponentPDF(){
 }
 console.log(pxCompKSComponentPDF, "pxCompSS Component PDF") 
 
-function pxComppxCompComponentPDF(){
-    let pxComppxCompChoice = JSON.parse(localStorage.getItem("ComppxComp cart item"));
-    console.log(pxComppxCompChoice, "locally stored pxComppxComp item choice");
-    // the array for the pxCompSS item
-    console.log(pxComppxCompChoice.length, "pxComppxComp Array Length");
+function pxCompComponentPDF(){
 
-    let pxComppxCompLocation = document.querySelector('#item5pxCompInfo');
+    let pxCompChoice = JSON.parse(localStorage.getItem("PxComp Items"));
+    console.log(pxCompChoice, "locally stored pxComp item choice");
+    // the array for the pxComp item
+    console.log(pxCompChoice.length, "pxComp Array Length");
 
-    pxComppxCompLocation.forEach(component => {
-        pxComppxCompLocation.innerHTML = pxComppxCompLocation.innerHTML +
+    let pxCompLocation = document.querySelector('#item5pxCompInfo');
+
+    pxCompChoice.forEach(component => {
+
+    let item1 = `${component.valAssign}CompChoice`;
+    // item to be retrieved from local storage
+    let pxCompChoice = JSON.parse(localStorage.getItem(item1));
+    console.log(pxCompChoice, "locally stored pxComp item choice");
+    // item retrieved
+
+    console.log(item1, "item 1 CompChoice");
+
+
+        pxCompLocation.innerHTML = pxCompLocation.innerHTML +
    
          
         `
         <ul>
-          <li><div>HD Part Number: ${component.hdcode} </div></li>
-          <li><div>Manufacturer: ${component.manufacturer} </div></li>
-          <li><div>Name: ${component.name}</div></li>
-          <li><div>Size: ${linerSize}</div></li>
-          <li><div>Color: ${linerColor}</div></li>
-          <li><div>Quantity: ${linerQuantity}</div></li>
-          <li><div>Quantity: ${linerQuantity}</div></li>
-
+        <li><div>Name: ${component.name}</div></li>
+        <li><div>HD Part Number: ${component.hdCode} </div></li>
+        <li><div>Quantity: ${pxCompChoice}</div></li>
       </ul>
 `
 
           });
     // how the array should be printed out from its core components
 }
-console.log(pxComppxCompComponentPDF, "pxCompSS Component PDF") 
+console.log(pxCompComponentPDF, "pxComp Component PDF")
 
 
 
@@ -667,3 +673,21 @@ html2pdf().set(opt).from(element).save();
 //         })
 
 // The above code will be what is used to create the appropriate pdf document.
+
+
+
+window.addEventListener("load", function() {
+    var container = document.querySelector(".container");
+    var content = document.querySelector(".content");
+    var maxFontSize = 20;
+    var minFontSize = 10;
+  
+    function resize() {
+      var fontSize = minFontSize + (container.offsetWidth * container.offsetHeight) / (content.offsetWidth * content.offsetHeight) * (maxFontSize - minFontSize);
+      content.style.fontSize = fontSize + "px";
+    }
+  
+    window.addEventListener("resize", resize);
+    resize();
+  });
+  

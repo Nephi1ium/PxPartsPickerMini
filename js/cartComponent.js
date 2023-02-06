@@ -325,6 +325,9 @@ console.log(newId, "new id");
       tempcart(item);
   };
 
+
+
+
     function compCartItemKS(item){
 
       let compCartItem = item[0].id;
@@ -379,6 +382,9 @@ console.log(newId, "new id");
         cart(item);
     };
 
+
+
+    
 function removeCart(value){
 
 // console.log(value[0], "value object");

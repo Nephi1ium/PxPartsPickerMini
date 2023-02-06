@@ -24,95 +24,226 @@
 //     ]
 
 
+const sleeveArray = [
+  { "array":"flexSleeve", "lcode":"L5685", "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F32034G","name":"ALPS Flex Sleeve", "size":"3mm/20-34 cm", "color":"Gray"},
+
+{ "array":"gripGel", "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G22530","name":"ALPS Gripgel", "size":"2mm/25-30 cm", "color":"Black"},
+
+{ "array":"extreme", "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E32024","name":"ALPS Extreme", "size":"3mm/20-24 cm", "color":"Brown"},
+
+{ "array":"easy", "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES32024","name":"ALPS EasySleeve", "size":"3mm/20-24 cm", "color":"Beige"},
+
+{ "array":"easyStretch", "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS62024G","name":"ALPS EasySleeve Stretch", "size":"6mm/20-24 cm", "color":"Gray"},
+
+{ "array":"easySticky", "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST32530","name":"ALPS EasySleeve Sticky", "size":"3mm/25-30 cm", "color":"Beige"},
+
+{ "array":"proFlex", "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1T","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Tan"},
+
+]
+
+const flexSleeve = [
+  {  "lcode":"L5685", "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F32034G","name":"ALPS Flex Sleeve", "size":"3mm/20-34 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F33140G","name":"ALPS Flex Sleeve", "size":"3mm/31-40 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F33560G","name":"ALPS Flex Sleeve", "size":"3mm/35-60 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F32034B","name":"ALPS Flex Sleeve", "size":"3mm/20-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F33140B","name":"ALPS Flex Sleeve", "size":"3mm/31-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F33560B","name":"ALPS Flex Sleeve", "size":"3mm/35-60 cm", "color":"Beige"},
+  
+]
+
+const gripGel = [
+  {  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G22530","name":"ALPS Gripgel", "size":"2mm/25-30 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G23134","name":"ALPS Gripgel", "size":"2mm/31-34 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G23537","name":"ALPS Gripgel", "size":"2mm/35-37 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G23840","name":"ALPS Gripgel", "size":"2mm/38-40 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G24145","name":"ALPS Gripgel", "size":"2mm/41-45 cm", "color":"Black"},
+
+]
+
+const extreme = [
+
+  {  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E32024","name":"ALPS Extreme", "size":"3mm/20-24 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E32530","name":"ALPS Extreme", "size":"3mm/25-30 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E33134","name":"ALPS Extreme", "size":"3mm/31-34 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E33537","name":"ALPS Extreme", "size":"3mm/35-37 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E33840","name":"ALPS Extreme", "size":"3mm/38-40 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E34145","name":"ALPS Extreme", "size":"3mm/41-45 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E34660","name":"ALPS Extreme", "size":"3mm/46-60 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E36170","name":"ALPS Extreme", "size":"3mm/61-70 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E62024","name":"ALPS Extreme", "size":"6mm/20-24 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E62530","name":"ALPS Extreme", "size":"6mm/25-30 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E63134","name":"ALPS Extreme", "size":"6mm/31-34 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E63537","name":"ALPS Extreme", "size":"6mm/35-37 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E63840","name":"ALPS Extreme", "size":"6mm/38-40 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E64145","name":"ALPS Extreme", "size":"6mm/41-45 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E64660","name":"ALPS Extreme", "size":"6mm/46-60 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E66170","name":"ALPS Extreme", "size":"6mm/61-70 cm", "color":"Brown"},
 
 
+]
 
+const easy = [
+
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES32024","name":"ALPS EasySleeve", "size":"3mm/20-24 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES32530","name":"ALPS EasySleeve", "size":"3mm/25-30 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES33134","name":"ALPS EasySleeve", "size":"3mm/31-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES33537","name":"ALPS EasySleeve", "size":"3mm/35-37 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES33840","name":"ALPS EasySleeve", "size":"3mm/38-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES34145","name":"ALPS EasySleeve", "size":"3mm/41-45 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES34660","name":"ALPS EasySleeve", "size":"3mm/46-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES36170","name":"ALPS EasySleeve", "size":"3mm/61-70 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES62024","name":"ALPS EasySleeve", "size":"6mm/20-24 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES62530","name":"ALPS EasySleeve", "size":"6mm/25-30 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES63134","name":"ALPS EasySleeve", "size":"6mm/31-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES63537","name":"ALPS EasySleeve", "size":"6mm/35-37 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES63840","name":"ALPS EasySleeve", "size":"6mm/38-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES64145","name":"ALPS EasySleeve", "size":"6mm/41-45 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES64660","name":"ALPS EasySleeve", "size":"6mm/46-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES66170","name":"ALPS EasySleeve", "size":"6mm/61-70 cm", "color":"Beige"},
+
+
+]
+
+const easyStretch = [
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS62024G","name":"ALPS EasySleeve Stretch", "size":"6mm/20-24 cm", "color":"Gray"},
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS62530G","name":"ALPS EasySleeve Stretch", "size":"6mm/25-30 cm", "color":"Gray"},
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS3134G","name":"ALPS EasySleeve Stretch", "size":"6mm/31-34 cm", "color":"Gray"},
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS3537G","name":"ALPS EasySleeve Stretch", "size":"6mm/35-37 cm", "color":"Gray"},
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS3840G","name":"ALPS EasySleeve Stretch", "size":"6mm/38-40 cm", "color":"Gray"},
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS4145G","name":"ALPS EasySleeve Stretch", "size":"6mm/41-45 cm", "color":"Gray"},
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESST2024","name":"ALPS EasySleeve Sticky", "size":"3mm/20-24 cm", "color":"Beige"},
+  
+
+]
+
+const easySticky = [
+
+
+  {  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST32530","name":"ALPS EasySleeve Sticky", "size":"3mm/25-30 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST33134","name":"ALPS EasySleeve Sticky", "size":"3mm/31-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST33537","name":"ALPS EasySleeve Sticky", "size":"3mm/35-37 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST33840","name":"ALPS EasySleeve Sticky", "size":"3mm/38-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST34145","name":"ALPS EasySleeve Sticky", "size":"3mm/41-45 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST34660","name":"ALPS EasySleeve Sticky", "size":"3mm/46-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST36170","name":"ALPS EasySleeve Sticky", "size":"3mm/61-70 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST62024","name":"ALPS EasySleeve Sticky", "size":"6mm/20-24 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST62530","name":"ALPS EasySleeve Sticky", "size":"6mm/25-30 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST63134","name":"ALPS EasySleeve Sticky", "size":"6mm/31-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST63537","name":"ALPS EasySleeve Sticky", "size":"6mm/35-37 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST63840","name":"ALPS EasySleeve Sticky", "size":"6mm/38-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST64145","name":"ALPS EasySleeve Sticky", "size":"6mm/41-45 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST64660","name":"ALPS EasySleeve Sticky", "size":"6mm/46-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST66170","name":"ALPS EasySleeve Sticky", "size":"6mm/61-70 cm", "color":"Beige"},
+
+]
+
+const proFlex = [
+  {  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1T","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2T","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3T","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1T","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2T","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3T","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1B","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2B","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3B","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1B","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2B","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3B","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1G","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2G","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3G","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1G","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2G","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Gray"},
+{  "lcode":"L5685", "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3G","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Gray"},
+
+]
 
  const sleevesSh =   [
 
-{  "lcode":"L5685", "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": " ", "hdCode":" ", "valAssign":"F32034G","name":"ALPS Flex Sleeve", "size":"3mm/20-34 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": " ", "hdCode":" ", "valAssign":"F33140G","name":"ALPS Flex Sleeve", "size":"3mm/31-40 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": " ", "hdCode":" ", "valAssign":"F33560G","name":"ALPS Flex Sleeve", "size":"3mm/35-60 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": " ", "hdCode":" ", "valAssign":"F32034B","name":"ALPS Flex Sleeve", "size":"3mm/20-34 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": " ", "hdCode":" ", "valAssign":"F33140B","name":"ALPS Flex Sleeve", "size":"3mm/31-40 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": " ", "hdCode":" ", "valAssign":"F33560B","name":"ALPS Flex Sleeve", "size":"3mm/35-60 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": " ", "hdCode":" ", "valAssign":"G22530","name":"ALPS Gripgel", "size":"2mm/25-30 cm", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": " ", "hdCode":" ", "valAssign":"G23134","name":"ALPS Gripgel", "size":"2mm/31-34 cm", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": " ", "hdCode":" ", "valAssign":"G23537","name":"ALPS Gripgel", "size":"2mm/35-37 cm", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": " ", "hdCode":" ", "valAssign":"G23840","name":"ALPS Gripgel", "size":"2mm/38-40 cm", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": " ", "hdCode":" ", "valAssign":"G24145","name":"ALPS Gripgel", "size":"2mm/41-45 cm", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E32024","name":"ALPS Extreme", "size":"3mm/20-24 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E32530","name":"ALPS Extreme", "size":"3mm/25-30 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E33134","name":"ALPS Extreme", "size":"3mm/31-34 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E33537","name":"ALPS Extreme", "size":"3mm/35-37 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E33840","name":"ALPS Extreme", "size":"3mm/38-40 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E34145","name":"ALPS Extreme", "size":"3mm/41-45 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E34660","name":"ALPS Extreme", "size":"3mm/46-60 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E36170","name":"ALPS Extreme", "size":"3mm/61-70 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E62024","name":"ALPS Extreme", "size":"6mm/20-24 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E62530","name":"ALPS Extreme", "size":"6mm/25-30 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E63134","name":"ALPS Extreme", "size":"6mm/31-34 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E63537","name":"ALPS Extreme", "size":"6mm/35-37 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E63840","name":"ALPS Extreme", "size":"6mm/38-40 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E64145","name":"ALPS Extreme", "size":"6mm/41-45 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E64660","name":"ALPS Extreme", "size":"6mm/46-60 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": " ", "hdCode":" ", "valAssign":"E66170","name":"ALPS Extreme", "size":"6mm/61-70 cm", "color":"Brown"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES32024","name":"ALPS EasySleeve", "size":"3mm/20-24 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES32530","name":"ALPS EasySleeve", "size":"3mm/25-30 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES33134","name":"ALPS EasySleeve", "size":"3mm/31-34 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES33537","name":"ALPS EasySleeve", "size":"3mm/35-37 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES33840","name":"ALPS EasySleeve", "size":"3mm/38-40 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES34145","name":"ALPS EasySleeve", "size":"3mm/41-45 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES34660","name":"ALPS EasySleeve", "size":"3mm/46-60 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES36170","name":"ALPS EasySleeve", "size":"3mm/61-70 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES62024","name":"ALPS EasySleeve", "size":"6mm/20-24 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES62530","name":"ALPS EasySleeve", "size":"6mm/25-30 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES63134","name":"ALPS EasySleeve", "size":"6mm/31-34 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES63537","name":"ALPS EasySleeve", "size":"6mm/35-37 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES63840","name":"ALPS EasySleeve", "size":"6mm/38-40 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES64145","name":"ALPS EasySleeve", "size":"6mm/41-45 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES64660","name":"ALPS EasySleeve", "size":"6mm/46-60 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": " ", "hdCode":" ", "valAssign":"ES66170","name":"ALPS EasySleeve", "size":"6mm/61-70 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": " ", "hdCode":" ", "valAssign":"ESS62024G","name":"ALPS EasySleeve Stretch", "size":"6mm/20-24 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": " ", "hdCode":" ", "valAssign":"ESS62530G","name":"ALPS EasySleeve Stretch", "size":"6mm/25-30 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": " ", "hdCode":" ", "valAssign":"ESS3134G","name":"ALPS EasySleeve Stretch", "size":"6mm/31-34 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": " ", "hdCode":" ", "valAssign":"ESS3537G","name":"ALPS EasySleeve Stretch", "size":"6mm/35-37 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": " ", "hdCode":" ", "valAssign":"ESS3840G","name":"ALPS EasySleeve Stretch", "size":"6mm/38-40 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": " ", "hdCode":" ", "valAssign":"ESS4145G","name":"ALPS EasySleeve Stretch", "size":"6mm/41-45 cm", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST2024","name":"ALPS EasySleeve Sticky", "size":"3mm/20-24 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST32530","name":"ALPS EasySleeve Sticky", "size":"3mm/25-30 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST33134","name":"ALPS EasySleeve Sticky", "size":"3mm/31-34 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST33537","name":"ALPS EasySleeve Sticky", "size":"3mm/35-37 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST33840","name":"ALPS EasySleeve Sticky", "size":"3mm/38-40 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST34145","name":"ALPS EasySleeve Sticky", "size":"3mm/41-45 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST34660","name":"ALPS EasySleeve Sticky", "size":"3mm/46-60 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST36170","name":"ALPS EasySleeve Sticky", "size":"3mm/61-70 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST62024","name":"ALPS EasySleeve Sticky", "size":"6mm/20-24 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST62530","name":"ALPS EasySleeve Sticky", "size":"6mm/25-30 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST63134","name":"ALPS EasySleeve Sticky", "size":"6mm/31-34 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST63537","name":"ALPS EasySleeve Sticky", "size":"6mm/35-37 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST63840","name":"ALPS EasySleeve Sticky", "size":"6mm/38-40 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST64145","name":"ALPS EasySleeve Sticky", "size":"6mm/41-45 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST64660","name":"ALPS EasySleeve Sticky", "size":"6mm/46-60 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": " ", "hdCode":" ", "valAssign":"ESST66170","name":"ALPS EasySleeve Sticky", "size":"6mm/61-70 cm", "color":"Beige"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS1T","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS2T","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS3T","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR1T","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR2T","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR3T","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS1B","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS2B","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS3B","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR1B","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR2B","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR3B","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS1G","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS2G","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": " ", "hdCode":" ", "valAssign":"PROS3G","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR1G","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR2G","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Gray"},
-{  "lcode":"L5685", "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": " ", "hdCode":" ", "valAssign":"PROR3G","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Gray"},
+{  "lcode":"L5685", "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F32034G","name":"ALPS Flex Sleeve", "size":"3mm/20-34 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F33140G","name":"ALPS Flex Sleeve", "size":"3mm/31-40 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F33560G","name":"ALPS Flex Sleeve", "size":"3mm/35-60 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F32034B","name":"ALPS Flex Sleeve", "size":"3mm/20-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F33140B","name":"ALPS Flex Sleeve", "size":"3mm/31-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsFlexSleeve.jpg", "material": "", "hdCode":" ", "valAssign":"F33560B","name":"ALPS Flex Sleeve", "size":"3mm/35-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G22530","name":"ALPS Gripgel", "size":"2mm/25-30 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G23134","name":"ALPS Gripgel", "size":"2mm/31-34 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G23537","name":"ALPS Gripgel", "size":"2mm/35-37 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G23840","name":"ALPS Gripgel", "size":"2mm/38-40 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsGripGel.jpg", "material": "", "hdCode":" ", "valAssign":"G24145","name":"ALPS Gripgel", "size":"2mm/41-45 cm", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E32024","name":"ALPS Extreme", "size":"3mm/20-24 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E32530","name":"ALPS Extreme", "size":"3mm/25-30 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E33134","name":"ALPS Extreme", "size":"3mm/31-34 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E33537","name":"ALPS Extreme", "size":"3mm/35-37 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E33840","name":"ALPS Extreme", "size":"3mm/38-40 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E34145","name":"ALPS Extreme", "size":"3mm/41-45 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E34660","name":"ALPS Extreme", "size":"3mm/46-60 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E36170","name":"ALPS Extreme", "size":"3mm/61-70 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E62024","name":"ALPS Extreme", "size":"6mm/20-24 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E62530","name":"ALPS Extreme", "size":"6mm/25-30 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E63134","name":"ALPS Extreme", "size":"6mm/31-34 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E63537","name":"ALPS Extreme", "size":"6mm/35-37 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E63840","name":"ALPS Extreme", "size":"6mm/38-40 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E64145","name":"ALPS Extreme", "size":"6mm/41-45 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E64660","name":"ALPS Extreme", "size":"6mm/46-60 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsExtreme.jpg", "material": "", "hdCode":" ", "valAssign":"E66170","name":"ALPS Extreme", "size":"6mm/61-70 cm", "color":"Brown"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES32024","name":"ALPS EasySleeve", "size":"3mm/20-24 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES32530","name":"ALPS EasySleeve", "size":"3mm/25-30 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES33134","name":"ALPS EasySleeve", "size":"3mm/31-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES33537","name":"ALPS EasySleeve", "size":"3mm/35-37 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES33840","name":"ALPS EasySleeve", "size":"3mm/38-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES34145","name":"ALPS EasySleeve", "size":"3mm/41-45 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES34660","name":"ALPS EasySleeve", "size":"3mm/46-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES36170","name":"ALPS EasySleeve", "size":"3mm/61-70 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES62024","name":"ALPS EasySleeve", "size":"6mm/20-24 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES62530","name":"ALPS EasySleeve", "size":"6mm/25-30 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES63134","name":"ALPS EasySleeve", "size":"6mm/31-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES63537","name":"ALPS EasySleeve", "size":"6mm/35-37 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES63840","name":"ALPS EasySleeve", "size":"6mm/38-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES64145","name":"ALPS EasySleeve", "size":"6mm/41-45 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES64660","name":"ALPS EasySleeve", "size":"6mm/46-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasy.jpg", "material": "", "hdCode":" ", "valAssign":"ES66170","name":"ALPS EasySleeve", "size":"6mm/61-70 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS62024G","name":"ALPS EasySleeve Stretch", "size":"6mm/20-24 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS62530G","name":"ALPS EasySleeve Stretch", "size":"6mm/25-30 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS3134G","name":"ALPS EasySleeve Stretch", "size":"6mm/31-34 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS3537G","name":"ALPS EasySleeve Stretch", "size":"6mm/35-37 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS3840G","name":"ALPS EasySleeve Stretch", "size":"6mm/38-40 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESS4145G","name":"ALPS EasySleeve Stretch", "size":"6mm/41-45 cm", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasyStretch.jpg", "material": "", "hdCode":" ", "valAssign":"ESST2024","name":"ALPS EasySleeve Sticky", "size":"3mm/20-24 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST32530","name":"ALPS EasySleeve Sticky", "size":"3mm/25-30 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST33134","name":"ALPS EasySleeve Sticky", "size":"3mm/31-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST33537","name":"ALPS EasySleeve Sticky", "size":"3mm/35-37 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST33840","name":"ALPS EasySleeve Sticky", "size":"3mm/38-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST34145","name":"ALPS EasySleeve Sticky", "size":"3mm/41-45 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST34660","name":"ALPS EasySleeve Sticky", "size":"3mm/46-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST36170","name":"ALPS EasySleeve Sticky", "size":"3mm/61-70 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST62024","name":"ALPS EasySleeve Sticky", "size":"6mm/20-24 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST62530","name":"ALPS EasySleeve Sticky", "size":"6mm/25-30 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST63134","name":"ALPS EasySleeve Sticky", "size":"6mm/31-34 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST63537","name":"ALPS EasySleeve Sticky", "size":"6mm/35-37 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST63840","name":"ALPS EasySleeve Sticky", "size":"6mm/38-40 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST64145","name":"ALPS EasySleeve Sticky", "size":"6mm/41-45 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST64660","name":"ALPS EasySleeve Sticky", "size":"6mm/46-60 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/AlpsEasySticky.jpg", "material": "", "hdCode":" ", "valAssign":"ESST66170","name":"ALPS EasySleeve Sticky", "size":"6mm/61-70 cm", "color":"Beige"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1T","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2T","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3T","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1T","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2T","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3T","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1B","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2B","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3B","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1B","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2B","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3B","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1G","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2G","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3G","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1G","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2G","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Gray"},
+{  "lcode":"L5685", "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3G","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Gray"},
 
 // {"WL":"Narrow Extra Short", "Size":"B,0,1","Length":8, },
 // {"WL":"Narrow Short", "Size":"B,0,1","Length":10, },
@@ -160,13 +291,6 @@ const socksPx =
 {"link":"https://www.spsco.com/cool-blue.html#247=12886&260=13216&274=13999&295=6244", "linkname":"SPS", "valAssign":"Sock25", "image":"../images/components/cbsocks.jpg", "name":"Socks", "hdcode":"CB1HNXS2 ","WL":"X Wide, Regular","Size":"5.6","Length":16, "HoleSelection":false}
 ]
 
-
-
-
-
-
-
-
 const allPxComponents = [
 
 {"linkname":"SPS", "link":"https://www.spsco.com/al-17-pylon-w-bonded-female-adaptor-50.html", "material": "Al", "hdCode":"AAA200", "valAssign":"truAL17", "image": "../images/components/AAA200_image.jpg", "name":"Trulife AL 17","category":"Pylon"},
@@ -179,7 +303,7 @@ const allPxComponents = [
 {"linkname":"SPS", "link":"https://www.spsco.com/4-hole-pyramid-base-adaptor-50.html", "material": "Al", "hdCode":"AAA212", "valAssign":"tru4base", "image": "../images/components/AAA212.jpg ", "name":"Trulife 4-Hole Pyr. Adap. Base","category":"Distal Socket Attachment"},
 {"linkname":"SPS", "link":"https://www.spsco.com/rotatable-pyramid-adapter-insert-50.html", "material": "Al", "hdCode":"AAA216-01", "valAssign":"trurotinsert", "image": "../images/components/AAA216-01.jpg ", "name":"Trulife Rotatable Pyr. Adap. Insert","category":"Distal Socket Attachment"},
 {"linkname":"SPS", "link":"https://www.spsco.com/rotatable-pyramid-rec-adaptor-insert-50.html", "material": "Al", "hdCode":"AAA214-01", "valAssign":"trurotinsertfemale", "image": "../images/components/AAA214-01.jpg ", "name":"Trulife Rotatable Female Pyr. Rec. Adap Insert","category":"Distal Socket Attachment"},
-{"linkname":"SPS", "link":"https://www.spsco.com/lyn-valve-rv-transfemoral-autoexpulsion-for-all-materials.html", "material": " ", "hdCode":"PA0002", "valAssign":"esplynAKRV", "image": "../images/components/PA0002.jpg ", "name":"ESP Lyn Valve AK RV Auto Expulsion","category":"Valve"},
+{"linkname":"SPS", "link":"https://www.spsco.com/lyn-valve-rv-transfemoral-autoexpulsion-for-all-materials.html", "material": "", "hdCode":"PA0002", "valAssign":"esplynAKRV", "image": "../images/components/PA0002.jpg ", "name":"ESP Lyn Valve AK RV Auto Expulsion","category":"Valve"},
 {"linkname":"SPS", "link":"https://www.spsco.com/lyn-valve-rv-auto-expulsion-black.html", "material": "", "hdCode":"PA0002", "valAssign":"esplynRV", "image": "../images/components/PA0002.jpg ", "name":"ESP Lyn Valve RV Auto Expulsion","category":"Valve"},
 {"linkname":"SPS", "link":"https://www.spsco.com/delrin-distal-base.html", "material": "", "hdCode":"CMP1/A", "valAssign":"kisspuck", "image": "../images/components/CMP1A.jpg ", "name":"KISS Puck","category":"Lock"},
 {"linkname":"SPS", "link":"https://www.spsco.com/one-way-expulsion-valve.html#194=23893", "material": "", "hdCode":"CMP19A", "valAssign":"kissoneway", "image": "../images/components/CMP19A.jpg", "name":"KISS One Way Expulsion Valve","category":"Valve"},
@@ -221,7 +345,7 @@ const allPxComponents = [
 {"linkname":"SPS", "link":"https://www.spsco.com/harmony-p4-vacuum-pump.html", "material": "", "hdCode":"4R180", "valAssign":"limb2unilat", "image": "../images/components/4R180.jpg ", "name":"Limblogic 2 Unilat Kit Lam","category":"Vacuum/Pump"},
 {"linkname":"SPS", "link":"https://www.spsco.com/harmony-e2-vacuum-system.html", "material": "", "hdCode":"4R152", "valAssign":"harmonyp4", "image": "../images/components/4R152.jpg ", "name":"Harmony P4","category":"Vacuum/Pump"}]
 
-export {sleevesSh, socksPx, allPxComponents};
+export {sleevesSh, socksPx, allPxComponents, sleeveArray, flexSleeve, gripGel, extreme, easy, easyStretch, easySticky, proFlex};
 
 
 

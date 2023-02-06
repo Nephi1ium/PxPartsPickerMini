@@ -1,62 +1,32 @@
-.underline{
-  text-decoration: underline;
-}
+
+/* Below is the code for the cards and main JS section */
 
 
-#modalPic {
-  width: 100%;
-  max-width: 200px; }
-
-  .sidenav div {
-    width: 100%;
-}
-#addNotes {
-  width: 100%;
-}
-.sidenav div a {
-  width: 100%;
-  font-size: 3vw;
+.favorites{
+  display: table-cell;
+  margin: 2%;
 }
 
-.btn-block{
-  font-size: 1.5vw;
-}
-@media (max-width: 2560px) {
-  .btn-block{
-    font-size: .5vw;
-  } 
-}
-@media (max-width: 1440px) {
-  .btn-block{
-    font-size: 1.5vw;
-  } 
-}
-@media (max-width: 475px) {
-  .btn-block{
-    font-size: 3vw;
-  } 
-}
+/* End of JS Section and card  */
 
-#genVirPDF {
-  display: none;
-}
-
-#VVPDFDown {
-  display: none;
-}
-
-.cardDropdown {
-  background-color: white;
+.additionSelectButton{
+  background-image: url('../images/Icons/plus.png');
+  background-color: transparent; 
+  background-repeat: no-repeat; 
+  width: 4.2vmax;
+  right: 1vmax;
+  min-width: 32px;
   border: none;
 }
 
-  #stepTwo {
-    color: #08719e;
-    font-size: 2em;
-  }
-  #stepTwo:hover {
-    background-color: #08719e;
-  color: black; }
+
+
+
+
+.btn-block{
+  font-size: 1vw;
+}
+
 
 .card .card-header p {
   color: #08719e; }
@@ -65,11 +35,8 @@ textarea {
   width: 90%;
   height: 200px; }
 
-header {
-  color: #08719e; }
-
 h1 {
-  margin: 20px;
+  margin: 3vmax;
 color: #08719e;  }
 
 .img-thumbnail {
@@ -91,49 +58,12 @@ color: #08719e;  }
   max-width: 50%;
   height: auto; }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px; }
-
-.sidenav button {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-  text-align: center; }
-
-.sidenav a:hover {
-  color: #f1f1f1; }
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  margin-left: 25px;
-  color: #d1caca;
-  padding: 10px;
-  font-size: 100%;
-  display: block;
-  border: 5px;
-  text-align: center;
-  cursor: pointer; }
-
   .closebtn:hover {
     background-color: #08719e;
   color: black; }
 
 .openbtn {
-  font-size: 1vw;
+  font-size: 20px;
   cursor: pointer;
   background-color: #08719e;
   color: white;
@@ -143,133 +73,21 @@ color: #08719e;  }
   border-radius: 10px;
   position: fixed;
   z-index: 100;
-  bottom: 50%;
+  bottom: 0px;
   right: 0px;}
 
-  .objselect {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #08719e;
-    color: white;
-    padding: 10px;
-    border: none;
-    margin: 5px; 
-    border-radius: 10px;
-  }
-
-  .btn-right {
-    align-items: center;
-    color: #08719e;
-    float: right;
-  }
 .openbtn:hover {
   background-color: #08719e; }
-
-#main {
-  transition: margin-left .5s;
-  padding: 16px; }
-
-
-  .mainpage{
-    display: grid;
-  
-  }
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px; }
-  .sidenav a {
-    font-size: 18px; } }
-
-#choiceHead {
-  margin: 5px;
-  align-content: center;
-  color: #08719e; }
-
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px; }
-
-/* Style the sidenav links and the dropdown button */
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #08719e; }
-
-/* Main content */
-.main {
-  margin-left: 200px;
-  /* Same as the width of the sidenav */
-  font-size: 20px;
-  /* Increased text to enable scrolling */
-  padding: 0px 10px; }
-
-/* Add an active class to the active dropdown button */
-/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
-.dropdown-container {
-  display: none;
-  background-color: #262626;
-  padding-left: 8px; }
 
 /* Optional: Style the caret down icon */
 .fa-caret-down {
   float: right;
   padding-right: 8px; }
 
-.sub-choice {
-  padding: 6px 8px 6px 16px;
-  margin: 2px;
-  text-decoration: none;
-  font-size: 10px;
-  color: #818181;
-  display: inline-block;
-  border: none;
-  background: none;
-  width: 100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
-  overflow-wrap: break-word;
-  display: none;
-  text-align: center; }
-
-.img-fluid {
-  height: 4vmax; }
-
 .card-image {
   max-width: 100%;
   height: auto;
   width: auto; }
-
-.accordion {
-  background-color: #eee;
-  color: white;
-  background-color: black;
-  cursor: pointer;
-  padding: 18px;
-  margin: 20px;
-  width: 100%;
-  border: none;
-  outline: none;
-  transition: 0.4s; }
-
-.sidenav .container {
-  border: 2px solid  #08719e;
-  width: 100%;
-  display: flex; }
-
-.sidenav a {
-  color: #08719e; }
-
-.sidenav .container .card {
-  background-color: #111; }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
@@ -310,16 +128,29 @@ body {
   padding: 1em;
   text-align: center;
   vertical-align: middle;
+
 } 
 .card {
-  /* display: block;  */
-    margin-bottom: 20px;
-    line-height: 1.42857143;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
-    transition: box-shadow .25s; 
+  display: block; 
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+  transition: box-shadow .25s; 
+  max-width: 25vmax;
+  max-height: 50vmax;
+  padding: 1vmax;
+  overflow: hidden;
+  overflow-y: scroll;
+
 }
+
+
+
+.img-fluid {
+  height: 4vmax; }
+
 .card:hover {
   box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -358,4 +189,213 @@ body {
   padding:10px;
   font-weight:600;
   text-transform: uppercase
+}
+
+
+
+
+
+  .card-img-top {
+    border-radius: 25%;
+    max-width: 50%;
+     width: auto;
+     height: auto;
+     align-items: center;
+    margin-bottom: 5px;
+  padding: 5px; }
+
+.cardcontainer {
+  padding: 2% 0;
+  margin: 0 auto;
+  width: 100%; }
+
+.card-title {
+  font-size: medium;
+  align-items: center; }
+
+.card-body {
+  padding: 0; }
+
+.item a {
+  display: none; }
+
+.item:hover .card-text {
+  display: flex;
+  background-position: center; }
+
+.item:hover .card-img-top {
+  width: 25%;
+  height: fit-content; }
+
+.item:hover a {
+  display: flex;
+  text-align: center; }
+
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh; }
+
+@media (max-width: 632px) {
+  .gallery-wrap {
+    flex-direction: column; } }
+
+.item {
+  flex: 1;
+  height: 100%;
+  width: 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
+  overflow: hidden;
+  background-color: #08719e; }
+  .item:hover {
+    flex: 30;
+    background-image: none;
+    text-align: center;
+    background-color: #f9fcd6; }
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0; }
+  .social img {
+    display: block;
+    width: 32px; }
+
+.item:hover img {
+  size: 15%; }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 450px) { 
+  .mainpage{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+
+  }
+  
+  .card {
+    display: block; 
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12); 
+    transition: box-shadow .25s; 
+    max-width: 30vmax;
+    max-height: 50vmax;
+    padding: 1vmax;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
 }
