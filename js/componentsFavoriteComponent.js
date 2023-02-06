@@ -795,7 +795,7 @@ function createSleeveSelector(array) {
              <input type="number" id="itemQuantity" min="1" max="100" value="0">
            </div>
            <button onclick="hideSleeveSelector()" type="button" class="btn-secondary" id="removeParSelector">Cancel</button>
-           <button onclick="pxcompCartItem(${array[0].valAssign}); addSleeveQuantity(); addSleeveSide(); addSleeveProfile(); addSleeveSize(); addSleeveColor(); hideSleeveSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button>
+           <button onclick="sleeveCartItem(${array[0].valAssign}); addSleeveQuantity(); addSleeveSide(); addSleeveProfile(); addSleeveSize(); addSleeveColor(); hideSleeveSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button>
          </form>
          <div id="itemQuantityOutput"></div>
          <div id="itemSizeOutput"></div>

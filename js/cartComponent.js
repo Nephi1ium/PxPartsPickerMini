@@ -134,6 +134,73 @@ console.log(newId, "new id");
       // allow deletion of cart items, remove item from array and then push the modified array back to local storage
      
     }
+
+    function sleeveCart(item){
+
+      let cartItem = item.id;
+      // set a default cart item
+    
+        console.log(item.id, "item object");
+        console.log(cartItem, "cartItem");
+    // test the values
+    let idtochange = item.id;
+  //let changedid = idtochange.id.replace("favorite", "");
+  //console.log(changedid, "changed id");
+  //idtochange = changedid;
+  //console.log(idtochange, "idtochange");
+  
+  // var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
+  // console.log(newId, "new id");
+  
+        let getStoredFavorite = JSON.parse(localStorage.getItem(cartItem));
+        console.log(getStoredFavorite, "retrieved cart item from local storage");
+        // retrieve the item
+    
+         cartArray.push(getStoredFavorite);
+         console.log(cartArray, "local storage array with cart item");
+            // add the item to the cart array
+          
+          localStorage.setItem("cart", JSON.stringify(cartArray))
+            // push the cartArray to local storage
+    
+    
+    
+          let getCart = JSON.parse(localStorage.getItem("cart"));
+          console.log(getCart, "local storage cart array");
+            // retrieve the stored array to check the values
+    
+            const noDupes = [...new Map(getCart.map((m) => [m.valAssign, m])).values()];
+            console.log(noDupes, "eureka!");
+          // now here turn the items into a set without duplicates
+    
+          localStorage.setItem("cart", JSON.stringify(noDupes))
+          // push the cartArray to local storage
+    
+        let showCart = JSON.parse(localStorage.getItem("cart"));
+          console.log(showCart, "local storage cart array");
+        // retrieve the item from local storage
+    
+        let cartLocation = document.querySelector('#cartSection');
+        // display the cart in the cart section section 
+        document.getElementById('cartSection').innerHTML = "";
+        // clear the cart window on addition of a new item
+    
+        showCart.forEach(component => {    
+          cartLocation.innerHTML = cartLocation.innerHTML +
+             `<div id="${component.valAssign}cart">
+             <a class="kneeClick btn-small btn btn-primary" onclick="tempremoveCart(${component.valAssign})"> Delete </a>
+             <img class="cart-image" src="${component.image}"></img>
+              <h4 > ${component.name} </h4>
+    
+            </div>`;
+            console.log("Created", component.value, "Cards");
+            
+            });
+        // display the retrieved array items in the "cart" 
+    
+        // allow deletion of cart items, remove item from array and then push the modified array back to local storage
+       
+      }
     
     function kneeCartItem(item){
 
@@ -251,42 +318,6 @@ console.log(newId, "new id");
     };
 
 
-  //   function pxcompCartItem(item){
-  //       console.log(pxcompArray, "this should be empty");
-  //       console.log(item, "pxcomp object")
-  
-  //       let pxcompCartItem = item.id;
-  //   // set a default cart item
-  
-  //     console.log(item.id, "item object");
-  //     console.log(pxcompCartItem, "cartItem");
-  // // test the values
-  
-  // let idtochange = item.id;
-  // //let changedid = idtochange.id.replace("favorite", "");
-  // //console.log(changedid, "changed id");
-  // //idtochange = changedid;
-  // //console.log(idtochange, "idtochange");
-  
-  // var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
-  // console.log(newId, "new id");
-  
-  //     let getStoredPxcomp = JSON.parse(localStorage.getItem(newId));
-  //     console.log(getStoredPxcomp, "retrieved cart item from local storage");
-  //     // retrieve the item
-  
-  //      pxcompArray.push(getStoredPxcomp);
-  //      console.log(getStoredPxcomp, "local storage pxcomp item");
-  //         // add the item to the cart array
-        
-  //       localStorage.setItem("Pxcomp cart item", JSON.stringify(pxcompArray))
-  //         // push the cartArray to local storage
-  
-  //       let getFootCartItem = JSON.parse(localStorage.getItem("Pxcomp cart item"));
-  //       console.log(getFootCartItem, "local storage Foot cart item array");
-  //         // retrieve the stored array to check the values
-  //         tempcart(item);
-  //     };
 
   function pxcompCartItem(item){
     console.log(pxcompArray, "this should be empty");
@@ -324,6 +355,43 @@ console.log(newId, "new id");
       // retrieve the stored array to check the values
       tempcart(item);
   };
+  function sleeveCartItem(item){
+    console.log(pxcompArray, "this should be empty");
+    console.log(item, "pxcomp object")
+
+    let pxcompCartItem = item.id;
+// set a default cart item
+
+  console.log(item.id, "item object");
+  console.log(pxcompCartItem, "cartItem");
+// test the values
+
+let idtochange = item.id;
+//let changedid = idtochange.id.replace("favorite", "");
+//console.log(changedid, "changed id");
+//idtochange = changedid;
+//console.log(idtochange, "idtochange");
+
+var newId = idtochange.substring(0, idtochange.indexOf("favorite")) + idtochange.substring(idtochange.indexOf("favorite")+17);
+console.log(newId, "new id");
+
+  let getStoredPxcomp = JSON.parse(localStorage.getItem(newId));
+  console.log(getStoredPxcomp, "retrieved cart item from local storage");
+  // retrieve the item
+
+   pxcompArray.push(getStoredPxcomp);
+   console.log(getStoredPxcomp, "local storage pxcomp item");
+      // add the item to the cart array
+    
+    localStorage.setItem(item.name, JSON.stringify(item.value))
+      // push the cartArray to local storage
+
+    let getFootCartItem = JSON.parse(localStorage.getItem(item.id));
+    console.log(getFootCartItem, "local storage Unique item creator item array");
+      // retrieve the stored array to check the values
+      sleeveCart(item);
+  };
+
 
 
 
@@ -384,7 +452,7 @@ console.log(newId, "new id");
 
 
 
-    
+
 function removeCart(value){
 
 // console.log(value[0], "value object");
