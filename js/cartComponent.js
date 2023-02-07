@@ -143,7 +143,7 @@ console.log(newId, "new id");
         console.log(item.id, "item object");
         console.log(cartItem, "cartItem");
     // test the values
-    let idtochange = item.id;
+    // let idtochange = item.id;
   //let changedid = idtochange.id.replace("favorite", "");
   //console.log(changedid, "changed id");
   //idtochange = changedid;
