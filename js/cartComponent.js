@@ -378,6 +378,9 @@ console.log(newId, "new id");
   let getStoredPxcomp = JSON.parse(localStorage.getItem(newId));
   console.log(getStoredPxcomp, "retrieved cart item from local storage");
   // retrieve the item
+  
+  localStorage.setItem("CompKS cart item", JSON.stringify(getStoredPxcomp))
+      // push the Sleeve item to the CompKS cart item local storage item. 
 
    pxcompArray.push(getStoredPxcomp);
    console.log(getStoredPxcomp, "local storage pxcomp item");
@@ -385,6 +388,8 @@ console.log(newId, "new id");
     
     localStorage.setItem(item.name, JSON.stringify(item.value))
       // push the cartArray to local storage
+
+
 
     let getFootCartItem = JSON.parse(localStorage.getItem(item.id));
     console.log(getFootCartItem, "local storage Unique item creator item array");

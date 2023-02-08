@@ -35,6 +35,15 @@ let linerQuantity = localStorage.getItem("Liner Quantity");
 let linerProfile = localStorage.getItem("Liner Profile");
 let kneeQuantity = localStorage.getItem("Knee Quantity");
 
+let sleeveQuantity = localStorage.getItem("Sleeve Quantity");
+let sleeveColor = localStorage.getItem("Sleeve Color");
+let sleeveThickness = localStorage.getItem("Sleeve Thickness");
+let sleeveCircumference = localStorage.getItem("Sleeve Circumference");
+
+console.log(sleeveQuantity);
+console.log(sleeveColor);
+console.log(sleeveThickness);
+console.log(sleeveCircumference);
 
 let dateOfCreate = new Date();
 

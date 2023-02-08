@@ -689,15 +689,15 @@ function addSleeveQuantity(){
     // retrieve the stored array to check the values
 }
 
-function addSleeveProfile(){
+function addSleeveCircumference(){
 
   let profile = document.getElementById("itemProfile");
 
-  localStorage.setItem("Sleeve Profile", JSON.stringify(profile.value))
+  localStorage.setItem("Sleeve Circumference", JSON.stringify(profile.value))
     // push the cartArray to local storage
 
-  let getProfile = JSON.parse(localStorage.getItem("Sleeve Profile"));
-  console.log(getProfile, "Profile of Sleeves Stored");
+  let getProfile = JSON.parse(localStorage.getItem("Sleeve Circumference"));
+  console.log(getProfile, "Circumference of Sleeves Stored");
     // retrieve the stored array to check the values
 }
 
@@ -720,6 +720,7 @@ function hideSleeveSelector(){
 }
  function addSleeveColor(){
 
+  console.log("this is the start of the color selector");
   let color = document.getElementById("itemColor");
 
   localStorage.setItem("Sleeve Color", JSON.stringify(color.value))
@@ -727,6 +728,19 @@ function hideSleeveSelector(){
 
 let getColor = JSON.parse(localStorage.getItem("Sleeve Color"));
 console.log(getColor, "Color of Sleeves Stored");
+
+ }
+function addSleeveThickness(){
+
+  let quantity = document.getElementById("itemSide");
+    
+  localStorage.setItem("Sleeve Thickness", JSON.stringify(quantity.value))
+    // push the cartArray to local storage
+
+  let getSide = JSON.parse(localStorage.getItem("Sleeve Thickness"));
+  console.log(getSide, "Thickness of Sleeve Stored");
+    // retrieve the stored array to check the values
+}
   // retrieve the stored array to check the values//   let color = document.getElementById("itemColor");
 
 
@@ -736,7 +750,7 @@ console.log(getColor, "Color of Sleeves Stored");
 // let getQuantity = JSON.parse(localStorage.getItem("Sleeve Quantity"));
 // console.log(getQuantity, "Quantity of Sleeves Stored");
 //   // retrieve the stored array to check the values
- }
+ 
 
 
 
@@ -754,61 +768,93 @@ function createSleeveSelector(array) {
   let pxcompParLocation = document.getElementById("itemSelectorModal");
 
   let html = '<div id="itemModal">\
-                 <div id="itemHeader">\
-                   <img id="itemPhoto" src="' + array[0].image + '">\
-                 </div>\
-                 <form id="itemForm">\
- ';
- html += '</select>\
- <label id="labItemProfile" for="itemProfile">Color:</label>\
- <select class="parButton" id="itemProfile">\
- <option value=""></option>';
-  let colors = new Set();
-  for (let i = 0; i < 1; i++) {
-    colors.add(array[i].color);
-  }
-  for (let color of colors) {
-    html += '<option value="' + color + '">' + color + '</option>';
-  }
+  <div id="itemHeader">\
+    <img id="itemPhoto" src="' + array[0].image + '">\
+  </div>\
+  <form id="itemForm">\
+';
 
-  html += '</select>\
-  <label id="labItemSide" for="itemSide">Circumference:</label>\
-  <select class="parButton" id="itemSide">\
-    <option value=""></option>';
+html += '<label id="labItemColor" for="itemColor">Color:</label>\
+<select class="parButton" id="itemColor">\
+<option value=""></option>';
+
+let colors = new Set();
+for (let i = 0; i < array.length; i++) {
+colors.add(array[i].color);
+}
+for (let color of colors) {
+html += '<option value="' + color + '">' + color + '</option>';
+}
+
+html += '</select>';
 
 let circumferences = new Set();
-for (let i = 0; i < 3; i++) {
+for (let i = 0; i < array.length; i++) {
+if (array[i].circumference) {
 circumferences.add(array[i].circumference);
 }
+}
+
+if (circumferences.size > 0) {
+html += '<label id="labItemProfile" for="itemProfile">Circumference:</label>\
+<select class="parButton" id="itemProfile">\
+<option value=""></option>';
+
 for (let circumference of circumferences) {
 html += '<option value="' + circumference + '">' + circumference + '</option>';
 }
-html += '</select>\
-<label id="labItemSize" for="itemSize">Thickness:</label>\
-<select class="parButton" id="itemSize">\
-<option value=""></option>';
+
+html += '</select>';
+}
+
 let thicknesses = new Set();
 for (let i = 0; i < array.length; i++) {
-  thicknesses.add(array[i].thickness);
+if (array[i].thickness) {
+thicknesses.add(array[i].thickness);
 }
+}
+
+if (thicknesses.size > 0) {
+html += '<label id="labItemSide" for="itemSide">Thickness:</label>\
+<select class="parButton" id="itemSide">\
+<option value=""></option>';
+
 for (let thickness of thicknesses) {
-  html += '<option value="' + thickness + '">' + thickness + '</option>';
+html += '<option value="' + thickness + '">' + thickness + '</option>';
 }
+}
+// let sizes = new Set();
+// for (let i = 0; i < array.length; i++) {
+//   if (array[i].size) {
+//     sizes.add(array[i].size);
+//   }
+// }
 
+// if (sizes.size > 0) {
+//   html += '<label id="labItemSize" for="itemSize">Size:</label>\
+//            <select class="parButton" id="itemSize">\
+//              <option value=""></option>';
 
+//   for (let size of sizes) {
+//     html += '<option value="' + size + '">' + size + '</option>';
+//   }
 
-  html += `</select>
-           <label id="labItemQuantity" for="itemQuantity">Quantity:</label>
-           <div class="parButton" id="itemCounter">
-             <input type="number" id="itemQuantity" min="1" max="100" value="0">
-           </div>
-           <button onclick="hideSleeveSelector()" type="button" class="btn-secondary" id="removeParSelector">Cancel</button>
-           <button onclick="sleeveCartItem(${array[0].valAssign}); addSleeveQuantity(); addSleeveSide(); addSleeveProfile(); addSleeveSize(); addSleeveColor(); hideSleeveSelector();" type="button" class="btn-primary" id="addQuantCart">Add to Cart</button>
-         </form>
-         <div id="itemQuantityOutput"></div>
-         <div id="itemSizeOutput"></div>
-         <div id="itemProfileOutput"></div>
-       </div>`;
+//   html += '</select>';
+// }
+
+html += `</select>
+         <label id="labItemQuantity" for="itemQuantity">Quantity:</label>
+         <div class="parButton" id="itemCounter">
+           <input type="number" id="itemQuantity" min="1" max="100" value="0">
+         </div>
+         <button onclick="hideSleeveSelector()" type="button" class="btn-secondary" id="removeParSelector">Cancel</button>
+         <button onclick="sleeveCartItem(${array[0].valAssign}); if(document.getElementById('itemQuantity').value) addSleeveQuantity(); if(document.getElementById('itemSide').value) addSleeveThickness();         if(document.getElementById('itemProfile').value) addSleeveCircumference();         if(document.getElementById('itemColor').value) addSleeveColor();        hideSleeveSelector();       " type="button" class="btn-primary" id="addQuantCart">Add to Cart</button>
+              </form>
+       <div id="itemQuantityOutput"></div>
+       <div id="itemSizeOutput"></div>
+       <div id="itemProfileOutput"></div>
+     </div>`;
+
 
        pxcompParLocation.innerHTML = pxcompParLocation.innerHTML + html;
 }
@@ -912,34 +958,26 @@ const easySticky = [
 
 ]
 
-// const proFlex = [
-//   {  "size":"Short Size 1", "color":"Tan"},
-//   {  "size":"Short Size 2", "color":"Grey"},
-//   {  "size":"Short Size 3", "color":"Tan"},
-//   {  "size":"Regular Size 1", "color":"Black"},
-//   {  "size":"Short Size 2", "color":"Grey"},
-//   {  "size":"Short Size 3", "color":"Tan"},
 
-// ]
 const proFlex = [
-  {  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1T","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2T","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3T","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1T","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2T","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3T","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Tan"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1B","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2B","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3B","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1B","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2B","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Black"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3B","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Black"},
+  {  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1T","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 1", "size":"Short Size 1", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2T","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 2", "size":"Short Size 2", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3T","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 3", "size":"Short Size 3", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1T","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 1", "size":"Regular Size 1", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2T","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 2", "size":"Regular Size 2", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3T","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 3", "size":"Regular Size 3", "color":"Tan"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1B","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 1", "size":"Short Size 1", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2B","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 2", "size":"Short Size 2", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3B","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 3", "size":"Short Size 3", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1B","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 1", "size":"Regular Size 1", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2B","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 2", "size":"Regular Size 2", "color":"Black"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3B","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 3", "size":"Regular Size 3", "color":"Black"},
 
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1G","name":"Ottobock ProFlex", "size":"Short Size 1", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2G","name":"Ottobock ProFlex", "size":"Short Size 2", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3G","name":"Ottobock ProFlex", "size":"Short Size 3", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1G","name":"Ottobock ProFlex", "size":"Regular Size 1", "color":"Gray"},
-{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2G","name":"Ottobock ProFlex", "size":"Regular Size 2", "color":"Gray"},
-{  "lcode":"L5685", "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3G","name":"Ottobock ProFlex", "size":"Regular Size 3", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS1G","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 1", "size":"Short Size 1", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS2G","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 2", "size":"Short Size 2", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexShort.jpg", "material": "", "hdCode":" ", "valAssign":"PROS3G","name":"Ottobock ProFlex", "thickness":"Short", "circumference":"Size 3", "size":"Short Size 3", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR1G","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 1", "size":"Regular Size 1", "color":"Gray"},
+{  "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR2G","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 2", "size":"Regular Size 2", "color":"Gray"},
+{  "lcode":"L5685", "lcode":"L5685", "image": "../images/components/OBProflexLong.jpg", "material": "", "hdCode":" ", "valAssign":"PROR3G","name":"Ottobock ProFlex", "thickness":"Regular", "circumference":"Size 3", "size":"Regular Size 3", "color":"Gray"},
 
 ]
