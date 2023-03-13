@@ -12,6 +12,7 @@ subtfPDFDocument.addEventListener("click", () => linerComponentPDF());
 subtfPDFDocument.addEventListener("click", () => pxCompComponentPDF());
 subtfPDFDocument.addEventListener("click", () => pxCompKSComponentPDF());
 subtfPDFDocument.addEventListener("click", () => pxCompSockComponentPDF());
+subtfPDFDocument.addEventListener("click", () => resizeFont());
 
 
 
@@ -46,6 +47,32 @@ console.log(sleeveThickness);
 console.log(sleeveCircumference);
 
 let dateOfCreate = new Date();
+
+
+function resizeFont() {
+    var container = document.getElementById("item5pxCompInfo");
+    var content = document.querySelector(".resizeFont");
+    var maxFontSize = 30;
+    var minFontSize = 10;
+  
+    console.log(container, content);
+
+    if (!container || !content) {
+        console.log(container, content, "error finding the container or content")
+        return;
+      }
+
+    function resize() {
+      var fontSize = minFontSize + (container.offsetWidth * container.offsetHeight) / (content.offsetWidth * content.offsetHeight) * (maxFontSize - minFontSize);
+      content.style.fontSize = fontSize + "px";
+    }
+  
+    resize();
+  };
+  
+
+
+
 
 function kneeComponentPDF(){
     let kneeChoice = JSON.parse(localStorage.getItem("Knee cart item"));
@@ -183,18 +210,30 @@ function pxCompKSComponentPDF(){
 
     let pxCompKSLocation = document.querySelector('#item5KSInfo');
 
-    pxCompKSLocation.forEach(component => {
+    pxCompKSChoice.forEach(component => {
         pxCompKSLocation.innerHTML = pxCompKSLocation.innerHTML +
    
          
         `
         <ul>
-          <li><div>HD Part Number: ${component.hdcode} </div></li>
-          <li><div>Manufacturer: ${component.manufacturer} </div></li>
-          <li><div>Name: ${component.name}</div></li>
-          <li><div>Size</div></li>
-          <li><div>Color</div></li>
-          <li><div>Quantity</div></li>
+        <li>
+        <div>HD Part Number: ${component.hdcode ? component.hdcode : ''}</div>
+        </li>
+        <li>
+            <div>Name: ${component.name ? component.name : ''}</div>
+        </li>
+        <li>
+            <div>Size: ${component.circumference ? component.circumference : ''}</div>
+        </li>
+        <li>
+            <div>Thickness: ${component.thickness ? component.thickness : ''}</div>
+        </li>
+        <li>
+            <div>Color: ${component.color ? component.color : ''}</div>
+        </li>
+        <li>
+            <div>Quantity: ${component.quantity ? component.quantity : ''}</div>
+        </li>
       </ul>
 `
 
@@ -210,7 +249,7 @@ function pxCompComponentPDF(){
     // the array for the pxComp item
     console.log(pxCompChoice.length, "pxComp Array Length");
 
-    let pxCompLocation = document.querySelector('#item5pxCompInfo');
+    let pxCompLocation = document.querySelector('.resizeFont');
 
     pxCompChoice.forEach(component => {
 
@@ -228,9 +267,8 @@ function pxCompComponentPDF(){
          
         `
         <ul>
-        <li><div>Name: ${component.name}</div></li>
-        <li><div>HD Part Number: ${component.hdCode} </div></li>
-        <li><div>Quantity: ${pxCompChoice}</div></li>
+        <li class="pxCompKSInfoList"><div>${component.name}, HD: ${component.hdCode}, ${pxCompChoice}</div></li>
+
       </ul>
 `
 
@@ -332,7 +370,10 @@ function transFemoralProsthesis(){
     </div>
     <div id="item5Comp" class="">
     <p>Parts & Components</p>
-    <div id="item5pxCompInfo"></div>
+    <div id="item5pxCompInfo">
+        <div class="resizeFont">
+        </div>
+    </div>
 
     </div>
 
@@ -685,18 +726,5 @@ html2pdf().set(opt).from(element).save();
 
 
 
-window.addEventListener("load", function() {
-    var container = document.querySelector(".container");
-    var content = document.querySelector(".content");
-    var maxFontSize = 20;
-    var minFontSize = 10;
-  
-    function resize() {
-      var fontSize = minFontSize + (container.offsetWidth * container.offsetHeight) / (content.offsetWidth * content.offsetHeight) * (maxFontSize - minFontSize);
-      content.style.fontSize = fontSize + "px";
-    }
-  
-    window.addEventListener("resize", resize);
-    resize();
-  });
+
   

@@ -102,18 +102,27 @@ function storeFirstPageInformation(){
 let clinicianName = document.getElementById("clinName");
 
 let clinicLocation = document.getElementById("clinLoc");
+let clinicShippingLocation = document.getElementById("clinLocShip");
 let patientName = document.getElementById("ptName");
 let dateOfBirth = document.getElementById("ptDOB");
 let encounterNumber = document.getElementById("encN");
+let changedPCC = document.getElementById("newPCCButton");
+
 
 let klevel = document.querySelector('input[name=kLevel]:checked');
 let patientWeight = document.getElementById("ptWeight");
 let patientHeight = document.getElementById("ptHeight");
 
+
 localStorage.setItem('klevel',$('input[name="kLevel"]:checked').val());
 
 localStorage.setItem('clinicianName', clinicianName.value);
+localStorage.setItem('clinicShippingLocation', clinicShippingLocation.value);
+
 localStorage.setItem('clinicLocation', clinicLocation.value);
+
+
+
 localStorage.setItem('patientName', patientName.value);
 localStorage.setItem('dateOfBirth', dateOfBirth.value);
 localStorage.setItem('encounterNumber', encounterNumber.value);
@@ -153,26 +162,30 @@ if (localKlevel !== "undefined"){
             if (!!localClinLoc){
                 console.log(localClinLoc, "Local Storage Clinician Location");
 
-                if(!!localptName ){
-                    console.log(localptName, "Local Storage Patient Name");
+                if (!!localClinLoc){
+                    console.log(localClinLoc, "Local Storage Clinician Location");
 
-                    if(!!localdob ){
-                        console.log(localdob, "Local Storage Date of Birth");
+                    if(!!localptName ){
+                        console.log(localptName, "Local Storage Patient Name");
 
-                        if(!!localencNumber ){
-                            console.log(localencNumber, "Local Storage Encounter Number");
+                        if(!!localdob ){
+                            console.log(localdob, "Local Storage Date of Birth");
 
-                            if(!!localptweight ){
-                                console.log(localptweight, "Local Storage Patient Weight");
+                            if(!!localencNumber ){
+                                console.log(localencNumber, "Local Storage Encounter Number");
 
-                                if(!!localptheight ){
-                                    console.log(localptheight, "Local Storage Patient Height");
+                                if(!!localptweight ){
+                                    console.log(localptweight, "Local Storage Patient Weight");
 
-                                    let showSuccessBanner = document.getElementById("successBanner");
-                                    showSuccessBanner.classList.add("submittedData");
+                                    if(!!localptheight ){
+                                        console.log(localptheight, "Local Storage Patient Height");
 
-                                    let showFailureBanner = document.getElementById("failureBanner");
-                                    showFailureBanner.classList.remove("submittedDataFail");
+                                        let showSuccessBanner = document.getElementById("successBanner");
+                                        showSuccessBanner.classList.add("submittedData");
+
+                                        let showFailureBanner = document.getElementById("failureBanner");
+                                        showFailureBanner.classList.remove("submittedDataFail");
+                                    }
                                 }
                             }
                         }

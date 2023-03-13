@@ -30,6 +30,7 @@
 
 
 <body id="homepageBody">
+
     <!-- This modal may be used in later versions in order to differentiate versions of the webpage between hanger and non hanger individuals 
     <div id="empVer" class="modal fade" role="choice">
         <div class="row">
@@ -75,13 +76,10 @@
                         <label for="clinLoc">PCC Number</label>
                         <input type="text"  id="clinLoc" class="form-control" required>
                     </div>
-                    <fieldset class="form-g" id="step1three">
-                            <h3> Shipping PCC Different than location-</h3>
-                            <div class="col">
-                                <a role="button" class="btn-secondary btn btn info">Yes</a>
-                                <a role="button" class="btn-secondary btn btn info">No</a> <!--This button needs a value added that will cause a field to auto fill in the PDF with the same value entered in the #clinLoc field-->
-                            </div>
-                    </fieldset>
+                    <div class="form-g" id="step1three">
+                        <label for="clinLocShip">Shipping PCC Number</label>
+                        <input type="text"  id="clinLocShip" class="form-control" required>
+                    </div>
                 <!-- </div> -->
             </aside>
 
@@ -249,7 +247,7 @@
         
         <script  type="module" src="../js/jsRouterComponent.js"></script>
 
-        <script src="../js/index.js"></script>
+        <script src="../js/home.js"></script>
 
 </body>
 </html>
