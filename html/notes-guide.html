@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="../css/px-picker-main-page.css">
+    <link rel="stylesheet" href="../css/header.css">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/itemchoices.css">
+    <link rel="stylesheet" href="../css/horizontal_card.css">
+
+    <link rel="stylesheet" href="../css/navigator.css">
+    <link rel="stylesheet" href="../css/mainPage.css">
+    <style>
+
+    /* CSS for menu and display layout */
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .menu {
+        flex-basis: 30%;
+        margin-right: 10px;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin-bottom: 5px;
+    }
+
+    .menu li a {
+        display: block;
+        padding: 10px;
+        background-color: #f2f2f2;
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+    .menu li a:hover {
+        background-color: #ddd;
+    }
+
+    .menu li.active a {
+        background-color: #4CAF50;
+        color: #fff;
+    }
+
+    .display {
+        flex-basis: 68%;
+        background-color: #fff;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .menu {
+            flex-basis: 100%;
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+    <title>Notes Guide and Templates</title>
+</head>
+
+
+<header class="banner_display mainOne" id="mainHeading">
+    <h1 class="header_title"><img src="../images/prosthetic_logo.jpg" class="banner_image"> Notes Guide and Templates </h1>
+</header> 
+<nav class="mainTwo" id="mainNavigation"></nav>
+
+    <body>
+        <div class="container">
+            <div class="menu">
+                <ul>
+                    <li><a href="#" onclick="displayContent('item1'); return false;">Item 1</a></li>
+                    <li><a href="#" onclick="displayContent('item2'); return false;">Item 2</a></li>
+                    <li><a href="#" onclick="displayContent('item3'); return false;">Item 3</a></li>
+                </ul>
+            </div>
+            <div class="display">
+                <div id="item1">
+                    <h2>Item 1</h2>
+                    <p>This is the content for Item 1.</p>
+                </div>
+                <div id="item2">
+                    <h2>Item 2</h2>
+                    <p>This is the content for Item 2.</p>
+                </div>
+                <div id="item3">
+                    <h2>Item 3</h2>
+                    <p>This is the content for Item 3.</p>
+                </div>
+            </div>
+        </div>
+    
+
+</body>
+
+<footer class="site-footer mainFour">
+    <div class="container">
+        <div class="row">             
+            <div class="col-4 col-sm-2 offset-1">
+                <h5>Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="#">Sites</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-sm-5 text-center">
+                <h5>Social</h5>
+                <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+            </div>
+            <div class="col-sm-4 text-center">
+                <a role="button" class="btn btn-link" href="tel:+16187804206"><i class="fa fa-phone"></i> 1-618-780-4206</a><br />
+                <a role="button" class="btn btn-link" href="mailto:andmaurer13@gmail.com"><i class="fa fa-envelope-o"></i> andmaurer13@gmail.com</a>
+            </div>                
+       </div>
+    </div>
+<!-- This is the Modal for a different pcc number -->
+</footer>
+
+<script  type="module" src="../js/jsRouterComponent.js"></script>
+
+<script>
+    // JavaScript function to display content for selected item
+    function displayContent(id) {
+        // Get all menu items and remove active class
+        var menuItems = document.querySelectorAll('.menu li');
+        for (var i = 0; i < menuItems.length; i++) {
+            menuItems[i].classList.remove('active');
+        }
+
+        // Add active class to selected menu item
+        var selectedMenuItem = document.querySelector('a[href="#'+id+'"]').parentNode;
+        selectedMenuItem.classList.add('active');
+
+        // Show selected content and hide others
+        var displayItems = document.querySelectorAll('.display div');
+        for (var i = 0; i < displayItems.length; i++) {
+            if (displayItems[i].id == id) {
+                displayItems[i].style.display = 'block';
+            } else {
+                displayItems[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+</html>
+
+
+
+
