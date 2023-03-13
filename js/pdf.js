@@ -22,6 +22,8 @@ downPDFDocument.addEventListener("click", () => downloadPDF());
 let klevel = localStorage.getItem("klevel");
 let clinicianName = localStorage.getItem("clinicianName");
 let clinicLocation = localStorage.getItem("clinicLocation");
+let clinicShippingLocation = localStorage.getItem("clinicShippingLocation");
+
 let patientName = localStorage.getItem("patientName");
 let dateOfBirth = localStorage.getItem("dateOfBirth");
 let encounterNumber = localStorage.getItem("encounterNumber");
@@ -306,6 +308,7 @@ function transFemoralProsthesis(){
                     Clinician Name: ${clinicianName}<br />
                     Billed to PCC: <br />
                     PCC Number: ${clinicLocation} <br />
+                    Ship to: ${clinicShippingLocation}
                 </div>
                 
                 <div class="information2"> 
