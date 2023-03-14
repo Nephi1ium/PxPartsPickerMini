@@ -40,6 +40,30 @@
         margin-bottom: 5px;
     }
 
+    .menu li.firstChoice{
+        display: block;
+        padding: 10px;
+        background-color: #f2f2f2;
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .menu li.secondChoice {
+        display: block;
+        padding: 10px;
+        background-color: #514f4f;
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .menu li.thirdChoice {
+        display: block;
+        padding: 10px;
+        background-color: #262626;
+        color: rgb(242, 238, 238);
+        text-decoration: none;
+        border-radius: 5px;
+    }
     .menu li a {
         display: block;
         padding: 10px;
@@ -64,6 +88,10 @@
         padding: 10px;
         border: 1px solid #ddd;
         border-radius: 5px;
+    }
+
+    .noShow{
+        display: none;
     }
 
     @media screen and (max-width: 768px) {
@@ -91,22 +119,83 @@
         <div class="container">
             <div class="menu">
                 <ul>
-                    <li><a href="#" onclick="displayContent('item1'); return false;">Item 1</a></li>
-                    <li><a href="#" onclick="displayContent('item2'); return false;">Item 2</a></li>
-                    <li><a href="#" onclick="displayContent('item3'); return false;">Item 3</a></li>
+                    <li class="firstChoice"  ><a href="#"  onclick="displayContent('pxLE'); return false;">Prosthetics</a></li>
+                        <div id="pxLE" class="noShow">
+                            <li class="secondChoice" ><a href="#"  onclick="displayContent('pxLEChoices'); return false;">Lower Extremity</a></li>
+                            <li class="secondChoice" ><a href="#"  onclick="displayContent('pxUE'); return false;">Upper Extremity</a></li>
+                        </div>
+                        <div id="pxLEChoices" class="noShow">
+                            <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Below Knee</a></li>
+                            <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Above Knee</a></li>
+                            <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Knee Disarticulation</a></li>
+                        </div>
+                            <div id="pxUE" class="noShow">
+                                <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Partial Hand</a></li>
+                                <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Wrist Disarticulation</a></li>
+                                <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Trans Radial</a></li>
+                                <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Elbow Disarticulation</a></li>
+                                <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Trans Humeral</a></li>
+                                <li class="thirdChoice" ><a href="#"  onclick="displayContent('pxOne'); return false;">Shoulder Disarticulation</a></li>
+                            </div>
+
+
+
+
+
+
+
+
+
+                    <li  ><a href="#"  onclick="displayContent('pxTwo'); return false;">Orthotics</a></li>
+                    <li  ><a href="#"  onclick="displayContent('pxThree'); return false;">Spinal</a></li>
                 </ul>
             </div>
-            <div class="display">
-                <div id="item1">
-                    <h2>Item 1</h2>
+
+
+
+            <div id="pxOne" class="display, noShow">
+                <div id="item1" >
+                    <h2>A</h2>
                     <p>This is the content for Item 1.</p>
                 </div>
                 <div id="item2">
-                    <h2>Item 2</h2>
+                    <h2>B</h2>
                     <p>This is the content for Item 2.</p>
                 </div>
                 <div id="item3">
-                    <h2>Item 3</h2>
+                    <h2>C</h2>
+                    <p>This is the content for Item 3.</p>
+                </div>
+            </div>
+        
+
+            <div id="pxTwo" class="display, noShow">
+                <div id="item1" >
+                    <h2>A</h2>
+                    <p>This is the content for Item 1.</p>
+                </div>
+                <div id="item2">
+                    <h2>B</h2>
+                    <p>This is the content for Item 2.</p>
+                </div>
+                <div id="item3">
+                    <h2>C</h2>
+                    <p>This is the content for Item 3.</p>
+                </div>
+            </div>
+        
+
+            <div id="pxThree" class="display, noShow">
+                <div id="item1" >
+                    <h2>A</h2>
+                    <p>This is the content for Item 1.</p>
+                </div>
+                <div id="item2">
+                    <h2>B</h2>
+                    <p>This is the content for Item 2.</p>
+                </div>
+                <div id="item3">
+                    <h2>C</h2>
                     <p>This is the content for Item 3.</p>
                 </div>
             </div>
@@ -148,29 +237,16 @@
 <script>
     // JavaScript function to display content for selected item
     function displayContent(id) {
-        // Get all menu items and remove active class
-        var menuItems = document.querySelectorAll('.menu li');
-        for (var i = 0; i < menuItems.length; i++) {
-            menuItems[i].classList.remove('active');
-        }
-
-        // Add active class to selected menu item
-        var selectedMenuItem = document.querySelector('a[href="#'+id+'"]').parentNode;
-        selectedMenuItem.classList.add('active');
-
         // Show selected content and hide others
-        var displayItems = document.querySelectorAll('.display div');
-        for (var i = 0; i < displayItems.length; i++) {
-            if (displayItems[i].id == id) {
-                displayItems[i].style.display = 'block';
-            } else {
-                displayItems[i].style.display = 'none';
-            }
+        let displayItems = document.getElementById(id);
+
+
+            displayItems.classList.toggle("noShow") 
+
         }
-    }
+    
 </script>
 </html>
-
 
 
 
