@@ -13,10 +13,10 @@ const  k2FlexKeelhydraMulti = [
         "lcode2": "L5972",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "AV-FOOT",
-        "cost": "1353.19",
-        "reimbursement": "4046",
-        "percent": "33%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/avalon.jpg"
       },
@@ -28,10 +28,10 @@ const  k2FlexKeelhydraMulti = [
         "lcode2": "L5972",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "OK2-KIT",
-        "cost": "1113",
-        "reimbursement": "4046",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/odyssey_k2.jpg"
       },
@@ -43,10 +43,10 @@ const  k2FlexKeelhydraMulti = [
         "lcode2": "L5972",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "K2D-FOOT",
-        "cost": "1232.57",
-        "reimbursement": "4046",
-        "percent": "30%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/k2_sensation_ankle.jpg"
       },
@@ -58,10 +58,10 @@ const  k2FlexKeelhydraMulti = [
         "lcode2": "L5972",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VS4-KIT",
-        "cost": "1272",
-        "reimbursement": "4046",
-        "percent": "31%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/kintrol.jpg"
       },
@@ -78,10 +78,10 @@ const  k3FlexHydrauMulti = [
         "lcode2": "L5981",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "EC-ST-KIT",
-        "cost": "1883.36",
-        "reimbursement": "6657",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "1/1/2011",
         "image": "../images/echelon_basic.jpg"
       },
@@ -93,10 +93,10 @@ const  k3FlexHydrauMulti = [
         "lcode2": "L5981",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "ODK3-KIT",
-        "cost": "1589.99",
-        "reimbursement": "6657",
-        "percent": "24%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/odyssey_k3.jpg"
       },
@@ -108,10 +108,10 @@ const  k3FlexHydrauMulti = [
         "lcode2": "L5981",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "ROM-KIT",
-        "cost": "1861.36",
-        "reimbursement": "6657",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/kinterra.jpg"
       },
@@ -123,10 +123,10 @@ const  k3FlexHydrauMulti = [
         "lcode2": "L5981",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "ECER-FOOT",
-        "cost": "2169.72",
-        "reimbursement": "6657",
-        "percent": "33%",
+        
+        
+        
+        
         "pdac": "1/1/2011",
         "image": "../images/echelon_er.jpg"
       },
@@ -145,10 +145,10 @@ const K3FlexHydrauMultiVertShock = [
         "lcode2": "L5981",
         "lcode3": "L5988",
         "lcode4": "",
-        "hdcode": "ECVT-L-KIT",
-        "cost": "3216.57",
-        "reimbursement": "8673",
-        "percent": "37%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/echelon_vt.jpg"
       },
@@ -168,10 +168,10 @@ const  SACH = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SCH11x-FOOT",
-        "cost": "82.04",
-        "reimbursement": "203",
-        "percent": "40%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/seattle_sach_light.jpg"
       },
@@ -183,10 +183,10 @@ const  SACH = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SFP-FOOT",
-        "cost": "88.99",
-        "reimbursement": "203",
-        "percent": "44%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/ww_sach.jpg"
       },
@@ -207,10 +207,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SNF16x-FOOT",
-        "cost": "113.84",
-        "reimbursement": "379",
-        "percent": "30%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/seattle_sach_light.jpg"
       },
@@ -222,10 +222,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "BE-FOOT-KIT",
-        "cost": "100.17",
-        "reimbursement": "379",
-        "percent": "26%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/breeze.jpg"
       },
@@ -237,10 +237,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "STELLAR-KIT",
-        "cost": "117.62",
-        "reimbursement": "379",
-        "percent": "31%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/stellar.jpg"
       },
@@ -252,10 +252,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "TO-FOOT-KIT",
-        "cost": "137.27",
-        "reimbursement": "379",
-        "percent": "36%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/tempo.jpg"
       },
@@ -267,10 +267,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A200-FOOT-KIT",
-        "cost": "162.11",
-        "reimbursement": "379",
-        "percent": "43%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/gery.jpg"
       },
@@ -282,10 +282,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "K1A",
-        "cost": "167.48",
-        "reimbursement": "379",
-        "percent": "44%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/k1a.jpg"
       },
@@ -297,10 +297,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "K3U",
-        "cost": "167.48",
-        "reimbursement": "379",
-        "percent": "44%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/k1a.jpg"
       },
@@ -312,10 +312,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "K2P-FOOT",
-        "cost": "206.17",
-        "reimbursement": "379",
-        "percent": "54%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/k2sensation.jpg"
       },
@@ -327,10 +327,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VS5-FOOT",
-        "cost": "215.57",
-        "reimbursement": "379",
-        "percent": "57%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/restore.jpg"
       },
@@ -342,10 +342,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1D10",
-        "cost": "221.38",
-        "reimbursement": "379",
-        "percent": "58%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/1d10.jpg"
       },
@@ -357,10 +357,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "DWF",
-        "cost": "251.91",
-        "reimbursement": "379",
-        "percent": "67%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/durawalk.jpg",
         "link": "https://www.spsco.com/dynamic-foot-w-toes.html"
@@ -374,10 +374,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "134-KIT",
-        "cost": "307.67",
-        "reimbursement": "379",
-        "percent": "81%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/134.jpg",
         "link": "https://www.spsco.com/k2-foot.html"
@@ -390,10 +390,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C11",
-        "cost": "307.98",
-        "reimbursement": "379",
-        "percent": "81%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/1c11.jpg",
         "link":"https://www.spsco.com/terion-k2.html"
@@ -406,10 +406,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A101-FOOT",
-        "cost": "318.89",
-        "reimbursement": "379",
-        "percent": "84%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/1a101.jpg",
 "link":"https://www.spsco.com/dynastep.html"
@@ -422,10 +422,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1M10",
-        "cost": "340.58",
-        "reimbursement": "379",
-        "percent": "90%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/1m10.jpg",
 "link":"https://www.spsco.com/adjust-multiaxial-foot-w-footshell.html"
@@ -438,10 +438,10 @@ const  K2FlexHeel = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "BSP0-FOOT",
-        "cost": "356.96",
-        "reimbursement": "379",
-        "percent": "94%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/bsp0.jpg",
 "link":"https://www.spsco.com/balance-foot-s-coming-soon.html"
@@ -461,10 +461,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SKF20x-FOOT",
-        "cost": "291.92",
-        "reimbursement": "1011",
-        "percent": "29%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/kinetic.jpg",
 "link":"https://www.spsco.com/seattle-kinetic-foot-with-pylon.html"
@@ -477,10 +477,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "CSX-KIT",
-        "cost": "261.13",
-        "reimbursement": "1011",
-        "percent": "26%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/celsus.jpg",
 "link":"https://www.spsco.com/celsus-k1-k2-foot.html"
@@ -493,10 +493,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SKF10x-FOOT",
-        "cost": "291.92",
-        "reimbursement": "1011",
-        "percent": "29%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/seattle_kin_lightfoot.jpg",
 "link":"https://www.spsco.com/seattle-kinetic-light.html"
@@ -509,10 +509,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "NAV-FOOT",
-        "cost": "303.17",
-        "reimbursement": "1011",
-        "percent": "30%",
+        
+        
+        
+        
         "pdac": "4/8/2021",
         "image": "../images/navigator.jpg",
 "link":"https://www.spsco.com/navigator-foot-1.html"
@@ -525,10 +525,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SKF30x-FOOT",
-        "cost": "291.92",
-        "reimbursement": "1011",
-        "percent": "29%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/kinetic_edge.jpg",
 "link":"https://www.spsco.com/trulife-seattle-kinetic-edge-foot.html"
@@ -541,10 +541,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "5191-FOOT",
-        "cost": "240.7",
-        "reimbursement": "1011",
-        "percent": "24%",
+        
+        
+        
+        
         "pdac": "4/21/2021",
         "image": "../images/multiflex.jpg",
 "link":"https://www.spsco.com/multiflex-standard.html"
@@ -557,10 +557,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "AGM-FOOT",
-        "cost": "381.05",
-        "reimbursement": "1011",
-        "percent": "38%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/agm.jpg",
 "link":"https://www.spsco.com/dycor-aggressive-gait-management-foot.html"
@@ -573,10 +573,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "STM-FOOT",
-        "cost": "381.05",
-        "reimbursement": "1011",
-        "percent": "38%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/stm.jpg",
 "link":"https://www.spsco.com/dycor-soft-tissue-management-foot.html"
@@ -589,10 +589,10 @@ const  K2FlexKeelMultiAxialRot = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A30",
-        "cost": "408.99",
-        "reimbursement": "1011",
-        "percent": "40%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/1a30.jpg",
 "link":"https://www.spsco.com/greissinger-plus-foot.html"
@@ -613,10 +613,10 @@ const  K2FlexKeelAxialRotVert = [
         "lcode2": "L5984",
         "lcode3": "L5988",
         "lcode4": "",
-        "hdcode": "BST0-FOOT",
-        "cost": "1550.25",
-        "reimbursement": "2972",
-        "percent": "52%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/bst0.jpg",
 "link":"https://www.spsco.com/balance-foot-s-torsion-coming-soon.html"
@@ -634,10 +634,10 @@ const  Microprocessor = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "ELANIC-FOOT",
-        "cost": "7648.51",
-        "reimbursement": "17363",
-        "percent": "44%",
+        
+        
+        
+        
         "pdac": "9/18/2020",
         "image": "../images/elan_ic.jpg",
 "link":"https://www.spsco.com/elanic-foot.html"
@@ -650,10 +650,10 @@ const  Microprocessor = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "ELAN-FOOT",
-        "cost": "7298.1",
-        "reimbursement": "17363",
-        "percent": "42%",
+        
+        
+        
+        
         "pdac": "1/1/2015",
         "image": "../images/elan.jpg",
 "link":"https://www.spsco.com/elan-microprocessor-controlled-foot.html"
@@ -666,10 +666,10 @@ const  Microprocessor = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PSX0-FOOT",
-        "cost": "7758.83",
-        "reimbursement": "17363",
-        "percent": "45%",
+        
+        
+        
+        
         "pdac": "1/1/2010",
         "image": "../images/proprio.jpg",
 "link":"https://www.spsco.com/proprio-foot.html"
@@ -682,10 +682,10 @@ const  Microprocessor = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "F14-N2-KIT",
-        "cost": "8013.23",
-        "reimbursement": "17363",
-        "percent": "46%",
+        
+        
+        
+        
         "pdac": "11/19/2020",
         "image": "../images/kinnex_mpf.jpg",
         "link":"https://www.spsco.com/kinnex-2-0-1.html"
@@ -698,10 +698,10 @@ const  Microprocessor = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1B1",
-        "cost": "9010",
-        "reimbursement": "17363",
-        "percent": "52%",
+        
+        
+        
+        
         "pdac": "11/13/2020",
         "image": "../images/meridium.jpg",
 "link":"https://www.spsco.com/meridium.html"
@@ -722,10 +722,10 @@ const  SingAxis = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SAF-FOOT",
-        "cost": "140.09",
-        "reimbursement": "233",
-        "percent": "60%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/saf_foot.jpg",
 "link":"https://www.spsco.com/endoskeletal-single-axis-ankle-1.html"
@@ -738,10 +738,10 @@ const  SingAxis = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1H38",
-        "cost": "251.36",
-        "reimbursement": "233",
-        "percent": "108%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/1h38.jpg",
 "link":"https://www.spsco.com/single-axis-foot-only-men-10mm-toes.html"
@@ -762,10 +762,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SLF19x-FOOT",
-        "cost": "279.2",
-        "reimbursement": "559",
-        "percent": "50%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -778,10 +778,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "LCE-FOOT",
-        "cost": "152.64",
-        "reimbursement": "559",
-        "percent": "27%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/chopart_lisfranc_foot.jpg",
 "link":"https://www.spsco.com/lisfranc-chopart-energy-returning-foot.html"
@@ -794,10 +794,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "IMPM-MLH-FOOT",
-        "cost": "201.09",
-        "reimbursement": "559",
-        "percent": "36%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/impulse.jpg",
 "link":"https://www.spsco.com/impulse-men-s-foot-with-low-heel.html"
@@ -810,10 +810,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "JBPE-FOOT",
-        "cost": "266.48",
-        "reimbursement": "559",
-        "percent": "48%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/balance.jpg",
 "link":"https://www.spsco.com/balance-j.html"
@@ -826,10 +826,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SEF19x-FOOT",
-        "cost": "279.2",
-        "reimbursement": "559",
-        "percent": "50%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/seattle_energy.jpg",
 "link":"https://www.spsco.com/seattle-energy-foot.html"
@@ -842,10 +842,10 @@ const  EnergyStore = [
         "lcode2": "L5999",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SZM45x-FOOT",
-        "cost": "279.2",
-        "reimbursement": "559",
-        "percent": "50%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/zumo_foot.jpg",
 "link":"https://www.spsco.com/seattle-zumo-foot.html"
@@ -858,10 +858,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SEF1x",
-        "cost": "287.49",
-        "reimbursement": "559",
-        "percent": "51%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/childs_play.jpg",
 "link":"https://www.spsco.com/seattle-childs-play-energy-foot.html"
@@ -874,10 +874,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VS1-KIT",
-        "cost": "369.57",
-        "reimbursement": "559",
-        "percent": "66%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/senator.jpg",
 "link":"https://www.spsco.com/senator.html"
@@ -890,10 +890,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1E80-FOOTPLATE",
-        "cost": "527.88",
-        "reimbursement": "559",
-        "percent": "94%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/1E80_footplate.jpg",
 "link":"https://www.spsco.com/chopart-1-01.html"
@@ -906,10 +906,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RUSH CHOPART",
-        "cost": "580.83",
-        "reimbursement": "559",
-        "percent": "104%",
+        
+        
+        
+        
         "pdac": "1/1/2017",
         "image": "../images/rush_chopart.jpg",
 "link":"https://www.spsco.com/rush-chopart-k3-k4-foot.html"
@@ -922,10 +922,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "CHP-KIT",
-        "cost": "598.47",
-        "reimbursement": "559",
-        "percent": "107%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/chp00.jpg",
         "link":"https://www.spsco.com/chopart-foot-kit.html"
@@ -938,10 +938,10 @@ const  EnergyStore = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "MHD-300-KIT",
-        "cost": "630.7",
-        "reimbursement": "559",
-        "percent": "113%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/magnum_heavy_duty.jpg",
         "link":"https://www.spsco.com/magnum-heavy-duty-foot-1-01.html"
@@ -961,10 +961,10 @@ const  MultiAxialDynamResp = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "TRIB-KIT",
-        "cost": "317.99",
-        "reimbursement": "2277",
-        "percent": "14%",
+        
+        
+        
+        
         "pdac": "3/16/2021",
         "image": "../images/",
 "link":""
@@ -977,10 +977,10 @@ const  MultiAxialDynamResp = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FBP-FOOT",
-        "cost": "247.4",
-        "reimbursement": "2277",
-        "percent": "11%",
+        
+        
+        
+        
         "pdac": "4/19/2013",
         "image": "../images/",
 "link":""
@@ -993,10 +993,10 @@ const  MultiAxialDynamResp = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "TP-KIT",
-        "cost": "409.96",
-        "reimbursement": "2277",
-        "percent": "18%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1009,10 +1009,10 @@ const  MultiAxialDynamResp = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1D35",
-        "cost": "553.81",
-        "reimbursement": "2277",
-        "percent": "24%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1025,10 +1025,10 @@ const  MultiAxialDynamResp = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "DR",
-        "cost": "572.4",
-        "reimbursement": "2277",
-        "percent": "25%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1041,10 +1041,10 @@ const  MultiAxialDynamResp = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "TS-KIT",
-        "cost": "757.21",
-        "reimbursement": "2277",
-        "percent": "33%",
+        
+        
+        
+        
         "pdac": "3/24/2021",
         "image": "../images/",
 "link":""
@@ -1057,10 +1057,10 @@ const  MultiAxialDynamResp = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "V-KIT",
-        "cost": "860.56",
-        "reimbursement": "2277",
-        "percent": "38%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1081,10 +1081,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "JAV-KIT",
-        "cost": "972.03",
-        "reimbursement": "3700",
-        "percent": "26%",
+        
+        
+        
+        
         "pdac": "9/10/2020",
         "image": "../images/JavelinFoot.jpg"
       },
@@ -1096,10 +1096,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "131-KIT",
-        "cost": "1095.33",
-        "reimbursement": "3700",
-        "percent": "30%",
+        
+        
+        
+        
         "pdac": "11/19/2020",
         "image": "../images/Aeris_Foot.jpg"
       },
@@ -1111,10 +1111,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "CHX0-KIT",
-        "cost": "804.54",
-        "reimbursement": "3700",
-        "percent": "22%",
+        
+        
+        
+        
         "pdac": "10/17/2020",
         "image": "../images/cheetah_foot_adult.jpg"
       },
@@ -1126,10 +1126,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RS4-FOOT",
-        "cost": "968.47",
-        "reimbursement": "3700",
-        "percent": "26%",
+        
+        
+        
+        
         "pdac": "12/24/2020",
         "image": "../images/",
 "link":""
@@ -1142,10 +1142,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VFMOD-KIT",
-        "cost": "1331.65",
-        "reimbursement": "3700",
-        "percent": "36%",
+        
+        
+        
+        
         "pdac": "10/17/2020",
         "image": "../images/vari_flex_modular_image.jpg"
       },
@@ -1157,10 +1157,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "178-KIT",
-        "cost": "1588.42",
-        "reimbursement": "3700",
-        "percent": "43%",
+        
+        
+        
+        
         "pdac": "11/13/2020",
         "image": "../images/",
 "link":""
@@ -1173,10 +1173,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "EB-ST-KIT",
-        "cost": "1650.55",
-        "reimbursement": "3700",
-        "percent": "45%",
+        
+        
+        
+        
         "pdac": "9/9/2020",
         "image": "../images/",
 "link":""
@@ -1189,10 +1189,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "137-PM-KIT",
-        "cost": "1811.25",
-        "reimbursement": "3700",
-        "percent": "49%",
+        
+        
+        
+        
         "pdac": "11/19/2020",
         "image": "../images/AllProFoot.jpg"
       },
@@ -1204,10 +1204,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FSX009-FOOT",
-        "cost": "1895.28",
-        "reimbursement": "3700",
-        "percent": "51%",
+        
+        
+        
+        
         "pdac": "10/17/2020",
         "image": "../images/cheetah_foot_adult.jpg"
       },
@@ -1219,10 +1219,10 @@ const  FlexFoot = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1E61 or 1E66 - Freeform",
-        "cost": "0",
-        "reimbursement": "3700",
-        "percent": "0%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1242,10 +1242,10 @@ const  FlexFootMultiAxialAnkle = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "F10-KIT",
-        "cost": "849.75",
-        "reimbursement": "4333",
-        "percent": "20%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1258,10 +1258,10 @@ const  FlexFootMultiAxialAnkle = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SZN20x-FOOT",
-        "cost": "571.76",
-        "reimbursement": "4333",
-        "percent": "13%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/Zenith.jpg"
       },
@@ -1273,10 +1273,10 @@ const  FlexFootMultiAxialAnkle = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "120-XD-KIT",
-        "cost": "980.32",
-        "reimbursement": "4333",
-        "percent": "23%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1289,10 +1289,10 @@ const  FlexFootMultiAxialAnkle = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1E58",
-        "cost": "1162.26",
-        "reimbursement": "4333",
-        "percent": "27%",
+        
+        
+        
+        
         "pdac": "11/19/2020",
         "image": "../images/",
 "link":""
@@ -1313,10 +1313,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FS3-KIT",
-        "cost": "662.5",
-        "reimbursement": "2989",
-        "percent": "22%",
+        
+        
+        
+        
         "pdac": "3/3/2012",
         "image": "../images/Highlander.jpg"
       },
@@ -1328,10 +1328,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "123-KIT",
-        "cost": "557.38",
-        "reimbursement": "2989",
-        "percent": "19%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/AerisPerformance.jpg"
       },
@@ -1343,10 +1343,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VJB0-KIT",
-        "cost": "599.11",
-        "reimbursement": "2989",
-        "percent": "20%",
+        
+        
+        
+        
         "pdac": "10/20/2020",
         "image": "../images/vari_flex_junior_image.jpg"
       },
@@ -1358,10 +1358,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "DEF-KIT",
-        "cost": "661.6",
-        "reimbursement": "2989",
-        "percent": "22%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1374,10 +1374,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C30-KIT",
-        "cost": "689.91",
-        "reimbursement": "2989",
-        "percent": "23%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1390,10 +1390,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1116-FOOT",
-        "cost": "696.03",
-        "reimbursement": "2989",
-        "percent": "23%",
+        
+        
+        
+        
         "pdac": "11/19/2020",
         "image": "../images/EnduranceK1K2.jpg"
       },
@@ -1405,10 +1405,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PAC-KIT",
-        "cost": "702.33",
-        "reimbursement": "2989",
-        "percent": "23%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1421,10 +1421,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PAC-KIT",
-        "cost": "702.33",
-        "reimbursement": "2989",
-        "percent": "23%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1437,10 +1437,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "135-KIT",
-        "cost": "709.49",
-        "reimbursement": "2989",
-        "percent": "24%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1453,10 +1453,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "STF19x-FOOT",
-        "cost": "762.56",
-        "reimbursement": "2989",
-        "percent": "26%",
+        
+        
+        
+        
         "pdac": "4/1/2021",
         "image": "../images/",
 "link":""
@@ -1469,10 +1469,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RUSH HIPRO",
-        "cost": "795",
-        "reimbursement": "2989",
-        "percent": "27%",
+        
+        
+        
+        
         "pdac": "1/1/2017",
         "image": "../images/RushHiPro.jpg"
       },
@@ -1484,10 +1484,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "HZ-KIT",
-        "cost": "516.06",
-        "reimbursement": "2989",
-        "percent": "17%",
+        
+        
+        
+        
         "pdac": "3/16/2021",
         "image": "../images/",
 "link":""
@@ -1500,10 +1500,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FA-FOOT",
-        "cost": "547.60",
-        "reimbursement": "2989",
-        "percent": "18%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1516,10 +1516,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SZN10X-FOOT",
-        "cost": "571.76",
-        "reimbursement": "2989",
-        "percent": "19%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1532,10 +1532,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1115-FOOT",
-        "cost": "614.14",
-        "reimbursement": "2989",
-        "percent": "21%",
+        
+        
+        
+        
         "pdac": "11/19/2020",
         "image": "../images/EnduranceLowProfile.jpg"
       },
@@ -1547,10 +1547,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VS2-KIT",
-        "cost": "621.85",
-        "reimbursement": "2989",
-        "percent": "21%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1563,10 +1563,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "EL-ST-KIT",
-        "cost": "662.5",
-        "reimbursement": "2989",
-        "percent": "22%",
+        
+        
+        
+        
         "pdac": "9/9/2020",
         "image": "../images/Elite2.jpg"
       },
@@ -1578,10 +1578,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "ESP-ST-FOOT-KIT",
-        "cost": "669.76",
-        "reimbursement": "2989",
-        "percent": "22%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1594,10 +1594,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "TREKK LP",
-        "cost": "756.84",
-        "reimbursement": "2989",
-        "percent": "25%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1610,10 +1610,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SLS49-FOOT",
-        "cost": "762.56",
-        "reimbursement": "2989",
-        "percent": "26%",
+        
+        
+        
+        
         "pdac": "7/1/2021",
         "image": "../images/",
 "link":""
@@ -1626,10 +1626,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1E56-KIT",
-        "cost": "788.19",
-        "reimbursement": "2989",
-        "percent": "26%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1642,10 +1642,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C63-KIT",
-        "cost": "798.36",
-        "reimbursement": "2989",
-        "percent": "27%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/TritonLow.jpg"
       },
@@ -1657,10 +1657,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FS1-KIT",
-        "cost": "802.05",
-        "reimbursement": "2989",
-        "percent": "27%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1673,10 +1673,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "LP2-KIT",
-        "cost": "850.41",
-        "reimbursement": "2989",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1689,10 +1689,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "F22-KIT",
-        "cost": "850.81",
-        "reimbursement": "2989",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1705,10 +1705,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "122-KIT",
-        "cost": "869.02",
-        "reimbursement": "2989",
-        "percent": "29%",
+        
+        
+        
+        
         "pdac": "11/13/2020",
         "image": "../images/AerisPerformance.jpg"
       },
@@ -1720,10 +1720,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RUSH ROVER",
-        "cost": "872.96",
-        "reimbursement": "2989",
-        "percent": "29%",
+        
+        
+        
+        
         "pdac": "1/1/2017",
         "image": "../images/rush_rover_main.jpg"
       },
@@ -1735,10 +1735,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RUSH KID",
-        "cost": "872.96",
-        "reimbursement": "2989",
-        "percent": "29%",
+        
+        
+        
+        
         "pdac": "1/1/2017",
         "image": "../images/",
 "link":""
@@ -1751,10 +1751,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "K001-FOOT",
-        "cost": "886.69",
-        "reimbursement": "2989",
-        "percent": "30%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1767,10 +1767,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "100-10-KIT",
-        "cost": "891.28",
-        "reimbursement": "2989",
-        "percent": "30%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1783,10 +1783,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SO-KIT",
-        "cost": "932.78",
-        "reimbursement": "2989",
-        "percent": "31%",
+        
+        
+        
+        
         "pdac": "10/17/2020",
         "image": "../images/",
 "link":""
@@ -1799,10 +1799,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C60-KIT",
-        "cost": "956.3",
-        "reimbursement": "2989",
-        "percent": "32%",
+        
+        
+        
+        
         "pdac": "11/13/2020",
         "image": "../images/",
 "link":""
@@ -1815,10 +1815,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VF-KIT",
-        "cost": "999.15",
-        "reimbursement": "2989",
-        "percent": "33%",
+        
+        
+        
+        
         "pdac": "10/20/2020",
         "image": "../images/vari_flex_modular_image.jpg"
       },
@@ -1830,10 +1830,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1E57-KIT",
-        "cost": "1034.76",
-        "reimbursement": "2989",
-        "percent": "35%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1846,10 +1846,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PXC0-FOOT",
-        "cost": "1351.18",
-        "reimbursement": "2989",
-        "percent": "45%",
+        
+        
+        
+        
         "pdac": "10/20/2020",
         "image": "../images/",
 "link":""
@@ -1862,10 +1862,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "137-KIT",
-        "cost": "1638.37",
-        "reimbursement": "2989",
-        "percent": "55%",
+        
+        
+        
+        
         "pdac": "10/20/2020",
         "image": "../images/AllProFoot.jpg"
       },
@@ -1877,10 +1877,10 @@ const  FlexWalk = [
         "lcode2": "L5999",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SWIM-KIT",
-        "cost": "1943.67",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1893,10 +1893,10 @@ const  FlexWalk = [
         "lcode2": "L5999",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FS3-KIT",
-        "cost": "662.5",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/Highlander.jpg"
       },
@@ -1908,10 +1908,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FS5-KIT",
-        "cost": "937.52",
-        "reimbursement": "2989",
-        "percent": "31%",
+        
+        
+        
+        
         "pdac": "1/1/2012",
         "image": "../images/",
 "link":""
@@ -1924,10 +1924,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C50-KIT",
-        "cost": "966.68",
-        "reimbursement": "2989",
-        "percent": "32%",
+        
+        
+        
+        
         "pdac": "11/13/2020",
         "image": "../images/",
 "link":""
@@ -1940,10 +1940,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PLP0-FOOT",
-        "cost": "983.15",
-        "reimbursement": "2989",
-        "percent": "33%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -1956,10 +1956,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C53-FOOT",
-        "cost": "1031.13",
-        "reimbursement": "2989",
-        "percent": "34%",
+        
+        
+        
+        
         "pdac": "11/13/2020",
         "image": "../images/",
 "link":""
@@ -1972,10 +1972,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C64-KIT",
-        "cost": "1095.51",
-        "reimbursement": "2989",
-        "percent": "37%",
+        
+        
+        
+        
         "pdac": "11/13/2020",
         "image": "../images/",
 "link":""
@@ -1988,10 +1988,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A600-FOOT",
-        "cost": "1128.38",
-        "reimbursement": "2989",
-        "percent": "38%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2004,10 +2004,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C40=K",
-        "cost": "1136.73",
-        "reimbursement": "2989",
-        "percent": "38%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2020,10 +2020,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FSYMES-KIT",
-        "cost": "1167.69",
-        "reimbursement": "2989",
-        "percent": "39%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2036,10 +2036,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FSX007-FOOT",
-        "cost": "1518.13",
-        "reimbursement": "2989",
-        "percent": "51%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2052,10 +2052,10 @@ const  FlexWalk = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1E95",
-        "cost": "1691.2",
-        "reimbursement": "2989",
-        "percent": "57%",
+        
+        
+        
+        
         "pdac": "11/18/2020",
         "image": "../images/",
 "link":""
@@ -2076,10 +2076,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "EP-ST-KIT",
-        "cost": "788.62",
-        "reimbursement": "3622",
-        "percent": "22%",
+        
+        
+        
+        
         "pdac": "4/8/2021",
         "image": "../images/",
 "link":""
@@ -2092,10 +2092,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RUSH RAMPAGE LP",
-        "cost": "795",
-        "reimbursement": "3622",
-        "percent": "22%",
+        
+        
+        
+        
         "pdac": "1/1/2017",
         "image": "../images/",
 "link":""
@@ -2108,10 +2108,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VL-KIT",
-        "cost": "757.21",
-        "reimbursement": "3622",
-        "percent": "21%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2124,10 +2124,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C58-FOOT-KIT",
-        "cost": "971.13",
-        "reimbursement": "3622",
-        "percent": "27%",
+        
+        
+        
+        
         "pdac": "8/25/2021",
         "image": "../images/",
 "link":""
@@ -2140,10 +2140,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "TALUX-KIT",
-        "cost": "1002.02",
-        "reimbursement": "3622",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "10/20/2020",
         "image": "../images/Talux.jpg"
       },
@@ -2155,10 +2155,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C68-KIT",
-        "cost": "1017.6",
-        "reimbursement": "3622",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "8/25/2021",
         "image": "../images/",
 "link":""
@@ -2171,10 +2171,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "M002-FOOT-KIT",
-        "cost": "1038.8",
-        "reimbursement": "3622",
-        "percent": "29%",
+        
+        
+        
+        
         "pdac": "12/3/2020",
         "image": "../images/",
 "link":""
@@ -2187,10 +2187,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "BXT-FOOT",
-        "cost": "1402.17",
-        "reimbursement": "3622",
-        "percent": "39%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/BladeXT.jpg"
       },
@@ -2202,10 +2202,10 @@ const  FlexWalkMultiAxial = [
         "lcode2": "L5986",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PENDING",
-        "cost": "Pending",
-        "reimbursement": "3622",
-        "percent": "#VALUE!",
+        
+        
+        
+        
         "pdac": "5/21/2021",
         "image": "../images/",
 "link":""
@@ -2224,10 +2224,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "EVT-ST-KIT",
-        "cost": "1666.71",
-        "reimbursement": "7829",
-        "percent": "21%",
+        
+        
+        
+        
         "pdac": "9/9/2020",
         "image": "../images/EliteBlade.jpg"
       },
@@ -2239,10 +2239,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RUSH ROGUE",
-        "cost": "1378",
-        "reimbursement": "7829",
-        "percent": "18%",
+        
+        
+        
+        
         "pdac": "1/1/2017",
         "image": "../images/",
 "link":""
@@ -2255,10 +2255,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "ROG2",
-        "cost": "1378",
-        "reimbursement": "7829",
-        "percent": "18%",
+        
+        
+        
+        
         "pdac": "5/14/2021",
         "image": "../images/",
 "link":""
@@ -2271,10 +2271,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "105-10-KIT",
-        "cost": "1573.92",
-        "reimbursement": "7829",
-        "percent": "20%",
+        
+        
+        
+        
         "pdac": "11/13/2020",
         "image": "../images/",
 "link":""
@@ -2287,10 +2287,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "F20-S3-KIT",
-        "cost": "1671.25",
-        "reimbursement": "7829",
-        "percent": "21%",
+        
+        
+        
+        
         "pdac": "9/1/2021",
         "image": "../images/",
 "link":""
@@ -2303,10 +2303,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RFR-KIT",
-        "cost": "1855.21",
-        "reimbursement": "7829",
-        "percent": "24%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2319,10 +2319,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "EBVT-ST-KIT",
-        "cost": "1921.78",
-        "reimbursement": "7829",
-        "percent": "25%",
+        
+        
+        
+        
         "pdac": "9/9/2020",
         "image": "../images/EliteBlade.jpg"
       },
@@ -2334,10 +2334,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PXT0-FOOT",
-        "cost": "2586.4",
-        "reimbursement": "7829",
-        "percent": "33%",
+        
+        
+        
+        
         "pdac": "10/17/2020",
         "image": "../images/",
 "link":""
@@ -2350,10 +2350,10 @@ const  VertShockAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PLT0-FOOT",
-        "cost": "2153.92",
-        "reimbursement": "7829",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2374,10 +2374,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "F15-KIT",
-        "cost": "1027.83",
-        "reimbursement": "7892",
-        "percent": "13%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2390,10 +2390,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "K2CS",
-        "cost": "550.35",
-        "reimbursement": "7892",
-        "percent": "7%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2406,10 +2406,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "TREKK LP",
-        "cost": "756.84",
-        "reimbursement": "7892",
-        "percent": "10%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2422,10 +2422,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "MX1",
-        "cost": "923.05",
-        "reimbursement": "7892",
-        "percent": "12%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2438,10 +2438,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "SO-KIT",
-        "cost": "932.78",
-        "reimbursement": "7892",
-        "percent": "12%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2454,10 +2454,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RENAT-KIT",
-        "cost": "937.52",
-        "reimbursement": "7892",
-        "percent": "12%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2470,10 +2470,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "F11-KIT",
-        "cost": "937.52",
-        "reimbursement": "7892",
-        "percent": "12%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2486,10 +2486,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "F21-KIT",
-        "cost": "937.52",
-        "reimbursement": "7892",
-        "percent": "12%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2502,10 +2502,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "MX3",
-        "cost": "996.4",
-        "reimbursement": "7892",
-        "percent": "13%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2518,10 +2518,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C61-KIT",
-        "cost": "1270.06",
-        "reimbursement": "7892",
-        "percent": "16%",
+        
+        
+        
+        
         "pdac": "11/28/2012",
         "image": "../images/",
 "link":""
@@ -2534,10 +2534,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PFDRPL-FOOT",
-        "cost": "1369.52",
-        "reimbursement": "7892",
-        "percent": "17%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2550,10 +2550,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "R14-01-KIT",
-        "cost": "968.47",
-        "reimbursement": "7892",
-        "percent": "12%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2566,10 +2566,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "R15-KIT",
-        "cost": "968.47",
-        "reimbursement": "7892",
-        "percent": "12%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2582,10 +2582,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C51-FOOT-KIT",
-        "cost": "1537",
-        "reimbursement": "7892",
-        "percent": "19%",
+        
+        
+        
+        
         "pdac": "11/21/2020",
         "image": "../images/",
 "link":""
@@ -2598,10 +2598,10 @@ const  VertShockMultiAxialRot = [
         "lcode2": "L5987",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RUSH RAMPAGE",
-        "cost": "1676.34",
-        "reimbursement": "7892",
-        "percent": "21%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2621,10 +2621,10 @@ const  VertShock = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RS1-KIT",
-        "cost": "937.52",
-        "reimbursement": "7260.04",
-        "percent": "13%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2637,10 +2637,10 @@ const  VertShock = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RS6-KIT",
-        "cost": "937.52",
-        "reimbursement": "7260.04",
-        "percent": "13%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2653,10 +2653,10 @@ const  VertShock = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "M005-FOOT-KIT",
-        "cost": "1353.62",
-        "reimbursement": "7260.04",
-        "percent": "19%",
+        
+        
+        
+        
         "pdac": "3/24/2021",
         "image": "../images/",
 "link":""
@@ -2675,10 +2675,10 @@ const  FlexWalkMultiAxialAnkleVac = [
         "lcode2": "L5986",
         "lcode3": "L5781",
         "lcode4": "",
-        "hdcode": "1C62-KIT",
-        "cost": " 3,000.69 ",
-        "reimbursement": "11930",
-        "percent": "25%",
+        
+        
+        
+        
         "pdac": "11/1/2020",
         "image": "../images/",
 "link":""
@@ -2691,10 +2691,10 @@ const  FlexWalkMultiAxialAnkleVac = [
         "lcode2": "L5986",
         "lcode3": "L5781",
         "lcode4": "",
-        "hdcode": "1C52-KIT",
-        "cost": " 3,387.08 ",
-        "reimbursement": "11930",
-        "percent": "28%",
+        
+        
+        
+        
         "pdac": "11/21/2020",
         "image": "../images/",
 "link":""
@@ -2713,10 +2713,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "STOMPER-FOOT",
-        "cost": "67.58",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2729,10 +2729,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FSX008-FOOT",
-        "cost": "1290.83",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2745,10 +2745,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "175-130-FOOT",
-        "cost": "1450.88",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "11/18/2020",
         "image": "../images/",
 "link":""
@@ -2761,10 +2761,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FSX00-FOOT",
-        "cost": "1486.33",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/cheetah_foot_adult.jpg"
       },
@@ -2776,10 +2776,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1E90",
-        "cost": "1574.69",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2792,10 +2792,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VF85-FOOT",
-        "cost": "3386.7",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2808,10 +2808,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "VF85-FOOT",
-        "cost": "3386.7",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2824,10 +2824,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PFP0-FOOT",
-        "cost": "6738.42",
-        "reimbursement": "#N/A",
-        "percent": "#N/A",
+        
+        
+        
+        
         "pdac": "9/1/2018",
         "image": "../images/",
 "link":""
@@ -2840,10 +2840,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PENDING",
-        "cost": "Pending",
-        "reimbursement": "#N/A",
-        "percent": "#VALUE!",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2856,10 +2856,10 @@ const  L5999 = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PENDING",
-        "cost": "Pending",
-        "reimbursement": "#N/A",
-        "percent": "#VALUE!",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2879,10 +2879,10 @@ const  MiscFeet = [
         "lcode2": "L5920",
         "lcode3": "L5972",
         "lcode4": "L5986",
-        "hdcode": "SK-FOOT",
-        "cost": "444.46",
-        "reimbursement": "3962",
-        "percent": "11%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2895,10 +2895,10 @@ const  MiscFeet = [
         "lcode2": "L5985",
         "lcode3": "L5986",
         "lcode4": "L5990",
-        "hdcode": "ACC-FOOT",
-        "cost": "722.76",
-        "reimbursement": "5738",
-        "percent": "13%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2911,10 +2911,10 @@ const  MiscFeet = [
         "lcode2": "L5986",
         "lcode3": "L5990",
         "lcode4": "",
-        "hdcode": "ACC-FOOT",
-        "cost": "722.76",
-        "reimbursement": "5453",
-        "percent": "13%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2927,10 +2927,10 @@ const  MiscFeet = [
         "lcode2": "L5972",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "CMP27/A",
-        "cost": "272.69",
-        "reimbursement": "908",
-        "percent": "30%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2943,10 +2943,10 @@ const  MiscFeet = [
         "lcode2": "L5968",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "EVAC-FOOT",
-        "cost": "3290.96",
-        "reimbursement": "10695",
-        "percent": "31%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2959,10 +2959,10 @@ const  MiscFeet = [
         "lcode2": "L5990",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "RUN-FOOT-KIT",
-        "cost": "1498.08",
-        "reimbursement": "4820",
-        "percent": "31%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2975,10 +2975,10 @@ const  MiscFeet = [
         "lcode2": "L5986",
         "lcode3": "L5990",
         "lcode4": "",
-        "hdcode": "PLA0-FOOT",
-        "cost": "1750.06",
-        "reimbursement": "5453",
-        "percent": "32%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -2991,10 +2991,10 @@ const  MiscFeet = [
         "lcode2": "L5981",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1C20",
-        "cost": "1465.29",
-        "reimbursement": "3351",
-        "percent": "44%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -3007,10 +3007,10 @@ const  MiscFeet = [
         "lcode2": "L5984",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "HS-FOOT",
-        "cost": "370.15",
-        "reimbursement": "947",
-        "percent": "39%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -3023,10 +3023,10 @@ const  MiscFeet = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A-FOOT",
-        "cost": "254.83",
-        "reimbursement": "468",
-        "percent": "54%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -3039,10 +3039,10 @@ const  MiscFeet = [
         "lcode2": "L5999",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A29",
-        "cost": "260.44",
-        "reimbursement": "468",
-        "percent": "56%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -3055,10 +3055,10 @@ const  MiscFeet = [
         "lcode2": "L5999",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A29",
-        "cost": "260.44",
-        "reimbursement": "379",
-        "percent": "69%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -3071,10 +3071,10 @@ const  MiscFeet = [
         "lcode2": "L5999",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A29",
-        "cost": "260.44",
-        "reimbursement": "291",
-        "percent": "89%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -3087,10 +3087,10 @@ const  MiscFeet = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "FDS",
-        "cost": "519.93",
-        "reimbursement": "468",
-        "percent": "111%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -3103,10 +3103,10 @@ const  MiscFeet = [
         "lcode2": "",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "EVAQ8 - Must select which model",
-        "cost": "0",
-        "reimbursement": "4038",
-        "percent": "0%",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
@@ -3119,10 +3119,10 @@ const  MiscFeet = [
         "lcode2": "L5984",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "PENDING",
-        "cost": "Pending",
-        "reimbursement": "3558",
-        "percent": "#VALUE!",
+        
+        
+        
+        
         "pdac": "5/21/2021",
         "image": "../images/",
 "link":""
@@ -3135,10 +3135,10 @@ const  MiscFeet = [
         "lcode2": "L5969",
         "lcode3": "",
         "lcode4": "",
-        "hdcode": "1A1-1",
-        "cost": "27000",
-        "reimbursement": "N/A**",
-        "percent": "#VALUE!",
+        
+        
+        
+        
         "pdac": "NO pdac APPROVAL",
         "image": "../images/",
 "link":""
