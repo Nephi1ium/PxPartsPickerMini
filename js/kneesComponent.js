@@ -60,52 +60,44 @@ function kneeCard(array){
 
     data.forEach(component => {    
         kneesCard.innerHTML = kneesCard.innerHTML +
-         `<div class="card card-margin" id="${component.valAssign}">
+        `<div class="flip-card card card-margin" id="${component.valAssign}">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <h4 id=""> ${component.name} </h4>
+                    <a class="kneeClick btn btn-primary" onclick="kneeFavorites(${component.valAssign})" > Add To Favorites </a>
 
-            <div class="card-header">
-                <h4 id=""> ${component.name} </h4>
-                <a class="kneeClick btn btn-primary" onclick="kneeFavorites(${component.valAssign})" > Add To Favorites </a>
-                <div class="card-body">
-                <img class="card-image" src="${component.image}"></img>
-                <h5> Product Description </h5>
-                <div id="${component.manufacturer}"> Manufacturer: ${component.manufacturer}</div>
-                <br>
-                <h5><u> L-Codes </u></h5>
-                <div class="lcodes">
-                <div id="${component.lcode1}">${component.lcode1}</div>
-                <div id="${component.lcode2}">${component.lcode2}</div>
-                <div id="${component.lcode3}">${component.lcode3}</div>
-                <div id="${component.lcode4}">${component.lcode4}</div>
-                <div id="${component.lcode5}">${component.lcode5}</div>
-                <div id="${component.lcode6}">${component.lcode6}</div>
+                    <img class="card-image" src="${component.image}"></img>
+            
                 </div>
 
-                <div id="">HD Code: ${component.hdcode}</div>
+                <div class="flip-card-back">
+                    <h5> Product Description </h5>
+                    <div id="${component.manufacturer}"> Manufacturer: ${component.manufacturer}</div>
+                    <br>
+                <h5><u> L-Codes </u></h5>
+                    <div class="lcodes">
+                        <div id="${component.lcode1}">${component.lcode1}</div>
+                        <div id="${component.lcode2}">${component.lcode2}</div>
+                        <div id="${component.lcode3}">${component.lcode3}</div>
+                        <div id="${component.lcode4}">${component.lcode4}</div>
+                        <div id="${component.lcode5}">${component.lcode5}</div>
+                        <div id="${component.lcode6}">${component.lcode6}</div>
+                    </div>
 
-                <div id="${component.cost}">Price: $${component.cost}</div>
-                <div id="${component.reimbursement}">Typical Reimbursement: $${component.reimbursement}</div>
-                <div id="${component.percent}">${component.percent}</div>
-                <div id="${component.pdac}${component.hdcode}">PPDAC Approval: ${component.pdac}</div>
+                    
+                    <div id="${component.reimbursement}">Typical Reimbursement: $${component.reimbursement}</div>
+                    <div id="${component.pdac}${component.valAssign}">PPDAC Approval: ${component.pdac}</div>
 
 
-                <a class="btn btn-primary" href="${component.link}" target="_blank">${component.linkname}</a>
-                <input type="button" class="additionSelectButton"></input>
-
+                    <a class="btn btn-primary" href="${component.link}" target="_blank">${component.linkname}</a>
                 </div>
             </div>
-        </div>`;
-        console.log("Created", component.card, "Cards");
-        
-        });
-// To save the array item to local storage for use in a favorites section.
-        // array.forEach(component => {
-        //     localStorage.setItem(`${component.hdcode}`, JSON.stringify(component));
-        //     console.log(component);
-        //     let data = JSON.parse(localStorage.getItem(`${component.hdcode}`)); 
-        //     console.log(data, "item data");
+        </div>
+    </div>`;
+    console.log("Created", component.card, "Cards");
+    
+    });
 
-
-        // });
 
         console.log("Card Creation Complete");
     };
