@@ -4,7 +4,7 @@
             `<nav class="allNav">
                 <nav class="fullSizeNav">
                     <a href="homePage.html" class="nav-item" >Home</a>
-                    <a href="px-picker-kitselection.html" class="nav-item" id="">Kit Selection</a>
+                    <a href="px-picker-kitselection.html" class="nav-item" id="">Parts</a>
                     <a href="notes-guide.html" class="nav-item" id="">Notes Guide and Templates</a>
 
 

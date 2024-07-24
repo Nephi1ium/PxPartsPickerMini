@@ -1,43 +1,60 @@
 import { K14BFEA, kneeTwo, K14BFESF, K14BFESL, SML, SAEA, SASFE, PHyS, PHySS, PHySSFEA, SPSFS, SHySS, MPK, MPKSw, PolyPneu, PPSSF, MISC } from "../src/kneeArrays/kneesArray.js";
 // import {favorites} from "../js/favoritesComponent.js";
 // let itemOne = document.getElementById("fricMan");
-const itemOne = document.querySelector("#fric");
-const itemTwo = document.querySelector("#fricMan");
-const itemThree = document.querySelector("#fricExtStan");
-const itemFour = document.querySelector("#fricExtStanLock");
-const itemFive = document.querySelector("#singAxManLock");
-const itemSix = document.querySelector("#singAxPneuFric");
-const itemSeven = document.querySelector("#singAxHydStanSwin");
-const itemEight = document.querySelector("#safeExt");
-const itemNine = document.querySelector("#safeFlexExt");
-const itemTen = document.querySelector("#polyHydrau");
-const itemEleven = document.querySelector("#polyHydrauStan");
-const itemTwelve = document.querySelector("#polyPneu");
-const itemThirteen = document.querySelector("#polyPneuSwinStanFlex");
-const itemFourteen = document.querySelector("#polyHydrSwinStanFlexHigh");
-const itemFifteen = document.querySelector("#allMPK");
-const itemSixteen = document.querySelector("#mpkSwOnly");
-const itemSeventeen = document.querySelector("#allMisc");
+// const itemOne = document.querySelector(".mainChoice")
+// ;
+// const itemTwo = document.querySelector(".mainChoice")
+// ;
+// const itemThree = document.querySelector(".mainChoice")
+// ;
+// const itemFour = document.querySelector(".mainChoice")
+// ;
+// const itemFive = document.querySelector(".mainChoice")
+// ;
+// const itemSix = document.querySelector(".mainChoice")
+// ;
+// const itemSeven = document.querySelector(".mainChoice")
+// ;
+// const itemEight = document.querySelector(".mainChoice")
+// ;
+// const itemNine = document.querySelector(".mainChoice")
+// ;
+// const itemTen = document.querySelector(".mainChoice")
+// ;
+// const itemEleven = document.querySelector(".mainChoice")
+// ;
+// const itemTwelve = document.querySelector(".mainChoice")
+// ;
+// const itemThirteen = document.querySelector(".mainChoice")
+// ;
+// const itemFourteen = document.querySelector(".mainChoice")
+// ;
+// const itemFifteen = document.querySelector(".mainChoice")
+// ;
+// const itemSixteen = document.querySelector(".mainChoice")
+// ;
+const itemSeventeen = document.querySelector(".mainChoice")
+;
 
 
 
-itemOne.addEventListener("click", () => kneeCard(K14BFEA));
-itemTwo.addEventListener("click", () => kneeCard(kneeTwo));
-itemThree.addEventListener("click", () => kneeCard(K14BFESF));
-itemFour.addEventListener("click", () => kneeCard(K14BFESL));
-itemFive.addEventListener("click", () => kneeCard(SML));
-itemSix.addEventListener("click", () => kneeCard(SAEA));
-itemSeven.addEventListener("click", () => kneeCard(SASFE));
-itemEight.addEventListener("click", () => kneeCard(PHyS));
-itemNine.addEventListener("click", () => kneeCard(PHySS));
-itemTen.addEventListener("click", () => kneeCard(PHySSFEA));
-itemEleven.addEventListener("click", () => kneeCard(SPSFS));
-itemTwelve.addEventListener("click", () => kneeCard(SHySS));
-itemThirteen.addEventListener("click", () => kneeCard(PolyPneu));
-itemFourteen.addEventListener("click", () => kneeCard(PPSSF));
-itemFifteen.addEventListener("click", () => kneeCard(MPK));
-itemSixteen.addEventListener("click", () => kneeCard(MPKSw));
-itemSeventeen.addEventListener("click", () => kneeCard(MISC));
+// itemOne.addEventListener("click", () => kneeCard(K14BFEA));
+// itemTwo.addEventListener("click", () => kneeCard(kneeTwo));
+// itemThree.addEventListener("click", () => kneeCard(K14BFESF));
+// itemFour.addEventListener("click", () => kneeCard(K14BFESL));
+// itemFive.addEventListener("click", () => kneeCard(SML));
+// itemSix.addEventListener("click", () => kneeCard(SAEA));
+// itemSeven.addEventListener("click", () => kneeCard(SASFE));
+// itemEight.addEventListener("click", () => kneeCard(PHyS));
+// itemNine.addEventListener("click", () => kneeCard(PHySS));
+// itemTen.addEventListener("click", () => kneeCard(PHySSFEA));
+// itemEleven.addEventListener("click", () => kneeCard(SPSFS));
+// itemTwelve.addEventListener("click", () => kneeCard(SHySS));
+// itemThirteen.addEventListener("click", () => kneeCard(PolyPneu));
+// itemFourteen.addEventListener("click", () => kneeCard(PPSSF));
+// itemFifteen.addEventListener("click", () => kneeCard(MPK));
+// itemSixteen.addEventListener("click", () => kneeCard(MPKSw));
+itemSeventeen.addEventListener("click", () => kneeCard(MISC, MPKSw, MPK, K14BFEA, kneeTwo));
 
 
 
