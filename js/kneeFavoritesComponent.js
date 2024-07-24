@@ -36,13 +36,11 @@ console.log(keyed.id, "keyed object");
         getFavorites.forEach(component => {    
           favoritesLocation.innerHTML = favoritesLocation.innerHTML +
          `<div class="card favorites card-margin" id="${component.valAssign}favorite">
-         <a class="kneeClick btn-small btn btn-primary" onclick="kneeCartItem(${component.valAssign}favorite); kneeParChoice(${component.valAssign})" > + Cart </a>
          <img class="card-image" src="${component.image}"></img>
 
             <div class="card-header">
                 <h4 id=""> ${component.name} </h4>
                 <a class="kneeClick btn btn-primary" onclick="removeKneeFavorites(${component.valAssign})" > Remove Favorite </a>
-                <div id="">HD Code: ${component.hdcode}</div>
                 <h5><u> L-Codes </u></h5>
                 <div class="lcodes">
                 <div id="${component.lcode1}">${component.lcode1}</div>

@@ -1,4 +1,4 @@
-import { K14BFEA, kneeTwo, K14BFESF, K14BFESL, SML, SAEA, SASFE, PHyS, PHySS, PHySSFEA, SPSFS, SHySS, MPK, MPKSw, PolyPneu, PPSSF, MISC } from "../src/kneeArrays/kneesArray.js";
+import { allKnees } from "../src/kneeArrays/kneesArray.js";
 // import {favorites} from "../js/favoritesComponent.js";
 // let itemOne = document.getElementById("fricMan");
 // const itemOne = document.querySelector(".mainChoice")
@@ -54,7 +54,7 @@ const itemSeventeen = document.querySelector(".mainChoice")
 // itemFourteen.addEventListener("click", () => kneeCard(PPSSF));
 // itemFifteen.addEventListener("click", () => kneeCard(MPK));
 // itemSixteen.addEventListener("click", () => kneeCard(MPKSw));
-itemSeventeen.addEventListener("click", () => kneeCard(MISC, MPKSw, MPK, K14BFEA, kneeTwo));
+itemSeventeen.addEventListener("click", () => kneeCard(allKnees));
 
 
 
@@ -76,22 +76,25 @@ function kneeCard(array){
     // this puts all of the array items from the selected objects in local storage to be retrieved later
 
     data.forEach(component => {    
+
+        const formattedName = component.manufacturer.replace(/_/g, " ");
+
         kneesCard.innerHTML = kneesCard.innerHTML +
-        `<div class="flip-card card card-margin" id="${component.valAssign}">
+        `<div class="flip-card card card-margin .card-normal card-overlay" id="${component.valAssign}">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <h4 id=""> ${component.name} </h4>
-                    <a class="kneeClick btn btn-primary" onclick="kneeFavorites(${component.valAssign})" > Add To Favorites </a>
-
+                    <div id=""> ${component.name} </div>
+                <button class="small-top-right-btn" onclick="kneeFavorites(${component.valAssign})">+</button>
+                <button class="toggle-size-btn">Toggle Size</button>
                     <img class="card-image" src="${component.image}"></img>
             
                 </div>
 
-                <div class="flip-card-back">
-                    <h5> Product Description </h5>
-                    <div id="${component.manufacturer}"> Manufacturer: ${component.manufacturer}</div>
+                <div class="flip-card-back card-description">
+                    <div class="card-description"> Product Description </div>
+                    <div id="${component.manufacturer}"> Manufacturer: ${formattedName}</div>
                     <br>
-                <h5><u> L-Codes </u></h5>
+                <div><u> L-Codes </u></div>
                     <div class="lcodes">
                         <div id="${component.lcode1}">${component.lcode1}</div>
                         <div id="${component.lcode2}">${component.lcode2}</div>
@@ -113,7 +116,24 @@ function kneeCard(array){
     </div>`;
     console.log("Created", component.card, "Cards");
     
-    });
+});
+
+// Event delegation for toggle-size button
+document.querySelector('#mainpageSectionforJS').addEventListener('click', function(e) {
+    if (e.target && e.target.classList.contains('toggle-size-btn')) {
+        const card = e.target.closest('.flip-card');
+        if (card.classList.contains('enlarged')) {
+            // If the card is enlarged, remove 'enlarged' and add 'shrunk' to shrink it.
+            card.classList.remove('enlarged');
+            card.classList.add('shrunk');
+        } else {
+            // If the card is not enlarged, remove 'shrunk' (if it exists) and add 'enlarged' to enlarge it.
+            card.classList.remove('shrunk');
+            card.classList.add('enlarged');
+        }
+    }
+});
+
 
 
         console.log("Card Creation Complete");

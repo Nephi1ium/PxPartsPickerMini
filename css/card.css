@@ -47,4 +47,42 @@ display: none;
         transform: rotateY(180deg);
       }
 
-      
+      .small-top-right-btn {
+        position: absolute;
+        top: 5%; /* Adjust as needed for exact positioning */
+        right: 5%; /* Adjust as needed for exact positioning */
+        width: 20%; /* 1/5th of the parent's width */
+        height: 20%; /* 1/5th of the parent's height */
+        /* Additional button styling */
+    }
+
+    .card-description {
+      font-size: small; /* Adjust the font size as needed */
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Overlay and animation styles */
+/* Overlay and animation styles */
+.card-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 65%;
+  z-index: 10;
+  transition: transform 0.5s ease;
+}
+
+.card-normal {
+  transition: transform 0.5s ease;
+  transform: scale(1); /* Explicitly set the default scale to 1 */
+}
+
+.enlarged {
+  transform: scale(1); /* No change needed, already at full size */
+}
+
+.shrunk {
+  transform: scale(0.1); /* Reduced size */
+}

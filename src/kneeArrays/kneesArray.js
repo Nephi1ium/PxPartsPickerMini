@@ -1,5 +1,7 @@
 // const kneeArray 
 
+
+
 const K14BFEA = [
 {"category":"K1/K2 4Bar with Friction, Extension assist: L5611, L5850  base",
 "manufacturer":"Fillauer_Knee",
@@ -544,6 +546,6 @@ const kneeTwo = [
 //     kneeSixteen;
 // };
 
-
+const allKnees = [...K14BFEA, ...kneeTwo, ...K14BFESF, ...K14BFESL, ...SML, ...SAEA, ...SASFE, ...PHyS, ...PHySS, ...PHySSFEA, ...SPSFS, ...SHySS, ...MPK, ...MPKSw, ...PolyPneu, ...PPSSF, ...MISC];console.log(allKnees);
 // export {kneeArray};
-export {K14BFEA, kneeTwo, K14BFESF, K14BFESL, SML, SAEA, SASFE, PHyS, PHySS, PHySSFEA, SPSFS, SHySS, MPK, MPKSw, PolyPneu, PPSSF, MISC };
+export {allKnees};
