@@ -3148,9 +3148,9 @@ const  MiscFeet = [
 ]
 
 
+const allFeet = [...FlexWalkMultiAxial,...VertShockAxialRot,...VertShockMultiAxialRot,...VertShock,...FlexWalkMultiAxialAnkleVac,...L5999,...MiscFeet];
 
-
-   export { K2FlexKeelMultiAxialRot, FlexFootMultiAxialAnkle, FlexWalk, FlexWalkMultiAxial, VertShockAxialRot, VertShockMultiAxialRot, VertShock, MiscFeet, L5999, FlexWalkMultiAxialAnkleVac, k2FlexKeelhydraMulti, FlexFoot, MultiAxialDynamResp, EnergyStore, SingAxis, Microprocessor, k3FlexHydrauMulti, K3FlexHydrauMultiVertShock, SACH, K2FlexHeel, K2FlexKeelAxialRotVert};
+   export {allFeet};
 
 
 

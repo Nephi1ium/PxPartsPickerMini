@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <link rel="stylesheet" href="../css/px-picker-main-page.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -12,7 +11,6 @@
     <link rel="icon" href="../images/Icons/shoppingcart.png" type="image/x-icon">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/itemchoices.css">
     <link rel="stylesheet" href="../css/horizontal_card.css">
@@ -31,14 +29,15 @@
   <aside class="self-created-modal dragItem" id="itemSelectorModal">
   </aside>
 
-  <aside id="cartBody">
+  <!-- Hid the cart for now 7.28.24 -->
+  <!-- <aside id="cartBody">
     <img class="cart-image" src="../images/Icons/shoppingcart.png"></img>  
       <div class="cartContainer">
         <div id="cartSection">
         
       </div>
     </div>
-  </aside>
+  </aside> -->
 
   <header class="banner_display mainOne">
     <h1 class="header_title"><img src="../images/prosthetic_logo.jpg" class="banner_image"> Kit Selection </h1>
@@ -53,206 +52,13 @@
    -->
       <a id="kneeButton" class="toggle mainChoice">    Knees  </a>
   
-      <section id="kneesSection" class="noShow sectionSizing">         
   
-  <!--          Start of K1/K2 Category                                 -->
-                          <a class=" toggle secButtons "  id="kOneTwo">              K1/K2            </a>
-  <!--          Start of the 4 inner categories of K1/K2 Knees          -->
-                                <section class=" noShow  " id="kOneTwoSection">
-  
-                                <a id="fric" class=" indivChoice kOne"  >                        Friction, Extension Assist                        </a>
-  
-                                <a id="fricMan"class=" indivChoice   kOne"  >                        Friction, Extension Assist, Manual Lock                        </a>
-  
-                                <a id="fricExtStan" class=" indivChoice   kOne"  >                        Friction, Extension Assist, Stance Flexion                        </a>
-  
-                                <a class=" indivChoice   kOne" id="fricExtStanLock"  >                        Friction, Extension Assist, Stance Flexion, Manual Lock                        </a>
-                                
-                                </section>
-  <!--                   End of the K1/K2 Category -->        
-  <!--               Beginning of the Single Axis Category -->           
-                  <a class="secButtons  "  id="singleAxis">                Single Axis              </a>               
-  <!--                   Container for all the Single Axis Knee categories -->
-                <nav>
-        
-                      <a class="indivChoice noShow  singleAxis" id="singAxManLock"  >
-                        Manual Lock
-                      </a>
-
-                      <a class="indivChoice noShow  singleAxis" id="singAxPneuFric"  >
-                        Pneumatic Swing, Friction Stance
-                      </a>
-
-                      <a class="indivChoice noShow  singleAxis"  id="singAxHydStanSwin">
-                        Hydraulic Stance and Swing
-                      </a>
-                </nav>
-      
-  <!--                   End of Single Axis Knee Category information -->
-                  
-  
-              
-  <!--               End of the Single Axis Category -->
-  <!--               Beginning of the Safety Knees Category -->
-                  
-                
-                  <a class="secButtons "  id="safeKnee">
-                    Safety Knees
-                  </a>
-  
-                  <nav >
-
-                      <a class="indivChoice noShow  safety"  id="safeExt" href="#"> Extension Assist </a>
-
-                      <a class="indivChoice noShow  safety"  id="safeFlexExt" href="#"> Stance Flexion and Extension Assist</a>
-
-                  </nav>
-  <!--               End of the safety knees category -->
-  <!--               Start of the polycentric knees category -->
-              
-                
-                  <a class="secButtons  "  id="polyKnee">
-                  Polycentric Knees
-                  </a>
-  
-
-
-                  
-              <nav>
-
-                    <a class="indivChoice noShow  polycentric"  id="polyHydrau" href="#"> Hydraulic Swing </a>
-
-                    <a class="indivChoice noShow  polycentric"  id="polyHydrauStan" href="#"> Hydraulic Swing and Stance Flexion</a>
-
-                    <a class="indivChoice noShow  polycentric"  id="polyPneu" href="#"> Pneumatic Swing</a>
-
-                    <a class="indivChoice noShow  polycentric"  id="polyPneuSwinStanFlex" href="#"> Pneumatic Swing and Stance Flexion</a>
-
-                    <a class="indivChoice noShow  polycentric"  id="polyHydrSwinStanFlexHigh" href="#"> Hydraulic Swing, Stance Flexion, High Activity Frame</a>
-
-              </nav>
-  
-  
-  
-  
-  <!--        End of the Polycentric knees category        -->
-  <!--               Start of the MPK Category -->
-              
-                
-  <a class="secButtons  "  id="polyKnee">
-    Microprocessor Knees
-    </a>
-  
-  <nav>
-
-      <a class="indivChoice noShow  mpk"  id="allMPK" href="#"> All MPK </a>
-
-      <a class="indivChoice noShow  mpk"  id="mpkSwOnly" href="#"> MPK Swing Only</a>
-
-  </nav>
-  
-  
-  
-  
-  
-                  <!-- <a class="indivChoice noShow  mpk"  id="MPKChoice" href="#"> Blatchford</a> -->
-  
-                  <a class="secButtons  "  id="miscKnees">
-              Miscellaneous Knees
-                    </a>
-                  
-                  <nav>
-
-                      <a class="indivChoice noShow  mpk"  id="allMisc" href="#"> All Miscellaneous Knees </a>
-
-                  </nav>
-  <!--               End of the MPK category -->
-  
-  
-      </section> 
   
   
       <a id="feetButton" class="toggleOne Feet mainChoice">
         Feet
       </a>
-      <section id="feetSection" class="noShow sectionSizing">
-  
-                     <a id="feetOne" class=" secButtons feet"  >
-                      K2 Flexible Keel with Hydraulic multiaxial ankle:     L5968,  L5972                  </a>
-                      <a id="feet2"class="secButtons  feet"  >
-                      K3 Flexwalk with Hydraulic Multiaxial ankle:     L5968,  L5981
-                    </a>
-                    <a class="secButtons  feet" id="feet3"  >
-                      K3 Flexwalk with Hydraulic Multiaxial ankle and Vertical Shock:     L5968,  L5981, L5988
-                    </a>
-                      <a id="feet4" class="secButtons  feet"  >
-                        SACH:     L5971
-                      </a>
 
-                    <a id="feet5" class=" secButtons feet"  >
-                      K2 Flexible Heel:     L5972
-                    </a>
-                      <a id="feet6" class=" secButtons feet"  >
-                        K2 Flexible Keel with Multiaxial Rotation:     L5972, L5986
-                      </a>
-                            <a id="feet7"class="secButtons  feet"  >
-                              K2 Flexible Keel with axial Rotation & Vertical Shock:     L5972, L5984, L5988
-                            </a>
-                      <a id="feet8"class="secButtons  feet"  >
-                        Single Axis:     L5974
-
-                      </a>
-                        <a id="feet9" class="secButtons  feet"  >
-                          Microprocessor Feet:     L5973
-                        </a>
-                        <a class="secButtons  feet" id="feet10"  >
-                          Energy Storing:     L5976
-                        </a>
-                      <a id="feet11"class="secButtons  feet"  >
-                        Multiaxial Dynamic Response:     L5979
-
-                </a>
-                  <a id="feet12" class="secButtons  feet"  >
-                    Flexfoot:     L5980
-
-                </a>
-                <a class="secButtons  feet" id="feet13"  >
-                  Flexfoot with Multiaxial Ankle:     L5980,  L5986
-
-              </a>
-              <a id="feet14" class=" secButtons feet"  >
-                Flexwalk:     L5981
-
-            </a>
-                    <a id="feet15" class=" secButtons feet"  >
-                      Flexwalk with Multiaxial Ankle:     L5981 L5986
-
-                </a>
-                          <a id="feet16"class="secButtons  feet"  >
-                            Vertical Shock with Axial Rotation:     L5984,  L5987
-
-                </a>
-                      <a id="feet17" class="secButtons  feet"  >
-                        Vertical Shock with Multiaxial Rotation:     L5986,  L5987
-
-                </a>
-                      <a class="secButtons  feet" id="feet18"  >
-                        Vertical Shock:     L5987
-
-                </a>
-                    <a id="feet19" class=" secButtons feet"  >
-                      Flexwalk with Multiaxial Ankle and Vacuum  :     L5987,  L5986,  L5781
-
-                    <a id="feet20"class="secButtons  feet"  >
-                      Coding Group:     L5999 Base Code
-
-              </a>
-                <a id="feet21" class="secButtons  feet"  >
-                  Coding Group:     Miscellaneous
-
-              </a>
-
-      </section>
               
   
   
@@ -277,7 +83,7 @@
         Components
       </a>
   
-      <section id="componentsSection" class="noShow sectionSizing">
+      <!-- <section id="componentsSection" class="noShow sectionSizing">
   
           <a class=" secButtons  mpk"  id="socks" > Socks  </a>
         
@@ -285,7 +91,7 @@
   
           <a class=" secButtons  mpk"  id="components" > Build Components </a>
   
-      </section>
+      </section> -->
   </nav>
         <!-- RIght now this resets the page, I should simply set the state of each element to "initial" -->
   <main class="mainFour" id="kitMain">
@@ -365,10 +171,11 @@
 <script src="../js/tfCardTest.js"></script>
 <script src="../js/navigator.js"></script>
 
-<script type="module" src="../js/kneesComponent.js"></script>
+<script type="module" src="../js/AllCardCreationComponent.js"></script>
+<!-- <script type="module" src="../js/kneesComponent.js"></script>
 <script type="module" src="../js/feetComponent.js"></script>
 <script type="module" src="../js/linersComponent.js"></script>
-<script type="module" src="../js/componentsComponent.js"></script>
+<script type="module" src="../js/componentsComponent.js"></script> -->
 <script type="text/javascript" src="../js/cartComponent.js"></script>
 <script type="text/javascript" src="../js/kneeFavoritesComponent.js"></script>
 <script type="text/javascript" src="../js/footFavoritesComponent.js"></script>

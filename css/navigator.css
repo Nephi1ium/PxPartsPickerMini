@@ -295,6 +295,7 @@ grid-area: kneeSection;
 justify-content: center;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 grid-template-rows: auto;
+padding-left: 15%;
 
 }
 

@@ -33,7 +33,7 @@ import { allKnees } from "../src/kneeArrays/kneesArray.js";
 // ;
 // const itemSixteen = document.querySelector(".mainChoice")
 // ;
-const itemSeventeen = document.querySelector(".mainChoice")
+const clickKnees = document.querySelector(".mainChoice")
 ;
 
 
@@ -54,7 +54,7 @@ const itemSeventeen = document.querySelector(".mainChoice")
 // itemFourteen.addEventListener("click", () => kneeCard(PPSSF));
 // itemFifteen.addEventListener("click", () => kneeCard(MPK));
 // itemSixteen.addEventListener("click", () => kneeCard(MPKSw));
-itemSeventeen.addEventListener("click", () => kneeCard(allKnees));
+clickKnees.addEventListener("click", () => kneeCard(allKnees));
 
 
 
