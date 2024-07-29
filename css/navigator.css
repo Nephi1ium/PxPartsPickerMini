@@ -163,7 +163,7 @@ color:aliceblue
 border-top: solid #000000 .1vmax;
 border-bottom: solid #000000 .1vmax;
 
-background-color: #36454F;
+/* background: linear-gradient(to right, black, blue); */
 
 ;
 margin-bottom: .2vmax;}

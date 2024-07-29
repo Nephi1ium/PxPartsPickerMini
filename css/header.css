@@ -2,23 +2,18 @@
 
     color: #E8EEF2;
     text-align: center;
+    font-size: 7vmax;
 }
 
 .banner_display{
     border-top: solid #2176AE .4vmax;
-    border-bottom: solid #011936 .6vmax;
+    border-bottom: solid #011936 .1vmax;
     height: auto;
     /* background-color: #F46036; */
-    background-color:  #011936;
 
-
-    ;
-    border-top: solid #000000 0.4vmax;
-    border-bottom: solid #011936 0.6vmax;
+    border-top: solid #000000 0.2vmax;
     height: auto;
-    background-color: #000000;
-    /* background-color: #011936; */
-    background-color: #2176AE;
+
 }
 
     

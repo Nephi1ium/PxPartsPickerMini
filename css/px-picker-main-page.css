@@ -1,23 +1,7 @@
 /* nav {
     background-color: #08719e   ;
 } */
-footer {
-    background-image: linear-gradient(rgb(184, 182, 182), white);
-    padding: 60px 0;
-}
 
-div {
-    position: relative;
-}
-a{
-    text-decoration: none;
-}
-
-body {
-    background-image:linear-gradient (#b0a330, white);
-    margin: 1px;
-
-}
 
 /*  THE BELOW CODE MODIFIES THE ACCORDION STYLE MENU ITEM IN TEST
 body {

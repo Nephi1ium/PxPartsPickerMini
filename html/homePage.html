@@ -17,8 +17,8 @@
 
     <link rel="stylesheet" href="../css/navigator.css">
     <link rel="stylesheet" href="../css/mainPage.css">
-
-    <script>
+    <link rel="icon" type="image/png" href="../images/Icons/plus.png">
+ <script>
         document.addEventListener('DOMContentLoaded', (event) => {
             document.getElementById("myForm").addEventListener("submit", function(e) {
                 e.preventDefault() // Cancel the default action
@@ -26,45 +26,26 @@
         });
      </script>
 
-    <title>Prosthetic Parts Picker Webpage</title>
+    <title>PxPartsPicker</title>
 </head>
 
 
 <body id="homepageBody">
 
-    <!-- This modal may be used in later versions in order to differentiate versions of the webpage between hanger and non hanger individuals 
-    <div id="empVer" class="modal fade" role="choice">
-        <div class="row">
-            <div class="container d-flex justify-content-center">
-                <div class="col-md-6">
-                    <div class="card text-center">
-                        <div class="card-body"> <img class="img-fluid" id="modalPic" src="../images/prosthetic_logo.jpg">
-                            <h5 class="title">Please Select The Most Relevant Page Style</h5>
-                            <p class="description">The Prosthetic world is dominated by two distinct groups of professionals, those who work for Hanger and those who do not. There is no difference between the people,
-                                just the people we are employed by. The below choices are to provide the most relevant information to both parties, as some tools differ.
-                            </p>
-                            <div class="row">
-                                <div class="col-sm-6 mb-2 mb-md-0"> <button class="btn btn-out btn-primary btn-square btn-large"> <i class="fa fa-caret-square-right"></i> Hanger Clinic</button> </div>
-                                <div class="col-sm-6"> <button class="btn btn-out btn-primary btn-square btn-large"> <i class="fa fa-caret-square-right"></i> Opie or Other</button> </div>
-                            </div>
-                            <div class="text-center mt-30"> 
-                                <button role="button" href="#" id="closeMod">Not Now</button> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    -->
-
     <header class="banner_display mainOne" id="mainHeading">
-        <h1 class="header_title"><img src="../images/prosthetic_logo.jpg" class="banner_image"> Prosthetic Parts Picker </h1>
+        <h1 class="header_title"><img src="../images/Icons/plus.png" class="banner_image"> Prosthetic Parts Picker </h1>
     </header> 
     <nav class="mainTwo" id="mainNavigation"></nav>
 
 
+<main class="mainThree">
 
+    <p class="main-words">Welcome. The Goal of this site is to open access to everyone into the world of prosthetic components. 
+        Amputees, Clinicians, Family members, Students, anyone and everyone who is curious. 
+        Click the <a href="../html/px-picker-kitselection.html">Parts</a> to start browsing the various components.
+        See the <a href="index.html" class="small-resource-button">Resources</a> page for more information and resources on 
+        manufacturers, providers in your area and other tools. More will be added all the time so check back in. Enjoy!</p>
+</main>
         
         <footer class="site-footer mainFour">
             <div class="container">
@@ -72,10 +53,10 @@
                     <div class="col-4 col-sm-2 offset-1">
                         <h5>Links</h5>
                         <ul class="list-unstyled">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="aboutus.html">About</a></li>
-                            <li><a href="#">Sites</a></li>
-                            <li><a href="contactus.html">Contact</a></li>
+                            <li><a href="homePage.html">Home</a></li>
+                            <li><a href="px-picker-kitselection.html">Parts</a></li>
+                             <li><a href="notes-guide.html">Notes Guides and Templates</a></li>
+                            <!-- <li><a href="contactus.html">Contact</a></li> -->
                         </ul>
                     </div>
                     <div class="col-6 col-sm-5 text-center">
@@ -86,62 +67,15 @@
                         <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                     </div>
                     <div class="col-sm-4 text-center">
-                        <a role="button" class="btn btn-link" href="tel:+16187804206"><i class="fa fa-phone"></i> 1-618-780-4206</a><br />
-                        <a role="button" class="btn btn-link" href="mailto:andmaurer13@gmail.com"><i class="fa fa-envelope-o"></i> andmaurer13@gmail.com</a>
-                    </div>                
+                        <a role="button" class="btn btn-link" href="tel:+1"><i class="fa fa-phone"></i> 1-453-429-5098</a><br />
+                        <a role="button" class="btn btn-link" href="mailto:jsmith@email.com"><i class="fa fa-envelope-o"></i> jsmith@email.com</a>
+                    </div>             
                </div>
             </div>
-    <!-- This is the Modal for a different pcc number -->
-    <div class="col-12">
-        <div id="pccModal" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-info text-white">
-                        <h3 class="modal-title">Ship to PCC Number</h3>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container-fluid">
-                            <form>
-                                <div class="row form-g">
-                                    <label for="numCampers" class="col-sm-6 col-form-label">Ship to PCC Number</label>
-                                        <div class="col-sm-6 mx-auto">
-                                            <label for="modClinLoc"></label>
-                                            <input type="text"  id="modClinLoc" class="form-control">
-                                        </div>
-                                        <div class="row form-g">
-                                            <div class="col">
-                                                <button type="button" data-dismiss="modal" id="modBut" class="btn btn-primary">Submit</button>
-                                                <button type="submit" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
-                                            </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div class="modal" tabindex="-1" role="dialog">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-<p>Modal body goes header </p>              
 
-</div>
-                    <div class="modal-footer">
-                      <button id="#" type="button" class="btn btn-primary">Save changes</button>
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+
+        </div>
+
 
 
         

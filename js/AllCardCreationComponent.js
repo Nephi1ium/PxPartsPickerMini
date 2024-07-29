@@ -40,36 +40,40 @@ function feetCard(array){
         const formattedName = component.manufacturer.replace(/_/g, " ");
 
         footCard.innerHTML = footCard.innerHTML +
-        `<div class="flip-card card card-margin .card-normal card-overlay" id="${component.valAssign}">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <div id=""> ${component.name} </div>
-                <button class="small-top-right-btn" onclick="kneeFavorites(${component.valAssign})">+</button>
-                <i class="toggle-icon fas fa-chevron-down small-top-left-btn"></i>    
-                <img class="card-image" src="${component.image}"></img>
-            
-                </div>
 
-                <div class="flip-card-back card-description">
-                    <div class="card-description"> Product Description </div>
-                    <div id="${component.manufacturer}"> Manufacturer: ${formattedName}</div>
-                    <br>
-                <div><u> L-Codes </u></div>
-                    <div class="lcodes">
-                        <div id="${component.lcode1}">${component.lcode1}</div>
-                        <div id="${component.lcode2}">${component.lcode2}</div>
-                        <div id="${component.lcode3}">${component.lcode3}</div>
-                        <div id="${component.lcode4}">${component.lcode4}</div>
-                        <div id="${component.lcode5}">${component.lcode5}</div>
-                        <div id="${component.lcode6}">${component.lcode6}</div>
+        `
+        <div> 
+                <button class="small-top-right-btn" onclick="kneeFavorites(${component.valAssign})">+</button>
+                <i class="toggle-icon fas fa-chevron-down small-top-left-btn"></i> 
+            <div class="flip-card card card-margin .card-normal card-overlay" id="${component.valAssign}">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div id=""> ${component.name} </div>   
+                    <img class="card-image" src="${component.image}"></img>
+                
                     </div>
 
-                    
-                    <div id="${component.reimbursement}">Typical Reimbursement: $${component.reimbursement}</div>
-                    <div id="${component.pdac}${component.valAssign}">PPDAC Approval: ${component.pdac}</div>
+                    <div class="flip-card-back card-description">
+                        <div class="card-description"> Product Description </div>
+                        <div id="${component.manufacturer}"> Manufacturer: ${formattedName}</div>
+                        <br>
+                    <div><u> L-Codes </u></div>
+                        <div class="lcodes">
+                            <div id="${component.lcode1}">${component.lcode1}</div>
+                            <div id="${component.lcode2}">${component.lcode2}</div>
+                            <div id="${component.lcode3}">${component.lcode3}</div>
+                            <div id="${component.lcode4}">${component.lcode4}</div>
+                            <div id="${component.lcode5}">${component.lcode5}</div>
+                            <div id="${component.lcode6}">${component.lcode6}</div>
+                        </div>
+
+                        
+                        <div id="${component.reimbursement}">Typical Reimbursement: $${component.reimbursement}</div>
+                        <div id="${component.pdac}${component.valAssign}">PPDAC Approval: ${component.pdac}</div>
 
 
-                    <a class="btn btn-primary" href="${component.link}" target="_blank">${component.linkname}</a>
+                        <a class="btn btn-primary" href="${component.link}" target="_blank">${component.linkname}</a>
+                    </div>
                 </div>
             </div>
         </div>
