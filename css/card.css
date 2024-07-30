@@ -23,6 +23,7 @@ display: none;
         transition: transform 0.6s;
         transform-style: preserve-3d;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        font-size: 1.25vmax;
       }
       
       .flip-card:hover .flip-card-inner {
@@ -200,4 +201,21 @@ display: none;
             overflow-y: scroll;
             border-radius: 1vmax;
           }
+
+
+
+
+
+
+
+
+
+
+
+
+          /* @media screen and (max-width: 450px) { 
+            .{
+
+          
+            } */
           

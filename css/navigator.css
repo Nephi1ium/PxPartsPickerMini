@@ -416,7 +416,7 @@ padding-left: 15%;
     .mainpage{
       display: grid;
     justify-content: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr;
     grid-template-rows: auto;
     
     }
@@ -530,7 +530,7 @@ padding-left: 15%;
     color: black;
     display: block;
     transition: 0.3s;
-    background-color: #7f8891;
+    background-color: transparent;
 
   }
     }

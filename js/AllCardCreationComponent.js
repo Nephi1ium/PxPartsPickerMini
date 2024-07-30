@@ -6,6 +6,8 @@ import {lockLiners, cushLiner, sealLiner, custLiner} from "../src/linerArrays/li
 //variables to execute card creation on click
 const clickKnees = document.querySelector("#kneeButton");
 const clickFeet = document.querySelector("#feetButton");
+const clickKneesSmall = document.querySelector("#kneeButtonSmall");
+const clickFeetSmall = document.querySelector("#feetButtonSmall");
 
 
 //Variables to execute Liners Cards
@@ -17,6 +19,7 @@ const itemFour = document.querySelector("#custom");
 
 //Below is all the event handlers for creation of the Foot cards
 clickFeet.addEventListener("click", () => feetCard(allFeet));
+clickFeetSmall.addEventListener("click", () => feetCard(allFeet));
 
 function feetCard(array){
 
@@ -104,6 +107,7 @@ document.querySelector('#mainpageSectionforJS').addEventListener('click', functi
 
 //Below is all the event handlers for creation of the Knee cards
 clickKnees.addEventListener("click", () => kneeCard(allKnees));
+clickKneesSmall.addEventListener("click", () => kneeCard(allKnees));
 
 function kneeCard(array){
 

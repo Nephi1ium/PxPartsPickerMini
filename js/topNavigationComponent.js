@@ -18,7 +18,7 @@
                             <a href="../index.html" class="mobileNavigationBut" id="homeButt">Home</a>
                         </li>
                         <li class="navListItem">
-                            <a href="px-picker-kitselection.html" class="mobileNavigationBut" id="kitSeleBut">Kit Selection</a>
+                            <a href="px-picker-kitselection.html" class="mobileNavigationBut" id="kitSeleBut">Parts</a>
                         </li>
                         <li class="navListItem">
                         <a href="notes-guide.html" class="mobileNavigationBut" id="notesTemplateBut">Notes Guide and Templates</a>
