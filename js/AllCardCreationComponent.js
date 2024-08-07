@@ -130,14 +130,17 @@ function kneeCard(array){
         const formattedName = component.manufacturer.replace(/_/g, " ");
 
         kneesCard.innerHTML = kneesCard.innerHTML +
-        `<div class="flip-card card card-margin .card-normal card-overlay" id="${component.valAssign}">
-            <div class="flip-card-inner">
+        
+        `
+        <div class="flip-card card card-margin .card-normal card-overlay" id="${component.valAssign}">
+
+        <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <div id=""> ${component.name} </div>
-                <button class="small-top-right-btn" onclick="kneeFavorites(${component.valAssign})">+</button>
-                <button class="toggle-size-btn">Toggle Size</button>
+                        <button class="small-top-right-btn" onclick="kneeFavorites(${component.valAssign})"><img class="card-icon" src="../images/Icons/plussymbol.png"></img></button>
+        <button class="toggle-size-btn small-top-left-btn"><img class="card-icon" src="../images/Icons/expand.png"></img></button>
                     <img class="card-image" src="${component.image}"></img>
-            
+                    <div id=""> ${component.name} </div>
+
                 </div>
 
                 <div class="flip-card-back card-description">

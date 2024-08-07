@@ -13,7 +13,6 @@ const K14BFEA = [
 "lcode4": "" ,
 "lcode5": "" ,
 "lcode6": "" ,
-"lcode6": "" ,
  
 
 
@@ -37,7 +36,6 @@ const K14BFEA = [
 "lcode4": "" ,
 "lcode5": "" ,
 "lcode6": "" ,
-"lcode6": "" ,
  
 
 
@@ -60,7 +58,6 @@ const K14BFEA = [
 "lcode4":" ",
 "lcode4": "" ,
 "lcode5": "" ,
-"lcode6": "" ,
 "lcode6": "" ,
  
 
@@ -133,7 +130,6 @@ const K14BFEA = [
 "lcode4": "" ,
 "lcode5": "" ,
 "lcode6": "" ,
-"lcode6": "" ,
  
 
 
@@ -156,7 +152,6 @@ const K14BFEA = [
 "lcode4":" ",
 "lcode4": "" ,
 "lcode5": "" ,
-"lcode6": "" ,
 "lcode6": "" ,
  
  

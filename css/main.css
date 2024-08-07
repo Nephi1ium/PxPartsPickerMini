@@ -1,4 +1,81 @@
 
+/* Below is the main color scheme */
+
+/* Header */
+.header {
+  background-color: #E0F7FA; /* Light blue */
+}
+
+/* Body */
+.body {
+  background-color: #FFFFFF; /* White */
+}
+
+/* Footer */
+.footer {
+  background-color: #B2EBF2; /* Light cyan */
+}
+
+/* Cards */
+.card1 {
+  background-color: #FFCDD2; /* Light red */
+  border-color: #E57373; /* Medium red */
+}
+
+.card2 {
+  background-color: #C8E6C9; /* Light green */
+  border-color: #81C784; /* Medium green */
+}
+
+/* Add more cards as needed */
+
+
+
+
+
+/* Below is the header colors */
+
+.header_title{
+
+  color: #E8EEF2;
+  text-align: center;
+  font-size: 7vmax;
+}
+
+.banner_display{
+  border-top: solid #2176AE .4vmax;
+  border-bottom: solid #011936 .1vmax;
+  height: auto;
+  /* background-color: #F46036; */
+
+  border-top: solid #000000 0.2vmax;
+  height: auto;
+
+}
+
+  
+.banner_image{
+  width: 3vmax;
+  height: auto;
+  margin-left: 1vmax;
+  margin-top: 1vmax;
+  margin: 1vmax;
+}
+
+
+@media screen and (max-width: 450px) {
+.header_title{
+
+  color: #E8EEF2;
+  text-align: center;
+  max-width: 25vmax;
+}
+}
+
+
+
+
+
 /* Below is the code for the cards and main JS section */
 
 
@@ -122,7 +199,7 @@ body {
   background: #FFF;
   font-family: 'Syncopate', sans-serif; /* Use the correct font-family name */
   font-weight: 400;
-  background: linear-gradient(to right, #0135D3, #122252);
+  background: #ffffff
 
 }
  
@@ -205,7 +282,6 @@ color:white;
   size: 15%; }
 
   footer {
-    background-color: black;
     padding: .25vmax 0;
 }
 
@@ -216,11 +292,7 @@ a{
     text-decoration: none;
 }
 
-body {
-    background-image:linear-gradient (#b0a330, white);
-    margin: 1px;
 
-}
 
 .small-view {
     display: none;
